@@ -25,14 +25,14 @@ def status() -> dict:
     settings = get_settings()
     return {
         "version": __version__,
-        "phase": 3,
+        "phase": 4,
         "features": {
             # Talk tab degrades gracefully when no key is present.
             "conversation": settings.conversation_enabled,
             "learn": True,
             "review": True,
             "listen": True,
-            "speak": False,
+            "speak": True,
             "progress": False,
         },
         "whisper_model": settings.whisper_model,

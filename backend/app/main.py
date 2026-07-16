@@ -17,7 +17,15 @@ from fastapi.staticfiles import StaticFiles
 from . import __version__, content
 from .config import get_settings
 from .db import connect, init_db
-from .routers import audio, health, learn, listen, review, settings as settings_router
+from .routers import (
+    audio,
+    health,
+    learn,
+    listen,
+    review,
+    speak,
+    settings as settings_router,
+)
 
 settings = get_settings()
 
@@ -58,6 +66,7 @@ app.include_router(settings_router.router)
 app.include_router(learn.router)
 app.include_router(review.router)
 app.include_router(listen.router)
+app.include_router(speak.router)
 app.include_router(audio.router)
 
 

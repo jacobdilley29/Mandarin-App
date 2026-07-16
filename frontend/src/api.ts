@@ -202,6 +202,39 @@ export interface ToneItem {
   options: ToneOption[];
 }
 
+// --- Speak types ---
+export interface SpeakItem {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface SyllableVerdict {
+  index: number;
+  char: string | null;
+  expected: number;
+  detected: number;
+  ok: boolean;
+  confidence: number;
+  heard?: string | null;
+  char_ok?: boolean | null;
+}
+export interface ContourPoint {
+  x: number;
+  y: number;
+}
+export interface SpeakScore {
+  target: { hanzi: string; pinyin: string };
+  approximate: boolean;
+  whisper_available: boolean;
+  transcription: string | null;
+  syllables: SyllableVerdict[];
+  tone_correct: number;
+  tone_total: number;
+  contour: { points: ContourPoint[]; syllable_bounds: number[] };
+  expected_contour: ContourPoint[];
+  median_hz: number | null;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -259,6 +292,16 @@ export const api = {
     fetch(`/api/listen/set${id ? `?id=${encodeURIComponent(id)}` : ""}`).then(json<ComprehensionSet>),
   listenTones: (mode: "single" | "pair") =>
     fetch(`/api/listen/tones?mode=${mode}`).then(json<ToneItem>),
+  speakStatus: () => fetch("/api/speak/status").then(json<{ transcription_available: boolean }>),
+  speakItem: (mode: "word" | "sentence") =>
+    fetch(`/api/speak/item?mode=${mode}`).then(json<SpeakItem>),
+  speakScore: (wav: Blob, hanzi: string, pinyin: string) => {
+    const form = new FormData();
+    form.append("audio", wav, "rec.wav");
+    form.append("hanzi", hanzi);
+    form.append("pinyin", pinyin);
+    return fetch("/api/speak/score", { method: "POST", body: form }).then(json<SpeakScore>);
+  },
 };
 
 /** URL for a cached TTS clip. */

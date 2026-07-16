@@ -5,12 +5,14 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: Phase 3 (Listen).** Learn + Review plus a full **Listen** tab:
-> **dictation** (hear a sentence at 0.75×/1×/1.25×, type characters or pinyin,
-> get a diff-highlighted correction), **comprehension** dialogues with
-> questions (two zh-TW voices, one per speaker), and **tone ear-training**
-> (single-tone and tone-pair drills using the four tone-contour shapes).
-> Speak / Talk arrive in later phases (honest "coming soon" placeholders).
+> **Status: Phase 4 (Speak).** Learn + Review + Listen plus a full **Speak**
+> tab: word/sentence shadowing where you record yourself and get a
+> pitch-contour plot of your voice overlaid on the idealised tone shape (SVG),
+> a per-syllable tone verdict (with tone-sandhi applied to the target), and —
+> when `faster-whisper` is installed — a transcription character-match. Pitch
+> and tone analysis are pure-numpy and run with no model download; the browser
+> decodes the recording to 16-kHz WAV so the server needs no ffmpeg. Talk
+> arrives in Phase 5 (honest "coming soon" placeholder).
 
 ---
 
@@ -35,7 +37,11 @@ Mandarin-App/
 │   │   ├── listen.py        dictation / comprehension / tone item builders
 │   │   ├── textdiff.py      pinyin & character dictation diffing
 │   │   ├── tones.py         tone extraction from pinyin
-│   │   └── routers/         health, settings, learn, review, listen, audio
+│   │   ├── pitch.py         f0 extraction (numpy autocorrelation)
+│   │   ├── tone_classify.py tone classification + sandhi
+│   │   ├── speak.py         pronunciation scoring pipeline
+│   │   ├── whisper_asr.py   optional faster-whisper wrapper
+│   │   └── routers/         health, settings, learn, review, listen, speak, audio
 │   ├── scripts/             import_cedict · load_content · generate_content
 │   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
@@ -171,9 +177,11 @@ Each phase ends runnable.
 - **Phase 2 — Review ✅:** FSRS scheduling (py-fsrs), first-run placement
   check over an HSK 1 foundation pool, daily review queue with rotating card
   types and Again/Hard/Good/Easy rating.
-- **Phase 3 — Listen ✅ (this):** dictation with pinyin/character diffing,
+- **Phase 3 — Listen ✅:** dictation with pinyin/character diffing,
   comprehension dialogues + questions, and tone ear-training (single + tone-pair).
-- **Phase 4 — Speak:** mic capture, faster-whisper scoring, pitch-contour tone feedback.
+- **Phase 4 — Speak ✅ (this):** mic capture (browser-side WAV encoding),
+  pure-numpy pitch extraction + tone classification with sandhi, SVG
+  pitch-contour overlay, and optional faster-whisper transcription.
 - **Phase 5 — Talk + Progress:** Claude conversation mode, teacher notes, recap→SRS,
   progress dashboard.
 

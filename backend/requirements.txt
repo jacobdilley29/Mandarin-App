@@ -12,13 +12,13 @@ edge-tts>=7.0.0          # zh-TW TTS for the /api/audio cache
 # --- Phase 2 (review / SRS) ---
 fsrs>=5.0.0              # FSRS scheduling
 
+# --- Phase 4 (speak / pronunciation) ---
+numpy>=1.26             # pitch extraction + tone classification
+# faster-whisper is OPTIONAL: enables transcription. Tone analysis works
+# without it (equal-time segmentation). It downloads a model on first use, so
+# install it when you want transcription:
+#   faster-whisper>=1.1.0
+
 # --- Optional (authoring only): regenerate/expand curriculum content ---
 # The app ships with committed content and does NOT need this to run.
 #   anthropic>=0.42.0    # scripts/generate_content.py
-
-# --- Later phases (install when their phase lands) ---
-# Phase 4 (speak/pronunciation):
-#   faster-whisper>=1.1.0
-#   librosa>=0.10.2
-#   praat-parselmouth>=0.4.5
-#   numpy>=1.26
