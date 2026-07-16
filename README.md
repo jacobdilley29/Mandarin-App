@@ -5,10 +5,14 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: Phase 0 (skeleton).** FastAPI + Vite/React scaffold, SQLite schema,
-> working settings page, PWA manifest, dark mode, and the six-tab shell. The Learn /
-> Review / Listen / Speak / Talk features arrive in later phases (see the roadmap
-> below); their tabs currently show honest "coming soon" placeholders.
+> **Status: Phase 1 (content + Learn).** On top of the Phase 0 skeleton, the
+> **Learn** tab is live: a curriculum browser (units → lessons with unlock
+> gating), a full lesson engine with every non-speaking drill type (vocab intro,
+> grammar cards, char↔meaning matching, audio→meaning, cloze, sentence
+> tile-building, listen-and-type, translate, dialogue playthrough), tappable
+> zh-TW audio via edge-tts with disk caching, and completion → SRS enrolment.
+> Review / Listen / Speak / Talk arrive in later phases (honest "coming soon"
+> placeholders for now).
 
 ---
 
@@ -23,15 +27,23 @@ Mandarin-App/
 │   │   ├── main.py          app, routers, static SPA serving
 │   │   ├── config.py        settings from .env (with safe defaults)
 │   │   ├── db.py            SQLite connection + schema bootstrap
-│   │   ├── schema.sql       full domain schema (later phases fill it in)
-│   │   └── routers/         health, settings
+│   │   ├── schema.sql       full domain schema
+│   │   ├── content.py       curriculum load + queries + unlock logic
+│   │   ├── exercises.py     lesson exercise-stream builder (all drill types)
+│   │   ├── validation.py    sentence↔vocab validator (spec §5)
+│   │   ├── audio.py         edge-tts synthesis + disk cache
+│   │   └── routers/         health, settings, learn, audio
+│   ├── scripts/             import_cedict · load_content · generate_content
+│   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
 │   ├── src/
-│   │   ├── pages/           Learn / Review / Listen / Speak / Talk / Me
-│   │   ├── components/      TabBar, ToneMark (signature motif), …
+│   │   ├── pages/           Learn (+ learn/LessonPlayer) / Review / … / Me
+│   │   ├── components/      TabBar, ToneMark, Speakable, …
+│   │   ├── audio.ts         tappable-audio playback hook
 │   │   └── theme.ts         design tokens (mirror of DESIGN.md)
 │   └── package.json
+├── content/curriculum.json  seed curriculum (Traditional, Taiwan usage, validated)
 ├── data/                    SQLite DB + audio cache (gitignored; auto-created)
 ├── legacy/                  the earlier static-PWA prototype, preserved for reference
 ├── DESIGN.md                palette + typography + tone-motif design tokens
@@ -116,14 +128,41 @@ All user data lives in `data/` (SQLite + audio cache) — back up that one folde
 
 ---
 
+## Content pipeline
+
+The curriculum ships **committed and validated** in `content/curriculum.json`
+(Traditional characters, Taiwan usage), so the app runs with no downloads or API
+key. Three scripts (run from `backend/`, with the venv active) support authoring:
+
+```bash
+python -m scripts.load_content            # validate + load content into SQLite
+python -m scripts.load_content --check    # validate only (vocab/sentence check)
+python -m scripts.import_cedict           # download + import CC-CEDICT dictionary
+python -m scripts.generate_content        # (optional) regenerate/expand via Claude API
+```
+
+Every sentence is checked so it only uses characters the learner has met by that
+point in the curriculum; `load_content` refuses to load content with violations.
+`import_cedict` and `generate_content` need network / an `ANTHROPIC_API_KEY`
+respectively and are **not** required to run the app.
+
+**Audio:** the `/api/audio` endpoint synthesises zh-TW speech with edge-tts and
+caches mp3s under `data/audio/`. If a clip can't be generated (offline, or a
+restricted network), the endpoint returns 503 and the UI degrades gracefully —
+the audio button simply produces no sound rather than breaking the exercise.
+
+---
+
 ## Roadmap (build phases)
 
 Each phase ends runnable.
 
-- **Phase 0 — skeleton ✅ (this):** FastAPI + Vite scaffold, SQLite schema, settings
+- **Phase 0 — skeleton ✅:** FastAPI + Vite scaffold, SQLite schema, settings
   page, PWA manifest, design tokens, six-tab shell.
-- **Phase 1 — Content + Learn:** CC-CEDICT import, HSK 2–3 curriculum, lesson
-  exercise engine, edge-tts audio with caching.
+- **Phase 1 — Content + Learn ✅ (this):** validated Taiwan-Mandarin curriculum,
+  curriculum browser, full lesson exercise engine (all non-speaking drills),
+  edge-tts audio with disk caching, completion → SRS enrolment, plus the content
+  pipeline scripts (CC-CEDICT import, content loader, Claude-based generator).
 - **Phase 2 — Review:** FSRS scheduling, placement quiz, review queue.
 - **Phase 3 — Listen:** dictation, comprehension sets, tone ear-training.
 - **Phase 4 — Speak:** mic capture, faster-whisper scoring, pitch-contour tone feedback.

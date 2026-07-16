@@ -34,7 +34,7 @@ CREATE INDEX IF NOT EXISTS idx_dictionary_trad ON dictionary(traditional);
 -- Vocabulary (learnable items, mapped to HSK levels + Taiwan usage)
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS vocab (
-    id           INTEGER PRIMARY KEY,
+    id           TEXT PRIMARY KEY,        -- content slug, e.g. 'v_bianli'
     traditional  TEXT NOT NULL,
     pinyin       TEXT NOT NULL,
     gloss        TEXT NOT NULL,
@@ -54,7 +54,7 @@ CREATE INDEX IF NOT EXISTS idx_vocab_hsk ON vocab(hsk_level);
 -- Grammar points
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS grammar (
-    id           INTEGER PRIMARY KEY,
+    id           TEXT PRIMARY KEY,       -- content slug, e.g. 'g_youmeiyou'
     title        TEXT NOT NULL,          -- e.g. "了 (completed action)"
     pattern      TEXT NOT NULL,          -- the structural pattern
     explanation  TEXT NOT NULL,          -- plain-English
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS grammar (
 -- Curriculum: units -> lessons -> exercises
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS units (
-    id          INTEGER PRIMARY KEY,
+    id          TEXT PRIMARY KEY,        -- content slug, e.g. 'u_conv'
     title       TEXT NOT NULL,           -- Taiwan daily-life theme
     subtitle    TEXT,
     hsk_level   INTEGER,
@@ -75,30 +75,34 @@ CREATE TABLE IF NOT EXISTS units (
 );
 
 CREATE TABLE IF NOT EXISTS lessons (
-    id          INTEGER PRIMARY KEY,
-    unit_id     INTEGER NOT NULL REFERENCES units(id) ON DELETE CASCADE,
+    id          TEXT PRIMARY KEY,        -- content slug, e.g. 'l_conv_1'
+    unit_id     TEXT NOT NULL REFERENCES units(id) ON DELETE CASCADE,
     title       TEXT NOT NULL,
     sort_order  INTEGER NOT NULL DEFAULT 0,
-    dialogue    TEXT                     -- JSON array of dialogue lines
+    dialogue    TEXT,                    -- JSON array of dialogue lines
+    sentences   TEXT                     -- JSON array of drill sentences (tokens+pinyin+gloss)
 );
 CREATE INDEX IF NOT EXISTS idx_lessons_unit ON lessons(unit_id);
 
 -- Which vocab / grammar a lesson introduces (drives the n+1 vocab constraint).
 CREATE TABLE IF NOT EXISTS lesson_vocab (
-    lesson_id INTEGER NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
-    vocab_id  INTEGER NOT NULL REFERENCES vocab(id) ON DELETE CASCADE,
+    lesson_id  TEXT NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
+    vocab_id   TEXT NOT NULL REFERENCES vocab(id) ON DELETE CASCADE,
+    sort_order INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (lesson_id, vocab_id)
 );
 CREATE TABLE IF NOT EXISTS lesson_grammar (
-    lesson_id  INTEGER NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
-    grammar_id INTEGER NOT NULL REFERENCES grammar(id) ON DELETE CASCADE,
+    lesson_id  TEXT NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
+    grammar_id TEXT NOT NULL REFERENCES grammar(id) ON DELETE CASCADE,
+    sort_order INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (lesson_id, grammar_id)
 );
 
--- Generated exercise stream for a lesson (cards + drills).
+-- Generated exercise stream for a lesson (cards + drills). Phase 1 builds the
+-- stream dynamically in the API; this table is reserved for pre-baked streams.
 CREATE TABLE IF NOT EXISTS exercises (
     id          INTEGER PRIMARY KEY,
-    lesson_id   INTEGER NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
+    lesson_id   TEXT NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
     kind        TEXT NOT NULL,           -- vocab_intro|grammar|match|audio_meaning|
                                          -- tile_build|cloze|listen_type|translate|
                                          -- dialogue|speak_check
@@ -111,7 +115,7 @@ CREATE INDEX IF NOT EXISTS idx_exercises_lesson ON exercises(lesson_id);
 -- Progress / completion state (single user)
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS lesson_progress (
-    lesson_id     INTEGER PRIMARY KEY REFERENCES lessons(id) ON DELETE CASCADE,
+    lesson_id     TEXT PRIMARY KEY REFERENCES lessons(id) ON DELETE CASCADE,
     completed     INTEGER NOT NULL DEFAULT 0,  -- 0/1
     best_score    REAL,                        -- 0..1
     unlocked      INTEGER NOT NULL DEFAULT 0,  -- 0/1
@@ -124,7 +128,7 @@ CREATE TABLE IF NOT EXISTS lesson_progress (
 CREATE TABLE IF NOT EXISTS srs_cards (
     id            INTEGER PRIMARY KEY,
     item_type     TEXT NOT NULL,          -- 'vocab' | 'grammar'
-    item_id       INTEGER NOT NULL,       -- FK into vocab/grammar (by type)
+    item_id       TEXT NOT NULL,          -- FK into vocab/grammar (by type)
     card_type     TEXT NOT NULL,          -- recognition|recall|audio_meaning|cloze|speak
     -- FSRS state:
     stability     REAL,
@@ -152,8 +156,8 @@ CREATE INDEX IF NOT EXISTS idx_reviewlog_card ON review_log(card_id);
 CREATE TABLE IF NOT EXISTS drill_errors (
     id          INTEGER PRIMARY KEY,
     exercise_id INTEGER REFERENCES exercises(id) ON DELETE SET NULL,
-    grammar_id  INTEGER REFERENCES grammar(id) ON DELETE SET NULL,
-    vocab_id    INTEGER REFERENCES vocab(id) ON DELETE SET NULL,
+    grammar_id  TEXT REFERENCES grammar(id) ON DELETE SET NULL,
+    vocab_id    TEXT REFERENCES vocab(id) ON DELETE SET NULL,
     detail      TEXT,
     occurred_at TEXT NOT NULL DEFAULT (datetime('now'))
 );

@@ -14,10 +14,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
-from . import __version__
+from . import __version__, content
 from .config import get_settings
-from .db import init_db
-from .routers import health, settings as settings_router
+from .db import connect, init_db
+from .routers import audio, health, learn, settings as settings_router
 
 settings = get_settings()
 
@@ -44,11 +44,19 @@ app.add_middleware(
 def _startup() -> None:
     settings.ensure_dirs()
     init_db()
+    # Seed curriculum content on first run if the tables are empty.
+    conn = connect()
+    try:
+        content.ensure_loaded(conn)
+    finally:
+        conn.close()
 
 
 # --- API routers ---
 app.include_router(health.router)
 app.include_router(settings_router.router)
+app.include_router(learn.router)
+app.include_router(audio.router)
 
 
 # --- Cached TTS audio (populated in Phase 1); harmless to expose now ---

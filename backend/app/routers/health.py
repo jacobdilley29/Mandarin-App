@@ -25,13 +25,12 @@ def status() -> dict:
     settings = get_settings()
     return {
         "version": __version__,
-        "phase": 0,
+        "phase": 1,
         "features": {
             # Talk tab degrades gracefully when no key is present.
             "conversation": settings.conversation_enabled,
-            # These arrive in later phases; surfaced now so the UI can label
-            # tabs as "coming soon" honestly.
-            "learn": False,
+            # Learn ships in Phase 1; the rest arrive in later phases.
+            "learn": True,
             "review": False,
             "listen": False,
             "speak": False,

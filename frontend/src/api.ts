@@ -25,6 +25,79 @@ export interface Settings {
   placement_done: boolean;
 }
 
+// --- Learn / curriculum types (mirror backend shapes) ---
+export interface CurriculumLesson {
+  id: string;
+  title: string;
+  vocab_count: number;
+  completed: boolean;
+  best_score: number | null;
+  unlocked: boolean;
+}
+export interface CurriculumUnit {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  hsk_level: number | null;
+  lessons: CurriculumLesson[];
+}
+export interface Curriculum {
+  units: CurriculumUnit[];
+}
+
+export interface Example {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface Option {
+  text: string;
+  correct: boolean;
+}
+// Payload shapes vary by kind; consumers narrow on `kind`.
+export interface Exercise {
+  id: string;
+  kind:
+    | "vocab_intro"
+    | "grammar"
+    | "match"
+    | "audio_meaning"
+    | "cloze"
+    | "tile_build"
+    | "translate"
+    | "listen_type"
+    | "dialogue";
+  gradable: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  payload: any;
+}
+export interface Lesson {
+  id: string;
+  title: string;
+  unit_id: string;
+  unlocked: boolean;
+  gradable_count: number;
+  exercises: Exercise[];
+}
+
+export interface DrillResult {
+  id: string;
+  kind: string;
+  correct: boolean;
+  vocab_id?: string | null;
+  grammar_id?: string | null;
+}
+export interface LessonResult {
+  score: number;
+  correct: number;
+  total: number;
+  passed: boolean;
+  completed: boolean;
+  best_score: number;
+  unlocked_next: string | null;
+  new_srs_cards: number;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -43,4 +116,19 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(patch),
     }).then(json<Settings>),
+  curriculum: () => fetch("/api/curriculum").then(json<Curriculum>),
+  lesson: (id: string) => fetch(`/api/lesson/${id}`).then(json<Lesson>),
+  lessonResult: (id: string, results: DrillResult[]) =>
+    fetch(`/api/lesson/${id}/result`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ results }),
+    }).then(json<LessonResult>),
 };
+
+/** URL for a cached TTS clip. */
+export function audioUrl(text: string, voice?: string): string {
+  const params = new URLSearchParams({ text });
+  if (voice) params.set("voice", voice);
+  return `/api/audio?${params.toString()}`;
+}

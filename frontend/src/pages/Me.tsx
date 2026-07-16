@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
-import { api, type Settings } from "../api";
-import { applyTheme } from "../theme";
+import { type Settings } from "../api";
+import { useSettings } from "../SettingsContext";
 import { useStatus } from "../StatusContext";
 import { ToneRow } from "../components/ToneMark";
 
@@ -49,6 +48,27 @@ function Segmented<T extends string | number>({
   );
 }
 
+function Toggle({ on, onClick }: { on: boolean; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      aria-pressed={on}
+      onClick={onClick}
+      className={[
+        "tap relative w-12 rounded-full transition-colors",
+        on ? "bg-primary" : "border border-border bg-surface-2",
+      ].join(" ")}
+    >
+      <span
+        className={[
+          "absolute top-1 h-4 w-4 rounded-full bg-surface shadow transition-all",
+          on ? "left-7" : "left-1",
+        ].join(" ")}
+      />
+    </button>
+  );
+}
+
 function Row({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) {
   return (
     <div className="flex items-center justify-between gap-4 py-3">
@@ -63,49 +83,7 @@ function Row({ label, hint, children }: { label: string; hint?: string; children
 
 export default function Me() {
   const status = useStatus();
-  const [settings, setSettings] = useState<Settings | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [saving, setSaving] = useState(false);
-
-  useEffect(() => {
-    api
-      .getSettings()
-      .then((s) => {
-        setSettings(s);
-        applyTheme(s.theme);
-        try {
-          localStorage.setItem("theme", s.theme);
-        } catch {
-          /* ignore */
-        }
-      })
-      .catch((e) => setError(String(e)));
-  }, []);
-
-  async function patch(update: Partial<Settings>) {
-    if (!settings) return;
-    // Optimistic update so the UI feels immediate.
-    const next = { ...settings, ...update };
-    setSettings(next);
-    if (update.theme) {
-      applyTheme(update.theme);
-      try {
-        localStorage.setItem("theme", update.theme);
-      } catch {
-        /* ignore */
-      }
-    }
-    setSaving(true);
-    try {
-      const saved = await api.updateSettings(update);
-      setSettings(saved);
-      setError(null);
-    } catch (e) {
-      setError(String(e));
-    } finally {
-      setSaving(false);
-    }
-  }
+  const { settings, error, saving, update } = useSettings();
 
   return (
     <div className="mx-auto max-w-xl px-4 py-6">
@@ -128,36 +106,21 @@ export default function Me() {
         <>
           <section className="card divide-y divide-border">
             <Row label="Show pinyin" hint="Global default; hidden in review to force recall">
-              <button
-                type="button"
-                aria-pressed={settings.show_pinyin}
-                onClick={() => patch({ show_pinyin: !settings.show_pinyin })}
-                className={[
-                  "tap relative w-12 rounded-full transition-colors",
-                  settings.show_pinyin ? "bg-primary" : "bg-surface-2 border border-border",
-                ].join(" ")}
-              >
-                <span
-                  className={[
-                    "absolute top-1 h-4 w-4 rounded-full bg-surface shadow transition-all",
-                    settings.show_pinyin ? "left-7" : "left-1",
-                  ].join(" ")}
-                />
-              </button>
+              <Toggle on={settings.show_pinyin} onClick={() => update({ show_pinyin: !settings.show_pinyin })} />
             </Row>
 
-            <Row label="Playback speed" hint="Used across Listen, Speak, and audio playback">
+            <Row label="Playback speed" hint="Used across Learn, Listen, and audio playback">
               <Segmented
                 value={settings.playback_rate}
                 options={RATES}
-                onChange={(v) => patch({ playback_rate: v })}
+                onChange={(v) => update({ playback_rate: v })}
               />
             </Row>
 
             <Row label="Voice" hint="zh-TW edge-tts voice">
               <select
                 value={settings.tts_voice}
-                onChange={(e) => patch({ tts_voice: e.target.value })}
+                onChange={(e) => update({ tts_voice: e.target.value })}
                 className="tap rounded-md border border-border bg-surface px-3 text-sm text-ink"
               >
                 {VOICES.map((v) => (
@@ -172,7 +135,7 @@ export default function Me() {
               <Segmented
                 value={settings.theme}
                 options={THEMES as unknown as { value: string; label: string }[]}
-                onChange={(v) => patch({ theme: v as Settings["theme"] })}
+                onChange={(v) => update({ theme: v as Settings["theme"] })}
               />
             </Row>
 
@@ -183,35 +146,18 @@ export default function Me() {
                 max={100}
                 value={settings.daily_new_limit}
                 onChange={(e) =>
-                  patch({ daily_new_limit: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })
+                  update({ daily_new_limit: Math.max(0, Math.min(100, Number(e.target.value) || 0)) })
                 }
                 className="tap w-20 rounded-md border border-border bg-surface px-3 text-sm text-ink"
               />
             </Row>
 
             <Row label="Reduce motion" hint="Minimise feedback animations">
-              <button
-                type="button"
-                aria-pressed={settings.reduced_motion}
-                onClick={() => patch({ reduced_motion: !settings.reduced_motion })}
-                className={[
-                  "tap relative w-12 rounded-full transition-colors",
-                  settings.reduced_motion ? "bg-primary" : "bg-surface-2 border border-border",
-                ].join(" ")}
-              >
-                <span
-                  className={[
-                    "absolute top-1 h-4 w-4 rounded-full bg-surface shadow transition-all",
-                    settings.reduced_motion ? "left-7" : "left-1",
-                  ].join(" ")}
-                />
-              </button>
+              <Toggle on={settings.reduced_motion} onClick={() => update({ reduced_motion: !settings.reduced_motion })} />
             </Row>
           </section>
 
-          <p className="mt-3 text-right text-xs text-ink-faint">
-            {saving ? "Saving…" : "Saved"}
-          </p>
+          <p className="mt-3 text-right text-xs text-ink-faint">{saving ? "Saving…" : "Saved"}</p>
         </>
       )}
 
@@ -228,7 +174,7 @@ export default function Me() {
           </div>
           <div className="flex justify-between">
             <dt>Build phase</dt>
-            <dd className="text-ink">Phase {status?.phase ?? 0} — skeleton</dd>
+            <dd className="text-ink">Phase {status?.phase ?? 0}</dd>
           </div>
           <div className="flex justify-between">
             <dt>Conversation (Talk)</dt>

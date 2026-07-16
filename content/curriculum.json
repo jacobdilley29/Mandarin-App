@@ -1,0 +1,178 @@
+{
+  "meta": {
+    "schema": 1,
+    "note": "Seed curriculum for Phase 1. Traditional characters, Taiwan usage. Hand-authored and vocab-validated. Expandable via backend/scripts/generate_content.py.",
+    "generated_by": "hand-authored",
+    "function_words": [
+      "我", "你", "妳", "他", "她", "它", "們", "的", "了", "嗎", "呢", "吧",
+      "喔", "耶", "啦", "哦", "嗯", "是", "不", "沒", "有", "在", "要", "想",
+      "會", "能", "可以", "請", "問", "一", "二", "兩", "三", "四", "五", "六",
+      "七", "八", "九", "十", "個", "這", "那", "哪", "裡", "邊", "很", "太",
+      "也", "都", "和", "跟", "還", "就", "才", "給", "幫", "對", "好", "來",
+      "用", "喝", "吃", "錢", "您",
+      "去", "到", "說", "看", "聽", "嗎", "怎麼", "什麼", "多少", "幾", "誰",
+      "為什麼", "因為", "所以", "但是", "可是", "如果", "一下", "一點", "現在",
+      "今天", "謝謝", "不好意思", "先生", "小姐", "元", "塊"
+    ]
+  },
+  "units": [
+    {
+      "id": "u_conv",
+      "title": "便利商店",
+      "subtitle": "Convenience stores",
+      "hsk_level": 2,
+      "sort_order": 1,
+      "lessons": [
+        {
+          "id": "l_conv_1",
+          "title": "找東西",
+          "sort_order": 1,
+          "vocab": [
+            {"id": "v_bianli", "traditional": "便利商店", "pinyin": "biànlì shāngdiàn", "gloss": "convenience store", "hsk_level": 2, "taiwan_note": "口語常說「小七」(7-Eleven) 或「超商」。", "example": {"hanzi": "那是便利商店。", "pinyin": "Nà shì biànlì shāngdiàn.", "gloss": "That's a convenience store."}},
+            {"id": "v_dongxi", "traditional": "東西", "pinyin": "dōngxi", "gloss": "thing; stuff", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我想買一點東西。", "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.", "gloss": "I want to buy a few things."}},
+            {"id": "v_mai", "traditional": "買", "pinyin": "mǎi", "gloss": "to buy", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "你要買什麼？", "pinyin": "Nǐ yào mǎi shénme?", "gloss": "What do you want to buy?"}},
+            {"id": "v_shui", "traditional": "水", "pinyin": "shuǐ", "gloss": "water", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "請給我一瓶水。", "pinyin": "Qǐng gěi wǒ yì píng shuǐ.", "gloss": "Please give me a bottle of water."}},
+            {"id": "v_ping", "traditional": "瓶", "pinyin": "píng", "gloss": "bottle (measure word)", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要兩瓶水。", "pinyin": "Wǒ yào liǎng píng shuǐ.", "gloss": "I want two bottles of water."}},
+            {"id": "v_biandang", "traditional": "便當", "pinyin": "biàndāng", "gloss": "boxed meal; bento", "hsk_level": 2, "taiwan_note": "台灣用「便當」，不用「盒飯」。", "example": {"hanzi": "這個便當多少錢？", "pinyin": "Zhè ge biàndāng duōshǎo qián?", "gloss": "How much is this boxed meal?"}},
+            {"id": "v_zainali", "traditional": "在哪裡", "pinyin": "zài nǎlǐ", "gloss": "where (is it)", "hsk_level": 2, "taiwan_note": "台灣多說「哪裡」，少說「哪兒」。", "example": {"hanzi": "便當在哪裡？", "pinyin": "Biàndāng zài nǎlǐ?", "gloss": "Where are the boxed meals?"}}
+          ],
+          "grammar": [
+            {
+              "id": "g_youmeiyou",
+              "title": "有沒有 — asking if something exists",
+              "pattern": "Subject + 有沒有 + Noun？",
+              "explanation": "To ask whether something exists or is available, put 有沒有 (\"have-not-have\") before the noun. It's a quick yes/no question that doesn't need 嗎.",
+              "examples": [
+                {"hanzi": "你們有沒有便當？", "pinyin": "Nǐmen yǒu méiyǒu biàndāng?", "gloss": "Do you have boxed meals?"},
+                {"hanzi": "這裡有沒有水？", "pinyin": "Zhèlǐ yǒu méiyǒu shuǐ?", "gloss": "Is there water here?"},
+                {"hanzi": "他有沒有便當？", "pinyin": "Tā yǒu méiyǒu biàndāng?", "gloss": "Does he have a boxed meal?"}
+              ],
+              "hsk_level": 2
+            }
+          ],
+          "dialogue": [
+            {"speaker": "客人", "hanzi": "不好意思，請問有沒有便當？", "pinyin": "Bùhǎoyìsi, qǐngwèn yǒu méiyǒu biàndāng?", "gloss": "Excuse me, do you have boxed meals?"},
+            {"speaker": "店員", "hanzi": "有，便當在那邊。", "pinyin": "Yǒu, biàndāng zài nà biān.", "gloss": "Yes, the boxed meals are over there."},
+            {"speaker": "客人", "hanzi": "水在哪裡？", "pinyin": "Shuǐ zài nǎlǐ?", "gloss": "Where is the water?"},
+            {"speaker": "店員", "hanzi": "水在那邊，這邊請。", "pinyin": "Shuǐ zài nà biān, zhè biān qǐng.", "gloss": "The water's over there, this way please."}
+          ],
+          "sentences": [
+            {"tokens": ["我", "要", "一", "個", "便當"], "pinyin": "Wǒ yào yí ge biàndāng.", "gloss": "I want one boxed meal.", "cloze_index": 4},
+            {"tokens": ["請", "給", "我", "兩", "瓶", "水"], "pinyin": "Qǐng gěi wǒ liǎng píng shuǐ.", "gloss": "Please give me two bottles of water.", "cloze_index": 4},
+            {"tokens": ["便當", "在", "哪裡"], "pinyin": "Biàndāng zài nǎlǐ?", "gloss": "Where are the boxed meals?", "cloze_index": 0},
+            {"tokens": ["你們", "有沒有", "水"], "pinyin": "Nǐmen yǒu méiyǒu shuǐ?", "gloss": "Do you have water?", "cloze_index": 1},
+            {"tokens": ["我", "想", "買", "一點", "東西"], "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.", "gloss": "I want to buy a few things.", "cloze_index": 4}
+          ]
+        },
+        {
+          "id": "l_conv_2",
+          "title": "結帳",
+          "sort_order": 2,
+          "vocab": [
+            {"id": "v_jiezhang", "traditional": "結帳", "pinyin": "jiézhàng", "gloss": "to check out; pay the bill", "hsk_level": 3, "taiwan_note": "在超商、餐廳都說「結帳」。", "example": {"hanzi": "我要結帳。", "pinyin": "Wǒ yào jiézhàng.", "gloss": "I'd like to check out."}},
+            {"id": "v_duoshaoqian", "traditional": "多少錢", "pinyin": "duōshǎo qián", "gloss": "how much (money)", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "一共多少錢？", "pinyin": "Yígòng duōshǎo qián?", "gloss": "How much is it altogether?"}},
+            {"id": "v_yigong", "traditional": "一共", "pinyin": "yígòng", "gloss": "in total; altogether", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "一共三個便當。", "pinyin": "Yígòng sān ge biàndāng.", "gloss": "Three boxed meals in total."}},
+            {"id": "v_easycard", "traditional": "悠遊卡", "pinyin": "yōuyóukǎ", "gloss": "EasyCard (stored-value card)", "hsk_level": 3, "taiwan_note": "台灣捷運、超商通用的儲值卡。", "example": {"hanzi": "可以用悠遊卡付嗎？", "pinyin": "Kěyǐ yòng yōuyóukǎ fù ma?", "gloss": "Can I pay with an EasyCard?"}},
+            {"id": "v_fuqian", "traditional": "付", "pinyin": "fù", "gloss": "to pay", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我用現金付。", "pinyin": "Wǒ yòng xiànjīn fù.", "gloss": "I'll pay with cash."}},
+            {"id": "v_xianjin", "traditional": "現金", "pinyin": "xiànjīn", "gloss": "cash", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這裡只用現金嗎？", "pinyin": "Zhèlǐ zhǐ yòng xiànjīn ma?", "gloss": "Do you only take cash here?"}},
+            {"id": "v_fapiao", "traditional": "發票", "pinyin": "fāpiào", "gloss": "receipt (with lottery number)", "hsk_level": 3, "taiwan_note": "統一發票有對獎功能，別隨手丟！", "example": {"hanzi": "發票要嗎？", "pinyin": "Fāpiào yào ma?", "gloss": "Do you want the receipt?"}}
+          ],
+          "grammar": [
+            {
+              "id": "g_yong",
+              "title": "用 — the means / instrument",
+              "pattern": "Subject + 用 + Instrument + Verb",
+              "explanation": "用 (\"to use\") marks the tool or method you do something with. Put 用 + the means before the verb: 用現金付 = pay with cash.",
+              "examples": [
+                {"hanzi": "我用悠遊卡付。", "pinyin": "Wǒ yòng yōuyóukǎ fù.", "gloss": "I'll pay with an EasyCard."},
+                {"hanzi": "可以用現金付嗎？", "pinyin": "Kěyǐ yòng xiànjīn fù ma?", "gloss": "Can I pay with cash?"},
+                {"hanzi": "你用什麼付？", "pinyin": "Nǐ yòng shénme fù?", "gloss": "What do you pay with?"}
+              ],
+              "hsk_level": 2
+            },
+            {
+              "id": "g_zhi",
+              "title": "只 — only",
+              "pattern": "Subject + 只 + Verb",
+              "explanation": "只 (\"only\") goes right before the verb to limit it: 只收現金 = only accept cash.",
+              "examples": [
+                {"hanzi": "這裡只用現金。", "pinyin": "Zhèlǐ zhǐ yòng xiànjīn.", "gloss": "They only take cash here."},
+                {"hanzi": "我只要一個。", "pinyin": "Wǒ zhǐ yào yí ge.", "gloss": "I only want one."},
+                {"hanzi": "他只買水。", "pinyin": "Tā zhǐ mǎi shuǐ.", "gloss": "He only buys water."}
+              ],
+              "hsk_level": 2
+            }
+          ],
+          "dialogue": [
+            {"speaker": "店員", "hanzi": "您好，要結帳嗎？", "pinyin": "Nín hǎo, yào jiézhàng ma?", "gloss": "Hello, ready to check out?"},
+            {"speaker": "客人", "hanzi": "對，一共多少錢？", "pinyin": "Duì, yígòng duōshǎo qián?", "gloss": "Yes, how much altogether?"},
+            {"speaker": "店員", "hanzi": "一共八十五元。發票要嗎？", "pinyin": "Yígòng bāshíwǔ yuán. Fāpiào yào ma?", "gloss": "Eighty-five NT dollars total. Do you want the receipt?"},
+            {"speaker": "客人", "hanzi": "要，我用悠遊卡付。", "pinyin": "Yào, wǒ yòng yōuyóukǎ fù.", "gloss": "Yes, I'll pay with my EasyCard."}
+          ],
+          "sentences": [
+            {"tokens": ["我", "要", "結帳"], "pinyin": "Wǒ yào jiézhàng.", "gloss": "I'd like to check out.", "cloze_index": 2},
+            {"tokens": ["一共", "多少錢"], "pinyin": "Yígòng duōshǎo qián?", "gloss": "How much altogether?", "cloze_index": 0},
+            {"tokens": ["我", "用", "悠遊卡", "付"], "pinyin": "Wǒ yòng yōuyóukǎ fù.", "gloss": "I'll pay with an EasyCard.", "cloze_index": 2},
+            {"tokens": ["這裡", "只", "用", "現金", "嗎"], "pinyin": "Zhèlǐ zhǐ yòng xiànjīn ma?", "gloss": "Do you only take cash here?", "cloze_index": 3},
+            {"tokens": ["發票", "要", "嗎"], "pinyin": "Fāpiào yào ma?", "gloss": "Do you want the receipt?", "cloze_index": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u_drinks",
+      "title": "手搖飲料",
+      "subtitle": "Bubble tea & hand-shaken drinks",
+      "hsk_level": 3,
+      "sort_order": 2,
+      "lessons": [
+        {
+          "id": "l_drinks_1",
+          "title": "點珍奶",
+          "sort_order": 1,
+          "vocab": [
+            {"id": "v_zhenzhu", "traditional": "珍珠奶茶", "pinyin": "zhēnzhū nǎichá", "gloss": "bubble (pearl) milk tea", "hsk_level": 3, "taiwan_note": "口語常簡稱「珍奶」。", "example": {"hanzi": "我要一杯珍珠奶茶。", "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea."}},
+            {"id": "v_bei", "traditional": "杯", "pinyin": "bēi", "gloss": "cup / glass (measure word)", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "兩杯紅茶。", "pinyin": "Liǎng bēi hóngchá.", "gloss": "Two black teas."}},
+            {"id": "v_tiandu", "traditional": "甜度", "pinyin": "tiándù", "gloss": "sweetness level", "hsk_level": 3, "taiwan_note": "手搖店必問：甜度、冰塊。", "example": {"hanzi": "甜度要半糖嗎？", "pinyin": "Tiándù yào bàntáng ma?", "gloss": "Half sugar for the sweetness?"}},
+            {"id": "v_bingkuai", "traditional": "冰塊", "pinyin": "bīngkuài", "gloss": "ice (cubes)", "hsk_level": 3, "taiwan_note": "常說「去冰、微冰、正常冰」。", "example": {"hanzi": "我要去冰。", "pinyin": "Wǒ yào qù bīng.", "gloss": "I want it with no ice."}},
+            {"id": "v_bantang", "traditional": "半糖", "pinyin": "bàntáng", "gloss": "half sugar", "hsk_level": 3, "taiwan_note": "甜度選項：全糖、半糖、微糖、無糖。", "example": {"hanzi": "珍奶半糖，謝謝。", "pinyin": "Zhēnnǎi bàntáng, xièxie.", "gloss": "Bubble tea, half sugar, thanks."}},
+            {"id": "v_waidai", "traditional": "外帶", "pinyin": "wàidài", "gloss": "takeout; to go", "hsk_level": 3, "taiwan_note": "常和「內用」對比使用。", "example": {"hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "For here or to go?"}},
+            {"id": "v_neiyong", "traditional": "內用", "pinyin": "nèiyòng", "gloss": "dine in", "hsk_level": 3, "taiwan_note": "台灣點餐必問：內用還是外帶。", "example": {"hanzi": "內用還是外帶？", "pinyin": "Nèiyòng háishì wàidài?", "gloss": "For here or to go?"}},
+            {"id": "v_hongcha", "traditional": "紅茶", "pinyin": "hóngchá", "gloss": "black tea", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我要一杯紅茶。", "pinyin": "Wǒ yào yì bēi hóngchá.", "gloss": "I'd like a black tea."}},
+            {"id": "v_quantang", "traditional": "全糖", "pinyin": "quántáng", "gloss": "full sugar", "hsk_level": 3, "taiwan_note": "甜度：全糖、半糖、微糖、無糖。", "example": {"hanzi": "甜度要全糖嗎？", "pinyin": "Tiándù yào quántáng ma?", "gloss": "Do you want full sugar?"}},
+            {"id": "v_huanying", "traditional": "歡迎光臨", "pinyin": "huānyíng guānglín", "gloss": "welcome (shop greeting)", "hsk_level": 3, "taiwan_note": "進店時店員的招呼語。", "example": {"hanzi": "歡迎光臨！", "pinyin": "Huānyíng guānglín!", "gloss": "Welcome!"}}
+          ],
+          "grammar": [
+            {
+              "id": "g_haishi",
+              "title": "還是 — \"or\" in questions",
+              "pattern": "A 還是 B？",
+              "explanation": "還是 offers a choice between two options in a question: A 還是 B = \"A or B?\". Don't use 或 (huò) here — 或 is for statements, 還是 is for questions.",
+              "examples": [
+                {"hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?"},
+                {"hanzi": "你要紅茶還是奶茶？", "pinyin": "Nǐ yào hóngchá háishì nǎichá?", "gloss": "Do you want black tea or milk tea?"},
+                {"hanzi": "半糖還是全糖？", "pinyin": "Bàntáng háishì quántáng?", "gloss": "Half sugar or full sugar?"}
+              ],
+              "hsk_level": 2
+            }
+          ],
+          "dialogue": [
+            {"speaker": "店員", "hanzi": "歡迎光臨，要喝什麼？", "pinyin": "Huānyíng guānglín, yào hē shénme?", "gloss": "Welcome, what would you like to drink?"},
+            {"speaker": "客人", "hanzi": "我要一杯珍珠奶茶。", "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea."},
+            {"speaker": "店員", "hanzi": "甜度冰塊呢？", "pinyin": "Tiándù bīngkuài ne?", "gloss": "Sweetness and ice?"},
+            {"speaker": "客人", "hanzi": "半糖、去冰，謝謝。", "pinyin": "Bàntáng, qù bīng, xièxie.", "gloss": "Half sugar, no ice, thanks."},
+            {"speaker": "店員", "hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?"},
+            {"speaker": "客人", "hanzi": "外帶。", "pinyin": "Wàidài.", "gloss": "To go."}
+          ],
+          "sentences": [
+            {"tokens": ["我", "要", "一", "杯", "珍珠奶茶"], "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea.", "cloze_index": 4},
+            {"tokens": ["甜度", "要", "半糖"], "pinyin": "Tiándù yào bàntáng.", "gloss": "Half sugar for the sweetness.", "cloze_index": 2},
+            {"tokens": ["我", "要", "去", "冰塊"], "pinyin": "Wǒ yào qù bīngkuài.", "gloss": "I want no ice.", "cloze_index": 3},
+            {"tokens": ["外帶", "還是", "內用"], "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?", "cloze_index": 1},
+            {"tokens": ["請", "給", "我", "兩", "杯"], "pinyin": "Qǐng gěi wǒ liǎng bēi.", "gloss": "Please give me two cups.", "cloze_index": 4}
+          ]
+        }
+      ]
+    }
+  ]
+}
