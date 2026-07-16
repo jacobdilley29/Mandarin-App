@@ -122,3 +122,18 @@ def validate_curriculum(data: dict) -> ValidationResult:
                     result.add(f"{lid} dialogue {i}", line["hanzi"], unknown)
 
     return result
+
+
+def validate_listen(data: dict, allowed: set[str]) -> ValidationResult:
+    """Validate comprehension-set dialogue lines against a known-character set.
+
+    Unlike the curriculum (which accumulates lesson by lesson), listening sets
+    are validated against the full pool of known vocabulary + function words.
+    """
+    result = ValidationResult()
+    for s in data.get("sets", []):
+        sid = s.get("id", "?")
+        for i, line in enumerate(s.get("dialogue", [])):
+            if line.get("hanzi"):
+                result.add(f"{sid} line {i}", line["hanzi"], check_sentence(line["hanzi"], allowed))
+    return result

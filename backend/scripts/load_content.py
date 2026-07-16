@@ -21,7 +21,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app import content, db  # noqa: E402
-from app.validation import validate_curriculum  # noqa: E402
+from app.config import REPO_ROOT  # noqa: E402
+from app.validation import (  # noqa: E402
+    allowed_chars,
+    validate_curriculum,
+    validate_listen,
+)
 
 
 def main() -> int:
@@ -40,14 +45,35 @@ def main() -> int:
 
     result = validate_curriculum(data)
     if result.ok:
-        print("✓ vocab validation passed — all sentences use in-scope characters")
+        print("✓ curriculum validation passed — all sentences use in-scope characters")
     else:
-        print(f"✗ {len(result.violations)} vocab violation(s):")
+        print(f"✗ {len(result.violations)} curriculum violation(s):")
         for v in result.violations:
             print(f"    [{v.where}] {v.text}  → unknown: {' '.join(v.unknown)}")
         if not args.force and not args.check:
             print("Refusing to load. Fix the content or pass --force.")
             return 1
+
+    # Validate listening comprehension sets against the full known-vocab pool.
+    listen_path = REPO_ROOT / "content" / "listen.json"
+    if listen_path.is_file():
+        listen_data = json.loads(listen_path.read_text(encoding="utf-8"))
+        words = [v["traditional"] for u in data.get("units", [])
+                 for lesson in u.get("lessons", []) for v in lesson.get("vocab", [])]
+        if content.HSK1_PATH.is_file():
+            hsk1 = json.loads(content.HSK1_PATH.read_text(encoding="utf-8"))
+            words += [v["traditional"] for v in hsk1.get("vocab", [])]
+        allowed = allowed_chars(words, data.get("meta", {}).get("function_words", []))
+        lres = validate_listen(listen_data, allowed)
+        if lres.ok:
+            print("✓ listen validation passed — comprehension sets use known vocab")
+        else:
+            print(f"✗ {len(lres.violations)} listen violation(s):")
+            for v in lres.violations:
+                print(f"    [{v.where}] {v.text}  → unknown: {' '.join(v.unknown)}")
+            if not args.force and not args.check:
+                print("Refusing to load. Fix content/listen.json or pass --force.")
+                return 1
 
     if args.check:
         return 0 if result.ok else 1

@@ -5,13 +5,12 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: Phase 2 (Review).** Learn (Phase 1) plus a full **Review** tab:
-> a first-run placement check over HSK 1–2 that seeds the deck (correct →
-> mature, miss → new), an FSRS-scheduled daily queue (py-fsrs) with rotating
-> card types (recognition / recall / audio→meaning / cloze), and Again / Hard /
-> Good / Easy rating. Learn completions auto-enrol vocab into the same deck.
-> Listen / Speak / Talk arrive in later phases (honest "coming soon"
-> placeholders for now).
+> **Status: Phase 3 (Listen).** Learn + Review plus a full **Listen** tab:
+> **dictation** (hear a sentence at 0.75×/1×/1.25×, type characters or pinyin,
+> get a diff-highlighted correction), **comprehension** dialogues with
+> questions (two zh-TW voices, one per speaker), and **tone ear-training**
+> (single-tone and tone-pair drills using the four tone-contour shapes).
+> Speak / Talk arrive in later phases (honest "coming soon" placeholders).
 
 ---
 
@@ -33,7 +32,10 @@ Mandarin-App/
 │   │   ├── audio.py         edge-tts synthesis + disk cache
 │   │   ├── srs.py           FSRS scheduling wrapper (py-fsrs)
 │   │   ├── review.py        review-queue builder + placement check
-│   │   └── routers/         health, settings, learn, review, audio
+│   │   ├── listen.py        dictation / comprehension / tone item builders
+│   │   ├── textdiff.py      pinyin & character dictation diffing
+│   │   ├── tones.py         tone extraction from pinyin
+│   │   └── routers/         health, settings, learn, review, listen, audio
 │   ├── scripts/             import_cedict · load_content · generate_content
 │   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
@@ -46,6 +48,7 @@ Mandarin-App/
 │   └── package.json
 ├── content/curriculum.json  seed curriculum (Traditional, Taiwan usage, validated)
 ├── content/hsk1.json        HSK 1 foundation pool for the placement check
+├── content/listen.json      listening comprehension sets (validated)
 ├── data/                    SQLite DB + audio cache (gitignored; auto-created)
 ├── legacy/                  the earlier static-PWA prototype, preserved for reference
 ├── DESIGN.md                palette + typography + tone-motif design tokens
@@ -165,10 +168,11 @@ Each phase ends runnable.
   curriculum browser, full lesson exercise engine (all non-speaking drills),
   edge-tts audio with disk caching, completion → SRS enrolment, plus the content
   pipeline scripts (CC-CEDICT import, content loader, Claude-based generator).
-- **Phase 2 — Review ✅ (this):** FSRS scheduling (py-fsrs), first-run placement
+- **Phase 2 — Review ✅:** FSRS scheduling (py-fsrs), first-run placement
   check over an HSK 1 foundation pool, daily review queue with rotating card
   types and Again/Hard/Good/Easy rating.
-- **Phase 3 — Listen:** dictation, comprehension sets, tone ear-training.
+- **Phase 3 — Listen ✅ (this):** dictation with pinyin/character diffing,
+  comprehension dialogues + questions, and tone ear-training (single + tone-pair).
 - **Phase 4 — Speak:** mic capture, faster-whisper scoring, pitch-contour tone feedback.
 - **Phase 5 — Talk + Progress:** Claude conversation mode, teacher notes, recap→SRS,
   progress dashboard.

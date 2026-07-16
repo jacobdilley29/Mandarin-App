@@ -147,6 +147,61 @@ export interface ReviewAnswerResult {
   stability: number | null;
 }
 
+// --- Listen types ---
+export interface DictationItem {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+  audio_text: string;
+  voice: string;
+}
+export interface DiffSegment {
+  type: "equal" | "wrong" | "missing" | "extra";
+  text?: string;
+  expected?: string;
+  got?: string;
+}
+export interface DiffResult {
+  mode: "han" | "pinyin";
+  correct: boolean;
+  tone_sensitive?: boolean;
+  segments: DiffSegment[];
+}
+export interface DialogueLine {
+  speaker: string;
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+  audio_text: string;
+  voice: string;
+}
+export interface Question {
+  prompt: string;
+  options: Option[];
+}
+export interface ComprehensionSet {
+  id: string;
+  title: string;
+  hsk_level: number | null;
+  dialogue: DialogueLine[];
+  questions: Question[];
+}
+export interface ToneOption {
+  tone?: number;
+  tones?: number[];
+  correct: boolean;
+  name?: string;
+}
+export interface ToneItem {
+  mode: "single" | "pair";
+  audio_text: string;
+  traditional: string;
+  pinyin: string;
+  tones: number[];
+  voice: string;
+  options: ToneOption[];
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -188,6 +243,22 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ card_id, rating }),
     }).then(json<ReviewAnswerResult>),
+  listenDictation: () => fetch("/api/listen/dictation").then(json<DictationItem>),
+  listenCheck: (body: {
+    expected_hanzi: string;
+    expected_pinyin: string;
+    answer: string;
+    tone_sensitive: boolean;
+  }) =>
+    fetch("/api/listen/check", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then(json<DiffResult>),
+  listenSet: (id?: string) =>
+    fetch(`/api/listen/set${id ? `?id=${encodeURIComponent(id)}` : ""}`).then(json<ComprehensionSet>),
+  listenTones: (mode: "single" | "pair") =>
+    fetch(`/api/listen/tones?mode=${mode}`).then(json<ToneItem>),
 };
 
 /** URL for a cached TTS clip. */
