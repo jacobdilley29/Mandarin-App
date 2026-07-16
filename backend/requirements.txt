@@ -1,0 +1,20 @@
+# --- Phase 0 (skeleton) — required to run the app today ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+python-multipart==0.0.20
+
+# --- Later phases (kept here as the documented target; install when their
+#     phase lands so `make setup` stays fast and reliable during Phase 0). ---
+# Phase 1 (content + audio):
+#   edge-tts==7.0.0
+#   anthropic>=0.42.0
+# Phase 2 (review/SRS):
+#   fsrs>=4.0.0
+# Phase 4 (speak/pronunciation):
+#   faster-whisper>=1.1.0
+#   librosa>=0.10.2
+#   praat-parselmouth>=0.4.5
+#   numpy>=1.26

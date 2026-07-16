@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------------------------------------------------------
+   Design tokens — the single CSS source, mirrored from DESIGN.md.
+   Light is the default; dark applies via prefers-color-scheme AND an explicit
+   [data-theme] override so the Settings toggle can win in both directions.
+---------------------------------------------------------------------------- */
+:root {
+  --bg: #f6f4ec;
+  --surface: #ffffff;
+  --surface-2: #edeade;
+  --border: #ded9c8;
+  --ink: #1e2a24;
+  --ink-soft: #5b6b62;
+  --ink-faint: #8a968d;
+  --primary: #00694e;
+  --primary-ink: #ffffff;
+  --primary-soft: #d8e7e0;
+  --accent: #c8352a;
+  --accent-soft: #f3d9d5;
+  --good: #2e7d5b;
+  --warn: #b8791b;
+  --bad: #c8352a;
+
+  --shadow-card: 0 1px 2px rgba(30, 42, 36, 0.06), 0 8px 24px rgba(30, 42, 36, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121714;
+    --surface: #1a211d;
+    --surface-2: #232c27;
+    --border: #2e3a33;
+    --ink: #ecf1ed;
+    --ink-soft: #a5b3ab;
+    --ink-faint: #6e7c74;
+    --primary: #3fb08a;
+    --primary-ink: #0a0f0c;
+    --primary-soft: #1e3a30;
+    --accent: #e86a5e;
+    --accent-soft: #3a231f;
+    --good: #4fbf8b;
+    --warn: #d69a3e;
+    --bad: #e86a5e;
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Explicit overrides from the Settings theme toggle win over the media query. */
+:root[data-theme="light"] {
+  --bg: #f6f4ec;
+  --surface: #ffffff;
+  --surface-2: #edeade;
+  --border: #ded9c8;
+  --ink: #1e2a24;
+  --ink-soft: #5b6b62;
+  --ink-faint: #8a968d;
+  --primary: #00694e;
+  --primary-ink: #ffffff;
+  --primary-soft: #d8e7e0;
+  --accent: #c8352a;
+  --accent-soft: #f3d9d5;
+  --good: #2e7d5b;
+  --warn: #b8791b;
+  --bad: #c8352a;
+  --shadow-card: 0 1px 2px rgba(30, 42, 36, 0.06), 0 8px 24px rgba(30, 42, 36, 0.06);
+}
+
+:root[data-theme="dark"] {
+  --bg: #121714;
+  --surface: #1a211d;
+  --surface-2: #232c27;
+  --border: #2e3a33;
+  --ink: #ecf1ed;
+  --ink-soft: #a5b3ab;
+  --ink-faint: #6e7c74;
+  --primary: #3fb08a;
+  --primary-ink: #0a0f0c;
+  --primary-soft: #1e3a30;
+  --accent: #e86a5e;
+  --accent-soft: #3a231f;
+  --good: #4fbf8b;
+  --warn: #d69a3e;
+  --bad: #e86a5e;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", "Noto Sans TC", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* Respect the iOS safe area (notch / home indicator). */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  }
+
+  /* Han text uses the dedicated families. */
+  .font-han,
+  [lang^="zh"] {
+    font-family: "Noto Sans TC", sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg border border-border bg-surface p-5 shadow-card;
+  }
+
+  .tap {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+/* Respect reduced motion everywhere. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
