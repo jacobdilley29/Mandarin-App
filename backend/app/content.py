@@ -14,9 +14,46 @@ from pathlib import Path
 from .config import REPO_ROOT
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
+HSK1_PATH = REPO_ROOT / "content" / "hsk1.json"
 
 # Passing score to complete a lesson and unlock the next (spec §3.1).
 PASS_THRESHOLD = 0.8
+
+
+def _upsert_vocab(conn: sqlite3.Connection, v: dict) -> None:
+    ex = v.get("example") or {}
+    conn.execute(
+        """INSERT INTO vocab
+             (id, traditional, pinyin, gloss, hsk_level, taiwan_note,
+              example_hanzi, example_pinyin, example_gloss)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(id) DO UPDATE SET
+             traditional=excluded.traditional, pinyin=excluded.pinyin,
+             gloss=excluded.gloss, hsk_level=excluded.hsk_level,
+             taiwan_note=excluded.taiwan_note,
+             example_hanzi=excluded.example_hanzi,
+             example_pinyin=excluded.example_pinyin,
+             example_gloss=excluded.example_gloss""",
+        (v["id"], v["traditional"], v["pinyin"], v["gloss"],
+         v.get("hsk_level"), v.get("taiwan_note"),
+         ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss")),
+    )
+
+
+def load_vocab_list(conn: sqlite3.Connection, data: dict) -> int:
+    """Load a flat vocabulary list (no lessons) — e.g. the HSK 1 placement pool."""
+    vocab = data.get("vocab", [])
+    for v in vocab:
+        _upsert_vocab(conn, v)
+    conn.commit()
+    return len(vocab)
+
+
+def load_hsk1_from_disk(conn: sqlite3.Connection) -> int | None:
+    if not HSK1_PATH.is_file():
+        return None
+    data = json.loads(HSK1_PATH.read_text(encoding="utf-8"))
+    return load_vocab_list(conn, data)
 
 
 # ---------------------------------------------------------------------------
@@ -58,23 +95,7 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
 
             for i, v in enumerate(lesson.get("vocab", [])):
                 n_vocab += 1
-                ex = v.get("example") or {}
-                conn.execute(
-                    """INSERT INTO vocab
-                         (id, traditional, pinyin, gloss, hsk_level, taiwan_note,
-                          example_hanzi, example_pinyin, example_gloss)
-                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                       ON CONFLICT(id) DO UPDATE SET
-                         traditional=excluded.traditional, pinyin=excluded.pinyin,
-                         gloss=excluded.gloss, hsk_level=excluded.hsk_level,
-                         taiwan_note=excluded.taiwan_note,
-                         example_hanzi=excluded.example_hanzi,
-                         example_pinyin=excluded.example_pinyin,
-                         example_gloss=excluded.example_gloss""",
-                    (v["id"], v["traditional"], v["pinyin"], v["gloss"],
-                     v.get("hsk_level"), v.get("taiwan_note"),
-                     ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss")),
-                )
+                _upsert_vocab(conn, v)
                 conn.execute(
                     """INSERT INTO lesson_vocab (lesson_id, vocab_id, sort_order)
                        VALUES (?, ?, ?) ON CONFLICT DO NOTHING""",
@@ -118,6 +139,10 @@ def ensure_loaded(conn: sqlite3.Connection) -> None:
     row = conn.execute("SELECT COUNT(*) AS n FROM units").fetchone()
     if row["n"] == 0:
         load_from_disk(conn)
+    # Load the HSK 1 placement pool if its foundation items aren't present yet.
+    row = conn.execute("SELECT COUNT(*) AS n FROM vocab WHERE id LIKE 'h\\_%' ESCAPE '\\'").fetchone()
+    if row["n"] == 0:
+        load_hsk1_from_disk(conn)
 
 
 # ---------------------------------------------------------------------------

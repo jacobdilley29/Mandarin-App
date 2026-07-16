@@ -56,6 +56,9 @@ def main() -> int:
     conn = db.connect()
     try:
         summary = content.load_curriculum(conn, data)
+        hsk1 = content.load_hsk1_from_disk(conn)
+        if hsk1:
+            summary["hsk1_pool"] = hsk1
     finally:
         conn.close()
     print(f"✓ loaded: {summary}")

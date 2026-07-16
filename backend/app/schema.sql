@@ -130,11 +130,12 @@ CREATE TABLE IF NOT EXISTS srs_cards (
     item_type     TEXT NOT NULL,          -- 'vocab' | 'grammar'
     item_id       TEXT NOT NULL,          -- FK into vocab/grammar (by type)
     card_type     TEXT NOT NULL,          -- recognition|recall|audio_meaning|cloze|speak
-    -- FSRS state:
+    -- FSRS state (py-fsrs v5 Card serialization):
     stability     REAL,
     difficulty    REAL,
-    due           TEXT,                   -- ISO datetime
-    last_review   TEXT,
+    due           TEXT,                   -- ISO datetime (UTC)
+    last_review   TEXT,                   -- ISO datetime (UTC)
+    step          INTEGER,                -- FSRS learning/relearning step index
     reps          INTEGER NOT NULL DEFAULT 0,
     lapses        INTEGER NOT NULL DEFAULT 0,
     state         TEXT NOT NULL DEFAULT 'new', -- new|learning|review|relearning

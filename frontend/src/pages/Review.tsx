@@ -1,13 +1,24 @@
-import { ComingSoon } from "../components/ComingSoon";
+import { useEffect, useState } from "react";
+import { useSettings } from "../SettingsContext";
+import PlacementQuiz from "./review/PlacementQuiz";
+import ReviewSession from "./review/ReviewSession";
 
+// Review tab: on first run, a placement check seeds the deck; afterwards it's
+// the daily FSRS review session. `placement_done` in settings gates which.
 export default function Review() {
-  return (
-    <ComingSoon
-      han="複習"
-      title="Review"
-      phase={2}
-      tone={3}
-      blurb="FSRS-scheduled daily review mixing HSK 1 with everything learned in-app, plus a placement check on first run. Arrives in Phase 2."
-    />
-  );
+  const { settings } = useSettings();
+  // Local override so finishing placement transitions without a settings refetch.
+  const [placed, setPlaced] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    if (settings) setPlaced(settings.placement_done);
+  }, [settings]);
+
+  if (placed == null) {
+    return <div className="mx-auto max-w-xl px-4 py-10 text-center text-ink-soft">Loading…</div>;
+  }
+  if (!placed) {
+    return <PlacementQuiz onDone={() => setPlaced(true)} />;
+  }
+  return <ReviewSession />;
 }

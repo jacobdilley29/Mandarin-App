@@ -26,3 +26,8 @@ frontend/dev-dist/
 .idea/
 .vscode/
 *.swp
+
+# Stray npm files (backend is Python-only)
+backend/package.json
+backend/package-lock.json
+backend/node_modules/

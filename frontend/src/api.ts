@@ -98,6 +98,55 @@ export interface LessonResult {
   new_srs_cards: number;
 }
 
+// --- Review / placement types ---
+export interface PlacementItem {
+  vocab_id: string;
+  char: string;
+  pinyin: string;
+  options: Option[];
+}
+export interface Placement {
+  done: boolean;
+  items: PlacementItem[];
+}
+export interface PlacementResult {
+  seeded_mature: number;
+  seeded_new: number;
+}
+
+// One review item; fields present depend on `kind`.
+export interface ReviewItem {
+  card_id: number;
+  item_id: string;
+  reps: number;
+  state: string;
+  kind: "recognition" | "recall" | "audio_meaning" | "cloze";
+  answer: string;
+  options: Option[];
+  char?: string;
+  pinyin?: string | null;
+  audio_text?: string;
+  prompt_gloss?: string;
+  masked?: string;
+  gloss?: string | null;
+}
+export interface ReviewQueue {
+  items: ReviewItem[];
+  count: number;
+}
+export interface ReviewStats {
+  due: number;
+  new: number;
+  total: number;
+  mature: number;
+}
+export interface ReviewAnswerResult {
+  card_id: number;
+  state: string;
+  due: string | null;
+  stability: number | null;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -124,6 +173,21 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ results }),
     }).then(json<LessonResult>),
+  placement: () => fetch("/api/placement").then(json<Placement>),
+  placementResult: (results: { vocab_id: string; correct: boolean }[]) =>
+    fetch("/api/placement/result", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ results }),
+    }).then(json<PlacementResult>),
+  reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
+  reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
+  reviewAnswer: (card_id: number, rating: number) =>
+    fetch("/api/review/answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ card_id, rating }),
+    }).then(json<ReviewAnswerResult>),
 };
 
 /** URL for a cached TTS clip. */

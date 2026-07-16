@@ -5,13 +5,12 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: Phase 1 (content + Learn).** On top of the Phase 0 skeleton, the
-> **Learn** tab is live: a curriculum browser (units → lessons with unlock
-> gating), a full lesson engine with every non-speaking drill type (vocab intro,
-> grammar cards, char↔meaning matching, audio→meaning, cloze, sentence
-> tile-building, listen-and-type, translate, dialogue playthrough), tappable
-> zh-TW audio via edge-tts with disk caching, and completion → SRS enrolment.
-> Review / Listen / Speak / Talk arrive in later phases (honest "coming soon"
+> **Status: Phase 2 (Review).** Learn (Phase 1) plus a full **Review** tab:
+> a first-run placement check over HSK 1–2 that seeds the deck (correct →
+> mature, miss → new), an FSRS-scheduled daily queue (py-fsrs) with rotating
+> card types (recognition / recall / audio→meaning / cloze), and Again / Hard /
+> Good / Easy rating. Learn completions auto-enrol vocab into the same deck.
+> Listen / Speak / Talk arrive in later phases (honest "coming soon"
 > placeholders for now).
 
 ---
@@ -32,18 +31,21 @@ Mandarin-App/
 │   │   ├── exercises.py     lesson exercise-stream builder (all drill types)
 │   │   ├── validation.py    sentence↔vocab validator (spec §5)
 │   │   ├── audio.py         edge-tts synthesis + disk cache
-│   │   └── routers/         health, settings, learn, audio
+│   │   ├── srs.py           FSRS scheduling wrapper (py-fsrs)
+│   │   ├── review.py        review-queue builder + placement check
+│   │   └── routers/         health, settings, learn, review, audio
 │   ├── scripts/             import_cedict · load_content · generate_content
 │   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
 │   ├── src/
-│   │   ├── pages/           Learn (+ learn/LessonPlayer) / Review / … / Me
-│   │   ├── components/      TabBar, ToneMark, Speakable, …
+│   │   ├── pages/           Learn (+ learn/) / Review (+ review/) / … / Me
+│   │   ├── components/      TabBar, ToneMark, Speakable, PlayButton, …
 │   │   ├── audio.ts         tappable-audio playback hook
 │   │   └── theme.ts         design tokens (mirror of DESIGN.md)
 │   └── package.json
 ├── content/curriculum.json  seed curriculum (Traditional, Taiwan usage, validated)
+├── content/hsk1.json        HSK 1 foundation pool for the placement check
 ├── data/                    SQLite DB + audio cache (gitignored; auto-created)
 ├── legacy/                  the earlier static-PWA prototype, preserved for reference
 ├── DESIGN.md                palette + typography + tone-motif design tokens
@@ -159,11 +161,13 @@ Each phase ends runnable.
 
 - **Phase 0 — skeleton ✅:** FastAPI + Vite scaffold, SQLite schema, settings
   page, PWA manifest, design tokens, six-tab shell.
-- **Phase 1 — Content + Learn ✅ (this):** validated Taiwan-Mandarin curriculum,
+- **Phase 1 — Content + Learn ✅:** validated Taiwan-Mandarin curriculum,
   curriculum browser, full lesson exercise engine (all non-speaking drills),
   edge-tts audio with disk caching, completion → SRS enrolment, plus the content
   pipeline scripts (CC-CEDICT import, content loader, Claude-based generator).
-- **Phase 2 — Review:** FSRS scheduling, placement quiz, review queue.
+- **Phase 2 — Review ✅ (this):** FSRS scheduling (py-fsrs), first-run placement
+  check over an HSK 1 foundation pool, daily review queue with rotating card
+  types and Again/Hard/Good/Easy rating.
 - **Phase 3 — Listen:** dictation, comprehension sets, tone ear-training.
 - **Phase 4 — Speak:** mic capture, faster-whisper scoring, pitch-contour tone feedback.
 - **Phase 5 — Talk + Progress:** Claude conversation mode, teacher notes, recap→SRS,
