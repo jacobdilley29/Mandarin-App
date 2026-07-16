@@ -8,12 +8,13 @@ GET  /api/speak/status  whether local transcription is available
 
 from __future__ import annotations
 
+import json
 import random
 import sqlite3
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, Query, UploadFile
 
-from .. import speak, whisper_asr
+from .. import progress, speak, whisper_asr
 from ..db import get_db
 
 router = APIRouter(prefix="/api/speak", tags=["speak"])
@@ -56,6 +57,7 @@ async def score(
     audio: UploadFile = File(...),
     hanzi: str = Form(...),
     pinyin: str = Form(...),
+    conn: sqlite3.Connection = Depends(get_db),
 ) -> dict:
     data = await audio.read()
     if not data:
@@ -63,6 +65,14 @@ async def score(
     if len(data) > MAX_AUDIO_BYTES:
         raise HTTPException(413, "audio too large")
     try:
-        return speak.score(data, hanzi, pinyin)
+        result = speak.score(data, hanzi, pinyin)
     except ValueError as e:
         raise HTTPException(422, f"could not read audio: {e}")
+    progress.record_tone_attempt(
+        conn,
+        hanzi,
+        result["tone_correct"],
+        result["tone_total"],
+        json.dumps([s["detected"] for s in result["syllables"]]),
+    )
+    return result

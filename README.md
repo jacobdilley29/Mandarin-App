@@ -5,14 +5,12 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: Phase 4 (Speak).** Learn + Review + Listen plus a full **Speak**
-> tab: word/sentence shadowing where you record yourself and get a
-> pitch-contour plot of your voice overlaid on the idealised tone shape (SVG),
-> a per-syllable tone verdict (with tone-sandhi applied to the target), and —
-> when `faster-whisper` is installed — a transcription character-match. Pitch
-> and tone analysis are pure-numpy and run with no model download; the browser
-> decodes the recording to 16-kHz WAV so the server needs no ffmpeg. Talk
-> arrives in Phase 5 (honest "coming soon" placeholder).
+> **Status: complete (Phases 0–5).** All six tabs are live — **Learn**,
+> **Review** (FSRS + placement), **Listen** (dictation / comprehension / tones),
+> **Speak** (pitch-contour tone feedback), **Talk** (Claude roleplay with teacher
+> notes + recap→SRS), and **Me** (a mastery-based progress dashboard + settings).
+> Talk needs `ANTHROPIC_API_KEY`; without it that one tab is disabled and
+> everything else works.
 
 ---
 
@@ -41,13 +39,17 @@ Mandarin-App/
 │   │   ├── tone_classify.py tone classification + sandhi
 │   │   ├── speak.py         pronunciation scoring pipeline
 │   │   ├── whisper_asr.py   optional faster-whisper wrapper
-│   │   └── routers/         health, settings, learn, review, listen, speak, audio
+│   │   ├── conversation.py  Claude roleplay (teacher notes + new words)
+│   │   ├── progress.py      activity logging + dashboard stats
+│   │   └── routers/         health · settings · learn · review · listen ·
+│   │                        speak · talk · progress · audio
 │   ├── scripts/             import_cedict · load_content · generate_content
 │   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
 │   ├── src/
-│   │   ├── pages/           Learn (+ learn/) / Review (+ review/) / … / Me
+│   │   ├── pages/           Learn / Review / Listen / Speak / Talk / Me
+│   │   │                    (each with its sub-flow folder)
 │   │   ├── components/      TabBar, ToneMark, Speakable, PlayButton, …
 │   │   ├── audio.ts         tappable-audio playback hook
 │   │   └── theme.ts         design tokens (mirror of DESIGN.md)
@@ -179,11 +181,14 @@ Each phase ends runnable.
   types and Again/Hard/Good/Easy rating.
 - **Phase 3 — Listen ✅:** dictation with pinyin/character diffing,
   comprehension dialogues + questions, and tone ear-training (single + tone-pair).
-- **Phase 4 — Speak ✅ (this):** mic capture (browser-side WAV encoding),
+- **Phase 4 — Speak ✅:** mic capture (browser-side WAV encoding),
   pure-numpy pitch extraction + tone classification with sandhi, SVG
   pitch-contour overlay, and optional faster-whisper transcription.
-- **Phase 5 — Talk + Progress:** Claude conversation mode, teacher notes, recap→SRS,
-  progress dashboard.
+- **Phase 5 — Talk + Progress ✅ (this):** Claude roleplay conversations
+  (Traditional/Taiwan, in-character with a collapsible teacher note per turn,
+  optional mic input, recap→SRS), and a mastery-based progress dashboard
+  (streak, activity, words-by-HSK stacked bar, tone accuracy, retention,
+  weakest grammar).
 
 See `mandarin-teacher-spec.md` for the full specification and `DESIGN.md` for the
 visual design system.

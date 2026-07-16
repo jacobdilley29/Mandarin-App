@@ -91,6 +91,9 @@ def apply_review(
         "INSERT INTO review_log (card_id, rating, elapsed_ms) VALUES (?, ?, ?)",
         (card_id, rating, elapsed_ms),
     )
+    from . import progress
+
+    progress.record_activity(conn, reviews=1, minutes=progress.review_minutes())
     conn.commit()
     return {
         "card_id": card_id,

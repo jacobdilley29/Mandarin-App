@@ -320,6 +320,11 @@ def record_result(conn: sqlite3.Connection, lesson_id: str, score: float) -> dic
     if passed and not prev_completed:
         new_cards = _enrol_vocab_srs(conn, lesson_id)
 
+    from . import progress
+
+    progress.record_activity(
+        conn, lessons=1 if passed else 0, minutes=progress.lesson_minutes()
+    )
     conn.commit()
 
     # Find the next lesson in curriculum order to report unlock.

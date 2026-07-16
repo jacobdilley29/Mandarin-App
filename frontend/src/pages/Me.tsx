@@ -2,6 +2,7 @@ import { type Settings } from "../api";
 import { useSettings } from "../SettingsContext";
 import { useStatus } from "../StatusContext";
 import { ToneRow } from "../components/ToneMark";
+import Progress from "./me/Progress";
 
 const VOICES = [
   { value: "zh-TW-HsiaoChenNeural", label: "曉臻 (female)" },
@@ -91,8 +92,14 @@ export default function Me() {
         <h1 lang="zh-Hant" className="font-serifhan text-3xl text-ink">
           我
         </h1>
-        <p className="text-sm text-ink-soft">Settings</p>
+        <p className="text-sm text-ink-soft">Progress &amp; settings</p>
       </header>
+
+      <div className="mb-8">
+        <Progress />
+      </div>
+
+      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-soft">Settings</h2>
 
       {error && (
         <div className="mb-4 rounded-md border border-bad/40 bg-accent-soft px-4 py-3 text-sm text-bad">

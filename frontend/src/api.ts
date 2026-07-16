@@ -235,6 +235,63 @@ export interface SpeakScore {
   median_hz: number | null;
 }
 
+// --- Progress types ---
+export interface DayActivity {
+  day: string;
+  reviews: number;
+  lessons: number;
+  minutes: number;
+}
+export interface HskBand {
+  hsk_level: number;
+  learning: number;
+  young: number;
+  mature: number;
+}
+export interface WeakGrammar {
+  id: string;
+  title: string;
+  errors: number;
+}
+export interface Progress {
+  streak: number;
+  activity: DayActivity[];
+  words_by_hsk: HskBand[];
+  total_known: number;
+  total_mature: number;
+  tone_accuracy: number | null;
+  tone_trend: number[];
+  retention: number | null;
+  weakest_grammar: WeakGrammar[];
+}
+
+// --- Talk types ---
+export interface Scenario {
+  id: string;
+  emoji: string;
+  title: string;
+  en: string;
+  opening: { hanzi: string; pinyin: string; gloss: string };
+}
+export interface TeacherNote {
+  corrections: string[];
+  better: string | null;
+}
+export interface NewWord {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface TalkTurn {
+  reply: string;
+  reply_pinyin: string;
+  teacher_note: TeacherNote;
+  new_words: NewWord[];
+}
+export interface RecapWord extends NewWord {
+  in_deck: boolean;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -302,6 +359,29 @@ export const api = {
     form.append("pinyin", pinyin);
     return fetch("/api/speak/score", { method: "POST", body: form }).then(json<SpeakScore>);
   },
+  progress: () => fetch("/api/progress").then(json<Progress>),
+  talkScenarios: () =>
+    fetch("/api/talk/scenarios").then(json<{ available: boolean; scenarios: Scenario[] }>),
+  talkStart: (scenario: string) =>
+    fetch("/api/talk/start", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ scenario }),
+    }).then(json<{ session_id: string; scenario: Scenario; opening: NewWord & { gloss: string } }>),
+  talkMessage: (session_id: string, text: string) =>
+    fetch("/api/talk/message", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session_id, text }),
+    }).then(json<TalkTurn>),
+  talkRecap: (session_id: string) =>
+    fetch(`/api/talk/recap/${session_id}`).then(json<{ words: RecapWord[] }>),
+  talkRecapAdd: (words: NewWord[]) =>
+    fetch("/api/talk/recap/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ words }),
+    }).then(json<{ added: number }>),
 };
 
 /** URL for a cached TTS clip. */
