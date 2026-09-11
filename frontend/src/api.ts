@@ -136,7 +136,7 @@ export interface ReviewItem {
   item_id: string;
   reps: number;
   state: string;
-  kind: "recognition" | "recall" | "audio_meaning" | "cloze" | "grammar";
+  kind: "recognition" | "recall" | "audio_meaning" | "cloze";
   answer: string;
   options: Option[];
   char?: string;
@@ -146,10 +146,6 @@ export interface ReviewItem {
   prompt_gloss?: string;
   masked?: string;
   gloss?: string | null;
-  // grammar cards only
-  prompt_hanzi?: string;
-  title?: string;
-  explanation?: string;
 }
 export interface ReviewQueue {
   items: ReviewItem[];

@@ -7,7 +7,6 @@ the word from several angles. Rating (Again/Hard/Good/Easy) drives FSRS.
 
 from __future__ import annotations
 
-import json
 import random
 import sqlite3
 
@@ -26,51 +25,6 @@ def _vocab_row(conn: sqlite3.Connection, vocab_id: str) -> dict | None:
 
 def _pool(conn: sqlite3.Connection) -> list[dict]:
     return content.all_vocab(conn)
-
-
-def _grammar_row(conn: sqlite3.Connection, grammar_id: str) -> dict | None:
-    r = conn.execute("SELECT * FROM grammar WHERE id = ?", (grammar_id,)).fetchone()
-    return dict(r) if r else None
-
-
-def _render_grammar(
-    card: sqlite3.Row, g: dict, others: list[dict]
-) -> dict | None:
-    """Show one of the point's examples and ask which pattern it demonstrates.
-
-    Recognising the pattern behind a sentence is the thing worth recalling; the
-    multiple-choice shape matches every other card so the rating flow is
-    unchanged.
-    """
-    examples = json.loads(g.get("examples") or "[]")
-    if not examples:
-        return None
-    rng = random.Random(f"{card['id']}:{card['reps']}:grammar")
-    ex = examples[rng.randrange(len(examples))]
-
-    distractors = [o["pattern"] for o in others if o["id"] != g["id"] and o.get("pattern")]
-    rng.shuffle(distractors)
-    seen = {g["pattern"]}
-    picked = []
-    for d in distractors:
-        if d not in seen:
-            seen.add(d)
-            picked.append(d)
-        if len(picked) == 3:
-            break
-
-    return {
-        "kind": "grammar",
-        "prompt_hanzi": ex.get("hanzi"),
-        "gloss": ex.get("gloss"),
-        "pinyin": ex.get("pinyin"),
-        "zhuyin": ex.get("zhuyin"),
-        "audio_text": ex.get("hanzi"),
-        "title": g["title"],
-        "explanation": g["explanation"],
-        "answer": g["pattern"],
-        "options": _mc(g["pattern"], picked, rng),
-    }
 
 
 def _render(card: sqlite3.Row, v: dict, pool: list[dict], kind: str) -> dict:
@@ -130,27 +84,7 @@ def build_queue(conn: sqlite3.Connection, new_limit: int) -> list[dict]:
     pool = _pool(conn)
     cards = srs.due_cards(conn, new_limit)
     items: list[dict] = []
-    grammar_pool: list[dict] | None = None
     for card in cards:
-        if card["item_type"] == "grammar":
-            g = _grammar_row(conn, card["item_id"])
-            if not g:
-                continue
-            if grammar_pool is None:
-                grammar_pool = [
-                    dict(r) for r in conn.execute("SELECT * FROM grammar").fetchall()
-                ]
-            rendered = _render_grammar(card, g, grammar_pool)
-            if rendered is None:
-                continue
-            items.append({
-                "card_id": card["id"],
-                "item_id": card["item_id"],
-                "reps": card["reps"],
-                "state": card["state"],
-                **rendered,
-            })
-            continue
         if card["item_type"] != "vocab":
             continue
         v = _vocab_row(conn, card["item_id"])
