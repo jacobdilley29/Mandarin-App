@@ -83,6 +83,34 @@ app.mount("/audio", StaticFiles(directory=str(settings.audio_dir)), name="audio"
 _dist: Path = settings.frontend_dist
 
 
+# Files the browser must re-check on every load. index.html names the hashed
+# asset bundles, and sw.js is the service worker itself — if either is served
+# stale, the page can boot against assets that no longer exist, and because the
+# PWA registers with `autoUpdate` (frontend/vite.config.ts) the resulting
+# update-then-reload cycle repeats indefinitely. FastAPI sends only an ETag and
+# Last-Modified by default, which leaves browsers free to cache heuristically,
+# so these must say no-cache explicitly.
+_NO_CACHE = {"Cache-Control": "no-cache, must-revalidate"}
+_ALWAYS_REVALIDATE = {"index.html", "sw.js", "registerSW.js", "manifest.webmanifest"}
+
+# Everything under /assets is content-hashed by Vite, so a given URL never
+# changes and can be cached hard.
+_IMMUTABLE = {"Cache-Control": "public, max-age=31536000, immutable"}
+
+
+class _ImmutableStatic(StaticFiles):
+    """StaticFiles that marks content-hashed bundles immutable."""
+
+    def file_response(self, *args, **kwargs):  # noqa: ANN002, ANN003, ANN201
+        response = super().file_response(*args, **kwargs)
+        response.headers.update(_IMMUTABLE)
+        return response
+
+
+def _cache_headers(name: str) -> dict[str, str]:
+    return dict(_NO_CACHE) if name in _ALWAYS_REVALIDATE else {}
+
+
 def _mount_frontend() -> None:
     """Serve the built SPA with history-fallback, if it exists.
 
@@ -91,9 +119,11 @@ def _mount_frontend() -> None:
     """
     assets = _dist / "assets"
     if assets.is_dir():
-        app.mount("/assets", StaticFiles(directory=str(assets)), name="assets")
+        app.mount("/assets", _ImmutableStatic(directory=str(assets)), name="assets")
 
-    @app.get("/{full_path:path}", include_in_schema=False)
+    # HEAD as well as GET: a bare @app.get catch-all answers HEAD / with 405,
+    # which trips proxies and uptime checks.
+    @app.api_route("/{full_path:path}", methods=["GET", "HEAD"], include_in_schema=False)
     def spa(full_path: str):  # noqa: ANN202
         # Never let the catch-all swallow the API namespace.
         if full_path.startswith(("api/", "audio/")):
@@ -108,8 +138,9 @@ def _mount_frontend() -> None:
                 and _dist.resolve() in candidate.parents
                 and candidate.is_file()
             ):
-                return FileResponse(candidate)
-            return FileResponse(index)  # history fallback
+                return FileResponse(candidate, headers=_cache_headers(candidate.name))
+            # History fallback — always the freshly-read index.
+            return FileResponse(index, headers=_NO_CACHE)
 
         return JSONResponse(
             {
