@@ -98,6 +98,45 @@ def test_placement_seeds_mature_and_new(conn):
             {"vocab_id": "v2", "correct": False},
         ],
     )
-    assert out == {"seeded_mature": 1, "seeded_new": 1}
+    assert out["seeded_mature"] == 1
+    assert out["seeded_new"] == 1
+    # v1 is the only HSK 1 item asked and it was right, so that level is cleared;
+    # v2 (HSK 2) was missed, so HSK 2 is not.
+    assert out["levels_cleared"] == [1]
     done = conn.execute("SELECT placement_done FROM settings WHERE id = 1").fetchone()["placement_done"]
     assert done == 1
+
+
+def test_placement_completes_lessons_of_cleared_levels(conn):
+    """Clearing a level must unlock past it — placement used to only seed cards,
+    leaving the learner behind a strictly linear unlock chain."""
+    conn.execute(
+        "INSERT INTO units (id, title, hsk_level, sort_order) VALUES ('u1', 'U', 1, 1)"
+    )
+    conn.executemany(
+        "INSERT INTO lessons (id, unit_id, title, sort_order) VALUES (?, 'u1', ?, ?)",
+        [("l1", "L1", 1), ("l2", "L2", 2)],
+    )
+    conn.commit()
+
+    out = review.seed_placement(conn, [
+        {"vocab_id": "v1", "correct": True, "hsk_level": 1},
+        {"vocab_id": "v3", "correct": True, "hsk_level": 1},
+    ])
+    assert out["levels_cleared"] == [1]
+    completed = {
+        r["lesson_id"] for r in conn.execute(
+            "SELECT lesson_id FROM lesson_progress WHERE completed = 1"
+        ).fetchall()
+    }
+    assert completed == {"l1", "l2"}
+
+
+def test_placement_stops_clearing_at_the_first_shaky_level(conn):
+    """Levels clear from the bottom up. Clearing a higher level while a lower one
+    is shaky would strand the learner behind a lesson they cannot reach."""
+    out = review.seed_placement(conn, [
+        {"vocab_id": "v1", "correct": False, "hsk_level": 1},
+        {"vocab_id": "v2", "correct": True, "hsk_level": 2},
+    ])
+    assert out["levels_cleared"] == []

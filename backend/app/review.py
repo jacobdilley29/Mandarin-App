@@ -104,15 +104,27 @@ def build_queue(conn: sqlite3.Connection, new_limit: int) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Placement check (first run)
 # ---------------------------------------------------------------------------
-def placement_items(conn: sqlite3.Connection, n: int = 30) -> list[dict]:
-    """A quick recognition quiz over HSK 1–2 foundation vocab."""
+PLACEMENT_LEVELS = (1, 2, 3, 4)
+
+
+def placement_items(conn: sqlite3.Connection, n: int = 32) -> list[dict]:
+    """A quick recognition quiz, sampled evenly across HSK 1–4.
+
+    The sample must be stratified. A single `ORDER BY hsk_level, RANDOM() LIMIT n`
+    sorts by level *first*, so HSK 1 is exhausted before a single HSK 2 word can
+    appear — the quiz was 100% HSK 1 regardless of what the learner knew. Drawing
+    a fixed quota per level is what lets `seed_placement` tell which levels the
+    learner has already cleared.
+    """
     pool = _pool(conn)
-    rows = conn.execute(
-        """SELECT * FROM vocab
-           WHERE hsk_level IN (1, 2)
-           ORDER BY hsk_level, RANDOM() LIMIT ?""",
-        (n,),
-    ).fetchall()
+    per_level = max(1, n // len(PLACEMENT_LEVELS))
+    rows: list[sqlite3.Row] = []
+    for level in PLACEMENT_LEVELS:
+        rows.extend(conn.execute(
+            "SELECT * FROM vocab WHERE hsk_level = ? ORDER BY RANDOM() LIMIT ?",
+            (level, per_level),
+        ).fetchall())
+
     items = []
     for r in rows:
         v = dict(r)
@@ -122,26 +134,99 @@ def placement_items(conn: sqlite3.Connection, n: int = 30) -> list[dict]:
             "char": v["traditional"],
             "pinyin": v["pinyin"],
             "zhuyin": v.get("zhuyin"),
+            "hsk_level": v["hsk_level"],
             "options": _mc(v["gloss"], _distractor_glosses(pool, v["id"], 3, rng), rng),
         })
     return items
 
 
+# A level counts as already known when the learner gets at least this share of
+# its placement items right. Deliberately strict: clearing a level skips every
+# lesson in it, so a false positive costs more than a false negative.
+LEVEL_PASS_RATIO = 0.8
+
+
 def seed_placement(conn: sqlite3.Connection, results: list[dict]) -> dict:
-    """Correct → seed a mature card; miss → new card. Marks placement done."""
+    """Correct → seed a mature card; miss → new card. Marks placement done.
+
+    Also completes the lessons of any HSK level the learner clearly already
+    knows. Without this, placement only ever seeded SRS cards, so a learner who
+    aced HSK 1 still had to work through every HSK 1 lesson to unlock HSK 2 —
+    the unlock chain in content.get_curriculum is strictly linear and nothing
+    else opens it. It additionally repairs a trap: a correct answer seeds a
+    *mature* card for a word whose lesson has not run, and `_enrol_vocab_srs`
+    skips words that already have a card, so the lesson would silently never
+    introduce it. Completing the level keeps the two consistent.
+    """
     seeded_mature = seeded_new = 0
+    by_level: dict[int, list[bool]] = {}
+
     for r in results:
         vocab_id = r.get("vocab_id")
         if not vocab_id:
             continue
-        if r.get("correct"):
+        correct = bool(r.get("correct"))
+        if correct:
             srs.seed_mature(conn, "vocab", vocab_id, "recognition")
             seeded_mature += 1
         else:
             srs.ensure_new_card(conn, "vocab", vocab_id, "recognition")
             seeded_new += 1
+
+        level = r.get("hsk_level")
+        if level is None:
+            row = conn.execute(
+                "SELECT hsk_level FROM vocab WHERE id = ?", (vocab_id,)
+            ).fetchone()
+            level = row["hsk_level"] if row else None
+        if level is not None:
+            by_level.setdefault(int(level), []).append(correct)
+
+    cleared = _complete_cleared_levels(conn, by_level)
+
     conn.execute(
         "UPDATE settings SET placement_done = 1, updated_at = datetime('now') WHERE id = 1"
     )
     conn.commit()
-    return {"seeded_mature": seeded_mature, "seeded_new": seeded_new}
+    return {
+        "seeded_mature": seeded_mature,
+        "seeded_new": seeded_new,
+        "levels_cleared": cleared,
+    }
+
+
+def _complete_cleared_levels(
+    conn: sqlite3.Connection, by_level: dict[int, list[bool]]
+) -> list[int]:
+    """Mark every lesson of a cleared level complete, so the next level unlocks.
+
+    Levels are cleared from the bottom up and stop at the first miss: clearing
+    HSK 3 while HSK 1 is shaky would strand the learner behind a locked lesson
+    they cannot reach.
+    """
+    cleared: list[int] = []
+    for level in sorted(by_level):
+        answers = by_level[level]
+        if not answers or sum(answers) / len(answers) < LEVEL_PASS_RATIO:
+            break
+        cleared.append(level)
+
+    if not cleared:
+        return []
+
+    rows = conn.execute(
+        """SELECT l.id FROM lessons l
+           JOIN units u ON u.id = l.unit_id
+           WHERE u.hsk_level IN (%s)""" % ",".join("?" * len(cleared)),
+        cleared,
+    ).fetchall()
+    for row in rows:
+        conn.execute(
+            """INSERT INTO lesson_progress
+                 (lesson_id, completed, best_score, unlocked, completed_at)
+               VALUES (?, 1, NULL, 1, datetime('now'))
+               ON CONFLICT(lesson_id) DO UPDATE SET completed = 1, unlocked = 1,
+                 completed_at = COALESCE(lesson_progress.completed_at, datetime('now'))""",
+            (row["id"],),
+        )
+    return cleared

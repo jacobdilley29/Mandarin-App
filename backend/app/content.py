@@ -16,6 +16,19 @@ from .zhuyin import to_zhuyin
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
 HSK1_PATH = REPO_ROOT / "content" / "hsk1.json"
+TOCFL_PATH = REPO_ROOT / "content" / "tocfl_mapping.json"
+
+
+def _tocfl_by_hsk() -> dict[int, str]:
+    """HSK level → aligned TOCFL level. Derived rather than stored per word,
+    since it is a function of hsk_level (content/tocfl_mapping.json)."""
+    if not TOCFL_PATH.is_file():
+        return {}
+    data = json.loads(TOCFL_PATH.read_text(encoding="utf-8"))
+    return {lv["hsk_level"]: lv["tocfl_level"] for lv in data.get("levels", [])}
+
+
+TOCFL_BY_HSK = _tocfl_by_hsk()
 
 # Passing score to complete a lesson and unlock the next (spec §3.1).
 PASS_THRESHOLD = 0.8
@@ -30,20 +43,22 @@ def _upsert_vocab(conn: sqlite3.Connection, v: dict) -> None:
     example_zhuyin = ex.get("zhuyin") or to_zhuyin(ex.get("pinyin"), ex.get("hanzi"))
     conn.execute(
         """INSERT INTO vocab
-             (id, traditional, pinyin, gloss, hsk_level, taiwan_note,
+             (id, traditional, pinyin, gloss, hsk_level, tocfl_level, taiwan_note,
               example_hanzi, example_pinyin, example_gloss, zhuyin, example_zhuyin)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(id) DO UPDATE SET
              traditional=excluded.traditional, pinyin=excluded.pinyin,
              gloss=excluded.gloss, hsk_level=excluded.hsk_level,
-             taiwan_note=excluded.taiwan_note,
+             tocfl_level=excluded.tocfl_level, taiwan_note=excluded.taiwan_note,
              example_hanzi=excluded.example_hanzi,
              example_pinyin=excluded.example_pinyin,
              example_gloss=excluded.example_gloss,
              zhuyin=excluded.zhuyin,
              example_zhuyin=excluded.example_zhuyin""",
         (v["id"], v["traditional"], v["pinyin"], v["gloss"],
-         v.get("hsk_level"), v.get("taiwan_note"),
+         v.get("hsk_level"),
+         v.get("tocfl_level") or TOCFL_BY_HSK.get(v.get("hsk_level")),
+         v.get("taiwan_note"),
          ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss"),
          zhuyin, example_zhuyin),
     )
@@ -97,13 +112,16 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
 
     for unit in units:
         conn.execute(
-            """INSERT INTO units (id, title, subtitle, hsk_level, sort_order)
-               VALUES (?, ?, ?, ?, ?)
+            """INSERT INTO units
+                 (id, title, subtitle, hsk_level, tocfl_level, tocfl_band, sort_order)
+               VALUES (?, ?, ?, ?, ?, ?, ?)
                ON CONFLICT(id) DO UPDATE SET
                  title=excluded.title, subtitle=excluded.subtitle,
-                 hsk_level=excluded.hsk_level, sort_order=excluded.sort_order""",
+                 hsk_level=excluded.hsk_level, tocfl_level=excluded.tocfl_level,
+                 tocfl_band=excluded.tocfl_band, sort_order=excluded.sort_order""",
             (unit["id"], unit["title"], unit.get("subtitle"),
-             unit.get("hsk_level"), unit.get("sort_order", 0)),
+             unit.get("hsk_level"), unit.get("tocfl_level"), unit.get("tocfl_band"),
+             unit.get("sort_order", 0)),
         )
 
         for lesson in unit.get("lessons", []):
@@ -156,6 +174,54 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
     conn.commit()
     return {"units": len(units), "lessons": n_lessons,
             "vocab": n_vocab, "grammar": n_grammar}
+
+
+def prune_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
+    """Delete curriculum rows absent from `data`, and re-link lesson vocab.
+
+    `load_curriculum` is a pure upsert, so re-importing a rebuilt curriculum
+    leaves rows behind: units and lessons that were renamed still exist, and
+    because lesson_vocab links are inserted ON CONFLICT DO NOTHING, a word moved
+    from one lesson to another keeps its old link forever. Both show up as
+    duplicated lessons in the Learn list and double SRS enrolment.
+
+    Call this *before* load_curriculum. It never touches srs_cards or
+    lesson_progress — a learner's history outlives a content rebuild — so a card
+    can briefly point at a deleted vocab id; review.build_queue joins on vocab
+    and simply skips those.
+    """
+    unit_ids, lesson_ids, vocab_ids = set(), set(), set()
+    for unit in data.get("units", []):
+        unit_ids.add(unit["id"])
+        for lesson in unit.get("lessons", []):
+            lesson_ids.add(lesson["id"])
+            vocab_ids.update(v["id"] for v in lesson.get("vocab", []))
+
+    # The HSK 1 placement pool lives in its own file and is not part of `data`.
+    keep_vocab = set(vocab_ids)
+    if HSK1_PATH.is_file():
+        pool = json.loads(HSK1_PATH.read_text(encoding="utf-8"))
+        keep_vocab.update(v["id"] for v in pool.get("vocab", []))
+
+    def delete_absent(table: str, keep: set[str]) -> int:
+        rows = [r["id"] for r in conn.execute(f"SELECT id FROM {table}").fetchall()]
+        gone = [r for r in rows if r not in keep]
+        for rid in gone:
+            conn.execute(f"DELETE FROM {table} WHERE id = ?", (rid,))
+        return len(gone)
+
+    removed = {
+        "lessons": delete_absent("lessons", lesson_ids),
+        "units": delete_absent("units", unit_ids),
+        "vocab": delete_absent("vocab", keep_vocab),
+    }
+
+    # Rebuild the join rows outright so a moved word lands in its new lesson.
+    cur = conn.execute("DELETE FROM lesson_vocab")
+    removed["lesson_vocab_links"] = cur.rowcount if cur.rowcount > 0 else 0
+    conn.execute("DELETE FROM lesson_grammar")
+    conn.commit()
+    return removed
 
 
 def load_from_disk(conn: sqlite3.Connection) -> dict | None:
@@ -239,6 +305,8 @@ def get_curriculum(conn: sqlite3.Connection) -> dict:
             "title": u["title"],
             "subtitle": u["subtitle"],
             "hsk_level": u["hsk_level"],
+            "tocfl_level": _opt(u, "tocfl_level"),
+            "tocfl_band": _opt(u, "tocfl_band"),
             "lessons": out_lessons,
         })
     return {"units": out_units}
@@ -300,6 +368,7 @@ def _vocab_dict(v: sqlite3.Row) -> dict:
         "pinyin": v["pinyin"],
         "gloss": v["gloss"],
         "hsk_level": v["hsk_level"],
+        "tocfl_level": _opt(v, "tocfl_level"),
         "taiwan_note": v["taiwan_note"],
         "zhuyin": _opt(v, "zhuyin"),
         "example": {

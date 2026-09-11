@@ -44,7 +44,8 @@ Mandarin-App/
 │   │   ├── progress.py      activity logging + dashboard stats
 │   │   └── routers/         health · settings · learn · review · listen ·
 │   │                        speak · talk · progress · audio
-│   ├── scripts/             import_cedict · load_content · generate_content
+│   ├── scripts/             build_skeleton · load_content · generate_content ·
+│   │                        import_cedict
 │   ├── tests/               pytest (validation, exercise builder)
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
@@ -146,17 +147,41 @@ All user data lives in `data/` (SQLite + audio cache) — back up that one folde
 
 The curriculum ships **committed and validated** in `content/curriculum.json`
 (Traditional characters, Taiwan usage), so the app runs with no downloads or API
-key. Three scripts (run from `backend/`, with the venv active) support authoring:
+key. It covers **HSK 1–4 — 1,208 words across 77 units and 200 lessons**, built
+from the vendored word lists in `content/wordlists/` and cross-tagged to TOCFL.
+
+Scripts (run from `backend/`, with the venv active):
 
 ```bash
-python -m scripts.load_content            # validate + load content into SQLite
-python -m scripts.load_content --check    # validate only (vocab/sentence check)
-python -m scripts.import_cedict           # download + import CC-CEDICT dictionary
-python -m scripts.generate_content        # (optional) regenerate/expand via Claude API
+python -m scripts.build_skeleton --theme offline   # word lists → units + lessons
+python -m scripts.build_skeleton --theme claude    # ...themed by Claude instead
+python -m scripts.build_skeleton --report-readings # audit polyphonic readings
+python -m scripts.load_content                     # validate + load into SQLite
+python -m scripts.load_content --check             # validate only
+python -m scripts.load_content --prune             # also drop rows no longer in the file
+python -m scripts.generate_content --level 2       # add sentences to a level's lessons
+python -m scripts.import_cedict                    # download + import CC-CEDICT
 ```
+
+`build_skeleton` turns the HSK word lists into the unit/lesson structure.
+Those lists are **mainland-standard** — traditional characters but PRC
+vocabulary and readings — so it applies `content/taiwan_overrides.json` first
+(自行車→腳踏車, 地鐵→捷運, 星期 xīngqí, and the full-tone readings Taiwan keeps
+where the mainland neutralises them). See `content/wordlists/README.md`.
+
+`generate_content` then fills in example sentences, grammar points and dialogue.
+It is **optional**: a lesson with vocabulary but no sentences still produces a
+complete, scorable exercise stream (vocab cards, matching, audio→meaning), so
+the whole curriculum is usable before any generation runs. Generation is
+per-lesson cached, so `--level` / `--from-lesson` / `--limit` make a 200-lesson
+run resumable.
 
 Every sentence is checked so it only uses characters the learner has met by that
 point in the curriculum; `load_content` refuses to load content with violations.
+`backend/tests/test_coverage.py` additionally asserts that every HSK word is
+taught exactly once, that unit order never goes backwards through the levels,
+and that no simplified character reached the corpus.
+
 `import_cedict` and `generate_content` need network / an `ANTHROPIC_API_KEY`
 respectively and are **not** required to run the app.
 

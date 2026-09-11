@@ -1,0 +1,2008 @@
+{
+  "meta": {
+    "hsk_level": 1,
+    "standard": "HSK 2.0",
+    "count": 150,
+    "source": "drkameleon/complete-hsk-vocabulary (wordlists/exclusive/old)",
+    "note": "Canonical spellings corrected via content/taiwan_overrides.json."
+  },
+  "words": [
+    {
+      "traditional": "的",
+      "simplified": "的",
+      "pinyin": "de",
+      "bopomofo": "ㄉㄜ˙",
+      "gloss": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
+      "pos": [
+        "u",
+        "n"
+      ],
+      "frequency": 1,
+      "hsk_level": 1,
+      "readings": [
+        "de",
+        "dī",
+        "dí",
+        "dì"
+      ]
+    },
+    {
+      "traditional": "了",
+      "simplified": "了",
+      "pinyin": "liǎo",
+      "bopomofo": "ㄌㄧㄠˇ",
+      "gloss": "to finish; to achieve; variant of 了",
+      "pos": [
+        "y",
+        "u",
+        "v"
+      ],
+      "frequency": 3,
+      "hsk_level": 1,
+      "readings": [
+        "le",
+        "liǎo"
+      ]
+    },
+    {
+      "traditional": "我",
+      "simplified": "我",
+      "pinyin": "wǒ",
+      "bopomofo": "ㄨㄛˇ",
+      "gloss": "I; me; my",
+      "pos": [
+        "r"
+      ],
+      "frequency": 3,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "是",
+      "simplified": "是",
+      "pinyin": "shì",
+      "bopomofo": "ㄕˋ",
+      "gloss": "to be (followed by substantives only); correct; right; true; (respectful acknowledgement of a command) very well",
+      "pos": [
+        "v"
+      ],
+      "frequency": 4,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "你",
+      "simplified": "你",
+      "pinyin": "nǐ",
+      "bopomofo": "ㄋㄧˇ",
+      "gloss": "you (informal, as opposed to courteous 您)",
+      "pos": [
+        "r"
+      ],
+      "frequency": 5,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "在",
+      "simplified": "在",
+      "pinyin": "zài",
+      "bopomofo": "ㄗㄞˋ",
+      "gloss": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
+      "pos": [
+        "p",
+        "v",
+        "d"
+      ],
+      "frequency": 5,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "不",
+      "simplified": "不",
+      "pinyin": "bù",
+      "bopomofo": "ㄅㄨˋ",
+      "gloss": "no; not so; (bound form) not; un-",
+      "pos": [
+        "d"
+      ],
+      "frequency": 9,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "有",
+      "simplified": "有",
+      "pinyin": "yǒu",
+      "bopomofo": "ㄧㄡˇ",
+      "gloss": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 9,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "他",
+      "simplified": "他",
+      "pinyin": "tā",
+      "bopomofo": "ㄊㄚ",
+      "gloss": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
+      "pos": [
+        "r"
+      ],
+      "frequency": 10,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "這",
+      "simplified": "这",
+      "pinyin": "zhè",
+      "bopomofo": "ㄓㄜˋ",
+      "gloss": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
+      "pos": [
+        "r"
+      ],
+      "frequency": 11,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "個",
+      "simplified": "个",
+      "pinyin": "gè",
+      "bopomofo": "ㄍㄜˋ",
+      "gloss": "(classifier used before a noun that has no specific classifier); (bound form) individual",
+      "pos": [
+        "q",
+        "g"
+      ],
+      "frequency": 19,
+      "hsk_level": 1,
+      "readings": [
+        "gě",
+        "gè"
+      ]
+    },
+    {
+      "traditional": "和",
+      "simplified": "和",
+      "pinyin": "hé",
+      "bopomofo": "ㄏㄜˊ",
+      "gloss": "(joining two nouns) and; together with; with (Taiwan pr. [hàn]); (math.) sum; to make peace",
+      "pos": [
+        "cc",
+        "p",
+        "v",
+        "qv",
+        "g",
+        "n"
+      ],
+      "frequency": 19,
+      "hsk_level": 1,
+      "readings": [
+        "hé",
+        "hè",
+        "hú",
+        "huó",
+        "huò"
+      ]
+    },
+    {
+      "traditional": "人",
+      "simplified": "人",
+      "pinyin": "rén",
+      "bopomofo": "ㄖㄣˊ",
+      "gloss": "person; people",
+      "pos": [
+        "n"
+      ],
+      "frequency": 19,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "我們",
+      "simplified": "我们",
+      "pinyin": "wǒ men",
+      "bopomofo": "ㄨㄛˇ ㄇㄣ˙",
+      "gloss": "we; us; ourselves",
+      "pos": [
+        "r"
+      ],
+      "frequency": 19,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "好",
+      "simplified": "好",
+      "pinyin": "hǎo",
+      "bopomofo": "ㄏㄠˇ",
+      "gloss": "good; appropriate; proper; all right!",
+      "pos": [
+        "a",
+        "d",
+        "v"
+      ],
+      "frequency": 20,
+      "hsk_level": 1,
+      "readings": [
+        "hǎo",
+        "hào"
+      ]
+    },
+    {
+      "traditional": "一",
+      "simplified": "一",
+      "pinyin": "yī",
+      "bopomofo": "ㄧ",
+      "gloss": "one; single; a (article)",
+      "pos": [
+        "m",
+        "d",
+        "t"
+      ],
+      "frequency": 21,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "會",
+      "simplified": "会",
+      "pinyin": "huì",
+      "bopomofo": "ㄏㄨㄟˋ",
+      "gloss": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+      "pos": [
+        "v",
+        "n"
+      ],
+      "frequency": 23,
+      "hsk_level": 1,
+      "readings": [
+        "huì",
+        "kuài"
+      ]
+    },
+    {
+      "traditional": "都",
+      "simplified": "都",
+      "pinyin": "dōu",
+      "bopomofo": "ㄉㄡ",
+      "gloss": "all; both; entirely; (used for emphasis) even; already",
+      "pos": [
+        "d",
+        "g"
+      ],
+      "frequency": 25,
+      "hsk_level": 1,
+      "readings": [
+        "dōu",
+        "dū"
+      ]
+    },
+    {
+      "traditional": "上",
+      "simplified": "上",
+      "pinyin": "shàng",
+      "bopomofo": "ㄕㄤˋ",
+      "gloss": "(bound form) up; upper; above; previous; first (of multiple parts); to climb; to get onto; to go up",
+      "pos": [
+        "f",
+        "v",
+        "g"
+      ],
+      "frequency": 29,
+      "hsk_level": 1,
+      "readings": [
+        "shǎng",
+        "shàng"
+      ]
+    },
+    {
+      "traditional": "來",
+      "simplified": "来",
+      "pinyin": "lái",
+      "bopomofo": "ㄌㄞˊ",
+      "gloss": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来)",
+      "pos": [
+        "v",
+        "f",
+        "m",
+        "u",
+        "y"
+      ],
+      "frequency": 31,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "很",
+      "simplified": "很",
+      "pinyin": "hěn",
+      "bopomofo": "ㄏㄣˇ",
+      "gloss": "(adverb of degree); quite; very",
+      "pos": [
+        "d"
+      ],
+      "frequency": 35,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "去",
+      "simplified": "去",
+      "pinyin": "qù",
+      "bopomofo": "ㄑㄩˋ",
+      "gloss": "to go; to go to (a place); (of a time etc) last",
+      "pos": [
+        "v"
+      ],
+      "frequency": 38,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "她",
+      "simplified": "她",
+      "pinyin": "tā",
+      "bopomofo": "ㄊㄚ",
+      "gloss": "she",
+      "pos": [
+        "r"
+      ],
+      "frequency": 38,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "想",
+      "simplified": "想",
+      "pinyin": "xiǎng",
+      "bopomofo": "ㄒㄧㄤˇ",
+      "gloss": "to think (about); to think of; to devise; to think (that); to believe (that)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 44,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "能",
+      "simplified": "能",
+      "pinyin": "néng",
+      "bopomofo": "ㄋㄥˊ",
+      "gloss": "can; to be able to; might possibly",
+      "pos": [
+        "v",
+        "g"
+      ],
+      "frequency": 46,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "那",
+      "simplified": "那",
+      "pinyin": "nuó",
+      "bopomofo": "ㄋㄨㄛˊ",
+      "gloss": "(archaic) many; beautiful; how",
+      "pos": [
+        "r",
+        "c"
+      ],
+      "frequency": 48,
+      "hsk_level": 1,
+      "readings": [
+        "nǎ",
+        "nà",
+        "nuó"
+      ]
+    },
+    {
+      "traditional": "看",
+      "simplified": "看",
+      "pinyin": "kàn",
+      "bopomofo": "ㄎㄢˋ",
+      "gloss": "to see; to look at; to read; to watch",
+      "pos": [
+        "v",
+        "u"
+      ],
+      "frequency": 52,
+      "hsk_level": 1,
+      "readings": [
+        "kān",
+        "kàn"
+      ]
+    },
+    {
+      "traditional": "做",
+      "simplified": "做",
+      "pinyin": "zuò",
+      "bopomofo": "ㄗㄨㄛˋ",
+      "gloss": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 53,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "什麼",
+      "simplified": "什么",
+      "pinyin": "shén me",
+      "bopomofo": "ㄕㄣˊ ㄇㄜ˙",
+      "gloss": "what?; something; anything",
+      "pos": [
+        "r"
+      ],
+      "frequency": 55,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "點",
+      "simplified": "点",
+      "pinyin": "diǎn",
+      "bopomofo": "ㄉㄧㄢˇ",
+      "gloss": "point; dot; drop",
+      "pos": [
+        "qt",
+        "n",
+        "t",
+        "v"
+      ],
+      "frequency": 58,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "沒",
+      "simplified": "没",
+      "pinyin": "mò",
+      "bopomofo": "ㄇㄛˋ",
+      "gloss": "drowned; to end; to die",
+      "pos": [
+        "d",
+        "v"
+      ],
+      "frequency": 63,
+      "hsk_level": 1,
+      "readings": [
+        "méi",
+        "mò"
+      ]
+    },
+    {
+      "traditional": "大",
+      "simplified": "大",
+      "pinyin": "dà",
+      "bopomofo": "ㄉㄚˋ",
+      "gloss": "big; large; great; older (than another person); eldest (as in 姐)",
+      "pos": [
+        "a",
+        "d",
+        "n",
+        "g"
+      ],
+      "frequency": 66,
+      "hsk_level": 1,
+      "readings": [
+        "dà",
+        "dài"
+      ]
+    },
+    {
+      "traditional": "下",
+      "simplified": "下",
+      "pinyin": "xià",
+      "bopomofo": "ㄒㄧㄚˋ",
+      "gloss": "down; downwards; below",
+      "pos": [
+        "v",
+        "f",
+        "qt",
+        "g"
+      ],
+      "frequency": 70,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "裡",
+      "simplified": "里",
+      "pinyin": "lǐ",
+      "bopomofo": "ㄌㄧˇ",
+      "gloss": "lining; interior; inside",
+      "pos": [
+        "f",
+        "q"
+      ],
+      "frequency": 75,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "現在",
+      "simplified": "现在",
+      "pinyin": "xiàn zài",
+      "bopomofo": "ㄒㄧㄢˋ ㄗㄞˋ",
+      "gloss": "now; at present; at the moment",
+      "pos": [
+        "t"
+      ],
+      "frequency": 77,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "年",
+      "simplified": "年",
+      "pinyin": "nián",
+      "bopomofo": "ㄋㄧㄢˊ",
+      "gloss": "year",
+      "pos": [
+        "qt",
+        "t",
+        "n"
+      ],
+      "frequency": 79,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "多",
+      "simplified": "多",
+      "pinyin": "duō",
+      "bopomofo": "ㄉㄨㄛ",
+      "gloss": "many; much; too many; in excess; (after a numeral) ... odd",
+      "pos": [
+        "a",
+        "m",
+        "ad",
+        "d",
+        "v",
+        "g"
+      ],
+      "frequency": 80,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "嗎",
+      "simplified": "吗",
+      "pinyin": "má",
+      "bopomofo": "ㄇㄚˊ",
+      "gloss": "(coll.) what?",
+      "pos": [
+        "y"
+      ],
+      "frequency": 83,
+      "hsk_level": 1,
+      "readings": [
+        "má",
+        "mǎ",
+        "ma"
+      ]
+    },
+    {
+      "traditional": "太",
+      "simplified": "太",
+      "pinyin": "tài",
+      "bopomofo": "ㄊㄞˋ",
+      "gloss": "highest; greatest; too (much)",
+      "pos": [
+        "d",
+        "b"
+      ],
+      "frequency": 87,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "呢",
+      "simplified": "呢",
+      "pinyin": "ne",
+      "bopomofo": "ㄋㄜ˙",
+      "gloss": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\"); particle for inquiring about location (\"Where is ...?\"); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
+      "pos": [
+        "y"
+      ],
+      "frequency": 96,
+      "hsk_level": 1,
+      "readings": [
+        "ne",
+        "ní"
+      ]
+    },
+    {
+      "traditional": "小",
+      "simplified": "小",
+      "pinyin": "xiǎo",
+      "bopomofo": "ㄒㄧㄠˇ",
+      "gloss": "small; tiny; few",
+      "pos": [
+        "a",
+        "ad"
+      ],
+      "frequency": 100,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "時候",
+      "simplified": "时候",
+      "pinyin": "shí hou",
+      "bopomofo": "ㄕˊ ㄏㄡ˙",
+      "gloss": "time; length of time; moment",
+      "pos": [
+        "n"
+      ],
+      "frequency": 107,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "工作",
+      "simplified": "工作",
+      "pinyin": "gōng zuò",
+      "bopomofo": "ㄍㄨㄥ ㄗㄨㄛˋ",
+      "gloss": "to work; (of a machine) to operate; job",
+      "pos": [
+        "vn",
+        "v",
+        "n"
+      ],
+      "frequency": 111,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "家",
+      "simplified": "家",
+      "pinyin": "jiā",
+      "bopomofo": "ㄐㄧㄚ",
+      "gloss": "home; family; (polite) my (sister, uncle etc)",
+      "pos": [
+        "n",
+        "q"
+      ],
+      "frequency": 124,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "怎麼",
+      "simplified": "怎么",
+      "pinyin": "zěn me",
+      "bopomofo": "ㄗㄣˇ ㄇㄜ˙",
+      "gloss": "how?; what?; why?",
+      "pos": [
+        "r"
+      ],
+      "frequency": 128,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "愛",
+      "simplified": "爱",
+      "pinyin": "ài",
+      "bopomofo": "ㄞˋ",
+      "gloss": "to love; to be fond of; to like; affection; to be inclined (to do sth); to tend to (happen)",
+      "pos": [
+        "v",
+        "vn",
+        "b"
+      ],
+      "frequency": 130,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "喜歡",
+      "simplified": "喜欢",
+      "pinyin": "xǐ huan",
+      "bopomofo": "ㄒㄧˇ ㄏㄨㄢ˙",
+      "gloss": "to like; to be fond of",
+      "pos": [
+        "v",
+        "vn"
+      ],
+      "frequency": 139,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "吃",
+      "simplified": "吃",
+      "pinyin": "chī",
+      "bopomofo": "ㄔ",
+      "gloss": "to eat; to consume; to eat at (a cafeteria etc); to eradicate; to destroy",
+      "pos": [
+        "v"
+      ],
+      "frequency": 142,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "誰",
+      "simplified": "谁",
+      "pinyin": "shéi",
+      "bopomofo": "ㄕㄟˊ",
+      "gloss": "who; also pr. [shuí]",
+      "pos": [
+        "r"
+      ],
+      "frequency": 142,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "今天",
+      "simplified": "今天",
+      "pinyin": "jīn tiān",
+      "bopomofo": "ㄐㄧㄣ ㄊㄧㄢ",
+      "gloss": "today; at the present; now",
+      "pos": [
+        "t"
+      ],
+      "frequency": 155,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "月",
+      "simplified": "月",
+      "pinyin": "yuè",
+      "bopomofo": "ㄩㄝˋ",
+      "gloss": "moon; month; monthly",
+      "pos": [
+        "n",
+        "t"
+      ],
+      "frequency": 161,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "幾",
+      "simplified": "几",
+      "pinyin": "jǐ",
+      "bopomofo": "ㄐㄧˇ",
+      "gloss": "how much; how many; several",
+      "pos": [
+        "m",
+        "d"
+      ],
+      "frequency": 178,
+      "hsk_level": 1,
+      "readings": [
+        "jī",
+        "jǐ"
+      ]
+    },
+    {
+      "traditional": "聽",
+      "simplified": "听",
+      "pinyin": "tīng",
+      "bopomofo": "ㄊㄧㄥ",
+      "gloss": "to listen to; to hear; to heed; to obey; a can (loanword from English \"tin\")",
+      "pos": [
+        "v"
+      ],
+      "frequency": 190,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "開",
+      "simplified": "开",
+      "pinyin": "kāi",
+      "bopomofo": "ㄎㄞ",
+      "gloss": "to open (transitive or intransitive); (of ships, vehicles, troops etc) to start; to turn on; to put in operation; to operate; to run",
+      "pos": [
+        "v",
+        "q"
+      ],
+      "frequency": 195,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "叫",
+      "simplified": "叫",
+      "pinyin": "jiào",
+      "bopomofo": "ㄐㄧㄠˋ",
+      "gloss": "to shout; to call; to order",
+      "pos": [
+        "v",
+        "p",
+        "n"
+      ],
+      "frequency": 200,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "請",
+      "simplified": "请",
+      "pinyin": "qǐng",
+      "bopomofo": "ㄑㄧㄥˇ",
+      "gloss": "to ask; to invite; please (do sth)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 216,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "錢",
+      "simplified": "钱",
+      "pinyin": "qián",
+      "bopomofo": "ㄑㄧㄢˊ",
+      "gloss": "coin; money; unit of weight, one tenth of a tael 两",
+      "pos": [
+        "n",
+        "nr"
+      ],
+      "frequency": 218,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "本",
+      "simplified": "本",
+      "pinyin": "běn",
+      "bopomofo": "ㄅㄣˇ",
+      "gloss": "root; stem; origin",
+      "pos": [
+        "r",
+        "q",
+        "d",
+        "n"
+      ],
+      "frequency": 222,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "回",
+      "simplified": "回",
+      "pinyin": "huí",
+      "bopomofo": "ㄏㄨㄟˊ",
+      "gloss": "to circle; to go back; to turn around",
+      "pos": [
+        "v",
+        "qv"
+      ],
+      "frequency": 225,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "東西",
+      "simplified": "东西",
+      "pinyin": "dōng xi",
+      "bopomofo": "ㄉㄨㄥ ㄒㄧ˙",
+      "gloss": "thing; stuff; person",
+      "pos": [
+        "n",
+        "f",
+        "nr"
+      ],
+      "frequency": 226,
+      "hsk_level": 1,
+      "readings": [
+        "dōng xī",
+        "dōng xi"
+      ]
+    },
+    {
+      "traditional": "三",
+      "simplified": "三",
+      "pinyin": "sān",
+      "bopomofo": "ㄙㄢ",
+      "gloss": "three; 3",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 233,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "買",
+      "simplified": "买",
+      "pinyin": "mǎi",
+      "bopomofo": "ㄇㄞˇ",
+      "gloss": "to buy; to purchase",
+      "pos": [
+        "v"
+      ],
+      "frequency": 240,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "歲",
+      "simplified": "岁",
+      "pinyin": "suì",
+      "bopomofo": "ㄙㄨㄟˋ",
+      "gloss": "classifier for years (of age); year; year (of crop harvests)",
+      "pos": [
+        "qt"
+      ],
+      "frequency": 266,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "朋友",
+      "simplified": "朋友",
+      "pinyin": "péng you",
+      "bopomofo": "ㄆㄥˊ ㄧㄡ˙",
+      "gloss": "friend",
+      "pos": [
+        "n"
+      ],
+      "frequency": 280,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "住",
+      "simplified": "住",
+      "pinyin": "zhù",
+      "bopomofo": "ㄓㄨˋ",
+      "gloss": "to live; to dwell; to stay",
+      "pos": [
+        "v"
+      ],
+      "frequency": 280,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "水",
+      "simplified": "水",
+      "pinyin": "shuǐ",
+      "bopomofo": "ㄕㄨㄟˇ",
+      "gloss": "water; river; liquid",
+      "pos": [
+        "n"
+      ],
+      "frequency": 335,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "寫",
+      "simplified": "写",
+      "pinyin": "xiě",
+      "bopomofo": "ㄒㄧㄝˇ",
+      "gloss": "to write",
+      "pos": [
+        "v"
+      ],
+      "frequency": 352,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "日",
+      "simplified": "日",
+      "pinyin": "rì",
+      "bopomofo": "ㄖˋ",
+      "gloss": "sun; day; date, day of the month",
+      "pos": [
+        "t",
+        "g",
+        "b",
+        "qt"
+      ],
+      "frequency": 395,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "喝",
+      "simplified": "喝",
+      "pinyin": "hē",
+      "bopomofo": "ㄏㄜ",
+      "gloss": "to drink; variant of 嗬",
+      "pos": [
+        "g",
+        "vn"
+      ],
+      "frequency": 428,
+      "hsk_level": 1,
+      "readings": [
+        "hē",
+        "hè"
+      ]
+    },
+    {
+      "traditional": "學校",
+      "simplified": "学校",
+      "pinyin": "xué xiào",
+      "bopomofo": "ㄒㄩㄝˊ ㄒㄧㄠˋ",
+      "gloss": "school",
+      "pos": [
+        "n"
+      ],
+      "frequency": 430,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "坐",
+      "simplified": "坐",
+      "pinyin": "zuò",
+      "bopomofo": "ㄗㄨㄛˋ",
+      "gloss": "to sit; to take a seat; to take (a bus, airplane etc)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 435,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "認識",
+      "simplified": "认识",
+      "pinyin": "rèn shi",
+      "bopomofo": "ㄖㄣˋ ㄕ˙",
+      "gloss": "to know; to recognize; to be familiar with",
+      "pos": [
+        "v",
+        "n",
+        "vn"
+      ],
+      "frequency": 463,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "分鐘",
+      "simplified": "分钟",
+      "pinyin": "fēn zhōng",
+      "bopomofo": "ㄈㄣ ㄓㄨㄥ",
+      "gloss": "minute",
+      "pos": [
+        "qt"
+      ],
+      "frequency": 465,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "明天",
+      "simplified": "明天",
+      "pinyin": "míng tiān",
+      "bopomofo": "ㄇㄧㄥˊ ㄊㄧㄢ",
+      "gloss": "tomorrow",
+      "pos": [
+        "t"
+      ],
+      "frequency": 469,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "四",
+      "simplified": "四",
+      "pinyin": "sì",
+      "bopomofo": "ㄙˋ",
+      "gloss": "four; 4",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 481,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "塊",
+      "simplified": "块",
+      "pinyin": "kuài",
+      "bopomofo": "ㄎㄨㄞˋ",
+      "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
+      "pos": [
+        "q",
+        "g"
+      ],
+      "frequency": 483,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "謝謝",
+      "simplified": "谢谢",
+      "pinyin": "xiè xie",
+      "bopomofo": "ㄒㄧㄝˋ ㄒㄧㄝ˙",
+      "gloss": "to thank; thanks; thank you",
+      "pos": [
+        "v"
+      ],
+      "frequency": 520,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "多少",
+      "simplified": "多少",
+      "pinyin": "duō shǎo",
+      "bopomofo": "ㄉㄨㄛ ㄕㄠˇ",
+      "gloss": "number; amount; somewhat",
+      "pos": [
+        "r"
+      ],
+      "frequency": 526,
+      "hsk_level": 1,
+      "readings": [
+        "duō shǎo",
+        "duō shao"
+      ]
+    },
+    {
+      "traditional": "媽媽",
+      "simplified": "妈妈",
+      "pinyin": "mā ma",
+      "bopomofo": "ㄇㄚ ㄇㄚ˙",
+      "gloss": "mama; mommy; mother",
+      "pos": [
+        "n"
+      ],
+      "frequency": 527,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "少",
+      "simplified": "少",
+      "pinyin": "shǎo",
+      "bopomofo": "ㄕㄠˇ",
+      "gloss": "few; less; to lack",
+      "pos": [
+        "a",
+        "ad",
+        "v",
+        "d",
+        "g"
+      ],
+      "frequency": 538,
+      "hsk_level": 1,
+      "readings": [
+        "shǎo",
+        "shào"
+      ]
+    },
+    {
+      "traditional": "電影",
+      "simplified": "电影",
+      "pinyin": "diàn yǐng",
+      "bopomofo": "ㄉㄧㄢˋ ㄧㄥˇ",
+      "gloss": "movie; film",
+      "pos": [
+        "n"
+      ],
+      "frequency": 546,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "哪",
+      "simplified": "哪",
+      "pinyin": "nǎ",
+      "bopomofo": "ㄋㄚˇ",
+      "gloss": "how; which",
+      "pos": [
+        "r",
+        "y"
+      ],
+      "frequency": 547,
+      "hsk_level": 1,
+      "readings": [
+        "nǎ",
+        "na",
+        "né",
+        "něi"
+      ]
+    },
+    {
+      "traditional": "昨天",
+      "simplified": "昨天",
+      "pinyin": "zuó tiān",
+      "bopomofo": "ㄗㄨㄛˊ ㄊㄧㄢ",
+      "gloss": "yesterday",
+      "pos": [
+        "t"
+      ],
+      "frequency": 557,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "書",
+      "simplified": "书",
+      "pinyin": "shū",
+      "bopomofo": "ㄕㄨ",
+      "gloss": "book; letter; document",
+      "pos": [
+        "n",
+        "g"
+      ],
+      "frequency": 560,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "五",
+      "simplified": "五",
+      "pinyin": "wǔ",
+      "bopomofo": "ㄨˇ",
+      "gloss": "five; 5",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 563,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "先生",
+      "simplified": "先生",
+      "pinyin": "xiān sheng",
+      "bopomofo": "ㄒㄧㄢ ㄕㄥ˙",
+      "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+      "pos": [
+        "n"
+      ],
+      "frequency": 586,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "醫院",
+      "simplified": "医院",
+      "pinyin": "yī yuàn",
+      "bopomofo": "ㄧ ㄩㄢˋ",
+      "gloss": "hospital",
+      "pos": [
+        "n"
+      ],
+      "frequency": 608,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "些",
+      "simplified": "些",
+      "pinyin": "xiē",
+      "bopomofo": "ㄒㄧㄝ",
+      "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
+      "pos": [
+        "q"
+      ],
+      "frequency": 611,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "狗",
+      "simplified": "狗",
+      "pinyin": "gǒu",
+      "bopomofo": "ㄍㄡˇ",
+      "gloss": "dog",
+      "pos": [
+        "n"
+      ],
+      "frequency": 620,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "學生",
+      "simplified": "学生",
+      "pinyin": "xué sheng",
+      "bopomofo": "ㄒㄩㄝˊ ㄕㄥ˙",
+      "gloss": "student; schoolchild",
+      "pos": [
+        "n"
+      ],
+      "frequency": 651,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "二",
+      "simplified": "二",
+      "pinyin": "èr",
+      "bopomofo": "ㄦˋ",
+      "gloss": "two; 2; (Beijing dialect) stupid",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 664,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "兒子",
+      "simplified": "儿子",
+      "pinyin": "ér zi",
+      "bopomofo": "ㄦˊ ㄗ˙",
+      "gloss": "son",
+      "pos": [
+        "n"
+      ],
+      "frequency": 665,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "中國",
+      "simplified": "中国",
+      "pinyin": "Zhōng guó",
+      "bopomofo": "ㄓㄨㄥ ㄍㄨㄛˊ",
+      "gloss": "China",
+      "pos": [
+        "ns"
+      ],
+      "frequency": 729,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "電視",
+      "simplified": "电视",
+      "pinyin": "diàn shì",
+      "bopomofo": "ㄉㄧㄢˋ ㄕˋ",
+      "gloss": "television; TV",
+      "pos": [
+        "n"
+      ],
+      "frequency": 779,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "下午",
+      "simplified": "下午",
+      "pinyin": "xià wǔ",
+      "bopomofo": "ㄒㄧㄚˋ ㄨˇ",
+      "gloss": "afternoon; p.m.",
+      "pos": [
+        "t"
+      ],
+      "frequency": 782,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "學習",
+      "simplified": "学习",
+      "pinyin": "xué xí",
+      "bopomofo": "ㄒㄩㄝˊ ㄒㄧˊ",
+      "gloss": "to learn; to study",
+      "pos": [
+        "v",
+        "vn"
+      ],
+      "frequency": 789,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "老師",
+      "simplified": "老师",
+      "pinyin": "lǎo shī",
+      "bopomofo": "ㄌㄠˇ ㄕ",
+      "gloss": "teacher",
+      "pos": [
+        "n"
+      ],
+      "frequency": 799,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "六",
+      "simplified": "六",
+      "pinyin": "liù",
+      "bopomofo": "ㄌㄧㄡˋ",
+      "gloss": "six; 6",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 802,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "醫生",
+      "simplified": "医生",
+      "pinyin": "yī shēng",
+      "bopomofo": "ㄧ ㄕㄥ",
+      "gloss": "doctor",
+      "pos": [
+        "n"
+      ],
+      "frequency": 827,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "名字",
+      "simplified": "名字",
+      "pinyin": "míng zi",
+      "bopomofo": "ㄇㄧㄥˊ ㄗ˙",
+      "gloss": "name (of a person or thing)",
+      "pos": [
+        "n"
+      ],
+      "frequency": 829,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "十",
+      "simplified": "十",
+      "pinyin": "shí",
+      "bopomofo": "ㄕˊ",
+      "gloss": "ten; 10",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 865,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "看見",
+      "simplified": "看见",
+      "pinyin": "kàn jiàn",
+      "bopomofo": "ㄎㄢˋ ㄐㄧㄢˋ",
+      "gloss": "to see; to catch sight of",
+      "pos": [
+        "v"
+      ],
+      "frequency": 870,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "女兒",
+      "simplified": "女儿",
+      "pinyin": "nǚ ér",
+      "bopomofo": "ㄋㄩˇ ㄦˊ",
+      "gloss": "daughter",
+      "pos": [
+        "n"
+      ],
+      "frequency": 879,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "說話",
+      "simplified": "说话",
+      "pinyin": "shuō huà",
+      "bopomofo": "ㄕㄨㄛ ㄏㄨㄚˋ",
+      "gloss": "to speak; to say; to talk",
+      "pos": [
+        "v",
+        "vn"
+      ],
+      "frequency": 880,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "爸爸",
+      "simplified": "爸爸",
+      "pinyin": "bà ba",
+      "bopomofo": "ㄅㄚˋ ㄅㄚ˙",
+      "gloss": "(coll.) father; dad",
+      "pos": [
+        "n"
+      ],
+      "frequency": 908,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "字",
+      "simplified": "字",
+      "pinyin": "zì",
+      "bopomofo": "ㄗˋ",
+      "gloss": "letter; symbol; character",
+      "pos": [
+        "n"
+      ],
+      "frequency": 913,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "漂亮",
+      "simplified": "漂亮",
+      "pinyin": "piào liang",
+      "bopomofo": "ㄆㄧㄠˋ ㄌㄧㄤ˙",
+      "gloss": "pretty; beautiful",
+      "pos": [
+        "a"
+      ],
+      "frequency": 915,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "高興",
+      "simplified": "高兴",
+      "pinyin": "gāo xìng",
+      "bopomofo": "ㄍㄠ ㄒㄧㄥˋ",
+      "gloss": "happy; glad; willing (to do sth)",
+      "pos": [
+        "a",
+        "an"
+      ],
+      "frequency": 920,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "熱",
+      "simplified": "热",
+      "pinyin": "rè",
+      "bopomofo": "ㄖㄜˋ",
+      "gloss": "to warm up; to heat up; hot (of weather)",
+      "pos": [
+        "a",
+        "n",
+        "k",
+        "v",
+        "ad",
+        "an"
+      ],
+      "frequency": 938,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "睡覺",
+      "simplified": "睡觉",
+      "pinyin": "shuì jiào",
+      "bopomofo": "ㄕㄨㄟˋ ㄐㄧㄠˋ",
+      "gloss": "to go to bed; to sleep",
+      "pos": [
+        "v"
+      ],
+      "frequency": 944,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "電腦",
+      "simplified": "电脑",
+      "pinyin": "diàn nǎo",
+      "bopomofo": "ㄉㄧㄢˋ ㄋㄠˇ",
+      "gloss": "computer",
+      "pos": [
+        "n"
+      ],
+      "frequency": 946,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "讀",
+      "simplified": "读",
+      "pinyin": "dú",
+      "bopomofo": "ㄉㄨˊ",
+      "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
+      "pos": [
+        "v"
+      ],
+      "frequency": 1013,
+      "hsk_level": 1,
+      "readings": [
+        "dòu",
+        "dú"
+      ]
+    },
+    {
+      "traditional": "冷",
+      "simplified": "冷",
+      "pinyin": "lěng",
+      "bopomofo": "ㄌㄥˇ",
+      "gloss": "cold",
+      "pos": [
+        "a",
+        "ad",
+        "g"
+      ],
+      "frequency": 1027,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "飛機",
+      "simplified": "飞机",
+      "pinyin": "fēi jī",
+      "bopomofo": "ㄈㄟ ㄐㄧ",
+      "gloss": "airplane",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1067,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "貓",
+      "simplified": "猫",
+      "pinyin": "māo",
+      "bopomofo": "ㄇㄠ",
+      "gloss": "cat; (dialect) to hide oneself; (coll.) modem",
+      "pos": [
+        "n",
+        "v"
+      ],
+      "frequency": 1150,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "打電話",
+      "simplified": "打电话",
+      "pinyin": "dǎ diàn huà",
+      "bopomofo": "ㄉㄚˇ ㄉㄧㄢˋ ㄏㄨㄚˋ",
+      "gloss": "to make a telephone call",
+      "pos": [
+        "v"
+      ],
+      "frequency": 1218,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "後面",
+      "simplified": "后面",
+      "pinyin": "hòu mian",
+      "bopomofo": "ㄏㄡˋ ㄇㄧㄢ˙",
+      "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+      "pos": [
+        "f"
+      ],
+      "frequency": 1300,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "喂",
+      "simplified": "喂",
+      "pinyin": "wèi",
+      "bopomofo": "ㄨㄟˋ",
+      "gloss": "hey; to feed (an animal, baby, invalid etc)",
+      "pos": [
+        "v",
+        "e"
+      ],
+      "frequency": 1301,
+      "hsk_level": 1,
+      "readings": [
+        "wéi",
+        "wèi"
+      ]
+    },
+    {
+      "traditional": "八",
+      "simplified": "八",
+      "pinyin": "bā",
+      "bopomofo": "ㄅㄚ",
+      "gloss": "eight; 8",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 1362,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "怎麼樣",
+      "simplified": "怎么样",
+      "pinyin": "zěn me yàng",
+      "bopomofo": "ㄗㄣˇ ㄇㄜ˙ ㄧㄤˋ",
+      "gloss": "how?; how about?; how was it?",
+      "pos": [
+        "r"
+      ],
+      "frequency": 1367,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "七",
+      "simplified": "七",
+      "pinyin": "qī",
+      "bopomofo": "ㄑㄧ",
+      "gloss": "seven; 7",
+      "pos": [
+        "m",
+        "t"
+      ],
+      "frequency": 1419,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "菜",
+      "simplified": "菜",
+      "pinyin": "cài",
+      "bopomofo": "ㄘㄞˋ",
+      "gloss": "dish (type of food); vegetable; cuisine",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1448,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "衣服",
+      "simplified": "衣服",
+      "pinyin": "yī fu",
+      "bopomofo": "ㄧ ㄈㄨ˙",
+      "gloss": "clothes",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1472,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "小姐",
+      "simplified": "小姐",
+      "pinyin": "xiǎo jie",
+      "bopomofo": "ㄒㄧㄠˇ ㄐㄧㄝ˙",
+      "gloss": "young lady; miss; (slang) prostitute",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1575,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "對不起",
+      "simplified": "对不起",
+      "pinyin": "duì bu qǐ",
+      "bopomofo": "ㄉㄨㄟˋ ㄅㄨ˙ ㄑㄧˇ",
+      "gloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+      "pos": [
+        "v"
+      ],
+      "frequency": 1577,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "天氣",
+      "simplified": "天气",
+      "pinyin": "tiān qì",
+      "bopomofo": "ㄊㄧㄢ ㄑㄧˋ",
+      "gloss": "weather",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1675,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "前面",
+      "simplified": "前面",
+      "pinyin": "qián miàn",
+      "bopomofo": "ㄑㄧㄢˊ ㄇㄧㄢˋ",
+      "gloss": "ahead; in front; preceding",
+      "pos": [
+        "f"
+      ],
+      "frequency": 1789,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "同學",
+      "simplified": "同学",
+      "pinyin": "tóng xué",
+      "bopomofo": "ㄊㄨㄥˊ ㄒㄩㄝˊ",
+      "gloss": "to study at the same school; fellow student; classmate",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1828,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "茶",
+      "simplified": "茶",
+      "pinyin": "chá",
+      "bopomofo": "ㄔㄚˊ",
+      "gloss": "tea; tea plant",
+      "pos": [
+        "n",
+        "g"
+      ],
+      "frequency": 1910,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "星期",
+      "simplified": "星期",
+      "pinyin": "xīng qī",
+      "bopomofo": "ㄒㄧㄥ ㄑㄧ",
+      "gloss": "week; day of the week; Sunday",
+      "pos": [
+        "n"
+      ],
+      "frequency": 1956,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "九",
+      "simplified": "九",
+      "pinyin": "jiǔ",
+      "bopomofo": "ㄐㄧㄡˇ",
+      "gloss": "nine; 9",
+      "pos": [
+        "m",
+        "t",
+        "b"
+      ],
+      "frequency": 2040,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "上午",
+      "simplified": "上午",
+      "pinyin": "shàng wǔ",
+      "bopomofo": "ㄕㄤˋ ㄨˇ",
+      "gloss": "morning",
+      "pos": [
+        "t"
+      ],
+      "frequency": 2188,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "再見",
+      "simplified": "再见",
+      "pinyin": "zài jiàn",
+      "bopomofo": "ㄗㄞˋ ㄐㄧㄢˋ",
+      "gloss": "goodbye; see you again later",
+      "pos": [
+        "v"
+      ],
+      "frequency": 2487,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "蘋果",
+      "simplified": "苹果",
+      "pinyin": "píng guǒ",
+      "bopomofo": "ㄆㄧㄥˊ ㄍㄨㄛˇ",
+      "gloss": "apple",
+      "pos": [
+        "n"
+      ],
+      "frequency": 2562,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "中午",
+      "simplified": "中午",
+      "pinyin": "zhōng wǔ",
+      "bopomofo": "ㄓㄨㄥ ㄨˇ",
+      "gloss": "noon; midday",
+      "pos": [
+        "t"
+      ],
+      "frequency": 2600,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "出租車",
+      "simplified": "出租车",
+      "pinyin": "chū zū chē",
+      "bopomofo": "ㄔㄨ ㄗㄨ ㄔㄜ",
+      "gloss": "taxi; (Tw) rental car",
+      "pos": [
+        "n"
+      ],
+      "frequency": 2677,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "水果",
+      "simplified": "水果",
+      "pinyin": "shuǐ guǒ",
+      "bopomofo": "ㄕㄨㄟˇ ㄍㄨㄛˇ",
+      "gloss": "fruit",
+      "pos": [
+        "n"
+      ],
+      "frequency": 3271,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "商店",
+      "simplified": "商店",
+      "pinyin": "shāng diàn",
+      "bopomofo": "ㄕㄤ ㄉㄧㄢˋ",
+      "gloss": "store; shop",
+      "pos": [
+        "n"
+      ],
+      "frequency": 3479,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "沒關係",
+      "simplified": "没关系",
+      "pinyin": "méi guān xi",
+      "bopomofo": "ㄇㄟˊ ㄍㄨㄢ ㄒㄧ˙",
+      "gloss": "it doesn't matter",
+      "pos": [
+        "v"
+      ],
+      "frequency": 3541,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "零",
+      "simplified": "零",
+      "pinyin": "líng",
+      "bopomofo": "ㄌㄧㄥˊ",
+      "gloss": "zero; nought; zero sign",
+      "pos": [
+        "m",
+        "t",
+        "g"
+      ],
+      "frequency": 3623,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "桌子",
+      "simplified": "桌子",
+      "pinyin": "zhuō zi",
+      "bopomofo": "ㄓㄨㄛ ㄗ˙",
+      "gloss": "table; desk",
+      "pos": [
+        "n"
+      ],
+      "frequency": 3639,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "椅子",
+      "simplified": "椅子",
+      "pinyin": "yǐ zi",
+      "bopomofo": "ㄧˇ ㄗ˙",
+      "gloss": "chair",
+      "pos": [
+        "n"
+      ],
+      "frequency": 4472,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "北京",
+      "simplified": "北京",
+      "pinyin": "Běi jīng",
+      "bopomofo": "ㄅㄟˇ ㄐㄧㄥ",
+      "gloss": "Beijing, capital of the People's Republic of China",
+      "pos": [
+        "ns"
+      ],
+      "frequency": 4799,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "下雨",
+      "simplified": "下雨",
+      "pinyin": "xià yǔ",
+      "bopomofo": "ㄒㄧㄚˋ ㄩˇ",
+      "gloss": "to rain",
+      "pos": [
+        "v"
+      ],
+      "frequency": 5648,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "杯子",
+      "simplified": "杯子",
+      "pinyin": "bēi zi",
+      "bopomofo": "ㄅㄟ ㄗ˙",
+      "gloss": "cup; glass",
+      "pos": [
+        "n"
+      ],
+      "frequency": 6162,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "火車站",
+      "simplified": "火车站",
+      "pinyin": "huǒ chē zhàn",
+      "bopomofo": "ㄏㄨㄛˇ ㄔㄜ ㄓㄢˋ",
+      "gloss": "train station",
+      "pos": [
+        "n"
+      ],
+      "frequency": 7270,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "米飯",
+      "simplified": "米饭",
+      "pinyin": "mǐ fàn",
+      "bopomofo": "ㄇㄧˇ ㄈㄢˋ",
+      "gloss": "(cooked) rice",
+      "pos": [
+        "n"
+      ],
+      "frequency": 10194,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "漢語",
+      "simplified": "汉语",
+      "pinyin": "Hàn yǔ",
+      "bopomofo": "ㄏㄢˋ ㄩˇ",
+      "gloss": "Chinese language",
+      "pos": [
+        "nz"
+      ],
+      "frequency": 13422,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "飯館",
+      "simplified": "饭馆",
+      "pinyin": "fàn guǎn",
+      "bopomofo": "ㄈㄢˋ ㄍㄨㄢˇ",
+      "gloss": "restaurant",
+      "pos": [
+        "n"
+      ],
+      "frequency": 16449,
+      "hsk_level": 1
+    },
+    {
+      "traditional": "不客氣",
+      "simplified": "不客气",
+      "pinyin": "bù kè qi",
+      "bopomofo": "ㄅㄨˋ ㄎㄜˋ ㄑㄧ˙",
+      "gloss": "you're welcome; don't mention it; impolite",
+      "pos": [],
+      "frequency": 16723,
+      "hsk_level": 1
+    }
+  ]
+}

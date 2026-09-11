@@ -64,8 +64,17 @@ def _migrate(conn: sqlite3.Connection) -> None:
             "UPDATE settings SET phonetic = CASE WHEN show_pinyin = 0 THEN 'off' ELSE 'pinyin' END"
         )
 
-    if "example_zhuyin" not in columns("vocab"):
+    vocab_cols = columns("vocab")
+    if "example_zhuyin" not in vocab_cols:
         conn.execute("ALTER TABLE vocab ADD COLUMN example_zhuyin TEXT")
+    if "tocfl_level" not in vocab_cols:
+        conn.execute("ALTER TABLE vocab ADD COLUMN tocfl_level TEXT")
+
+    unit_cols = columns("units")
+    if "tocfl_level" not in unit_cols:
+        conn.execute("ALTER TABLE units ADD COLUMN tocfl_level TEXT")
+    if "tocfl_band" not in unit_cols:
+        conn.execute("ALTER TABLE units ADD COLUMN tocfl_band TEXT")
 
 
 def get_db() -> Iterator[sqlite3.Connection]:

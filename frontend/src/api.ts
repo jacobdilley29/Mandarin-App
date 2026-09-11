@@ -116,6 +116,7 @@ export interface PlacementItem {
   char: string;
   pinyin: string;
   zhuyin?: string | null;
+  hsk_level?: number | null;
   options: Option[];
 }
 export interface Placement {
@@ -125,6 +126,8 @@ export interface Placement {
 export interface PlacementResult {
   seeded_mature: number;
   seeded_new: number;
+  /** HSK levels the answers cleared; their lessons are marked complete. */
+  levels_cleared: number[];
 }
 
 // One review item; fields present depend on `kind`.
@@ -338,7 +341,9 @@ export const api = {
       body: JSON.stringify({ results }),
     }).then(json<LessonResult>),
   placement: () => fetch("/api/placement").then(json<Placement>),
-  placementResult: (results: { vocab_id: string; correct: boolean }[]) =>
+  placementResult: (
+    results: { vocab_id: string; correct: boolean; hsk_level?: number | null }[],
+  ) =>
     fetch("/api/placement/result", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
