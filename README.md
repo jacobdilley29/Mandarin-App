@@ -128,6 +128,12 @@ no port-forwarding, no certificates to manage.
 > Single-user by design — **Tailscale is the security perimeter**, so there's no
 > login. Keep the tailnet private.
 
+**If the app reloads in a loop or keeps showing an old version**, open
+`/reset` on the device (e.g. `https://<your-machine>.<tailnet>.ts.net/reset`).
+It unregisters the service worker and clears its caches, then you can reopen the
+app. The page is served by the backend and excluded from the worker's navigation
+fallback, so it stays reachable even when the cached app is what's broken.
+
 ---
 
 ## Configuration (`.env`)

@@ -11,7 +11,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import __version__, content
@@ -111,6 +111,49 @@ def _cache_headers(name: str) -> dict[str, str]:
     return dict(_NO_CACHE) if name in _ALWAYS_REVALIDATE else {}
 
 
+_RESET_PAGE = """<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reset app cache</title>
+<style>
+  body { font: 16px/1.5 -apple-system, system-ui, sans-serif; margin: 0;
+         padding: 2rem 1.25rem; background: #F6F4EC; color: #1B1B18; }
+  h1 { font-size: 1.25rem; margin: 0 0 .5rem; }
+  p { color: #55554E; }
+  #out { margin-top: 1rem; font-weight: 600; }
+  a { display: inline-block; margin-top: 1.5rem; padding: .75rem 1.25rem;
+      background: #00694E; color: #fff; border-radius: .375rem;
+      text-decoration: none; }
+</style>
+<h1>Reset app cache</h1>
+<p>Unregisters the service worker and clears its caches. Use this if the app
+reloads in a loop or keeps showing an old version.</p>
+<div id="out">Working…</div>
+<a href="/">Back to the app</a>
+<script>
+(async () => {
+  const out = document.getElementById("out");
+  try {
+    let workers = 0;
+    if ("serviceWorker" in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      for (const r of regs) { await r.unregister(); workers++; }
+    }
+    let caches_cleared = 0;
+    if (window.caches) {
+      const keys = await caches.keys();
+      for (const k of keys) { await caches.delete(k); caches_cleared++; }
+    }
+    out.textContent = `Removed ${workers} service worker(s) and ${caches_cleared} cache(s). ` +
+                      `Tap below, then fully close and reopen the app.`;
+  } catch (e) {
+    out.textContent = "Failed: " + e;
+  }
+})();
+</script>
+"""
+
+
 def _mount_frontend() -> None:
     """Serve the built SPA with history-fallback, if it exists.
 
@@ -123,6 +166,16 @@ def _mount_frontend() -> None:
 
     # HEAD as well as GET: a bare @app.get catch-all answers HEAD / with 405,
     # which trips proxies and uptime checks.
+    @app.api_route("/reset", methods=["GET", "HEAD"], include_in_schema=False)
+    def reset():  # noqa: ANN202
+        """Escape hatch for a service worker stuck reloading.
+
+        Served by the backend rather than from the bundle, and excluded from the
+        worker's navigation fallback, so it stays reachable even when the cached
+        app is the thing that is broken.
+        """
+        return HTMLResponse(_RESET_PAGE, headers=_NO_CACHE)
+
     @app.api_route("/{full_path:path}", methods=["GET", "HEAD"], include_in_schema=False)
     def spa(full_path: str):  # noqa: ANN202
         # Never let the catch-all swallow the API namespace.

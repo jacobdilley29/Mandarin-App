@@ -30,7 +30,9 @@ export default defineConfig({
       },
       workbox: {
         // Don't try to cache/handle the API or audio — those are server-owned.
-        navigateFallbackDenylist: [/^\/api/, /^\/audio/],
+        // /reset must never be handled by the service worker — it is the page
+        // that removes a service worker stuck in an update-reload cycle.
+        navigateFallbackDenylist: [/^\/api/, /^\/audio/, /^\/reset/],
         // Drop precaches from previous builds. Without this the old bundles stay
         // resident after a rebuild, and with `autoUpdate` above the stale page
         // can update-and-reload in a loop instead of settling on the new build.
