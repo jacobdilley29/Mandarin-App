@@ -32,6 +32,7 @@ def init_db() -> None:
     conn = connect()
     try:
         conn.executescript(schema_sql)
+        _migrate(conn)
         conn.execute(
             "INSERT OR REPLACE INTO schema_meta (key, value) VALUES ('version', ?)",
             (SCHEMA_VERSION,),
@@ -39,6 +40,17 @@ def init_db() -> None:
         conn.commit()
     finally:
         conn.close()
+
+
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Additive, idempotent migrations for DBs created before a column existed.
+
+    CREATE TABLE IF NOT EXISTS never alters an existing table, so new columns
+    are added here by inspecting the live schema.
+    """
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(settings)").fetchall()}
+    if "anthropic_api_key" not in cols:
+        conn.execute("ALTER TABLE settings ADD COLUMN anthropic_api_key TEXT")
 
 
 def get_db() -> Iterator[sqlite3.Connection]:

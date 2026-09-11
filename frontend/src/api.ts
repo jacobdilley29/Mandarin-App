@@ -23,6 +23,12 @@ export interface Settings {
   daily_new_limit: number;
   reduced_motion: boolean;
   placement_done: boolean;
+  // Read-only: whether the Talk tab has a usable Anthropic key, and whether it
+  // came from .env (in which case it can't be cleared from the app).
+  conversation_configured: boolean;
+  conversation_key_from_env: boolean;
+  // Write-only: send to set the in-app key, or "" to clear it. Never returned.
+  anthropic_api_key?: string;
 }
 
 // --- Learn / curriculum types (mirror backend shapes) ---

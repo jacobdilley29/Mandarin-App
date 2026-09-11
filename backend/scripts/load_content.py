@@ -24,6 +24,7 @@ from app import content, db  # noqa: E402
 from app.config import REPO_ROOT  # noqa: E402
 from app.validation import (  # noqa: E402
     allowed_chars,
+    han_chars,
     validate_curriculum,
     validate_listen,
 )
@@ -43,7 +44,16 @@ def main() -> int:
 
     data = json.loads(path.read_text(encoding="utf-8"))
 
-    result = validate_curriculum(data)
+    # The HSK 1 placement pool is pre-known (seeded as mastered on first run),
+    # so lesson sentences may draw on its characters. Feed them to the validator
+    # as always-known, mirroring the learner's real starting point.
+    hsk1_chars: set[str] = set()
+    if content.HSK1_PATH.is_file():
+        hsk1 = json.loads(content.HSK1_PATH.read_text(encoding="utf-8"))
+        for v in hsk1.get("vocab", []):
+            hsk1_chars |= han_chars(v["traditional"])
+
+    result = validate_curriculum(data, extra_known_chars=hsk1_chars)
     if result.ok:
         print("✓ curriculum validation passed — all sentences use in-scope characters")
     else:

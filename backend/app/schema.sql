@@ -203,6 +203,7 @@ CREATE TABLE IF NOT EXISTS settings (
     daily_new_limit    INTEGER NOT NULL DEFAULT 15,
     reduced_motion     INTEGER NOT NULL DEFAULT 0,
     placement_done     INTEGER NOT NULL DEFAULT 0,
+    anthropic_api_key  TEXT,                         -- optional; set in-app to enable Talk (overrides .env). Local single-user store.
     updated_at         TEXT NOT NULL DEFAULT (datetime('now'))
 );
 

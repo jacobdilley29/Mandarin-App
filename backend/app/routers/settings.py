@@ -11,6 +11,7 @@ import sqlite3
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
 
+from ..config import get_settings
 from ..db import get_db
 
 router = APIRouter(prefix="/api/settings", tags=["settings"])
@@ -25,6 +26,7 @@ _WRITABLE = {
     "daily_new_limit",
     "reduced_motion",
     "placement_done",
+    "anthropic_api_key",
 }
 
 VOICES = ("zh-TW-HsiaoChenNeural", "zh-TW-YunJheNeural")
@@ -40,6 +42,11 @@ class SettingsOut(BaseModel):
     daily_new_limit: int
     reduced_motion: bool
     placement_done: bool
+    # Whether the Talk tab has a usable Anthropic key (from the in-app setting or
+    # .env). The key itself is never returned — only whether one is configured,
+    # and whether it came from .env (so the UI can explain it can't be cleared here).
+    conversation_configured: bool
+    conversation_key_from_env: bool
 
 
 class SettingsUpdate(BaseModel):
@@ -50,9 +57,13 @@ class SettingsUpdate(BaseModel):
     daily_new_limit: int | None = Field(default=None, ge=0, le=100)
     reduced_motion: bool | None = None
     placement_done: bool | None = None
+    # Write-only: set to enable Talk, or "" to clear the in-app key. Never echoed.
+    anthropic_api_key: str | None = None
 
 
 def _row_to_out(row: sqlite3.Row) -> SettingsOut:
+    db_key = (row["anthropic_api_key"] or "").strip()
+    env_key = (get_settings().anthropic_api_key or "").strip()
     return SettingsOut(
         show_pinyin=bool(row["show_pinyin"]),
         playback_rate=row["playback_rate"],
@@ -61,6 +72,8 @@ def _row_to_out(row: sqlite3.Row) -> SettingsOut:
         daily_new_limit=row["daily_new_limit"],
         reduced_motion=bool(row["reduced_motion"]),
         placement_done=bool(row["placement_done"]),
+        conversation_configured=bool(db_key or env_key),
+        conversation_key_from_env=bool(env_key and not db_key),
     )
 
 
@@ -89,6 +102,10 @@ def update_settings_endpoint(
         raise HTTPException(422, f"theme must be one of {THEMES}")
     if "playback_rate" in data and data["playback_rate"] not in RATES:
         raise HTTPException(422, f"playback_rate must be one of {RATES}")
+
+    # A blank key means "clear the in-app key" → store NULL, not "".
+    if "anthropic_api_key" in data and not (data["anthropic_api_key"] or "").strip():
+        data["anthropic_api_key"] = None
 
     if data:
         cols = [c for c in data if c in _WRITABLE]

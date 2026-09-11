@@ -7,10 +7,13 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter
+import sqlite3
 
-from .. import __version__
+from fastapi import APIRouter, Depends
+
+from .. import __version__, conversation
 from ..config import get_settings
+from ..db import get_db
 
 router = APIRouter(prefix="/api", tags=["health"])
 
@@ -21,14 +24,15 @@ def health() -> dict:
 
 
 @router.get("/status")
-def status() -> dict:
+def status(conn: sqlite3.Connection = Depends(get_db)) -> dict:
     settings = get_settings()
     return {
         "version": __version__,
         "phase": 5,
         "features": {
-            # Talk tab degrades gracefully when no key is present.
-            "conversation": settings.conversation_enabled,
+            # Talk tab degrades gracefully when no key is present. The key may
+            # come from .env or from the in-app setting stored in the DB.
+            "conversation": conversation.available(conn),
             "learn": True,
             "review": True,
             "listen": True,

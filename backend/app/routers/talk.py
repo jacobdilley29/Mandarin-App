@@ -24,9 +24,9 @@ router = APIRouter(prefix="/api/talk", tags=["talk"])
 
 
 @router.get("/scenarios")
-def scenarios() -> dict:
+def scenarios(conn: sqlite3.Connection = Depends(get_db)) -> dict:
     return {
-        "available": conversation.available(),
+        "available": conversation.available(conn),
         "scenarios": [
             {"id": s["id"], "emoji": s["emoji"], "title": s["title"], "en": s["en"], "opening": s["opening"]}
             for s in conversation.SCENARIOS
@@ -69,7 +69,7 @@ def message(body: MessageIn, conn: sqlite3.Connection = Depends(get_db)) -> dict
     sess = conn.execute("SELECT scenario FROM talk_sessions WHERE id = ?", (body.session_id,)).fetchone()
     if not sess:
         raise HTTPException(404, "unknown session")
-    if not conversation.available():
+    if not conversation.available(conn):
         raise HTTPException(503, "conversation unavailable — set ANTHROPIC_API_KEY")
 
     history = [

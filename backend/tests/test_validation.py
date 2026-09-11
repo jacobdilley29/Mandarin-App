@@ -33,9 +33,15 @@ def test_check_sentence_flags_unknown():
 
 
 def test_seed_curriculum_is_valid():
-    """The committed seed content must pass vocab validation."""
+    """The committed curriculum must pass vocab validation under real loading
+    conditions — i.e. with the HSK 1 placement pool treated as pre-known, exactly
+    as scripts/load_content.py does."""
     data = json.loads((REPO_ROOT / "content" / "curriculum.json").read_text(encoding="utf-8"))
-    result = validate_curriculum(data)
+    hsk1 = json.loads((REPO_ROOT / "content" / "hsk1.json").read_text(encoding="utf-8"))
+    hsk1_chars: set[str] = set()
+    for v in hsk1.get("vocab", []):
+        hsk1_chars |= han_chars(v["traditional"])
+    result = validate_curriculum(data, extra_known_chars=hsk1_chars)
     assert result.ok, "seed content has vocab violations: " + "; ".join(
         f"[{v.where}] {v.text} -> {v.unknown}" for v in result.violations
     )

@@ -64,16 +64,25 @@ def check_sentence(text: str, allowed: set[str]) -> set[str]:
     return han_chars(text) - allowed
 
 
-def validate_curriculum(data: dict) -> ValidationResult:
+def validate_curriculum(
+    data: dict, extra_known_chars: set[str] | None = None
+) -> ValidationResult:
     """Validate a curriculum JSON payload (the shape of content/curriculum.json).
 
     Characters accumulate lesson-by-lesson: a sentence in lesson N may use any
     vocab from lessons 1..N (plus the global function-word allowlist), matching
     how the learner progresses.
+
+    `extra_known_chars` is a set of characters treated as known from the very
+    start — the HSK 1 placement pool, which the learner meets before any lesson
+    (seeded into the deck on the first-run placement check). Passing it lets
+    lesson sentences draw on foundational HSK 1 vocabulary without re-teaching it.
     """
     result = ValidationResult()
     function_words = data.get("meta", {}).get("function_words", [])
     base_allowed = allowed_chars([], function_words)
+    if extra_known_chars:
+        base_allowed |= extra_known_chars
 
     cumulative = set(base_allowed)
 

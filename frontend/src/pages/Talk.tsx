@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { api, type Scenario } from "../api";
 import { ToneMark } from "../components/ToneMark";
+import ApiKeyForm from "../components/ApiKeyForm";
 import Chat from "./talk/Chat";
 
-function NoKey() {
+function NoKey({ onConfigured }: { onConfigured: () => void }) {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
+    <div className="mx-auto flex min-h-[60vh] max-w-sm flex-col items-center justify-center px-6 text-center">
       <div className="mb-4 text-ink-faint">
         <ToneMark tone={5} size={40} strokeWidth={9} />
       </div>
@@ -13,12 +14,13 @@ function NoKey() {
         聊
       </h1>
       <p className="mt-2 text-lg font-semibold text-ink">Talk</p>
-      <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-soft">
-        Conversation practice needs an Anthropic API key. Add{" "}
-        <code className="rounded bg-surface-2 px-1 py-0.5 text-xs">ANTHROPIC_API_KEY</code> to your{" "}
-        <code className="rounded bg-surface-2 px-1 py-0.5 text-xs">.env</code> and restart.
-        Everything else in the app works without it.
+      <p className="mt-3 text-sm leading-relaxed text-ink-soft">
+        Conversation practice needs an Anthropic API key. Enter one below to enable it — you can also
+        set it later under <span className="text-ink">我 · Settings</span>.
       </p>
+      <div className="mt-5 w-full text-left">
+        <ApiKeyForm onSaved={onConfigured} />
+      </div>
     </div>
   );
 }
@@ -28,7 +30,7 @@ export default function Talk() {
   const [available, setAvailable] = useState<boolean | null>(null);
   const [chosen, setChosen] = useState<Scenario | null>(null);
 
-  useEffect(() => {
+  function load() {
     api
       .talkScenarios()
       .then((r) => {
@@ -36,12 +38,16 @@ export default function Talk() {
         setScenarios(r.scenarios);
       })
       .catch(() => setAvailable(false));
+  }
+
+  useEffect(() => {
+    load();
   }, []);
 
   if (available === null) {
     return <div className="mx-auto max-w-xl px-4 py-10 text-center text-ink-soft">Loading…</div>;
   }
-  if (!available) return <NoKey />;
+  if (!available) return <NoKey onConfigured={load} />;
   if (chosen) return <Chat scenario={chosen} onExit={() => setChosen(null)} />;
 
   return (

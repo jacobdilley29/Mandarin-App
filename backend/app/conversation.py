@@ -69,8 +69,25 @@ def scenario(scenario_id: str) -> dict | None:
     return _SCENARIO_BY_ID.get(scenario_id)
 
 
-def available() -> bool:
-    if not get_settings().anthropic_api_key:
+def effective_api_key(conn: sqlite3.Connection | None = None) -> str | None:
+    """The Anthropic key in effect: the in-app setting (DB) takes precedence,
+    falling back to the .env / environment value. Lets the user enable Talk by
+    entering a key in the app without editing files."""
+    if conn is not None:
+        try:
+            row = conn.execute(
+                "SELECT anthropic_api_key FROM settings WHERE id = 1"
+            ).fetchone()
+        except Exception:
+            row = None
+        if row is not None and (row["anthropic_api_key"] or "").strip():
+            return row["anthropic_api_key"].strip()
+    env_key = get_settings().anthropic_api_key
+    return env_key.strip() if env_key and env_key.strip() else None
+
+
+def available(conn: sqlite3.Connection | None = None) -> bool:
+    if not effective_api_key(conn):
         return False
     try:
         import anthropic  # noqa: F401
@@ -124,8 +141,13 @@ def reply(conn: sqlite3.Connection, scenario_id: str, history: list[dict], user_
     sc = scenario(scenario_id)
     if not sc:
         raise ValueError("unknown scenario")
-    if not available():
+    key = effective_api_key(conn)
+    if not key:
         raise RuntimeError("conversation unavailable (no ANTHROPIC_API_KEY)")
+    try:
+        import anthropic  # noqa: F401
+    except ImportError:
+        raise RuntimeError("conversation unavailable (anthropic package not installed)")
 
     import anthropic
     from pydantic import BaseModel
@@ -149,7 +171,7 @@ def reply(conn: sqlite3.Connection, scenario_id: str, history: list[dict], user_
         {"role": m["role"], "content": m["content"]} for m in history
     ] + [{"role": "user", "content": user_text}]
 
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(api_key=key)
     response = client.messages.parse(
         model=MODEL,
         max_tokens=1024,

@@ -2,6 +2,7 @@ import { type Settings } from "../api";
 import { useSettings } from "../SettingsContext";
 import { useStatus } from "../StatusContext";
 import { ToneRow } from "../components/ToneMark";
+import ApiKeyForm from "../components/ApiKeyForm";
 import Progress from "./me/Progress";
 
 const VOICES = [
@@ -167,6 +168,13 @@ export default function Me() {
           <p className="mt-3 text-right text-xs text-ink-faint">{saving ? "Saving…" : "Saved"}</p>
         </>
       )}
+
+      <h2 className="mb-3 mt-8 text-sm font-semibold uppercase tracking-wide text-ink-soft">
+        Talk (AI conversation)
+      </h2>
+      <section className="card">
+        <ApiKeyForm />
+      </section>
 
       <section className="card mt-6">
         <h2 className="mb-2 text-sm font-semibold text-ink">About</h2>

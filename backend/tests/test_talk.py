@@ -10,7 +10,8 @@ from app.routers import talk
 
 
 def _stub_client(monkeypatch, turn: dict):
-    monkeypatch.setattr(conversation, "available", lambda: True)
+    monkeypatch.setattr(conversation, "available", lambda conn=None: True)
+    monkeypatch.setattr(conversation, "effective_api_key", lambda conn=None: "sk-test")
 
     class FakeParsed:
         def model_dump(self):
@@ -89,8 +90,37 @@ def test_message_persists_turn_and_recap_collects_new_words(conn, monkeypatch):
     assert card is not None
 
 
+def test_inapp_key_enables_and_clears_conversation(conn, monkeypatch):
+    """Setting an Anthropic key via the settings endpoint enables Talk without
+    touching .env; clearing it disables Talk again. The key is never returned."""
+    from app.routers import settings as settings_router
+
+    # No key configured, and no .env key in the sandbox → Talk off.
+    monkeypatch.setattr(settings_router, "get_settings", lambda: type("S", (), {"anthropic_api_key": None})())
+    out = settings_router.get_settings_endpoint(conn)
+    assert out.conversation_configured is False
+    assert not hasattr(out, "anthropic_api_key")  # write-only, never echoed
+
+    # Set an in-app key → Talk becomes available (anthropic pkg is installed).
+    settings_router.update_settings_endpoint(
+        settings_router.SettingsUpdate(anthropic_api_key="sk-test-123"), conn
+    )
+    out2 = settings_router.get_settings_endpoint(conn)
+    assert out2.conversation_configured is True
+    assert out2.conversation_key_from_env is False
+    assert conversation.effective_api_key(conn) == "sk-test-123"
+    assert conversation.available(conn) is True
+
+    # Clearing with a blank string stores NULL and disables Talk again.
+    settings_router.update_settings_endpoint(
+        settings_router.SettingsUpdate(anthropic_api_key=""), conn
+    )
+    assert settings_router.get_settings_endpoint(conn).conversation_configured is False
+    assert conversation.effective_api_key(conn) is None
+
+
 def test_message_without_key_raises(conn, monkeypatch):
-    monkeypatch.setattr(conversation, "available", lambda: False)
+    monkeypatch.setattr(conversation, "available", lambda conn=None: False)
     session_id = talk.start(talk.StartIn(scenario="mrt"), conn)["session_id"]
     try:
         talk.message(talk.MessageIn(session_id=session_id, text="你好"), conn)
