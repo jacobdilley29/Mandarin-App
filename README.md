@@ -161,7 +161,16 @@ python -m scripts.load_content --check             # validate only
 python -m scripts.load_content --prune             # also drop rows no longer in the file
 python -m scripts.generate_content --level 2       # add sentences to a level's lessons
 python -m scripts.import_cedict                    # download + import CC-CEDICT
+python -m scripts.unlock_through --list           # show unit ids
+python -m scripts.unlock_through --through u_health   # skip ahead + seed review
 ```
+
+`unlock_through` is for a learner already past the early material: it completes
+every lesson up to a unit and seeds that vocabulary and grammar into the review
+deck. Due dates are **staggered** across `--spread` days rather than landing on
+one — `srs.due_cards` caps the queue at 60 and computes
+`remaining = max(0, limit - len(due))`, so a few hundred cards all due at once
+means a permanent backlog that no new card can ever get past.
 
 `build_skeleton` turns the HSK word lists into the unit/lesson structure.
 Those lists are **mainland-standard** — traditional characters but PRC

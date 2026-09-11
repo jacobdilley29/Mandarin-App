@@ -52,6 +52,20 @@ function Prompt({ item }: { item: ReviewItem }) {
           {item.gloss && <div className="mt-1 text-sm text-ink-soft">{item.gloss}</div>}
         </div>
       );
+    case "grammar":
+      return (
+        <div className="py-4 text-center">
+          <div className="mb-3 text-sm text-ink-soft">Which pattern is this?</div>
+          <div className="flex justify-center">
+            <PlayButton text={item.audio_text ?? ""} />
+          </div>
+          <div lang="zh-Hant" className="mt-3 font-han text-2xl text-ink">
+            {item.prompt_hanzi}
+          </div>
+          <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} className="mt-1" />
+          {item.gloss && <div className="mt-1 text-sm text-ink-soft">{item.gloss}</div>}
+        </div>
+      );
   }
 }
 
@@ -149,7 +163,8 @@ export default function ReviewSession() {
         {/* Answer choices */}
         <div className="mt-3 grid gap-2">
           {item.options.map((o) => {
-            const isHan = item.kind === "recall" || item.kind === "cloze";
+            const isHan =
+              item.kind === "recall" || item.kind === "cloze" || item.kind === "grammar";
             let cls = "border-border bg-surface hover:border-primary";
             if (answered) {
               if (o.correct) cls = "border-good bg-good/10 text-good";
@@ -179,10 +194,28 @@ export default function ReviewSession() {
         {answered && (
           <div className="mt-5">
             <div className="rounded-md bg-surface-2 p-3 text-center">
-              <span lang="zh-Hant" className="font-han text-lg text-ink">
-                {item.char ?? item.audio_text ?? item.answer}
-              </span>
-              <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} />
+              {item.kind === "grammar" ? (
+                <>
+                  <span lang="zh-Hant" className="font-han text-lg text-ink">
+                    {item.answer}
+                  </span>
+                  {item.title && (
+                    <div className="mt-1 text-sm font-medium text-ink">{item.title}</div>
+                  )}
+                  {item.explanation && (
+                    <div className="mt-1 text-sm leading-relaxed text-ink-soft">
+                      {item.explanation}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <>
+                  <span lang="zh-Hant" className="font-han text-lg text-ink">
+                    {item.char ?? item.audio_text ?? item.answer}
+                  </span>
+                  <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} />
+                </>
+              )}
             </div>
             <div className="mt-2 text-center text-xs text-ink-soft">How well did you recall it?</div>
             <div className="mt-2 grid grid-cols-4 gap-2">

@@ -140,3 +140,43 @@ def test_placement_stops_clearing_at_the_first_shaky_level(conn):
         {"vocab_id": "v2", "correct": True, "hsk_level": 2},
     ])
     assert out["levels_cleared"] == []
+
+
+def test_grammar_cards_are_rendered_in_the_queue(conn):
+    """Grammar was enrolled but never shown — build_queue dropped every card
+    whose item_type was not 'vocab'."""
+    import json as _json
+
+    conn.execute(
+        """INSERT INTO grammar (id, title, pattern, explanation, examples, sort_order)
+           VALUES ('g1', '有沒有', 'Subject + 有沒有 + Noun？', 'Ask whether it exists.', ?, 0)""",
+        (_json.dumps([{"hanzi": "他有沒有便當？", "pinyin": "Tā yǒu méiyǒu biàndāng?",
+                       "gloss": "Does he have a boxed meal?"}], ensure_ascii=False),),
+    )
+    conn.execute(
+        """INSERT INTO grammar (id, title, pattern, explanation, examples, sort_order)
+           VALUES ('g2', '比', 'A 比 B + Adjective', 'Comparison.', '[]', 1)"""
+    )
+    conn.commit()
+    srs.ensure_new_card(conn, "grammar", "g1", "grammar")
+
+    items = review.build_queue(conn, new_limit=10)
+    cards = [i for i in items if i["kind"] == "grammar"]
+    assert cards, "grammar card was not rendered"
+    card = cards[0]
+    assert card["prompt_hanzi"] == "他有沒有便當？"
+    assert card["answer"] == "Subject + 有沒有 + Noun？"
+    assert sum(1 for o in card["options"] if o["correct"]) == 1
+    assert card["explanation"]
+
+
+def test_grammar_card_without_examples_is_skipped(conn):
+    """A point with no example sentence has nothing to prompt with; it must be
+    dropped rather than rendered blank."""
+    conn.execute(
+        """INSERT INTO grammar (id, title, pattern, explanation, examples, sort_order)
+           VALUES ('g3', 'x', 'P', 'e', '[]', 0)"""
+    )
+    conn.commit()
+    srs.ensure_new_card(conn, "grammar", "g3", "grammar")
+    assert not [i for i in review.build_queue(conn, new_limit=10) if i["kind"] == "grammar"]
