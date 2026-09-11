@@ -39,7 +39,6 @@ CREATE TABLE IF NOT EXISTS vocab (
     pinyin       TEXT NOT NULL,
     gloss        TEXT NOT NULL,
     hsk_level    INTEGER,                -- 1..4
-    tocfl_level  TEXT,                   -- aligned TOCFL level, from the HSK level
     taiwan_note  TEXT,                   -- e.g. "腳踏車 (not 自行車)", pronunciation notes
     example_hanzi   TEXT,
     example_pinyin  TEXT,
@@ -73,8 +72,6 @@ CREATE TABLE IF NOT EXISTS units (
     title       TEXT NOT NULL,           -- Taiwan daily-life theme
     subtitle    TEXT,
     hsk_level   INTEGER,
-    tocfl_level TEXT,                    -- TOCFL band this level aligns to (content/tocfl_mapping.json)
-    tocfl_band  TEXT,                    -- Novice | A | B
     sort_order  INTEGER NOT NULL DEFAULT 0
 );
 

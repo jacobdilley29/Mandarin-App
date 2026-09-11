@@ -64,9 +64,6 @@ def placement(conn: sqlite3.Connection = Depends(get_db)) -> dict:
 class PlacementItemResult(BaseModel):
     vocab_id: str
     correct: bool
-    # Sent back by the client so a level can be scored without re-querying;
-    # seed_placement falls back to the vocab row when it is absent.
-    hsk_level: int | None = None
 
 
 class PlacementResultIn(BaseModel):

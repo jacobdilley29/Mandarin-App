@@ -2,18 +2,14 @@ import { useEffect, useMemo, useState } from "react";
 import { api, type PlacementItem } from "../../api";
 import { ToneMark } from "../../components/ToneMark";
 
-// First-run placement check (spec §3.2): a quick recognition quiz, sampled
-// evenly across HSK 1–4. Levels the learner clears have their lessons marked
-// complete, so an existing learner is not walled behind beginner content.
+// First-run placement check (spec §3.2): a quick recognition quiz over HSK 1–2.
 // Correct answers seed the SRS deck as mature; misses enter as new.
 export default function PlacementQuiz({ onDone }: { onDone: () => void }) {
   const [items, setItems] = useState<PlacementItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [started, setStarted] = useState(false);
   const [index, setIndex] = useState(0);
-  const [results, setResults] = useState<
-    { vocab_id: string; correct: boolean; hsk_level?: number | null }[]
-  >([]);
+  const [results, setResults] = useState<{ vocab_id: string; correct: boolean }[]>([]);
   const [picked, setPicked] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
@@ -26,11 +22,7 @@ export default function PlacementQuiz({ onDone }: { onDone: () => void }) {
   async function choose(item: PlacementItem, isCorrect: boolean) {
     if (picked) return;
     setPicked(isCorrect ? "correct" : "wrong");
-    // The level rides along so the server can score each tier without a re-query.
-    const next = [
-      ...results,
-      { vocab_id: item.vocab_id, correct: isCorrect, hsk_level: item.hsk_level },
-    ];
+    const next = [...results, { vocab_id: item.vocab_id, correct: isCorrect }];
     setTimeout(async () => {
       setPicked(null);
       if (items && index + 1 < items.length) {
@@ -68,9 +60,9 @@ export default function PlacementQuiz({ onDone }: { onDone: () => void }) {
         </h1>
         <p className="mt-2 text-lg font-semibold text-ink">Quick placement check</p>
         <p className="mt-3 max-w-sm text-sm leading-relaxed text-ink-soft">
-          {items.length} words spread across HSK 1–4. Tap the meaning you know. Words you get
-          right are added to your review deck as already-learned; the rest start fresh. Any level
-          you clear is unlocked outright, so you start where you actually are.
+          {items.length} words over HSK 1–2. Tap the meaning you know. Words you get right are added
+          to your review deck as already-learned; the rest start fresh. No pressure — it just tunes
+          where you begin.
         </p>
         <button
           type="button"

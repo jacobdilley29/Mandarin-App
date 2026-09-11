@@ -35,10 +35,6 @@ def main() -> int:
     ap.add_argument("--check", action="store_true", help="validate only")
     ap.add_argument("--force", action="store_true", help="load despite violations")
     ap.add_argument("--path", default=str(content.CONTENT_PATH))
-    ap.add_argument("--prune", action="store_true",
-                    help="delete units/lessons/vocab absent from the incoming "
-                         "file and rebuild lesson links (needed after a rebuild "
-                         "that renames ids; never happens by default)")
     args = ap.parse_args()
 
     path = Path(args.path)
@@ -95,9 +91,6 @@ def main() -> int:
     db.init_db()
     conn = db.connect()
     try:
-        if args.prune:
-            removed = content.prune_curriculum(conn, data)
-            print(f"• pruned: {removed}")
         summary = content.load_curriculum(conn, data)
         hsk1 = content.load_hsk1_from_disk(conn)
         if hsk1:
