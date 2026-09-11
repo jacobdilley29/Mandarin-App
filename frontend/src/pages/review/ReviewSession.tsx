@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Phonetic from "../../components/Phonetic";
 import { api, type Option, type ReviewItem, type ReviewStats } from "../../api";
 import { PlayButton } from "../../components/PlayButton";
 import { ToneMark } from "../../components/ToneMark";
@@ -181,7 +182,7 @@ export default function ReviewSession() {
               <span lang="zh-Hant" className="font-han text-lg text-ink">
                 {item.char ?? item.audio_text ?? item.answer}
               </span>
-              {item.pinyin && <span className="ml-2 text-sm text-ink-soft">{item.pinyin}</span>}
+              <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} />
             </div>
             <div className="mt-2 text-center text-xs text-ink-soft">How well did you recall it?</div>
             <div className="mt-2 grid grid-cols-4 gap-2">

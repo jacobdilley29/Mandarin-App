@@ -14,6 +14,12 @@ const RATES = [
   { value: 1.0, label: "1×" },
   { value: 1.25, label: "1.25×" },
 ];
+const PHONETICS = [
+  { value: "pinyin", label: "Pinyin" },
+  { value: "zhuyin", label: "注音" },
+  { value: "both", label: "Both" },
+  { value: "off", label: "Off" },
+] as const;
 const THEMES = [
   { value: "system", label: "System" },
   { value: "light", label: "Light" },
@@ -113,8 +119,15 @@ export default function Me() {
       ) : (
         <>
           <section className="card divide-y divide-border">
-            <Row label="Show pinyin" hint="Global default; hidden in review to force recall">
-              <Toggle on={settings.show_pinyin} onClick={() => update({ show_pinyin: !settings.show_pinyin })} />
+            <Row
+              label="Phonetic"
+              hint="Shown beside characters; still hidden in review to force recall"
+            >
+              <Segmented
+                value={settings.phonetic}
+                options={PHONETICS as unknown as { value: string; label: string }[]}
+                onChange={(v) => update({ phonetic: v as Settings["phonetic"] })}
+              />
             </Row>
 
             <Row label="Playback speed" hint="Used across Learn, Listen, and audio playback">

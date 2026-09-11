@@ -87,6 +87,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             "vocab_id": v["id"],
             "traditional": v["traditional"],
             "pinyin": v["pinyin"],
+            "zhuyin": v.get("zhuyin"),
             "gloss": v["gloss"],
             "taiwan_note": v.get("taiwan_note"),
             "example": v.get("example"),
@@ -118,6 +119,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             "vocab_id": v["id"],
             "audio_text": v["traditional"],
             "pinyin": v["pinyin"],
+            "zhuyin": v.get("zhuyin"),
             "options": _mc(v["gloss"], _distractor_glosses(pool, v["id"], 3, rng), rng),
         })
 
@@ -136,6 +138,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             add("cloze", {
                 "tokens": display,
                 "pinyin": s.get("pinyin"),
+                "zhuyin": s.get("zhuyin"),
                 "gloss": s.get("gloss"),
                 "audio_text": sent,
                 "options": _mc(answer, _distractor_words(pool, answer, 3, rng), rng),
@@ -147,6 +150,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
                 "tiles": shuffled,
                 "answer": tokens,
                 "pinyin": s.get("pinyin"),
+                "zhuyin": s.get("zhuyin"),
                 "gloss": s.get("gloss"),
                 "audio_text": sent,
             })
@@ -154,6 +158,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             add("translate", {
                 "prompt_hanzi": sent,
                 "pinyin": s.get("pinyin"),
+                "zhuyin": s.get("zhuyin"),
                 "audio_text": sent,
                 "options": _mc(
                     s.get("gloss", ""),
@@ -166,6 +171,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
                 "audio_text": sent,
                 "answer": sent,
                 "pinyin": s.get("pinyin"),
+                "zhuyin": s.get("zhuyin"),
                 "gloss": s.get("gloss"),
             })
 

@@ -44,7 +44,8 @@ CREATE TABLE IF NOT EXISTS vocab (
     example_pinyin  TEXT,
     example_gloss   TEXT,
     stroke_order TEXT,                   -- hook (§10): stroke data, filled later
-    zhuyin       TEXT,                   -- hook (§10)
+    zhuyin       TEXT,                   -- bopomofo, derived from pinyin at load (app/zhuyin.py)
+    example_zhuyin  TEXT,                -- bopomofo for the example sentence
     created_at   TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE UNIQUE INDEX IF NOT EXISTS idx_vocab_trad ON vocab(traditional);
@@ -196,7 +197,8 @@ CREATE INDEX IF NOT EXISTS idx_talkmsg_session ON talk_messages(session_id);
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS settings (
     id                 INTEGER PRIMARY KEY CHECK (id = 1),
-    show_pinyin        INTEGER NOT NULL DEFAULT 1,   -- global default; hidden in review to force recall
+    show_pinyin        INTEGER NOT NULL DEFAULT 1,   -- legacy; kept in sync with `phonetic` ('off' ⇔ 0)
+    phonetic           TEXT    NOT NULL DEFAULT 'pinyin', -- pinyin|zhuyin|both|off; hidden in review to force recall
     playback_rate      REAL    NOT NULL DEFAULT 1.0, -- 0.75 / 1.0 / 1.25
     tts_voice          TEXT    NOT NULL DEFAULT 'zh-TW-HsiaoChenNeural',
     theme              TEXT    NOT NULL DEFAULT 'system', -- system|light|dark

@@ -15,6 +15,7 @@ from __future__ import annotations
 import numpy as np
 
 from . import pitch, tone_classify, whisper_asr
+from .zhuyin import to_zhuyin
 from .tones import han_syllable_count, tones_from_pinyin
 
 _HAN_LO, _HAN_HI = "一", "鿿"
@@ -119,7 +120,8 @@ def score(audio_wav: bytes, target_hanzi: str, target_pinyin: str) -> dict:
     correct = sum(1 for s in syllables if s["ok"])
 
     return {
-        "target": {"hanzi": target_hanzi, "pinyin": target_pinyin},
+        "target": {"hanzi": target_hanzi, "pinyin": target_pinyin,
+                   "zhuyin": to_zhuyin(target_pinyin, target_hanzi)},
         "approximate": True,
         "whisper_available": asr is not None,
         "transcription": transcript,

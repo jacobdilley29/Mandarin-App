@@ -34,7 +34,8 @@ def item(
 ) -> dict:
     if mode == "word":
         rows = conn.execute(
-            "SELECT traditional AS hanzi, pinyin, gloss FROM vocab WHERE hsk_level IS NOT NULL"
+            "SELECT traditional AS hanzi, pinyin, zhuyin, gloss FROM vocab"
+            " WHERE hsk_level IS NOT NULL"
         ).fetchall()
         pool = [dict(r) for r in rows]
     else:
@@ -45,11 +46,13 @@ def item(
             for s in json.loads(lesson["sentences"] or "[]"):
                 hanzi = "".join(s.get("tokens", []))
                 if hanzi and s.get("pinyin"):
-                    pool.append({"hanzi": hanzi, "pinyin": s["pinyin"], "gloss": s.get("gloss", "")})
+                    pool.append({"hanzi": hanzi, "pinyin": s["pinyin"],
+                                 "zhuyin": s.get("zhuyin"), "gloss": s.get("gloss", "")})
     if not pool:
         raise HTTPException(404, "no speak content available")
     it = random.choice(pool)
-    return {"hanzi": it["hanzi"], "pinyin": it["pinyin"], "gloss": it.get("gloss", "")}
+    return {"hanzi": it["hanzi"], "pinyin": it["pinyin"],
+            "zhuyin": it.get("zhuyin"), "gloss": it.get("gloss", "")}
 
 
 @router.post("/score")

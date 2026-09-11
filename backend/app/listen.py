@@ -39,10 +39,12 @@ def _dictation_pool(conn: sqlite3.Connection) -> list[dict]:
         for s in json.loads(lesson["sentences"] or "[]"):
             hanzi = "".join(s.get("tokens", []))
             if hanzi and s.get("pinyin"):
-                pool.append({"hanzi": hanzi, "pinyin": s["pinyin"], "gloss": s.get("gloss", "")})
+                pool.append({"hanzi": hanzi, "pinyin": s["pinyin"],
+                             "zhuyin": s.get("zhuyin"), "gloss": s.get("gloss", "")})
         for line in json.loads(lesson["dialogue"] or "[]"):
             if line.get("hanzi") and line.get("pinyin"):
-                pool.append({"hanzi": line["hanzi"], "pinyin": line["pinyin"], "gloss": line.get("gloss", "")})
+                pool.append({"hanzi": line["hanzi"], "pinyin": line["pinyin"],
+                             "zhuyin": line.get("zhuyin"), "gloss": line.get("gloss", "")})
     return pool
 
 
@@ -54,6 +56,7 @@ def dictation_item(conn: sqlite3.Connection) -> dict | None:
     return {
         "hanzi": item["hanzi"],
         "pinyin": item["pinyin"],
+        "zhuyin": item.get("zhuyin"),
         "gloss": item["gloss"],
         "audio_text": item["hanzi"],
         "voice": _pick_voice(item["hanzi"]),
@@ -96,14 +99,15 @@ def list_sets() -> list[dict]:
 # ---------------------------------------------------------------------------
 def _tone_pool(conn: sqlite3.Connection, n_syllables: int) -> list[dict]:
     pool = []
-    for v in conn.execute("SELECT traditional, pinyin FROM vocab").fetchall():
+    for v in conn.execute("SELECT traditional, pinyin, zhuyin FROM vocab").fetchall():
         n_han = han_syllable_count(v["traditional"])
         tones = tones_from_pinyin(v["pinyin"])
         # Include a word only when its Han-character count matches the number of
         # tone-marked syllables — i.e. every syllable is toned 1–4 (no neutral),
         # so the drill is unambiguous.
         if n_han == n_syllables and len(tones) == n_syllables and all(1 <= t <= 4 for t in tones):
-            pool.append({"traditional": v["traditional"], "pinyin": v["pinyin"], "tones": tones})
+            pool.append({"traditional": v["traditional"], "pinyin": v["pinyin"],
+                         "zhuyin": v["zhuyin"], "tones": tones})
     return pool
 
 
@@ -133,6 +137,7 @@ def tone_item(conn: sqlite3.Connection, mode: str = "single") -> dict | None:
         "audio_text": item["traditional"],
         "traditional": item["traditional"],
         "pinyin": item["pinyin"],
+        "zhuyin": item.get("zhuyin"),
         "tones": tones,
         "voice": _pick_voice(item["traditional"]),
         "options": options,

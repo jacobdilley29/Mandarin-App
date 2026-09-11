@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { usePhoneticText } from "../../components/Phonetic";
 import { api, type ToneItem, type ToneOption } from "../../api";
 import { useSpeak } from "../../audio";
 import { useSettings } from "../../SettingsContext";
@@ -26,6 +27,8 @@ export default function ToneTrainer() {
   const [item, setItem] = useState<ToneItem | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [chosen, setChosen] = useState<ToneOption | null>(null);
+  // Hook must run unconditionally, so it is read here rather than at the reveal.
+  const reading = usePhoneticText(item?.pinyin, item?.zhuyin);
 
   const load = useCallback((m: ToneMode) => {
     setChosen(null);
@@ -125,7 +128,8 @@ export default function ToneTrainer() {
                   {item.traditional}
                 </button>
                 <div className="mt-1 text-sm text-ink-soft">
-                  {item.pinyin} · {item.tones.join("–")}
+                  {reading && <span className="font-zhuyin">{reading} · </span>}
+                  {item.tones.join("–")}
                 </div>
                 <div className={["mt-1 text-sm font-medium", chosen.correct ? "text-good" : "text-warn"].join(" ")}>
                   {chosen.correct ? "✓ Correct" : "Listen again — the shape shows the answer"}
