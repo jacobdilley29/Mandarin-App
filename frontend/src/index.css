@@ -109,13 +109,6 @@
   [lang^="zh"] {
     font-family: "Noto Sans TC", sans-serif;
   }
-
-  /* Zhuyin (bopomofo, U+3105–U+312F) is absent from Inter, so it must fall to a
-     CJK family. Slightly wider tracking keeps the tone marks from crowding. */
-  .font-zhuyin {
-    font-family: "Noto Sans TC", sans-serif;
-    letter-spacing: 0.02em;
-  }
 }
 
 @layer components {

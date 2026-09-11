@@ -18,7 +18,6 @@ from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from pydantic import BaseModel
 
 from .. import conversation, pitch, speak, srs, whisper_asr
-from ..zhuyin import to_zhuyin
 from ..db import get_db
 
 router = APIRouter(prefix="/api/talk", tags=["talk"])
@@ -47,12 +46,7 @@ def start(body: StartIn, conn: sqlite3.Connection = Depends(get_db)) -> dict:
     session_id = uuid.uuid4().hex
     conn.execute("INSERT INTO talk_sessions (id, scenario) VALUES (?, ?)", (session_id, body.scenario))
     # Store the canned opening as the first assistant turn.
-    meta = {
-        "reply_pinyin": sc["opening"]["pinyin"],
-        "reply_zhuyin": to_zhuyin(sc["opening"]["pinyin"], sc["opening"]["hanzi"]),
-        "teacher_note": None,
-        "new_words": [],
-    }
+    meta = {"reply_pinyin": sc["opening"]["pinyin"], "teacher_note": None, "new_words": []}
     conn.execute(
         "INSERT INTO talk_messages (session_id, role, content, teacher_note) VALUES (?, 'assistant', ?, ?)",
         (session_id, sc["opening"]["hanzi"], json.dumps(meta, ensure_ascii=False)),
@@ -95,7 +89,6 @@ def message(body: MessageIn, conn: sqlite3.Connection = Depends(get_db)) -> dict
 
     meta = {
         "reply_pinyin": turn["reply_pinyin"],
-        "reply_zhuyin": to_zhuyin(turn.get("reply_pinyin", ""), turn.get("reply", "")),
         "teacher_note": turn["teacher_note"],
         "new_words": turn["new_words"],
     }
@@ -104,9 +97,6 @@ def message(body: MessageIn, conn: sqlite3.Connection = Depends(get_db)) -> dict
         (body.session_id, turn["reply"], json.dumps(meta, ensure_ascii=False)),
     )
     conn.commit()
-    # The client renders the phonetic line from the turn itself, so send the
-    # zhuyin we just derived rather than only storing it on the message.
-    turn["reply_zhuyin"] = meta["reply_zhuyin"]
     return turn
 
 

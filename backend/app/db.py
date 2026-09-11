@@ -48,24 +48,9 @@ def _migrate(conn: sqlite3.Connection) -> None:
     CREATE TABLE IF NOT EXISTS never alters an existing table, so new columns
     are added here by inspecting the live schema.
     """
-    def columns(table: str) -> set[str]:
-        return {r["name"] for r in conn.execute(f"PRAGMA table_info({table})").fetchall()}
-
-    settings_cols = columns("settings")
-    if "anthropic_api_key" not in settings_cols:
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(settings)").fetchall()}
+    if "anthropic_api_key" not in cols:
         conn.execute("ALTER TABLE settings ADD COLUMN anthropic_api_key TEXT")
-    if "phonetic" not in settings_cols:
-        # Supersedes show_pinyin. Carry the old boolean over so an existing user
-        # who had pinyin hidden does not get it switched back on.
-        conn.execute(
-            "ALTER TABLE settings ADD COLUMN phonetic TEXT NOT NULL DEFAULT 'pinyin'"
-        )
-        conn.execute(
-            "UPDATE settings SET phonetic = CASE WHEN show_pinyin = 0 THEN 'off' ELSE 'pinyin' END"
-        )
-
-    if "example_zhuyin" not in columns("vocab"):
-        conn.execute("ALTER TABLE vocab ADD COLUMN example_zhuyin TEXT")
 
 
 def get_db() -> Iterator[sqlite3.Connection]:

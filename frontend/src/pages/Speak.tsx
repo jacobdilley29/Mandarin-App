@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import Phonetic from "../components/Phonetic";
 import { api, type SpeakItem, type SpeakScore, type SyllableVerdict } from "../api";
 import { useRecorder } from "../audio_record";
 import { useSpeak } from "../audio";
@@ -122,7 +121,7 @@ export default function Speak() {
             >
               {item.hanzi}
             </button>
-            <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} className="mt-1 !text-lg" />
+            {settings?.show_pinyin && <div className="mt-1 text-lg text-ink-soft">{item.pinyin}</div>}
             <div className="text-sm text-ink-soft">{item.gloss}</div>
             <div className="mt-3 flex justify-center">
               <button

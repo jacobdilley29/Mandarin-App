@@ -20,7 +20,6 @@ router = APIRouter(prefix="/api/settings", tags=["settings"])
 # Pydantic model below.
 _WRITABLE = {
     "show_pinyin",
-    "phonetic",
     "playback_rate",
     "tts_voice",
     "theme",
@@ -33,14 +32,10 @@ _WRITABLE = {
 VOICES = ("zh-TW-HsiaoChenNeural", "zh-TW-YunJheNeural")
 THEMES = ("system", "light", "dark")
 RATES = (0.75, 1.0, 1.25)
-# Which phonetic annotation sits beside the characters. Zhuyin is Taiwan's own
-# notation; "both" stacks them for learners moving from one to the other.
-PHONETIC = ("pinyin", "zhuyin", "both", "off")
 
 
 class SettingsOut(BaseModel):
     show_pinyin: bool
-    phonetic: str
     playback_rate: float
     tts_voice: str
     theme: str
@@ -56,7 +51,6 @@ class SettingsOut(BaseModel):
 
 class SettingsUpdate(BaseModel):
     show_pinyin: bool | None = None
-    phonetic: str | None = None
     playback_rate: float | None = None
     tts_voice: str | None = None
     theme: str | None = None
@@ -72,7 +66,6 @@ def _row_to_out(row: sqlite3.Row) -> SettingsOut:
     env_key = (get_settings().anthropic_api_key or "").strip()
     return SettingsOut(
         show_pinyin=bool(row["show_pinyin"]),
-        phonetic=row["phonetic"],
         playback_rate=row["playback_rate"],
         tts_voice=row["tts_voice"],
         theme=row["theme"],
@@ -109,19 +102,6 @@ def update_settings_endpoint(
         raise HTTPException(422, f"theme must be one of {THEMES}")
     if "playback_rate" in data and data["playback_rate"] not in RATES:
         raise HTTPException(422, f"playback_rate must be one of {RATES}")
-    if "phonetic" in data and data["phonetic"] not in PHONETIC:
-        raise HTTPException(422, f"phonetic must be one of {PHONETIC}")
-
-    # `phonetic` supersedes the `show_pinyin` boolean; keep the legacy column in
-    # step so nothing reading it goes stale. An explicit `phonetic` wins.
-    if "phonetic" in data:
-        data["show_pinyin"] = data["phonetic"] != "off"
-    elif "show_pinyin" in data:
-        current = conn.execute("SELECT phonetic FROM settings WHERE id = 1").fetchone()
-        if data["show_pinyin"]:
-            data["phonetic"] = "pinyin" if current["phonetic"] == "off" else current["phonetic"]
-        else:
-            data["phonetic"] = "off"
 
     # A blank key means "clear the in-app key" → store NULL, not "".
     if "anthropic_api_key" in data and not (data["anthropic_api_key"] or "").strip():

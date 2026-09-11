@@ -12,7 +12,6 @@ import sqlite3
 from pathlib import Path
 
 from .config import REPO_ROOT
-from .zhuyin import to_zhuyin
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
 HSK1_PATH = REPO_ROOT / "content" / "hsk1.json"
@@ -23,49 +22,22 @@ PASS_THRESHOLD = 0.8
 
 def _upsert_vocab(conn: sqlite3.Connection, v: dict) -> None:
     ex = v.get("example") or {}
-    # Zhuyin is derived from pinyin here rather than authored in the content, so
-    # every word gets it for free. to_zhuyin returns None when it cannot convert
-    # safely; the column stays NULL and the UI falls back to pinyin.
-    zhuyin = v.get("zhuyin") or to_zhuyin(v["pinyin"], v["traditional"])
-    example_zhuyin = ex.get("zhuyin") or to_zhuyin(ex.get("pinyin"), ex.get("hanzi"))
     conn.execute(
         """INSERT INTO vocab
              (id, traditional, pinyin, gloss, hsk_level, taiwan_note,
-              example_hanzi, example_pinyin, example_gloss, zhuyin, example_zhuyin)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+              example_hanzi, example_pinyin, example_gloss)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(id) DO UPDATE SET
              traditional=excluded.traditional, pinyin=excluded.pinyin,
              gloss=excluded.gloss, hsk_level=excluded.hsk_level,
              taiwan_note=excluded.taiwan_note,
              example_hanzi=excluded.example_hanzi,
              example_pinyin=excluded.example_pinyin,
-             example_gloss=excluded.example_gloss,
-             zhuyin=excluded.zhuyin,
-             example_zhuyin=excluded.example_zhuyin""",
+             example_gloss=excluded.example_gloss""",
         (v["id"], v["traditional"], v["pinyin"], v["gloss"],
          v.get("hsk_level"), v.get("taiwan_note"),
-         ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss"),
-         zhuyin, example_zhuyin),
+         ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss")),
     )
-
-
-def _with_zhuyin(items: list[dict], hanzi_key: str | None) -> list[dict]:
-    """Annotate a list of {hanzi|tokens, pinyin} objects with a derived zhuyin.
-
-    Drill sentences carry `tokens` rather than a joined `hanzi` string, so the
-    caller passes None for those and the tokens are joined here. Objects that
-    already have a zhuyin, or that cannot be converted, are left as they are.
-    """
-    out = []
-    for item in items:
-        item = dict(item)
-        if not item.get("zhuyin") and item.get("pinyin"):
-            hanzi = item.get(hanzi_key) if hanzi_key else "".join(item.get("tokens", []))
-            z = to_zhuyin(item["pinyin"], hanzi)
-            if z:
-                item["zhuyin"] = z
-        out.append(item)
-    return out
 
 
 def load_vocab_list(conn: sqlite3.Connection, data: dict) -> int:
@@ -117,10 +89,8 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
                      sentences=excluded.sentences""",
                 (lesson["id"], unit["id"], lesson["title"],
                  lesson.get("sort_order", 0),
-                 json.dumps(_with_zhuyin(lesson.get("dialogue", []), "hanzi"),
-                            ensure_ascii=False),
-                 json.dumps(_with_zhuyin(lesson.get("sentences", []), None),
-                            ensure_ascii=False)),
+                 json.dumps(lesson.get("dialogue", []), ensure_ascii=False),
+                 json.dumps(lesson.get("sentences", []), ensure_ascii=False)),
             )
 
             for i, v in enumerate(lesson.get("vocab", [])):
@@ -143,8 +113,7 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
                          explanation=excluded.explanation, examples=excluded.examples,
                          hsk_level=excluded.hsk_level, sort_order=excluded.sort_order""",
                     (g["id"], g["title"], g["pattern"], g["explanation"],
-                     json.dumps(_with_zhuyin(g.get("examples", []), "hanzi"),
-                                ensure_ascii=False),
+                     json.dumps(g.get("examples", []), ensure_ascii=False),
                      g.get("hsk_level"), i),
                 )
                 conn.execute(
@@ -288,11 +257,6 @@ def get_lesson_content(conn: sqlite3.Connection, lesson_id: str) -> dict | None:
     }
 
 
-def _opt(row: sqlite3.Row, key: str):
-    """Read a column that may be absent on an un-migrated row."""
-    return row[key] if key in row.keys() else None
-
-
 def _vocab_dict(v: sqlite3.Row) -> dict:
     return {
         "id": v["id"],
@@ -301,12 +265,10 @@ def _vocab_dict(v: sqlite3.Row) -> dict:
         "gloss": v["gloss"],
         "hsk_level": v["hsk_level"],
         "taiwan_note": v["taiwan_note"],
-        "zhuyin": _opt(v, "zhuyin"),
         "example": {
             "hanzi": v["example_hanzi"],
             "pinyin": v["example_pinyin"],
             "gloss": v["example_gloss"],
-            "zhuyin": _opt(v, "example_zhuyin"),
         } if v["example_hanzi"] else None,
     }
 

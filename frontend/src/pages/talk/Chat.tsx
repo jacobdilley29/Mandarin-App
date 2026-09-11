@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import Phonetic from "../../components/Phonetic";
 import { api, type NewWord, type RecapWord, type Scenario, type TeacherNote } from "../../api";
 import { useRecorder } from "../../audio_record";
 import { useSpeak } from "../../audio";
@@ -9,7 +8,6 @@ interface Msg {
   role: "user" | "assistant";
   text: string;
   pinyin?: string;
-  zhuyin?: string | null;
   note?: TeacherNote | null;
 }
 
@@ -61,14 +59,7 @@ export default function Chat({ scenario, onExit }: { scenario: Scenario; onExit:
       .talkStart(scenario.id)
       .then((r) => {
         setSessionId(r.session_id);
-        setMessages([
-          {
-            role: "assistant",
-            text: r.opening.hanzi,
-            pinyin: r.opening.pinyin,
-            zhuyin: r.opening.zhuyin,
-          },
-        ]);
+        setMessages([{ role: "assistant", text: r.opening.hanzi, pinyin: r.opening.pinyin }]);
       })
       .catch((e) => setError(String(e)));
   }, [scenario.id]);
@@ -87,13 +78,7 @@ export default function Chat({ scenario, onExit }: { scenario: Scenario; onExit:
       const turn = await api.talkMessage(sessionId, text);
       setMessages((m) => [
         ...m,
-        {
-          role: "assistant",
-          text: turn.reply,
-          pinyin: turn.reply_pinyin,
-          zhuyin: turn.reply_zhuyin,
-          note: turn.teacher_note,
-        },
+        { role: "assistant", text: turn.reply, pinyin: turn.reply_pinyin, note: turn.teacher_note },
       ]);
     } catch (e) {
       setError(String(e));
@@ -176,8 +161,8 @@ export default function Chat({ scenario, onExit }: { scenario: Scenario; onExit:
                 ) : (
                   <span lang="zh-Hant" className="font-han text-base">{m.text}</span>
                 )}
-                {m.role === "assistant" && (
-                  <Phonetic pinyin={m.pinyin} zhuyin={m.zhuyin} className="!text-xs" />
+                {m.role === "assistant" && settings?.show_pinyin && m.pinyin && (
+                  <div className="text-xs text-ink-soft">{m.pinyin}</div>
                 )}
               </div>
               {m.role === "assistant" && m.note && <TeacherNoteBox note={m.note} />}

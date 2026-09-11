@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from "react";
-import Phonetic from "../../components/Phonetic";
 import { api, type ComprehensionSet, type Option } from "../../api";
 import { useSpeak } from "../../audio";
 import { useSettings } from "../../SettingsContext";
@@ -54,7 +53,7 @@ export default function Comprehension() {
                 {line.hanzi}
                 <span className="ml-1 text-xs text-ink-faint">🔊</span>
               </button>
-              <Phonetic pinyin={line.pinyin} zhuyin={line.zhuyin} />
+              {settings?.show_pinyin && <div className="text-sm text-ink-soft">{line.pinyin}</div>}
               {showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
             </div>
           ))}

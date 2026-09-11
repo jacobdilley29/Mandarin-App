@@ -132,8 +132,3 @@ Testing expectations: unit tests for FSRS scheduling, sentence-vocab validation,
 ## 10. Non-goals (v1)
 
 Handwriting/stroke-order practice, zhuyin input training, TOCFL mock exams, multi-user, offline mobile app. Keep hooks in the schema for stroke-order and zhuyin later.
-
-> **Update:** zhuyin *display* has since shipped — a pinyin/zhuyin/both/off
-> setting (§3 UI, `settings.phonetic`) backed by `app/zhuyin.py`, which derives
-> readings from the content's pinyin at load time. Zhuyin *input* (typing with a
-> bopomofo IME in dictation and listen-and-type drills) remains a non-goal.

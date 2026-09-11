@@ -37,7 +37,6 @@ def _render(card: sqlite3.Row, v: dict, pool: list[dict], kind: str) -> dict:
             "kind": "recall",
             "prompt_gloss": gloss,
             "pinyin": v.get("pinyin"),
-            "zhuyin": v.get("zhuyin"),
             "answer": trad,
             "options": _mc(trad, _distractor_words(pool, trad, 3, rng), rng),
         }
@@ -46,7 +45,6 @@ def _render(card: sqlite3.Row, v: dict, pool: list[dict], kind: str) -> dict:
             "kind": "audio_meaning",
             "audio_text": trad,
             "pinyin": v.get("pinyin"),
-            "zhuyin": v.get("zhuyin"),
             "answer": gloss,
             "options": _mc(gloss, _distractor_glosses(pool, v["id"], 3, rng), rng),
         }
@@ -56,7 +54,6 @@ def _render(card: sqlite3.Row, v: dict, pool: list[dict], kind: str) -> dict:
             "kind": "cloze",
             "masked": masked,
             "audio_text": v["example_hanzi"],
-            "zhuyin": v.get("example_zhuyin"),
             "gloss": v.get("example_gloss"),
             "answer": trad,
             "options": _mc(trad, _distractor_words(pool, trad, 3, rng), rng),
@@ -67,7 +64,6 @@ def _render(card: sqlite3.Row, v: dict, pool: list[dict], kind: str) -> dict:
         "char": trad,
         "audio_text": trad,
         "pinyin": v.get("pinyin"),
-        "zhuyin": v.get("zhuyin"),
         "answer": gloss,
         "options": _mc(gloss, _distractor_glosses(pool, v["id"], 3, rng), rng),
     }
@@ -121,7 +117,6 @@ def placement_items(conn: sqlite3.Connection, n: int = 30) -> list[dict]:
             "vocab_id": v["id"],
             "char": v["traditional"],
             "pinyin": v["pinyin"],
-            "zhuyin": v.get("zhuyin"),
             "options": _mc(v["gloss"], _distractor_glosses(pool, v["id"], 3, rng), rng),
         })
     return items

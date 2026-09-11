@@ -11,7 +11,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import __version__, content
@@ -83,77 +83,6 @@ app.mount("/audio", StaticFiles(directory=str(settings.audio_dir)), name="audio"
 _dist: Path = settings.frontend_dist
 
 
-# Files the browser must re-check on every load. index.html names the hashed
-# asset bundles, and sw.js is the service worker itself — if either is served
-# stale, the page can boot against assets that no longer exist, and because the
-# PWA registers with `autoUpdate` (frontend/vite.config.ts) the resulting
-# update-then-reload cycle repeats indefinitely. FastAPI sends only an ETag and
-# Last-Modified by default, which leaves browsers free to cache heuristically,
-# so these must say no-cache explicitly.
-_NO_CACHE = {"Cache-Control": "no-cache, must-revalidate"}
-_ALWAYS_REVALIDATE = {"index.html", "sw.js", "registerSW.js", "manifest.webmanifest"}
-
-# Everything under /assets is content-hashed by Vite, so a given URL never
-# changes and can be cached hard.
-_IMMUTABLE = {"Cache-Control": "public, max-age=31536000, immutable"}
-
-
-class _ImmutableStatic(StaticFiles):
-    """StaticFiles that marks content-hashed bundles immutable."""
-
-    def file_response(self, *args, **kwargs):  # noqa: ANN002, ANN003, ANN201
-        response = super().file_response(*args, **kwargs)
-        response.headers.update(_IMMUTABLE)
-        return response
-
-
-def _cache_headers(name: str) -> dict[str, str]:
-    return dict(_NO_CACHE) if name in _ALWAYS_REVALIDATE else {}
-
-
-_RESET_PAGE = """<!doctype html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reset app cache</title>
-<style>
-  body { font: 16px/1.5 -apple-system, system-ui, sans-serif; margin: 0;
-         padding: 2rem 1.25rem; background: #F6F4EC; color: #1B1B18; }
-  h1 { font-size: 1.25rem; margin: 0 0 .5rem; }
-  p { color: #55554E; }
-  #out { margin-top: 1rem; font-weight: 600; }
-  a { display: inline-block; margin-top: 1.5rem; padding: .75rem 1.25rem;
-      background: #00694E; color: #fff; border-radius: .375rem;
-      text-decoration: none; }
-</style>
-<h1>Reset app cache</h1>
-<p>Unregisters the service worker and clears its caches. Use this if the app
-reloads in a loop or keeps showing an old version.</p>
-<div id="out">Working…</div>
-<a href="/">Back to the app</a>
-<script>
-(async () => {
-  const out = document.getElementById("out");
-  try {
-    let workers = 0;
-    if ("serviceWorker" in navigator) {
-      const regs = await navigator.serviceWorker.getRegistrations();
-      for (const r of regs) { await r.unregister(); workers++; }
-    }
-    let caches_cleared = 0;
-    if (window.caches) {
-      const keys = await caches.keys();
-      for (const k of keys) { await caches.delete(k); caches_cleared++; }
-    }
-    out.textContent = `Removed ${workers} service worker(s) and ${caches_cleared} cache(s). ` +
-                      `Tap below, then fully close and reopen the app.`;
-  } catch (e) {
-    out.textContent = "Failed: " + e;
-  }
-})();
-</script>
-"""
-
-
 def _mount_frontend() -> None:
     """Serve the built SPA with history-fallback, if it exists.
 
@@ -162,21 +91,9 @@ def _mount_frontend() -> None:
     """
     assets = _dist / "assets"
     if assets.is_dir():
-        app.mount("/assets", _ImmutableStatic(directory=str(assets)), name="assets")
+        app.mount("/assets", StaticFiles(directory=str(assets)), name="assets")
 
-    # HEAD as well as GET: a bare @app.get catch-all answers HEAD / with 405,
-    # which trips proxies and uptime checks.
-    @app.api_route("/reset", methods=["GET", "HEAD"], include_in_schema=False)
-    def reset():  # noqa: ANN202
-        """Escape hatch for a service worker stuck reloading.
-
-        Served by the backend rather than from the bundle, and excluded from the
-        worker's navigation fallback, so it stays reachable even when the cached
-        app is the thing that is broken.
-        """
-        return HTMLResponse(_RESET_PAGE, headers=_NO_CACHE)
-
-    @app.api_route("/{full_path:path}", methods=["GET", "HEAD"], include_in_schema=False)
+    @app.get("/{full_path:path}", include_in_schema=False)
     def spa(full_path: str):  # noqa: ANN202
         # Never let the catch-all swallow the API namespace.
         if full_path.startswith(("api/", "audio/")):
@@ -191,9 +108,8 @@ def _mount_frontend() -> None:
                 and _dist.resolve() in candidate.parents
                 and candidate.is_file()
             ):
-                return FileResponse(candidate, headers=_cache_headers(candidate.name))
-            # History fallback — always the freshly-read index.
-            return FileResponse(index, headers=_NO_CACHE)
+                return FileResponse(candidate)
+            return FileResponse(index)  # history fallback
 
         return JSONResponse(
             {

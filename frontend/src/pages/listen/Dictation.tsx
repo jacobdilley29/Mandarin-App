@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
-import Phonetic from "../../components/Phonetic";
 import { api, type DictationItem, type DiffResult, type DiffSegment } from "../../api";
 import { useSpeak } from "../../audio";
+import { useSettings } from "../../SettingsContext";
 
 const SPEEDS = [
   { value: 0.75, label: "0.75×" },
@@ -32,6 +32,7 @@ function Segment({ seg }: { seg: DiffSegment }) {
 }
 
 export default function Dictation() {
+  const { settings } = useSettings();
   const { play } = useSpeak();
   const [item, setItem] = useState<DictationItem | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -150,7 +151,7 @@ export default function Dictation() {
             >
               {item.hanzi}
             </button>
-            <Phonetic pinyin={item.pinyin} zhuyin={item.zhuyin} />
+            {settings?.show_pinyin && <div className="text-sm text-ink-soft">{item.pinyin}</div>}
             <div className="text-sm text-ink-soft">{item.gloss}</div>
           </div>
           <button

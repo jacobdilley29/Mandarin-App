@@ -15,13 +15,8 @@ export interface AppStatus {
   whisper_model: string;
 }
 
-/** Which phonetic annotation sits beside the characters. */
-export type Phonetic = "pinyin" | "zhuyin" | "both" | "off";
-
 export interface Settings {
-  /** @deprecated superseded by `phonetic`; the server keeps the two in sync. */
   show_pinyin: boolean;
-  phonetic: Phonetic;
   playback_rate: number;
   tts_voice: string;
   theme: "system" | "light" | "dark";
@@ -59,7 +54,6 @@ export interface Curriculum {
 export interface Example {
   hanzi: string;
   pinyin: string;
-  zhuyin?: string | null;
   gloss: string;
 }
 export interface Option {
@@ -115,7 +109,6 @@ export interface PlacementItem {
   vocab_id: string;
   char: string;
   pinyin: string;
-  zhuyin?: string | null;
   options: Option[];
 }
 export interface Placement {
@@ -138,7 +131,6 @@ export interface ReviewItem {
   options: Option[];
   char?: string;
   pinyin?: string | null;
-  zhuyin?: string | null;
   audio_text?: string;
   prompt_gloss?: string;
   masked?: string;
@@ -165,7 +157,6 @@ export interface ReviewAnswerResult {
 export interface DictationItem {
   hanzi: string;
   pinyin: string;
-  zhuyin?: string | null;
   gloss: string;
   audio_text: string;
   voice: string;
@@ -186,7 +177,6 @@ export interface DialogueLine {
   speaker: string;
   hanzi: string;
   pinyin: string;
-  zhuyin?: string | null;
   gloss: string;
   audio_text: string;
   voice: string;
@@ -213,7 +203,6 @@ export interface ToneItem {
   audio_text: string;
   traditional: string;
   pinyin: string;
-  zhuyin?: string | null;
   tones: number[];
   voice: string;
   options: ToneOption[];
@@ -223,7 +212,6 @@ export interface ToneItem {
 export interface SpeakItem {
   hanzi: string;
   pinyin: string;
-  zhuyin?: string | null;
   gloss: string;
 }
 export interface SyllableVerdict {
@@ -241,7 +229,7 @@ export interface ContourPoint {
   y: number;
 }
 export interface SpeakScore {
-  target: { hanzi: string; pinyin: string; zhuyin?: string | null };
+  target: { hanzi: string; pinyin: string };
   approximate: boolean;
   whisper_available: boolean;
   transcription: string | null;
@@ -289,7 +277,7 @@ export interface Scenario {
   emoji: string;
   title: string;
   en: string;
-  opening: { hanzi: string; pinyin: string; zhuyin?: string | null; gloss: string };
+  opening: { hanzi: string; pinyin: string; gloss: string };
 }
 export interface TeacherNote {
   corrections: string[];
@@ -303,7 +291,6 @@ export interface NewWord {
 export interface TalkTurn {
   reply: string;
   reply_pinyin: string;
-  reply_zhuyin?: string | null;
   teacher_note: TeacherNote;
   new_words: NewWord[];
 }
@@ -386,13 +373,7 @@ export const api = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ scenario }),
-    }).then(
-      json<{
-        session_id: string;
-        scenario: Scenario;
-        opening: NewWord & { gloss: string; zhuyin?: string | null };
-      }>,
-    ),
+    }).then(json<{ session_id: string; scenario: Scenario; opening: NewWord & { gloss: string } }>),
   talkMessage: (session_id: string, text: string) =>
     fetch("/api/talk/message", {
       method: "POST",

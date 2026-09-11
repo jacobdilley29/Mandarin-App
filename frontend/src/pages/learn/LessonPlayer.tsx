@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import Phonetic from "../../components/Phonetic";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { api, type DrillResult, type Exercise, type Lesson, type LessonResult, type Option } from "../../api";
 import { useSettings } from "../../SettingsContext";
@@ -34,6 +33,11 @@ function PlayButton({ text, big }: { text: string; big?: boolean }) {
       )}
     </button>
   );
+}
+
+function Pinyin({ text, show }: { text?: string; show: boolean }) {
+  if (!text || !show) return null;
+  return <div className="font-sans text-sm text-ink-soft">{text}</div>;
 }
 
 // --- Multiple-choice drill (shared by audio_meaning / cloze / translate) ---
@@ -74,15 +78,15 @@ function ChoiceGrid({
 
 interface DrillProps {
   ex: Exercise;
-  reveal: boolean;
+  showPinyin: boolean;
   onDone: (correct: boolean) => void;
 }
 
-function VocabIntro({ ex, reveal, onDone }: DrillProps) {
+function VocabIntro({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   return (
     <div className="text-center">
-      <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal} />
+      <Pinyin text={p.pinyin} show={showPinyin} />
       <Speakable text={p.traditional} showIcon={false} className="mx-auto mt-1 justify-center">
         <span lang="zh-Hant" className="font-serifhan text-hero-lg text-ink">
           {p.traditional}
@@ -102,7 +106,7 @@ function VocabIntro({ ex, reveal, onDone }: DrillProps) {
           <Speakable text={p.example.hanzi} className="font-han text-base text-ink">
             {p.example.hanzi}
           </Speakable>
-          <Phonetic pinyin={p.example.pinyin} zhuyin={p.example.zhuyin} show={reveal} />
+          <Pinyin text={p.example.pinyin} show={showPinyin} />
           <div className="mt-1 text-sm text-ink-soft">{p.example.gloss}</div>
         </div>
       )}
@@ -119,7 +123,7 @@ function PlayButtonInline({ text }: { text: string }) {
   );
 }
 
-function GrammarCard({ ex, reveal, onDone }: DrillProps) {
+function GrammarCard({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   return (
     <div>
@@ -130,16 +134,12 @@ function GrammarCard({ ex, reveal, onDone }: DrillProps) {
       <div className="mt-3 rounded-md bg-surface-2 px-3 py-2 font-mono text-sm text-ink">{p.pattern}</div>
       <p className="mt-3 text-sm leading-relaxed text-ink-soft">{p.explanation}</p>
       <div className="mt-4 space-y-2">
-        {p.examples.map(
-          (
-            ex2: { hanzi: string; pinyin: string; zhuyin?: string | null; gloss: string },
-            i: number,
-          ) => (
+        {p.examples.map((ex2: { hanzi: string; pinyin: string; gloss: string }, i: number) => (
           <div key={i} className="rounded-md border border-border p-3">
             <Speakable text={ex2.hanzi} className="font-han text-base text-ink">
               {ex2.hanzi}
             </Speakable>
-            <Phonetic pinyin={ex2.pinyin} zhuyin={ex2.zhuyin} show={reveal} />
+            <Pinyin text={ex2.pinyin} show={showPinyin} />
             <div className="mt-1 text-sm text-ink-soft">{ex2.gloss}</div>
           </div>
         ))}
@@ -230,7 +230,7 @@ function MatchDrill({ ex, onDone }: DrillProps) {
   );
 }
 
-function AudioMeaning({ ex, reveal, onDone }: DrillProps) {
+function AudioMeaning({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const [chosen, setChosen] = useState<string | null>(null);
   return (
@@ -239,14 +239,14 @@ function AudioMeaning({ ex, reveal, onDone }: DrillProps) {
       <div className="flex justify-center">
         <PlayButton text={p.audio_text} big />
       </div>
-      <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal} />
+      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
       {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
     </div>
   );
 }
 
-function ClozeDrill({ ex, reveal, onDone }: DrillProps) {
+function ClozeDrill({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const [chosen, setChosen] = useState<string | null>(null);
   return (
@@ -258,7 +258,7 @@ function ClozeDrill({ ex, reveal, onDone }: DrillProps) {
             {p.tokens.join(" ")}
           </span>
         </Speakable>
-        <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal} />
+        <Pinyin text={p.pinyin} show={showPinyin} />
         {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
@@ -267,7 +267,7 @@ function ClozeDrill({ ex, reveal, onDone }: DrillProps) {
   );
 }
 
-function TranslateDrill({ ex, reveal, onDone }: DrillProps) {
+function TranslateDrill({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const [chosen, setChosen] = useState<string | null>(null);
   return (
@@ -279,7 +279,7 @@ function TranslateDrill({ ex, reveal, onDone }: DrillProps) {
             {p.prompt_hanzi}
           </span>
         </Speakable>
-        <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal} />
+        <Pinyin text={p.pinyin} show={showPinyin} />
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
       {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
@@ -287,7 +287,7 @@ function TranslateDrill({ ex, reveal, onDone }: DrillProps) {
   );
 }
 
-function TileBuild({ ex, reveal, onDone }: DrillProps) {
+function TileBuild({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const answer: string[] = p.answer;
   const [tiles, setTiles] = useState<string[]>(p.tiles);
@@ -337,7 +337,7 @@ function TileBuild({ ex, reveal, onDone }: DrillProps) {
           Correct: {answer.join(" ")}
         </div>
       )}
-      <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal && checked != null} />
+      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin && checked != null} />
       <div className="mt-4 flex flex-wrap gap-2">
         {tiles.map((t, i) => (
           <button
@@ -367,7 +367,7 @@ function TileBuild({ ex, reveal, onDone }: DrillProps) {
   );
 }
 
-function ListenType({ ex, reveal, onDone }: DrillProps) {
+function ListenType({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const [value, setValue] = useState("");
   const [checked, setChecked] = useState<null | boolean>(null);
@@ -394,7 +394,7 @@ function ListenType({ ex, reveal, onDone }: DrillProps) {
             {checked ? "✓ " : ""}
             {p.answer}
           </div>
-          <Phonetic pinyin={p.pinyin} zhuyin={p.zhuyin} show={reveal} />
+          <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
           <div className="text-sm text-ink-soft">{p.gloss}</div>
         </div>
       )}
@@ -414,7 +414,7 @@ function ListenType({ ex, reveal, onDone }: DrillProps) {
   );
 }
 
-function DialogueDrill({ ex, reveal: initialShow, onDone }: DrillProps) {
+function DialogueDrill({ ex, showPinyin: initialShow, onDone }: DrillProps) {
   const p = ex.payload;
   const [showEn, setShowEn] = useState(false);
   return (
@@ -430,23 +430,13 @@ function DialogueDrill({ ex, reveal: initialShow, onDone }: DrillProps) {
         </button>
       </div>
       <div className="space-y-3">
-        {p.lines.map(
-          (
-            line: {
-              speaker: string;
-              hanzi: string;
-              pinyin: string;
-              zhuyin?: string | null;
-              gloss: string;
-            },
-            i: number,
-          ) => (
+        {p.lines.map((line: { speaker: string; hanzi: string; pinyin: string; gloss: string }, i: number) => (
           <div key={i} className="rounded-md border border-border p-3">
             <div className="text-xs font-medium text-primary">{line.speaker}</div>
             <Speakable text={line.hanzi} className="mt-0.5 font-han text-lg text-ink">
               {line.hanzi}
             </Speakable>
-            <Phonetic pinyin={line.pinyin} zhuyin={line.zhuyin} show={initialShow} />
+            <Pinyin text={line.pinyin} show={initialShow} />
             {showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
           </div>
         ))}
@@ -468,8 +458,8 @@ function ContinueButton({ onClick }: { onClick: () => void }) {
   );
 }
 
-function renderDrill(ex: Exercise, reveal: boolean, onDone: (c: boolean) => void) {
-  const props = { ex, reveal, onDone };
+function renderDrill(ex: Exercise, showPinyin: boolean, onDone: (c: boolean) => void) {
+  const props = { ex, showPinyin, onDone };
   switch (ex.kind) {
     case "vocab_intro":
       return <VocabIntro {...props} />;
@@ -497,9 +487,8 @@ function renderDrill(ex: Exercise, reveal: boolean, onDone: (c: boolean) => void
 export default function LessonPlayer() {
   const { lessonId } = useParams();
   const navigate = useNavigate();
-  // Whether this lesson reveals the phonetic line at all. Which notation it
-  // then shows (pinyin / zhuyin / both / none) is Phonetic's business.
-  const reveal = true;
+  const { settings } = useSettings();
+  const showPinyin = settings?.show_pinyin ?? true;
 
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -581,7 +570,7 @@ export default function LessonPlayer() {
       </div>
       <div className="flex-1">
         <div key={ex.id} className="card">
-          {renderDrill(ex, reveal, handleDone)}
+          {renderDrill(ex, showPinyin, handleDone)}
         </div>
       </div>
     </div>

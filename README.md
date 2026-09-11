@@ -35,7 +35,6 @@ Mandarin-App/
 │   │   ├── listen.py        dictation / comprehension / tone item builders
 │   │   ├── textdiff.py      pinyin & character dictation diffing
 │   │   ├── tones.py         tone extraction from pinyin
-│   │   ├── zhuyin.py        pinyin → zhuyin (注音) conversion
 │   │   ├── pitch.py         f0 extraction (numpy autocorrelation)
 │   │   ├── tone_classify.py tone classification + sandhi
 │   │   ├── speak.py         pronunciation scoring pipeline
@@ -127,12 +126,6 @@ no port-forwarding, no certificates to manage.
 > Single-user by design — **Tailscale is the security perimeter**, so there's no
 > login. Keep the tailnet private.
 
-**If the app reloads in a loop or keeps showing an old version**, open
-`/reset` on the device (e.g. `https://<your-machine>.<tailnet>.ts.net/reset`).
-It unregisters the service worker and clears its caches, then you can reopen the
-app. The page is served by the backend and excluded from the worker's navigation
-fallback, so it stays reachable even when the cached app is what's broken.
-
 ---
 
 ## Configuration (`.env`)
@@ -196,12 +189,6 @@ Each phase ends runnable.
   optional mic input, recap→SRS), and a mastery-based progress dashboard
   (streak, activity, words-by-HSK stacked bar, tone accuracy, retention,
   weakest grammar).
-
-- **Zhuyin (注音) ✅:** every phonetic annotation in the app can be shown as
-  pinyin, zhuyin, both, or hidden, via **Me → Phonetic**. Zhuyin is derived from
-  the pinyin already in the content by `app/zhuyin.py` when content is loaded, so
-  nothing has to be authored twice; a reading that cannot be converted safely
-  falls back to pinyin rather than guessing.
 
 See `mandarin-teacher-spec.md` for the full specification and `DESIGN.md` for the
 visual design system.
