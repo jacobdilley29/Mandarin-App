@@ -179,7 +179,7 @@ def _ordered_lessons(conn: sqlite3.Connection) -> list[sqlite3.Row]:
     otherwise gate every lesson after it behind a lesson nobody can see.
     """
     return conn.execute(
-        """SELECT l.id, l.unit_id, l.title, l.sort_order
+        """SELECT l.id, l.unit_id, l.title, l.sort_order, u.hsk_level
            FROM lessons l JOIN units u ON u.id = l.unit_id
            WHERE u.status = 'live'
            ORDER BY u.sort_order, l.sort_order"""
@@ -191,22 +191,56 @@ def _progress_map(conn: sqlite3.Connection) -> dict[str, sqlite3.Row]:
     return {r["lesson_id"]: r for r in rows}
 
 
-def get_curriculum(conn: sqlite3.Connection) -> dict:
-    """Units + lessons + per-lesson completion / unlock state.
+def _placement_floor(conn: sqlite3.Connection) -> int | None:
+    """Highest HSK band the placement check opened up, or None if not taken.
 
-    Unlock rule (spec §3.1): the first lesson in curriculum order is always
-    unlocked; every other lesson unlocks once the lesson before it is completed.
+    Placement used to change nothing about the curriculum. It seeded the SRS
+    deck and told the learner "Starting you at Level 3" — and then the Learn tab
+    still offered lesson one of the first unit with everything else locked,
+    because unlocking was purely linear. A verdict has to open the content it
+    names, or it is just a message.
+    """
+    from . import placement  # local: keeps module import order uncomplicated
+
+    row = conn.execute("SELECT placement_done FROM settings WHERE id = 1").fetchone()
+    if not row or not row["placement_done"]:
+        return None
+    start = placement.estimated_level(conn)
+    return start["hsk_level"] if start else None
+
+
+def _unlock_map(conn: sqlite3.Connection) -> dict[str, bool]:
+    """Which lessons are open, by id. The single source of truth.
+
+    Two independent ways in (spec §3.1 plus the placement check):
+
+      1. The chain — the first lesson is open, and each next one opens when the
+         one before it is completed.
+      2. Placement — everything at or below the band placement put the learner
+         in is open from the start. Opened, not completed: he can start where he
+         tested instead of at lesson one, and the progress numbers stay honest.
+
+    get_curriculum and is_unlocked both read this, so what the Learn tab shows
+    and what the API will actually serve cannot drift apart.
     """
     order = _ordered_lessons(conn)
     progress = _progress_map(conn)
+    floor = _placement_floor(conn)
 
     unlocked: dict[str, bool] = {}
     prev_completed = True  # first lesson unlocked
     for row in order:
-        lid = row["id"]
-        unlocked[lid] = prev_completed
-        p = progress.get(lid)
+        by_placement = floor is not None and (row["hsk_level"] or 0) <= floor
+        unlocked[row["id"]] = prev_completed or by_placement
+        p = progress.get(row["id"])
         prev_completed = bool(p and p["completed"])
+    return unlocked
+
+
+def get_curriculum(conn: sqlite3.Connection) -> dict:
+    """Units + lessons + per-lesson completion / unlock state."""
+    progress = _progress_map(conn)
+    unlocked = _unlock_map(conn)
 
     # The draft gate (spec §3.1): incomplete units never reach the learner, no
     # matter what sort_order they claim. See app/completeness.py.
@@ -249,15 +283,7 @@ def get_curriculum(conn: sqlite3.Connection) -> dict:
 
 
 def is_unlocked(conn: sqlite3.Connection, lesson_id: str) -> bool:
-    order = _ordered_lessons(conn)
-    progress = _progress_map(conn)
-    prev_completed = True
-    for row in order:
-        if row["id"] == lesson_id:
-            return prev_completed
-        p = progress.get(row["id"])
-        prev_completed = bool(p and p["completed"])
-    return False
+    return _unlock_map(conn).get(lesson_id, False)
 
 
 def get_lesson_content(conn: sqlite3.Connection, lesson_id: str) -> dict | None:

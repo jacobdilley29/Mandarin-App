@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import pytest
 
-from app import levels, placement
+from app import content, levels, placement
 
 from .conftest import attached_conn
 
@@ -268,3 +268,78 @@ def test_summary_reports_deck_counts(conn):
 
     assert summary["known_cards"] > 0
     assert summary["caveat"], "the TOCFL/HSK word-count caveat should reach the UI"
+
+
+# ---------------------------------------------------------------------------
+# The verdict has to open the content it names
+# ---------------------------------------------------------------------------
+@pytest.fixture
+def curriculum(conn):
+    """Live units across HSK 2, 3 and 4 — one lesson each, in level order."""
+    for level, uid in ((2, "u_a"), (3, "u_b"), (4, "u_c")):
+        conn.execute(
+            "INSERT OR REPLACE INTO units (id, title, hsk_level, status, sort_order)"
+            " VALUES (?, ?, ?, 'live', ?)",
+            (uid, f"Unit {level}", level, level),
+        )
+        conn.execute(
+            "INSERT INTO lessons (id, unit_id, title, sort_order) VALUES (?, ?, ?, 1)",
+            (f"l_{uid}", uid, f"Lesson {level}"),
+        )
+    conn.commit()
+    return conn
+
+
+def _open_lessons(conn) -> set[str]:
+    return {
+        l["id"]
+        for u in content.get_curriculum(conn)["units"]
+        for l in u["lessons"]
+        if l["unlocked"]
+    }
+
+
+def test_without_placement_the_chain_is_the_only_way_in(curriculum):
+    """Spec §3.1's rule, unchanged for anyone who skips the check."""
+    assert len(_open_lessons(curriculum)) == 1
+
+
+def test_placement_opens_the_level_it_names(curriculum):
+    """The bug: it said "Starting you at Level 3" and opened nothing.
+
+    Being told you belong at HSK 4 and then handed lesson one of the beginner
+    unit, with everything else locked, is the check failing to do its job.
+    """
+    _play(curriculum, knows_up_to=4)
+    assert placement.estimated_level(curriculum)["hsk_level"] == 4
+
+    assert _open_lessons(curriculum) == {"l2", "l_u_a", "l_u_b", "l_u_c"}
+
+
+def test_it_opens_no_further_than_the_level_it_names(curriculum):
+    """A learner placed mid-curriculum must not be handed the whole thing."""
+    _play(curriculum, knows_up_to=2)
+    placed = placement.estimated_level(curriculum)["hsk_level"]
+    assert placed == 3
+
+    opened = _open_lessons(curriculum)
+    assert "l_u_b" in opened, "the level he was placed at is open"
+    assert "l_u_c" not in opened, f"HSK 4 is above the placement at HSK {placed}"
+
+
+def test_opened_is_not_the_same_as_completed(curriculum):
+    """Otherwise placement would inflate the progress dashboard for free."""
+    _play(curriculum, knows_up_to=4)
+
+    lessons = [l for u in content.get_curriculum(curriculum)["units"] for l in u["lessons"]]
+    assert all(l["unlocked"] for l in lessons)
+    assert not any(l["completed"] for l in lessons)
+
+
+def test_the_api_gate_agrees_with_what_the_screen_shows(curriculum):
+    """A lesson shown as open must actually open — one unlock rule, not two."""
+    _play(curriculum, knows_up_to=4)
+
+    for u in content.get_curriculum(curriculum)["units"]:
+        for l in u["lessons"]:
+            assert content.is_unlocked(curriculum, l["id"]) == l["unlocked"], l["id"]

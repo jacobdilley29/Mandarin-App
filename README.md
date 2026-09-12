@@ -536,6 +536,19 @@ have never seen, and FSRS would take months to work that back out. The band
 verdict is stored separately, in `band_state`, as what it is: an estimate of
 where to start.
 
+**And it opens the content it names.** Lessons unlock two ways: the chain from
+spec §3.1 (finish one to open the next), *or* placement — every live unit at or
+below the band you were placed in opens immediately, so you start where you
+tested rather than at lesson one. They open **unlocked, not completed**, so the
+progress dashboard still only counts work you actually did. `content._unlock_map`
+is the single source of truth for both rules, so what the Learn tab shows and
+what the API will serve cannot drift apart.
+
+> Placement previously changed nothing at all here: it printed "Starting you at
+> Level 3" and left the learner looking at a locked curriculum with only lesson
+> one of the first unit open. The verdict is retroactive — an install that
+> already took the check gets its units opened on the next load, with no retake.
+
 | Endpoint | Purpose |
 |---|---|
 | `GET /api/placement` | Start — the first band's round |
