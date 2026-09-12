@@ -246,6 +246,64 @@ function AudioMeaning({ ex, showPinyin, onDone }: DrillProps) {
   );
 }
 
+/**
+ * Character recognition (spec §3.2).
+ *
+ * Meaning and sound are given; pick the characters. Every other drill shows the
+ * learner the characters and asks something about them, so this is the only one
+ * that tests whether he can pick the right glyph out of a line-up — which is
+ * exactly the skill reading actually needs. The options are chosen to be
+ * confusable (see _confusable_words in app/exercises.py), so they are rendered
+ * large and in a row: the whole point is comparing shapes.
+ */
+function CharRecognition({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div className="text-center">
+      <div className="mb-2 text-sm text-ink-soft">Which one is this?</div>
+      <div className="text-xl font-medium text-ink">{p.gloss}</div>
+      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
+      <div className="mt-3 flex justify-center">
+        <PlayButton text={p.audio_text} />
+      </div>
+
+      <div className="mt-6 grid grid-cols-2 gap-2">
+        {p.options.map((o: Option) => {
+          const isChosen = chosen === o.text;
+          let cls = "border-border bg-surface hover:border-primary";
+          if (chosen != null) {
+            if (o.correct) cls = "border-good bg-good/10 text-good";
+            else if (isChosen) cls = "border-bad bg-accent-soft text-bad";
+            else cls = "border-border bg-surface opacity-60";
+          }
+          return (
+            <button
+              key={o.text}
+              type="button"
+              lang="zh-Hant"
+              disabled={chosen != null}
+              onClick={() => setChosen(o.text)}
+              className={[
+                "tap rounded-md border px-3 py-5 font-serifhan text-3xl transition-colors",
+                cls,
+              ].join(" ")}
+            >
+              {o.text}
+            </button>
+          );
+        })}
+      </div>
+
+      {chosen != null && (
+        <ContinueButton
+          onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)}
+        />
+      )}
+    </div>
+  );
+}
+
 function ClozeDrill({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   const [chosen, setChosen] = useState<string | null>(null);
@@ -469,6 +527,8 @@ function renderDrill(ex: Exercise, showPinyin: boolean, onDone: (c: boolean) => 
       return <MatchDrill {...props} />;
     case "audio_meaning":
       return <AudioMeaning {...props} />;
+    case "char_recognition":
+      return <CharRecognition {...props} />;
     case "cloze":
       return <ClozeDrill {...props} />;
     case "translate":

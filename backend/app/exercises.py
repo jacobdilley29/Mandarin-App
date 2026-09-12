@@ -9,7 +9,7 @@ Generation is deterministic per lesson (seeded RNG) so a lesson looks the same
 each time it's opened, but distractors/orderings vary between items.
 
 Gradable drill kinds (used to compute the lesson score):
-    match, audio_meaning, cloze, tile_build, listen_type, translate
+    match, audio_meaning, char_recognition, cloze, tile_build, listen_type, translate
 Non-gradable: vocab_intro, grammar, dialogue.
 """
 
@@ -18,8 +18,38 @@ from __future__ import annotations
 import random
 
 GRADABLE_KINDS = {
-    "match", "audio_meaning", "cloze", "tile_build", "listen_type", "translate"
+    "match", "audio_meaning", "char_recognition", "cloze", "tile_build",
+    "listen_type", "translate",
 }
+
+
+# CC-CEDICT glosses are reference entries, not answer options. 有 comes through
+# as "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意
+# intentional)" — unreadable in a multiple-choice button, and it gives the answer
+# away by being four times longer than the distractors. Hand-authored glosses are
+# already short, so this only bites on the imported vocabulary.
+MAX_GLOSS_SENSES = 2
+MAX_GLOSS_CHARS = 48
+
+
+def short_gloss(gloss: str | None) -> str:
+    """The first sense or two of a dictionary gloss, trimmed for a button."""
+    if not gloss:
+        return ""
+    senses = [g.strip() for g in gloss.split(";") if g.strip()]
+    if not senses:
+        return gloss.strip()
+
+    out = senses[0]
+    for extra in senses[1:MAX_GLOSS_SENSES]:
+        candidate = f"{out}; {extra}"
+        if len(candidate) > MAX_GLOSS_CHARS:
+            break
+        out = candidate
+
+    if len(out) > MAX_GLOSS_CHARS:
+        out = out[:MAX_GLOSS_CHARS].rsplit(" ", 1)[0].rstrip(",;") + "…"
+    return out
 
 
 def _rng(lesson_id: str, salt: str = "") -> random.Random:
@@ -27,7 +57,7 @@ def _rng(lesson_id: str, salt: str = "") -> random.Random:
 
 
 def _distractor_glosses(pool: list[dict], correct_id: str, n: int, rng: random.Random) -> list[str]:
-    others = [v["gloss"] for v in pool if v["id"] != correct_id]
+    others = [short_gloss(v["gloss"]) for v in pool if v["id"] != correct_id]
     rng.shuffle(others)
     # De-dup while preserving order.
     seen: set[str] = set()
@@ -52,6 +82,32 @@ def _distractor_words(pool: list[dict], correct: str, n: int, rng: random.Random
             out.append(w)
         if len(out) >= n:
             break
+    return out
+
+
+def _confusable_words(pool: list[dict], correct: str, n: int, rng: random.Random) -> list[str]:
+    """Distractors that are actually hard to tell apart from `correct`.
+
+    Character recognition is only a test of recognition if the wrong answers are
+    plausible. Random words make it a test of nothing — the right glyph stands
+    out at a glance. So words sharing a character with the target come first
+    (內用/外帶, 早上/晚上), then words of the same length, then anything.
+    """
+    others = [v["traditional"] for v in pool if v["traditional"] != correct]
+    rng.shuffle(others)
+
+    chars = set(correct)
+    shares = [w for w in others if chars & set(w)]
+    same_length = [w for w in others if len(w) == len(correct) and w not in shares]
+    rest = [w for w in others if w not in shares and w not in same_length]
+
+    out: list[str] = []
+    for bucket in (shares, same_length, rest):
+        for w in bucket:
+            if w not in out:
+                out.append(w)
+            if len(out) >= n:
+                return out
     return out
 
 
@@ -119,6 +175,23 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             "audio_text": v["traditional"],
             "pinyin": v["pinyin"],
             "options": _mc(v["gloss"], _distractor_glosses(pool, v["id"], 3, rng), rng),
+        })
+
+    # 3b-ii. Character recognition (spec §3.2): meaning + sound given, pick the
+    # right characters out of a set chosen to be genuinely confusable. This is
+    # the one direction the other drills never test — every other exercise shows
+    # the learner the characters and asks something about them.
+    for v in vocab:
+        rng = _rng(lid, f"cr:{v['id']}")
+        add("char_recognition", {
+            "vocab_id": v["id"],
+            "gloss": v["gloss"],
+            "pinyin": v["pinyin"],
+            "audio_text": v["traditional"],
+            "answer": v["traditional"],
+            "options": _mc(
+                v["traditional"], _confusable_words(pool, v["traditional"], 3, rng), rng
+            ),
         })
 
     # 3c. Sentence drills: rotate cloze / tile_build / listen_type / translate.

@@ -45,6 +45,7 @@ export interface CurriculumUnit {
   title: string;
   subtitle: string | null;
   hsk_level: number | null;
+  level: LevelBand;
   lessons: CurriculumLesson[];
 }
 export interface Curriculum {
@@ -68,6 +69,7 @@ export interface Exercise {
     | "grammar"
     | "match"
     | "audio_meaning"
+    | "char_recognition"
     | "cloze"
     | "tile_build"
     | "translate"
@@ -105,19 +107,78 @@ export interface LessonResult {
 }
 
 // --- Review / placement types ---
-export interface PlacementItem {
-  vocab_id: string;
-  char: string;
-  pinyin: string;
-  options: Option[];
+
+/** A level as the app labels it: TOCFL first, HSK as the secondary line. */
+export interface LevelBand {
+  hsk_level: number | null;
+  tocfl_level: string | null;
+  tocfl_level_zh: string | null;
+  tocfl_band: string | null;
+  cefr: string | null;
+  label: string;      // "Level 2"
+  label_zh: string;   // "基礎級"
+  sublabel: string;   // "HSK 3"
 }
+
+export type PlacementKind = "recognition" | "listening" | "sentence_build";
+
+export interface PlacementItem {
+  kind: PlacementKind;
+  vocab_id: string | null;
+  char?: string;
+  pinyin?: string;
+  audio_text?: string;
+  options?: Option[];
+  tokens?: string[];   // sentence_build: shuffled
+  answer?: string[];   // sentence_build: correct order
+  gloss?: string;
+}
+
+export interface PlacementRound {
+  band: number;
+  level: LevelBand;
+  items: PlacementItem[];
+  round_size: number;
+}
+
+export interface BandState extends LevelBand {
+  status: "known" | "partial" | "to_learn" | null;
+  score: number | null;
+  sampled: number;
+  assessed: boolean;
+}
+
+export interface PlacementSummary {
+  bands: BandState[];
+  start_at: LevelBand | null;
+  known_cards: number;
+  new_cards: number;
+  caveat: string;
+}
+
 export interface Placement {
   done: boolean;
-  items: PlacementItem[];
+  start_band: number;
+  bands: BandState[];
+  round: PlacementRound;
 }
-export interface PlacementResult {
-  seeded_mature: number;
+
+export interface PlacementRoundOutcome {
+  band: number;
+  status: "known" | "partial" | "to_learn";
+  score: number;
+  correct: number;
+  total: number;
+  seeded_known: number;
   seeded_new: number;
+}
+
+export interface PlacementRoundResponse {
+  outcome: PlacementRoundOutcome;
+  done: boolean;
+  round?: PlacementRound;
+  visited?: number[];
+  summary?: PlacementSummary;
 }
 
 // One review item; fields present depend on `kind`.
@@ -249,6 +310,7 @@ export interface DayActivity {
   minutes: number;
 }
 export interface HskBand {
+  level: LevelBand;
   hsk_level: number;
   learning: number;
   young: number;
@@ -342,12 +404,20 @@ export const api = {
       body: JSON.stringify({ results }),
     }).then(json<LessonResult>),
   placement: () => fetch("/api/placement").then(json<Placement>),
-  placementResult: (results: { vocab_id: string; correct: boolean }[]) =>
-    fetch("/api/placement/result", {
+  placementRound: (body: {
+    band: number;
+    results: { vocab_id: string | null; correct: boolean }[];
+    visited: number[];
+    seen: string[];
+  }) =>
+    fetch("/api/placement/round", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ results }),
-    }).then(json<PlacementResult>),
+      body: JSON.stringify(body),
+    }).then(json<PlacementRoundResponse>),
+  placementSummary: () => fetch("/api/placement/summary").then(json<PlacementSummary>),
+  placementReset: () =>
+    fetch("/api/placement/reset", { method: "POST" }).then(json<{ done: boolean }>),
   reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
   reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
   reviewAnswer: (card_id: number, rating: number) =>

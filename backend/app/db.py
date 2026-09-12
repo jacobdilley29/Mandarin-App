@@ -63,6 +63,7 @@ PROGRESS_TABLES = (
     "review_log",
     "drill_errors",
     "tone_attempts",
+    "band_state",
     "talk_sessions",
     "talk_messages",
     "daily_activity",

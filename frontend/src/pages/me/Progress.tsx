@@ -35,7 +35,9 @@ function ActivityChart({ data }: { data: ProgressData["activity"] }) {
   );
 }
 
-// Words known by HSK level, stacked by mastery band. Mastery is ordinal
+// Words known by level, stacked by mastery. Levels are labelled TOCFL-first
+// (spec §3.1); the HSK grade the content is sourced by trails as the small line.
+// Mastery is ordinal
 // magnitude → one hue, light→dark (sequential), from the brand green.
 const BANDS: { key: "learning" | "young" | "mature"; label: string; color: string }[] = [
   { key: "learning", label: "Learning", color: "var(--primary-soft)" },
@@ -43,14 +45,21 @@ const BANDS: { key: "learning" | "young" | "mature"; label: string; color: strin
   { key: "mature", label: "Mastered", color: "var(--primary)" },
 ];
 
-function WordsByHsk({ data }: { data: ProgressData["words_by_hsk"] }) {
+function WordsByLevel({ data }: { data: ProgressData["words_by_hsk"] }) {
   const max = Math.max(1, ...data.map((d) => d.learning + d.young + d.mature));
   return (
     <div>
       <div className="space-y-2">
         {data.map((row) => (
           <div key={row.hsk_level} className="flex items-center gap-2">
-            <span className="w-12 shrink-0 text-xs text-ink-soft">HSK {row.hsk_level}</span>
+            <span className="w-16 shrink-0 leading-tight">
+              <span className="block text-xs text-ink-soft">
+                {row.level?.label ?? `HSK ${row.hsk_level}`}
+              </span>
+              {row.level?.sublabel && (
+                <span className="block text-[0.6rem] text-ink-faint">{row.level.sublabel}</span>
+              )}
+            </span>
             <div className="flex h-5 flex-1 gap-[2px] overflow-hidden rounded">
               {BANDS.map((b) => {
                 const v = row[b.key];
@@ -59,7 +68,7 @@ function WordsByHsk({ data }: { data: ProgressData["words_by_hsk"] }) {
                   <div
                     key={b.key}
                     style={{ width: `${(v / max) * 100}%`, background: b.color }}
-                    title={`HSK ${row.hsk_level} · ${b.label}: ${v}`}
+                    title={`${row.level?.label ?? `HSK ${row.hsk_level}`} · ${b.label}: ${v}`}
                   />
                 );
               })}
@@ -125,7 +134,7 @@ export default function Progress() {
       {data.words_by_hsk.length > 0 && (
         <div className="card">
           <h3 className="mb-3 text-sm font-semibold text-ink">Words by level</h3>
-          <WordsByHsk data={data.words_by_hsk} />
+          <WordsByLevel data={data.words_by_hsk} />
         </div>
       )}
 

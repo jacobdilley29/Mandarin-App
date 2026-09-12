@@ -86,3 +86,115 @@ def test_tile_build_tiles_are_a_permutation_of_answer():
     for e in stream:
         if e["kind"] == "tile_build":
             assert sorted(e["payload"]["tiles"]) == sorted(e["payload"]["answer"])
+
+
+# ---------------------------------------------------------------------------
+# Character recognition (spec §3.2)
+# ---------------------------------------------------------------------------
+def _stream_for(vocab, pool=None):
+    from app import exercises
+
+    lesson = {
+        "id": "l_t", "title": "T",
+        "vocab": vocab, "grammar": [], "sentences": [], "dialogue": [],
+    }
+    return exercises.build_stream(lesson, pool or vocab)
+
+
+def test_character_recognition_is_generated_for_every_word():
+    from app import exercises
+
+    vocab = [
+        {"id": "v1", "traditional": "甜度", "pinyin": "tiándù", "gloss": "sweetness"},
+        {"id": "v2", "traditional": "冰塊", "pinyin": "bīngkuài", "gloss": "ice"},
+    ]
+    stream = _stream_for(vocab)
+    items = [e for e in stream if e["kind"] == "char_recognition"]
+
+    assert len(items) == len(vocab)
+    assert "char_recognition" in exercises.GRADABLE_KINDS
+
+
+def test_character_recognition_gives_meaning_and_sound_but_not_the_characters():
+    """Every other drill shows the characters; this one asks for them."""
+    vocab = [{"id": "v1", "traditional": "甜度", "pinyin": "tiándù", "gloss": "sweetness"}]
+    p = [e for e in _stream_for(vocab) if e["kind"] == "char_recognition"][0]["payload"]
+
+    assert p["gloss"] == "sweetness" and p["pinyin"] == "tiándù"
+    assert p["answer"] == "甜度"
+    assert sum(1 for o in p["options"] if o["correct"]) == 1
+
+
+def test_distractors_are_confusable_not_random():
+    """Random options make this a test of nothing — the answer stands out at a glance."""
+    from app import exercises
+
+    rng = __import__("random").Random(0)
+    pool = [
+        {"id": "a", "traditional": "溫度"}, {"id": "b", "traditional": "態度"},
+        {"id": "c", "traditional": "甜"},   {"id": "d", "traditional": "電視"},
+        {"id": "e", "traditional": "腳踏車"},
+    ]
+    picked = exercises._confusable_words(pool, "甜度", 3, rng)
+
+    # Words sharing a character come first: 溫度/態度 share 度, 甜 shares 甜.
+    assert set(picked) <= {"溫度", "態度", "甜", "電視"}
+    assert "腳踏車" not in picked, "a 3-character word is not confusable with a 2-character one"
+
+
+def test_confusable_distractors_never_include_the_answer():
+    from app import exercises
+
+    rng = __import__("random").Random(0)
+    pool = [{"id": "a", "traditional": "甜度"}, {"id": "b", "traditional": "溫度"}]
+    assert "甜度" not in exercises._confusable_words(pool, "甜度", 3, rng)
+
+
+def test_a_tiny_pool_still_produces_options():
+    from app import exercises
+
+    rng = __import__("random").Random(0)
+    picked = exercises._confusable_words([{"id": "a", "traditional": "水"}], "茶", 3, rng)
+    assert picked == ["水"]
+
+
+# ---------------------------------------------------------------------------
+# Gloss trimming — dictionary entries are not answer buttons
+# ---------------------------------------------------------------------------
+def test_long_dictionary_glosses_are_trimmed():
+    from app.exercises import short_gloss
+
+    raw = ("to have; there is; (bound form) having; with; -ful; -ed; -al "
+           "(as in 意 intentional)")
+    out = short_gloss(raw)
+
+    assert len(out) <= 50
+    assert out.startswith("to have")
+
+
+def test_short_glosses_are_left_alone():
+    from app.exercises import short_gloss
+
+    assert short_gloss("water") == "water"
+    assert short_gloss("boxed meal; bento") == "boxed meal; bento"
+
+
+def test_empty_gloss_is_handled():
+    from app.exercises import short_gloss
+
+    assert short_gloss(None) == "" and short_gloss("") == ""
+
+
+def test_distractor_glosses_are_trimmed_too():
+    """If only the correct answer is short, length alone gives it away."""
+    from app import exercises
+
+    rng = __import__("random").Random(0)
+    pool = [
+        {"id": "a", "gloss": "x; " * 40},
+        {"id": "b", "gloss": "y; " * 40},
+        {"id": "c", "gloss": "z; " * 40},
+        {"id": "target", "gloss": "water"},
+    ]
+    for g in exercises._distractor_glosses(pool, "target", 3, rng):
+        assert len(g) <= 50

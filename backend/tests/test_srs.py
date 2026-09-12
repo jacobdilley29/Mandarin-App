@@ -91,13 +91,19 @@ def test_build_queue_renders_items(conn):
 
 
 def test_placement_seeds_mature_and_new(conn):
-    out = review.seed_placement(
+    """Placement moved to app/placement.py; the seeding contract is unchanged."""
+    from app import placement
+
+    out = placement.record_round(
         conn,
+        2,
         [
             {"vocab_id": "v1", "correct": True},
             {"vocab_id": "v2", "correct": False},
         ],
     )
-    assert out == {"seeded_mature": 1, "seeded_new": 1}
+    assert (out["seeded_known"], out["seeded_new"]) == (1, 1)
+
+    placement.finalize(conn)
     done = conn.execute("SELECT placement_done FROM settings WHERE id = 1").fetchone()["placement_done"]
     assert done == 1

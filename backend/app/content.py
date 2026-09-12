@@ -11,6 +11,7 @@ import json
 import sqlite3
 from pathlib import Path
 
+from . import levels as _levels
 from .config import REPO_ROOT
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
@@ -229,6 +230,9 @@ def get_curriculum(conn: sqlite3.Connection) -> dict:
             "title": u["title"],
             "subtitle": u["subtitle"],
             "hsk_level": u["hsk_level"],
+            # TOCFL is the exam Jacob is working toward, so that is the label the
+            # UI leads with; HSK stays as the secondary line (spec §3.1).
+            "level": _levels.band(u["hsk_level"]),
             "lessons": out_lessons,
         })
     return {"units": out_units}

@@ -124,6 +124,22 @@ CREATE TABLE IF NOT EXISTS settings (
     updated_at         TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
+-- ---------------------------------------------------------------------------
+-- Placement outcome (spec §3.1)
+--
+-- One row per level band, recording whether the placement check found it known,
+-- partially known, or still to learn. Progress data, not content: it is the
+-- answer to "where does Jacob actually start", and re-running the quiz is the
+-- only way to reproduce it.
+-- ---------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS band_state (
+    hsk_level    INTEGER PRIMARY KEY,     -- 1..4, mapped to TOCFL for display
+    status       TEXT NOT NULL,           -- known | partial | to_learn
+    score        REAL,                    -- 0..1 on the sampled items
+    sampled      INTEGER NOT NULL DEFAULT 0,
+    assessed_at  TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
 -- Daily activity for streak / minutes-per-day.
 CREATE TABLE IF NOT EXISTS daily_activity (
     day          TEXT PRIMARY KEY,       -- YYYY-MM-DD

@@ -58,6 +58,8 @@ Mandarin-App/
 │   │   ├── taiwanize.py     OpenCC s2twp + pypinyin + Taiwan override layer
 │   │   ├── curriculum_source.py  per-unit content files (spec §3.1)
 │   │   ├── completeness.py  per-unit checks + the live/draft gate
+│   │   ├── levels.py        HSK ↔ TOCFL ↔ CEFR mapping (TOCFL is what's shown)
+│   │   ├── placement.py     adaptive band-walking placement check
 │   │   ├── content.py       curriculum load + queries + unlock logic
 │   │   ├── exercises.py     lesson exercise-stream builder (all drill types)
 │   │   ├── validation.py    sentence↔vocab validator (spec §5)
@@ -482,6 +484,48 @@ Needs network; not required to run the app.
 under `$DATA_DIR/audio/`. If a clip can't be generated (offline, restricted
 network), the endpoint returns 503 and the UI degrades gracefully — the audio
 button produces no sound rather than breaking the exercise.
+
+## Levels and placement
+
+The app labels levels by **TOCFL**, the exam track that matters here, with the
+HSK grade the content is sourced by as a secondary line (spec §3.1):
+
+| Shown | Secondary | CEFR |
+|---|---|---|
+| Novice 準備級 | HSK 1 | pre-A1 |
+| Level 1 入門級 | HSK 2 | A1 |
+| Level 2 基礎級 | HSK 3 | A2 |
+| Level 3 進階級 | HSK 4 | B1 |
+
+The mapping is data (`content/tocfl_mapping.json`), read only by `app/levels.py`,
+so every screen labels a level the same way and a correction is a content diff.
+
+> TOCFL's own vocabulary targets run ahead of HSK 2.0 at every band — Level 3
+> expects ~2,500 words against HSK 4's 1,200 cumulative. Finishing HSK 4 here
+> covers Level 3's themes and grammar but roughly half its vocabulary, which is
+> why the UI says "aligned to" and never "covers".
+
+### The placement check
+
+Adaptive rather than a fixed quiz. It starts mid-range, asks a short round, and
+steps up or down until it finds the boundary between what you know and what you
+don't — three or four rounds of eight items, spanning HSK 1–4. Each round mixes
+the three kinds the spec names: recognition, listening (audio only, no
+characters), and sentence building.
+
+**It seeds cards only for the words it actually asked.** A band judged "known"
+does not mass-seed hundreds of mature cards — claiming you know 611 HSK 4 words
+on the strength of eight questions would fill the review queue with material you
+have never seen, and FSRS would take months to work that back out. The band
+verdict is stored separately, in `band_state`, as what it is: an estimate of
+where to start.
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/placement` | Start — the first band's round |
+| `POST /api/placement/round` | Score a band → next round, or the summary |
+| `GET /api/placement/summary` | Band verdicts and where to start |
+| `POST /api/placement/reset` | Retake it (keeps SRS history) |
 
 ## Admin API
 

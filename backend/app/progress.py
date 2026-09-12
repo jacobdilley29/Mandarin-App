@@ -8,6 +8,8 @@ streak and activity chart; tone attempts feed the tone-accuracy trend.
 from __future__ import annotations
 
 import sqlite3
+
+from . import levels as _levels
 from datetime import date, datetime, timedelta
 
 # Stability (days) thresholds for mastery bands.
@@ -103,7 +105,8 @@ def get_progress(conn: sqlite3.Connection) -> dict:
         else:
             band["mature"] += 1
     words_by_hsk = [
-        {"hsk_level": lvl, **levels[lvl]} for lvl in sorted(levels)
+        {"hsk_level": lvl, "level": _levels.band(lvl), **levels[lvl]}
+        for lvl in sorted(levels)
     ]
     total_known = sum(sum(b.values()) for b in levels.values())
     total_mature = sum(b["mature"] for b in levels.values())

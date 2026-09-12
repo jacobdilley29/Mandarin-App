@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api, type Curriculum } from "../api";
+import { LevelBadge } from "../components/LevelBadge";
 import { ToneMark } from "../components/ToneMark";
 
 function LockIcon() {
@@ -65,11 +66,7 @@ export default function Learn() {
                 <h2 lang="zh-Hant" className="font-han text-lg font-medium text-ink">
                   {unit.title}
                 </h2>
-                {unit.hsk_level != null && (
-                  <span className="rounded-full bg-surface-2 px-2 py-0.5 text-[0.65rem] font-medium text-ink-soft">
-                    HSK {unit.hsk_level}
-                  </span>
-                )}
+                <LevelBadge level={unit.level} />
               </div>
               {unit.subtitle && <p className="mb-2 text-xs text-ink-soft">{unit.subtitle}</p>}
 
