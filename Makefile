@@ -91,6 +91,7 @@ help:
 	@echo "  make coverage        Per-unit completeness — what's taught, what's staged"
 	@echo "  make load-content    Validate + load content/units/ into content.db"
 	@echo "  make build-skeleton  Rebuild HSK 1-4 draft units from the word lists"
+	@echo "  make import-tocfl FILE=x.csv LEVEL=novice   Import an official TOCFL word list"
 	@echo "  make generate-content  Fill in drafts via Claude (needs ANTHROPIC_API_KEY)"
 	@echo "  make warm-audio      Pre-generate zh-TW audio for the live units"
 	@echo ""
@@ -263,6 +264,15 @@ load-content: $(SYNC_IMAGE)
 .PHONY: check-content
 check-content: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.load_content --check
+
+.PHONY: import-tocfl
+import-tocfl:
+	@test -n "$(FILE)"  || { echo "usage: make import-tocfl FILE=path/to/list.csv LEVEL=novice"; exit 2; }
+	@test -n "$(LEVEL)" || { echo "usage: make import-tocfl FILE=path/to/list.csv LEVEL=novice"; exit 2; }
+	@# The script runs from backend/, so a relative FILE needs the repo root
+	@# prepended — but an absolute one must be left exactly as given.
+	@case "$(FILE)" in /*) f="$(FILE)";; *) f="$(CURDIR)/$(FILE)";; esac; \
+	 cd backend && ../$(VENV)/bin/python -m scripts.import_tocfl "$$f" --level "$(LEVEL)" $(ARGS)
 
 .PHONY: build-skeleton
 build-skeleton: $(SYNC_IMAGE)

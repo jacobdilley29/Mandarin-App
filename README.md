@@ -514,6 +514,35 @@ Afterwards:
 make coverage && make load-content && make warm-audio
 ```
 
+### Going TOCFL-native
+
+The curriculum is currently built from **HSK 1–4 word lists with TOCFL labels
+mapped over them** — 1,193 words, against the ~2,500 TOCFL Level 3 alone
+expects. That is why the UI says "aligned to" and never "covers".
+
+Closing that gap is a change of *source data*, not of the pipeline. Download the
+official vocabulary list for a level (SC-TOP, the body that runs the exam,
+publishes them), export it to CSV, then:
+
+```bash
+make import-tocfl FILE=novice.csv LEVEL=novice ARGS=--dry-run   # check it parsed
+make import-tocfl FILE=novice.csv LEVEL=novice                  # write the list
+```
+
+The importer matches columns by header in Chinese or English, handles CSV or
+TSV, applies the same Taiwan pass everything else gets (垃圾 becomes lèsè
+whatever the file says, a Simplified stray is converted), skips junk rows, and
+reports how much of the list is genuinely new against what you already have.
+`--dry-run` writes nothing — run it first.
+
+The output lands in `content/wordlists/tocfl_<level>.json` in the same shape as
+the HSK lists, so `build-skeleton` can bin it into units and `generate-content`
+fills them in exactly as before.
+
+> Word lists are inventories of a language and the official ones are published
+> for exactly this purpose. Lesson text is someone's work — this app writes its
+> own sentences rather than taking them from another site.
+
 ### A trap worth knowing about: `examples`
 
 Every structured-output model in this app is checked by
