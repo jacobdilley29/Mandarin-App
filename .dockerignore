@@ -1,0 +1,29 @@
+# Runtime data never belongs in the image — it lives on the named volume.
+data/
+
+.git/
+.gitignore
+
+# Rebuilt inside the image.
+frontend/node_modules/
+frontend/dist/
+frontend/dev-dist/
+backend/.venv/
+.venv/
+venv/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# The superseded static prototype — reference only, not part of the app.
+legacy/
+
+.env
+.DS_Store
+.idea/
+.vscode/
+*.swp

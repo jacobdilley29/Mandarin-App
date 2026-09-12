@@ -298,6 +298,18 @@ export interface RecapWord extends NewWord {
   in_deck: boolean;
 }
 
+export interface BackupStatus {
+  backup_dir: string;
+  snapshot_count: number;
+  export_count: number;
+  retention_days: number;
+  scheduled_at: string;
+  last_backup_at: string | null;
+  last_backup_file: string | null;
+  last_backup_bytes: number | null;
+  total_bytes: number;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -316,6 +328,11 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(patch),
     }).then(json<Settings>),
+  backupStatus: () => fetch("/api/admin/backup-status").then(json<BackupStatus>),
+  runBackup: () =>
+    fetch("/api/admin/backup", { method: "POST" }).then(
+      json<{ snapshot: string; export: string; pruned: string[] }>,
+    ),
   curriculum: () => fetch("/api/curriculum").then(json<Curriculum>),
   lesson: (id: string) => fetch(`/api/lesson/${id}`).then(json<Lesson>),
   lessonResult: (id: string, results: DrillResult[]) =>

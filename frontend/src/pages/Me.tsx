@@ -1,4 +1,5 @@
-import { type Settings } from "../api";
+import { useEffect, useState } from "react";
+import { api, type BackupStatus, type Settings } from "../api";
 import { useSettings } from "../SettingsContext";
 import { useStatus } from "../StatusContext";
 import { ToneRow } from "../components/ToneMark";
@@ -80,6 +81,118 @@ function Row({ label, hint, children }: { label: string; hint?: string; children
       </div>
       <div className="shrink-0">{children}</div>
     </div>
+  );
+}
+
+/** How long ago, in words. Precision beyond "days" doesn't help here. */
+function ago(iso: string): string {
+  const mins = Math.floor((Date.now() - new Date(iso).getTime()) / 60000);
+  if (mins < 2) return "just now";
+  if (mins < 60) return `${mins} min ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs} hour${hrs === 1 ? "" : "s"} ago`;
+  const days = Math.floor(hrs / 24);
+  return `${days} day${days === 1 ? "" : "s"} ago`;
+}
+
+function bytes(n: number): string {
+  if (n < 1024) return `${n} B`;
+  if (n < 1024 * 1024) return `${(n / 1024).toFixed(0)} KB`;
+  return `${(n / 1024 / 1024).toFixed(1)} MB`;
+}
+
+/**
+ * Backup health.
+ *
+ * This app was lost once already because backups were never set up. A backup
+ * job that silently stopped running is the same failure wearing a disguise, so
+ * the state of it is shown here rather than left to be discovered too late.
+ */
+function BackupPanel() {
+  const [info, setInfo] = useState<BackupStatus | null>(null);
+  const [err, setErr] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const refresh = () =>
+    api
+      .backupStatus()
+      .then((b) => {
+        setInfo(b);
+        setErr(null);
+      })
+      .catch((e) => setErr(String(e.message ?? e)));
+
+  useEffect(() => {
+    refresh();
+  }, []);
+
+  const runNow = async () => {
+    setBusy(true);
+    try {
+      await api.runBackup();
+      await refresh();
+    } catch (e) {
+      setErr(String((e as Error).message ?? e));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  // Nightly job: anything past ~36h means it isn't running.
+  const stale =
+    !info?.last_backup_at ||
+    Date.now() - new Date(info.last_backup_at).getTime() > 36 * 3600 * 1000;
+
+  return (
+    <section className="card mt-6">
+      <div className="mb-2 flex items-center justify-between">
+        <h2 className="text-sm font-semibold text-ink">Backups</h2>
+        <button
+          type="button"
+          onClick={runNow}
+          disabled={busy}
+          className="tap rounded-md border border-border px-3 py-1 text-xs font-medium text-ink-soft hover:text-ink disabled:opacity-50"
+        >
+          {busy ? "Backing up…" : "Back up now"}
+        </button>
+      </div>
+
+      {err ? (
+        <p className="text-sm text-bad">Couldn't read backup status: {err}</p>
+      ) : !info ? (
+        <p className="text-sm text-ink-soft">Checking…</p>
+      ) : (
+        <dl className="space-y-1 text-sm text-ink-soft">
+          <div className="flex justify-between">
+            <dt>Last backup</dt>
+            <dd className={stale ? "text-bad" : "text-good"}>
+              {info.last_backup_at ? ago(info.last_backup_at) : "never"}
+            </dd>
+          </div>
+          <div className="flex justify-between">
+            <dt>Kept</dt>
+            <dd className="text-ink">
+              {info.snapshot_count} snapshot{info.snapshot_count === 1 ? "" : "s"}
+              {info.total_bytes > 0 ? ` · ${bytes(info.total_bytes)}` : ""}
+            </dd>
+          </div>
+          <div className="flex justify-between">
+            <dt>Schedule</dt>
+            <dd className="text-ink">
+              daily at {info.scheduled_at}, {info.retention_days}-day window
+            </dd>
+          </div>
+        </dl>
+      )}
+
+      {info && stale && !err && (
+        <p className="mt-3 rounded-md border border-bad/40 bg-accent-soft px-3 py-2 text-xs text-bad">
+          No recent backup. If you're running under Docker, check the backup
+          container: <code>docker compose ps</code>. See the README's
+          "Backups &amp; restore" section.
+        </p>
+      )}
+    </section>
   );
 }
 
@@ -175,6 +288,8 @@ export default function Me() {
       <section className="card">
         <ApiKeyForm />
       </section>
+
+      <BackupPanel />
 
       <section className="card mt-6">
         <h2 className="mb-2 text-sm font-semibold text-ink">About</h2>

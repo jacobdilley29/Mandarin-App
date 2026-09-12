@@ -38,6 +38,8 @@ def status(conn: sqlite3.Connection = Depends(get_db)) -> dict:
             "listen": True,
             "speak": True,
             "progress": True,
+            # Backup/restore machinery (spec §7) is always available.
+            "backups": True,
         },
         "whisper_model": settings.whisper_model,
     }

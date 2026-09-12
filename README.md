@@ -5,27 +5,56 @@ lessons, spaced-repetition review, listening/dictation, pronunciation + tone fee
 and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
 and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **Status: complete (Phases 0–5).** All six tabs are live — **Learn**,
-> **Review** (FSRS + placement), **Listen** (dictation / comprehension / tones),
-> **Speak** (pitch-contour tone feedback), **Talk** (Claude roleplay with teacher
-> notes + recap→SRS), and **Me** (a mastery-based progress dashboard + settings).
-> Talk needs `ANTHROPIC_API_KEY`; without it that one tab is disabled and
-> everything else works.
+> **All six tabs are live** — **Learn**, **Review** (FSRS + placement), **Listen**
+> (dictation / comprehension / tones), **Speak** (pitch-contour tone feedback),
+> **Talk** (Claude roleplay with teacher notes + recap→SRS), and **Me** (a
+> mastery-based progress dashboard + settings). Talk needs `ANTHROPIC_API_KEY`;
+> without it that one tab is disabled and everything else works.
+>
+> **Your progress is backed up automatically.** See
+> [Backups & restore](#backups--restore) — read it once now, not after you need it.
+
+---
+
+## Quick start
+
+Requires **Docker** with Compose v2.24+ (`docker compose version`).
+
+```bash
+git clone <this repo> && cd Mandarin-App
+make up                     # builds and starts the app + nightly backup job
+```
+
+Open **http://localhost:3002**. That's it — no `.env` needed to start (one is
+created from `.env.example` automatically; add your Anthropic key to it later if
+you want the Talk tab).
+
+To reach it from your phone: `make tailscale-up`.
+
+Running without Docker is also supported — see [Native Python](#running-without-docker).
 
 ---
 
 ## Architecture
 
 One Python process serves both the JSON API and the built frontend on a single port.
+**Two SQLite databases**, kept deliberately apart (see
+[Why two databases](#why-two-databases)).
 
 ```
 Mandarin-App/
+├── docker-compose.yml       app + backup cron, sharing a named volume
+├── Dockerfile               one image, two roles (server / backup)
+├── docker/                  container entrypoints
 ├── backend/                 FastAPI + SQLite
 │   ├── app/
 │   │   ├── main.py          app, routers, static SPA serving
 │   │   ├── config.py        settings from .env (with safe defaults)
-│   │   ├── db.py            SQLite connection + schema bootstrap
-│   │   ├── schema.sql       full domain schema
+│   │   ├── db.py            two-database connection (content + ATTACHed progress)
+│   │   ├── schema_content.sql   curriculum & dictionary  — regenerable
+│   │   ├── schema_progress.sql  SRS, history, settings   — irreplaceable
+│   │   ├── migrate.py       one-time split of a pre-existing single-file DB
+│   │   ├── backup.py        snapshots, JSON export/import, retention
 │   │   ├── content.py       curriculum load + queries + unlock logic
 │   │   ├── exercises.py     lesson exercise-stream builder (all drill types)
 │   │   ├── validation.py    sentence↔vocab validator (spec §5)
@@ -41,167 +70,315 @@ Mandarin-App/
 │   │   ├── whisper_asr.py   optional faster-whisper wrapper
 │   │   ├── conversation.py  Claude roleplay (teacher notes + new words)
 │   │   ├── progress.py      activity logging + dashboard stats
-│   │   └── routers/         health · settings · learn · review · listen ·
-│   │                        speak · talk · progress · audio
-│   ├── scripts/             import_cedict · load_content · generate_content
-│   ├── tests/               pytest (validation, exercise builder)
+│   │   └── routers/         health · admin · settings · learn · review ·
+│   │                        listen · speak · talk · progress · audio
+│   ├── scripts/             backup · export_progress · import_progress ·
+│   │                        migrate_split_db · load_content · import_cedict
+│   ├── tests/               pytest
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
-│   ├── src/
-│   │   ├── pages/           Learn / Review / Listen / Speak / Talk / Me
-│   │   │                    (each with its sub-flow folder)
-│   │   ├── components/      TabBar, ToneMark, Speakable, PlayButton, …
-│   │   ├── audio.ts         tappable-audio playback hook
-│   │   └── theme.ts         design tokens (mirror of DESIGN.md)
-│   └── package.json
-├── content/curriculum.json  seed curriculum (Traditional, Taiwan usage, validated)
-├── content/hsk1.json        HSK 1 foundation pool for the placement check
-├── content/listen.json      listening comprehension sets (validated)
-├── data/                    SQLite DB + audio cache (gitignored; auto-created)
-├── legacy/                  the earlier static-PWA prototype, preserved for reference
+│   ├── src/pages/           Learn / Review / Listen / Speak / Talk / Me
+│   ├── src/components/      TabBar, ToneMark, Speakable, PlayButton, …
+│   └── src/theme.ts         design tokens (mirror of DESIGN.md)
+├── content/                 versioned curriculum source (JSON) — the input to content.db
+├── scripts/tailscale-serve.sh   HTTPS phone access over your tailnet
 ├── DESIGN.md                palette + typography + tone-motif design tokens
-├── Makefile                 setup / build / run
+├── Makefile                 setup / run / backup / restore / tailscale
 └── .env.example             copy to .env
 ```
 
 **Tech:** Python 3.11+, FastAPI, uvicorn, SQLite · React 18, TypeScript, Vite 6,
-Tailwind 3, vite-plugin-pwa.
+Tailwind 3, vite-plugin-pwa · Docker Compose.
+
+### Why two databases
+
+Learner progress is the only thing here that can't be rebuilt. Curriculum content is
+generated from the JSON files in `content/`, which are versioned in git; the audio
+cache re-synthesises on demand. So they live in separate files:
+
+| File | Holds | If you lose it |
+|---|---|---|
+| `content.db` | dictionary, vocab, grammar, units, lessons | Reseeds itself on next start |
+| `progress.db` | SRS state, lesson completion, tone-attempt history, Talk history, settings | **Gone forever unless you have a backup** |
+
+Both are opened on one connection — `content.db` as `main`, `progress.db` ATTACHed as
+`progress` — so queries spanning the two (e.g. `srs_cards JOIN vocab`) work normally.
+The one thing given up is cross-file foreign keys, which SQLite can't enforce between
+attached databases. That's the point: **a progress row must outlive the content row it
+points at**, so regenerating the curriculum can never cascade-delete your review
+history.
+
+Only `progress.db` is backed up. That is a deliberate choice, not an oversight.
 
 ---
 
-## Quick start
+## Backups & restore
 
-Requires **Python 3.11+** and **Node 18+**.
+> This app existed once before and was lost, because there was no backup. Everything
+> below is set up by default — but **do the five-minute restore drill at the bottom
+> once**, so you know it works before you need it.
+
+### What runs automatically
+
+`make up` starts two containers: the app, and a `backup` container running cron.
+
+- **Nightly at 03:30** (configurable via `BACKUP_TIME`) it writes two files:
+  - `progress-YYYYMMDD-HHMMSS.db` — a binary snapshot, taken with SQLite's online
+    backup API. Not a file copy: copying a live SQLite database can capture a torn
+    page or miss committed data sitting in the WAL.
+  - `export-YYYYMMDD-HHMMSS.json.gz` — a plain-text dump of every progress table.
+    Survives SQLite version changes, can be inspected and hand-edited, and is the
+    thing to carry to a new machine.
+- **One backup runs immediately at container start**, so a fresh deploy is never
+  sitting there with nothing.
+- **Rolling 30-day window** (`BACKUP_RETENTION_DAYS`). Older files are pruned; the
+  most recent snapshot and export are *always* kept regardless of age.
+
+Backups land in `/data/backups` on the `mandarin-data` volume, alongside the
+databases — so they survive image rebuilds too.
+
+Check on it any time — the **Me** tab shows the last backup time and turns red if
+the job has stopped running, or:
 
 ```bash
-cp .env.example .env        # optional — defaults work out of the box
-make setup                  # venv + backend deps + npm install + build frontend
-make run                    # serve API + frontend on http://localhost:3002
+make backup-status      # when did it last run, how many are kept
+make backups-list       # every backup file and its size
+make backup             # take one right now
 ```
 
-Open **http://localhost:3002**.
+### What is and isn't backed up
 
-### Configure the port
+| | Backed up | Why |
+|---|---|---|
+| `progress.db` | ✅ | Irreplaceable |
+| `content.db` | ❌ | Regenerates from `content/*.json`, which is in git |
+| `data/audio/` | ❌ | An edge-tts cache; re-synthesises on demand |
 
-The port is read from `.env` (`PORT=3002` by default in this project; the spec's
-canonical default is `3170`). Change it there, or override per-command:
+Backing up the other two would multiply the size of every snapshot to protect data
+that git already holds.
+
+### Getting a copy off this machine
+
+Rolling local backups protect against app bugs, bad updates and mistakes. They do
+**not** protect against losing the machine. Take a copy off it periodically:
 
 ```bash
-make run PORT=3005
+make export FILE=~/Dropbox/mandarin-progress.json
+```
+
+One file, human-readable, everything that matters. Put it wherever you keep things
+you'd hate to lose. (Automated off-host sync is deliberately not wired up — see
+spec §9; this one command is the baseline.)
+
+### Restore — from a JSON export
+
+The usual path. Works between machines and across app versions:
+
+```bash
+make restore FILE=mandarin-progress.json   # replaces all progress
+make import  FILE=mandarin-progress.json   # merges into what's there
+```
+
+Both take a safety snapshot of the current state first, so a mistaken restore is
+itself recoverable. `restore` gives you five seconds to Ctrl-C.
+
+You can also do it from the app: `POST /api/admin/import` with
+`{"mode": "replace", "data": {…}}`, or upload the file to
+`POST /api/admin/import-file?mode=replace`.
+
+### Restore — from a binary snapshot
+
+Byte-exact, and the fastest way back if the database file itself got corrupted:
+
+```bash
+docker compose stop app                              # stop writers first
+docker compose run --rm -T app sh -c \
+  'cp /data/backups/progress-20260912-033000.db /data/progress.db && rm -f /data/progress.db-wal /data/progress.db-shm'
+docker compose start app
+```
+
+Removing the `-wal` / `-shm` sidecars matters: they belong to the *old* database and
+would otherwise be replayed on top of the restored one.
+
+### Full disaster recovery — new machine, nothing but a backup file
+
+```bash
+git clone <this repo> && cd Mandarin-App
+make up                                       # fresh install, empty progress
+make restore FILE=/path/to/mandarin-progress.json
+```
+
+Your lessons, SRS schedule, streak and history come back. The curriculum rebuilds
+itself from git. **The only thing you need off the old machine is one export file** —
+which is exactly why `make export` is worth running now and then.
+
+### Verifying backups actually work — do this once
+
+Five minutes, and then you know:
+
+```bash
+make export FILE=/tmp/before.json          # 1. snapshot your real state
+make backup-status                         # 2. confirm the job is running
+
+# 3. break it on purpose:
+docker compose stop app
+docker compose run --rm -T app sh -c 'rm -f /data/progress.db*'
+docker compose start app
+#    open the app — progress is gone, as expected
+
+make restore FILE=/tmp/before.json         # 4. bring it back
+#    open the app — streak, SRS queue and completed lessons are back
+```
+
+If step 4 doesn't restore you exactly, find out now rather than later.
+
+### Things that will and won't destroy your data
+
+| Command | Your progress |
+|---|---|
+| `make down`, `docker compose down` | ✅ Safe — kept on the named volume |
+| `make rebuild`, `docker compose build --no-cache` | ✅ Safe — the image is stateless |
+| `make clean` | ✅ Safe — only build artefacts |
+| `docker compose exec app python -m scripts.load_content` | ✅ Safe — only touches `content.db` |
+| **`docker compose down -v`** | ❌ **Deletes everything, backups included** |
+| **`docker volume rm mandarin-data`** | ❌ **Same** |
+
+Only the last two are dangerous, and both need the explicit flag. Keep an off-machine
+export and even those are survivable.
+
+### Upgrading from the single-database layout
+
+Earlier versions kept everything in one `data/mandarin.db`. On first start the app
+splits it automatically into `content.db` + `progress.db` and renames the original to
+`mandarin.db.pre-split.bak` — it is never deleted. Run it by hand first if you'd
+rather watch it happen:
+
+```bash
+cd backend && python -m scripts.migrate_split_db
+```
+
+---
+
+## Access from your phone (Tailscale Serve)
+
+Microphone capture (the Speak tab) requires HTTPS. Tailscale Serve gives your machine
+a trusted HTTPS URL reachable from your phone on your tailnet — no port-forwarding,
+no certificates, nothing exposed to the public internet.
+
+1. Install [Tailscale](https://tailscale.com/) on this machine and your phone, signed
+   into the same tailnet.
+2. Start the app: `make up`.
+3. `make tailscale-up` — it prints your `https://<machine>.<tailnet>.ts.net/` URL.
+4. Open that on your phone and **Add to Home Screen** to install the PWA.
+
+`make tailscale-down` stops serving; `make tailscale-status` shows what's currently
+served.
+
+> The app binds to **loopback only** (`127.0.0.1:3002`) — Tailscale is the sole
+> remote path in, and the security perimeter. There's no login, by design. Keep your
+> tailnet private.
+
+---
+
+## Configuration (`.env`)
+
+| Key | Default | Purpose |
+|---|---|---|
+| `ANTHROPIC_API_KEY` | *(empty)* | Enables the **Talk** conversation tab. Absent → tab disabled, everything else works. |
+| `WHISPER_MODEL` | `small` | Local speech model for pronunciation scoring. |
+| `PORT` | `3002` | Host port. The container always listens on 3002 internally. |
+| `HOST` | `0.0.0.0` | Bind address inside the container. |
+| `DATA_DIR` | `./data` | Where databases, audio cache and backups live. Compose sets this to `/data`. |
+| `BACKUP_RETENTION_DAYS` | `30` | Rolling backup window. |
+| `BACKUP_TIME` | `03:30` | When the nightly backup runs. |
+
+The Anthropic key can also be set in-app on the **Me** tab, which stores it in
+`progress.db` and overrides `.env`.
+
+---
+
+## Running without Docker
+
+Requires **Python 3.11+** and **Node 18+**. Data goes in `./data` instead of the
+named volume.
+
+```bash
+cp .env.example .env
+make setup                  # venv + backend deps + npm install + build frontend
+make run                    # http://localhost:3002
+```
+
+Every backup target works here too (`make backup`, `make export`, `make restore` — they
+detect whether the container is running and act accordingly). The **nightly** job is the
+one thing Compose provides that this doesn't, so schedule it yourself:
+
+```cron
+30 3 * * * cd /path/to/Mandarin-App/backend && ../.venv/bin/python -m scripts.backup
 ```
 
 ### Development workflow (hot reload)
-
-Run the backend and the Vite dev server in two terminals. Vite proxies `/api` and
-`/audio` to the backend, so you get instant frontend reloads:
 
 ```bash
 make dev-backend            # terminal 1 — FastAPI on $PORT
 make dev-frontend           # terminal 2 — Vite on http://localhost:5173
 ```
 
-Use **http://localhost:5173** during development.
+Vite proxies `/api` and `/audio` to the backend. Use **http://localhost:5173**.
 
----
+### Tests
 
-## Access from your phone (Tailscale Serve)
-
-Microphone capture (needed for the Speak tab later) requires HTTPS. Tailscale Serve
-gives your machine a trusted HTTPS URL reachable from your phone on your tailnet —
-no port-forwarding, no certificates to manage.
-
-1. Install [Tailscale](https://tailscale.com/) on both this machine and your phone,
-   signed into the same tailnet.
-2. Start the app: `make run` (it binds `0.0.0.0`, so it's reachable on the tailnet).
-3. Expose it over HTTPS:
-
-   ```bash
-   tailscale serve 3002        # or: make serve-tailscale
-   ```
-
-   Tailscale prints an `https://<your-machine>.<tailnet>.ts.net/` URL.
-4. Open that URL on your phone and **Add to Home Screen** to install the PWA
-   (works offline after first load; installable via the manifest).
-
-> Single-user by design — **Tailscale is the security perimeter**, so there's no
-> login. Keep the tailnet private.
-
----
-
-## Configuration (`.env`)
-
-| Key                 | Default  | Purpose |
-|---------------------|----------|---------|
-| `ANTHROPIC_API_KEY` | *(empty)* | Enables the **Talk** conversation tab. Absent → tab disabled, everything else works. |
-| `WHISPER_MODEL`     | `small`  | Local speech model for pronunciation scoring (Phase 4). |
-| `PORT`              | `3002`   | Single port for API + frontend. |
-| `HOST`              | `0.0.0.0`| Bind address (keep `0.0.0.0` for Tailscale/phone access). |
-
-All user data lives in `data/` (SQLite + audio cache) — back up that one folder.
+```bash
+make test
+```
 
 ---
 
 ## Content pipeline
 
 The curriculum ships **committed and validated** in `content/curriculum.json`
-(Traditional characters, Taiwan usage), so the app runs with no downloads or API
-key. Three scripts (run from `backend/`, with the venv active) support authoring:
+(Traditional characters, Taiwan usage), so the app runs with no downloads or API key.
+Three scripts (run from `backend/`) support authoring:
 
 ```bash
-python -m scripts.load_content            # validate + load content into SQLite
+python -m scripts.load_content            # validate + load content into content.db
 python -m scripts.load_content --check    # validate only (vocab/sentence check)
 python -m scripts.import_cedict           # download + import CC-CEDICT dictionary
 python -m scripts.generate_content        # (optional) regenerate/expand via Claude API
 ```
 
-Every sentence is checked so it only uses characters the learner has met by that
-point in the curriculum; `load_content` refuses to load content with violations.
-`import_cedict` and `generate_content` need network / an `ANTHROPIC_API_KEY`
-respectively and are **not** required to run the app.
+Every sentence is checked so it only uses characters the learner has met by that point
+in the curriculum; `load_content` refuses to load content with violations. None of
+these can touch `progress.db`.
 
-**Audio:** the `/api/audio` endpoint synthesises zh-TW speech with edge-tts and
-caches mp3s under `data/audio/`. If a clip can't be generated (offline, or a
-restricted network), the endpoint returns 503 and the UI degrades gracefully —
-the audio button simply produces no sound rather than breaking the exercise.
+**Audio:** `/api/audio` synthesises zh-TW speech with edge-tts and caches mp3s under
+`$DATA_DIR/audio/`. If a clip can't be generated (offline, restricted network), the
+endpoint returns 503 and the UI degrades gracefully — the audio button produces no
+sound rather than breaking the exercise.
 
 ---
 
-## Roadmap (build phases)
+## Admin API
 
-Each phase ends runnable.
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/admin/backup-status` | Last backup time, count, retention |
+| `POST /api/admin/backup` | Run a backup now |
+| `GET /api/admin/export` | Download all progress as JSON |
+| `POST /api/admin/import` | Restore from a JSON body (`mode`: `merge`\|`replace`) |
+| `POST /api/admin/import-file` | Same, as a file upload |
 
-- **Phase 0 — skeleton ✅:** FastAPI + Vite scaffold, SQLite schema, settings
-  page, PWA manifest, design tokens, six-tab shell.
-- **Phase 1 — Content + Learn ✅:** validated Taiwan-Mandarin curriculum,
-  curriculum browser, full lesson exercise engine (all non-speaking drills),
-  edge-tts audio with disk caching, completion → SRS enrolment, plus the content
-  pipeline scripts (CC-CEDICT import, content loader, Claude-based generator).
-- **Phase 2 — Review ✅:** FSRS scheduling (py-fsrs), first-run placement
-  check over an HSK 1 foundation pool, daily review queue with rotating card
-  types and Again/Hard/Good/Easy rating.
-- **Phase 3 — Listen ✅:** dictation with pinyin/character diffing,
-  comprehension dialogues + questions, and tone ear-training (single + tone-pair).
-- **Phase 4 — Speak ✅:** mic capture (browser-side WAV encoding),
-  pure-numpy pitch extraction + tone classification with sandhi, SVG
-  pitch-contour overlay, and optional faster-whisper transcription.
-- **Phase 5 — Talk + Progress ✅ (this):** Claude roleplay conversations
-  (Traditional/Taiwan, in-character with a collapsible teacher note per turn,
-  optional mic input, recap→SRS), and a mastery-based progress dashboard
-  (streak, activity, words-by-HSK stacked bar, tone accuracy, retention,
-  weakest grammar).
-
-See `mandarin-teacher-spec.md` for the full specification and `DESIGN.md` for the
-visual design system.
+---
 
 ## Design
 
 The visual identity is documented in **`DESIGN.md`**: a palette drawn from Taiwan
-signage green + temple vermilion (not the generic AI-default cream/terracotta),
-Noto Serif/Sans TC typography with characters as the hero, and the four-tone contour
-shapes as a recurring motif. Light and dark modes both supported.
+signage green + temple vermilion, Noto Serif/Sans TC typography with characters as the
+hero, and the four-tone contour shapes as a recurring motif. Light and dark modes both
+supported.
+
+See `mandarin-teacher-spec.md` for the full specification.
 
 ## The `legacy/` prototype
 
 An earlier, self-contained static PWA prototype (vanilla JS, no backend) lives in
-`legacy/` for reference. It is not part of the new app and is not served; the new
-FastAPI + React application above supersedes it.
+`legacy/` for reference. It is not part of the new app and is not served.

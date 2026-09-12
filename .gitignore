@@ -1,8 +1,14 @@
 # --- Secrets / config ---
 .env
 
-# --- User data (SQLite + audio cache) ---
+# --- User data (SQLite databases, audio cache, backups) ---
 data/
+
+# Progress exports are learner data, not source. Keep them out of git —
+# store them somewhere off this machine instead (see README "Backups & restore").
+progress-export.json
+*-progress-*.json
+mandarin-progress-*.json
 
 # --- Python ---
 .venv/

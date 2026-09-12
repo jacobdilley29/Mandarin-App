@@ -35,19 +35,42 @@ class Settings(BaseSettings):
     whisper_model: str = "small"
 
     # --- Storage ---
-    # Single SQLite file + audio cache live under data/ for easy backup.
+    # Everything mutable lives under data_dir. In Docker this is the named
+    # volume mounted at /data (set DATA_DIR=/data), so rebuilding the image
+    # never touches it. Override with the DATA_DIR environment variable.
     data_dir: Path = REPO_ROOT / "data"
+
+    # --- Backups (spec §7) ---
+    # Rolling window of local backups. Daily cadence is driven by the cron job
+    # in the backup container; backup_time is the schedule it renders.
+    backup_retention_days: int = 30
+    backup_time: str = "03:30"  # HH:MM, host local time
 
     # --- Frontend static files (built by Vite into frontend/dist) ---
     frontend_dist: Path = REPO_ROOT / "frontend" / "dist"
 
     @property
-    def db_path(self) -> Path:
+    def content_db_path(self) -> Path:
+        """Curriculum + dictionary. Regenerable from content/*.json."""
+        return self.data_dir / "content.db"
+
+    @property
+    def progress_db_path(self) -> Path:
+        """Learner progress. Irreplaceable — this is what gets backed up."""
+        return self.data_dir / "progress.db"
+
+    @property
+    def legacy_db_path(self) -> Path:
+        """The pre-split single-file DB, migrated on first startup if present."""
         return self.data_dir / "mandarin.db"
 
     @property
     def audio_dir(self) -> Path:
         return self.data_dir / "audio"
+
+    @property
+    def backup_dir(self) -> Path:
+        return self.data_dir / "backups"
 
     @property
     def conversation_enabled(self) -> bool:
@@ -57,6 +80,7 @@ class Settings(BaseSettings):
     def ensure_dirs(self) -> None:
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.audio_dir.mkdir(parents=True, exist_ok=True)
+        self.backup_dir.mkdir(parents=True, exist_ok=True)
 
 
 @lru_cache
