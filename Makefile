@@ -28,6 +28,7 @@ DOCKER_RUNNING := $(shell docker compose ps --status running --quiet app 2>/dev/
 ifeq ($(DOCKER_RUNNING),)
   RUN_BACKEND := cd backend && ../$(VENV)/bin/python
   SYNC_IMAGE :=
+  PULL_CONTENT := true   # a native run already writes into the repo
 else
   RUN_BACKEND := docker compose exec -T app python
   # `docker compose exec` runs whatever code is baked into the running image, so
@@ -37,7 +38,27 @@ else
   # seconds when nothing changed. Data targets (backup/export/restore) don't
   # need it: they act on the volume, not on code that just changed.
   SYNC_IMAGE := sync-image
+  # Authoring in Docker writes into the container, whose filesystem is thrown
+  # away on the next rebuild. Bind-mounting content/ would be the neat fix, but
+  # Docker Desktop on macOS could not read through that mount at all (Errno 35,
+  # "Resource deadlock avoided"), so results are copied back out instead.
+  PULL_CONTENT := $(MAKE) --no-print-directory pull-content
 endif
+
+# Copy generated curriculum out of the container into the working tree.
+# Safe to run any time; it only ever copies container -> host.
+.PHONY: pull-content
+pull-content:
+	@tmp=$$(mktemp -d); \
+	docker compose cp app:/app/content/units "$$tmp/units" >/dev/null 2>&1 \
+	  && mkdir -p content/units && cp -R "$$tmp/units/." content/units/ \
+	  || echo "  (no generated units to copy back)"; \
+	docker compose cp app:/app/content/.generated "$$tmp/gen" >/dev/null 2>&1 \
+	  && mkdir -p content/.generated && cp -R "$$tmp/gen/." content/.generated/ \
+	  || true; \
+	rm -rf "$$tmp"; \
+	echo "› results copied into content/ — run 'git status' to see what changed"
+
 
 # Rebuild+restart the image so container code matches the working tree.
 .PHONY: sync-image
@@ -245,13 +266,13 @@ check-content: $(SYNC_IMAGE)
 
 .PHONY: build-skeleton
 build-skeleton: $(SYNC_IMAGE)
-	$(RUN_BACKEND) -m scripts.build_skeleton --theme offline $(ARGS)
+	@$(RUN_BACKEND) -m scripts.build_skeleton --theme offline $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
 	@echo ""
 	@echo "Drafts are staged, not taught. Next: make generate-content"
 
 .PHONY: generate-content
 generate-content: $(SYNC_IMAGE)
-	$(RUN_BACKEND) -m scripts.generate_content $(ARGS)
+	@$(RUN_BACKEND) -m scripts.generate_content $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
 
 .PHONY: warm-audio
 warm-audio: $(SYNC_IMAGE)

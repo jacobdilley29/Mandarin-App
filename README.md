@@ -486,16 +486,27 @@ incremental and a failed unit simply stays a draft. A unit where *nothing*
 generated — an outage, a rate limit — is left untouched on disk rather than
 rewritten, so a bad run can never demote finished content to draft.
 
-**Generated content lands in your working tree, not in the container.**
-`content/` is bind-mounted into both services, because it is versioned source
-rather than runtime data: after a run, `git status` shows exactly which units
-changed, `git diff` shows what the model wrote, and nothing is kept until you
-commit it. (It used to be written inside the container, where the next image
-rebuild destroyed it.)
+**Generated content lands in your working tree, not in the container.** Under
+Docker the round trip is: the authoring targets rebuild the image first (so the
+container runs the code and content currently in your tree), the run happens
+inside the container, and the results are copied back out with
+`docker compose cp`. After a run, `git status` shows which units changed,
+`git diff` shows what the model wrote, and nothing is kept unless you commit it.
+`make pull-content` repeats just the copy-back, and is safe to run any time.
 
-The authoring targets also rebuild the image before running, so a `git pull`
-followed by `make generate-content` can't execute the previous image's code.
-That costs a few cached seconds and removes a whole class of confusion.
+Two things this replaced, both worth knowing:
+
+- Output used to be written **inside the container**, where the next image
+  rebuild destroyed it — a successful generation run could vanish entirely.
+- Bind-mounting `content/` was the obvious fix and **did not work**: Docker
+  Desktop on macOS could not read through the mount at all, failing with
+  `OSError: [Errno 35] Resource deadlock avoided` and taking
+  `/api/content/coverage` down with it. Copying is slower and completely
+  reliable. Don't re-add the mount.
+
+The image rebuild also means a `git pull` followed by `make generate-content`
+can't execute the previous image's code — a few cached seconds, one less class
+of confusion.
 
 Afterwards:
 

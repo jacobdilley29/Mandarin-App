@@ -29,13 +29,6 @@ services:
         required: false
     volumes:
       - mandarin-data:/data
-      # The curriculum source, bind-mounted so the authoring tools write to the
-      # repo rather than into the container. content/ is versioned source, not
-      # runtime data: generated units land in `git status` where they can be
-      # reviewed, committed and diffed. Without this, `make generate-content`
-      # wrote its output into the container's own filesystem and the next image
-      # rebuild silently destroyed it.
-      - ./content:/app/content
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:3002/api/health"]
       interval: 30s
@@ -61,15 +54,15 @@ services:
         required: false
     volumes:
       - mandarin-data:/data
-      # The curriculum source, bind-mounted so the authoring tools write to the
-      # repo rather than into the container. content/ is versioned source, not
-      # runtime data: generated units land in `git status` where they can be
-      # reviewed, committed and diffed. Without this, `make generate-content`
-      # wrote its output into the container's own filesystem and the next image
-      # rebuild silently destroyed it.
-      - ./content:/app/content
     depends_on:
       - app
+
+# NOTE: content/ is deliberately NOT bind-mounted here. Mounting it looked like
+# the obvious way to keep generated curriculum out of the container's ephemeral
+# filesystem, but Docker Desktop on macOS failed to read through the mount at
+# all ("OSError: [Errno 35] Resource deadlock avoided"), which broke the
+# generator and /api/content/coverage alike. The authoring targets copy results
+# out of the container with `docker compose cp` instead — see `make pull-content`.
 
 volumes:
   # Named, not anonymous, and not a bind mount: Docker keeps it across image
