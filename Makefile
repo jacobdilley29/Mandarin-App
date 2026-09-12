@@ -108,6 +108,10 @@ $(VENV):
 backend-deps: $(VENV)
 	$(PIP) install --upgrade pip
 	$(PIP) install -r backend/requirements.txt
+	@# Optional accelerators (Praat pitch tracking). Best-effort: no wheel for
+	@# this platform means the app uses its built-in fallback, not a failed setup.
+	@$(PIP) install --only-binary=:all: -r backend/requirements-accel.txt \
+		|| echo "NOTE: optional accelerators unavailable here — using built-in fallbacks"
 
 .PHONY: frontend-deps
 frontend-deps:

@@ -88,7 +88,8 @@ Mandarin-App/
 │   │                        build_skeleton · generate_content · warm_audio ·
 │   │                        import_cedict
 │   ├── tests/               pytest
-│   └── requirements.txt
+│   ├── requirements.txt         hard requirements — must install everywhere
+│   └── requirements-accel.txt   optional accelerators, installed best-effort
 ├── frontend/                React + TypeScript + Vite + Tailwind
 │   ├── src/pages/           Learn / Review / Listen / Speak / Talk / Me
 │   ├── src/components/      TabBar, ToneMark, Speakable, PlayButton, …
@@ -549,6 +550,23 @@ accurate and by far the slowest. The numpy autocorrelation tracker stays as a
 fallback, so a machine without parselmouth still scores tones — a little less
 precisely. On a *level* tone both are exact and neither has an edge; Praat's
 advantage is on contours that move, which is where tone discrimination is hard.
+
+**On Apple Silicon, Docker runs the fallback.** `praat-parselmouth` publishes no
+Linux **arm64** wheel (x86_64, macOS and Windows only), so in a `linux/arm64`
+image there is nothing to install. It lives in `backend/requirements-accel.txt`
+and is installed best-effort with `--only-binary`, so the build skips it cleanly
+instead of trying to compile Praat from source in a base image with no compiler —
+which is precisely how it used to fail.
+
+Which tracker you actually got is reported, not left to guesswork:
+
+```bash
+curl -s localhost:3002/api/status | grep pitch_tracker    # "praat" or "numpy"
+```
+
+To get Praat on an Apple Silicon Mac, run the app **natively** — the macOS arm64
+wheel exists, so `make setup && make run` installs it. Tone scoring works either
+way; Praat is finer on moving contours.
 
 **Both halves of the pronunciation score** (spec §3.5) now run:
 

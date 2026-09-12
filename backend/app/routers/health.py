@@ -11,7 +11,7 @@ import sqlite3
 
 from fastapi import APIRouter, Depends
 
-from .. import __version__, conversation
+from .. import __version__, conversation, pitch
 from ..config import get_settings
 from ..db import get_db
 
@@ -45,4 +45,7 @@ def status(conn: sqlite3.Connection = Depends(get_db)) -> dict:
             "backups": True,
         },
         "whisper_model": settings.whisper_model,
+        # "praat" or "numpy" — see pitch.tracker_name(). Praat is more precise on
+        # moving tones; the fallback still scores them, just less finely.
+        "pitch_tracker": pitch.tracker_name(),
     }

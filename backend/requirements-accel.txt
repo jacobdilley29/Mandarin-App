@@ -1,0 +1,16 @@
+# Optional accelerators — better results where a prebuilt wheel exists, and
+# nothing worse than a slower/less precise path where one doesn't.
+#
+# Installed best-effort: `make setup` and the Docker build both keep going if a
+# line here can't be satisfied. Never add anything the app cannot run without.
+#
+# --only-binary is deliberate. Without it, a missing wheel silently turns into a
+# 20-minute source build (or a failed one), which is exactly the trap that broke
+# the arm64 image build.
+
+# Praat's pitch algorithm, via a thin binding. Measured 3-4x more accurate and
+# 3x faster than the numpy fallback on synthesised tone contours (see pitch.py).
+# Wheels: linux x86_64, macOS (Intel + Apple Silicon), Windows. NOT linux arm64 —
+# so a Docker image on an Apple Silicon Mac runs the numpy fallback instead, and
+# a native `make setup` on that same Mac gets the real thing.
+praat-parselmouth>=0.4.4

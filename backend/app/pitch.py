@@ -54,6 +54,20 @@ def read_wav(data: bytes) -> tuple[np.ndarray, int]:
     return samples, sr
 
 
+def tracker_name() -> str:
+    """Which pitch tracker this install will actually use.
+
+    Reported by /api/status so a machine quietly running the fallback — an
+    Apple Silicon Docker image, where Praat has no wheel — says so instead of
+    looking identical to one running Praat.
+    """
+    try:
+        import parselmouth  # noqa: F401
+    except ImportError:
+        return "numpy"
+    return "praat"
+
+
 def _parselmouth_f0(
     samples: np.ndarray, sr: int, fmin: float, fmax: float, time_step: float
 ) -> tuple[np.ndarray, np.ndarray] | None:

@@ -22,11 +22,11 @@ fsrs>=5.0.0              # FSRS scheduling
 # --- Speak: pronunciation + tone scoring (spec §3.5) ---
 numpy>=1.26             # audio handling + the fallback pitch tracker
 
-# Praat's pitch algorithm, via a thin binding. Measured 3-4x more accurate and
-# 3x faster than the numpy fallback on synthesised tone contours; librosa is
-# named in spec §4 alongside it but measured worst on both counts here and would
-# add ~425MB, so it is deliberately not used (agreed, not silently substituted).
-praat-parselmouth>=0.4.4
+# Praat's pitch tracker lives in requirements-accel.txt, NOT here: it publishes
+# no Linux arm64 wheel, so on an Apple Silicon machine a hard requirement makes
+# the Docker image impossible to build (it falls back to compiling Praat from
+# source, and the slim base has no compiler). pitch.py treats it as optional and
+# falls back to the numpy tracker, so it must be optional to install too.
 
 # Local speech recognition for SEGMENTAL accuracy — "did you say the right
 # sounds", as opposed to the right tones. Spec §3.5 needs both halves.

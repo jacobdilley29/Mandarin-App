@@ -12,8 +12,10 @@ and its first call pays ~25 s of numba JIT — worse and slower, for ~425 MB.
 
 from __future__ import annotations
 
+import builtins
 import io
 import wave
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -162,3 +164,56 @@ def test_stereo_is_mixed_to_mono():
 
     samples, _ = pitch.read_wav(buf.getvalue())
     assert samples.ndim == 1 and len(samples) == len(sig)
+
+
+# ---------------------------------------------------------------------------
+# Packaging (regression: the arm64 Docker build)
+# ---------------------------------------------------------------------------
+def test_parselmouth_is_not_a_hard_requirement():
+    """It must never be in requirements.txt.
+
+    praat-parselmouth publishes no Linux arm64 wheel, so listing it as a hard
+    requirement makes the Docker image impossible to build on an Apple Silicon
+    machine: pip falls back to compiling Praat from source and the slim base
+    image has no compiler. The code already treats it as optional; the install
+    has to agree. It belongs in requirements-accel.txt, installed best-effort.
+    """
+    root = Path(__file__).resolve().parents[1]
+    required = (root / "requirements.txt").read_text(encoding="utf-8")
+    optional = (root / "requirements-accel.txt").read_text(encoding="utf-8")
+
+    lines = [
+        ln.strip() for ln in required.splitlines()
+        if ln.strip() and not ln.strip().startswith("#")
+    ]
+    assert not any("parselmouth" in ln for ln in lines), (
+        "parselmouth is a hard requirement again — this breaks `docker compose "
+        "build` on Apple Silicon. Put it in requirements-accel.txt."
+    )
+    assert "praat-parselmouth" in optional
+
+
+def test_the_optional_install_never_builds_from_source():
+    """--only-binary, so a missing wheel fails fast instead of compiling Praat.
+
+    Without it a machine with a compiler would sit through a 20-minute source
+    build, and one without would fail the whole install — the original bug.
+    """
+    root = Path(__file__).resolve().parents[2]
+    assert "--only-binary" in (root / "Dockerfile").read_text(encoding="utf-8")
+    assert "--only-binary" in (root / "Makefile").read_text(encoding="utf-8")
+
+
+def test_the_active_tracker_is_reported(monkeypatch):
+    """A machine on the fallback must say so rather than look identical."""
+    assert pitch.tracker_name() in ("praat", "numpy")
+
+    real = builtins.__import__
+
+    def no_parselmouth(name, *args, **kwargs):
+        if name == "parselmouth":
+            raise ImportError("no wheel for this platform")
+        return real(name, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "__import__", no_parselmouth)
+    assert pitch.tracker_name() == "numpy"

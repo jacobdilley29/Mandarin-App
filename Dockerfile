@@ -36,8 +36,16 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
-COPY backend/requirements.txt ./backend/requirements.txt
+COPY backend/requirements.txt backend/requirements-accel.txt ./backend/
 RUN pip install --no-cache-dir -r backend/requirements.txt
+
+# Optional accelerators, best-effort. praat-parselmouth publishes no Linux arm64
+# wheel, so on an Apple Silicon Mac this step finds nothing to install — the app
+# then uses the numpy pitch tracker (pitch.py falls back on its own). Without
+# --only-binary pip would try to COMPILE Praat here and fail the whole build,
+# which is exactly what it used to do.
+RUN pip install --no-cache-dir --only-binary=:all: -r backend/requirements-accel.txt \
+    || echo "NOTE: optional accelerators unavailable for this architecture — using built-in fallbacks"
 
 # Application code and the versioned curriculum source.
 COPY backend/ ./backend/
