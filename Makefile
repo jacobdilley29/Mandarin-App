@@ -7,8 +7,16 @@
 # Backup/restore targets work with either; see README "Backups & restore".
 
 SHELL := /bin/bash
-PY := python3
 VENV := backend/.venv
+
+# Python for the native path. The app needs 3.11+ (fsrs, and several wheels are
+# 3.11-only), and macOS still ships 3.9 as `python3` — so pick the newest
+# interpreter actually present rather than trusting the bare name. Override with
+# `make setup PY=/path/to/python3.12` if yours lives somewhere unusual.
+PY ?= $(shell for p in python3.13 python3.12 python3.11 python3; do \
+        command -v $$p >/dev/null 2>&1 && $$p -c 'import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)' 2>/dev/null \
+          && { command -v $$p; break; }; \
+      done)
 PYBIN := $(VENV)/bin/python
 PIP := $(VENV)/bin/pip
 
@@ -101,11 +109,34 @@ setup: backend-deps frontend-deps build-frontend
 	@echo "✅ Setup complete. Start the app with:  make run"
 	@echo "   Then open http://localhost:$(PORT)"
 
-$(VENV):
+# Fail with one clear line instead of a wall of pip resolver output.
+.PHONY: check-python
+check-python:
+	@if [ -z "$(PY)" ]; then \
+	  echo ""; \
+	  echo "❌ No Python 3.11+ found. macOS ships 3.9 as python3, which is too old."; \
+	  echo ""; \
+	  echo "   Install one:   brew install python@3.12"; \
+	  echo "   Then re-run:   make setup"; \
+	  echo ""; \
+	  echo "   Or skip this entirely — 'make up' runs the app in Docker with no"; \
+	  echo "   Python needed on your machine at all."; \
+	  echo ""; \
+	  exit 1; \
+	fi
+	@if [ -x "$(PYBIN)" ] && ! $(PYBIN) -c 'import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)'; then \
+	  echo ""; \
+	  echo "❌ $(VENV) was built with $$($(PYBIN) -V 2>&1), which is too old."; \
+	  echo "   Remove it and re-run:   rm -rf $(VENV) && make setup"; \
+	  echo ""; \
+	  exit 1; \
+	fi
+
+$(VENV): | check-python
 	$(PY) -m venv $(VENV)
 
 .PHONY: backend-deps
-backend-deps: $(VENV)
+backend-deps: check-python $(VENV)
 	$(PIP) install --upgrade pip
 	$(PIP) install -r backend/requirements.txt
 	@# Optional accelerators (Praat pitch tracking). Best-effort: no wheel for

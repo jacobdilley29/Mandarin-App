@@ -328,18 +328,28 @@ The Anthropic key can also be set in-app on the **Me** tab, which stores it in
 Requires **Python 3.11+** and **Node 18+**. Data goes in `./data` instead of the
 named volume.
 
+> **macOS ships Python 3.9 as `python3`**, which is too old — several
+> dependencies are 3.11-only. `make setup` looks for `python3.13`, `python3.12`
+> and `python3.11` before falling back, and stops with a one-line message if it
+> finds none, so you never have to read a pip resolver error to learn this.
+> `brew install python@3.12` is enough. Docker needs no Python at all.
+
 ```bash
 cp .env.example .env
 make setup                  # venv + backend deps + npm install + build frontend
 make run                    # http://localhost:3002
 ```
 
+If `backend/.venv` already exists from an older interpreter, `make setup` says
+so and tells you to `rm -rf backend/.venv` first. Point it at a specific
+interpreter with `make setup PY=/opt/homebrew/bin/python3.12`.
+
 Every backup target works here too (`make backup`, `make export`, `make restore` — they
 detect whether the container is running and act accordingly). The **nightly** job is the
 one thing Compose provides that this doesn't, so schedule it yourself:
 
 ```cron
-30 3 * * * cd /path/to/Mandarin-App/backend && ../.venv/bin/python -m scripts.backup
+30 3 * * * cd /path/to/Mandarin-App/backend && .venv/bin/python -m scripts.backup
 ```
 
 ### Development workflow (hot reload)
