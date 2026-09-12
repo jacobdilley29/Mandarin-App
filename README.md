@@ -527,6 +527,38 @@ where to start.
 | `GET /api/placement/summary` | Band verdicts and where to start |
 | `POST /api/placement/reset` | Retake it (keeps SRS history) |
 
+## Grammar
+
+Grammar is a first-class module, not a footnote on the vocabulary (spec §3.3).
+
+**Taiwan usage notes.** Grammar points carry a note where Taiwan genuinely
+diverges from Mainland Mandarin — 有沒有 + verb for past actions, 有 + verb where
+the Mainland says 了, 搭 for transport, 給 in places the Mainland uses 幫/替, and
+no erhua in 一邊…一邊. Deliberately **not** one note per point: most patterns are
+identical in both standards, and a manufactured difference would devalue the
+real ones.
+
+**Prerequisites.** A lesson records the grammar it *builds on* separately from
+the grammar it *introduces* (`lesson_requires_grammar` vs `lesson_grammar`), and
+shows what it rests on. Enforced the way vocabulary prerequisites already are —
+`load_content` refuses content where a lesson reaches forward to a point taught
+later. Unlock stays linear, so a gap in the graph can never leave you with
+nothing to open.
+
+**In review.** Grammar points enter spaced repetition when introduced (§3.6).
+They used to be dropped from the queue, so a pattern was taught once and never
+seen again. They get drills suited to a pattern rather than a word, rotating:
+
+| Drill | Asks |
+|---|---|
+| `pattern_recall` | Given the explanation, which pattern is it? |
+| `particle_cloze` | 我買＿一個便當 — which word belongs in the blank? |
+| `pattern_build` | Reorder the tiles, with the particle as its own tile |
+
+`particle_cloze` also appears in lessons, alongside the vocabulary cloze: the
+same sentence, blanking 了 instead of 便當, asks whether the *pattern* is
+understood rather than whether the word is known.
+
 ## Admin API
 
 | Endpoint | Purpose |

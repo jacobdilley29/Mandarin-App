@@ -1,6 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { api, type DrillResult, type Exercise, type Lesson, type LessonResult, type Option } from "../../api";
+import {
+  api,
+  type DrillResult,
+  type Exercise,
+  type GrammarRef,
+  type Lesson,
+  type LessonResult,
+  type Option,
+} from "../../api";
 import { useSettings } from "../../SettingsContext";
 import { useSpeak } from "../../audio";
 import { Speakable } from "../../components/Speakable";
@@ -133,6 +141,14 @@ function GrammarCard({ ex, showPinyin, onDone }: DrillProps) {
       </h3>
       <div className="mt-3 rounded-md bg-surface-2 px-3 py-2 font-mono text-sm text-ink">{p.pattern}</div>
       <p className="mt-3 text-sm leading-relaxed text-ink-soft">{p.explanation}</p>
+      {p.taiwan_note && (
+        <p
+          lang="zh-Hant"
+          className="mt-3 rounded-md border border-primary/30 bg-primary-soft/30 px-3 py-2 font-han text-sm leading-relaxed text-ink"
+        >
+          🇹🇼 {p.taiwan_note}
+        </p>
+      )}
       <div className="mt-4 space-y-2">
         {p.examples.map((ex2: { hanzi: string; pinyin: string; gloss: string }, i: number) => (
           <div key={i} className="rounded-md border border-border p-3">
@@ -321,6 +337,46 @@ function ClozeDrill({ ex, showPinyin, onDone }: DrillProps) {
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
       {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
+    </div>
+  );
+}
+
+/**
+ * Particle fill-in-the-blank (spec §3.3).
+ *
+ * The vocab cloze blanks a content word out of the same sentence and tests
+ * whether the word is known; this blanks 了/的/比 and tests whether the pattern
+ * is. The grammar point's title is shown so it's clear which one is being asked
+ * about — guessing a particle with no idea which pattern it belongs to teaches
+ * nothing.
+ */
+function ParticleCloze({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div>
+      <div className="mb-3 flex items-baseline gap-2">
+        <span className="rounded-full bg-primary-soft/40 px-2 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-primary">
+          Grammar
+        </span>
+        <span lang="zh-Hant" className="font-han text-sm text-ink-soft">
+          {p.title}
+        </span>
+      </div>
+      <div className="mb-3 text-sm text-ink-soft">Which word belongs here?</div>
+      <div className="rounded-md border border-border bg-surface-2 p-4 text-center">
+        <Speakable text={p.audio_text} showIcon lang="zh-Hant" className="justify-center font-han text-2xl text-ink">
+          <span lang="zh-Hant" className="font-han text-2xl text-ink">
+            {p.masked}
+          </span>
+        </Speakable>
+        <Pinyin text={p.pinyin} show={showPinyin} />
+        {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
+      </div>
+      <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
+      {chosen != null && (
+        <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />
+      )}
     </div>
   );
 }
@@ -531,6 +587,8 @@ function renderDrill(ex: Exercise, showPinyin: boolean, onDone: (c: boolean) => 
       return <CharRecognition {...props} />;
     case "cloze":
       return <ClozeDrill {...props} />;
+    case "particle_cloze":
+      return <ParticleCloze {...props} />;
     case "translate":
       return <TranslateDrill {...props} />;
     case "tile_build":
@@ -629,9 +687,35 @@ export default function LessonPlayer() {
         </div>
       </div>
       <div className="flex-1">
+        {index === 0 && <BuildsOn items={lesson.requires_grammar ?? []} />}
         <div key={ex.id} className="card">
           {renderDrill(ex, showPinyin, handleDone)}
         </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * What this lesson builds on (spec §3.3).
+ *
+ * Shown once, on the first card: grammar the lesson leans on but does not
+ * re-teach. Deliberately not a lock — the content loader already refuses a
+ * lesson that reaches forward to a point taught later, so by the time it is on
+ * screen the prerequisite is guaranteed to be something already met. This is a
+ * reminder of what it rests on, not a gate.
+ */
+function BuildsOn({ items }: { items: GrammarRef[] }) {
+  if (!items.length) return null;
+  return (
+    <div className="mb-3 rounded-md border border-border bg-surface-2 px-3 py-2">
+      <div className="text-xs font-medium uppercase tracking-wide text-ink-faint">Builds on</div>
+      <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+        {items.map((g) => (
+          <span key={g.id} lang="zh-Hant" className="font-han text-sm text-ink-soft">
+            {g.title}
+          </span>
+        ))}
       </div>
     </div>
   );

@@ -125,7 +125,8 @@
               "gloss": "Does he have a boxed meal?"
             }
           ],
-          "hsk_level": 2
+          "hsk_level": 2,
+          "taiwan_note": "台灣口語常用「有沒有 + 動詞」問過去的事：「你有沒有去？」「你有沒有吃？」大陸多說「你去了沒有？」「你吃過嗎？」。這個「有」的用法是台灣華語最明顯的特徵之一，受台語影響。"
         }
       ],
       "dialogue": [
@@ -334,7 +335,8 @@
               "gloss": "I bought a few things."
             }
           ],
-          "hsk_level": 2
+          "hsk_level": 2,
+          "taiwan_note": "台灣口語常用「有 + 動詞」表示做過了：「我有吃」「我有去」，大陸幾乎只說「我吃了」「我去了」。兩種在台灣都通，但「有」更口語。否定同樣用「沒有 + 動詞」。"
         }
       ],
       "dialogue": [

@@ -125,7 +125,8 @@
               "gloss": "Please call me."
             }
           ],
-          "hsk_level": 3
+          "hsk_level": 3,
+          "taiwan_note": "台灣口語常把「給」用在大陸會用「幫」或「替」的地方：「給我看一下」「唸給我聽」。受台語影響，使用範圍比大陸廣。"
         }
       ],
       "dialogue": [
@@ -211,6 +212,11 @@
           "gloss": "I'll call you.",
           "cloze_index": 1
         }
+      ],
+      "requires_grammar": [
+        "g_de_attributive",
+        "g_le_change",
+        "g_yong"
       ]
     }
   ],

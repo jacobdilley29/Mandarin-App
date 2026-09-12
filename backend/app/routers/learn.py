@@ -38,6 +38,12 @@ def get_lesson(lesson_id: str, conn: sqlite3.Connection = Depends(get_db)) -> di
         "unit_id": lesson["unit_id"],
         "unlocked": content.is_unlocked(conn, lesson_id),
         "gradable_count": gradable,
+        # Grammar this lesson leans on but doesn't teach (spec §3.3). Shown so
+        # the learner can see what it builds on — and jump back if it's hazy.
+        "requires_grammar": [
+            {"id": g["id"], "title": g["title"], "pattern": g["pattern"]}
+            for g in lesson.get("requires_grammar", [])
+        ],
         "exercises": stream,
     }
 

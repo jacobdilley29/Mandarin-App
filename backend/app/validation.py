@@ -133,6 +133,46 @@ def validate_curriculum(
     return result
 
 
+def validate_grammar_prerequisites(data: dict) -> ValidationResult:
+    """A lesson may only require grammar introduced at or before it (spec §3.3).
+
+    The vocabulary side of this is already enforced by the character check above:
+    a sentence cannot use a word the learner has not met. Grammar prerequisites
+    get the same treatment rather than a runtime lock, so a curriculum that
+    reaches forward is caught when it is written — when it is cheap to fix — and
+    a gap in the graph can never leave the learner with nothing to open.
+
+    Also flags a lesson requiring a grammar point it introduces itself, which is
+    always an authoring slip rather than a real prerequisite.
+    """
+    result = ValidationResult()
+    introduced: set[str] = set()
+
+    units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
+    for unit in units:
+        for lesson in sorted(unit.get("lessons", []), key=lambda l: l.get("sort_order", 0)):
+            lid = lesson.get("id", "?")
+            own = {g["id"] for g in lesson.get("grammar", [])}
+
+            for gid in lesson.get("requires_grammar", []):
+                if gid in own:
+                    result.violations.append(Violation(
+                        where=f"{lid} requires_grammar",
+                        text=gid,
+                        unknown=["(introduced by this same lesson)"],
+                    ))
+                elif gid not in introduced:
+                    result.violations.append(Violation(
+                        where=f"{lid} requires_grammar",
+                        text=gid,
+                        unknown=["(not introduced yet)"],
+                    ))
+
+            introduced |= own
+
+    return result
+
+
 def validate_listen(data: dict, allowed: set[str]) -> ValidationResult:
     """Validate comprehension-set dialogue lines against a known-character set.
 

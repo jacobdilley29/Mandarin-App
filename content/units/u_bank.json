@@ -216,6 +216,9 @@
           "gloss": "I'd like to open an account.",
           "cloze_index": 2
         }
+      ],
+      "requires_grammar": [
+        "g_yong"
       ]
     }
   ],

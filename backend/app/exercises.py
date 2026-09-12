@@ -18,8 +18,8 @@ from __future__ import annotations
 import random
 
 GRADABLE_KINDS = {
-    "match", "audio_meaning", "char_recognition", "cloze", "tile_build",
-    "listen_type", "translate",
+    "match", "audio_meaning", "char_recognition", "cloze", "particle_cloze",
+    "tile_build", "listen_type", "translate",
 }
 
 
@@ -119,6 +119,53 @@ def _mc(options_correct: str, distractors: list[str], rng: random.Random) -> lis
     return opts
 
 
+# Particles and function words a grammar drill may blank. Restricted on purpose:
+# blanking a content word tests vocabulary, not the pattern. Kept in step with
+# review.PARTICLES, which tests assert.
+PARTICLES = (
+    "了", "的", "得", "地", "著", "過", "嗎", "呢", "吧", "啊", "喔", "耶", "啦",
+    "在", "把", "被", "比", "跟", "和", "或", "還是", "就", "才", "都", "也",
+    "很", "太", "最", "會", "要", "能", "可以", "應該", "給", "往", "用", "只",
+    "有沒有", "快要", "一邊", "到", "從", "對", "為", "讓", "幫",
+)
+
+
+def _particle_cloze(g: dict, sentences: list[dict], rng: random.Random) -> dict | None:
+    """Blank this grammar point's particle out of a sentence that uses it.
+
+    Longest particle first, so 有沒有 wins over 有 and 還是 over 是 — otherwise a
+    multi-character particle is blanked one character at a time and the drill
+    becomes nonsense.
+    """
+    marks = sorted(
+        (p for p in PARTICLES if p in f"{g.get('pattern', '')}{g.get('title', '')}"),
+        key=len,
+        reverse=True,
+    )
+    if not marks:
+        return None
+
+    for s in sentences:
+        sent = "".join(s.get("tokens") or [])
+        for particle in marks:
+            if particle not in sent:
+                continue
+            distractors = [p for p in PARTICLES if p != particle]
+            rng.shuffle(distractors)
+            return {
+                "grammar_id": g["id"],
+                "title": g["title"],
+                "pattern": g["pattern"],
+                "masked": sent.replace(particle, "＿", 1),
+                "audio_text": sent,
+                "pinyin": s.get("pinyin"),
+                "gloss": s.get("gloss"),
+                "answer": particle,
+                "options": _mc(particle, distractors[:3], rng),
+            }
+    return None
+
+
 def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
     lid = lesson["id"]
     vocab = lesson["vocab"]
@@ -156,6 +203,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
             "pattern": g["pattern"],
             "explanation": g["explanation"],
             "examples": g["examples"],
+            "taiwan_note": g.get("taiwan_note"),
         })
 
     # 3a. One matching exercise over the lesson vocab (char ↔ meaning).
@@ -193,6 +241,16 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
                 v["traditional"], _confusable_words(pool, v["traditional"], 3, rng), rng
             ),
         })
+
+    # 3b-iii. Particle cloze (spec §3.3): blank the grammar word out of one of
+    # this lesson's own drill sentences. The vocab cloze above blanks a content
+    # word, which tests vocabulary; this blanks 了/的/得/比 and tests whether the
+    # pattern is understood — a different question about the same sentence.
+    for g in grammar:
+        rng = _rng(lid, f"pc:{g['id']}")
+        item = _particle_cloze(g, sentences, rng)
+        if item:
+            add("particle_cloze", item)
 
     # 3c. Sentence drills: rotate cloze / tile_build / listen_type / translate.
     rotation = ["cloze", "tile_build", "translate", "listen_type"]

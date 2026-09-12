@@ -51,6 +51,7 @@ CONTENT_TABLES = (
     "lessons",
     "lesson_vocab",
     "lesson_grammar",
+    "lesson_requires_grammar",
     "exercises",
 )
 
@@ -167,6 +168,10 @@ def _migrate_content(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE units ADD COLUMN status TEXT NOT NULL DEFAULT 'live'")
     if "completeness" not in cols:
         conn.execute("ALTER TABLE units ADD COLUMN completeness TEXT")
+
+    gcols = {r["name"] for r in conn.execute("PRAGMA table_info(grammar)").fetchall()}
+    if "taiwan_note" not in gcols:
+        conn.execute("ALTER TABLE grammar ADD COLUMN taiwan_note TEXT")
 
 
 def _migrate_progress(conn: sqlite3.Connection) -> None:

@@ -71,6 +71,7 @@ export interface Exercise {
     | "audio_meaning"
     | "char_recognition"
     | "cloze"
+    | "particle_cloze"
     | "tile_build"
     | "translate"
     | "listen_type"
@@ -79,12 +80,18 @@ export interface Exercise {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   payload: any;
 }
+export interface GrammarRef {
+  id: string;
+  title: string;
+  pattern: string;
+}
 export interface Lesson {
   id: string;
   title: string;
   unit_id: string;
   unlocked: boolean;
   gradable_count: number;
+  requires_grammar: GrammarRef[];
   exercises: Exercise[];
 }
 
@@ -187,15 +194,29 @@ export interface ReviewItem {
   item_id: string;
   reps: number;
   state: string;
-  kind: "recognition" | "recall" | "audio_meaning" | "cloze";
-  answer: string;
-  options: Option[];
+  item_type: "vocab" | "grammar";
+  kind:
+    | "recognition"
+    | "recall"
+    | "audio_meaning"
+    | "cloze"
+    // Grammar points get drills suited to a pattern rather than a word (§3.3).
+    | "pattern_recall"
+    | "particle_cloze"
+    | "pattern_build";
+  answer: string | string[];
+  options?: Option[];
   char?: string;
   pinyin?: string | null;
   audio_text?: string;
   prompt_gloss?: string;
   masked?: string;
   gloss?: string | null;
+  // Grammar fields.
+  title?: string;
+  pattern?: string;
+  explanation?: string;
+  tokens?: string[];
 }
 export interface ReviewQueue {
   items: ReviewItem[];

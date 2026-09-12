@@ -208,6 +208,10 @@
           "gloss": "The pharmacy is across the street.",
           "cloze_index": 0
         }
+      ],
+      "requires_grammar": [
+        "g_youmeiyou",
+        "g_le_change"
       ]
     }
   ],

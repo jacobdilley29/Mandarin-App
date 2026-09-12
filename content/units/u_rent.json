@@ -213,6 +213,9 @@
           "gloss": "The landlord is nice.",
           "cloze_index": 0
         }
+      ],
+      "requires_grammar": [
+        "g_de_attributive"
       ]
     }
   ],

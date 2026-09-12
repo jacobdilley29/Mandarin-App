@@ -212,6 +212,9 @@
           "gloss": "He eats a lot.",
           "cloze_index": 2
         }
+      ],
+      "requires_grammar": [
+        "g_le_change"
       ]
     }
   ],

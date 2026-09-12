@@ -70,6 +70,10 @@ CREATE TABLE IF NOT EXISTS grammar (
     pattern      TEXT NOT NULL,          -- the structural pattern
     explanation  TEXT NOT NULL,          -- plain-English
     examples     TEXT NOT NULL,          -- JSON array of {hanzi,pinyin,gloss}
+    -- Where Taiwan usage diverges from Mainland Mandarin (spec §3.3). NULL for
+    -- the many patterns that are simply the same in both — a note is only worth
+    -- reading when there is a real difference behind it.
+    taiwan_note  TEXT,
     hsk_level    INTEGER,
     sort_order   INTEGER NOT NULL DEFAULT 0
 );
@@ -115,6 +119,21 @@ CREATE TABLE IF NOT EXISTS lesson_grammar (
     sort_order INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (lesson_id, grammar_id)
 );
+
+-- Grammar a lesson BUILDS ON but does not teach (spec §3.3). Distinct from
+-- lesson_grammar above, which is what a lesson introduces: a lesson can lean on
+-- 了 without re-teaching it, and the learner should be able to see that it does.
+--
+-- Enforced the same way vocabulary prerequisites are — at content-load time,
+-- by refusing content that reaches forward to a grammar point the learner has
+-- not met yet. Unlock order stays linear, so a gap in the graph can never leave
+-- the curriculum with nothing openable.
+CREATE TABLE IF NOT EXISTS lesson_requires_grammar (
+    lesson_id  TEXT NOT NULL REFERENCES lessons(id) ON DELETE CASCADE,
+    grammar_id TEXT NOT NULL REFERENCES grammar(id) ON DELETE CASCADE,
+    PRIMARY KEY (lesson_id, grammar_id)
+);
+CREATE INDEX IF NOT EXISTS idx_requires_grammar ON lesson_requires_grammar(grammar_id);
 
 -- Generated exercise stream for a lesson (cards + drills). The API builds the
 -- stream dynamically; this table is reserved for pre-baked streams.

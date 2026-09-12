@@ -125,7 +125,8 @@
               "gloss": "Don't eat during a meeting."
             }
           ],
-          "hsk_level": 4
+          "hsk_level": 4,
+          "taiwan_note": "台灣不用兒化音，說「一邊…一邊…」(yìbiān)，不說「一邊兒」。口語也常說「一面…一面…」。"
         }
       ],
       "dialogue": [
@@ -211,6 +212,9 @@
           "gloss": "I have to work overtime today.",
           "cloze_index": 2
         }
+      ],
+      "requires_grammar": [
+        "g_de_attributive"
       ]
     }
   ],

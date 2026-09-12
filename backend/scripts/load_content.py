@@ -26,6 +26,7 @@ from app.validation import (  # noqa: E402
     allowed_chars,
     han_chars,
     validate_curriculum,
+    validate_grammar_prerequisites,
     validate_listen,
 )
 
@@ -79,6 +80,18 @@ def main() -> int:
             print("Refusing to load. Fix the content or pass --force.")
             return 1
 
+    # Grammar prerequisites: a lesson may not lean on a point taught later.
+    gres = validate_grammar_prerequisites(data)
+    if gres.ok:
+        print("✓ grammar prerequisites resolve — no lesson reaches forward")
+    else:
+        print(f"✗ {len(gres.violations)} grammar prerequisite violation(s):")
+        for v in gres.violations:
+            print(f"    [{v.where}] {v.text}  → {' '.join(v.unknown)}")
+        if not args.force and not args.check:
+            print("Refusing to load. Fix the prerequisites or pass --force.")
+            return 1
+
     # Validate listening comprehension sets against the full known-vocab pool.
     listen_path = REPO_ROOT / "content" / "listen.json"
     if listen_path.is_file():
@@ -101,7 +114,7 @@ def main() -> int:
                 return 1
 
     if args.check:
-        return 0 if result.ok else 1
+        return 0 if (result.ok and gres.ok) else 1
 
     db.init_db()
     conn = db.connect()

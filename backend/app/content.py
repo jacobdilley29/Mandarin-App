@@ -116,20 +116,30 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
                 n_grammar += 1
                 conn.execute(
                     """INSERT INTO grammar
-                         (id, title, pattern, explanation, examples, hsk_level, sort_order)
-                       VALUES (?, ?, ?, ?, ?, ?, ?)
+                         (id, title, pattern, explanation, examples, taiwan_note,
+                          hsk_level, sort_order)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                        ON CONFLICT(id) DO UPDATE SET
                          title=excluded.title, pattern=excluded.pattern,
                          explanation=excluded.explanation, examples=excluded.examples,
+                         taiwan_note=excluded.taiwan_note,
                          hsk_level=excluded.hsk_level, sort_order=excluded.sort_order""",
                     (g["id"], g["title"], g["pattern"], g["explanation"],
                      json.dumps(g.get("examples", []), ensure_ascii=False),
-                     g.get("hsk_level"), i),
+                     g.get("taiwan_note"), g.get("hsk_level"), i),
                 )
                 conn.execute(
                     """INSERT INTO lesson_grammar (lesson_id, grammar_id, sort_order)
                        VALUES (?, ?, ?) ON CONFLICT DO NOTHING""",
                     (lesson["id"], g["id"], i),
+                )
+
+            # Grammar the lesson leans on without teaching (spec §3.3).
+            for gid in lesson.get("requires_grammar", []):
+                conn.execute(
+                    """INSERT INTO lesson_requires_grammar (lesson_id, grammar_id)
+                       VALUES (?, ?) ON CONFLICT DO NOTHING""",
+                    (lesson["id"], gid),
                 )
 
     conn.commit()
@@ -277,6 +287,15 @@ def get_lesson_content(conn: sqlite3.Connection, lesson_id: str) -> dict | None:
         "title": lesson["title"],
         "vocab": [_vocab_dict(v) for v in vocab],
         "grammar": [_grammar_dict(g) for g in grammar],
+        "requires_grammar": [
+            _grammar_dict(g)
+            for g in conn.execute(
+                """SELECT g.* FROM grammar g
+                   JOIN lesson_requires_grammar r ON r.grammar_id = g.id
+                   WHERE r.lesson_id = ? ORDER BY g.sort_order""",
+                (lesson_id,),
+            ).fetchall()
+        ],
         "dialogue": json.loads(lesson["dialogue"] or "[]"),
         "sentences": json.loads(lesson["sentences"] or "[]"),
     }
@@ -305,6 +324,7 @@ def _grammar_dict(g: sqlite3.Row) -> dict:
         "pattern": g["pattern"],
         "explanation": g["explanation"],
         "examples": json.loads(g["examples"] or "[]"),
+        "taiwan_note": g["taiwan_note"],
         "hsk_level": g["hsk_level"],
     }
 
@@ -344,6 +364,7 @@ def record_result(conn: sqlite3.Connection, lesson_id: str, score: float) -> dic
     new_cards = 0
     if passed and not prev_completed:
         new_cards = _enrol_vocab_srs(conn, lesson_id)
+        new_cards += _enrol_grammar_srs(conn, lesson_id)
 
     from . import progress
 
@@ -367,6 +388,30 @@ def record_result(conn: sqlite3.Connection, lesson_id: str, score: float) -> dic
         "unlocked_next": unlocked_next,
         "new_srs_cards": new_cards,
     }
+
+
+def _enrol_grammar_srs(conn: sqlite3.Connection, lesson_id: str) -> int:
+    """Add this lesson's grammar points to the SRS deck (spec §3.6).
+
+    "All vocab and grammar points are scheduled with an SRS algorithm once
+    introduced." Only what the lesson *introduces* — a point it merely builds on
+    was already enrolled by the lesson that taught it.
+    """
+    from . import srs
+
+    created = 0
+    for r in conn.execute(
+        "SELECT grammar_id FROM lesson_grammar WHERE lesson_id = ?", (lesson_id,)
+    ).fetchall():
+        before = conn.execute(
+            """SELECT 1 FROM srs_cards
+               WHERE item_type='grammar' AND item_id=? AND card_type='pattern'""",
+            (r["grammar_id"],),
+        ).fetchone()
+        srs.ensure_new_card(conn, "grammar", r["grammar_id"], "pattern")
+        if not before:
+            created += 1
+    return created
 
 
 def _enrol_vocab_srs(conn: sqlite3.Connection, lesson_id: str) -> int:
