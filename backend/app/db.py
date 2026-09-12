@@ -184,6 +184,15 @@ def _migrate_progress(conn: sqlite3.Connection) -> None:
     if "anthropic_api_key" not in cols:
         conn.execute("ALTER TABLE settings ADD COLUMN anthropic_api_key TEXT")
 
+    # Tutor threads share the talk tables (spec §7 counts tutor history as
+    # progress data, so it belongs here and in the backups either way).
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(talk_sessions)").fetchall()}
+    if "kind" not in cols:
+        conn.execute("ALTER TABLE talk_sessions ADD COLUMN kind TEXT NOT NULL DEFAULT 'roleplay'")
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(talk_messages)").fetchall()}
+    if "payload" not in cols:
+        conn.execute("ALTER TABLE talk_messages ADD COLUMN payload TEXT")
+
 
 def get_db() -> Iterator[sqlite3.Connection]:
     """FastAPI dependency: yields a connection, always closed afterwards."""

@@ -24,10 +24,12 @@ from .routers import (
     health,
     learn,
     listen,
+    practice,
     progress,
     review,
     speak,
     talk,
+    tutor,
     settings as settings_router,
 )
 
@@ -72,8 +74,10 @@ app.include_router(settings_router.router)
 app.include_router(learn.router)
 app.include_router(review.router)
 app.include_router(listen.router)
+app.include_router(practice.router)
 app.include_router(speak.router)
 app.include_router(talk.router)
+app.include_router(tutor.router)
 app.include_router(progress.router)
 app.include_router(audio.router)
 

@@ -14,8 +14,9 @@ from __future__ import annotations
 import sqlite3
 
 from .config import get_settings
+from .llm import MODEL
 
-MODEL = "claude-opus-4-8"
+
 
 # Taiwan scenario roleplays, each with a canned opening line so a session can
 # start instantly (and be previewed) before any API round-trip.

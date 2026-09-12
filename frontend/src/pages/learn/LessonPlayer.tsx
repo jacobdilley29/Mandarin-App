@@ -11,6 +11,7 @@ import {
 } from "../../api";
 import { useSettings } from "../../SettingsContext";
 import { useSpeak } from "../../audio";
+import { AskAbout } from "../../components/AskAbout";
 import { Speakable } from "../../components/Speakable";
 import { ToneMark } from "../../components/ToneMark";
 
@@ -109,6 +110,9 @@ function VocabIntro({ ex, showPinyin, onDone }: DrillProps) {
           🇹🇼 {p.taiwan_note}
         </p>
       )}
+      <div className="mt-4">
+        <AskAbout focus={{ type: "vocab", id: p.vocab_id, text: p.traditional }} />
+      </div>
       {p.example && (
         <div className="mx-auto mt-5 max-w-sm rounded-md border border-border bg-surface-2 p-3 text-left">
           <Speakable text={p.example.hanzi} className="font-han text-base text-ink">
@@ -149,6 +153,9 @@ function GrammarCard({ ex, showPinyin, onDone }: DrillProps) {
           🇹🇼 {p.taiwan_note}
         </p>
       )}
+      <div className="mt-3">
+        <AskAbout focus={{ type: "grammar", id: p.grammar_id, text: p.title }} />
+      </div>
       <div className="mt-4 space-y-2">
         {p.examples.map((ex2: { hanzi: string; pinyin: string; gloss: string }, i: number) => (
           <div key={i} className="rounded-md border border-border p-3">

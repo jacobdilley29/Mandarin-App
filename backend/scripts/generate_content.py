@@ -33,10 +33,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app import completeness, curriculum_source  # noqa: E402
-from app.config import REPO_ROOT  # noqa: E402
+from app.config import REPO_ROOT
+from app.llm import MODEL  # noqa: E402
 from app.validation import han_chars, validate_curriculum  # noqa: E402
 
-MODEL = "claude-opus-4-8"
+
 GENERATED_DIR = REPO_ROOT / "content" / ".generated"
 
 SYSTEM_PROMPT = """\

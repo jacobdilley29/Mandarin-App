@@ -47,9 +47,10 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app import curriculum_source, taiwanize  # noqa: E402
-from app.config import REPO_ROOT  # noqa: E402
+from app.config import REPO_ROOT
+from app.llm import MODEL  # noqa: E402
 
-MODEL = "claude-opus-5"
+
 
 CONTENT = REPO_ROOT / "content"
 WORDLISTS = CONTENT / "wordlists"

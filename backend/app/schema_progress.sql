@@ -95,7 +95,11 @@ CREATE TABLE IF NOT EXISTS tone_attempts (
 -- ---------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS talk_sessions (
     id          TEXT PRIMARY KEY,        -- uuid
-    scenario    TEXT NOT NULL,
+    scenario    TEXT NOT NULL,           -- roleplay scenario id, or 'tutor'
+    -- 'roleplay' (in-character practice, §3.5) or 'tutor' (ask-a-question, §3.7).
+    -- Both are Claude conversations and both are progress data under §7, so they
+    -- share one history model and one backup path rather than two of each.
+    kind        TEXT NOT NULL DEFAULT 'roleplay',
     created_at  TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE TABLE IF NOT EXISTS talk_messages (
@@ -104,6 +108,7 @@ CREATE TABLE IF NOT EXISTS talk_messages (
     role        TEXT NOT NULL,           -- user|assistant
     content     TEXT NOT NULL,
     teacher_note TEXT,                   -- corrections + nicer phrasing (assistant turns)
+    payload     TEXT,                    -- JSON: tutor examples, related items, focus
     created_at  TEXT NOT NULL DEFAULT (datetime('now'))
 );
 CREATE INDEX IF NOT EXISTS idx_talkmsg_session ON talk_messages(session_id);

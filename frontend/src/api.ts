@@ -398,6 +398,47 @@ export interface BackupStatus {
   total_bytes: number;
 }
 
+// --- Tutor (spec §3.7) ---
+export interface TutorExample {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+/** What the learner was looking at when the question came up. */
+export interface TutorFocus {
+  type?: "vocab" | "grammar" | "sentence";
+  id?: string;
+  text?: string;
+}
+export interface TutorAnswer {
+  thread_id: string;
+  answer: string;
+  examples: TutorExample[];
+  taiwan_note: string | null;
+  related: string[];
+}
+export interface TutorThread {
+  id: string;
+  created_at: string;
+  opening: string | null;
+}
+export interface TutorStatus {
+  available: boolean;
+  threads: TutorThread[];
+}
+
+// --- Practice (spec §3.6, §3.1) ---
+export interface PracticeItem extends ReviewItem {
+  /** Why this item is in a needs-practice session. */
+  why?: string | null;
+}
+export interface PracticeSet {
+  mode: "needs_practice" | "known_material";
+  items: PracticeItem[];
+  count: number;
+  empty_reason: string | null;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -444,6 +485,21 @@ export const api = {
   placementSummary: () => fetch("/api/placement/summary").then(json<PlacementSummary>),
   placementReset: () =>
     fetch("/api/placement/reset", { method: "POST" }).then(json<{ done: boolean }>),
+  tutorStatus: () => fetch("/api/tutor/status").then(json<TutorStatus>),
+  tutorAsk: (body: { question: string; focus?: TutorFocus; thread_id?: string }) =>
+    fetch("/api/tutor/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then(json<TutorAnswer>),
+  practiceNeeds: () => fetch("/api/practice/needs").then(json<PracticeSet>),
+  practiceKnown: () => fetch("/api/practice/known").then(json<PracticeSet>),
+  practiceResult: (answered: number, correct: number) =>
+    fetch("/api/practice/result", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ answered, correct }),
+    }).then(json<{ answered: number; correct: number; srs_unchanged: boolean }>),
   reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
   reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
   reviewAnswer: (card_id: number, rating: number) =>

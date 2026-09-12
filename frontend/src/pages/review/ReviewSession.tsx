@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api, type Option, type ReviewItem, type ReviewStats } from "../../api";
 import { PlayButton } from "../../components/PlayButton";
+import { AskAbout } from "../../components/AskAbout";
 import { ToneMark } from "../../components/ToneMark";
 
 // Anki-style rating buttons drive FSRS. Colours cue difficulty.
@@ -269,6 +270,21 @@ export default function ReviewSession() {
           <PatternBuild item={item} onAnswer={setBuilt} />
         ) : (
           <Prompt item={item} />
+        )}
+
+        {/* Once answered, the item can be asked about — that's the moment a
+            question actually arises (spec §3.7). */}
+        {answered && (
+          <div className="mt-4">
+            <AskAbout
+              focus={{
+                type: item.item_type === "grammar" ? "grammar" : "vocab",
+                id: item.item_id,
+                text: item.title ?? item.char ?? item.answer?.toString(),
+              }}
+              label="Why?"
+            />
+          </div>
         )}
 
         {/* Answer choices */}

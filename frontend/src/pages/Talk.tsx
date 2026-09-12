@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { api, type Scenario } from "../api";
+import { api, type Scenario, type TutorFocus } from "../api";
 import { ToneMark } from "../components/ToneMark";
 import ApiKeyForm from "../components/ApiKeyForm";
 import Chat from "./talk/Chat";
+import Tutor from "./talk/Tutor";
 
 function NoKey({ onConfigured }: { onConfigured: () => void }) {
   return (
@@ -25,10 +26,34 @@ function NoKey({ onConfigured }: { onConfigured: () => void }) {
   );
 }
 
+type Mode = "roleplay" | "ask";
+
 export default function Talk() {
   const [scenarios, setScenarios] = useState<Scenario[] | null>(null);
   const [available, setAvailable] = useState<boolean | null>(null);
   const [chosen, setChosen] = useState<Scenario | null>(null);
+  // Two Claude-powered modes share this tab rather than taking a seventh slot in
+  // the bar — six tabs is already a lot on a phone, and spec §6 is mobile-first.
+  const [mode, setMode] = useState<Mode>("roleplay");
+  // Set when the learner arrived here via "ask about this" from a lesson or
+  // review card (spec §3.7's curriculum context).
+  const [focus, setFocus] = useState<TutorFocus | undefined>(() => {
+    try {
+      const raw = sessionStorage.getItem("tutor:focus");
+      if (raw) {
+        sessionStorage.removeItem("tutor:focus");
+        return JSON.parse(raw) as TutorFocus;
+      }
+    } catch {
+      // sessionStorage can throw in private windows; the tutor works without it.
+    }
+    return undefined;
+  });
+
+  // Arriving with a focus item means a question is already in mind.
+  useEffect(() => {
+    if (focus) setMode("ask");
+  }, [focus]);
 
   function load() {
     api
@@ -50,6 +75,37 @@ export default function Talk() {
   if (!available) return <NoKey onConfigured={load} />;
   if (chosen) return <Chat scenario={chosen} onExit={() => setChosen(null)} />;
 
+  const modeSwitch = (
+    <div className="mb-5 inline-flex rounded-md border border-border bg-surface-2 p-1">
+      {([
+        ["roleplay", "Roleplay"],
+        ["ask", "Ask"],
+      ] as const).map(([value, label]) => (
+        <button
+          key={value}
+          type="button"
+          onClick={() => setMode(value)}
+          aria-pressed={mode === value}
+          className={[
+            "tap rounded px-4 py-1.5 text-sm font-medium transition-colors",
+            mode === value ? "bg-primary text-primary-ink" : "text-ink-soft hover:text-ink",
+          ].join(" ")}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  );
+
+  if (mode === "ask") {
+    return (
+      <div className="mx-auto max-w-xl px-4 pt-6">
+        {modeSwitch}
+        <Tutor focus={focus} onClearFocus={() => setFocus(undefined)} />
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-xl px-4 py-6">
       <header className="mb-5 flex items-center gap-3">
@@ -60,9 +116,10 @@ export default function Talk() {
           <h1 lang="zh-Hant" className="font-serifhan text-3xl leading-none text-ink">
             聊
           </h1>
-          <p className="text-sm text-ink-soft">Talk · roleplay in Taiwan</p>
+          <p className="text-sm text-ink-soft">Talk · roleplay and questions</p>
         </div>
       </header>
+      {modeSwitch}
       <p className="mb-4 text-sm text-ink-soft">Pick a scene. The character stays in Traditional characters at your level.</p>
       <div className="grid gap-3">
         {scenarios?.map((s) => (

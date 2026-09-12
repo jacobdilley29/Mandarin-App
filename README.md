@@ -2,14 +2,15 @@
 
 A local, self-hosted web app for learning **Taiwanese Mandarin**: HelloChinese-style
 lessons, spaced-repetition review, listening/dictation, pronunciation + tone feedback,
-and AI conversation practice. Traditional characters throughout, Taiwan-variant vocab
-and pronunciation, oriented toward real day-to-day life in Taiwan.
+and AI conversation and tutoring. Traditional characters throughout, Taiwan-variant
+vocab and pronunciation, oriented toward real day-to-day life in Taiwan.
 
-> **All six tabs are live** — **Learn**, **Review** (FSRS + placement), **Listen**
-> (dictation / comprehension / tones), **Speak** (pitch-contour tone feedback),
-> **Talk** (Claude roleplay with teacher notes + recap→SRS), and **Me** (a
-> mastery-based progress dashboard + settings). Talk needs `ANTHROPIC_API_KEY`;
-> without it that one tab is disabled and everything else works.
+> **All six tabs are live** — **Learn**, **Review** (FSRS + placement + extra
+> practice), **Listen** (dictation / comprehension / tones), **Speak**
+> (pitch-contour tone feedback), **Talk** (Claude roleplay *and* an
+> ask-a-question tutor), and **Me** (a mastery-based progress dashboard +
+> settings). Talk needs `ANTHROPIC_API_KEY`; without it that one tab is disabled
+> and everything else works.
 >
 > **Your progress is backed up automatically.** See
 > [Backups & restore](#backups--restore) — read it once now, not after you need it.
@@ -73,10 +74,14 @@ Mandarin-App/
 │   │   ├── tone_classify.py tone classification + sandhi
 │   │   ├── speak.py         pronunciation scoring pipeline
 │   │   ├── whisper_asr.py   optional faster-whisper wrapper
+│   │   ├── llm.py           the Claude model id, in one place
 │   │   ├── conversation.py  Claude roleplay (teacher notes + new words)
+│   │   ├── tutor.py         Claude ask-a-question tutor (curriculum context)
+│   │   ├── practice.py      needs-practice + known-material drills (no FSRS writes)
 │   │   ├── progress.py      activity logging + dashboard stats
 │   │   └── routers/         health · admin · content · settings · learn ·
-│   │                        review · listen · speak · talk · progress · audio
+│   │                        review · practice · listen · speak · talk ·
+│   │                        tutor · progress · audio
 │   ├── scripts/             backup · export_progress · import_progress ·
 │   │                        migrate_split_db · restore_progress ·
 │   │                        coverage · load_content · split_curriculum ·
@@ -162,7 +167,7 @@ make backup             # take one right now
 
 | | Backed up | Why |
 |---|---|---|
-| `progress.db` | ✅ | Irreplaceable |
+| `progress.db` | ✅ | Irreplaceable — SRS, completion, streak, **roleplay and tutor history** |
 | `content.db` | ❌ | Regenerates from `content/*.json`, which is in git |
 | `data/audio/` | ❌ | An edge-tts cache; re-synthesises on demand |
 
@@ -600,6 +605,63 @@ seen again. They get drills suited to a pattern rather than a word, rotating:
 `particle_cloze` also appears in lessons, alongside the vocabulary cloze: the
 same sentence, blanking 了 instead of 便當, asks whether the *pattern* is
 understood rather than whether the word is known.
+
+## Tutor and practice
+
+### Ask a question (§3.7)
+
+The **Talk** tab has two modes. *Roleplay* is the Taiwan scenario chat — it stays in
+character and never explains itself. *Ask* is the opposite: a tutor whose entire job
+is explaining, in English, with Traditional/Taiwan examples.
+
+What separates it from a general chat window is the context. Every question is sent
+with what the app already knows about where you are:
+
+- the last lesson you finished and the unit it belongs to
+- what you have been getting wrong — drill errors and SRS lapses, with counts
+- the words you already know, so examples are built from them
+- the **focus** item, when the question came from one
+
+Focus is what makes "why is 了 here?" answerable. Grammar cards and vocabulary
+intros in a lesson, and cards in a review session, carry an **Ask about this**
+action that opens the tutor with that item attached. The id is looked up against
+the curriculum rather than trusted, so the prompt describes the real row.
+
+Answers come back structured — explanation, 2–3 example sentences with pinyin and
+gloss, an optional Taiwan-usage note, and related curriculum items — so they render
+as cards with tappable audio rather than a wall of text.
+
+Needs an API key, like Roleplay, and it is the same key: add it on the **Me** tab
+and both modes light up. Without one the mode explains itself and the rest of the
+app is unaffected. See [Completing the drafts](#completing-the-drafts-needs-an-api-key)
+for where the key can live.
+
+**Tutor history is progress data** (spec §7). Threads are stored in `progress.db`
+alongside roleplay — same tables, `kind='tutor'` — so they survive a content reseed
+and an app update, and they are in every backup and JSON export.
+
+### Practice sessions (§3.6, §3.1)
+
+The **Review** tab has the daily FSRS queue and, below it, two practice modes that
+are *not* the queue:
+
+| Mode | Pulls from |
+|---|---|
+| **Needs practice** | Your weak spots: SRS lapses, drill errors, and words whose recorded tone attempts score badly |
+| **Known material** | What you've mastered — cards in review with stability ≥ 21 days — sampled at random |
+
+Weak spots are ranked by a score summing all three signals, so a word that is bad in
+several ways outranks one that is merely bad in one, and each item says why it's
+there (`forgotten 3x`, `2 drill errors, tones 40%`).
+
+**Nothing in a practice session touches your review schedule.** No due date moves, no
+lapse is recorded, no stability changes — practice never calls the scheduler at all.
+You can drill a word you keep forgetting ten times for free. §3.1 asks that review
+stop blocking progress; a practice mode that charged you for using it would be the
+same mistake inverted. Time spent still counts toward the streak.
+
+The drills are rendered by the review renderers, so they're the ones you already
+know, and a test asserts `srs_cards` is byte-identical before and after a session.
 
 ## Admin API
 

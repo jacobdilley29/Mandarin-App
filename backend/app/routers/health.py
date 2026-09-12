@@ -33,6 +33,9 @@ def status(conn: sqlite3.Connection = Depends(get_db)) -> dict:
             # Talk tab degrades gracefully when no key is present. The key may
             # come from .env or from the in-app setting stored in the DB.
             "conversation": conversation.available(conn),
+            # The tutor needs the same key as Talk (spec §3.7 — the second and
+            # only other networked call in the app).
+            "tutor": conversation.available(conn),
             "learn": True,
             "review": True,
             "listen": True,
