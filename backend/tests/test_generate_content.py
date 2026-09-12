@@ -269,3 +269,37 @@ def test_no_key_anywhere_resolves_to_none(tmp_path, monkeypatch):
     monkeypatch.setattr(conversation, "get_settings", lambda: settings)
 
     assert g.resolve_api_key() is None
+
+
+def test_a_level_filter_still_skips_finished_units(sandbox):
+    """--level narrows the scope; it does not mean "regenerate everything here".
+
+    It used to bypass the completeness check entirely, so asking for a level
+    would rewrite the hand-authored live units at that level — paying the API
+    to overwrite curated content with generated text.
+    """
+    live = cs.load_unit("u_live")
+    client = StubClient()
+
+    gc.main(["--level", str(live["hsk_level"])], client=client)
+
+    assert cs.load_unit("u_live") == live, "the finished unit was left alone"
+
+
+def test_naming_a_finished_unit_does_not_overwrite_it_either(sandbox):
+    before = cs.load_unit("u_live")
+    client = StubClient()
+
+    assert gc.main(["--unit", "u_live"], client=client) == 0
+
+    assert client.calls == 0
+    assert cs.load_unit("u_live") == before
+
+
+def test_all_is_the_one_way_to_regenerate_finished_units(sandbox):
+    """The escape hatch stays — it just has to be asked for explicitly."""
+    client = StubClient()
+
+    gc.main(["--unit", "u_live", "--all"], client=client)
+
+    assert client.calls >= 1

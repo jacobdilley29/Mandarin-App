@@ -214,14 +214,22 @@ def make_client(api_key: str | None = None):
 
 
 def _select_units(data: dict, args) -> list[dict]:
+    """Which units to generate: narrow by id/level, then drop the finished ones.
+
+    --unit and --level narrow *what is considered*; completeness still decides
+    what is generated, unless --all says otherwise. They used to return their
+    match directly and skip the completeness filter, so `--level 3` meant "every
+    HSK 3 unit" — including the hand-authored, hand-corrected live ones, which
+    it would then pay to overwrite with generated text. Only --all does that
+    now, which is what its help has always said.
+    """
     units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
     if args.unit:
-        return [u for u in units if u["id"] in set(args.unit)]
+        units = [u for u in units if u["id"] in set(args.unit)]
     if args.level:
-        return [u for u in units if u.get("hsk_level") in set(args.level)]
+        units = [u for u in units if u.get("hsk_level") in set(args.level)]
     if args.all:
         return units
-    # Default: only what still needs work.
     return [u for u in units if not completeness.evaluate_unit(u).complete]
 
 
@@ -240,7 +248,8 @@ def main(argv: list[str] | None = None, client=None) -> int:
         targets = targets[: args.limit]
 
     if not targets:
-        print("Nothing to generate — every unit is already complete.")
+        print("Nothing to generate — every unit in scope is already complete.")
+        print("  (Add --all to regenerate finished units, overwriting their content.)")
         return 0
 
     n_lessons = sum(len(u.get("lessons") or []) for u in targets)
