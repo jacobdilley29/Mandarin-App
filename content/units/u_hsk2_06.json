@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_06",
+  "title": "HSK 2 詞彙 6",
+  "subtitle": "HSK 2 vocabulary · set 6",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_06_1",
+      "title": "詞彙 6–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_丈夫",
+          "traditional": "丈夫",
+          "pinyin": "zhàngfū",
+          "gloss": "husband",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生日",
+          "traditional": "生日",
+          "pinyin": "shēng rì",
+          "gloss": "birthday",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_姐姐",
+          "traditional": "姐姐",
+          "pinyin": "jiě jie",
+          "gloss": "older sister",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_課",
+          "traditional": "課",
+          "pinyin": "kè",
+          "gloss": "subject; course; class",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_哥哥",
+          "traditional": "哥哥",
+          "pinyin": "gē ge",
+          "gloss": "older brother",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_考試",
+          "traditional": "考試",
+          "pinyin": "kǎo shì",
+          "gloss": "to take an exam; exam",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_06_2",
+      "title": "詞彙 6–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_千",
+          "traditional": "千",
+          "pinyin": "qiān",
+          "gloss": "thousand",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_慢",
+          "traditional": "慢",
+          "pinyin": "màn",
+          "gloss": "slow",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_旁邊",
+          "traditional": "旁邊",
+          "pinyin": "páng biān",
+          "gloss": "side; adjacent place",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_顏色",
+          "traditional": "顏色",
+          "pinyin": "yán sè",
+          "gloss": "color; countenance; appearance",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_雪",
+          "traditional": "雪",
+          "pinyin": "xuě",
+          "gloss": "snow; (literary) to wipe away (a humiliation etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_妹妹",
+          "traditional": "妹妹",
+          "pinyin": "mèi mei",
+          "gloss": "younger sister; young woman",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_06_3",
+      "title": "詞彙 6–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_報紙",
+          "traditional": "報紙",
+          "pinyin": "bào zhǐ",
+          "gloss": "newspaper; newsprint",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_貴",
+          "traditional": "貴",
+          "pinyin": "guì",
+          "gloss": "expensive; noble; precious",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_機場",
+          "traditional": "機場",
+          "pinyin": "jī chǎng",
+          "gloss": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_踢",
+          "traditional": "踢",
+          "pinyin": "tī",
+          "gloss": "to kick; to play (e.g. soccer); (slang) butch (in a lesbian relationship)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_弟弟",
+          "traditional": "弟弟",
+          "pinyin": "dì di",
+          "gloss": "younger brother",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_百",
+          "traditional": "百",
+          "pinyin": "bǎi",
+          "gloss": "hundred; numerous; all kinds of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 26,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

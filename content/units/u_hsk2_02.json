@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_02",
+  "title": "HSK 2 詞彙 2",
+  "subtitle": "HSK 2 vocabulary · set 2",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_02_1",
+      "title": "詞彙 2–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_因為",
+          "traditional": "因為",
+          "pinyin": "yīn wèi",
+          "gloss": "because; owing to; on account of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_再",
+          "traditional": "再",
+          "pinyin": "zài",
+          "gloss": "again; once more; re-; second; another; then (after sth, and not until then)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_次",
+          "traditional": "次",
+          "pinyin": "cì",
+          "gloss": "next in sequence; second; the second (day, time etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_知道",
+          "traditional": "知道",
+          "pinyin": "zhī dào",
+          "gloss": "to know; to become aware of; also pr. [zhī dao]",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_問題",
+          "traditional": "問題",
+          "pinyin": "wèn tí",
+          "gloss": "question; problem; issue",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_它",
+          "traditional": "它",
+          "pinyin": "tā",
+          "gloss": "it",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_02_2",
+      "title": "詞彙 2–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_但是",
+          "traditional": "但是",
+          "pinyin": "dàn shì",
+          "gloss": "but; however",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可能",
+          "traditional": "可能",
+          "pinyin": "kě néng",
+          "gloss": "might (happen); possible; probable",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_開始",
+          "traditional": "開始",
+          "pinyin": "kāi shǐ",
+          "gloss": "to begin; beginning; to start",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_快",
+          "traditional": "快",
+          "pinyin": "kuài",
+          "gloss": "rapid; quick; speed",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_比",
+          "traditional": "比",
+          "pinyin": "bǐ",
+          "gloss": "to compare; (followed by a noun and adjective) more {adj.} than {noun}; ratio",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_所以",
+          "traditional": "所以",
+          "pinyin": "suǒ yǐ",
+          "gloss": "therefore; as a result; so",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_02_3",
+      "title": "詞彙 2–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_覺得",
+          "traditional": "覺得",
+          "pinyin": "jué de",
+          "gloss": "to think that ...; to feel that ...; to feel (uncomfortable etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_向",
+          "traditional": "向",
+          "pinyin": "xiàng",
+          "gloss": "towards; to face; to turn towards",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一起",
+          "traditional": "一起",
+          "pinyin": "yī qǐ",
+          "gloss": "in the same place; together; with",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_希望",
+          "traditional": "希望",
+          "pinyin": "xī wàng",
+          "gloss": "to hope; a hope; a wish",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大家",
+          "traditional": "大家",
+          "pinyin": "dà jiā",
+          "gloss": "everyone; influential family; great expert",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_非常",
+          "traditional": "非常",
+          "pinyin": "fēi cháng",
+          "gloss": "very; really; unusual; extraordinary",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 22,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

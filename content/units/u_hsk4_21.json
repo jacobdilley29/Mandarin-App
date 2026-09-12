@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_21",
+  "title": "HSK 4 詞彙 21",
+  "subtitle": "HSK 4 vocabulary · set 21",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_21_1",
+      "title": "詞彙 21–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_區別",
+          "traditional": "區別",
+          "pinyin": "qū bié",
+          "gloss": "difference; to distinguish; to discriminate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_暗",
+          "traditional": "暗",
+          "pinyin": "àn",
+          "gloss": "dark; to turn dark; secret; hidden",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_將來",
+          "traditional": "將來",
+          "pinyin": "jiāng lái",
+          "gloss": "in the future; future; the future",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_聊天",
+          "traditional": "聊天",
+          "pinyin": "liáo tiān",
+          "gloss": "to chat; to gossip",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_小說",
+          "traditional": "小說",
+          "pinyin": "xiǎo shuō",
+          "gloss": "novel; fiction",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鼓勵",
+          "traditional": "鼓勵",
+          "pinyin": "gǔ lì",
+          "gloss": "to encourage",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_21_2",
+      "title": "詞彙 21–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_理想",
+          "traditional": "理想",
+          "pinyin": "lǐ xiǎng",
+          "gloss": "an ideal; a dream; ideal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_後悔",
+          "traditional": "後悔",
+          "pinyin": "hòu huǐ",
+          "gloss": "to regret; to feel remorse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_舉辦",
+          "traditional": "舉辦",
+          "pinyin": "jǔ bàn",
+          "gloss": "to conduct; to hold",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感動",
+          "traditional": "感動",
+          "pinyin": "gǎn dòng",
+          "gloss": "to move (sb); to touch (sb emotionally); moving",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_顧客",
+          "traditional": "顧客",
+          "pinyin": "gù kè",
+          "gloss": "customer; client",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_組成",
+          "traditional": "組成",
+          "pinyin": "zǔ chéng",
+          "gloss": "to form; to make up; to constitute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_21_3",
+      "title": "詞彙 21–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_流行",
+          "traditional": "流行",
+          "pinyin": "liú xíng",
+          "gloss": "(of a contagious disease etc) to spread; to propagate; (of a style of clothing, song etc) popular",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_整理",
+          "traditional": "整理",
+          "pinyin": "zhěng lǐ",
+          "gloss": "to arrange; to tidy up; to sort out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吵",
+          "traditional": "吵",
+          "pinyin": "chǎo",
+          "gloss": "to quarrel; to make a noise; noisy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_豐富",
+          "traditional": "豐富",
+          "pinyin": "fēng fù",
+          "gloss": "to enrich; rich; plentiful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原諒",
+          "traditional": "原諒",
+          "pinyin": "yuán liàng",
+          "gloss": "to excuse; to forgive; to pardon",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_肚子",
+          "traditional": "肚子",
+          "pinyin": "dù zi",
+          "gloss": "belly; abdomen; stomach",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 65,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

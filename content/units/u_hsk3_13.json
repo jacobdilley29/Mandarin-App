@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_13",
+  "title": "HSK 3 詞彙 13",
+  "subtitle": "HSK 3 vocabulary · set 13",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_13_1",
+      "title": "詞彙 13–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_雲",
+          "traditional": "雲",
+          "pinyin": "yún",
+          "gloss": "cloud",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鄰居",
+          "traditional": "鄰居",
+          "pinyin": "lín jū",
+          "gloss": "neighbor; next door",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_校長",
+          "traditional": "校長",
+          "pinyin": "xiào zhǎng",
+          "gloss": "(college, university) president; headmaster",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_花園",
+          "traditional": "花園",
+          "pinyin": "huā yuán",
+          "gloss": "garden",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_耳朵",
+          "traditional": "耳朵",
+          "pinyin": "ěr duo",
+          "gloss": "ear; handle (on a cup)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_節日",
+          "traditional": "節日",
+          "pinyin": "jié rì",
+          "gloss": "holiday; festival",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_13_2",
+      "title": "詞彙 13–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_鼻子",
+          "traditional": "鼻子",
+          "pinyin": "bí zi",
+          "gloss": "nose",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_叔叔",
+          "traditional": "叔叔",
+          "pinyin": "shū shu",
+          "gloss": "father's younger brother; uncle; Taiwan pr. [shú shu]",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗澡",
+          "traditional": "洗澡",
+          "pinyin": "xǐ zǎo",
+          "gloss": "to bathe; to take a shower",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地圖",
+          "traditional": "地圖",
+          "pinyin": "dì tú",
+          "gloss": "map",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_帽子",
+          "traditional": "帽子",
+          "pinyin": "mào zi",
+          "gloss": "hat; cap; (fig.) label",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_街道",
+          "traditional": "街道",
+          "pinyin": "jiē dào",
+          "gloss": "street; subdistrict; residential district",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_13_3",
+      "title": "詞彙 13–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_遲到",
+          "traditional": "遲到",
+          "pinyin": "chí dào",
+          "gloss": "to arrive late",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_刻",
+          "traditional": "刻",
+          "pinyin": "kè",
+          "gloss": "quarter (hour); moment; to carve",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鍛鍊",
+          "traditional": "鍛鍊",
+          "pinyin": "duàn liàn",
+          "gloss": "to toughen; to temper; to engage in physical exercise",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_褲子",
+          "traditional": "褲子",
+          "pinyin": "kù zi",
+          "gloss": "trousers; pants",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_夏",
+          "traditional": "夏",
+          "pinyin": "xià",
+          "gloss": "summer",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_圖書館",
+          "traditional": "圖書館",
+          "pinyin": "tú shū guǎn",
+          "gloss": "library",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 41,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

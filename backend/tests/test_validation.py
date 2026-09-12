@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from app import curriculum_source
 from app.config import REPO_ROOT
 from app.validation import (
     allowed_chars,
@@ -36,7 +37,9 @@ def test_seed_curriculum_is_valid():
     """The committed curriculum must pass vocab validation under real loading
     conditions — i.e. with the HSK 1 placement pool treated as pre-known, exactly
     as scripts/load_content.py does."""
-    data = json.loads((REPO_ROOT / "content" / "curriculum.json").read_text(encoding="utf-8"))
+    # Through the source loader, not the raw file: since the split (spec §3.1)
+    # curriculum.json is a manifest and the content lives in content/units/.
+    data = curriculum_source.load()
     hsk1 = json.loads((REPO_ROOT / "content" / "hsk1.json").read_text(encoding="utf-8"))
     hsk1_chars: set[str] = set()
     for v in hsk1.get("vocab", []):

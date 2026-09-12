@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_10",
+  "title": "HSK 4 詞彙 10",
+  "subtitle": "HSK 4 vocabulary · set 10",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_10_1",
+      "title": "詞彙 10–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_規定",
+          "traditional": "規定",
+          "pinyin": "guī dìng",
+          "gloss": "to stipulate; to specify; to prescribe; to fix (a price); to set (a quota); regulations; rules; provisions; stipulations",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_於是",
+          "traditional": "於是",
+          "pinyin": "yú shì",
+          "gloss": "thereupon; as a result; consequently; thus; hence",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_正確",
+          "traditional": "正確",
+          "pinyin": "zhèng què",
+          "gloss": "correct; sound; right; proper",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_愛情",
+          "traditional": "愛情",
+          "pinyin": "ài qíng",
+          "gloss": "romance; love (romantic)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_群",
+          "traditional": "群",
+          "pinyin": "qún",
+          "gloss": "group; crowd; flock, herd, pack etc",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_夠",
+          "traditional": "夠",
+          "pinyin": "gòu",
+          "gloss": "enough (sufficient); enough (too much); (coll.) (before adj.) really",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_10_2",
+      "title": "詞彙 10–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_火",
+          "traditional": "火",
+          "pinyin": "huǒ",
+          "gloss": "fire; urgent; ammunition",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方向",
+          "traditional": "方向",
+          "pinyin": "fāng xiàng",
+          "gloss": "direction; orientation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_市場",
+          "traditional": "市場",
+          "pinyin": "shì chǎng",
+          "gloss": "marketplace; market (also in abstract)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_教育",
+          "traditional": "教育",
+          "pinyin": "jiào yù",
+          "gloss": "to educate; to teach; education",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_取",
+          "traditional": "取",
+          "pinyin": "qǔ",
+          "gloss": "to take; to get; to choose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_危險",
+          "traditional": "危險",
+          "pinyin": "wéixiǎn",
+          "gloss": "danger; dangerous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_10_3",
+      "title": "詞彙 10–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_管理",
+          "traditional": "管理",
+          "pinyin": "guǎn lǐ",
+          "gloss": "to supervise; to manage; to administer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_亂",
+          "traditional": "亂",
+          "pinyin": "luàn",
+          "gloss": "in confusion or disorder; in a confused state of mind; disorder",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_適合",
+          "traditional": "適合",
+          "pinyin": "shì hé",
+          "gloss": "to fit; to suit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_正式",
+          "traditional": "正式",
+          "pinyin": "zhèng shì",
+          "gloss": "formal; official",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_引起",
+          "traditional": "引起",
+          "pinyin": "yǐn qǐ",
+          "gloss": "to give rise to; to lead to; to cause; to arouse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_從來",
+          "traditional": "從來",
+          "pinyin": "cóng lái",
+          "gloss": "always; at all times; never (if used in negative sentence)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 54,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

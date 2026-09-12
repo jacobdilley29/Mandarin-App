@@ -1,0 +1,188 @@
+{
+  "id": "u_hsk4_31",
+  "title": "HSK 4 詞彙 31",
+  "subtitle": "HSK 4 vocabulary · set 31",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_31_1",
+      "title": "詞彙 31–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_暖和",
+          "traditional": "暖和",
+          "pinyin": "nuǎn huo",
+          "gloss": "warm; nice and warm",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_列印",
+          "traditional": "列印",
+          "pinyin": "lièyìn",
+          "gloss": "to affix a seal; to stamp; to print out (with a printer)",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「列印」；「打印」是大陸用法。",
+          "prc_form": "打印"
+        },
+        {
+          "id": "v_農村",
+          "traditional": "農村",
+          "pinyin": "nóng cūn",
+          "gloss": "rural area; village",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_排列",
+          "traditional": "排列",
+          "pinyin": "pái liè",
+          "gloss": "to arrange in order; (math.) permutation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_窄",
+          "traditional": "窄",
+          "pinyin": "zhǎi",
+          "gloss": "narrow; narrow-minded; badly off",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_積累",
+          "traditional": "積累",
+          "pinyin": "jī lěi",
+          "gloss": "to accumulate; accumulation; cumulative",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_31_2",
+      "title": "詞彙 31–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_整齊",
+          "traditional": "整齊",
+          "pinyin": "zhěng qí",
+          "gloss": "orderly; neat; even",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_表格",
+          "traditional": "表格",
+          "pinyin": "biǎo gé",
+          "gloss": "form; table",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_表揚",
+          "traditional": "表揚",
+          "pinyin": "biǎo yáng",
+          "gloss": "to praise; to commend",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_碩士",
+          "traditional": "碩士",
+          "pinyin": "shuò shì",
+          "gloss": "master's degree; person who has a master's degree; learned person",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_牙膏",
+          "traditional": "牙膏",
+          "pinyin": "yá gāo",
+          "gloss": "toothpaste",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_長城",
+          "traditional": "長城",
+          "pinyin": "Cháng chéng",
+          "gloss": "the Great Wall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_31_3",
+      "title": "詞彙 31–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_做生意",
+          "traditional": "做生意",
+          "pinyin": "zuò shēng yì",
+          "gloss": "to do business",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_請客",
+          "traditional": "請客",
+          "pinyin": "qǐng kè",
+          "gloss": "to give a dinner party; to entertain guests; to invite to dinner",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_請假",
+          "traditional": "請假",
+          "pinyin": "qǐng jià",
+          "gloss": "to request leave of absence",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乒乓球",
+          "traditional": "乒乓球",
+          "pinyin": "pīng pāng qiú",
+          "gloss": "table tennis; ping-pong; table tennis ball",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_導遊",
+          "traditional": "導遊",
+          "pinyin": "dǎo yóu",
+          "gloss": "tour guide; guidebook; to conduct a tour",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_葉子",
+          "traditional": "葉子",
+          "pinyin": "yè zi",
+          "gloss": "leaf; (slang) marijuana",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 75,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk1_01",
+  "title": "HSK 1 詞彙 1",
+  "subtitle": "HSK 1 vocabulary · set 1",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk1_01_1",
+      "title": "詞彙 1–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_的",
+          "traditional": "的",
+          "pinyin": "de",
+          "gloss": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_了",
+          "traditional": "了",
+          "pinyin": "le",
+          "gloss": "to finish; to achieve; variant of 了",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_我",
+          "traditional": "我",
+          "pinyin": "wǒ",
+          "gloss": "I; me; my",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_是",
+          "traditional": "是",
+          "pinyin": "shì",
+          "gloss": "to be (followed by substantives only); correct; right; true; (respectful acknowledgement of a command) very well",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_你",
+          "traditional": "你",
+          "pinyin": "nǐ",
+          "gloss": "you (informal, as opposed to courteous 您)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_在",
+          "traditional": "在",
+          "pinyin": "zài",
+          "gloss": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_01_2",
+      "title": "詞彙 1–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_不",
+          "traditional": "不",
+          "pinyin": "bù",
+          "gloss": "no; not so; (bound form) not; un-",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_有",
+          "traditional": "有",
+          "pinyin": "yǒu",
+          "gloss": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_他",
+          "traditional": "他",
+          "pinyin": "tā",
+          "gloss": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_這",
+          "traditional": "這",
+          "pinyin": "zhè",
+          "gloss": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_個",
+          "traditional": "個",
+          "pinyin": "gè",
+          "gloss": "(classifier used before a noun that has no specific classifier); (bound form) individual",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_和",
+          "traditional": "和",
+          "pinyin": "hàn",
+          "gloss": "(joining two nouns) and; together with; with (Taiwan pr. [hàn]); (math.) sum; to make peace",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_01_3",
+      "title": "詞彙 1–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_人",
+          "traditional": "人",
+          "pinyin": "rén",
+          "gloss": "person; people",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_我們",
+          "traditional": "我們",
+          "pinyin": "wǒ men",
+          "gloss": "we; us; ourselves",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_好",
+          "traditional": "好",
+          "pinyin": "hǎo",
+          "gloss": "good; appropriate; proper; all right!",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一",
+          "traditional": "一",
+          "pinyin": "yī",
+          "gloss": "one; single; a (article)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_會",
+          "traditional": "會",
+          "pinyin": "huì",
+          "gloss": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_都",
+          "traditional": "都",
+          "pinyin": "dōu",
+          "gloss": "all; both; entirely; (used for emphasis) even; already",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 15,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}

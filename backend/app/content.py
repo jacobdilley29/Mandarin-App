@@ -67,15 +67,24 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
     units = data.get("units", [])
     n_lessons = n_vocab = n_grammar = 0
 
+    from . import completeness as _completeness
+
     for unit in units:
+        # Completeness is recomputed from source on every load, so a unit can
+        # never be stuck live on a stale checklist (spec §3.1).
+        report = _completeness.evaluate_unit(unit)
+        status = _completeness.resolved_status(unit)
         conn.execute(
-            """INSERT INTO units (id, title, subtitle, hsk_level, sort_order)
-               VALUES (?, ?, ?, ?, ?)
+            """INSERT INTO units (id, title, subtitle, hsk_level, sort_order,
+                                  status, completeness)
+               VALUES (?, ?, ?, ?, ?, ?, ?)
                ON CONFLICT(id) DO UPDATE SET
                  title=excluded.title, subtitle=excluded.subtitle,
-                 hsk_level=excluded.hsk_level, sort_order=excluded.sort_order""",
+                 hsk_level=excluded.hsk_level, sort_order=excluded.sort_order,
+                 status=excluded.status, completeness=excluded.completeness""",
             (unit["id"], unit["title"], unit.get("subtitle"),
-             unit.get("hsk_level"), unit.get("sort_order", 0)),
+             unit.get("hsk_level"), unit.get("sort_order", 0),
+             status, json.dumps(report.as_dict(), ensure_ascii=False)),
         )
 
         for lesson in unit.get("lessons", []):
@@ -128,10 +137,13 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
 
 
 def load_from_disk(conn: sqlite3.Connection) -> dict | None:
-    if not CONTENT_PATH.is_file():
+    """Load the curriculum source — per-unit files (spec §3.1), or the legacy
+    single file when the split hasn't been applied. See app/curriculum_source.py."""
+    from . import curriculum_source
+
+    if not curriculum_source.is_split() and not CONTENT_PATH.is_file():
         return None
-    data = json.loads(CONTENT_PATH.read_text(encoding="utf-8"))
-    return load_curriculum(conn, data)
+    return load_curriculum(conn, curriculum_source.load())
 
 
 def ensure_loaded(conn: sqlite3.Connection) -> None:
@@ -149,9 +161,16 @@ def ensure_loaded(conn: sqlite3.Connection) -> None:
 # Reading
 # ---------------------------------------------------------------------------
 def _ordered_lessons(conn: sqlite3.Connection) -> list[sqlite3.Row]:
+    """Lessons in curriculum order, live units only.
+
+    Drafts are excluded here as well as in get_curriculum, because this drives
+    the unlock chain: a draft unit sitting in the middle of the order would
+    otherwise gate every lesson after it behind a lesson nobody can see.
+    """
     return conn.execute(
         """SELECT l.id, l.unit_id, l.title, l.sort_order
            FROM lessons l JOIN units u ON u.id = l.unit_id
+           WHERE u.status = 'live'
            ORDER BY u.sort_order, l.sort_order"""
     ).fetchall()
 
@@ -178,8 +197,10 @@ def get_curriculum(conn: sqlite3.Connection) -> dict:
         p = progress.get(lid)
         prev_completed = bool(p and p["completed"])
 
+    # The draft gate (spec §3.1): incomplete units never reach the learner, no
+    # matter what sort_order they claim. See app/completeness.py.
     units = conn.execute(
-        "SELECT * FROM units ORDER BY sort_order"
+        "SELECT * FROM units WHERE status = 'live' ORDER BY sort_order"
     ).fetchall()
 
     out_units = []

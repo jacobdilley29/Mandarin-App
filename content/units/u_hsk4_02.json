@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_02",
+  "title": "HSK 4 詞彙 2",
+  "subtitle": "HSK 4 vocabulary · set 2",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_02_1",
+      "title": "詞彙 2–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_行",
+          "traditional": "行",
+          "pinyin": "xíng",
+          "gloss": "to walk; to go; to travel",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感覺",
+          "traditional": "感覺",
+          "pinyin": "gǎn jué",
+          "gloss": "feeling; impression; sensation; to feel; to perceive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_繼續",
+          "traditional": "繼續",
+          "pinyin": "jì xù",
+          "gloss": "to continue; to proceed with; to go on with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_場",
+          "traditional": "場",
+          "pinyin": "chǎng",
+          "gloss": "large place used for a specific purpose; stage; scene (of a play)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_進行",
+          "traditional": "進行",
+          "pinyin": "jìn xíng",
+          "gloss": "to advance; to conduct; underway",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_內",
+          "traditional": "內",
+          "pinyin": "nèi",
+          "gloss": "inside; inner; internal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_02_2",
+      "title": "詞彙 2–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_通過",
+          "traditional": "通過",
+          "pinyin": "tōng guò",
+          "gloss": "to pass through; to get through; to adopt (a resolution); to pass (legislation); to pass (a test)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_無",
+          "traditional": "無",
+          "pinyin": "wú",
+          "gloss": "not to have; no; none",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一切",
+          "traditional": "一切",
+          "pinyin": "yī qiè",
+          "gloss": "everything; every; all",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_由",
+          "traditional": "由",
+          "pinyin": "yóu",
+          "gloss": "to follow; from; because of; due to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_任何",
+          "traditional": "任何",
+          "pinyin": "rèn hé",
+          "gloss": "any; whatever; whichever",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_安全",
+          "traditional": "安全",
+          "pinyin": "ān quán",
+          "gloss": "safe; secure; safety; security",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_02_3",
+      "title": "詞彙 2–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_結果",
+          "traditional": "結果",
+          "pinyin": "jié guǒ",
+          "gloss": "outcome; result; conclusion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_完全",
+          "traditional": "完全",
+          "pinyin": "wán quán",
+          "gloss": "complete; whole; totally; entirely",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_發",
+          "traditional": "發",
+          "pinyin": "fā",
+          "gloss": "to send out; to show (one's feeling); to issue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_計劃",
+          "traditional": "計劃",
+          "pinyin": "jì huà",
+          "gloss": "plan; project; program",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可是",
+          "traditional": "可是",
+          "pinyin": "kě shì",
+          "gloss": "but; however; (used for emphasis) indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_連",
+          "traditional": "連",
+          "pinyin": "lián",
+          "gloss": "to link; to join; to connect",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 46,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

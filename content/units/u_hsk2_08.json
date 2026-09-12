@@ -1,0 +1,47 @@
+{
+  "id": "u_hsk2_08",
+  "title": "HSK 2 詞彙 8",
+  "subtitle": "HSK 2 vocabulary · set 8",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_08_1",
+      "title": "詞彙 8–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_晴",
+          "traditional": "晴",
+          "pinyin": "qíng",
+          "gloss": "clear; fine (weather)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_羊肉",
+          "traditional": "羊肉",
+          "pinyin": "yáng ròu",
+          "gloss": "mutton; goat meat",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打籃球",
+          "traditional": "打籃球",
+          "pinyin": "dǎ lán qiú",
+          "gloss": "to play basketball",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 28,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_12",
+  "title": "HSK 4 詞彙 12",
+  "subtitle": "HSK 4 vocabulary · set 12",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_12_1",
+      "title": "詞彙 12–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_範圍",
+          "traditional": "範圍",
+          "pinyin": "fàn wéi",
+          "gloss": "range; scope; limit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_速度",
+          "traditional": "速度",
+          "pinyin": "sù dù",
+          "gloss": "speed; rate; velocity",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_實在",
+          "traditional": "實在",
+          "pinyin": "shí zài",
+          "gloss": "really; actually; indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_效果",
+          "traditional": "效果",
+          "pinyin": "xiào guǒ",
+          "gloss": "result; effect; efficacy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_遍",
+          "traditional": "遍",
+          "pinyin": "biàn",
+          "gloss": "everywhere; all over; classifier for actions: one time",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_經濟",
+          "traditional": "經濟",
+          "pinyin": "jīng jì",
+          "gloss": "economy; economic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_12_2",
+      "title": "詞彙 12–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_按照",
+          "traditional": "按照",
+          "pinyin": "àn zhào",
+          "gloss": "according to; in accordance with; in the light of",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_反對",
+          "traditional": "反對",
+          "pinyin": "fǎn duì",
+          "gloss": "to oppose; to be against; to object to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_竟然",
+          "traditional": "竟然",
+          "pinyin": "jìng rán",
+          "gloss": "unexpectedly; to one's surprise; in spite of everything",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重點",
+          "traditional": "重點",
+          "pinyin": "zhòng diǎn",
+          "gloss": "important point; main point; focus; key (project etc); to focus on; to put the emphasis on",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_倍",
+          "traditional": "倍",
+          "pinyin": "bèi",
+          "gloss": "(two, three etc) -fold; times (multiplier); double",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_醒",
+          "traditional": "醒",
+          "pinyin": "xǐng",
+          "gloss": "to wake up; to be awake; to become aware",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_12_3",
+      "title": "詞彙 12–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_討厭",
+          "traditional": "討厭",
+          "pinyin": "tǎo yàn",
+          "gloss": "to dislike; to loathe; disagreeable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_輸",
+          "traditional": "輸",
+          "pinyin": "shū",
+          "gloss": "to lose; to be beaten; (bound form) to transport; (literary) to donate; to contribute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_咱們",
+          "traditional": "咱們",
+          "pinyin": "zán men",
+          "gloss": "we or us (including both the speaker and the person(s) spoken to); (dialect) I or me; (dialect) (in a coaxing or familiar way) you",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_否則",
+          "traditional": "否則",
+          "pinyin": "fǒu zé",
+          "gloss": "otherwise; if not; or (else)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_免費",
+          "traditional": "免費",
+          "pinyin": "miǎn fèi",
+          "gloss": "free (of charge)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_動作",
+          "traditional": "動作",
+          "pinyin": "dòng zuò",
+          "gloss": "movement; motion; action; to act; to move",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 56,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

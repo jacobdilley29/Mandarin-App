@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_04",
+  "title": "HSK 3 詞彙 4",
+  "subtitle": "HSK 3 vocabulary · set 4",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_04_1",
+      "title": "詞彙 4–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_當然",
+          "traditional": "當然",
+          "pinyin": "dāng rán",
+          "gloss": "only natural; as it should be; certainly",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_接",
+          "traditional": "接",
+          "pinyin": "jiē",
+          "gloss": "to receive; to answer (the phone); to meet or welcome sb",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_相信",
+          "traditional": "相信",
+          "pinyin": "xiāng xìn",
+          "gloss": "to be convinced (that sth is true); to believe; to accept sth as true",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_花",
+          "traditional": "花",
+          "pinyin": "huā",
+          "gloss": "flower; blossom; fancy pattern",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_雖然",
+          "traditional": "雖然",
+          "pinyin": "suī rán",
+          "gloss": "although; even though (often used correlatively with 是 or 是 etc)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_解決",
+          "traditional": "解決",
+          "pinyin": "jiě jué",
+          "gloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_04_2",
+      "title": "詞彙 4–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_關於",
+          "traditional": "關於",
+          "pinyin": "guān yú",
+          "gloss": "pertaining to; concerning; with regard to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_完成",
+          "traditional": "完成",
+          "pinyin": "wán chéng",
+          "gloss": "to complete; to accomplish",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_結束",
+          "traditional": "結束",
+          "pinyin": "jié shù",
+          "gloss": "termination; to finish; to end",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_努力",
+          "traditional": "努力",
+          "pinyin": "nǔ lì",
+          "gloss": "to make an effort; to try hard; to strive; hard-working; conscientious",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_以前",
+          "traditional": "以前",
+          "pinyin": "yǐ qián",
+          "gloss": "before; formerly; previous",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辦法",
+          "traditional": "辦法",
+          "pinyin": "bàn fǎ",
+          "gloss": "means; method; way (of doing sth)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_04_3",
+      "title": "詞彙 4–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_特別",
+          "traditional": "特別",
+          "pinyin": "tè bié",
+          "gloss": "unusual; special; very; especially; particularly; expressly; for a specific purpose",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_難",
+          "traditional": "難",
+          "pinyin": "nán",
+          "gloss": "difficult (to...); problem; difficulty",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_注意",
+          "traditional": "注意",
+          "pinyin": "zhù yì",
+          "gloss": "to take note of; to pay attention to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_講",
+          "traditional": "講",
+          "pinyin": "jiǎng",
+          "gloss": "to speak; to explain; to negotiate",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_離開",
+          "traditional": "離開",
+          "pinyin": "lí kāi",
+          "gloss": "to depart; to leave",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_萬",
+          "traditional": "萬",
+          "pinyin": "wàn",
+          "gloss": "ten thousand; a great number",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 32,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_01",
+  "title": "HSK 3 詞彙 1",
+  "subtitle": "HSK 3 vocabulary · set 1",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_01_1",
+      "title": "詞彙 1–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_啊",
+          "traditional": "啊",
+          "pinyin": "à",
+          "gloss": "interjection or grunt of agreement; uhm; Ah, OK",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_把",
+          "traditional": "把",
+          "pinyin": "bǎ",
+          "gloss": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_被",
+          "traditional": "被",
+          "pinyin": "bèi",
+          "gloss": "quilt; to cover (with); (literary) to suffer (a misfortune)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_自己",
+          "traditional": "自己",
+          "pinyin": "zì jǐ",
+          "gloss": "oneself; one's own",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_用",
+          "traditional": "用",
+          "pinyin": "yòng",
+          "gloss": "to use; to employ; to have to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_如果",
+          "traditional": "如果",
+          "pinyin": "rú guǒ",
+          "gloss": "if; in case; in the event that",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_01_2",
+      "title": "詞彙 1–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_又",
+          "traditional": "又",
+          "pinyin": "yòu",
+          "gloss": "(once) again; also; both... and...",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_只",
+          "traditional": "只",
+          "pinyin": "zhǐ",
+          "gloss": "only; merely; just",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_更",
+          "traditional": "更",
+          "pinyin": "gèng",
+          "gloss": "more; even more; further",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_需要",
+          "traditional": "需要",
+          "pinyin": "xū yào",
+          "gloss": "to need; to want; to demand; to require; needs",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地",
+          "traditional": "地",
+          "pinyin": "dì",
+          "gloss": "earth; ground; field",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_才",
+          "traditional": "才",
+          "pinyin": "cái",
+          "gloss": "ability; talent; sb of a certain type; a capable individual",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_01_3",
+      "title": "詞彙 1–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_跟",
+          "traditional": "跟",
+          "pinyin": "gēn",
+          "gloss": "heel; to follow closely; to go with",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_像",
+          "traditional": "像",
+          "pinyin": "xiàng",
+          "gloss": "to resemble; to be like; to look as if",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_還是",
+          "traditional": "還是",
+          "pinyin": "hái shi",
+          "gloss": "still (as before); had better; unexpectedly",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_認為",
+          "traditional": "認為",
+          "pinyin": "rèn wéi",
+          "gloss": "to believe; to think; to consider; to feel",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_應該",
+          "traditional": "應該",
+          "pinyin": "yīng gāi",
+          "gloss": "ought to; should; must",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_位",
+          "traditional": "位",
+          "pinyin": "wèi",
+          "gloss": "position; location; place",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 29,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

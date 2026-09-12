@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_03",
+  "title": "HSK 2 詞彙 3",
+  "subtitle": "HSK 2 vocabulary · set 3",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_03_1",
+      "title": "詞彙 3–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_孩子",
+          "traditional": "孩子",
+          "pinyin": "hái zi",
+          "gloss": "child",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_別",
+          "traditional": "別",
+          "pinyin": "bié",
+          "gloss": "to leave; to part (from); (literary) to differentiate; to distinguish; (bound form) other; another; different",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_公司",
+          "traditional": "公司",
+          "pinyin": "gōng sī",
+          "gloss": "company; firm; corporation",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_第一",
+          "traditional": "第一",
+          "pinyin": "dì yī",
+          "gloss": "first; number one; primary",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_問",
+          "traditional": "問",
+          "pinyin": "wèn",
+          "gloss": "to ask; to inquire",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_長",
+          "traditional": "長",
+          "pinyin": "cháng",
+          "gloss": "chief; head; elder",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_03_2",
+      "title": "詞彙 3–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_告訴",
+          "traditional": "告訴",
+          "pinyin": "gào sù",
+          "gloss": "to press charges; to file a complaint",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_事情",
+          "traditional": "事情",
+          "pinyin": "shìqíng",
+          "gloss": "affair; matter; thing; business",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_號",
+          "traditional": "號",
+          "pinyin": "hào",
+          "gloss": "ordinal number; day of a month; mark",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_高",
+          "traditional": "高",
+          "pinyin": "gāo",
+          "gloss": "high; tall; above average",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_件",
+          "traditional": "件",
+          "pinyin": "jiàn",
+          "gloss": "item; component; classifier for events, things, clothes etc",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_張",
+          "traditional": "張",
+          "pinyin": "zhāng",
+          "gloss": "to open up; to spread; sheet of paper",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_03_3",
+      "title": "詞彙 3–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_準備",
+          "traditional": "準備",
+          "pinyin": "zhǔn bèi",
+          "gloss": "preparation; to prepare; to intend",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_進",
+          "traditional": "進",
+          "pinyin": "jìn",
+          "gloss": "to go forward; to advance; to go in",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_每",
+          "traditional": "每",
+          "pinyin": "měi",
+          "gloss": "each; every",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_您",
+          "traditional": "您",
+          "pinyin": "nín",
+          "gloss": "you (courteous, as opposed to informal 你)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_送",
+          "traditional": "送",
+          "pinyin": "sòng",
+          "gloss": "to send; to deliver; to transmit; to give (as a present); to see (sb) off",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_笑",
+          "traditional": "笑",
+          "pinyin": "xiào",
+          "gloss": "to laugh; to smile; to laugh at",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 23,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

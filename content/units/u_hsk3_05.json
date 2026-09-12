@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_05",
+  "title": "HSK 3 詞彙 5",
+  "subtitle": "HSK 3 vocabulary · set 5",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_05_1",
+      "title": "詞彙 5–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_以為",
+          "traditional": "以為",
+          "pinyin": "yǐ wéi",
+          "gloss": "to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_越",
+          "traditional": "越",
+          "pinyin": "yuè",
+          "gloss": "to exceed; to climb over; to surpass",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_城市",
+          "traditional": "城市",
+          "pinyin": "chéng shì",
+          "gloss": "city; town",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_影響",
+          "traditional": "影響",
+          "pinyin": "yǐng xiǎng",
+          "gloss": "influence; effect; to influence",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_遊戲",
+          "traditional": "遊戲",
+          "pinyin": "yóu xì",
+          "gloss": "game; to play",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_馬",
+          "traditional": "馬",
+          "pinyin": "mǎ",
+          "gloss": "horse; horse or cavalry piece in Chinese chess; knight in Western chess",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_05_2",
+      "title": "詞彙 5–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_比較",
+          "traditional": "比較",
+          "pinyin": "bǐ jiào",
+          "gloss": "to compare; to contrast; comparatively",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_最近",
+          "traditional": "最近",
+          "pinyin": "zuì jìn",
+          "gloss": "recently; soon; nearest",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_換",
+          "traditional": "換",
+          "pinyin": "huàn",
+          "gloss": "to exchange; to change (clothes etc); to substitute",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_終於",
+          "traditional": "終於",
+          "pinyin": "zhōng yú",
+          "gloss": "at last; in the end; finally",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_臉",
+          "traditional": "臉",
+          "pinyin": "liǎn",
+          "gloss": "face",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_口",
+          "traditional": "口",
+          "pinyin": "kǒu",
+          "gloss": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_05_3",
+      "title": "詞彙 5–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_除了",
+          "traditional": "除了",
+          "pinyin": "chú le",
+          "gloss": "besides; apart from (... also...); in addition to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_總是",
+          "traditional": "總是",
+          "pinyin": "zǒng shì",
+          "gloss": "always",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_雙",
+          "traditional": "雙",
+          "pinyin": "shuāng",
+          "gloss": "two; double; pair",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_突然",
+          "traditional": "突然",
+          "pinyin": "tū rán",
+          "gloss": "sudden; abrupt; unexpected",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_段",
+          "traditional": "段",
+          "pinyin": "duàn",
+          "gloss": "paragraph; section; segment",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_檢查",
+          "traditional": "檢查",
+          "pinyin": "jiǎn chá",
+          "gloss": "inspection; to examine; to inspect",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 33,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

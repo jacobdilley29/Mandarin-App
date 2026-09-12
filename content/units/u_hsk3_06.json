@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_06",
+  "title": "HSK 3 詞彙 6",
+  "subtitle": "HSK 3 vocabulary · set 6",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_06_1",
+      "title": "詞彙 6–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_米",
+          "traditional": "米",
+          "pinyin": "mǐ",
+          "gloss": "rice; meter (classifier)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_容易",
+          "traditional": "容易",
+          "pinyin": "róng yì",
+          "gloss": "easy; straightforward; likely; liable to; apt to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_明白",
+          "traditional": "明白",
+          "pinyin": "míng bai",
+          "gloss": "clear; obvious; unequivocal",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_根據",
+          "traditional": "根據",
+          "pinyin": "gēn jù",
+          "gloss": "according to; based on; basis",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_輛",
+          "traditional": "輛",
+          "pinyin": "liàng",
+          "gloss": "classifier for vehicles",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_簡單",
+          "traditional": "簡單",
+          "pinyin": "jiǎn dān",
+          "gloss": "simple; not complicated",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_06_2",
+      "title": "詞彙 6–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_半",
+          "traditional": "半",
+          "pinyin": "bàn",
+          "gloss": "half; semi-; incomplete",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_願意",
+          "traditional": "願意",
+          "pinyin": "yuàn yì",
+          "gloss": "to wish; to want; ready",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_音樂",
+          "traditional": "音樂",
+          "pinyin": "yīn yuè",
+          "gloss": "music",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_包",
+          "traditional": "包",
+          "pinyin": "bāo",
+          "gloss": "to cover; to wrap; to hold",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_樓",
+          "traditional": "樓",
+          "pinyin": "lóu",
+          "gloss": "house with more than 1 story; storied building; floor",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_清楚",
+          "traditional": "清楚",
+          "pinyin": "qīng chu",
+          "gloss": "clear; distinct; to understand thoroughly",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_06_3",
+      "title": "詞彙 6–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_照片",
+          "traditional": "照片",
+          "pinyin": "zhào piàn",
+          "gloss": "photograph; picture",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_故事",
+          "traditional": "故事",
+          "pinyin": "gù shì",
+          "gloss": "old practice",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一般",
+          "traditional": "一般",
+          "pinyin": "yī bān",
+          "gloss": "same; ordinary; so-so",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可愛",
+          "traditional": "可愛",
+          "pinyin": "kě ài",
+          "gloss": "adorable; cute; lovely",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_新聞",
+          "traditional": "新聞",
+          "pinyin": "xīn wén",
+          "gloss": "news",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_聲音",
+          "traditional": "聲音",
+          "pinyin": "shēng yīn",
+          "gloss": "voice; sound",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 34,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

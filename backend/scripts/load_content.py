@@ -20,7 +20,7 @@ from pathlib import Path
 # Allow running as `python backend/scripts/load_content.py` too.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import content, db  # noqa: E402
+from app import content, curriculum_source, db  # noqa: E402
 from app.config import REPO_ROOT  # noqa: E402
 from app.validation import (  # noqa: E402
     allowed_chars,
@@ -34,15 +34,30 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Load curriculum content into SQLite.")
     ap.add_argument("--check", action="store_true", help="validate only")
     ap.add_argument("--force", action="store_true", help="load despite violations")
-    ap.add_argument("--path", default=str(content.CONTENT_PATH))
+    ap.add_argument(
+        "--path",
+        default=None,
+        help="load one combined curriculum file instead of content/units/*.json",
+    )
     args = ap.parse_args()
 
-    path = Path(args.path)
-    if not path.is_file():
-        print(f"✗ content file not found: {path}")
-        return 2
-
-    data = json.loads(path.read_text(encoding="utf-8"))
+    # Default: the per-unit source files (spec §3.1), merged into the combined
+    # shape the validator and loader expect. --path still takes a single file so
+    # a generated or experimental curriculum can be checked without installing it.
+    if args.path:
+        path = Path(args.path)
+        if not path.is_file():
+            print(f"✗ content file not found: {path}")
+            return 2
+        data = json.loads(path.read_text(encoding="utf-8"))
+    else:
+        data = curriculum_source.load()
+        n_draft = sum(
+            1 for u in data.get("units", [])
+            if curriculum_source.status_of(u) != curriculum_source.STATUS_LIVE
+        )
+        n_live = len(data.get("units", [])) - n_draft
+        print(f"Source: content/units/ — {n_live} live, {n_draft} draft")
 
     # The HSK 1 placement pool is pre-known (seeded as mastered on first run),
     # so lesson sentences may draw on its characters. Feed them to the validator

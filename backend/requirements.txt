@@ -9,6 +9,13 @@ python-multipart==0.0.20
 # --- Phase 1 (content + Learn) ---
 edge-tts>=7.0.0          # zh-TW TTS for the /api/audio cache
 
+# --- Phase 2 (content pipeline, spec §5) ---
+# s2twp (not plain s2t) for phrase-level Taiwan vocabulary conversion. The
+# pure-Python reimplementation deliberately: the C-backed `OpenCC` package needs
+# a compiler, which the slim runtime image doesn't carry.
+opencc-python-reimplemented>=0.1.7
+pypinyin>=0.53           # tone-diacritic pinyin (Style.TONE)
+
 # --- Phase 2 (review / SRS) ---
 fsrs>=5.0.0              # FSRS scheduling
 

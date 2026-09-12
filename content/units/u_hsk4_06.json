@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_06",
+  "title": "HSK 4 詞彙 6",
+  "subtitle": "HSK 4 vocabulary · set 6",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_06_1",
+      "title": "詞彙 6–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_座",
+          "traditional": "座",
+          "pinyin": "zuò",
+          "gloss": "seat; base; stand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_技術",
+          "traditional": "技術",
+          "pinyin": "jì shù",
+          "gloss": "technology; technique; skill",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_往",
+          "traditional": "往",
+          "pinyin": "wǎng",
+          "gloss": "to go (in a direction); to; towards",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_嚴重",
+          "traditional": "嚴重",
+          "pinyin": "yán zhòng",
+          "gloss": "grave; serious; severe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_包括",
+          "traditional": "包括",
+          "pinyin": "bāoguā",
+          "gloss": "to comprise; to include; to involve",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原來",
+          "traditional": "原來",
+          "pinyin": "yuán lái",
+          "gloss": "original; former; originally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_06_2",
+      "title": "詞彙 6–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_光",
+          "traditional": "光",
+          "pinyin": "guāng",
+          "gloss": "light; ray; bright; shiny; only; merely",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_法律",
+          "traditional": "法律",
+          "pinyin": "fǎ lǜ",
+          "gloss": "law",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_父親",
+          "traditional": "父親",
+          "pinyin": "fù qīn",
+          "gloss": "father; also pr. [fù qin]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_並且",
+          "traditional": "並且",
+          "pinyin": "bìng qiě",
+          "gloss": "and; besides; moreover",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_收",
+          "traditional": "收",
+          "pinyin": "shōu",
+          "gloss": "to receive; to accept; to collect",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_社會",
+          "traditional": "社會",
+          "pinyin": "shè huì",
+          "gloss": "society",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_06_3",
+      "title": "詞彙 6–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_證明",
+          "traditional": "證明",
+          "pinyin": "zhèng míng",
+          "gloss": "proof; certificate; identification",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_記者",
+          "traditional": "記者",
+          "pinyin": "jì zhě",
+          "gloss": "reporter; journalist",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_底",
+          "traditional": "底",
+          "pinyin": "dǐ",
+          "gloss": "background; bottom; base",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_確實",
+          "traditional": "確實",
+          "pinyin": "què shí",
+          "gloss": "indeed; really; reliable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不管",
+          "traditional": "不管",
+          "pinyin": "bù guǎn",
+          "gloss": "not to be concerned; regardless of; no matter",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_受到",
+          "traditional": "受到",
+          "pinyin": "shòu dào",
+          "gloss": "to receive (praise, an education, punishment etc); to be ...ed (praised, educated, punished etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 50,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,788 +1,257 @@
 {
   "meta": {
     "schema": 1,
-    "note": "Graded curriculum for Taiwanese Mandarin, HSK 2 → 4 with HSK 1 review woven in. Traditional characters, Taiwan usage. Units are ordered by increasing difficulty and each vocab item is tagged with its own approximate HSK level, so progression and the 'words by level' dashboard read honestly. Taiwan daily-life themes per spec §4.2. Hand-authored and vocab-validated (every sentence uses only characters met by that point + the HSK 1 pool + the function-word allowlist). Expandable via backend/scripts/generate_content.py.",
+    "note": "Graded curriculum for Taiwanese Mandarin, HSK 1→4, cross-tagged to TOCFL. Hand-authored themed units lead; units built from the vendored HSK word lists by backend/scripts/build_skeleton.py follow them as drafts, and are withheld from Learn until scripts/generate_content.py completes them. Traditional characters, Taiwan usage and readings (see content/taiwan_overrides.json).",
     "generated_by": "hand-authored",
     "levels": {
       "note": "Which units belong to which tier, for reference.",
-      "hsk2": ["u_conv", "u_food", "u_time", "u_dir"],
-      "hsk3": ["u_pay", "u_drinks", "u_market", "u_mrt", "u_rent", "u_weather", "u_health"],
-      "hsk4": ["u_bank", "u_work", "u_phone"]
+      "hsk2": [
+        "u_conv",
+        "u_food",
+        "u_time",
+        "u_dir"
+      ],
+      "hsk3": [
+        "u_pay",
+        "u_drinks",
+        "u_market",
+        "u_mrt",
+        "u_rent",
+        "u_weather",
+        "u_health"
+      ],
+      "hsk4": [
+        "u_bank",
+        "u_work",
+        "u_phone"
+      ]
     },
     "function_words": [
-      "我", "你", "妳", "他", "她", "它", "們", "的", "了", "嗎", "呢", "吧",
-      "喔", "耶", "啦", "哦", "嗯", "是", "不", "沒", "有", "在", "要", "想",
-      "會", "能", "可以", "請", "問", "一", "二", "兩", "三", "四", "五", "六",
-      "七", "八", "九", "十", "個", "這", "那", "哪", "裡", "邊", "很", "太",
-      "也", "都", "和", "跟", "還", "就", "才", "給", "幫", "對", "好", "來",
-      "用", "喝", "吃", "錢", "您",
-      "去", "到", "說", "看", "聽", "嗎", "怎麼", "什麼", "多少", "幾", "誰",
-      "為什麼", "因為", "所以", "但是", "可是", "如果", "一下", "一點", "現在",
-      "今天", "謝謝", "不好意思", "先生", "小姐", "元", "塊",
-      "做", "知道", "覺得", "日", "月", "半", "分", "號", "週", "末", "面",
-      "每", "些", "位", "本", "次", "上", "前", "後", "左", "右", "往", "離",
-      "過", "著", "正", "地", "把", "被", "比", "更", "最", "別", "再", "又",
-      "只", "從", "應該", "一起", "百", "千", "萬",
-      "人", "早", "快", "回", "出", "啊", "樣", "像", "真", "北", "封"
-    ]
+      "我",
+      "你",
+      "妳",
+      "他",
+      "她",
+      "它",
+      "們",
+      "的",
+      "了",
+      "嗎",
+      "呢",
+      "吧",
+      "喔",
+      "耶",
+      "啦",
+      "哦",
+      "嗯",
+      "是",
+      "不",
+      "沒",
+      "有",
+      "在",
+      "要",
+      "想",
+      "會",
+      "能",
+      "可以",
+      "請",
+      "問",
+      "一",
+      "二",
+      "兩",
+      "三",
+      "四",
+      "五",
+      "六",
+      "七",
+      "八",
+      "九",
+      "十",
+      "個",
+      "這",
+      "那",
+      "哪",
+      "裡",
+      "邊",
+      "很",
+      "太",
+      "也",
+      "都",
+      "和",
+      "跟",
+      "還",
+      "就",
+      "才",
+      "給",
+      "幫",
+      "對",
+      "好",
+      "來",
+      "用",
+      "喝",
+      "吃",
+      "錢",
+      "您",
+      "去",
+      "到",
+      "說",
+      "看",
+      "聽",
+      "嗎",
+      "怎麼",
+      "什麼",
+      "多少",
+      "幾",
+      "誰",
+      "為什麼",
+      "因為",
+      "所以",
+      "但是",
+      "可是",
+      "如果",
+      "一下",
+      "一點",
+      "現在",
+      "今天",
+      "謝謝",
+      "不好意思",
+      "先生",
+      "小姐",
+      "元",
+      "塊",
+      "做",
+      "知道",
+      "覺得",
+      "日",
+      "月",
+      "半",
+      "分",
+      "號",
+      "週",
+      "末",
+      "面",
+      "每",
+      "些",
+      "位",
+      "本",
+      "次",
+      "上",
+      "前",
+      "後",
+      "左",
+      "右",
+      "往",
+      "離",
+      "過",
+      "著",
+      "正",
+      "地",
+      "把",
+      "被",
+      "比",
+      "更",
+      "最",
+      "別",
+      "再",
+      "又",
+      "只",
+      "從",
+      "應該",
+      "一起",
+      "百",
+      "千",
+      "萬",
+      "人",
+      "早",
+      "快",
+      "回",
+      "出",
+      "啊",
+      "樣",
+      "像",
+      "真",
+      "北",
+      "封"
+    ],
+    "built_by": "scripts/build_skeleton.py"
   },
   "units": [
-    {
-      "id": "u_conv",
-      "title": "便利商店",
-      "subtitle": "Convenience stores",
-      "hsk_level": 2,
-      "sort_order": 1,
-      "lessons": [
-        {
-          "id": "l_conv_1",
-          "title": "找東西",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_bianli", "traditional": "便利商店", "pinyin": "biànlì shāngdiàn", "gloss": "convenience store", "hsk_level": 3, "taiwan_note": "口語常說「小七」(7-Eleven) 或「超商」。", "example": {"hanzi": "那是便利商店。", "pinyin": "Nà shì biànlì shāngdiàn.", "gloss": "That's a convenience store."}},
-            {"id": "v_dongxi", "traditional": "東西", "pinyin": "dōngxi", "gloss": "thing; stuff", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "我想買一點東西。", "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.", "gloss": "I want to buy a few things."}},
-            {"id": "v_mai", "traditional": "買", "pinyin": "mǎi", "gloss": "to buy", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "你要買什麼？", "pinyin": "Nǐ yào mǎi shénme?", "gloss": "What do you want to buy?"}},
-            {"id": "v_shui", "traditional": "水", "pinyin": "shuǐ", "gloss": "water", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "請給我一瓶水。", "pinyin": "Qǐng gěi wǒ yì píng shuǐ.", "gloss": "Please give me a bottle of water."}},
-            {"id": "v_ping", "traditional": "瓶", "pinyin": "píng", "gloss": "bottle (measure word)", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要兩瓶水。", "pinyin": "Wǒ yào liǎng píng shuǐ.", "gloss": "I want two bottles of water."}},
-            {"id": "v_biandang", "traditional": "便當", "pinyin": "biàndāng", "gloss": "boxed meal; bento", "hsk_level": 2, "taiwan_note": "台灣用「便當」，不用「盒飯」。", "example": {"hanzi": "這個便當多少錢？", "pinyin": "Zhè ge biàndāng duōshǎo qián?", "gloss": "How much is this boxed meal?"}},
-            {"id": "v_zhao", "traditional": "找", "pinyin": "zhǎo", "gloss": "to look for", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我在找便當。", "pinyin": "Wǒ zài zhǎo biàndāng.", "gloss": "I'm looking for a boxed meal."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_youmeiyou",
-              "title": "有沒有 — asking if something exists",
-              "pattern": "Subject + 有沒有 + Noun？",
-              "explanation": "To ask whether something exists or is available, put 有沒有 (\"have-not-have\") before the noun. It's a quick yes/no question that doesn't need 嗎.",
-              "examples": [
-                {"hanzi": "你們有沒有便當？", "pinyin": "Nǐmen yǒu méiyǒu biàndāng?", "gloss": "Do you have boxed meals?"},
-                {"hanzi": "這裡有沒有水？", "pinyin": "Zhèlǐ yǒu méiyǒu shuǐ?", "gloss": "Is there water here?"},
-                {"hanzi": "他有沒有便當？", "pinyin": "Tā yǒu méiyǒu biàndāng?", "gloss": "Does he have a boxed meal?"}
-              ],
-              "hsk_level": 2
-            }
-          ],
-          "dialogue": [
-            {"speaker": "客人", "hanzi": "不好意思，請問有沒有便當？", "pinyin": "Bùhǎoyìsi, qǐngwèn yǒu méiyǒu biàndāng?", "gloss": "Excuse me, do you have boxed meals?"},
-            {"speaker": "店員", "hanzi": "有，便當在那邊。", "pinyin": "Yǒu, biàndāng zài nà biān.", "gloss": "Yes, the boxed meals are over there."},
-            {"speaker": "客人", "hanzi": "我在找水。", "pinyin": "Wǒ zài zhǎo shuǐ.", "gloss": "I'm looking for water."},
-            {"speaker": "店員", "hanzi": "水在那邊，這邊請。", "pinyin": "Shuǐ zài nà biān, zhè biān qǐng.", "gloss": "The water's over there, this way please."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "要", "一", "個", "便當"], "pinyin": "Wǒ yào yí ge biàndāng.", "gloss": "I want one boxed meal.", "cloze_index": 4},
-            {"tokens": ["請", "給", "我", "兩", "瓶", "水"], "pinyin": "Qǐng gěi wǒ liǎng píng shuǐ.", "gloss": "Please give me two bottles of water.", "cloze_index": 4},
-            {"tokens": ["便當", "在", "哪裡"], "pinyin": "Biàndāng zài nǎlǐ?", "gloss": "Where are the boxed meals?", "cloze_index": 0},
-            {"tokens": ["你們", "有沒有", "水"], "pinyin": "Nǐmen yǒu méiyǒu shuǐ?", "gloss": "Do you have water?", "cloze_index": 1},
-            {"tokens": ["我", "想", "買", "一點", "東西"], "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.", "gloss": "I want to buy a few things.", "cloze_index": 4}
-          ]
-        },
-        {
-          "id": "l_conv_2",
-          "title": "買飲料和點心",
-          "sort_order": 2,
-          "vocab": [
-            {"id": "v_yinliao", "traditional": "飲料", "pinyin": "yǐnliào", "gloss": "drink; beverage", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要買一個飲料。", "pinyin": "Wǒ yào mǎi yí ge yǐnliào.", "gloss": "I want to buy a drink."}},
-            {"id": "v_niunai", "traditional": "牛奶", "pinyin": "niúnǎi", "gloss": "milk", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我喜歡喝牛奶。", "pinyin": "Wǒ xǐhuān hē niúnǎi.", "gloss": "I like drinking milk."}},
-            {"id": "v_kafei", "traditional": "咖啡", "pinyin": "kāfēi", "gloss": "coffee", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要一杯咖啡。", "pinyin": "Wǒ yào yì bēi kāfēi.", "gloss": "I'd like a coffee."}},
-            {"id": "v_mianbao", "traditional": "麵包", "pinyin": "miànbāo", "gloss": "bread", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "這個麵包很好吃。", "pinyin": "Zhè ge miànbāo hěn hào chī.", "gloss": "This bread is delicious."}},
-            {"id": "v_bei", "traditional": "杯", "pinyin": "bēi", "gloss": "cup / glass (measure word)", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "我要一杯咖啡。", "pinyin": "Wǒ yào yì bēi kāfēi.", "gloss": "I'd like a cup of coffee."}},
-            {"id": "v_lingshi", "traditional": "零食", "pinyin": "língshí", "gloss": "snacks", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我買了一些零食。", "pinyin": "Wǒ mǎi le yìxiē língshí.", "gloss": "I bought some snacks."}},
-            {"id": "v_daizi", "traditional": "袋子", "pinyin": "dàizi", "gloss": "bag", "hsk_level": 3, "taiwan_note": "超商會問「要不要袋子？」，塑膠袋通常要錢。", "example": {"hanzi": "請問要袋子嗎？", "pinyin": "Qǐngwèn yào dàizi ma?", "gloss": "Would you like a bag?"}}
-          ],
-          "grammar": [
-            {
-              "id": "g_le_change",
-              "title": "了 — a completed action",
-              "pattern": "Subject + Verb + 了 + Object",
-              "explanation": "了 after the verb marks that the action happened / is done: 買了 = bought. It's one of the most common uses of 了 in everyday Taiwan speech.",
-              "examples": [
-                {"hanzi": "我買了一個便當。", "pinyin": "Wǒ mǎi le yí ge biàndāng.", "gloss": "I bought a boxed meal."},
-                {"hanzi": "他喝了一杯咖啡。", "pinyin": "Tā hē le yì bēi kāfēi.", "gloss": "He drank a coffee."},
-                {"hanzi": "我買了一些東西。", "pinyin": "Wǒ mǎi le yìxiē dōngxi.", "gloss": "I bought a few things."}
-              ],
-              "hsk_level": 2
-            }
-          ],
-          "dialogue": [
-            {"speaker": "店員", "hanzi": "您好！", "pinyin": "Nín hǎo!", "gloss": "Hello!"},
-            {"speaker": "客人", "hanzi": "我要一杯咖啡和一個麵包。", "pinyin": "Wǒ yào yì bēi kāfēi hàn yí ge miànbāo.", "gloss": "I'd like a coffee and a piece of bread."},
-            {"speaker": "店員", "hanzi": "好，要不要袋子？", "pinyin": "Hǎo, yào bú yào dàizi?", "gloss": "Sure, would you like a bag?"},
-            {"speaker": "客人", "hanzi": "不用，謝謝。", "pinyin": "Búyòng, xièxie.", "gloss": "No need, thanks."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "要", "一", "杯", "咖啡"], "pinyin": "Wǒ yào yì bēi kāfēi.", "gloss": "I'd like a coffee.", "cloze_index": 4},
-            {"tokens": ["我", "買", "了", "一些", "零食"], "pinyin": "Wǒ mǎi le yìxiē língshí.", "gloss": "I bought some snacks.", "cloze_index": 4},
-            {"tokens": ["這個", "麵包", "很", "好吃"], "pinyin": "Zhè ge miànbāo hěn hào chī.", "gloss": "This bread is delicious.", "cloze_index": 1},
-            {"tokens": ["請問", "要", "袋子", "嗎"], "pinyin": "Qǐngwèn yào dàizi ma?", "gloss": "Would you like a bag?", "cloze_index": 2},
-            {"tokens": ["我", "喜歡", "喝", "牛奶"], "pinyin": "Wǒ xǐhuān hē niúnǎi.", "gloss": "I like drinking milk.", "cloze_index": 3}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_food",
-      "title": "點餐吃飯",
-      "subtitle": "Ordering and eating",
-      "hsk_level": 2,
-      "sort_order": 2,
-      "lessons": [
-        {
-          "id": "l_food_1",
-          "title": "在餐廳點菜",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_canting", "traditional": "餐廳", "pinyin": "cāntīng", "gloss": "restaurant", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "這家餐廳很好吃。", "pinyin": "Zhè jiā cāntīng hěn hào chī.", "gloss": "This restaurant is delicious."}},
-            {"id": "v_caidan", "traditional": "菜單", "pinyin": "càidān", "gloss": "menu", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "請給我菜單。", "pinyin": "Qǐng gěi wǒ càidān.", "gloss": "Please give me the menu."}},
-            {"id": "v_dian", "traditional": "點", "pinyin": "diǎn", "gloss": "to order (food)", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要點菜。", "pinyin": "Wǒ yào diǎn cài.", "gloss": "I'd like to order."}},
-            {"id": "v_jia", "traditional": "家", "pinyin": "jiā", "gloss": "home; (measure word for shops)", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "這家餐廳不錯。", "pinyin": "Zhè jiā cāntīng búcuò.", "gloss": "This restaurant is pretty good."}},
-            {"id": "v_hao_chi", "traditional": "好吃", "pinyin": "hào chī", "gloss": "tasty; delicious", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "這個菜很好吃。", "pinyin": "Zhè ge cài hěn hào chī.", "gloss": "This dish is delicious."}},
-            {"id": "v_bao", "traditional": "飽", "pinyin": "bǎo", "gloss": "full (from eating)", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我吃飽了。", "pinyin": "Wǒ chī bǎo le.", "gloss": "I'm full."}},
-            {"id": "v_bucuo", "traditional": "不錯", "pinyin": "búcuò", "gloss": "not bad; pretty good", "hsk_level": 2, "taiwan_note": "台灣口語很常用，等於「很好」。", "example": {"hanzi": "這家咖啡不錯。", "pinyin": "Zhè jiā kāfēi búcuò.", "gloss": "This place's coffee is pretty good."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_de_complement",
-              "title": "得 — saying how well an action goes",
-              "pattern": "Verb + 得 + Adjective",
-              "explanation": "得 links a verb to a comment on how it's done: 說得很好 = speaks (it) well. Note this 得 (de) is different from the completed-action 了.",
-              "examples": [
-                {"hanzi": "你說得很好。", "pinyin": "Nǐ shuō de hěn hǎo.", "gloss": "You speak very well."},
-                {"hanzi": "他吃得很多。", "pinyin": "Tā chī de hěn duō.", "gloss": "He eats a lot."},
-                {"hanzi": "我來得太早了。", "pinyin": "Wǒ lái de tài zǎo le.", "gloss": "I came too early."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "服務生", "hanzi": "您好，這是菜單。", "pinyin": "Nín hǎo, zhè shì càidān.", "gloss": "Hello, here's the menu."},
-            {"speaker": "客人", "hanzi": "謝謝，我要點菜。", "pinyin": "Xièxie, wǒ yào diǎn cài.", "gloss": "Thanks, I'd like to order."},
-            {"speaker": "服務生", "hanzi": "好的，您要點什麼？", "pinyin": "Hǎo de, nín yào diǎn shénme?", "gloss": "Sure, what would you like?"},
-            {"speaker": "客人", "hanzi": "這個菜看起來不錯。", "pinyin": "Zhè ge cài kàn qǐlái búcuò.", "gloss": "This dish looks pretty good."}
-          ],
-          "sentences": [
-            {"tokens": ["請", "給", "我", "菜單"], "pinyin": "Qǐng gěi wǒ càidān.", "gloss": "Please give me the menu.", "cloze_index": 3},
-            {"tokens": ["我", "要", "點", "菜"], "pinyin": "Wǒ yào diǎn cài.", "gloss": "I'd like to order.", "cloze_index": 2},
-            {"tokens": ["這", "家", "餐廳", "很", "好吃"], "pinyin": "Zhè jiā cāntīng hěn hào chī.", "gloss": "This restaurant is delicious.", "cloze_index": 2},
-            {"tokens": ["我", "吃", "飽", "了"], "pinyin": "Wǒ chī bǎo le.", "gloss": "I'm full.", "cloze_index": 2},
-            {"tokens": ["他", "吃", "得", "很", "多"], "pinyin": "Tā chī de hěn duō.", "gloss": "He eats a lot.", "cloze_index": 2}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_time",
-      "title": "時間約會",
-      "subtitle": "Time and making plans",
-      "hsk_level": 2,
-      "sort_order": 3,
-      "lessons": [
-        {
-          "id": "l_time_1",
-          "title": "現在幾點",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_shijian", "traditional": "時間", "pinyin": "shíjiān", "gloss": "time", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "你有時間嗎？", "pinyin": "Nǐ yǒu shíjiān ma?", "gloss": "Do you have time?"}},
-            {"id": "v_dianzhong", "traditional": "點鐘", "pinyin": "diǎnzhōng", "gloss": "o'clock", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "現在三點鐘。", "pinyin": "Xiànzài sān diǎnzhōng.", "gloss": "It's three o'clock now."}},
-            {"id": "v_zaoshang", "traditional": "早上", "pinyin": "zǎoshang", "gloss": "morning", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我早上喝咖啡。", "pinyin": "Wǒ zǎoshang hē kāfēi.", "gloss": "I drink coffee in the morning."}},
-            {"id": "v_xiawu", "traditional": "下午", "pinyin": "xiàwǔ", "gloss": "afternoon", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "下午我要工作。", "pinyin": "Xiàwǔ wǒ yào gōngzuò.", "gloss": "I have to work in the afternoon."}},
-            {"id": "v_wanshang", "traditional": "晚上", "pinyin": "wǎnshang", "gloss": "evening; night", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "晚上我在家。", "pinyin": "Wǎnshang wǒ zài jiā.", "gloss": "I'm home in the evening."}},
-            {"id": "v_zhoumo", "traditional": "週末", "pinyin": "zhōumò", "gloss": "weekend", "hsk_level": 2, "taiwan_note": "台灣多用「週末」，也說「假日」。", "example": {"hanzi": "週末你想做什麼？", "pinyin": "Zhōumò nǐ xiǎng zuò shénme?", "gloss": "What do you want to do this weekend?"}},
-            {"id": "v_yiqi", "traditional": "見面", "pinyin": "jiànmiàn", "gloss": "to meet up", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我們週末見面吧。", "pinyin": "Wǒmen zhōumò jiànmiàn ba.", "gloss": "Let's meet up this weekend."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_time_before_verb",
-              "title": "Time before the verb",
-              "pattern": "Subject + Time + Verb …",
-              "explanation": "In Chinese the time when something happens comes before the verb, not after: 我晚上回家 = I go home in the evening. Time can also lead the whole sentence.",
-              "examples": [
-                {"hanzi": "我早上喝咖啡。", "pinyin": "Wǒ zǎoshang hē kāfēi.", "gloss": "I drink coffee in the morning."},
-                {"hanzi": "下午他要工作。", "pinyin": "Xiàwǔ tā yào gōngzuò.", "gloss": "He has to work in the afternoon."},
-                {"hanzi": "週末我們一起吃飯。", "pinyin": "Zhōumò wǒmen yìqǐ chī fàn.", "gloss": "We eat together on the weekend."}
-              ],
-              "hsk_level": 2
-            }
-          ],
-          "dialogue": [
-            {"speaker": "朋友", "hanzi": "週末你有時間嗎？", "pinyin": "Zhōumò nǐ yǒu shíjiān ma?", "gloss": "Do you have time this weekend?"},
-            {"speaker": "我", "hanzi": "有啊，你想做什麼？", "pinyin": "Yǒu a, nǐ xiǎng zuò shénme?", "gloss": "Yeah, what do you want to do?"},
-            {"speaker": "朋友", "hanzi": "我們一起吃飯吧。", "pinyin": "Wǒmen yìqǐ chī fàn ba.", "gloss": "Let's have a meal together."},
-            {"speaker": "我", "hanzi": "好，晚上六點見面。", "pinyin": "Hǎo, wǎnshang liù diǎn jiànmiàn.", "gloss": "OK, let's meet at six in the evening."}
-          ],
-          "sentences": [
-            {"tokens": ["現在", "幾", "點"], "pinyin": "Xiànzài jǐ diǎn?", "gloss": "What time is it now?", "cloze_index": 1},
-            {"tokens": ["你", "有", "時間", "嗎"], "pinyin": "Nǐ yǒu shíjiān ma?", "gloss": "Do you have time?", "cloze_index": 2},
-            {"tokens": ["我", "早上", "喝", "咖啡"], "pinyin": "Wǒ zǎoshang hē kāfēi.", "gloss": "I drink coffee in the morning.", "cloze_index": 1},
-            {"tokens": ["週末", "我們", "一起", "吃飯"], "pinyin": "Zhōumò wǒmen yìqǐ chī fàn.", "gloss": "We eat together on the weekend.", "cloze_index": 0},
-            {"tokens": ["晚上", "六", "點", "見面"], "pinyin": "Wǎnshang liù diǎn jiànmiàn.", "gloss": "Meet at six in the evening.", "cloze_index": 3}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_dir",
-      "title": "問路",
-      "subtitle": "Asking for directions",
-      "hsk_level": 3,
-      "sort_order": 4,
-      "lessons": [
-        {
-          "id": "l_dir_1",
-          "title": "怎麼走",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_zenmezou", "traditional": "怎麼走", "pinyin": "zěnme zǒu", "gloss": "how to get there", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "請問銀行怎麼走？", "pinyin": "Qǐngwèn yínháng zěnme zǒu?", "gloss": "Excuse me, how do I get to the bank?"}},
-            {"id": "v_zhizou", "traditional": "直走", "pinyin": "zhí zǒu", "gloss": "go straight", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "往前直走就到了。", "pinyin": "Wǎng qián zhí zǒu jiù dào le.", "gloss": "Go straight ahead and you're there."}},
-            {"id": "v_zhuan", "traditional": "轉", "pinyin": "zhuǎn", "gloss": "to turn", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "在前面往右轉。", "pinyin": "Zài qiánmiàn wǎng yòu zhuǎn.", "gloss": "Turn right up ahead."}},
-            {"id": "v_lukou", "traditional": "路口", "pinyin": "lùkǒu", "gloss": "intersection", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "在下一個路口左轉。", "pinyin": "Zài xià yí ge lùkǒu zuǒ zhuǎn.", "gloss": "Turn left at the next intersection."}},
-            {"id": "v_fujin", "traditional": "附近", "pinyin": "fùjìn", "gloss": "nearby; vicinity", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "附近有便利商店嗎？", "pinyin": "Fùjìn yǒu biànlì shāngdiàn ma?", "gloss": "Is there a convenience store nearby?"}},
-            {"id": "v_duimian", "traditional": "對面", "pinyin": "duìmiàn", "gloss": "across from; opposite", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "餐廳在銀行對面。", "pinyin": "Cāntīng zài yínháng duìmiàn.", "gloss": "The restaurant is across from the bank."}},
-            {"id": "v_yinhang", "traditional": "銀行", "pinyin": "yínháng", "gloss": "bank", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "銀行在哪裡？", "pinyin": "Yínháng zài nǎlǐ?", "gloss": "Where is the bank?"}},
-            {"id": "v_yuan", "traditional": "遠", "pinyin": "yuǎn", "gloss": "far", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "銀行遠不遠？", "pinyin": "Yínháng yuǎn bù yuǎn?", "gloss": "Is the bank far?"}}
-          ],
-          "grammar": [
-            {
-              "id": "g_wang_direction",
-              "title": "往 — moving toward a direction",
-              "pattern": "往 + Direction + Verb",
-              "explanation": "往 (wǎng) marks the direction of movement and comes before the verb: 往前走 = walk forward, 往右轉 = turn right.",
-              "examples": [
-                {"hanzi": "往前直走。", "pinyin": "Wǎng qián zhí zǒu.", "gloss": "Go straight ahead."},
-                {"hanzi": "在路口往左轉。", "pinyin": "Zài lùkǒu wǎng zuǒ zhuǎn.", "gloss": "Turn left at the intersection."},
-                {"hanzi": "往右邊走就到了。", "pinyin": "Wǎng yòubiān zǒu jiù dào le.", "gloss": "Go to the right and you're there."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "路人", "hanzi": "不好意思，請問銀行怎麼走？", "pinyin": "Bùhǎoyìsi, qǐngwèn yínháng zěnme zǒu?", "gloss": "Excuse me, how do I get to the bank?"},
-            {"speaker": "我", "hanzi": "往前直走，在路口往右轉。", "pinyin": "Wǎng qián zhí zǒu, zài lùkǒu wǎng yòu zhuǎn.", "gloss": "Go straight, then turn right at the intersection."},
-            {"speaker": "路人", "hanzi": "遠不遠？", "pinyin": "Yuǎn bù yuǎn?", "gloss": "Is it far?"},
-            {"speaker": "我", "hanzi": "不遠，就在銀行對面。", "pinyin": "Bù yuǎn, jiù zài yínháng duìmiàn.", "gloss": "Not far, it's right across from the bank."}
-          ],
-          "sentences": [
-            {"tokens": ["銀行", "怎麼走"], "pinyin": "Yínháng zěnme zǒu?", "gloss": "How do I get to the bank?", "cloze_index": 1},
-            {"tokens": ["往", "前", "直走"], "pinyin": "Wǎng qián zhí zǒu.", "gloss": "Go straight ahead.", "cloze_index": 2},
-            {"tokens": ["在", "路口", "往", "右", "轉"], "pinyin": "Zài lùkǒu wǎng yòu zhuǎn.", "gloss": "Turn right at the intersection.", "cloze_index": 4},
-            {"tokens": ["附近", "有", "便利商店", "嗎"], "pinyin": "Fùjìn yǒu biànlì shāngdiàn ma?", "gloss": "Is there a convenience store nearby?", "cloze_index": 0},
-            {"tokens": ["餐廳", "在", "銀行", "對面"], "pinyin": "Cāntīng zài yínháng duìmiàn.", "gloss": "The restaurant is across from the bank.", "cloze_index": 3}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_pay",
-      "title": "結帳付款",
-      "subtitle": "Paying and checking out",
-      "hsk_level": 3,
-      "sort_order": 5,
-      "lessons": [
-        {
-          "id": "l_pay_1",
-          "title": "結帳",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_jiezhang", "traditional": "結帳", "pinyin": "jiézhàng", "gloss": "to check out; pay the bill", "hsk_level": 3, "taiwan_note": "在超商、餐廳都說「結帳」。", "example": {"hanzi": "我要結帳。", "pinyin": "Wǒ yào jiézhàng.", "gloss": "I'd like to check out."}},
-            {"id": "v_yigong", "traditional": "一共", "pinyin": "yígòng", "gloss": "in total; altogether", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "一共三個便當。", "pinyin": "Yígòng sān ge biàndāng.", "gloss": "Three boxed meals in total."}},
-            {"id": "v_easycard", "traditional": "悠遊卡", "pinyin": "yōuyóukǎ", "gloss": "EasyCard (stored-value card)", "hsk_level": 3, "taiwan_note": "台灣捷運、超商通用的儲值卡。", "example": {"hanzi": "可以用悠遊卡付嗎？", "pinyin": "Kěyǐ yòng yōuyóukǎ fù ma?", "gloss": "Can I pay with an EasyCard?"}},
-            {"id": "v_fuqian", "traditional": "付", "pinyin": "fù", "gloss": "to pay", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我用現金付。", "pinyin": "Wǒ yòng xiànjīn fù.", "gloss": "I'll pay with cash."}},
-            {"id": "v_xianjin", "traditional": "現金", "pinyin": "xiànjīn", "gloss": "cash", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "我要用現金付。", "pinyin": "Wǒ yào yòng xiànjīn fù.", "gloss": "I'd like to pay with cash."}},
-            {"id": "v_shua", "traditional": "刷卡", "pinyin": "shuākǎ", "gloss": "to pay by (swiping a) card", "hsk_level": 4, "taiwan_note": "信用卡付款口語說「刷卡」。", "example": {"hanzi": "可以刷卡嗎？", "pinyin": "Kěyǐ shuākǎ ma?", "gloss": "Can I pay by card?"}},
-            {"id": "v_fapiao", "traditional": "發票", "pinyin": "fāpiào", "gloss": "receipt (with lottery number)", "hsk_level": 4, "taiwan_note": "統一發票有對獎功能，別隨手丟！", "example": {"hanzi": "發票要嗎？", "pinyin": "Fāpiào yào ma?", "gloss": "Do you want the receipt?"}}
-          ],
-          "grammar": [
-            {
-              "id": "g_yong",
-              "title": "用 — the means / instrument",
-              "pattern": "Subject + 用 + Instrument + Verb",
-              "explanation": "用 (\"to use\") marks the tool or method you do something with. Put 用 + the means before the verb: 用現金付 = pay with cash.",
-              "examples": [
-                {"hanzi": "我用悠遊卡付。", "pinyin": "Wǒ yòng yōuyóukǎ fù.", "gloss": "I'll pay with an EasyCard."},
-                {"hanzi": "可以用現金付嗎？", "pinyin": "Kěyǐ yòng xiànjīn fù ma?", "gloss": "Can I pay with cash?"},
-                {"hanzi": "你用什麼付？", "pinyin": "Nǐ yòng shénme fù?", "gloss": "What do you pay with?"}
-              ],
-              "hsk_level": 3
-            },
-            {
-              "id": "g_zhi",
-              "title": "只 — only",
-              "pattern": "Subject + 只 + Verb",
-              "explanation": "只 (\"only\") goes right before the verb to limit it: 只收現金 = only accept cash.",
-              "examples": [
-                {"hanzi": "他只買便當。", "pinyin": "Tā zhǐ mǎi biàndāng.", "gloss": "He only buys boxed meals."},
-                {"hanzi": "我只要一個。", "pinyin": "Wǒ zhǐ yào yí ge.", "gloss": "I only want one."},
-                {"hanzi": "我只喝水。", "pinyin": "Wǒ zhǐ hē shuǐ.", "gloss": "I only drink water."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "店員", "hanzi": "您好，要結帳嗎？", "pinyin": "Nín hǎo, yào jiézhàng ma?", "gloss": "Hello, ready to check out?"},
-            {"speaker": "客人", "hanzi": "對，一共多少錢？", "pinyin": "Duì, yígòng duōshǎo qián?", "gloss": "Yes, how much altogether?"},
-            {"speaker": "店員", "hanzi": "一共八十五元。發票要嗎？", "pinyin": "Yígòng bāshíwǔ yuán. Fāpiào yào ma?", "gloss": "Eighty-five NT dollars total. Do you want the receipt?"},
-            {"speaker": "客人", "hanzi": "要，我用悠遊卡付。", "pinyin": "Yào, wǒ yòng yōuyóukǎ fù.", "gloss": "Yes, I'll pay with my EasyCard."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "要", "結帳"], "pinyin": "Wǒ yào jiézhàng.", "gloss": "I'd like to check out.", "cloze_index": 2},
-            {"tokens": ["一共", "多少錢"], "pinyin": "Yígòng duōshǎo qián?", "gloss": "How much altogether?", "cloze_index": 0},
-            {"tokens": ["我", "用", "悠遊卡", "付"], "pinyin": "Wǒ yòng yōuyóukǎ fù.", "gloss": "I'll pay with an EasyCard.", "cloze_index": 2},
-            {"tokens": ["這裡", "只", "用", "現金", "嗎"], "pinyin": "Zhèlǐ zhǐ yòng xiànjīn ma?", "gloss": "Do you only take cash here?", "cloze_index": 3},
-            {"tokens": ["發票", "要", "嗎"], "pinyin": "Fāpiào yào ma?", "gloss": "Do you want the receipt?", "cloze_index": 0}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_drinks",
-      "title": "手搖飲料",
-      "subtitle": "Bubble tea & hand-shaken drinks",
-      "hsk_level": 3,
-      "sort_order": 6,
-      "lessons": [
-        {
-          "id": "l_drinks_1",
-          "title": "點珍奶",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_zhenzhu", "traditional": "珍珠奶茶", "pinyin": "zhēnzhū nǎichá", "gloss": "bubble (pearl) milk tea", "hsk_level": 3, "taiwan_note": "口語常簡稱「珍奶」。", "example": {"hanzi": "我要一杯珍珠奶茶。", "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea."}},
-            {"id": "v_tiandu", "traditional": "甜度", "pinyin": "tiándù", "gloss": "sweetness level", "hsk_level": 3, "taiwan_note": "手搖店必問：甜度、冰塊。", "example": {"hanzi": "甜度要半糖嗎？", "pinyin": "Tiándù yào bàntáng ma?", "gloss": "Half sugar for the sweetness?"}},
-            {"id": "v_bingkuai", "traditional": "冰塊", "pinyin": "bīngkuài", "gloss": "ice (cubes)", "hsk_level": 3, "taiwan_note": "常說「去冰、微冰、正常冰」。", "example": {"hanzi": "我要去冰。", "pinyin": "Wǒ yào qù bīng.", "gloss": "I want no ice."}},
-            {"id": "v_bantang", "traditional": "半糖", "pinyin": "bàntáng", "gloss": "half sugar", "hsk_level": 3, "taiwan_note": "甜度選項：全糖、半糖、微糖、無糖。", "example": {"hanzi": "珍奶半糖，謝謝。", "pinyin": "Zhēnnǎi bàntáng, xièxie.", "gloss": "Bubble tea, half sugar, thanks."}},
-            {"id": "v_waidai", "traditional": "外帶", "pinyin": "wàidài", "gloss": "takeout; to go", "hsk_level": 3, "taiwan_note": "常和「內用」對比使用。", "example": {"hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "For here or to go?"}},
-            {"id": "v_neiyong", "traditional": "內用", "pinyin": "nèiyòng", "gloss": "dine in", "hsk_level": 3, "taiwan_note": "台灣點餐必問：內用還是外帶。", "example": {"hanzi": "內用還是外帶？", "pinyin": "Nèiyòng háishì wàidài?", "gloss": "For here or to go?"}},
-            {"id": "v_hongcha", "traditional": "紅茶", "pinyin": "hóngchá", "gloss": "black tea", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我要一杯紅茶。", "pinyin": "Wǒ yào yì bēi hóngchá.", "gloss": "I'd like a black tea."}},
-            {"id": "v_quantang", "traditional": "全糖", "pinyin": "quántáng", "gloss": "full sugar", "hsk_level": 3, "taiwan_note": "甜度：全糖、半糖、微糖、無糖。", "example": {"hanzi": "甜度要全糖嗎？", "pinyin": "Tiándù yào quántáng ma?", "gloss": "Do you want full sugar?"}},
-            {"id": "v_huanying", "traditional": "歡迎光臨", "pinyin": "huānyíng guānglín", "gloss": "welcome (shop greeting)", "hsk_level": 3, "taiwan_note": "進店時店員的招呼語。", "example": {"hanzi": "歡迎光臨！", "pinyin": "Huānyíng guānglín!", "gloss": "Welcome!"}}
-          ],
-          "grammar": [
-            {
-              "id": "g_haishi",
-              "title": "還是 — \"or\" in questions",
-              "pattern": "A 還是 B？",
-              "explanation": "還是 offers a choice between two options in a question: A 還是 B = \"A or B?\". Don't use 或 (huò) here — 或 is for statements, 還是 is for questions.",
-              "examples": [
-                {"hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?"},
-                {"hanzi": "你要紅茶還是奶茶？", "pinyin": "Nǐ yào hóngchá háishì nǎichá?", "gloss": "Do you want black tea or milk tea?"},
-                {"hanzi": "半糖還是全糖？", "pinyin": "Bàntáng háishì quántáng?", "gloss": "Half sugar or full sugar?"}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "店員", "hanzi": "歡迎光臨，要喝什麼？", "pinyin": "Huānyíng guānglín, yào hē shénme?", "gloss": "Welcome, what would you like to drink?"},
-            {"speaker": "客人", "hanzi": "我要一杯珍珠奶茶。", "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea."},
-            {"speaker": "店員", "hanzi": "甜度冰塊呢？", "pinyin": "Tiándù bīngkuài ne?", "gloss": "Sweetness and ice?"},
-            {"speaker": "客人", "hanzi": "半糖、去冰，謝謝。", "pinyin": "Bàntáng, qù bīng, xièxie.", "gloss": "Half sugar, no ice, thanks."},
-            {"speaker": "店員", "hanzi": "外帶還是內用？", "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?"},
-            {"speaker": "客人", "hanzi": "外帶。", "pinyin": "Wàidài.", "gloss": "To go."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "要", "一", "杯", "珍珠奶茶"], "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea.", "cloze_index": 4},
-            {"tokens": ["甜度", "要", "半糖"], "pinyin": "Tiándù yào bàntáng.", "gloss": "Half sugar for the sweetness.", "cloze_index": 2},
-            {"tokens": ["我", "要", "去", "冰塊"], "pinyin": "Wǒ yào qù bīngkuài.", "gloss": "I want no ice.", "cloze_index": 3},
-            {"tokens": ["外帶", "還是", "內用"], "pinyin": "Wàidài háishì nèiyòng?", "gloss": "To go or dine in?", "cloze_index": 1},
-            {"tokens": ["請", "給", "我", "兩", "杯"], "pinyin": "Qǐng gěi wǒ liǎng bēi.", "gloss": "Please give me two cups.", "cloze_index": 4}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_market",
-      "title": "夜市",
-      "subtitle": "Night market",
-      "hsk_level": 3,
-      "sort_order": 7,
-      "lessons": [
-        {
-          "id": "l_market_1",
-          "title": "逛夜市",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_yeshi", "traditional": "夜市", "pinyin": "yèshì", "gloss": "night market", "hsk_level": 3, "taiwan_note": "台灣夜市文化的核心，如士林夜市。", "example": {"hanzi": "晚上我們去夜市。", "pinyin": "Wǎnshang wǒmen qù yèshì.", "gloss": "Let's go to the night market tonight."}},
-            {"id": "v_guang", "traditional": "逛", "pinyin": "guàng", "gloss": "to stroll / browse around", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我喜歡逛夜市。", "pinyin": "Wǒ xǐhuān guàng yèshì.", "gloss": "I like strolling the night market."}},
-            {"id": "v_xiaochi", "traditional": "小吃", "pinyin": "xiǎochī", "gloss": "small eats; street food", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這裡的小吃很有名。", "pinyin": "Zhèlǐ de xiǎochī hěn yǒumíng.", "gloss": "The street food here is famous."}},
-            {"id": "v_haochi_ma", "traditional": "臭豆腐", "pinyin": "chòudòufu", "gloss": "stinky tofu", "hsk_level": 4, "taiwan_note": "夜市經典，聞起來臭但很多人愛。", "example": {"hanzi": "你要吃臭豆腐嗎？", "pinyin": "Nǐ yào chī chòudòufu ma?", "gloss": "Do you want to eat stinky tofu?"}},
-            {"id": "v_pianyi", "traditional": "便宜", "pinyin": "piányí", "gloss": "cheap; inexpensive", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "夜市的東西很便宜。", "pinyin": "Yèshì de dōngxi hěn piányí.", "gloss": "Things at the night market are cheap."}},
-            {"id": "v_youming", "traditional": "有名", "pinyin": "yǒumíng", "gloss": "famous", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這家小吃很有名。", "pinyin": "Zhè jiā xiǎochī hěn yǒumíng.", "gloss": "This food stall is famous."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_de_attributive",
-              "title": "的 — linking a description to a noun",
-              "pattern": "Description + 的 + Noun",
-              "explanation": "的 attaches a describing phrase to a noun: 夜市的東西 = the night market's things, 很有名的小吃 = famous street food.",
-              "examples": [
-                {"hanzi": "夜市的東西很便宜。", "pinyin": "Yèshì de dōngxi hěn piányí.", "gloss": "Night-market things are cheap."},
-                {"hanzi": "這是很有名的小吃。", "pinyin": "Zhè shì hěn yǒumíng de xiǎochī.", "gloss": "This is famous street food."},
-                {"hanzi": "我買的飲料很便宜。", "pinyin": "Wǒ mǎi de yǐnliào hěn piányí.", "gloss": "The drink I bought was cheap."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "朋友", "hanzi": "晚上要不要去逛夜市？", "pinyin": "Wǎnshang yào bú yào qù guàng yèshì?", "gloss": "Want to go stroll the night market tonight?"},
-            {"speaker": "我", "hanzi": "好啊，那裡的小吃很有名。", "pinyin": "Hǎo a, nàlǐ de xiǎochī hěn yǒumíng.", "gloss": "Sure, the street food there is famous."},
-            {"speaker": "朋友", "hanzi": "也很便宜。", "pinyin": "Yě hěn piányí.", "gloss": "And it's cheap too."},
-            {"speaker": "我", "hanzi": "我想吃臭豆腐！", "pinyin": "Wǒ xiǎng chī chòudòufu!", "gloss": "I want to eat stinky tofu!"}
-          ],
-          "sentences": [
-            {"tokens": ["晚上", "我們", "去", "夜市"], "pinyin": "Wǎnshang wǒmen qù yèshì.", "gloss": "Let's go to the night market tonight.", "cloze_index": 3},
-            {"tokens": ["我", "喜歡", "逛", "夜市"], "pinyin": "Wǒ xǐhuān guàng yèshì.", "gloss": "I like strolling the night market.", "cloze_index": 2},
-            {"tokens": ["夜市", "的", "東西", "很", "便宜"], "pinyin": "Yèshì de dōngxi hěn piányí.", "gloss": "Night-market things are cheap.", "cloze_index": 4},
-            {"tokens": ["這", "家", "小吃", "很", "有名"], "pinyin": "Zhè jiā xiǎochī hěn yǒumíng.", "gloss": "This food stall is famous.", "cloze_index": 4},
-            {"tokens": ["這個", "小吃", "真", "好吃"], "pinyin": "Zhè ge xiǎochī zhēn hào chī.", "gloss": "This street food is really tasty.", "cloze_index": 3}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_mrt",
-      "title": "捷運與 YouBike",
-      "subtitle": "MRT, buses and bikes",
-      "hsk_level": 3,
-      "sort_order": 8,
-      "lessons": [
-        {
-          "id": "l_mrt_1",
-          "title": "搭捷運",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_jieyun", "traditional": "捷運", "pinyin": "jiéyùn", "gloss": "MRT (metro)", "hsk_level": 3, "taiwan_note": "台北、高雄的地鐵都叫「捷運」，不說「地鐵」。", "example": {"hanzi": "我搭捷運去。", "pinyin": "Wǒ dā jiéyùn qù.", "gloss": "I'll take the MRT there."}},
-            {"id": "v_da", "traditional": "搭", "pinyin": "dā", "gloss": "to take (transport)", "hsk_level": 3, "taiwan_note": "台灣說「搭車」，也說「坐車」。", "example": {"hanzi": "你要搭什麼車？", "pinyin": "Nǐ yào dā shénme chē?", "gloss": "What are you going to take?"}},
-            {"id": "v_zhan", "traditional": "站", "pinyin": "zhàn", "gloss": "station; stop", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "下一站是台北車站。", "pinyin": "Xià yí zhàn shì Táiběi chēzhàn.", "gloss": "The next stop is Taipei Main Station."}},
-            {"id": "v_gongche", "traditional": "公車", "pinyin": "gōngchē", "gloss": "city bus", "hsk_level": 3, "taiwan_note": "台灣說「公車」，不說「公交車」。", "example": {"hanzi": "我每天坐公車。", "pinyin": "Wǒ měitiān zuò gōngchē.", "gloss": "I take the bus every day."}},
-            {"id": "v_youbike", "traditional": "腳踏車", "pinyin": "jiǎotàchē", "gloss": "bicycle", "hsk_level": 3, "taiwan_note": "台灣說「腳踏車」，不說「自行車」；共享單車是 YouBike。", "example": {"hanzi": "我要騎腳踏車。", "pinyin": "Wǒ yào qí jiǎotàchē.", "gloss": "I want to ride a bike."}},
-            {"id": "v_qi", "traditional": "騎", "pinyin": "qí", "gloss": "to ride (a bike/scooter)", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "他騎腳踏車上學。", "pinyin": "Tā qí jiǎotàchē shàngxué.", "gloss": "He rides a bike to school."}},
-            {"id": "v_zuo", "traditional": "坐", "pinyin": "zuò", "gloss": "to sit; to ride (sitting)", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我們坐捷運吧。", "pinyin": "Wǒmen zuò jiéyùn ba.", "gloss": "Let's take the MRT."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_verb_object_go",
-              "title": "Means of transport before the destination",
-              "pattern": "Subject + 搭/坐/騎 + Vehicle + 去 + Place",
-              "explanation": "Say how you travel before where you're going: 搭捷運去台北 = take the MRT to Taipei. The transport verb-phrase comes first, then 去 + place.",
-              "examples": [
-                {"hanzi": "我搭捷運去台北。", "pinyin": "Wǒ dā jiéyùn qù Táiběi.", "gloss": "I take the MRT to Taipei."},
-                {"hanzi": "他坐公車去學校。", "pinyin": "Tā zuò gōngchē qù xuéxiào.", "gloss": "He takes the bus to school."},
-                {"hanzi": "我們騎腳踏車去夜市。", "pinyin": "Wǒmen qí jiǎotàchē qù yèshì.", "gloss": "We ride bikes to the night market."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "朋友", "hanzi": "你要怎麼去台北車站？", "pinyin": "Nǐ yào zěnme qù Táiběi chēzhàn?", "gloss": "How are you getting to Taipei Main Station?"},
-            {"speaker": "我", "hanzi": "我搭捷運去。", "pinyin": "Wǒ dā jiéyùn qù.", "gloss": "I'll take the MRT."},
-            {"speaker": "朋友", "hanzi": "捷運站在哪裡？", "pinyin": "Jiéyùn zhàn zài nǎlǐ?", "gloss": "Where's the MRT station?"},
-            {"speaker": "我", "hanzi": "很近，我們一起坐吧。", "pinyin": "Hěn jìn, wǒmen yìqǐ zuò ba.", "gloss": "It's close, let's ride together."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "搭", "捷運", "去", "台北"], "pinyin": "Wǒ dā jiéyùn qù Táiběi.", "gloss": "I take the MRT to Taipei.", "cloze_index": 1},
-            {"tokens": ["下", "一", "站", "是", "台北車站"], "pinyin": "Xià yí zhàn shì Táiběi chēzhàn.", "gloss": "The next stop is Taipei Main Station.", "cloze_index": 2},
-            {"tokens": ["我", "每天", "坐", "公車"], "pinyin": "Wǒ měitiān zuò gōngchē.", "gloss": "I take the bus every day.", "cloze_index": 3},
-            {"tokens": ["他", "騎", "腳踏車", "上學"], "pinyin": "Tā qí jiǎotàchē shàngxué.", "gloss": "He rides a bike to school.", "cloze_index": 1},
-            {"tokens": ["我們", "一起", "坐", "捷運"], "pinyin": "Wǒmen yìqǐ zuò jiéyùn.", "gloss": "Let's take the MRT together.", "cloze_index": 2}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_rent",
-      "title": "租房子",
-      "subtitle": "Renting a place",
-      "hsk_level": 3,
-      "sort_order": 9,
-      "lessons": [
-        {
-          "id": "l_rent_1",
-          "title": "看房子",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_zu", "traditional": "租", "pinyin": "zū", "gloss": "to rent", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我想租一間房間。", "pinyin": "Wǒ xiǎng zū yì jiān fángjiān.", "gloss": "I want to rent a room."}},
-            {"id": "v_fangzi", "traditional": "房子", "pinyin": "fángzi", "gloss": "house; place (to live)", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這個房子很大。", "pinyin": "Zhè ge fángzi hěn dà.", "gloss": "This place is big."}},
-            {"id": "v_fangjian", "traditional": "房間", "pinyin": "fángjiān", "gloss": "room", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "房間裡有桌子。", "pinyin": "Fángjiān lǐ yǒu zhuōzi.", "gloss": "There's a table in the room."}},
-            {"id": "v_fangzu", "traditional": "房租", "pinyin": "fángzū", "gloss": "rent (money)", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "一個月房租多少錢？", "pinyin": "Yí ge yuè fángzū duōshǎo qián?", "gloss": "How much is the rent per month?"}},
-            {"id": "v_dfang", "traditional": "大", "pinyin": "dà", "gloss": "big; large", "hsk_level": 1, "taiwan_note": null, "example": {"hanzi": "這個房間很大。", "pinyin": "Zhè ge fángjiān hěn dà.", "gloss": "This room is big."}},
-            {"id": "v_anjing", "traditional": "安靜", "pinyin": "ānjìng", "gloss": "quiet", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這裡很安靜。", "pinyin": "Zhèlǐ hěn ānjìng.", "gloss": "It's quiet here."}},
-            {"id": "v_fangdong", "traditional": "房東", "pinyin": "fángdōng", "gloss": "landlord", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "房東人很好。", "pinyin": "Fángdōng rén hěn hǎo.", "gloss": "The landlord is nice."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_bi",
-              "title": "比 — comparisons",
-              "pattern": "A 比 B + Adjective",
-              "explanation": "比 compares two things: A 比 B 大 = A is bigger than B. The adjective comes at the end, with no 很.",
-              "examples": [
-                {"hanzi": "這個房間比那個大。", "pinyin": "Zhè ge fángjiān bǐ nà ge dà.", "gloss": "This room is bigger than that one."},
-                {"hanzi": "這裡比夜市安靜。", "pinyin": "Zhèlǐ bǐ yèshì ānjìng.", "gloss": "It's quieter here than the night market."},
-                {"hanzi": "捷運比公車快。", "pinyin": "Jiéyùn bǐ gōngchē kuài.", "gloss": "The MRT is faster than the bus."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "房東", "hanzi": "你好，這間房間就是要租的。", "pinyin": "Nǐ hǎo, zhè jiān fángjiān jiùshì yào zū de.", "gloss": "Hi, this is the room that's for rent."},
-            {"speaker": "我", "hanzi": "房間很大，也很安靜。", "pinyin": "Fángjiān hěn dà, yě hěn ānjìng.", "gloss": "The room is big and quiet."},
-            {"speaker": "我", "hanzi": "一個月房租多少錢？", "pinyin": "Yí ge yuè fángzū duōshǎo qián?", "gloss": "How much is the monthly rent?"},
-            {"speaker": "房東", "hanzi": "一個月一萬元。", "pinyin": "Yí ge yuè yí wàn yuán.", "gloss": "Ten thousand NT a month."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "想", "租", "一", "間", "房間"], "pinyin": "Wǒ xiǎng zū yì jiān fángjiān.", "gloss": "I want to rent a room.", "cloze_index": 2},
-            {"tokens": ["這個", "房間", "比", "那個", "大"], "pinyin": "Zhè ge fángjiān bǐ nà ge dà.", "gloss": "This room is bigger than that one.", "cloze_index": 2},
-            {"tokens": ["這裡", "很", "安靜"], "pinyin": "Zhèlǐ hěn ānjìng.", "gloss": "It's quiet here.", "cloze_index": 2},
-            {"tokens": ["一", "個", "月", "房租", "多少錢"], "pinyin": "Yí ge yuè fángzū duōshǎo qián?", "gloss": "How much is the rent per month?", "cloze_index": 3},
-            {"tokens": ["房東", "人", "很", "好"], "pinyin": "Fángdōng rén hěn hǎo.", "gloss": "The landlord is nice.", "cloze_index": 0}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_weather",
-      "title": "天氣",
-      "subtitle": "Weather and typhoons",
-      "hsk_level": 3,
-      "sort_order": 10,
-      "lessons": [
-        {
-          "id": "l_weather_1",
-          "title": "今天天氣",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_xiayu", "traditional": "下雨", "pinyin": "xiàyǔ", "gloss": "to rain", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "今天會下雨。", "pinyin": "Jīntiān huì xiàyǔ.", "gloss": "It'll rain today."}},
-            {"id": "v_yusan", "traditional": "雨傘", "pinyin": "yǔsǎn", "gloss": "umbrella", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "帶雨傘吧。", "pinyin": "Dài yǔsǎn ba.", "gloss": "Bring an umbrella."}},
-            {"id": "v_dai", "traditional": "帶", "pinyin": "dài", "gloss": "to bring; to carry", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "記得帶雨傘。", "pinyin": "Jìdé dài yǔsǎn.", "gloss": "Remember to bring an umbrella."}},
-            {"id": "v_taifeng", "traditional": "颱風", "pinyin": "táifēng", "gloss": "typhoon", "hsk_level": 4, "taiwan_note": "台灣夏天常有颱風，會放「颱風假」。", "example": {"hanzi": "明天有颱風。", "pinyin": "Míngtiān yǒu táifēng.", "gloss": "There's a typhoon tomorrow."}},
-            {"id": "v_qingtian", "traditional": "晴天", "pinyin": "qíngtiān", "gloss": "sunny day", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "今天是晴天。", "pinyin": "Jīntiān shì qíngtiān.", "gloss": "It's sunny today."}},
-            {"id": "v_wendu", "traditional": "溫度", "pinyin": "wēndù", "gloss": "temperature", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "今天溫度很高。", "pinyin": "Jīntiān wēndù hěn gāo.", "gloss": "The temperature is high today."}},
-            {"id": "v_jide", "traditional": "記得", "pinyin": "jìdé", "gloss": "to remember (to)", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "記得帶東西。", "pinyin": "Jìdé dài dōngxi.", "gloss": "Remember to bring your things."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_yao_le",
-              "title": "快要…了 — something is about to happen",
-              "pattern": "快要 + Verb/Adj + 了",
-              "explanation": "快要…了 says something is about to happen soon: 快要下雨了 = it's about to rain. 要…了 alone works too.",
-              "examples": [
-                {"hanzi": "快要下雨了。", "pinyin": "Kuàiyào xiàyǔ le.", "gloss": "It's about to rain."},
-                {"hanzi": "颱風快要來了。", "pinyin": "Táifēng kuàiyào lái le.", "gloss": "The typhoon is about to arrive."},
-                {"hanzi": "快要到了。", "pinyin": "Kuàiyào dào le.", "gloss": "We're almost there."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "朋友", "hanzi": "今天天氣怎麼樣？", "pinyin": "Jīntiān tiānqì zěnmeyàng?", "gloss": "How's the weather today?"},
-            {"speaker": "我", "hanzi": "下午快要下雨了。", "pinyin": "Xiàwǔ kuàiyào xiàyǔ le.", "gloss": "It's about to rain this afternoon."},
-            {"speaker": "朋友", "hanzi": "那我要帶雨傘。", "pinyin": "Nà wǒ yào dài yǔsǎn.", "gloss": "Then I'll bring an umbrella."},
-            {"speaker": "我", "hanzi": "對，聽說明天有颱風。", "pinyin": "Duì, tīngshuō míngtiān yǒu táifēng.", "gloss": "Yeah, they say there's a typhoon tomorrow."}
-          ],
-          "sentences": [
-            {"tokens": ["今天", "會", "下雨"], "pinyin": "Jīntiān huì xiàyǔ.", "gloss": "It'll rain today.", "cloze_index": 2},
-            {"tokens": ["記得", "帶", "雨傘"], "pinyin": "Jìdé dài yǔsǎn.", "gloss": "Remember to bring an umbrella.", "cloze_index": 1},
-            {"tokens": ["快要", "下雨", "了"], "pinyin": "Kuàiyào xiàyǔ le.", "gloss": "It's about to rain.", "cloze_index": 1},
-            {"tokens": ["明天", "有", "颱風"], "pinyin": "Míngtiān yǒu táifēng.", "gloss": "There's a typhoon tomorrow.", "cloze_index": 2},
-            {"tokens": ["今天", "溫度", "很", "高"], "pinyin": "Jīntiān wēndù hěn gāo.", "gloss": "The temperature is high today.", "cloze_index": 1}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_health",
-      "title": "看醫生",
-      "subtitle": "Doctor and pharmacy",
-      "hsk_level": 3,
-      "sort_order": 11,
-      "lessons": [
-        {
-          "id": "l_health_1",
-          "title": "不舒服",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_shufu", "traditional": "舒服", "pinyin": "shūfú", "gloss": "comfortable; well", "hsk_level": 3, "taiwan_note": "「不舒服」= feeling unwell。", "example": {"hanzi": "我今天不舒服。", "pinyin": "Wǒ jīntiān bù shūfú.", "gloss": "I don't feel well today."}},
-            {"id": "v_tou_teng", "traditional": "頭痛", "pinyin": "tóutòng", "gloss": "headache", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我頭痛。", "pinyin": "Wǒ tóutòng.", "gloss": "I have a headache."}},
-            {"id": "v_ganmao", "traditional": "感冒", "pinyin": "gǎnmào", "gloss": "to catch a cold", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我好像感冒了。", "pinyin": "Wǒ hǎoxiàng gǎnmào le.", "gloss": "I think I've caught a cold."}},
-            {"id": "v_fashao", "traditional": "發燒", "pinyin": "fāshāo", "gloss": "to have a fever", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "他發燒了。", "pinyin": "Tā fāshāo le.", "gloss": "He has a fever."}},
-            {"id": "v_yao", "traditional": "藥", "pinyin": "yào", "gloss": "medicine", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "記得吃藥。", "pinyin": "Jìdé chī yào.", "gloss": "Remember to take your medicine."}},
-            {"id": "v_yaoju", "traditional": "藥局", "pinyin": "yàojú", "gloss": "pharmacy", "hsk_level": 4, "taiwan_note": "台灣說「藥局」或「藥房」。", "example": {"hanzi": "藥局在對面。", "pinyin": "Yàojú zài duìmiàn.", "gloss": "The pharmacy is across the street."}},
-            {"id": "v_kanyisheng", "traditional": "看醫生", "pinyin": "kàn yīshēng", "gloss": "to see a doctor", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "你應該去看醫生。", "pinyin": "Nǐ yīnggāi qù kàn yīshēng.", "gloss": "You should go see a doctor."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_yinggai",
-              "title": "應該 — should",
-              "pattern": "Subject + 應該 + Verb",
-              "explanation": "應該 (yīnggāi) expresses what one should do: 你應該休息 = you should rest. It comes before the verb.",
-              "examples": [
-                {"hanzi": "你應該去看醫生。", "pinyin": "Nǐ yīnggāi qù kàn yīshēng.", "gloss": "You should go see a doctor."},
-                {"hanzi": "感冒了應該多喝水。", "pinyin": "Gǎnmào le yīnggāi duō hē shuǐ.", "gloss": "When you have a cold you should drink lots of water."},
-                {"hanzi": "你應該早點回家。", "pinyin": "Nǐ yīnggāi zǎo diǎn huí jiā.", "gloss": "You should go home earlier."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "醫生", "hanzi": "你哪裡不舒服？", "pinyin": "Nǐ nǎlǐ bù shūfú?", "gloss": "What's bothering you?"},
-            {"speaker": "我", "hanzi": "我頭痛，好像感冒了。", "pinyin": "Wǒ tóutòng, hǎoxiàng gǎnmào le.", "gloss": "I have a headache; I think I've caught a cold."},
-            {"speaker": "醫生", "hanzi": "有沒有發燒？", "pinyin": "Yǒu méiyǒu fāshāo?", "gloss": "Do you have a fever?"},
-            {"speaker": "醫生", "hanzi": "多喝水，記得吃藥。", "pinyin": "Duō hē shuǐ, jìdé chī yào.", "gloss": "Drink lots of water and remember to take your medicine."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "今天", "不", "舒服"], "pinyin": "Wǒ jīntiān bù shūfú.", "gloss": "I don't feel well today.", "cloze_index": 3},
-            {"tokens": ["我", "好像", "感冒", "了"], "pinyin": "Wǒ hǎoxiàng gǎnmào le.", "gloss": "I think I've caught a cold.", "cloze_index": 2},
-            {"tokens": ["你", "應該", "去", "看醫生"], "pinyin": "Nǐ yīnggāi qù kàn yīshēng.", "gloss": "You should go see a doctor.", "cloze_index": 1},
-            {"tokens": ["記得", "吃", "藥"], "pinyin": "Jìdé chī yào.", "gloss": "Remember to take your medicine.", "cloze_index": 2},
-            {"tokens": ["藥局", "在", "對面"], "pinyin": "Yàojú zài duìmiàn.", "gloss": "The pharmacy is across the street.", "cloze_index": 0}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_bank",
-      "title": "銀行郵局",
-      "subtitle": "Bank and post office",
-      "hsk_level": 4,
-      "sort_order": 12,
-      "lessons": [
-        {
-          "id": "l_bank_1",
-          "title": "去郵局",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_youju", "traditional": "郵局", "pinyin": "yóujú", "gloss": "post office", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我要去郵局。", "pinyin": "Wǒ yào qù yóujú.", "gloss": "I need to go to the post office."}},
-            {"id": "v_ji", "traditional": "寄", "pinyin": "jì", "gloss": "to mail; to send", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "我想寄一封信。", "pinyin": "Wǒ xiǎng jì yì fēng xìn.", "gloss": "I want to mail a letter."}},
-            {"id": "v_xin", "traditional": "信", "pinyin": "xìn", "gloss": "letter", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "這封信要寄到台北。", "pinyin": "Zhè fēng xìn yào jì dào Táiběi.", "gloss": "This letter needs to go to Taipei."}},
-            {"id": "v_baoguo", "traditional": "包裹", "pinyin": "bāoguǒ", "gloss": "parcel; package", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "我要領包裹。", "pinyin": "Wǒ yào lǐng bāoguǒ.", "gloss": "I'm here to pick up a package."}},
-            {"id": "v_lingqian", "traditional": "領錢", "pinyin": "lǐng qián", "gloss": "to withdraw money", "hsk_level": 4, "taiwan_note": "台灣口語說「領錢」，ATM 是「提款機」。", "example": {"hanzi": "我去銀行領錢。", "pinyin": "Wǒ qù yínháng lǐng qián.", "gloss": "I'm going to the bank to withdraw money."}},
-            {"id": "v_zhanghu", "traditional": "帳戶", "pinyin": "zhànghù", "gloss": "(bank) account", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "我想開一個帳戶。", "pinyin": "Wǒ xiǎng kāi yí ge zhànghù.", "gloss": "I'd like to open an account."}},
-            {"id": "v_kai", "traditional": "開", "pinyin": "kāi", "gloss": "to open", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "銀行幾點開？", "pinyin": "Yínháng jǐ diǎn kāi?", "gloss": "What time does the bank open?"}}
-          ],
-          "grammar": [
-            {
-              "id": "g_verb_dao",
-              "title": "…到 — reaching a destination",
-              "pattern": "Verb + 到 + Place",
-              "explanation": "到 after a verb marks arrival at a place or point: 寄到台北 = mail (it) to Taipei, 走到路口 = walk to the intersection.",
-              "examples": [
-                {"hanzi": "這封信要寄到台北。", "pinyin": "Zhè fēng xìn yào jì dào Táiběi.", "gloss": "This letter goes to Taipei."},
-                {"hanzi": "我們走到路口。", "pinyin": "Wǒmen zǒu dào lùkǒu.", "gloss": "We walk to the intersection."},
-                {"hanzi": "包裹寄到家裡。", "pinyin": "Bāoguǒ jì dào jiā lǐ.", "gloss": "The parcel is mailed to my home."}
-              ],
-              "hsk_level": 4
-            }
-          ],
-          "dialogue": [
-            {"speaker": "店員", "hanzi": "您好，請問要寄東西嗎？", "pinyin": "Nín hǎo, qǐngwèn yào jì dōngxi ma?", "gloss": "Hello, are you here to mail something?"},
-            {"speaker": "我", "hanzi": "我想寄一個包裹到台北。", "pinyin": "Wǒ xiǎng jì yí ge bāoguǒ dào Táiběi.", "gloss": "I'd like to mail a package to Taipei."},
-            {"speaker": "店員", "hanzi": "好的，一共一百二十元。", "pinyin": "Hǎo de, yígòng yìbǎi èrshí yuán.", "gloss": "Sure, that's 120 NT total."},
-            {"speaker": "我", "hanzi": "我用現金付。", "pinyin": "Wǒ yòng xiànjīn fù.", "gloss": "I'll pay with cash."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "要", "去", "郵局"], "pinyin": "Wǒ yào qù yóujú.", "gloss": "I need to go to the post office.", "cloze_index": 3},
-            {"tokens": ["我", "想", "寄", "一", "封", "信"], "pinyin": "Wǒ xiǎng jì yì fēng xìn.", "gloss": "I want to mail a letter.", "cloze_index": 2},
-            {"tokens": ["這", "封", "信", "寄", "到", "台北"], "pinyin": "Zhè fēng xìn jì dào Táiběi.", "gloss": "This letter goes to Taipei.", "cloze_index": 4},
-            {"tokens": ["我", "去", "銀行", "領錢"], "pinyin": "Wǒ qù yínháng lǐng qián.", "gloss": "I'm going to the bank to withdraw money.", "cloze_index": 3},
-            {"tokens": ["我", "想", "開", "一", "個", "帳戶"], "pinyin": "Wǒ xiǎng kāi yí ge zhànghù.", "gloss": "I'd like to open an account.", "cloze_index": 2}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_work",
-      "title": "工作",
-      "subtitle": "Work and coworkers",
-      "hsk_level": 4,
-      "sort_order": 13,
-      "lessons": [
-        {
-          "id": "l_work_1",
-          "title": "上班開會",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_shangban", "traditional": "上班", "pinyin": "shàngbān", "gloss": "to go to work", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我早上九點上班。", "pinyin": "Wǒ zǎoshang jiǔ diǎn shàngbān.", "gloss": "I start work at nine in the morning."}},
-            {"id": "v_xiaban", "traditional": "下班", "pinyin": "xiàbān", "gloss": "to get off work", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我六點下班。", "pinyin": "Wǒ liù diǎn xiàbān.", "gloss": "I get off work at six."}},
-            {"id": "v_kaihui", "traditional": "開會", "pinyin": "kāihuì", "gloss": "to have a meeting", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "下午我們要開會。", "pinyin": "Xiàwǔ wǒmen yào kāihuì.", "gloss": "We have a meeting this afternoon."}},
-            {"id": "v_tongshi", "traditional": "同事", "pinyin": "tóngshì", "gloss": "coworker; colleague", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "他是我的同事。", "pinyin": "Tā shì wǒ de tóngshì.", "gloss": "He's my coworker."}},
-            {"id": "v_laoban", "traditional": "老闆", "pinyin": "lǎobǎn", "gloss": "boss; shop owner", "hsk_level": 4, "taiwan_note": "也用來稱店家老闆。", "example": {"hanzi": "老闆對我們很好。", "pinyin": "Lǎobǎn duì wǒmen hěn hǎo.", "gloss": "The boss is good to us."}},
-            {"id": "v_mang", "traditional": "忙", "pinyin": "máng", "gloss": "busy", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我今天很忙。", "pinyin": "Wǒ jīntiān hěn máng.", "gloss": "I'm very busy today."}},
-            {"id": "v_jiaban", "traditional": "加班", "pinyin": "jiābān", "gloss": "to work overtime", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "今天要加班。", "pinyin": "Jīntiān yào jiābān.", "gloss": "I have to work overtime today."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_yibian",
-              "title": "一邊…一邊… — doing two things at once",
-              "pattern": "一邊 + Verb1 + 一邊 + Verb2",
-              "explanation": "一邊…一邊… links two actions happening at the same time: 一邊吃飯一邊開會 = have a meeting while eating.",
-              "examples": [
-                {"hanzi": "我一邊喝咖啡一邊工作。", "pinyin": "Wǒ yìbiān hē kāfēi yìbiān gōngzuò.", "gloss": "I work while drinking coffee."},
-                {"hanzi": "他一邊上班一邊上學。", "pinyin": "Tā yìbiān shàngbān yìbiān shàngxué.", "gloss": "He works and studies at the same time."},
-                {"hanzi": "別一邊開會一邊吃東西。", "pinyin": "Bié yìbiān kāihuì yìbiān chī dōngxi.", "gloss": "Don't eat during a meeting."}
-              ],
-              "hsk_level": 4
-            }
-          ],
-          "dialogue": [
-            {"speaker": "同事", "hanzi": "你今天忙不忙？", "pinyin": "Nǐ jīntiān máng bù máng?", "gloss": "Are you busy today?"},
-            {"speaker": "我", "hanzi": "很忙，下午還要開會。", "pinyin": "Hěn máng, xiàwǔ hái yào kāihuì.", "gloss": "Very busy; I still have a meeting this afternoon."},
-            {"speaker": "同事", "hanzi": "今天要加班嗎？", "pinyin": "Jīntiān yào jiābān ma?", "gloss": "Do you have to work overtime today?"},
-            {"speaker": "我", "hanzi": "不用，六點就下班。", "pinyin": "Búyòng, liù diǎn jiù xiàbān.", "gloss": "No, I get off at six."}
-          ],
-          "sentences": [
-            {"tokens": ["我", "早上", "九", "點", "上班"], "pinyin": "Wǒ zǎoshang jiǔ diǎn shàngbān.", "gloss": "I start work at nine.", "cloze_index": 4},
-            {"tokens": ["下午", "我們", "要", "開會"], "pinyin": "Xiàwǔ wǒmen yào kāihuì.", "gloss": "We have a meeting this afternoon.", "cloze_index": 3},
-            {"tokens": ["他", "是", "我", "的", "同事"], "pinyin": "Tā shì wǒ de tóngshì.", "gloss": "He's my coworker.", "cloze_index": 4},
-            {"tokens": ["我", "今天", "很", "忙"], "pinyin": "Wǒ jīntiān hěn máng.", "gloss": "I'm very busy today.", "cloze_index": 3},
-            {"tokens": ["今天", "要", "加班"], "pinyin": "Jīntiān yào jiābān.", "gloss": "I have to work overtime today.", "cloze_index": 2}
-          ]
-        }
-      ]
-    },
-    {
-      "id": "u_phone",
-      "title": "手機網路",
-      "subtitle": "Phones and the internet",
-      "hsk_level": 4,
-      "sort_order": 14,
-      "lessons": [
-        {
-          "id": "l_phone_1",
-          "title": "手機沒電",
-          "sort_order": 1,
-          "vocab": [
-            {"id": "v_shouji", "traditional": "手機", "pinyin": "shǒujī", "gloss": "mobile phone", "hsk_level": 3, "taiwan_note": "台灣說「手機」，不說「手機兒」。", "example": {"hanzi": "我的手機沒電了。", "pinyin": "Wǒ de shǒujī méi diàn le.", "gloss": "My phone is out of battery."}},
-            {"id": "v_wanglu", "traditional": "網路", "pinyin": "wǎnglù", "gloss": "internet; network", "hsk_level": 4, "taiwan_note": "台灣說「網路」，大陸說「網絡」。", "example": {"hanzi": "這裡有網路嗎？", "pinyin": "Zhèlǐ yǒu wǎnglù ma?", "gloss": "Is there internet here?"}},
-            {"id": "v_chongdian", "traditional": "充電", "pinyin": "chōngdiàn", "gloss": "to charge (a battery)", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "我要充電。", "pinyin": "Wǒ yào chōngdiàn.", "gloss": "I need to charge up."}},
-            {"id": "v_dianhua_v", "traditional": "打電話", "pinyin": "dǎ diànhuà", "gloss": "to make a phone call", "hsk_level": 2, "taiwan_note": null, "example": {"hanzi": "我打電話給你。", "pinyin": "Wǒ dǎ diànhuà gěi nǐ.", "gloss": "I'll call you."}},
-            {"id": "v_xunhao", "traditional": "訊號", "pinyin": "xùnhào", "gloss": "signal (reception)", "hsk_level": 4, "taiwan_note": "台灣說「訊號」，大陸說「信號」。", "example": {"hanzi": "這裡訊號不好。", "pinyin": "Zhèlǐ xùnhào bù hǎo.", "gloss": "The signal is bad here."}},
-            {"id": "v_shangwang", "traditional": "上網", "pinyin": "shàngwǎng", "gloss": "to go online", "hsk_level": 4, "taiwan_note": null, "example": {"hanzi": "我用手機上網。", "pinyin": "Wǒ yòng shǒujī shàngwǎng.", "gloss": "I go online with my phone."}},
-            {"id": "v_meidian", "traditional": "沒電", "pinyin": "méi diàn", "gloss": "out of power / battery", "hsk_level": 3, "taiwan_note": null, "example": {"hanzi": "手機快沒電了。", "pinyin": "Shǒujī kuài méi diàn le.", "gloss": "The phone is almost out of battery."}}
-          ],
-          "grammar": [
-            {
-              "id": "g_gei",
-              "title": "給 — to / for someone",
-              "pattern": "Verb + 給 + Person",
-              "explanation": "給 marks the person who receives an action: 打電話給你 = call you, 寄給他 = send to him.",
-              "examples": [
-                {"hanzi": "我打電話給你。", "pinyin": "Wǒ dǎ diànhuà gěi nǐ.", "gloss": "I'll call you."},
-                {"hanzi": "他寄了一封信給我。", "pinyin": "Tā jì le yì fēng xìn gěi wǒ.", "gloss": "He mailed a letter to me."},
-                {"hanzi": "請打電話給我。", "pinyin": "Qǐng dǎ diànhuà gěi wǒ.", "gloss": "Please call me."}
-              ],
-              "hsk_level": 3
-            }
-          ],
-          "dialogue": [
-            {"speaker": "朋友", "hanzi": "我打電話給你了。", "pinyin": "Wǒ dǎ diànhuà gěi nǐ le.", "gloss": "I called you."},
-            {"speaker": "我", "hanzi": "不好意思，我的手機沒電了。", "pinyin": "Bùhǎoyìsi, wǒ de shǒujī méi diàn le.", "gloss": "Sorry, my phone was out of battery."},
-            {"speaker": "朋友", "hanzi": "這裡有網路，可以充電。", "pinyin": "Zhèlǐ yǒu wǎnglù, kěyǐ chōngdiàn.", "gloss": "There's internet here and you can charge up."},
-            {"speaker": "我", "hanzi": "太好了，謝謝！", "pinyin": "Tài hǎo le, xièxie!", "gloss": "Great, thanks!"}
-          ],
-          "sentences": [
-            {"tokens": ["我", "的", "手機", "沒電", "了"], "pinyin": "Wǒ de shǒujī méi diàn le.", "gloss": "My phone is out of battery.", "cloze_index": 3},
-            {"tokens": ["這裡", "有", "網路", "嗎"], "pinyin": "Zhèlǐ yǒu wǎnglù ma?", "gloss": "Is there internet here?", "cloze_index": 2},
-            {"tokens": ["我", "用", "手機", "上網"], "pinyin": "Wǒ yòng shǒujī shàngwǎng.", "gloss": "I go online with my phone.", "cloze_index": 3},
-            {"tokens": ["這裡", "訊號", "不", "好"], "pinyin": "Zhèlǐ xùnhào bù hǎo.", "gloss": "The signal is bad here.", "cloze_index": 1},
-            {"tokens": ["我", "打電話", "給", "你"], "pinyin": "Wǒ dǎ diànhuà gěi nǐ.", "gloss": "I'll call you.", "cloze_index": 1}
-          ]
-        }
-      ]
-    }
+    "u_conv",
+    "u_food",
+    "u_time",
+    "u_dir",
+    "u_pay",
+    "u_drinks",
+    "u_market",
+    "u_mrt",
+    "u_rent",
+    "u_weather",
+    "u_health",
+    "u_bank",
+    "u_work",
+    "u_phone",
+    "u_hsk1_01",
+    "u_hsk1_02",
+    "u_hsk1_03",
+    "u_hsk1_04",
+    "u_hsk1_05",
+    "u_hsk1_06",
+    "u_hsk2_01",
+    "u_hsk2_02",
+    "u_hsk2_03",
+    "u_hsk2_04",
+    "u_hsk2_05",
+    "u_hsk2_06",
+    "u_hsk2_07",
+    "u_hsk2_08",
+    "u_hsk3_01",
+    "u_hsk3_02",
+    "u_hsk3_03",
+    "u_hsk3_04",
+    "u_hsk3_05",
+    "u_hsk3_06",
+    "u_hsk3_07",
+    "u_hsk3_08",
+    "u_hsk3_09",
+    "u_hsk3_10",
+    "u_hsk3_11",
+    "u_hsk3_12",
+    "u_hsk3_13",
+    "u_hsk3_14",
+    "u_hsk3_15",
+    "u_hsk3_16",
+    "u_hsk4_01",
+    "u_hsk4_02",
+    "u_hsk4_03",
+    "u_hsk4_04",
+    "u_hsk4_05",
+    "u_hsk4_06",
+    "u_hsk4_07",
+    "u_hsk4_08",
+    "u_hsk4_09",
+    "u_hsk4_10",
+    "u_hsk4_11",
+    "u_hsk4_12",
+    "u_hsk4_13",
+    "u_hsk4_14",
+    "u_hsk4_15",
+    "u_hsk4_16",
+    "u_hsk4_17",
+    "u_hsk4_18",
+    "u_hsk4_19",
+    "u_hsk4_20",
+    "u_hsk4_21",
+    "u_hsk4_22",
+    "u_hsk4_23",
+    "u_hsk4_24",
+    "u_hsk4_25",
+    "u_hsk4_26",
+    "u_hsk4_27",
+    "u_hsk4_28",
+    "u_hsk4_29",
+    "u_hsk4_30",
+    "u_hsk4_31",
+    "u_hsk4_32",
+    "u_hsk4_33"
   ]
 }

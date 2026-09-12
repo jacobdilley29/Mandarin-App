@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_20",
+  "title": "HSK 4 詞彙 20",
+  "subtitle": "HSK 4 vocabulary · set 20",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_20_1",
+      "title": "詞彙 20–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_故意",
+          "traditional": "故意",
+          "pinyin": "gù yì",
+          "gloss": "deliberately; on purpose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_看法",
+          "traditional": "看法",
+          "pinyin": "kàn fǎ",
+          "gloss": "way of looking at a thing; view; opinion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_浪漫",
+          "traditional": "浪漫",
+          "pinyin": "làng màn",
+          "gloss": "romantic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_減少",
+          "traditional": "減少",
+          "pinyin": "jiǎn shǎo",
+          "gloss": "to lessen; to decrease; to reduce; to lower",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辛苦",
+          "traditional": "辛苦",
+          "pinyin": "xīn kǔ",
+          "gloss": "exhausting; hard; tough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_剩",
+          "traditional": "剩",
+          "pinyin": "shèng",
+          "gloss": "to remain; to be left; to have as remainder",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_20_2",
+      "title": "詞彙 20–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_正好",
+          "traditional": "正好",
+          "pinyin": "zhèng hǎo",
+          "gloss": "just (in time); just right; just enough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_主動",
+          "traditional": "主動",
+          "pinyin": "zhǔ dòng",
+          "gloss": "to take the initiative; to do sth of one's own accord; spontaneous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_硬",
+          "traditional": "硬",
+          "pinyin": "yìng",
+          "gloss": "hard; stiff; solid; (fig.) strong; firm; resolutely; uncompromisingly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_限制",
+          "traditional": "限制",
+          "pinyin": "xiàn zhì",
+          "gloss": "to restrict; to limit; to confine",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_判斷",
+          "traditional": "判斷",
+          "pinyin": "pàn duàn",
+          "gloss": "to judge; to determine; judgment",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_現代",
+          "traditional": "現代",
+          "pinyin": "xiàn dài",
+          "gloss": "modern times; modern age; modern era",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_20_3",
+      "title": "詞彙 20–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_彈",
+          "traditional": "彈",
+          "pinyin": "tán",
+          "gloss": "to pluck (a string); to play (a string instrument); to spring or leap",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_有趣",
+          "traditional": "有趣",
+          "pinyin": "yǒu qù",
+          "gloss": "interesting; fascinating; amusing",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_公里",
+          "traditional": "公里",
+          "pinyin": "gōng lǐ",
+          "gloss": "kilometer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_工資",
+          "traditional": "工資",
+          "pinyin": "gōng zī",
+          "gloss": "wages; pay",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_好處",
+          "traditional": "好處",
+          "pinyin": "hǎo chu",
+          "gloss": "benefit; advantage; merit; gain; profit; also pr. [hǎo chù]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_傷心",
+          "traditional": "傷心",
+          "pinyin": "shāng xīn",
+          "gloss": "to grieve; to be broken-hearted; to feel deeply hurt",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 64,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

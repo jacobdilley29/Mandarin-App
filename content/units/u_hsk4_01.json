@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_01",
+  "title": "HSK 4 詞彙 1",
+  "subtitle": "HSK 4 vocabulary · set 1",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_01_1",
+      "title": "詞彙 1–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_對",
+          "traditional": "對",
+          "pinyin": "duì",
+          "gloss": "right; correct; towards; at; for; concerning; regarding",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_過",
+          "traditional": "過",
+          "pinyin": "guò",
+          "gloss": "to cross; to go over; to pass (time)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_而",
+          "traditional": "而",
+          "pinyin": "ér",
+          "gloss": "and; as well as; and so",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_等",
+          "traditional": "等",
+          "pinyin": "děng",
+          "gloss": "class; rank; grade",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_與",
+          "traditional": "與",
+          "pinyin": "yǔ",
+          "gloss": "and; to give; together with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_當",
+          "traditional": "當",
+          "pinyin": "dāng",
+          "gloss": "to be; to act as; manage",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_01_2",
+      "title": "詞彙 1–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_之",
+          "traditional": "之",
+          "pinyin": "zhī",
+          "gloss": "(possessive particle, literary equivalent of 的); him; her",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_以",
+          "traditional": "以",
+          "pinyin": "yǐ",
+          "gloss": "to use; by means of; according to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_起來",
+          "traditional": "起來",
+          "pinyin": "qi lai",
+          "gloss": "(after a verb) indicating the beginning and continuation of an action or a state; indicating an upward movement (e.g. after 站); indicating completion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_死",
+          "traditional": "死",
+          "pinyin": "sǐ",
+          "gloss": "to die; impassable; uncrossable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_卻",
+          "traditional": "卻",
+          "pinyin": "què",
+          "gloss": "but; yet; however",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生活",
+          "traditional": "生活",
+          "pinyin": "shēng huó",
+          "gloss": "to live; life; livelihood",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_01_3",
+      "title": "詞彙 1–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_發生",
+          "traditional": "發生",
+          "pinyin": "fā shēng",
+          "gloss": "to happen; to occur; to take place; to break out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不過",
+          "traditional": "不過",
+          "pinyin": "bù guò",
+          "gloss": "only; merely; no more than",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_所有",
+          "traditional": "所有",
+          "pinyin": "suǒ yǒu",
+          "gloss": "all; to have; to possess; to own",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_情況",
+          "traditional": "情況",
+          "pinyin": "qíng kuàng",
+          "gloss": "circumstances; state of affairs; situation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_最後",
+          "traditional": "最後",
+          "pinyin": "zuì hòu",
+          "gloss": "final; last; finally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成為",
+          "traditional": "成為",
+          "pinyin": "chéng wéi",
+          "gloss": "to become; to turn into",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 45,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

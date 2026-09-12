@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_15",
+  "title": "HSK 4 詞彙 15",
+  "subtitle": "HSK 4 vocabulary · set 15",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_15_1",
+      "title": "詞彙 15–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_邀請",
+          "traditional": "邀請",
+          "pinyin": "yāo qǐng",
+          "gloss": "to invite; invitation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_交通",
+          "traditional": "交通",
+          "pinyin": "jiāo tōng",
+          "gloss": "to be connected; traffic; transportation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_優秀",
+          "traditional": "優秀",
+          "pinyin": "yōu xiù",
+          "gloss": "outstanding; excellent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_亮",
+          "traditional": "亮",
+          "pinyin": "liàng",
+          "gloss": "bright; clear; resonant",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_篇",
+          "traditional": "篇",
+          "pinyin": "piān",
+          "gloss": "sheet; piece of writing; bound set of bamboo slips used for record keeping (old)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_兒童",
+          "traditional": "兒童",
+          "pinyin": "ér tóng",
+          "gloss": "child",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_15_2",
+      "title": "詞彙 15–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_最好",
+          "traditional": "最好",
+          "pinyin": "zuì hǎo",
+          "gloss": "best; (you) had better (do what we suggest)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_味道",
+          "traditional": "味道",
+          "pinyin": "wèi dao",
+          "gloss": "flavor; taste; (fig.) feeling (of ...); sense (of ...); hint (of ...); (fig.) interest; delight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_斷",
+          "traditional": "斷",
+          "pinyin": "duàn",
+          "gloss": "to break; to snap; to cut off",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_千萬",
+          "traditional": "千萬",
+          "pinyin": "qiān wàn",
+          "gloss": "ten million; countless; many",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_出發",
+          "traditional": "出發",
+          "pinyin": "chū fā",
+          "gloss": "to set off; to start (on a journey)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_距離",
+          "traditional": "距離",
+          "pinyin": "jù lí",
+          "gloss": "distance; to be apart from",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_15_3",
+      "title": "詞彙 15–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_輕鬆",
+          "traditional": "輕鬆",
+          "pinyin": "qīng sōng",
+          "gloss": "light; gentle; relaxed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_牆",
+          "traditional": "牆",
+          "pinyin": "qiáng",
+          "gloss": "wall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_畢業",
+          "traditional": "畢業",
+          "pinyin": "bì yè",
+          "gloss": "graduation; to graduate; to finish school",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_懷疑",
+          "traditional": "懷疑",
+          "pinyin": "huái yí",
+          "gloss": "to doubt (sth); to be skeptical of; to have one's doubts",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_修",
+          "traditional": "修",
+          "pinyin": "xiū",
+          "gloss": "to decorate; to embellish; to repair",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_價格",
+          "traditional": "價格",
+          "pinyin": "jià gé",
+          "gloss": "price",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 59,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

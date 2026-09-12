@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_11",
+  "title": "HSK 4 詞彙 11",
+  "subtitle": "HSK 4 vocabulary · set 11",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_11_1",
+      "title": "詞彙 11–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_抱",
+          "traditional": "抱",
+          "pinyin": "bào",
+          "gloss": "to hold; to carry (in one's arms); to hug",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_律師",
+          "traditional": "律師",
+          "pinyin": "lǜ shī",
+          "gloss": "lawyer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_內容",
+          "traditional": "內容",
+          "pinyin": "nèi róng",
+          "gloss": "content; substance; details",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_通知",
+          "traditional": "通知",
+          "pinyin": "tōng zhī",
+          "gloss": "to notify; to inform; notice",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感情",
+          "traditional": "感情",
+          "pinyin": "gǎn qíng",
+          "gloss": "emotion; sentiment; affection",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_觀眾",
+          "traditional": "觀眾",
+          "pinyin": "guān zhòng",
+          "gloss": "spectators; audience; visitors (to an exhibition etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_11_2",
+      "title": "詞彙 11–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_目的",
+          "traditional": "目的",
+          "pinyin": "mù dì",
+          "gloss": "purpose; aim; goal; target; objective",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_國際",
+          "traditional": "國際",
+          "pinyin": "guó jì",
+          "gloss": "international",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_美麗",
+          "traditional": "美麗",
+          "pinyin": "měi lì",
+          "gloss": "beautiful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_經驗",
+          "traditional": "經驗",
+          "pinyin": "jīng yàn",
+          "gloss": "experience; to experience",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_破",
+          "traditional": "破",
+          "pinyin": "pò",
+          "gloss": "broken; damaged; worn out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_推",
+          "traditional": "推",
+          "pinyin": "tuī",
+          "gloss": "to push; to cut; to refuse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_11_3",
+      "title": "詞彙 11–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_刀",
+          "traditional": "刀",
+          "pinyin": "dāo",
+          "gloss": "knife; blade; single-edged sword",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_科學",
+          "traditional": "科學",
+          "pinyin": "kē xué",
+          "gloss": "science; scientific knowledge; scientific",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_心情",
+          "traditional": "心情",
+          "pinyin": "xīn qíng",
+          "gloss": "mood; frame of mind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_標準",
+          "traditional": "標準",
+          "pinyin": "biāo zhǔn",
+          "gloss": "standard; norm; criterion; (adjective) standard; good; correct; conforming to a standard",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_職業",
+          "traditional": "職業",
+          "pinyin": "zhí yè",
+          "gloss": "occupation; profession; vocation; professional",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_精彩",
+          "traditional": "精彩",
+          "pinyin": "jīng cǎi",
+          "gloss": "wonderful; marvelous; brilliant",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 55,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

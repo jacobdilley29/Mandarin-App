@@ -1,0 +1,214 @@
+{
+  "id": "u_weather",
+  "title": "天氣",
+  "subtitle": "Weather and typhoons",
+  "hsk_level": 3,
+  "sort_order": 10,
+  "lessons": [
+    {
+      "id": "l_weather_1",
+      "title": "今天天氣",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_xiayu",
+          "traditional": "下雨",
+          "pinyin": "xiàyǔ",
+          "gloss": "to rain",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天會下雨。",
+            "pinyin": "Jīntiān huì xiàyǔ.",
+            "gloss": "It'll rain today."
+          }
+        },
+        {
+          "id": "v_yusan",
+          "traditional": "雨傘",
+          "pinyin": "yǔsǎn",
+          "gloss": "umbrella",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "帶雨傘吧。",
+            "pinyin": "Dài yǔsǎn ba.",
+            "gloss": "Bring an umbrella."
+          }
+        },
+        {
+          "id": "v_dai",
+          "traditional": "帶",
+          "pinyin": "dài",
+          "gloss": "to bring; to carry",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "記得帶雨傘。",
+            "pinyin": "Jìdé dài yǔsǎn.",
+            "gloss": "Remember to bring an umbrella."
+          }
+        },
+        {
+          "id": "v_taifeng",
+          "traditional": "颱風",
+          "pinyin": "táifēng",
+          "gloss": "typhoon",
+          "hsk_level": 4,
+          "taiwan_note": "台灣夏天常有颱風，會放「颱風假」。",
+          "example": {
+            "hanzi": "明天有颱風。",
+            "pinyin": "Míngtiān yǒu táifēng.",
+            "gloss": "There's a typhoon tomorrow."
+          }
+        },
+        {
+          "id": "v_qingtian",
+          "traditional": "晴天",
+          "pinyin": "qíngtiān",
+          "gloss": "sunny day",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天是晴天。",
+            "pinyin": "Jīntiān shì qíngtiān.",
+            "gloss": "It's sunny today."
+          }
+        },
+        {
+          "id": "v_wendu",
+          "traditional": "溫度",
+          "pinyin": "wēndù",
+          "gloss": "temperature",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天溫度很高。",
+            "pinyin": "Jīntiān wēndù hěn gāo.",
+            "gloss": "The temperature is high today."
+          }
+        },
+        {
+          "id": "v_jide",
+          "traditional": "記得",
+          "pinyin": "jìdé",
+          "gloss": "to remember (to)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "記得帶東西。",
+            "pinyin": "Jìdé dài dōngxi.",
+            "gloss": "Remember to bring your things."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_yao_le",
+          "title": "快要…了 — something is about to happen",
+          "pattern": "快要 + Verb/Adj + 了",
+          "explanation": "快要…了 says something is about to happen soon: 快要下雨了 = it's about to rain. 要…了 alone works too.",
+          "examples": [
+            {
+              "hanzi": "快要下雨了。",
+              "pinyin": "Kuàiyào xiàyǔ le.",
+              "gloss": "It's about to rain."
+            },
+            {
+              "hanzi": "颱風快要來了。",
+              "pinyin": "Táifēng kuàiyào lái le.",
+              "gloss": "The typhoon is about to arrive."
+            },
+            {
+              "hanzi": "快要到了。",
+              "pinyin": "Kuàiyào dào le.",
+              "gloss": "We're almost there."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "朋友",
+          "hanzi": "今天天氣怎麼樣？",
+          "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+          "gloss": "How's the weather today?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "下午快要下雨了。",
+          "pinyin": "Xiàwǔ kuàiyào xiàyǔ le.",
+          "gloss": "It's about to rain this afternoon."
+        },
+        {
+          "speaker": "朋友",
+          "hanzi": "那我要帶雨傘。",
+          "pinyin": "Nà wǒ yào dài yǔsǎn.",
+          "gloss": "Then I'll bring an umbrella."
+        },
+        {
+          "speaker": "我",
+          "hanzi": "對，聽說明天有颱風。",
+          "pinyin": "Duì, tīngshuō míngtiān yǒu táifēng.",
+          "gloss": "Yeah, they say there's a typhoon tomorrow."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "會",
+            "下雨"
+          ],
+          "pinyin": "Jīntiān huì xiàyǔ.",
+          "gloss": "It'll rain today.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "記得",
+            "帶",
+            "雨傘"
+          ],
+          "pinyin": "Jìdé dài yǔsǎn.",
+          "gloss": "Remember to bring an umbrella.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "快要",
+            "下雨",
+            "了"
+          ],
+          "pinyin": "Kuàiyào xiàyǔ le.",
+          "gloss": "It's about to rain.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "明天",
+            "有",
+            "颱風"
+          ],
+          "pinyin": "Míngtiān yǒu táifēng.",
+          "gloss": "There's a typhoon tomorrow.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "今天",
+            "溫度",
+            "很",
+            "高"
+          ],
+          "pinyin": "Jīntiān wēndù hěn gāo.",
+          "gloss": "The temperature is high today.",
+          "cloze_index": 1
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

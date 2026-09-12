@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_05",
+  "title": "HSK 2 詞彙 5",
+  "subtitle": "HSK 2 vocabulary · set 5",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_05_1",
+      "title": "詞彙 5–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_介紹",
+          "traditional": "介紹",
+          "pinyin": "jiè shào",
+          "gloss": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_紅",
+          "traditional": "紅",
+          "pinyin": "hóng",
+          "gloss": "red; popular; revolutionary",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_歡迎",
+          "traditional": "歡迎",
+          "pinyin": "huān yíng",
+          "gloss": "to welcome; welcome",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_眼睛",
+          "traditional": "眼睛",
+          "pinyin": "yǎnjīng",
+          "gloss": "eye",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_近",
+          "traditional": "近",
+          "pinyin": "jìn",
+          "gloss": "near; close to; approximately",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_離",
+          "traditional": "離",
+          "pinyin": "lí",
+          "gloss": "to leave; to part from; to be away from",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_05_2",
+      "title": "詞彙 5–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_白",
+          "traditional": "白",
+          "pinyin": "bái",
+          "gloss": "white; snowy; pure",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_去年",
+          "traditional": "去年",
+          "pinyin": "qù nián",
+          "gloss": "last year",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_票",
+          "traditional": "票",
+          "pinyin": "piào",
+          "gloss": "ticket; ballot; banknote",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_意思",
+          "traditional": "意思",
+          "pinyin": "yì si",
+          "gloss": "idea; opinion; meaning",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_回答",
+          "traditional": "回答",
+          "pinyin": "huí dá",
+          "gloss": "to reply; to answer; reply; answer",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_運動",
+          "traditional": "運動",
+          "pinyin": "yùn dòng",
+          "gloss": "to move; to exercise; sports",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_05_3",
+      "title": "詞彙 5–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_妻子",
+          "traditional": "妻子",
+          "pinyin": "qī zǐ",
+          "gloss": "wife and children",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_魚",
+          "traditional": "魚",
+          "pinyin": "yú",
+          "gloss": "fish",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_累",
+          "traditional": "累",
+          "pinyin": "lèi",
+          "gloss": "tired; weary; to strain",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_休息",
+          "traditional": "休息",
+          "pinyin": "xiūxí",
+          "gloss": "rest; to rest",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗",
+          "traditional": "洗",
+          "pinyin": "xǐ",
+          "gloss": "to wash; to bathe; to develop (photographs); to shuffle (cards etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_船",
+          "traditional": "船",
+          "pinyin": "chuán",
+          "gloss": "boat; vessel; ship",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 25,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

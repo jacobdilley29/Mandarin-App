@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_01",
+  "title": "HSK 2 詞彙 1",
+  "subtitle": "HSK 2 vocabulary · set 1",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_01_1",
+      "title": "詞彙 1–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_就",
+          "traditional": "就",
+          "pinyin": "jiù",
+          "gloss": "(after a suppositional clause) in that case; then; (after a clause of action) as soon as; immediately after; (same as 是) merely; nothing else but; simply; just; precisely; exactly",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_要",
+          "traditional": "要",
+          "pinyin": "yào",
+          "gloss": "to want; to need; to ask for; will; shall; about to; need to; should",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_也",
+          "traditional": "也",
+          "pinyin": "yě",
+          "gloss": "(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_到",
+          "traditional": "到",
+          "pinyin": "dào",
+          "gloss": "to reach; to arrive; to leave for; to go to; to (a place); until (a time); up to (a point)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_還",
+          "traditional": "還",
+          "pinyin": "hái",
+          "gloss": "still; still in progress; still more",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_著",
+          "traditional": "著",
+          "pinyin": "zhe",
+          "gloss": "to touch; to come in contact with; to feel",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_01_2",
+      "title": "詞彙 1–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_給",
+          "traditional": "給",
+          "pinyin": "gěi",
+          "gloss": "to; for; for the benefit of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_讓",
+          "traditional": "讓",
+          "pinyin": "ràng",
+          "gloss": "to yield; to permit; to let sb do sth",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吧",
+          "traditional": "吧",
+          "pinyin": "ba",
+          "gloss": "bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_得",
+          "traditional": "得",
+          "pinyin": "de",
+          "gloss": "to obtain; to get; to gain",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可以",
+          "traditional": "可以",
+          "pinyin": "kě yǐ",
+          "gloss": "can; may; possible",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_為",
+          "traditional": "為",
+          "pinyin": "wèi",
+          "gloss": "as (in the capacity of); to take sth as; to act as",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_01_3",
+      "title": "詞彙 1–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_從",
+          "traditional": "從",
+          "pinyin": "cóng",
+          "gloss": "from; through; via",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_真",
+          "traditional": "真",
+          "pinyin": "zhēn",
+          "gloss": "really; truly; indeed",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_兩",
+          "traditional": "兩",
+          "pinyin": "liǎng",
+          "gloss": "two; both; some",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_出",
+          "traditional": "出",
+          "pinyin": "chū",
+          "gloss": "to go out; to come out; to occur",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_已經",
+          "traditional": "已經",
+          "pinyin": "yǐ jīng",
+          "gloss": "already",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_最",
+          "traditional": "最",
+          "pinyin": "zuì",
+          "gloss": "most; the most; -est (superlative suffix)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 21,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

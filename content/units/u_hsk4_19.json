@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_19",
+  "title": "HSK 4 詞彙 19",
+  "subtitle": "HSK 4 vocabulary · set 19",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_19_1",
+      "title": "詞彙 19–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_高級",
+          "traditional": "高級",
+          "pinyin": "gāo jí",
+          "gloss": "high level; high grade; advanced",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_湯",
+          "traditional": "湯",
+          "pinyin": "tāng",
+          "gloss": "soup; hot or boiling water; decoction of medicinal herbs",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_響",
+          "traditional": "響",
+          "pinyin": "xiǎng",
+          "gloss": "echo; sound; noise",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_收入",
+          "traditional": "收入",
+          "pinyin": "shōu rù",
+          "gloss": "to take in; income; revenue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_恐怕",
+          "traditional": "恐怕",
+          "pinyin": "kǒng pà",
+          "gloss": "fear; to dread; I'm afraid that...",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_仔細",
+          "traditional": "仔細",
+          "pinyin": "zǐ xì",
+          "gloss": "careful; attentive; cautious; to be careful; to look out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_19_2",
+      "title": "詞彙 19–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_嚴格",
+          "traditional": "嚴格",
+          "pinyin": "yán gé",
+          "gloss": "strict; stringent; tight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_及時",
+          "traditional": "及時",
+          "pinyin": "jí shí",
+          "gloss": "timely; at the right time; promptly; without delay",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_知識",
+          "traditional": "知識",
+          "pinyin": "zhī shi",
+          "gloss": "knowledge; intellectual",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_專門",
+          "traditional": "專門",
+          "pinyin": "zhuān mén",
+          "gloss": "specialist; specialized; customized",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_工具",
+          "traditional": "工具",
+          "pinyin": "gōng jù",
+          "gloss": "tool; instrument; utensil",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_脫",
+          "traditional": "脫",
+          "pinyin": "tuō",
+          "gloss": "to shed; to take off; to escape",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_19_3",
+      "title": "詞彙 19–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_苦",
+          "traditional": "苦",
+          "pinyin": "kǔ",
+          "gloss": "bitter; hardship; pain",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_尤其",
+          "traditional": "尤其",
+          "pinyin": "yóu qí",
+          "gloss": "especially; particularly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_頁",
+          "traditional": "頁",
+          "pinyin": "yè",
+          "gloss": "page; leaf",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_扔",
+          "traditional": "扔",
+          "pinyin": "rēng",
+          "gloss": "to throw; to throw away",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_信心",
+          "traditional": "信心",
+          "pinyin": "xìn xīn",
+          "gloss": "confidence; faith (in sb or sth)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_博士",
+          "traditional": "博士",
+          "pinyin": "bó shì",
+          "gloss": "doctor; court academician (in feudal China); Ph.D.",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 63,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

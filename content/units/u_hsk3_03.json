@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_03",
+  "title": "HSK 3 詞彙 3",
+  "subtitle": "HSK 3 vocabulary · set 3",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_03_1",
+      "title": "詞彙 3–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_為什麼",
+          "traditional": "為什麼",
+          "pinyin": "wèi shén me",
+          "gloss": "why?; for what reason?",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_先",
+          "traditional": "先",
+          "pinyin": "xiān",
+          "gloss": "early; prior; former",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_關係",
+          "traditional": "關係",
+          "pinyin": "guān xi",
+          "gloss": "relation; relationship; to concern",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_出現",
+          "traditional": "出現",
+          "pinyin": "chū xiàn",
+          "gloss": "to appear; to arise; to emerge",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_了解",
+          "traditional": "了解",
+          "pinyin": "liǎo jiě",
+          "gloss": "to understand; to realize; to find out",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_過去",
+          "traditional": "過去",
+          "pinyin": "guò qù",
+          "gloss": "(in the) past; former; previous",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_03_2",
+      "title": "詞彙 3–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_參加",
+          "traditional": "參加",
+          "pinyin": "cān jiā",
+          "gloss": "to participate; to take part; to join",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_國家",
+          "traditional": "國家",
+          "pinyin": "guó jiā",
+          "gloss": "country; nation; state",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_決定",
+          "traditional": "決定",
+          "pinyin": "jué dìng",
+          "gloss": "to decide (to do something); to resolve; decision",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_分",
+          "traditional": "分",
+          "pinyin": "fēn",
+          "gloss": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_選擇",
+          "traditional": "選擇",
+          "pinyin": "xuǎn zé",
+          "gloss": "to select; to pick; choice",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_或者",
+          "traditional": "或者",
+          "pinyin": "huò zhě",
+          "gloss": "or; possibly; maybe; perhaps",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_03_3",
+      "title": "詞彙 3–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_機會",
+          "traditional": "機會",
+          "pinyin": "jī huì",
+          "gloss": "opportunity; chance; occasion",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_別人",
+          "traditional": "別人",
+          "pinyin": "bié ren",
+          "gloss": "other people; others; other person",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_使",
+          "traditional": "使",
+          "pinyin": "shǐ",
+          "gloss": "to make; to cause; to enable",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_其實",
+          "traditional": "其實",
+          "pinyin": "qí shí",
+          "gloss": "actually; in fact; really",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_以後",
+          "traditional": "以後",
+          "pinyin": "yǐ hòu",
+          "gloss": "after; later; afterwards",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_要求",
+          "traditional": "要求",
+          "pinyin": "yāo qiú",
+          "gloss": "to request; to require; requirement",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 31,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

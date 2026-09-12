@@ -55,6 +55,9 @@ Mandarin-App/
 │   │   ├── schema_progress.sql  SRS, history, settings   — irreplaceable
 │   │   ├── migrate.py       one-time split of a pre-existing single-file DB
 │   │   ├── backup.py        snapshots, JSON export/import, retention
+│   │   ├── taiwanize.py     OpenCC s2twp + pypinyin + Taiwan override layer
+│   │   ├── curriculum_source.py  per-unit content files (spec §3.1)
+│   │   ├── completeness.py  per-unit checks + the live/draft gate
 │   │   ├── content.py       curriculum load + queries + unlock logic
 │   │   ├── exercises.py     lesson exercise-stream builder (all drill types)
 │   │   ├── validation.py    sentence↔vocab validator (spec §5)
@@ -70,18 +73,24 @@ Mandarin-App/
 │   │   ├── whisper_asr.py   optional faster-whisper wrapper
 │   │   ├── conversation.py  Claude roleplay (teacher notes + new words)
 │   │   ├── progress.py      activity logging + dashboard stats
-│   │   └── routers/         health · admin · settings · learn · review ·
-│   │                        listen · speak · talk · progress · audio
+│   │   └── routers/         health · admin · content · settings · learn ·
+│   │                        review · listen · speak · talk · progress · audio
 │   ├── scripts/             backup · export_progress · import_progress ·
 │   │                        migrate_split_db · restore_progress ·
-│   │                        load_content · import_cedict
+│   │                        coverage · load_content · split_curriculum ·
+│   │                        build_skeleton · generate_content · warm_audio ·
+│   │                        import_cedict
 │   ├── tests/               pytest
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
 │   ├── src/pages/           Learn / Review / Listen / Speak / Talk / Me
 │   ├── src/components/      TabBar, ToneMark, Speakable, PlayButton, …
 │   └── src/theme.ts         design tokens (mirror of DESIGN.md)
-├── content/                 versioned curriculum source (JSON) — the input to content.db
+├── content/                 versioned curriculum source (spec §3.1)
+│   ├── curriculum.json      manifest: metadata + unit order
+│   ├── units/               one JSON file per unit — the curriculum itself
+│   ├── taiwan_overrides.json  PRC→Taiwan words and pinned readings
+│   └── wordlists/           vendored HSK 1-4 lists
 ├── scripts/tailscale-serve.sh   HTTPS phone access over your tailnet
 ├── DESIGN.md                palette + typography + tone-motif design tokens
 ├── Makefile                 setup / run / backup / restore / tailscale
@@ -344,27 +353,127 @@ make test
 
 ## Content pipeline
 
-The curriculum ships **committed and validated** in `content/curriculum.json`
-(Traditional characters, Taiwan usage), so the app runs with no downloads or API key.
-Three scripts (run from `backend/`) support authoring:
+The curriculum ships **committed and validated**, so the app runs with no
+downloads and no API key. Everything below is authoring tooling.
 
-```bash
-python -m scripts.load_content            # validate + load content into content.db
-python -m scripts.load_content --check    # validate only (vocab/sentence check)
-python -m scripts.import_cedict           # download + import CC-CEDICT dictionary
-python -m scripts.generate_content        # (optional) regenerate/expand via Claude API
+### Where the content lives
+
+```
+content/curriculum.json      manifest — metadata, function words, unit order
+content/units/<unit>.json    one file per unit: lessons, vocab, grammar,
+                             sentences, dialogue, and its status
+content/hsk1.json            HSK 1 pool for the placement check
+content/listen.json          listening comprehension sets
+content/taiwan_overrides.json   editorial layer — PRC→Taiwan words, pinned readings
+content/wordlists/hsk{1..4}.json  vendored HSK lists (MIT; glosses CC BY-SA 4.0)
 ```
 
-Every sentence is checked so it only uses characters the learner has met by that point
-in the curriculum; `load_content` refuses to load content with violations. None of
-these can touch `progress.db`.
+One file per unit, per spec §3.1: a curriculum change is a reviewable diff
+against one unit, not against a 15,000-line blob.
 
-**Audio:** `/api/audio` synthesises zh-TW speech with edge-tts and caches mp3s under
-`$DATA_DIR/audio/`. If a clip can't be generated (offline, restricted network), the
-endpoint returns 503 and the UI degrades gracefully — the audio button produces no
-sound rather than breaking the exercise.
+### Live units and drafts
 
----
+Every unit is either **live** (taught) or **draft** (staged but withheld). The
+status is not a label anyone sets by hand — it is computed from completeness
+checks on every load, and a unit declared live that fails a required check is
+demoted automatically.
+
+| Required to go live | Optional |
+|---|---|
+| has lessons · vocabulary seeded · every word glossed with a reading · every word has an example sentence · grammar point per lesson · drill sentences per lesson | dialogue per lesson · a Taiwan usage note |
+
+**Drafts never reach Learn.** They cannot be unlocked, cannot become lesson one,
+and cannot gate the lessons after them, whatever their position in the order.
+
+This exists for a reason. An earlier expansion to 1,208 words generated the
+vocabulary mechanically and shipped it — word lists with dictionary glosses, no
+sentences, ordered ahead of the hand-authored Taiwan units, so they became the
+first thing in the app. It had to be reverted. The gate makes that structurally
+impossible rather than a thing to remember.
+
+```bash
+make coverage                    # what's taught, what's staged, what each draft lacks
+make coverage ARGS=--all         # include the complete units
+```
+
+Currently: **14 units live** (107 words, hand-authored, Taiwan daily-life themes)
+and **63 draft** (1,101 words covering the rest of HSK 1–4).
+
+### How a word becomes a lesson
+
+1. **Source** — vendored HSK 1–4 lists plus CC-CEDICT glosses.
+2. **Characters** — OpenCC `s2twp`, not plain `s2t`: it substitutes Taiwan
+   vocabulary as well as converting characters (自行車, 軟體, 資訊, 印表機).
+3. **Vocabulary** — `content/taiwan_overrides.json` covers what `s2twp` misses,
+   verified gaps included: 地鐵→捷運, 公共汽車→公車, 西紅柿→番茄, 服務員→服務生,
+   聯繫→聯絡, 一會兒→一下 (Taiwan avoids erhua).
+4. **Readings** — pypinyin with tone diacritics, then pinned Taiwan readings:
+   垃圾 `lèsè`, 企業 `qìyè`, 星期 `xīngqí`, 和 `hàn`, plus the words Taiwan keeps
+   fully toned where the mainland standard neutralises them (喜歡 `xǐhuān`,
+   早上 `zǎoshàng`). All of this lives in `app/taiwanize.py`, so every script
+   applies identical rules.
+5. **Structure** — `build_skeleton.py` bins words into units and lessons, as drafts.
+6. **Content** — `generate_content.py` writes the sentences, dialogues and grammar,
+   then promotes a unit only if it both validates and is complete.
+7. **Audio** — `warm_audio.py` pre-generates zh-TW clips for the live units.
+
+Every sentence is checked so it only uses characters the learner has met by that
+point; `load_content` refuses to load violations, and generation refuses to
+promote a unit that has any.
+
+### The commands
+
+```bash
+make check-content       # validate without loading
+make load-content        # validate + load into content.db
+make build-skeleton      # rebuild the HSK draft units (idempotent, offline)
+make warm-audio          # pre-generate audio for live units
+make warm-audio ARGS=--dry-run
+```
+
+Reading audit — which words have a reading no heuristic can settle:
+
+```bash
+cd backend && python -m scripts.build_skeleton --report-readings
+```
+
+### Completing the drafts (needs an API key)
+
+The 63 draft units have vocabulary but no sentences. Filling them in is the one
+step that needs the Claude API:
+
+```bash
+export ANTHROPIC_API_KEY=sk-...
+make generate-content ARGS=--dry-run          # see the plan first
+make generate-content ARGS="--unit u_hsk1_01" # one unit, to check the output
+make generate-content ARGS="--level 1"        # a whole level
+make generate-content                         # everything still in draft
+```
+
+**Scale:** 185 lessons across the 63 drafts, one API call each. Results are
+cached under `content/.generated/`, so an interrupted run resumes for free and a
+re-run costs nothing. Start with one unit and read what it produced before
+committing to a level — the model's output becomes Jacob's curriculum.
+
+Each unit is promoted the moment it passes both gates, so progress is
+incremental and a failed unit simply stays a draft. Afterwards:
+
+```bash
+make coverage && make load-content && make warm-audio
+```
+
+### CC-CEDICT
+
+```bash
+cd backend && python -m scripts.import_cedict     # downloads the dictionary
+```
+
+Needs network; not required to run the app.
+
+**Audio:** `/api/audio` synthesises zh-TW speech with edge-tts and caches mp3s
+under `$DATA_DIR/audio/`. If a clip can't be generated (offline, restricted
+network), the endpoint returns 503 and the UI degrades gracefully — the audio
+button produces no sound rather than breaking the exercise.
 
 ## Admin API
 
@@ -375,6 +484,8 @@ sound rather than breaking the exercise.
 | `GET /api/admin/export` | Download all progress as JSON |
 | `POST /api/admin/import` | Restore from a JSON body (`mode`: `merge`\|`replace`) |
 | `POST /api/admin/import-file` | Same, as a file upload |
+| `GET /api/content/coverage` | Per-unit completeness from the source files |
+| `GET /api/content/coverage/db` | The same as loaded into the database |
 
 ---
 

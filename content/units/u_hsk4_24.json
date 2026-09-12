@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_24",
+  "title": "HSK 4 詞彙 24",
+  "subtitle": "HSK 4 vocabulary · set 24",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_24_1",
+      "title": "詞彙 24–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_酸",
+          "traditional": "酸",
+          "pinyin": "suān",
+          "gloss": "sour; tart; sick at heart",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_污染",
+          "traditional": "污染",
+          "pinyin": "wū rǎn",
+          "gloss": "to pollute; to contaminate (lit. and fig.)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_孤單",
+          "traditional": "孤單",
+          "pinyin": "gū dān",
+          "gloss": "lone; lonely; loneliness",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_寬",
+          "traditional": "寬",
+          "pinyin": "kuān",
+          "gloss": "wide; broad; loose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_例如",
+          "traditional": "例如",
+          "pinyin": "lì rú",
+          "gloss": "for example; for instance; such as",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_祝賀",
+          "traditional": "祝賀",
+          "pinyin": "zhù hè",
+          "gloss": "to congratulate; congratulations",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_24_2",
+      "title": "詞彙 24–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_批評",
+          "traditional": "批評",
+          "pinyin": "pī píng",
+          "gloss": "to criticize; criticism",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重視",
+          "traditional": "重視",
+          "pinyin": "zhòng shì",
+          "gloss": "to attach importance to sth; to value",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_增長",
+          "traditional": "增長",
+          "pinyin": "zēng zhǎng",
+          "gloss": "to grow; to increase",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_相反",
+          "traditional": "相反",
+          "pinyin": "xiāng fǎn",
+          "gloss": "opposite; contrary",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_抬",
+          "traditional": "抬",
+          "pinyin": "tái",
+          "gloss": "to lift; to raise; (of two or more persons) to carry",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_主意",
+          "traditional": "主意",
+          "pinyin": "zhǔ yi",
+          "gloss": "plan; idea; decision",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_24_3",
+      "title": "詞彙 24–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_擴大",
+          "traditional": "擴大",
+          "pinyin": "kuò dà",
+          "gloss": "to expand; to enlarge; to broaden one's scope",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_獎金",
+          "traditional": "獎金",
+          "pinyin": "jiǎng jīn",
+          "gloss": "premium; award money; bonus",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鹽",
+          "traditional": "鹽",
+          "pinyin": "yán",
+          "gloss": "salt",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_難受",
+          "traditional": "難受",
+          "pinyin": "nán shòu",
+          "gloss": "to feel unwell; to suffer pain; to be difficult to bear",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_民族",
+          "traditional": "民族",
+          "pinyin": "mín zú",
+          "gloss": "nationality; ethnic group",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_航班",
+          "traditional": "航班",
+          "pinyin": "háng bān",
+          "gloss": "(scheduled) flight; (scheduled) sailing",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 68,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

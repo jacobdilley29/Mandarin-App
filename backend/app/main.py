@@ -20,6 +20,7 @@ from .db import connect, init_db
 from .routers import (
     admin,
     audio,
+    content as content_router,
     health,
     learn,
     listen,
@@ -66,6 +67,7 @@ def _startup() -> None:
 # --- API routers ---
 app.include_router(health.router)
 app.include_router(admin.router)
+app.include_router(content_router.router)
 app.include_router(settings_router.router)
 app.include_router(learn.router)
 app.include_router(review.router)

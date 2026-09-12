@@ -1,0 +1,188 @@
+{
+  "id": "u_hsk4_22",
+  "title": "HSK 4 詞彙 22",
+  "subtitle": "HSK 4 vocabulary · set 22",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_22_1",
+      "title": "詞彙 22–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_平時",
+          "traditional": "平時",
+          "pinyin": "píng shí",
+          "gloss": "ordinarily; in normal times; in peacetime",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辣",
+          "traditional": "辣",
+          "pinyin": "là",
+          "gloss": "hot (spicy); pungent; (of chili pepper, raw onions etc) to sting",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_作者",
+          "traditional": "作者",
+          "pinyin": "zuò zhě",
+          "gloss": "author; writer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_品質",
+          "traditional": "品質",
+          "pinyin": "pǐnzhí",
+          "gloss": "quality; (physics) mass",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「品質」；「質量」在台灣指物理的 mass。",
+          "prc_form": "質量"
+        },
+        {
+          "id": "v_愉快",
+          "traditional": "愉快",
+          "pinyin": "yú kuài",
+          "gloss": "cheerful; cheerily; delightful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_準確",
+          "traditional": "準確",
+          "pinyin": "zhǔn què",
+          "gloss": "accurate; exact; precise",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_22_2",
+      "title": "詞彙 22–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_詳細",
+          "traditional": "詳細",
+          "pinyin": "xiáng xì",
+          "gloss": "detailed; in detail; minute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_禁止",
+          "traditional": "禁止",
+          "pinyin": "jìn zhǐ",
+          "gloss": "to prohibit; to forbid; to ban",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_圓",
+          "traditional": "圓",
+          "pinyin": "yuán",
+          "gloss": "circle; round; circular",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_冷靜",
+          "traditional": "冷靜",
+          "pinyin": "lěng jìng",
+          "gloss": "calm; cool-headed; dispassionate; (of a place) deserted; quiet",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_購物",
+          "traditional": "購物",
+          "pinyin": "gòu wù",
+          "gloss": "shopping",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_數量",
+          "traditional": "數量",
+          "pinyin": "shù liàng",
+          "gloss": "amount; quantity; quantitative",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_22_3",
+      "title": "詞彙 22–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_勇敢",
+          "traditional": "勇敢",
+          "pinyin": "yǒng gǎn",
+          "gloss": "brave; courageous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_巧克力",
+          "traditional": "巧克力",
+          "pinyin": "qiǎo kè lì",
+          "gloss": "chocolate (loanword)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_富",
+          "traditional": "富",
+          "pinyin": "fù",
+          "gloss": "rich; abundant; wealthy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_驕傲",
+          "traditional": "驕傲",
+          "pinyin": "jiāo ào",
+          "gloss": "pride; arrogance; conceited",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_性格",
+          "traditional": "性格",
+          "pinyin": "xìng gé",
+          "gloss": "nature; disposition; temperament",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_降低",
+          "traditional": "降低",
+          "pinyin": "jiàng dī",
+          "gloss": "to reduce; to lower; to bring down",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 66,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_07",
+  "title": "HSK 4 詞彙 7",
+  "subtitle": "HSK 4 vocabulary · set 7",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_07_1",
+      "title": "詞彙 7–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_發展",
+          "traditional": "發展",
+          "pinyin": "fā zhǎn",
+          "gloss": "development; growth; to develop",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_談",
+          "traditional": "談",
+          "pinyin": "tán",
+          "gloss": "to speak; to talk; to converse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_至少",
+          "traditional": "至少",
+          "pinyin": "zhì shǎo",
+          "gloss": "at least; (to say the) least",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_解釋",
+          "traditional": "解釋",
+          "pinyin": "jiě shì",
+          "gloss": "explanation; to explain; to interpret",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_負責",
+          "traditional": "負責",
+          "pinyin": "fù zé",
+          "gloss": "to be in charge of; to take responsibility for; to be to blame",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_首先",
+          "traditional": "首先",
+          "pinyin": "shǒu xiān",
+          "gloss": "first (of all); in the first place",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_07_2",
+      "title": "詞彙 7–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_理解",
+          "traditional": "理解",
+          "pinyin": "lǐ jiě",
+          "gloss": "to comprehend; to understand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_報道",
+          "traditional": "報道",
+          "pinyin": "bào dào",
+          "gloss": "to report (news); report",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_安排",
+          "traditional": "安排",
+          "pinyin": "ān pái",
+          "gloss": "to arrange; to plan; to set up",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_夢",
+          "traditional": "夢",
+          "pinyin": "mèng",
+          "gloss": "dream; (bound form) to dream",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重新",
+          "traditional": "重新",
+          "pinyin": "chóng xīn",
+          "gloss": "again; once more; re-",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_幸福",
+          "traditional": "幸福",
+          "pinyin": "xìng fú",
+          "gloss": "happiness; happy; blessed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_07_3",
+      "title": "詞彙 7–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_自然",
+          "traditional": "自然",
+          "pinyin": "zì rán",
+          "gloss": "nature; natural; naturally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_責任",
+          "traditional": "責任",
+          "pinyin": "zé rèn",
+          "gloss": "responsibility; blame; duty",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_試",
+          "traditional": "試",
+          "pinyin": "shì",
+          "gloss": "to test; to try; experiment",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_弄",
+          "traditional": "弄",
+          "pinyin": "nòng",
+          "gloss": "to do; to manage; to handle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_贏",
+          "traditional": "贏",
+          "pinyin": "yíng",
+          "gloss": "to beat; to win; to profit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_滿",
+          "traditional": "滿",
+          "pinyin": "mǎn",
+          "gloss": "to fill; full; filled",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 51,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

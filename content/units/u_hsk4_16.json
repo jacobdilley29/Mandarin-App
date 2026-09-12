@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_16",
+  "title": "HSK 4 詞彙 16",
+  "subtitle": "HSK 4 vocabulary · set 16",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_16_1",
+      "title": "詞彙 16–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_戴",
+          "traditional": "戴",
+          "pinyin": "dài",
+          "gloss": "to put on or wear (glasses, hat, gloves etc); to respect; to bear",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_究竟",
+          "traditional": "究竟",
+          "pinyin": "jiū jìng",
+          "gloss": "to go to the bottom of a matter; after all; when all is said and done",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_輕",
+          "traditional": "輕",
+          "pinyin": "qīng",
+          "gloss": "light; easy; gentle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_然而",
+          "traditional": "然而",
+          "pinyin": "rán ér",
+          "gloss": "however; yet; but",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_交流",
+          "traditional": "交流",
+          "pinyin": "jiāo liú",
+          "gloss": "to exchange; exchange; communication",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_興奮",
+          "traditional": "興奮",
+          "pinyin": "xīng fèn",
+          "gloss": "excited; excitement; (physiology) excitation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_16_2",
+      "title": "詞彙 16–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_困",
+          "traditional": "困",
+          "pinyin": "kùn",
+          "gloss": "to trap; to surround; hard-pressed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_符合",
+          "traditional": "符合",
+          "pinyin": "fú hé",
+          "gloss": "in keeping with; in accordance with; tallying with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_躺",
+          "traditional": "躺",
+          "pinyin": "tǎng",
+          "gloss": "to recline; to lie down",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_答案",
+          "traditional": "答案",
+          "pinyin": "dá àn",
+          "gloss": "answer; solution",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_皮膚",
+          "traditional": "皮膚",
+          "pinyin": "pí fū",
+          "gloss": "skin",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_浪費",
+          "traditional": "浪費",
+          "pinyin": "làng fèi",
+          "gloss": "to waste; to squander",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_16_3",
+      "title": "詞彙 16–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_厲害",
+          "traditional": "厲害",
+          "pinyin": "lì hai",
+          "gloss": "(used to describe sb or sth that makes a very strong impression, whether favorable or unfavorable) terrible; intense; severe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_尊重",
+          "traditional": "尊重",
+          "pinyin": "zūn zhòng",
+          "gloss": "to esteem; to respect; to honor",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_激動",
+          "traditional": "激動",
+          "pinyin": "jī dòng",
+          "gloss": "to move emotionally; to stir up (emotions); to excite",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_騙",
+          "traditional": "騙",
+          "pinyin": "piàn",
+          "gloss": "to cheat; to swindle; to deceive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可憐",
+          "traditional": "可憐",
+          "pinyin": "kě lián",
+          "gloss": "pitiful; pathetic; to have pity on",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_語言",
+          "traditional": "語言",
+          "pinyin": "yǔ yán",
+          "gloss": "language",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 60,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

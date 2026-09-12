@@ -1,0 +1,220 @@
+{
+  "id": "u_mrt",
+  "title": "捷運與 YouBike",
+  "subtitle": "MRT, buses and bikes",
+  "hsk_level": 3,
+  "sort_order": 8,
+  "lessons": [
+    {
+      "id": "l_mrt_1",
+      "title": "搭捷運",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_jieyun",
+          "traditional": "捷運",
+          "pinyin": "jiéyùn",
+          "gloss": "MRT (metro)",
+          "hsk_level": 3,
+          "taiwan_note": "台北、高雄的地鐵都叫「捷運」，不說「地鐵」。",
+          "example": {
+            "hanzi": "我搭捷運去。",
+            "pinyin": "Wǒ dā jiéyùn qù.",
+            "gloss": "I'll take the MRT there."
+          }
+        },
+        {
+          "id": "v_da",
+          "traditional": "搭",
+          "pinyin": "dā",
+          "gloss": "to take (transport)",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「搭車」，也說「坐車」。",
+          "example": {
+            "hanzi": "你要搭什麼車？",
+            "pinyin": "Nǐ yào dā shénme chē?",
+            "gloss": "What are you going to take?"
+          }
+        },
+        {
+          "id": "v_zhan",
+          "traditional": "站",
+          "pinyin": "zhàn",
+          "gloss": "station; stop",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下一站是台北車站。",
+            "pinyin": "Xià yí zhàn shì Táiběi chēzhàn.",
+            "gloss": "The next stop is Taipei Main Station."
+          }
+        },
+        {
+          "id": "v_gongche",
+          "traditional": "公車",
+          "pinyin": "gōngchē",
+          "gloss": "city bus",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「公車」，不說「公交車」。",
+          "example": {
+            "hanzi": "我每天坐公車。",
+            "pinyin": "Wǒ měitiān zuò gōngchē.",
+            "gloss": "I take the bus every day."
+          }
+        },
+        {
+          "id": "v_youbike",
+          "traditional": "腳踏車",
+          "pinyin": "jiǎotàchē",
+          "gloss": "bicycle",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「腳踏車」，不說「自行車」；共享單車是 YouBike。",
+          "example": {
+            "hanzi": "我要騎腳踏車。",
+            "pinyin": "Wǒ yào qí jiǎotàchē.",
+            "gloss": "I want to ride a bike."
+          }
+        },
+        {
+          "id": "v_qi",
+          "traditional": "騎",
+          "pinyin": "qí",
+          "gloss": "to ride (a bike/scooter)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他騎腳踏車上學。",
+            "pinyin": "Tā qí jiǎotàchē shàngxué.",
+            "gloss": "He rides a bike to school."
+          }
+        },
+        {
+          "id": "v_zuo",
+          "traditional": "坐",
+          "pinyin": "zuò",
+          "gloss": "to sit; to ride (sitting)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們坐捷運吧。",
+            "pinyin": "Wǒmen zuò jiéyùn ba.",
+            "gloss": "Let's take the MRT."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_verb_object_go",
+          "title": "Means of transport before the destination",
+          "pattern": "Subject + 搭/坐/騎 + Vehicle + 去 + Place",
+          "explanation": "Say how you travel before where you're going: 搭捷運去台北 = take the MRT to Taipei. The transport verb-phrase comes first, then 去 + place.",
+          "examples": [
+            {
+              "hanzi": "我搭捷運去台北。",
+              "pinyin": "Wǒ dā jiéyùn qù Táiběi.",
+              "gloss": "I take the MRT to Taipei."
+            },
+            {
+              "hanzi": "他坐公車去學校。",
+              "pinyin": "Tā zuò gōngchē qù xuéxiào.",
+              "gloss": "He takes the bus to school."
+            },
+            {
+              "hanzi": "我們騎腳踏車去夜市。",
+              "pinyin": "Wǒmen qí jiǎotàchē qù yèshì.",
+              "gloss": "We ride bikes to the night market."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "朋友",
+          "hanzi": "你要怎麼去台北車站？",
+          "pinyin": "Nǐ yào zěnme qù Táiběi chēzhàn?",
+          "gloss": "How are you getting to Taipei Main Station?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "我搭捷運去。",
+          "pinyin": "Wǒ dā jiéyùn qù.",
+          "gloss": "I'll take the MRT."
+        },
+        {
+          "speaker": "朋友",
+          "hanzi": "捷運站在哪裡？",
+          "pinyin": "Jiéyùn zhàn zài nǎlǐ?",
+          "gloss": "Where's the MRT station?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "很近，我們一起坐吧。",
+          "pinyin": "Hěn jìn, wǒmen yìqǐ zuò ba.",
+          "gloss": "It's close, let's ride together."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "搭",
+            "捷運",
+            "去",
+            "台北"
+          ],
+          "pinyin": "Wǒ dā jiéyùn qù Táiběi.",
+          "gloss": "I take the MRT to Taipei.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "下",
+            "一",
+            "站",
+            "是",
+            "台北車站"
+          ],
+          "pinyin": "Xià yí zhàn shì Táiběi chēzhàn.",
+          "gloss": "The next stop is Taipei Main Station.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "坐",
+            "公車"
+          ],
+          "pinyin": "Wǒ měitiān zuò gōngchē.",
+          "gloss": "I take the bus every day.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "騎",
+            "腳踏車",
+            "上學"
+          ],
+          "pinyin": "Tā qí jiǎotàchē shàngxué.",
+          "gloss": "He rides a bike to school.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我們",
+            "一起",
+            "坐",
+            "捷運"
+          ],
+          "pinyin": "Wǒmen yìqǐ zuò jiéyùn.",
+          "gloss": "Let's take the MRT together.",
+          "cloze_index": 2
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

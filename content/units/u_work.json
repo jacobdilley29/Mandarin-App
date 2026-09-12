@@ -1,0 +1,219 @@
+{
+  "id": "u_work",
+  "title": "工作",
+  "subtitle": "Work and coworkers",
+  "hsk_level": 4,
+  "sort_order": 13,
+  "lessons": [
+    {
+      "id": "l_work_1",
+      "title": "上班開會",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_shangban",
+          "traditional": "上班",
+          "pinyin": "shàngbān",
+          "gloss": "to go to work",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我早上九點上班。",
+            "pinyin": "Wǒ zǎoshang jiǔ diǎn shàngbān.",
+            "gloss": "I start work at nine in the morning."
+          }
+        },
+        {
+          "id": "v_xiaban",
+          "traditional": "下班",
+          "pinyin": "xiàbān",
+          "gloss": "to get off work",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我六點下班。",
+            "pinyin": "Wǒ liù diǎn xiàbān.",
+            "gloss": "I get off work at six."
+          }
+        },
+        {
+          "id": "v_kaihui",
+          "traditional": "開會",
+          "pinyin": "kāihuì",
+          "gloss": "to have a meeting",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下午我們要開會。",
+            "pinyin": "Xiàwǔ wǒmen yào kāihuì.",
+            "gloss": "We have a meeting this afternoon."
+          }
+        },
+        {
+          "id": "v_tongshi",
+          "traditional": "同事",
+          "pinyin": "tóngshì",
+          "gloss": "coworker; colleague",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他是我的同事。",
+            "pinyin": "Tā shì wǒ de tóngshì.",
+            "gloss": "He's my coworker."
+          }
+        },
+        {
+          "id": "v_laoban",
+          "traditional": "老闆",
+          "pinyin": "lǎobǎn",
+          "gloss": "boss; shop owner",
+          "hsk_level": 4,
+          "taiwan_note": "也用來稱店家老闆。",
+          "example": {
+            "hanzi": "老闆對我們很好。",
+            "pinyin": "Lǎobǎn duì wǒmen hěn hǎo.",
+            "gloss": "The boss is good to us."
+          }
+        },
+        {
+          "id": "v_mang",
+          "traditional": "忙",
+          "pinyin": "máng",
+          "gloss": "busy",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天很忙。",
+            "pinyin": "Wǒ jīntiān hěn máng.",
+            "gloss": "I'm very busy today."
+          }
+        },
+        {
+          "id": "v_jiaban",
+          "traditional": "加班",
+          "pinyin": "jiābān",
+          "gloss": "to work overtime",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天要加班。",
+            "pinyin": "Jīntiān yào jiābān.",
+            "gloss": "I have to work overtime today."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_yibian",
+          "title": "一邊…一邊… — doing two things at once",
+          "pattern": "一邊 + Verb1 + 一邊 + Verb2",
+          "explanation": "一邊…一邊… links two actions happening at the same time: 一邊吃飯一邊開會 = have a meeting while eating.",
+          "examples": [
+            {
+              "hanzi": "我一邊喝咖啡一邊工作。",
+              "pinyin": "Wǒ yìbiān hē kāfēi yìbiān gōngzuò.",
+              "gloss": "I work while drinking coffee."
+            },
+            {
+              "hanzi": "他一邊上班一邊上學。",
+              "pinyin": "Tā yìbiān shàngbān yìbiān shàngxué.",
+              "gloss": "He works and studies at the same time."
+            },
+            {
+              "hanzi": "別一邊開會一邊吃東西。",
+              "pinyin": "Bié yìbiān kāihuì yìbiān chī dōngxi.",
+              "gloss": "Don't eat during a meeting."
+            }
+          ],
+          "hsk_level": 4
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "同事",
+          "hanzi": "你今天忙不忙？",
+          "pinyin": "Nǐ jīntiān máng bù máng?",
+          "gloss": "Are you busy today?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "很忙，下午還要開會。",
+          "pinyin": "Hěn máng, xiàwǔ hái yào kāihuì.",
+          "gloss": "Very busy; I still have a meeting this afternoon."
+        },
+        {
+          "speaker": "同事",
+          "hanzi": "今天要加班嗎？",
+          "pinyin": "Jīntiān yào jiābān ma?",
+          "gloss": "Do you have to work overtime today?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "不用，六點就下班。",
+          "pinyin": "Búyòng, liù diǎn jiù xiàbān.",
+          "gloss": "No, I get off at six."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "早上",
+            "九",
+            "點",
+            "上班"
+          ],
+          "pinyin": "Wǒ zǎoshang jiǔ diǎn shàngbān.",
+          "gloss": "I start work at nine.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "下午",
+            "我們",
+            "要",
+            "開會"
+          ],
+          "pinyin": "Xiàwǔ wǒmen yào kāihuì.",
+          "gloss": "We have a meeting this afternoon.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "是",
+            "我",
+            "的",
+            "同事"
+          ],
+          "pinyin": "Tā shì wǒ de tóngshì.",
+          "gloss": "He's my coworker.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "很",
+            "忙"
+          ],
+          "pinyin": "Wǒ jīntiān hěn máng.",
+          "gloss": "I'm very busy today.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "今天",
+            "要",
+            "加班"
+          ],
+          "pinyin": "Jīntiān yào jiābān.",
+          "gloss": "I have to work overtime today.",
+          "cloze_index": 2
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

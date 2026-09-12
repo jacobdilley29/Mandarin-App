@@ -82,8 +82,15 @@ CREATE TABLE IF NOT EXISTS units (
     title       TEXT NOT NULL,           -- Taiwan daily-life theme
     subtitle    TEXT,
     hsk_level   INTEGER,
-    sort_order  INTEGER NOT NULL DEFAULT 0
+    sort_order  INTEGER NOT NULL DEFAULT 0,
+    -- Draft gate (spec §3.1). 'live' units are taught; 'draft' units are staged
+    -- but withheld from the Learn map until every required completeness check
+    -- passes. Generated content lands as draft and promotes itself only once it
+    -- is actually finished — see app/completeness.py for why this exists.
+    status       TEXT NOT NULL DEFAULT 'live',
+    completeness TEXT                    -- JSON checklist, for the coverage report
 );
+CREATE INDEX IF NOT EXISTS idx_units_status ON units(status);
 
 CREATE TABLE IF NOT EXISTS lessons (
     id          TEXT PRIMARY KEY,        -- content slug, e.g. 'l_conv_1'

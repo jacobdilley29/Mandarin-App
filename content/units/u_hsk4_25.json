@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_25",
+  "title": "HSK 4 詞彙 25",
+  "subtitle": "HSK 4 vocabulary · set 25",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_25_1",
+      "title": "詞彙 25–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_偶爾",
+          "traditional": "偶爾",
+          "pinyin": "ǒu ěr",
+          "gloss": "occasionally; once in a while; sometimes",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_約會",
+          "traditional": "約會",
+          "pinyin": "yuē huì",
+          "gloss": "appointment; engagement; date",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_受不了",
+          "traditional": "受不了",
+          "pinyin": "shòu bù liǎo",
+          "gloss": "unbearable; unable to endure; can't stand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_厚",
+          "traditional": "厚",
+          "pinyin": "hòu",
+          "gloss": "thick; deep or profound; kind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_護士",
+          "traditional": "護士",
+          "pinyin": "hù shi",
+          "gloss": "nurse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_參觀",
+          "traditional": "參觀",
+          "pinyin": "cān guān",
+          "gloss": "to look around; to tour; to visit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_25_2",
+      "title": "詞彙 25–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_順便",
+          "traditional": "順便",
+          "pinyin": "shùn biàn",
+          "gloss": "conveniently; in passing; without much extra effort",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_友誼",
+          "traditional": "友誼",
+          "pinyin": "yǒu yì",
+          "gloss": "companionship; fellowship; friendship",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_笨",
+          "traditional": "笨",
+          "pinyin": "bèn",
+          "gloss": "stupid; foolish; silly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_沙發",
+          "traditional": "沙發",
+          "pinyin": "shā fā",
+          "gloss": "sofa (loanword); (Internet slang) the first reply or replier to a forum post",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_耐心",
+          "traditional": "耐心",
+          "pinyin": "nài xīn",
+          "gloss": "to be patient; patience",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_開玩笑",
+          "traditional": "開玩笑",
+          "pinyin": "kāi wán xiào",
+          "gloss": "to play a joke; to make fun of; to joke",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_25_3",
+      "title": "詞彙 25–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_反映",
+          "traditional": "反映",
+          "pinyin": "fǎn yìng",
+          "gloss": "to mirror; to reflect; mirror image",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_植物",
+          "traditional": "植物",
+          "pinyin": "zhí wù",
+          "gloss": "plant; vegetation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_筆記本",
+          "traditional": "筆記本",
+          "pinyin": "bǐ jì běn",
+          "gloss": "notebook (stationery); notebook (computing)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_信用卡",
+          "traditional": "信用卡",
+          "pinyin": "xìn yòng kǎ",
+          "gloss": "credit card",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_減肥",
+          "traditional": "減肥",
+          "pinyin": "jiǎn féi",
+          "gloss": "to lose weight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_其次",
+          "traditional": "其次",
+          "pinyin": "qí cì",
+          "gloss": "next; secondly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 69,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

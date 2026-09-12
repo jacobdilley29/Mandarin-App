@@ -44,6 +44,13 @@ help:
 	@echo "  make import FILE=x   Merge a JSON export back in"
 	@echo "  make restore FILE=x  Replace all progress from a JSON export"
 	@echo ""
+	@echo "Content pipeline (spec §5):"
+	@echo "  make coverage        Per-unit completeness — what's taught, what's staged"
+	@echo "  make load-content    Validate + load content/units/ into content.db"
+	@echo "  make build-skeleton  Rebuild HSK 1-4 draft units from the word lists"
+	@echo "  make generate-content  Fill in drafts via Claude (needs ANTHROPIC_API_KEY)"
+	@echo "  make warm-audio      Pre-generate zh-TW audio for the live units"
+	@echo ""
 	@echo "Phone access:"
 	@echo "  make tailscale-up    Serve the app over HTTPS on your tailnet"
 	@echo "  make tailscale-down  Stop serving"
@@ -168,6 +175,38 @@ restore:
 	@echo "A safety snapshot is taken first. Press Ctrl-C within 5s to abort."
 	@sleep 5
 	@$(RUN_BACKEND) -m scripts.import_progress /dev/stdin --replace < "$(FILE_ABS)"
+
+# ---------------------------------------------------------------------------
+# Content pipeline (spec §5)
+#
+# The app ships with its curriculum committed and loaded, so none of these are
+# needed to run it. They are authoring tools.
+# ---------------------------------------------------------------------------
+.PHONY: coverage
+coverage:
+	@$(RUN_BACKEND) -m scripts.coverage $(ARGS)
+
+.PHONY: load-content
+load-content:
+	$(RUN_BACKEND) -m scripts.load_content $(ARGS)
+
+.PHONY: check-content
+check-content:
+	$(RUN_BACKEND) -m scripts.load_content --check
+
+.PHONY: build-skeleton
+build-skeleton:
+	$(RUN_BACKEND) -m scripts.build_skeleton --theme offline $(ARGS)
+	@echo ""
+	@echo "Drafts are staged, not taught. Next: make generate-content"
+
+.PHONY: generate-content
+generate-content:
+	$(RUN_BACKEND) -m scripts.generate_content $(ARGS)
+
+.PHONY: warm-audio
+warm-audio:
+	$(RUN_BACKEND) -m scripts.warm_audio $(ARGS)
 
 # ---------------------------------------------------------------------------
 # Phone access

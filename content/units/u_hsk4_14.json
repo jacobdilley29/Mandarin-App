@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_14",
+  "title": "HSK 4 詞彙 14",
+  "subtitle": "HSK 4 vocabulary · set 14",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_14_1",
+      "title": "詞彙 14–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_當地",
+          "traditional": "當地",
+          "pinyin": "dāng dì",
+          "gloss": "local",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大概",
+          "traditional": "大概",
+          "pinyin": "dà gài",
+          "gloss": "roughly; probably; rough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_允許",
+          "traditional": "允許",
+          "pinyin": "yǔn xǔ",
+          "gloss": "to permit; to allow",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_教授",
+          "traditional": "教授",
+          "pinyin": "jiào shòu",
+          "gloss": "professor; to instruct; to lecture on",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_頓",
+          "traditional": "頓",
+          "pinyin": "dùn",
+          "gloss": "to stop; to pause; to arrange",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吸引",
+          "traditional": "吸引",
+          "pinyin": "xī yǐn",
+          "gloss": "to attract; to appeal to; to fascinate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_14_2",
+      "title": "詞彙 14–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_共同",
+          "traditional": "共同",
+          "pinyin": "gòng tóng",
+          "gloss": "common; joint; jointly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_雜誌",
+          "traditional": "雜誌",
+          "pinyin": "zá zhì",
+          "gloss": "magazine",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_既然",
+          "traditional": "既然",
+          "pinyin": "jì rán",
+          "gloss": "since; as; this being the case",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_停止",
+          "traditional": "停止",
+          "pinyin": "tíng zhǐ",
+          "gloss": "to stop; to halt; to cease",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_提醒",
+          "traditional": "提醒",
+          "pinyin": "tí xǐng",
+          "gloss": "to remind; to call attention to; to warn of",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_演員",
+          "traditional": "演員",
+          "pinyin": "yǎn yuán",
+          "gloss": "actor or actress; performer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_14_3",
+      "title": "詞彙 14–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_態度",
+          "traditional": "態度",
+          "pinyin": "tài du",
+          "gloss": "manner; bearing; attitude",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_周圍",
+          "traditional": "周圍",
+          "pinyin": "zhōu wéi",
+          "gloss": "environs; surroundings; periphery",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_丟",
+          "traditional": "丟",
+          "pinyin": "diū",
+          "gloss": "to lose; to put aside; to throw",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_複雜",
+          "traditional": "複雜",
+          "pinyin": "fù zá",
+          "gloss": "complicated; complex",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_表達",
+          "traditional": "表達",
+          "pinyin": "biǎo dá",
+          "gloss": "to express; to convey",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_數字",
+          "traditional": "數字",
+          "pinyin": "shù zì",
+          "gloss": "numeral; digit; number",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 58,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

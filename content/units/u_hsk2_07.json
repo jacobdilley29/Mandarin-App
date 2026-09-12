@@ -1,0 +1,188 @@
+{
+  "id": "u_hsk2_07",
+  "title": "HSK 2 詞彙 7",
+  "subtitle": "HSK 2 vocabulary · set 7",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_07_1",
+      "title": "詞彙 7–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_旅遊",
+          "traditional": "旅遊",
+          "pinyin": "lǚ yóu",
+          "gloss": "trip; journey; tourism",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_起床",
+          "traditional": "起床",
+          "pinyin": "qǐ chuáng",
+          "gloss": "to get out of bed; to get up",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_題",
+          "traditional": "題",
+          "pinyin": "tí",
+          "gloss": "topic; problem for discussion; exam question",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_唱歌",
+          "traditional": "唱歌",
+          "pinyin": "chàng gē",
+          "gloss": "to sing a song",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_右邊",
+          "traditional": "右邊",
+          "pinyin": "yòu bian",
+          "gloss": "right side; right, to the right",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_雞蛋",
+          "traditional": "雞蛋",
+          "pinyin": "jī dàn",
+          "gloss": "(chicken) egg; hen's egg",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_07_2",
+      "title": "詞彙 7–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_姓",
+          "traditional": "姓",
+          "pinyin": "xìng",
+          "gloss": "family name; surname; to be surnamed",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_游泳",
+          "traditional": "游泳",
+          "pinyin": "yóu yǒng",
+          "gloss": "swimming; to swim",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_跳舞",
+          "traditional": "跳舞",
+          "pinyin": "tiào wǔ",
+          "gloss": "to dance",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_陰",
+          "traditional": "陰",
+          "pinyin": "yīn",
+          "gloss": "overcast (weather); cloudy; shady",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生病",
+          "traditional": "生病",
+          "pinyin": "shēng bìng",
+          "gloss": "to fall ill",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_左邊",
+          "traditional": "左邊",
+          "pinyin": "zuǒ bian",
+          "gloss": "left; the left side; to the left of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_07_3",
+      "title": "詞彙 7–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_公斤",
+          "traditional": "公斤",
+          "pinyin": "gōng jīn",
+          "gloss": "kilogram (kg)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_教室",
+          "traditional": "教室",
+          "pinyin": "jiào shì",
+          "gloss": "classroom",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_服務生",
+          "traditional": "服務生",
+          "pinyin": "fúwùshēng",
+          "gloss": "waiter; waitress; attendant",
+          "hsk_level": 2,
+          "taiwan_note": "台灣餐廳多說「服務生」。",
+          "prc_form": "服務員"
+        },
+        {
+          "id": "v_手錶",
+          "traditional": "手錶",
+          "pinyin": "shǒu biǎo",
+          "gloss": "wristwatch",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_跑步",
+          "traditional": "跑步",
+          "pinyin": "pǎo bù",
+          "gloss": "to run; to jog; (military) to march at the double",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_西瓜",
+          "traditional": "西瓜",
+          "pinyin": "xī guā",
+          "gloss": "watermelon",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 27,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_17",
+  "title": "HSK 4 詞彙 17",
+  "subtitle": "HSK 4 vocabulary · set 17",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_17_1",
+      "title": "詞彙 17–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_擦",
+          "traditional": "擦",
+          "pinyin": "cā",
+          "gloss": "to rub; to scratch; to towel; to wipe with a towel; to apply (lipstick, lotion etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_香",
+          "traditional": "香",
+          "pinyin": "xiāng",
+          "gloss": "fragrant; sweet smelling; aromatic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成熟",
+          "traditional": "成熟",
+          "pinyin": "chéng shú",
+          "gloss": "mature; ripe; to mature; to ripen; Taiwan pr. [chéng shóu]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_無聊",
+          "traditional": "無聊",
+          "pinyin": "wú liáo",
+          "gloss": "bored; boring; senseless",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_文章",
+          "traditional": "文章",
+          "pinyin": "wén zhāng",
+          "gloss": "article; essay; literary works",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_信任",
+          "traditional": "信任",
+          "pinyin": "xìn rèn",
+          "gloss": "to trust; to have confidence in",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_17_2",
+      "title": "詞彙 17–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_網站",
+          "traditional": "網站",
+          "pinyin": "wǎng zhàn",
+          "gloss": "website; network station; node",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地球",
+          "traditional": "地球",
+          "pinyin": "dì qiú",
+          "gloss": "the earth",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_實際",
+          "traditional": "實際",
+          "pinyin": "shí jì",
+          "gloss": "reality; practice; practical",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_年齡",
+          "traditional": "年齡",
+          "pinyin": "nián líng",
+          "gloss": "(a person's) age",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_差不多",
+          "traditional": "差不多",
+          "pinyin": "chà bu duō",
+          "gloss": "almost; nearly; more or less",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可惜",
+          "traditional": "可惜",
+          "pinyin": "kě xī",
+          "gloss": "it is a pity; what a pity; unfortunately",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_17_3",
+      "title": "詞彙 17–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_陽光",
+          "traditional": "陽光",
+          "pinyin": "yáng guāng",
+          "gloss": "sunshine; (of personality) upbeat; energetic; transparent (open to public scrutiny)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_回憶",
+          "traditional": "回憶",
+          "pinyin": "huí yì",
+          "gloss": "to recall; memories",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_空氣",
+          "traditional": "空氣",
+          "pinyin": "kōng qì",
+          "gloss": "air; atmosphere",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_材料",
+          "traditional": "材料",
+          "pinyin": "cái liào",
+          "gloss": "(raw) material; data; (fig.) person who has the potential to do the job",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_熟悉",
+          "traditional": "熟悉",
+          "pinyin": "shú xī",
+          "gloss": "to be familiar with; to know well",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_隨便",
+          "traditional": "隨便",
+          "pinyin": "suí biàn",
+          "gloss": "as one wishes; as one pleases; at random",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 61,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

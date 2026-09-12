@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_03",
+  "title": "HSK 4 詞彙 3",
+  "subtitle": "HSK 4 vocabulary · set 3",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_03_1",
+      "title": "詞彙 3–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_呀",
+          "traditional": "呀",
+          "pinyin": "ya",
+          "gloss": "(particle equivalent to 啊 after a vowel, expressing surprise or doubt)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原因",
+          "traditional": "原因",
+          "pinyin": "yuán yīn",
+          "gloss": "cause; origin; root cause",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_消息",
+          "traditional": "消息",
+          "pinyin": "xiāo xi",
+          "gloss": "news; information",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_只要",
+          "traditional": "只要",
+          "pinyin": "zhǐ yào",
+          "gloss": "if only; so long as",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾",
+          "traditional": "乾",
+          "pinyin": "gān",
+          "gloss": "dry; dried food; empty; hollow",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_接受",
+          "traditional": "接受",
+          "pinyin": "jiē shòu",
+          "gloss": "to accept; to receive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_03_2",
+      "title": "詞彙 3–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_其中",
+          "traditional": "其中",
+          "pinyin": "qí zhōng",
+          "gloss": "among; in; included among these",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成功",
+          "traditional": "成功",
+          "pinyin": "chéng gōng",
+          "gloss": "success; to succeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_甚至",
+          "traditional": "甚至",
+          "pinyin": "shèn zhì",
+          "gloss": "even; so much so that",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_拉",
+          "traditional": "拉",
+          "pinyin": "lā",
+          "gloss": "to pull; to play (a bowed instrument); to drag",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_肯定",
+          "traditional": "肯定",
+          "pinyin": "kěn dìng",
+          "gloss": "to be certain; to be positive; assuredly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_當時",
+          "traditional": "當時",
+          "pinyin": "dāng shí",
+          "gloss": "then; at that time; while",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_03_3",
+      "title": "詞彙 3–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_調查",
+          "traditional": "調查",
+          "pinyin": "diào chá",
+          "gloss": "investigation; inquiry; to investigate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_部分",
+          "traditional": "部分",
+          "pinyin": "bù fen",
+          "gloss": "part; share; section",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_能力",
+          "traditional": "能力",
+          "pinyin": "néng lì",
+          "gloss": "capability; ability",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_保護",
+          "traditional": "保護",
+          "pinyin": "bǎo hù",
+          "gloss": "to protect; to defend; to safeguard",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_真正",
+          "traditional": "真正",
+          "pinyin": "zhēn zhèng",
+          "gloss": "genuine; real; true; really; indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_支持",
+          "traditional": "支持",
+          "pinyin": "zhī chí",
+          "gloss": "to be in favor of; to support; to back",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 47,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

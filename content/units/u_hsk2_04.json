@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk2_04",
+  "title": "HSK 2 詞彙 4",
+  "subtitle": "HSK 2 vocabulary · set 4",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk2_04_1",
+      "title": "詞彙 4–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_女人",
+          "traditional": "女人",
+          "pinyin": "nǚ rén",
+          "gloss": "woman",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_小時",
+          "traditional": "小時",
+          "pinyin": "xiǎo shí",
+          "gloss": "hour",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_完",
+          "traditional": "完",
+          "pinyin": "wán",
+          "gloss": "to finish; to be over; whole",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_路",
+          "traditional": "路",
+          "pinyin": "lù",
+          "gloss": "road; journey; route",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_男人",
+          "traditional": "男人",
+          "pinyin": "nán rén",
+          "gloss": "a man; a male; men",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_玩",
+          "traditional": "玩",
+          "pinyin": "wán",
+          "gloss": "to play; to have fun; to trifle with",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_04_2",
+      "title": "詞彙 4–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_正在",
+          "traditional": "正在",
+          "pinyin": "zhèng zài",
+          "gloss": "just at (that time); right in (that place); right in the middle of (doing sth)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_門",
+          "traditional": "門",
+          "pinyin": "mén",
+          "gloss": "gate; door; gateway",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_穿",
+          "traditional": "穿",
+          "pinyin": "chuān",
+          "gloss": "to wear; to put on; to dress",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_外",
+          "traditional": "外",
+          "pinyin": "wài",
+          "gloss": "outside; in addition; foreign",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_幫助",
+          "traditional": "幫助",
+          "pinyin": "bāng zhù",
+          "gloss": "assistance; aid; to help; to assist",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_錯",
+          "traditional": "錯",
+          "pinyin": "cuò",
+          "gloss": "mistake; wrong; bad",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_04_3",
+      "title": "詞彙 4–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_賣",
+          "traditional": "賣",
+          "pinyin": "mài",
+          "gloss": "to sell; to betray; to spare no effort",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_快樂",
+          "traditional": "快樂",
+          "pinyin": "kuài lè",
+          "gloss": "happy; joyful",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_懂",
+          "traditional": "懂",
+          "pinyin": "dǒng",
+          "gloss": "to understand; to comprehend",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_黑",
+          "traditional": "黑",
+          "pinyin": "hēi",
+          "gloss": "black; dark; sinister",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_身體",
+          "traditional": "身體",
+          "pinyin": "shēn tǐ",
+          "gloss": "the body; one's health; in person",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_元",
+          "traditional": "元",
+          "pinyin": "yuán",
+          "gloss": "currency unit (esp. Chinese yuan); first; original",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 24,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

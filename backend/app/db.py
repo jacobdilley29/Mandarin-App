@@ -126,6 +126,13 @@ def init_db() -> None:
         PROGRESS_SCHEMA_VERSION,
     )
 
+    conn = connect_single(settings.content_db_path)
+    try:
+        _migrate_content(conn)
+        conn.commit()
+    finally:
+        conn.close()
+
     conn = connect_single(settings.progress_db_path)
     try:
         _migrate_progress(conn)
@@ -145,6 +152,20 @@ def _init_one(path: Path, schema_path: Path, meta_table: str, version: str) -> N
         conn.commit()
     finally:
         conn.close()
+
+
+def _migrate_content(conn: sqlite3.Connection) -> None:
+    """Additive, idempotent migrations for content DBs predating a column.
+
+    Existing units default to 'live' so an upgrade never hides content the
+    learner already has; the next content load recomputes every status from the
+    completeness checks anyway.
+    """
+    cols = {r["name"] for r in conn.execute("PRAGMA table_info(units)").fetchall()}
+    if "status" not in cols:
+        conn.execute("ALTER TABLE units ADD COLUMN status TEXT NOT NULL DEFAULT 'live'")
+    if "completeness" not in cols:
+        conn.execute("ALTER TABLE units ADD COLUMN completeness TEXT")
 
 
 def _migrate_progress(conn: sqlite3.Connection) -> None:

@@ -1,0 +1,188 @@
+{
+  "id": "u_hsk4_32",
+  "title": "HSK 4 詞彙 32",
+  "subtitle": "HSK 4 vocabulary · set 32",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_32_1",
+      "title": "詞彙 32–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_打折",
+          "traditional": "打折",
+          "pinyin": "dǎ zhé",
+          "gloss": "to give a discount",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗衣機",
+          "traditional": "洗衣機",
+          "pinyin": "xǐ yī jī",
+          "gloss": "washing machine; washer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_堵車",
+          "traditional": "堵車",
+          "pinyin": "dǔ chē",
+          "gloss": "traffic jam; (of traffic) to get congested",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_番茄",
+          "traditional": "番茄",
+          "pinyin": "fānqié",
+          "gloss": "tomato",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「番茄」；「西紅柿」是大陸用法。",
+          "prc_form": "西紅柿"
+        },
+        {
+          "id": "v_個子",
+          "traditional": "個子",
+          "pinyin": "gè zi",
+          "gloss": "height; stature; build",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大使館",
+          "traditional": "大使館",
+          "pinyin": "dà shǐ guǎn",
+          "gloss": "embassy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_32_2",
+      "title": "詞彙 32–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_餃子",
+          "traditional": "餃子",
+          "pinyin": "jiǎo zi",
+          "gloss": "dumpling; pot-sticker",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_垃圾桶",
+          "traditional": "垃圾桶",
+          "pinyin": "lā jī tǒng",
+          "gloss": "rubbish bin; trash can; garbage can",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_塑料袋",
+          "traditional": "塑料袋",
+          "pinyin": "sù liào dài",
+          "gloss": "plastic bag",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_養成",
+          "traditional": "養成",
+          "pinyin": "yǎng chéng",
+          "gloss": "to cultivate; to raise; to form (a habit)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打針",
+          "traditional": "打針",
+          "pinyin": "dǎ zhēn",
+          "gloss": "to give or have an injection",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_理髮",
+          "traditional": "理髮",
+          "pinyin": "lǐ fà",
+          "gloss": "to get a haircut; to have one's hair done; to cut (sb's) hair; to give (sb) a haircut",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_32_3",
+      "title": "詞彙 32–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_語法",
+          "traditional": "語法",
+          "pinyin": "yǔ fǎ",
+          "gloss": "grammar",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾杯",
+          "traditional": "乾杯",
+          "pinyin": "gān bēi",
+          "gloss": "to drink a toast; Cheers! (proposing a toast); Here's to you!",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_複印",
+          "traditional": "複印",
+          "pinyin": "fù yìn",
+          "gloss": "to photocopy; to duplicate a document",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_留學",
+          "traditional": "留學",
+          "pinyin": "liú xué",
+          "gloss": "to study abroad",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_濕潤",
+          "traditional": "濕潤",
+          "pinyin": "shī rùn",
+          "gloss": "moist",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_羽毛球",
+          "traditional": "羽毛球",
+          "pinyin": "yǔ máo qiú",
+          "gloss": "shuttlecock; badminton",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 76,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

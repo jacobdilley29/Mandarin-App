@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_04",
+  "title": "HSK 4 詞彙 4",
+  "subtitle": "HSK 4 vocabulary · set 4",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_04_1",
+      "title": "詞彙 4–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_掉",
+          "traditional": "掉",
+          "pinyin": "diào",
+          "gloss": "to fall; to drop; to lag behind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_改變",
+          "traditional": "改變",
+          "pinyin": "gǎi biàn",
+          "gloss": "to change; to alter; to transform",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方法",
+          "traditional": "方法",
+          "pinyin": "fāng fǎ",
+          "gloss": "method; way; means",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_保證",
+          "traditional": "保證",
+          "pinyin": "bǎo zhèng",
+          "gloss": "guarantee; to guarantee; to ensure",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_直接",
+          "traditional": "直接",
+          "pinyin": "zhí jiē",
+          "gloss": "direct (opposite: indirect 间接); immediate; straightforward",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_組織",
+          "traditional": "組織",
+          "pinyin": "zǔ zhī",
+          "gloss": "to organize; organization; (biology) tissue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_04_2",
+      "title": "詞彙 4–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_永遠",
+          "traditional": "永遠",
+          "pinyin": "yǒng yuǎn",
+          "gloss": "forever; eternal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方面",
+          "traditional": "方面",
+          "pinyin": "fāng miàn",
+          "gloss": "respect; aspect; field",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_也許",
+          "traditional": "也許",
+          "pinyin": "yě xǔ",
+          "gloss": "perhaps; maybe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_活動",
+          "traditional": "活動",
+          "pinyin": "huó dòng",
+          "gloss": "to exercise; to move about; to operate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_考慮",
+          "traditional": "考慮",
+          "pinyin": "kǎo lǜ",
+          "gloss": "to think over; to consider; consideration",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_份",
+          "traditional": "份",
+          "pinyin": "fèn",
+          "gloss": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc; variant of 分",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_04_3",
+      "title": "詞彙 4–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_提供",
+          "traditional": "提供",
+          "pinyin": "tí gōng",
+          "gloss": "to offer; to supply; to provide",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_指",
+          "traditional": "指",
+          "pinyin": "zhǐ",
+          "gloss": "finger; to point at or to; to indicate or refer to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_精神",
+          "traditional": "精神",
+          "pinyin": "jīng shén",
+          "gloss": "spirit; mind; consciousness",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_使用",
+          "traditional": "使用",
+          "pinyin": "shǐ yòng",
+          "gloss": "to use; to employ; to apply",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_代表",
+          "traditional": "代表",
+          "pinyin": "dài biǎo",
+          "gloss": "representative; delegate; to represent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_任務",
+          "traditional": "任務",
+          "pinyin": "rèn wu",
+          "gloss": "mission; assignment; task; duty; role",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 48,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

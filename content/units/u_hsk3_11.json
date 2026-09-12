@@ -1,0 +1,188 @@
+{
+  "id": "u_hsk3_11",
+  "title": "HSK 3 詞彙 11",
+  "subtitle": "HSK 3 vocabulary · set 11",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_11_1",
+      "title": "詞彙 11–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_中間",
+          "traditional": "中間",
+          "pinyin": "zhōng jiān",
+          "gloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_聰明",
+          "traditional": "聰明",
+          "pinyin": "cōng ming",
+          "gloss": "intelligent; clever; bright",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_多麼",
+          "traditional": "多麼",
+          "pinyin": "duō me",
+          "gloss": "how (wonderful etc); what (a great idea etc); however (difficult it may be etc)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_燈",
+          "traditional": "燈",
+          "pinyin": "dēng",
+          "gloss": "lamp; light; lantern",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_太陽",
+          "traditional": "太陽",
+          "pinyin": "tài yang",
+          "gloss": "sun; abbr. for 太阳穴",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方便",
+          "traditional": "方便",
+          "pinyin": "fāng biàn",
+          "gloss": "convenient; suitable; to facilitate",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_11_2",
+      "title": "詞彙 11–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_糖",
+          "traditional": "糖",
+          "pinyin": "táng",
+          "gloss": "sugar; sweets; candy",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_相同",
+          "traditional": "相同",
+          "pinyin": "xiāng tóng",
+          "gloss": "identical; same",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生氣",
+          "traditional": "生氣",
+          "pinyin": "shēng qì",
+          "gloss": "to get angry; to take offense; angry",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_公園",
+          "traditional": "公園",
+          "pinyin": "gōng yuán",
+          "gloss": "park (for public recreation)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_熱情",
+          "traditional": "熱情",
+          "pinyin": "rè qíng",
+          "gloss": "cordial; enthusiastic; passion",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一下",
+          "traditional": "一下",
+          "pinyin": "yíxià",
+          "gloss": "a moment; a while; in a moment",
+          "hsk_level": 3,
+          "taiwan_note": "台灣少用兒化，說「一下」或「等一下」。",
+          "prc_form": "一會兒"
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_11_3",
+      "title": "詞彙 11–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_河",
+          "traditional": "河",
+          "pinyin": "hé",
+          "gloss": "river",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_搬",
+          "traditional": "搬",
+          "pinyin": "bān",
+          "gloss": "to move (i.e. relocate oneself); to move (sth relatively heavy or bulky); to shift",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_體育",
+          "traditional": "體育",
+          "pinyin": "tǐ yù",
+          "gloss": "sports; physical education",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_角",
+          "traditional": "角",
+          "pinyin": "jiǎo",
+          "gloss": "angle; corner; horn",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_胖",
+          "traditional": "胖",
+          "pinyin": "pán",
+          "gloss": "healthy; at ease",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾淨",
+          "traditional": "乾淨",
+          "pinyin": "gān jìng",
+          "gloss": "clean; neat",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 39,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

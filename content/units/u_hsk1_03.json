@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk1_03",
+  "title": "HSK 1 詞彙 3",
+  "subtitle": "HSK 1 vocabulary · set 3",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk1_03_1",
+      "title": "詞彙 3–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_時候",
+          "traditional": "時候",
+          "pinyin": "shíhòu",
+          "gloss": "time; length of time; moment",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_怎麼",
+          "traditional": "怎麼",
+          "pinyin": "zěn me",
+          "gloss": "how?; what?; why?",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_誰",
+          "traditional": "誰",
+          "pinyin": "shéi",
+          "gloss": "who; also pr. [shuí]",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_月",
+          "traditional": "月",
+          "pinyin": "yuè",
+          "gloss": "moon; month; monthly",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_幾",
+          "traditional": "幾",
+          "pinyin": "jǐ",
+          "gloss": "how much; how many; several",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_叫",
+          "traditional": "叫",
+          "pinyin": "jiào",
+          "gloss": "to shout; to call; to order",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_03_2",
+      "title": "詞彙 3–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_請",
+          "traditional": "請",
+          "pinyin": "qǐng",
+          "gloss": "to ask; to invite; please (do sth)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_錢",
+          "traditional": "錢",
+          "pinyin": "qián",
+          "gloss": "coin; money; unit of weight, one tenth of a tael 两",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_本",
+          "traditional": "本",
+          "pinyin": "běn",
+          "gloss": "root; stem; origin",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_回",
+          "traditional": "回",
+          "pinyin": "huí",
+          "gloss": "to circle; to go back; to turn around",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_三",
+          "traditional": "三",
+          "pinyin": "sān",
+          "gloss": "three; 3",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_歲",
+          "traditional": "歲",
+          "pinyin": "suì",
+          "gloss": "classifier for years (of age); year; year (of crop harvests)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_03_3",
+      "title": "詞彙 3–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_住",
+          "traditional": "住",
+          "pinyin": "zhù",
+          "gloss": "to live; to dwell; to stay",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_日",
+          "traditional": "日",
+          "pinyin": "rì",
+          "gloss": "sun; day; date, day of the month",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_喝",
+          "traditional": "喝",
+          "pinyin": "hē",
+          "gloss": "to drink; variant of 嗬",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_認識",
+          "traditional": "認識",
+          "pinyin": "rènshì",
+          "gloss": "to know; to recognize; to be familiar with",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_分鐘",
+          "traditional": "分鐘",
+          "pinyin": "fēn zhōng",
+          "gloss": "minute",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_四",
+          "traditional": "四",
+          "pinyin": "sì",
+          "gloss": "four; 4",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 17,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk1_05",
+  "title": "HSK 1 詞彙 5",
+  "subtitle": "HSK 1 vocabulary · set 5",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk1_05_1",
+      "title": "詞彙 5–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_十",
+          "traditional": "十",
+          "pinyin": "shí",
+          "gloss": "ten; 10",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_看見",
+          "traditional": "看見",
+          "pinyin": "kàn jiàn",
+          "gloss": "to see; to catch sight of",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_女兒",
+          "traditional": "女兒",
+          "pinyin": "nǚ ér",
+          "gloss": "daughter",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_說話",
+          "traditional": "說話",
+          "pinyin": "shuō huà",
+          "gloss": "to speak; to say; to talk",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_爸爸",
+          "traditional": "爸爸",
+          "pinyin": "bà ba",
+          "gloss": "(coll.) father; dad",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_字",
+          "traditional": "字",
+          "pinyin": "zì",
+          "gloss": "letter; symbol; character",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_05_2",
+      "title": "詞彙 5–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_睡覺",
+          "traditional": "睡覺",
+          "pinyin": "shuì jiào",
+          "gloss": "to go to bed; to sleep",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_讀",
+          "traditional": "讀",
+          "pinyin": "dú",
+          "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_飛機",
+          "traditional": "飛機",
+          "pinyin": "fēi jī",
+          "gloss": "airplane",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_後面",
+          "traditional": "後面",
+          "pinyin": "hòumiàn",
+          "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_喂",
+          "traditional": "喂",
+          "pinyin": "wéi",
+          "gloss": "hey; to feed (an animal, baby, invalid etc)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_八",
+          "traditional": "八",
+          "pinyin": "bā",
+          "gloss": "eight; 8",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_05_3",
+      "title": "詞彙 5–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_怎麼樣",
+          "traditional": "怎麼樣",
+          "pinyin": "zěn me yàng",
+          "gloss": "how?; how about?; how was it?",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_七",
+          "traditional": "七",
+          "pinyin": "qī",
+          "gloss": "seven; 7",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_小姐",
+          "traditional": "小姐",
+          "pinyin": "xiǎojiě",
+          "gloss": "young lady; miss; (slang) prostitute",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_對不起",
+          "traditional": "對不起",
+          "pinyin": "duì bu qǐ",
+          "gloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_前面",
+          "traditional": "前面",
+          "pinyin": "qián miàn",
+          "gloss": "ahead; in front; preceding",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_同學",
+          "traditional": "同學",
+          "pinyin": "tóng xué",
+          "gloss": "to study at the same school; fellow student; classmate",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 19,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}

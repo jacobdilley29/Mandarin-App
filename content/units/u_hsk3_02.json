@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_02",
+  "title": "HSK 3 詞彙 2",
+  "subtitle": "HSK 3 vocabulary · set 2",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_02_1",
+      "title": "詞彙 2–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_種",
+          "traditional": "種",
+          "pinyin": "zhǒng",
+          "gloss": "seed; species; kind",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_發現",
+          "traditional": "發現",
+          "pinyin": "fā xiàn",
+          "gloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一定",
+          "traditional": "一定",
+          "pinyin": "yī dìng",
+          "gloss": "surely; certainly; necessarily",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一直",
+          "traditional": "一直",
+          "pinyin": "yī zhí",
+          "gloss": "straight (in a straight line); continuously; always; all the way through",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_為了",
+          "traditional": "為了",
+          "pinyin": "wèi le",
+          "gloss": "for; for the purpose of; in order to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一樣",
+          "traditional": "一樣",
+          "pinyin": "yī yàng",
+          "gloss": "same; like; equal to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_02_2",
+      "title": "詞彙 2–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_世界",
+          "traditional": "世界",
+          "pinyin": "shì jiè",
+          "gloss": "world",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_而且",
+          "traditional": "而且",
+          "pinyin": "ér qiě",
+          "gloss": "(not only ...) but also; moreover; in addition",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重要",
+          "traditional": "重要",
+          "pinyin": "zhòng yào",
+          "gloss": "important; significant; major",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_必須",
+          "traditional": "必須",
+          "pinyin": "bì xū",
+          "gloss": "to have to; must; compulsory",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地方",
+          "traditional": "地方",
+          "pinyin": "dì fang",
+          "gloss": "area; place; space",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_其他",
+          "traditional": "其他",
+          "pinyin": "qí tā",
+          "gloss": "other; (sth or sb) else; the rest",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_02_3",
+      "title": "詞彙 2–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_比賽",
+          "traditional": "比賽",
+          "pinyin": "bǐ sài",
+          "gloss": "competition (sports etc); match; to compete",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_然後",
+          "traditional": "然後",
+          "pinyin": "rán hòu",
+          "gloss": "then; after that; afterwards",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_擔心",
+          "traditional": "擔心",
+          "pinyin": "dān xīn",
+          "gloss": "anxious; worried; uneasy",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_條",
+          "traditional": "條",
+          "pinyin": "tiáo",
+          "gloss": "strip; item; article",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_放",
+          "traditional": "放",
+          "pinyin": "fàng",
+          "gloss": "to put; to place; to release",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_拿",
+          "traditional": "拿",
+          "pinyin": "ná",
+          "gloss": "to hold; to seize; to catch",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 30,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

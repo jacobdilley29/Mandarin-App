@@ -1,0 +1,71 @@
+{
+  "id": "u_hsk3_16",
+  "title": "HSK 3 詞彙 16",
+  "subtitle": "HSK 3 vocabulary · set 16",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_16_1",
+      "title": "詞彙 16–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_筷子",
+          "traditional": "筷子",
+          "pinyin": "kuài zi",
+          "gloss": "chopsticks",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_字典",
+          "traditional": "字典",
+          "pinyin": "zì diǎn",
+          "gloss": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_普通話",
+          "traditional": "普通話",
+          "pinyin": "pǔ tōng huà",
+          "gloss": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_爬山",
+          "traditional": "爬山",
+          "pinyin": "pá shān",
+          "gloss": "to climb a mountain; to mountaineer; hiking",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_黑板",
+          "traditional": "黑板",
+          "pinyin": "hēi bǎn",
+          "gloss": "blackboard",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_行李箱",
+          "traditional": "行李箱",
+          "pinyin": "xíng li xiāng",
+          "gloss": "suitcase; baggage compartment; overhead bin",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 44,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

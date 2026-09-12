@@ -1,0 +1,219 @@
+{
+  "id": "u_phone",
+  "title": "手機網路",
+  "subtitle": "Phones and the internet",
+  "hsk_level": 4,
+  "sort_order": 14,
+  "lessons": [
+    {
+      "id": "l_phone_1",
+      "title": "手機沒電",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_shouji",
+          "traditional": "手機",
+          "pinyin": "shǒujī",
+          "gloss": "mobile phone",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「手機」，不說「手機兒」。",
+          "example": {
+            "hanzi": "我的手機沒電了。",
+            "pinyin": "Wǒ de shǒujī méi diàn le.",
+            "gloss": "My phone is out of battery."
+          }
+        },
+        {
+          "id": "v_wanglu",
+          "traditional": "網路",
+          "pinyin": "wǎnglù",
+          "gloss": "internet; network",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「網路」，大陸說「網絡」。",
+          "example": {
+            "hanzi": "這裡有網路嗎？",
+            "pinyin": "Zhèlǐ yǒu wǎnglù ma?",
+            "gloss": "Is there internet here?"
+          }
+        },
+        {
+          "id": "v_chongdian",
+          "traditional": "充電",
+          "pinyin": "chōngdiàn",
+          "gloss": "to charge (a battery)",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要充電。",
+            "pinyin": "Wǒ yào chōngdiàn.",
+            "gloss": "I need to charge up."
+          }
+        },
+        {
+          "id": "v_dianhua_v",
+          "traditional": "打電話",
+          "pinyin": "dǎ diànhuà",
+          "gloss": "to make a phone call",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我打電話給你。",
+            "pinyin": "Wǒ dǎ diànhuà gěi nǐ.",
+            "gloss": "I'll call you."
+          }
+        },
+        {
+          "id": "v_xunhao",
+          "traditional": "訊號",
+          "pinyin": "xùnhào",
+          "gloss": "signal (reception)",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「訊號」，大陸說「信號」。",
+          "example": {
+            "hanzi": "這裡訊號不好。",
+            "pinyin": "Zhèlǐ xùnhào bù hǎo.",
+            "gloss": "The signal is bad here."
+          }
+        },
+        {
+          "id": "v_shangwang",
+          "traditional": "上網",
+          "pinyin": "shàngwǎng",
+          "gloss": "to go online",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我用手機上網。",
+            "pinyin": "Wǒ yòng shǒujī shàngwǎng.",
+            "gloss": "I go online with my phone."
+          }
+        },
+        {
+          "id": "v_meidian",
+          "traditional": "沒電",
+          "pinyin": "méi diàn",
+          "gloss": "out of power / battery",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "手機快沒電了。",
+            "pinyin": "Shǒujī kuài méi diàn le.",
+            "gloss": "The phone is almost out of battery."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_gei",
+          "title": "給 — to / for someone",
+          "pattern": "Verb + 給 + Person",
+          "explanation": "給 marks the person who receives an action: 打電話給你 = call you, 寄給他 = send to him.",
+          "examples": [
+            {
+              "hanzi": "我打電話給你。",
+              "pinyin": "Wǒ dǎ diànhuà gěi nǐ.",
+              "gloss": "I'll call you."
+            },
+            {
+              "hanzi": "他寄了一封信給我。",
+              "pinyin": "Tā jì le yì fēng xìn gěi wǒ.",
+              "gloss": "He mailed a letter to me."
+            },
+            {
+              "hanzi": "請打電話給我。",
+              "pinyin": "Qǐng dǎ diànhuà gěi wǒ.",
+              "gloss": "Please call me."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "朋友",
+          "hanzi": "我打電話給你了。",
+          "pinyin": "Wǒ dǎ diànhuà gěi nǐ le.",
+          "gloss": "I called you."
+        },
+        {
+          "speaker": "我",
+          "hanzi": "不好意思，我的手機沒電了。",
+          "pinyin": "Bùhǎoyìsi, wǒ de shǒujī méi diàn le.",
+          "gloss": "Sorry, my phone was out of battery."
+        },
+        {
+          "speaker": "朋友",
+          "hanzi": "這裡有網路，可以充電。",
+          "pinyin": "Zhèlǐ yǒu wǎnglù, kěyǐ chōngdiàn.",
+          "gloss": "There's internet here and you can charge up."
+        },
+        {
+          "speaker": "我",
+          "hanzi": "太好了，謝謝！",
+          "pinyin": "Tài hǎo le, xièxie!",
+          "gloss": "Great, thanks!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "的",
+            "手機",
+            "沒電",
+            "了"
+          ],
+          "pinyin": "Wǒ de shǒujī méi diàn le.",
+          "gloss": "My phone is out of battery.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這裡",
+            "有",
+            "網路",
+            "嗎"
+          ],
+          "pinyin": "Zhèlǐ yǒu wǎnglù ma?",
+          "gloss": "Is there internet here?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "用",
+            "手機",
+            "上網"
+          ],
+          "pinyin": "Wǒ yòng shǒujī shàngwǎng.",
+          "gloss": "I go online with my phone.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這裡",
+            "訊號",
+            "不",
+            "好"
+          ],
+          "pinyin": "Zhèlǐ xùnhào bù hǎo.",
+          "gloss": "The signal is bad here.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "打電話",
+            "給",
+            "你"
+          ],
+          "pinyin": "Wǒ dǎ diànhuà gěi nǐ.",
+          "gloss": "I'll call you.",
+          "cloze_index": 1
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

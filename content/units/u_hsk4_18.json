@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_18",
+  "title": "HSK 4 詞彙 18",
+  "subtitle": "HSK 4 vocabulary · set 18",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_18_1",
+      "title": "詞彙 18–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_撞",
+          "traditional": "撞",
+          "pinyin": "zhuàng",
+          "gloss": "to knock against; to bump into; to run into",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_互相",
+          "traditional": "互相",
+          "pinyin": "hù xiāng",
+          "gloss": "each other; mutually; mutual",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_合適",
+          "traditional": "合適",
+          "pinyin": "hé shì",
+          "gloss": "suitable; fitting; appropriate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_失望",
+          "traditional": "失望",
+          "pinyin": "shī wàng",
+          "gloss": "disappointed; to lose hope; to despair",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_印象",
+          "traditional": "印象",
+          "pinyin": "yìn xiàng",
+          "gloss": "impression (sth that stays in one's mind); a memory",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_號碼",
+          "traditional": "號碼",
+          "pinyin": "hào mǎ",
+          "gloss": "number",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_18_2",
+      "title": "詞彙 18–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_出生",
+          "traditional": "出生",
+          "pinyin": "chū shēng",
+          "gloss": "to be born",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_橋",
+          "traditional": "橋",
+          "pinyin": "qiáo",
+          "gloss": "bridge",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_基礎",
+          "traditional": "基礎",
+          "pinyin": "jī chǔ",
+          "gloss": "base; foundation; basis; basic; fundamental",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_適應",
+          "traditional": "適應",
+          "pinyin": "shì yìng",
+          "gloss": "to adapt; to fit; to suit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_賺",
+          "traditional": "賺",
+          "pinyin": "zhuàn",
+          "gloss": "to earn; to make a profit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_猜",
+          "traditional": "猜",
+          "pinyin": "cāi",
+          "gloss": "to guess",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_18_3",
+      "title": "詞彙 18–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_到處",
+          "traditional": "到處",
+          "pinyin": "dào chù",
+          "gloss": "everywhere",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_食品",
+          "traditional": "食品",
+          "pinyin": "shí pǐn",
+          "gloss": "foodstuff; food; provisions",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大約",
+          "traditional": "大約",
+          "pinyin": "dà yuē",
+          "gloss": "approximately; probably",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_提前",
+          "traditional": "提前",
+          "pinyin": "tí qián",
+          "gloss": "to shift to an earlier date; to do sth ahead of time; in advance",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_暫時",
+          "traditional": "暫時",
+          "pinyin": "zàn shí",
+          "gloss": "temporary; provisional; for the time being",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_積極",
+          "traditional": "積極",
+          "pinyin": "jī jí",
+          "gloss": "active; energetic; vigorous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 62,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

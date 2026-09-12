@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_12",
+  "title": "HSK 3 詞彙 12",
+  "subtitle": "HSK 3 vocabulary · set 12",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_12_1",
+      "title": "詞彙 12–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_放心",
+          "traditional": "放心",
+          "pinyin": "fàng xīn",
+          "gloss": "to feel relieved; to feel reassured; to be at ease",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_草",
+          "traditional": "草",
+          "pinyin": "cǎo",
+          "gloss": "grass; straw; manuscript",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_甜",
+          "traditional": "甜",
+          "pinyin": "tián",
+          "gloss": "sweet",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_作業",
+          "traditional": "作業",
+          "pinyin": "zuò yè",
+          "gloss": "school assignment; homework; work",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_瘦",
+          "traditional": "瘦",
+          "pinyin": "shòu",
+          "gloss": "thin; to lose weight; (of clothing) tight",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_綠",
+          "traditional": "綠",
+          "pinyin": "lǜ",
+          "gloss": "green; (slang) (derived from 绿帽子) to cheat on (one's spouse or boyfriend or girlfriend)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_12_2",
+      "title": "詞彙 12–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_啤酒",
+          "traditional": "啤酒",
+          "pinyin": "pí jiǔ",
+          "gloss": "beer (loanword)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_蛋糕",
+          "traditional": "蛋糕",
+          "pinyin": "dàn gāo",
+          "gloss": "cake",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_新鮮",
+          "traditional": "新鮮",
+          "pinyin": "xīn xiān",
+          "gloss": "fresh (experience, food etc); freshness; novel",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_難過",
+          "traditional": "難過",
+          "pinyin": "nán guò",
+          "gloss": "to feel sad; to feel unwell; (of life) to be difficult",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_客人",
+          "traditional": "客人",
+          "pinyin": "kè rén",
+          "gloss": "visitor; guest; customer",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_奶奶",
+          "traditional": "奶奶",
+          "pinyin": "nǎi nai",
+          "gloss": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; (coll.) boobies",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_12_3",
+      "title": "詞彙 12–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_碗",
+          "traditional": "碗",
+          "pinyin": "wǎn",
+          "gloss": "bowl; cup",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_數學",
+          "traditional": "數學",
+          "pinyin": "shù xué",
+          "gloss": "mathematics; mathematical",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_刷",
+          "traditional": "刷",
+          "pinyin": "shuā",
+          "gloss": "to brush; to paint; to daub",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_廚房",
+          "traditional": "廚房",
+          "pinyin": "chú fáng",
+          "gloss": "kitchen",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_練習",
+          "traditional": "練習",
+          "pinyin": "liàn xí",
+          "gloss": "to practice; exercise; drill",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_爺爺",
+          "traditional": "爺爺",
+          "pinyin": "yé ye",
+          "gloss": "(coll.) father's father; paternal grandfather",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 40,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

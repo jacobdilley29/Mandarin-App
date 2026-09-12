@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_29",
+  "title": "HSK 4 詞彙 29",
+  "subtitle": "HSK 4 vocabulary · set 29",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_29_1",
+      "title": "詞彙 29–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_來不及",
+          "traditional": "來不及",
+          "pinyin": "lái bu jí",
+          "gloss": "there's not enough time (to do sth); it's too late (to do sth)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_普遍",
+          "traditional": "普遍",
+          "pinyin": "pǔ biàn",
+          "gloss": "universal; general; widespread",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_入口",
+          "traditional": "入口",
+          "pinyin": "rù kǒu",
+          "gloss": "entrance; to import",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_熱鬧",
+          "traditional": "熱鬧",
+          "pinyin": "rè nao",
+          "gloss": "bustling with noise and excitement; lively",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_散步",
+          "traditional": "散步",
+          "pinyin": "sàn bù",
+          "gloss": "to take a walk; to go for a walk",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_順序",
+          "traditional": "順序",
+          "pinyin": "shùn xù",
+          "gloss": "sequence; order",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_29_2",
+      "title": "詞彙 29–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_懶",
+          "traditional": "懶",
+          "pinyin": "lǎn",
+          "gloss": "lazy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大夫",
+          "traditional": "大夫",
+          "pinyin": "dài fu",
+          "gloss": "doctor; physician",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_準時",
+          "traditional": "準時",
+          "pinyin": "zhǔn shí",
+          "gloss": "on time; punctual; on schedule",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_盒子",
+          "traditional": "盒子",
+          "pinyin": "hé zi",
+          "gloss": "box; case",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_得意",
+          "traditional": "得意",
+          "pinyin": "dé yì",
+          "gloss": "proud of oneself; pleased with oneself; complacent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_禮貌",
+          "traditional": "禮貌",
+          "pinyin": "lǐ mào",
+          "gloss": "courtesy; politeness; manners; courteous; polite",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_29_3",
+      "title": "詞彙 29–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_推遲",
+          "traditional": "推遲",
+          "pinyin": "tuī chí",
+          "gloss": "to postpone; to put off; to defer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_餅乾",
+          "traditional": "餅乾",
+          "pinyin": "bǐng gān",
+          "gloss": "biscuit; cracker; cookie",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_性別",
+          "traditional": "性別",
+          "pinyin": "xìng bié",
+          "gloss": "gender; sex",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_襪子",
+          "traditional": "襪子",
+          "pinyin": "wà zi",
+          "gloss": "socks; stockings",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_氣候",
+          "traditional": "氣候",
+          "pinyin": "qì hòu",
+          "gloss": "(meteorology) climate; (fig.) climate; prevailing conditions (in human affairs)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_毛巾",
+          "traditional": "毛巾",
+          "pinyin": "máo jīn",
+          "gloss": "towel",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 73,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

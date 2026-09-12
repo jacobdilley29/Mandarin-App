@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk3_08",
+  "title": "HSK 3 詞彙 8",
+  "subtitle": "HSK 3 vocabulary · set 8",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_08_1",
+      "title": "詞彙 8–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_幾乎",
+          "traditional": "幾乎",
+          "pinyin": "jī hū",
+          "gloss": "almost; nearly; practically",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_認真",
+          "traditional": "認真",
+          "pinyin": "rèn zhēn",
+          "gloss": "conscientious; earnest; serious",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_腳",
+          "traditional": "腳",
+          "pinyin": "jiǎo",
+          "gloss": "foot; leg (of an animal or an object); base (of an object)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_主要",
+          "traditional": "主要",
+          "pinyin": "zhǔ yào",
+          "gloss": "main; principal; major",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_遇到",
+          "traditional": "遇到",
+          "pinyin": "yù dào",
+          "gloss": "to meet; to run into; to come across",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_年輕",
+          "traditional": "年輕",
+          "pinyin": "nián qīng",
+          "gloss": "young",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_08_2",
+      "title": "詞彙 8–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_久",
+          "traditional": "久",
+          "pinyin": "jiǔ",
+          "gloss": "(long) time; (long) duration of time",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_畫",
+          "traditional": "畫",
+          "pinyin": "huà",
+          "gloss": "to draw; to paint; picture; painting; to draw (a line) (variant of 划)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_表演",
+          "traditional": "表演",
+          "pinyin": "biǎo yǎn",
+          "gloss": "play; show; performance",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_關",
+          "traditional": "關",
+          "pinyin": "guān",
+          "gloss": "mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_剛才",
+          "traditional": "剛才",
+          "pinyin": "gāng cái",
+          "gloss": "just now; a moment ago",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辦公室",
+          "traditional": "辦公室",
+          "pinyin": "bàn gōng shì",
+          "gloss": "office; business premises; bureau",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_08_3",
+      "title": "詞彙 8–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_環境",
+          "traditional": "環境",
+          "pinyin": "huán jìng",
+          "gloss": "environment; circumstances; surroundings",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_關心",
+          "traditional": "關心",
+          "pinyin": "guān xīn",
+          "gloss": "to be concerned about; to care about",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_祝",
+          "traditional": "祝",
+          "pinyin": "zhù",
+          "gloss": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_層",
+          "traditional": "層",
+          "pinyin": "céng",
+          "gloss": "to pile on top of one another; layer; stratum; floor (of a building); story",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_腿",
+          "traditional": "腿",
+          "pinyin": "tuǐ",
+          "gloss": "leg",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_班",
+          "traditional": "班",
+          "pinyin": "bān",
+          "gloss": "team; class; grade; (military) squad; work shift",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 36,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

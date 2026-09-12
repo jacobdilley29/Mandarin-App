@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk1_04",
+  "title": "HSK 1 詞彙 4",
+  "subtitle": "HSK 1 vocabulary · set 4",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk1_04_1",
+      "title": "詞彙 4–1",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_塊",
+          "traditional": "塊",
+          "pinyin": "kuài",
+          "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_謝謝",
+          "traditional": "謝謝",
+          "pinyin": "xiè xie",
+          "gloss": "to thank; thanks; thank you",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_多少",
+          "traditional": "多少",
+          "pinyin": "duō shǎo",
+          "gloss": "number; amount; somewhat",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_媽媽",
+          "traditional": "媽媽",
+          "pinyin": "mā ma",
+          "gloss": "mama; mommy; mother",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_少",
+          "traditional": "少",
+          "pinyin": "shǎo",
+          "gloss": "few; less; to lack",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_電影",
+          "traditional": "電影",
+          "pinyin": "diàn yǐng",
+          "gloss": "movie; film",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_04_2",
+      "title": "詞彙 4–2",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_哪",
+          "traditional": "哪",
+          "pinyin": "nǎ",
+          "gloss": "how; which",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_昨天",
+          "traditional": "昨天",
+          "pinyin": "zuó tiān",
+          "gloss": "yesterday",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_五",
+          "traditional": "五",
+          "pinyin": "wǔ",
+          "gloss": "five; 5",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_先生",
+          "traditional": "先生",
+          "pinyin": "xiānshēng",
+          "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_醫院",
+          "traditional": "醫院",
+          "pinyin": "yī yuàn",
+          "gloss": "hospital",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_些",
+          "traditional": "些",
+          "pinyin": "xiē",
+          "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_04_3",
+      "title": "詞彙 4–3",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_二",
+          "traditional": "二",
+          "pinyin": "èr",
+          "gloss": "two; 2; (Beijing dialect) stupid",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_兒子",
+          "traditional": "兒子",
+          "pinyin": "ér zi",
+          "gloss": "son",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_中國",
+          "traditional": "中國",
+          "pinyin": "Zhōng guó",
+          "gloss": "China",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_電視",
+          "traditional": "電視",
+          "pinyin": "diàn shì",
+          "gloss": "television; TV",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_學習",
+          "traditional": "學習",
+          "pinyin": "xué xí",
+          "gloss": "to learn; to study",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_六",
+          "traditional": "六",
+          "pinyin": "liù",
+          "gloss": "six; 6",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 18,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}
