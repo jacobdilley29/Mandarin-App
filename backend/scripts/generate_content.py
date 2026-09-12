@@ -73,7 +73,8 @@ Write, as JSON matching the provided schema:
 - one example sentence for EVERY new vocabulary word above, in `vocab_examples`,
   keyed by the word's id — a short, natural Taiwan-register sentence that shows
   the word in use. Every word must get one; the lesson is not usable without them.
-- one grammar point that uses this lesson's vocab, with 3 example sentences,
+- one grammar point that uses this lesson's vocab, with 3 example sentences
+  in `example_sentences`,
 - 5 short drill sentences, each split into word tokens, each with a cloze_index
   pointing at a good word to blank out (prefer a new-vocab word),
 - a 4–6 line dialogue set in a Taiwan daily-life scene using this vocab.
@@ -94,7 +95,13 @@ def _make_models():
         title: str
         pattern: str
         explanation: str
-        examples: list[Example]
+        # NOT `examples`. That is a reserved JSON Schema keyword, and pydantic
+        # emits a $ref for such a field while dropping its $defs entry, so the
+        # schema the SDK sends references a definition that isn't there and the
+        # API rejects the request with a 400. Mapped back to `examples` in
+        # apply_to_lesson, so the stored content keeps its usual shape.
+        # See tests/test_output_schemas.py.
+        example_sentences: list[Example]
 
     class Sentence(BaseModel):
         tokens: list[str]
@@ -165,6 +172,10 @@ def apply_to_lesson(lesson: dict, content: dict) -> None:
     grammar = []
     for i, g in enumerate(content.get("grammar") or [], start=1):
         g = dict(g)
+        # The wire field is example_sentences (see _make_models); everything
+        # downstream — the DB loader, the validator, the app — reads `examples`.
+        if "example_sentences" in g:
+            g["examples"] = g.pop("example_sentences")
         g.setdefault("id", f"g_{lesson['id'].removeprefix('l_')}_{i}")
         g.setdefault("hsk_level", (lesson.get("vocab") or [{}])[0].get("hsk_level"))
         grammar.append(g)
@@ -285,6 +296,12 @@ def main(argv: list[str] | None = None, client=None) -> int:
 
     for unit in targets:
         print(f"\n▸ {unit['id']} — {unit.get('title', '')}")
+        # A run that changes nothing must leave the file alone. Every lesson of
+        # a unit can fail (an API outage, a bad schema, a rate limit), and
+        # rewriting the unit anyway would demote curated content to draft on the
+        # strength of a network error.
+        was_live = curriculum_source.status_of(unit) == curriculum_source.STATUS_LIVE
+        applied = 0
         for lesson in unit.get("lessons") or []:
             cache = GENERATED_DIR / f"{lesson['id']}.json"
             if cache.is_file():
@@ -303,6 +320,13 @@ def main(argv: list[str] | None = None, client=None) -> int:
                     json.dumps(content, ensure_ascii=False, indent=2), encoding="utf-8"
                 )
             apply_to_lesson(lesson, content)
+            applied += 1
+
+        if applied == 0:
+            print("  ⊘ nothing generated — file left untouched")
+            if not was_live:
+                still_draft.append(unit["id"])
+            continue
 
         # Promote only on BOTH gates: the content validates, and it is complete.
         by_id[unit["id"]] = unit

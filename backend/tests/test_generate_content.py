@@ -49,7 +49,8 @@ class StubClient:
             ],
             "grammar": [{
                 "title": "g", "pattern": "p", "explanation": "e",
-                "examples": [{"hanzi": words[0], "pinyin": "p", "gloss": "g"}],
+                # The wire field name — apply_to_lesson maps it to `examples`.
+                "example_sentences": [{"hanzi": words[0], "pinyin": "p", "gloss": "g"}],
             }],
             "sentences": [{"tokens": [words[0]], "pinyin": "p", "gloss": "g", "cloze_index": 0}],
             "dialogue": [{"speaker": "A", "hanzi": words[0], "pinyin": "p", "gloss": "g"}],
@@ -92,6 +93,13 @@ def sandbox(tmp_path, monkeypatch):
     }
     cs.split({"meta": {"function_words": []}, "units": [live, draft]})
     return tmp_path
+
+
+class Exploding(StubClient):
+    """A client where every call fails, as an outage or a rejected schema does."""
+
+    def parse(self, **kw):
+        raise RuntimeError("overloaded")
 
 
 def test_a_completed_draft_is_promoted(sandbox):
@@ -149,10 +157,6 @@ def test_results_are_cached_so_a_rerun_costs_nothing(sandbox):
 
 
 def test_a_failing_lesson_does_not_sink_the_run(sandbox):
-    class Exploding(StubClient):
-        def parse(self, **kw):
-            raise RuntimeError("overloaded")
-
     assert gc.main(["--unit", "u_draft"], client=Exploding()) == 0
     assert cs.load_unit("u_draft")["status"] == cs.STATUS_DRAFT
 
@@ -303,3 +307,28 @@ def test_all_is_the_one_way_to_regenerate_finished_units(sandbox):
     gc.main(["--unit", "u_live", "--all"], client=client)
 
     assert client.calls >= 1
+
+
+def test_a_unit_whose_lessons_all_fail_is_left_untouched(sandbox):
+    """A network error must not rewrite content on disk.
+
+    Every lesson failing used to still rewrite the unit file — and with it the
+    unit's status. A generator outage could therefore demote hand-authored
+    content to draft and pull it out of Learn.
+    """
+    before = cs.load_unit("u_draft")
+
+    gc.main(["--unit", "u_draft"], client=Exploding())
+
+    assert cs.load_unit("u_draft") == before
+
+
+def test_a_live_unit_is_not_demoted_by_a_failed_run(sandbox):
+    """The specific damage seen in the field: curated units turned into drafts."""
+    before = cs.load_unit("u_live")
+
+    gc.main(["--unit", "u_live", "--all"], client=Exploding())
+
+    after = cs.load_unit("u_live")
+    assert after == before
+    assert cs.status_of(after) == cs.STATUS_LIVE

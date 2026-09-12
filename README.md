@@ -482,11 +482,46 @@ re-run costs nothing. Start with one unit and read what it produced before
 committing to a level — the model's output becomes Jacob's curriculum.
 
 Each unit is promoted the moment it passes both gates, so progress is
-incremental and a failed unit simply stays a draft. Afterwards:
+incremental and a failed unit simply stays a draft. A unit where *nothing*
+generated — an outage, a rate limit — is left untouched on disk rather than
+rewritten, so a bad run can never demote finished content to draft.
+
+**Generated content lands in your working tree, not in the container.**
+`content/` is bind-mounted into both services, because it is versioned source
+rather than runtime data: after a run, `git status` shows exactly which units
+changed, `git diff` shows what the model wrote, and nothing is kept until you
+commit it. (It used to be written inside the container, where the next image
+rebuild destroyed it.)
+
+The authoring targets also rebuild the image before running, so a `git pull`
+followed by `make generate-content` can't execute the previous image's code.
+That costs a few cached seconds and removes a whole class of confusion.
+
+Afterwards:
 
 ```bash
 make coverage && make load-content && make warm-audio
 ```
+
+### A trap worth knowing about: `examples`
+
+Every structured-output model in this app is checked by
+`backend/tests/test_output_schemas.py`, which builds the exact schema the
+Anthropic SDK sends and asserts that every `$ref` in it resolves.
+
+That test exists because a field named **`examples`** silently breaks the
+request. `examples` is a reserved JSON Schema keyword: pydantic emits a `$ref`
+for such a field but drops its `$defs` entry, so the API rejects the call with
+
+```
+Invalid schema: Reference to non-existent definition: #/$defs/…Example-Input__1
+```
+
+The generator and the tutor both hit this on their first real run — 80 failed
+calls and nothing generated. Both now send `example_sentences` and rename it back
+when the response is applied, so stored content and the frontend are unchanged.
+If you add a model, keep field names off the JSON Schema keyword list; the test
+will tell you if you don't.
 
 ### CC-CEDICT
 

@@ -37,3 +37,7 @@ frontend/dev-dist/
 backend/package.json
 backend/package-lock.json
 backend/node_modules/
+
+# Per-lesson generation cache — a cache, not source. Safe to delete;
+# generate_content re-fetches anything missing.
+content/.generated/

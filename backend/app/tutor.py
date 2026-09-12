@@ -43,9 +43,9 @@ How to answer:
 clarity beats immersion here.
 - Write every Chinese example in TRADITIONAL characters with Taiwan vocabulary \
 and Taiwan readings. Never simplified.
-- Give 2-3 short example sentences that show the point in ordinary Taiwan usage — \
-things he might actually hear or say — each with pinyin (tone marks) and an \
-English gloss.
+- Give 2-3 short example sentences in `example_sentences` that show the point in \
+ordinary Taiwan usage — things he might actually hear or say — each with pinyin \
+(tone marks) and an English gloss.
 - When the question contrasts two things (才 vs 就, 會 vs 要, 的 vs 得), say \
 plainly what decides which one, then show the contrast in a minimal pair.
 - Where Taiwan usage differs from Mainland Mandarin, say so in taiwan_note. \
@@ -224,7 +224,13 @@ def _models():
 
     class Answer(BaseModel):
         answer: str
-        examples: list[Example]
+        # NOT `examples`. That is a reserved JSON Schema keyword: pydantic emits
+        # a $ref for such a field but drops its $defs entry, so the schema the
+        # SDK sends references a definition that isn't there and every request
+        # comes back 400. Renamed straight back to `examples` in ask(), so the
+        # stored thread and the frontend are unaffected.
+        # See tests/test_output_schemas.py.
+        example_sentences: list[Example]
         taiwan_note: str | None
         related: list[str]
 
@@ -278,6 +284,8 @@ def ask(
         raise RuntimeError("model returned no parsable answer")
 
     result = answer.model_dump()
+    # Back to the name everything else uses (see _models).
+    result["examples"] = result.pop("example_sentences", [])
     _record(conn, thread_id, "user", question, {"focus": focus} if focus else None)
     _record(conn, thread_id, "assistant", result["answer"], result)
     return {"thread_id": thread_id, **result}

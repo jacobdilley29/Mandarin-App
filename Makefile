@@ -27,9 +27,23 @@ PORT ?= $(shell [ -f .env ] && grep -E '^PORT=' .env | cut -d= -f2 || echo 3002)
 DOCKER_RUNNING := $(shell docker compose ps --status running --quiet app 2>/dev/null)
 ifeq ($(DOCKER_RUNNING),)
   RUN_BACKEND := cd backend && ../$(VENV)/bin/python
+  SYNC_IMAGE :=
 else
   RUN_BACKEND := docker compose exec -T app python
+  # `docker compose exec` runs whatever code is baked into the running image, so
+  # after a `git pull` the authoring scripts are the OLD ones until the image is
+  # rebuilt — which is how a fixed generator was run with the bug still in it.
+  # Authoring targets rebuild first; Docker's layer cache makes that a few
+  # seconds when nothing changed. Data targets (backup/export/restore) don't
+  # need it: they act on the volume, not on code that just changed.
+  SYNC_IMAGE := sync-image
 endif
+
+# Rebuild+restart the image so container code matches the working tree.
+.PHONY: sync-image
+sync-image:
+	@echo "› syncing container with your working tree (cached, usually quick)…"
+	@docker compose up -d --build
 
 .PHONY: help
 help:
@@ -218,29 +232,29 @@ restore:
 # needed to run it. They are authoring tools.
 # ---------------------------------------------------------------------------
 .PHONY: coverage
-coverage:
+coverage: $(SYNC_IMAGE)
 	@$(RUN_BACKEND) -m scripts.coverage $(ARGS)
 
 .PHONY: load-content
-load-content:
+load-content: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.load_content $(ARGS)
 
 .PHONY: check-content
-check-content:
+check-content: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.load_content --check
 
 .PHONY: build-skeleton
-build-skeleton:
+build-skeleton: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.build_skeleton --theme offline $(ARGS)
 	@echo ""
 	@echo "Drafts are staged, not taught. Next: make generate-content"
 
 .PHONY: generate-content
-generate-content:
+generate-content: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.generate_content $(ARGS)
 
 .PHONY: warm-audio
-warm-audio:
+warm-audio: $(SYNC_IMAGE)
 	$(RUN_BACKEND) -m scripts.warm_audio $(ARGS)
 
 # ---------------------------------------------------------------------------

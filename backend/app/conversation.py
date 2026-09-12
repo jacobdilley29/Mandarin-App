@@ -137,20 +137,13 @@ last message (Traditional characters), or null if theirs was already natural.
 traditional, pinyin, and a short English gloss. Empty list if none."""
 
 
-def reply(conn: sqlite3.Connection, scenario_id: str, history: list[dict], user_text: str) -> dict:
-    """Generate one conversation turn. Raises RuntimeError if unavailable."""
-    sc = scenario(scenario_id)
-    if not sc:
-        raise ValueError("unknown scenario")
-    key = effective_api_key(conn)
-    if not key:
-        raise RuntimeError("conversation unavailable (no ANTHROPIC_API_KEY)")
-    try:
-        import anthropic  # noqa: F401
-    except ImportError:
-        raise RuntimeError("conversation unavailable (anthropic package not installed)")
+def _models():
+    """The structured-output schema for one roleplay turn.
 
-    import anthropic
+    A named helper rather than classes buried inside reply(), so
+    tests/test_output_schemas.py can check the schema this sends without
+    needing a key — the check that would have caught the tutor's 400s.
+    """
     from pydantic import BaseModel
 
     class TeacherNote(BaseModel):
@@ -168,6 +161,25 @@ def reply(conn: sqlite3.Connection, scenario_id: str, history: list[dict], user_
         teacher_note: TeacherNote
         new_words: list[NewWord]
 
+    return Turn
+
+
+def reply(conn: sqlite3.Connection, scenario_id: str, history: list[dict], user_text: str) -> dict:
+    """Generate one conversation turn. Raises RuntimeError if unavailable."""
+    sc = scenario(scenario_id)
+    if not sc:
+        raise ValueError("unknown scenario")
+    key = effective_api_key(conn)
+    if not key:
+        raise RuntimeError("conversation unavailable (no ANTHROPIC_API_KEY)")
+    try:
+        import anthropic  # noqa: F401
+    except ImportError:
+        raise RuntimeError("conversation unavailable (anthropic package not installed)")
+
+    import anthropic
+
+    Turn = _models()
     messages = [
         {"role": m["role"], "content": m["content"]} for m in history
     ] + [{"role": "user", "content": user_text}]

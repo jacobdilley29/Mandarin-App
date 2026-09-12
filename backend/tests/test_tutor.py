@@ -43,7 +43,10 @@ class StubClient:
         self.sent = messages
         out = {
             "answer": "才 means later than expected; 就 means sooner.",
-            "examples": [{"hanzi": "他才來", "pinyin": "tā cái lái", "gloss": "He only just came."}],
+            # What the real model returns — ask() renames it to `examples`.
+            "example_sentences": [
+                {"hanzi": "他才來", "pinyin": "tā cái lái", "gloss": "He only just came."}
+            ],
             "taiwan_note": None,
             "related": ["g_le"],
         }
