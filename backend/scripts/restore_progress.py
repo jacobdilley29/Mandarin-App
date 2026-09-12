@@ -1,9 +1,25 @@
 #!/usr/bin/env python3
-"""Copy learner progress from a backup database into the live one.
+"""Copy learner progress out of an old single-file backup into the live database.
 
-Content and progress live in the same SQLite file, so rebuilding content by
-starting from a fresh database throws away streaks, SRS scheduling and lesson
-completion along with it. This moves the progress back.
+This is the recovery tool for the layout that existed before content and
+progress were split into separate files: everything lived in one mandarin.db,
+so rebuilding content by starting from a fresh database threw away streaks, SRS
+scheduling and lesson completion along with it. This moves the progress back.
+
+That failure mode is now designed out — progress.db is a separate file, and
+content reseeds cannot touch it (see app/db.py). Two things still bring you
+here:
+
+  * You have an old mandarin.db backup from before the split and want its
+    progress in the current database. (For a whole pre-split database, prefer
+    `python -m scripts.migrate_split_db`, which converts it wholesale. Use this
+    script instead when the live database already has progress you want to keep
+    and you're merging an older backup into it.)
+  * You want to cherry-pick progress out of any database file, dropping rows
+    whose content no longer exists.
+
+For routine backup and restore, use `scripts/backup.py`, `scripts/export_progress.py`
+and `scripts/import_progress.py` — see the README's "Backups & restore".
 
 Only progress tables are touched — units, lessons, vocab and grammar are left
 exactly as the live database has them. Rows referring to content that no longer
@@ -16,7 +32,7 @@ drill_errors, tone_attempts, talk_sessions, talk_messages, and the settings row
 (including the in-app Anthropic key).
 
 Usage:
-    python -m scripts.restore_progress --from ../data/mandarin.db.bak-20260911-1830
+    python -m scripts.restore_progress --from ../data/mandarin.db.pre-split.bak
     python -m scripts.restore_progress --from BACKUP --dry-run
 
 Safe to re-run: rows already present in the live database are left alone.

@@ -73,7 +73,8 @@ Mandarin-App/
 │   │   └── routers/         health · admin · settings · learn · review ·
 │   │                        listen · speak · talk · progress · audio
 │   ├── scripts/             backup · export_progress · import_progress ·
-│   │                        migrate_split_db · load_content · import_cedict
+│   │                        migrate_split_db · restore_progress ·
+│   │                        load_content · import_cedict
 │   ├── tests/               pytest
 │   └── requirements.txt
 ├── frontend/                React + TypeScript + Vite + Tailwind
@@ -255,6 +256,14 @@ rather watch it happen:
 
 ```bash
 cd backend && python -m scripts.migrate_split_db
+```
+
+If you only want the *progress* out of an old backup — because the live database
+already has progress you want to keep — use `scripts/restore_progress.py` instead,
+which merges rather than converts and drops rows whose content no longer exists:
+
+```bash
+cd backend && python -m scripts.restore_progress --from ../data/mandarin.db.pre-split.bak --dry-run
 ```
 
 ---
