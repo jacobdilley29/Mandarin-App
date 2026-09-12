@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { api, type ToneItem, type ToneOption } from "../../api";
 import { useSpeak } from "../../audio";
-import { useSettings } from "../../SettingsContext";
+import { DEFAULT_LISTEN_SPEED, ListenSpeed } from "../../components/ListenSpeed";
 import { ToneMark, type Tone } from "../../components/ToneMark";
 
 type ToneMode = "single" | "pair";
@@ -20,12 +20,12 @@ function sameOption(a: ToneOption, b: ToneOption): boolean {
 }
 
 export default function ToneTrainer() {
-  const { settings } = useSettings();
   const { play } = useSpeak();
   const [mode, setMode] = useState<ToneMode>("single");
   const [item, setItem] = useState<ToneItem | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [chosen, setChosen] = useState<ToneOption | null>(null);
+  const [rate, setRate] = useState(DEFAULT_LISTEN_SPEED);
 
   const load = useCallback((m: ToneMode) => {
     setChosen(null);
@@ -35,7 +35,7 @@ export default function ToneTrainer() {
   useEffect(() => load(mode), [mode, load]);
 
   function playClip() {
-    if (item) play(item.audio_text, { voice: item.voice, rate: settings?.playback_rate });
+    if (item) play(item.audio_text, { voice: item.voice, rate });
   }
 
   if (error) return <div className="text-bad">{error}</div>;
@@ -74,6 +74,10 @@ export default function ToneTrainer() {
               <path d="M8 5v14l11-7z" />
             </svg>
           </button>
+        </div>
+
+        <div className="mt-3 flex justify-center">
+          <ListenSpeed rate={rate} onChange={setRate} />
         </div>
 
         {!item ? (

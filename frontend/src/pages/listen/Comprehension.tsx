@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { api, type ComprehensionSet, type Option } from "../../api";
 import { useSpeak } from "../../audio";
 import { useSettings } from "../../SettingsContext";
+import { DEFAULT_LISTEN_SPEED, ListenSpeed } from "../../components/ListenSpeed";
 
 export default function Comprehension() {
   const { settings } = useSettings();
@@ -10,10 +11,16 @@ export default function Comprehension() {
   const [error, setError] = useState<string | null>(null);
   const [showEn, setShowEn] = useState(false);
   const [answers, setAnswers] = useState<Record<number, Option>>({});
+  const [rate, setRate] = useState(DEFAULT_LISTEN_SPEED);
+  // Spec §3.4: reveal the characters after an attempt, not before. With the
+  // transcript on screen from the start this was a reading exercise with audio
+  // attached — the questions could be answered without listening at all.
+  const [peeked, setPeeked] = useState(false);
 
   const load = useCallback(() => {
     setAnswers({});
     setShowEn(false);
+    setPeeked(false);
     api.listenSet().then(setSet).catch((e) => setError(String(e)));
   }, []);
   useEffect(load, [load]);
@@ -23,6 +30,7 @@ export default function Comprehension() {
 
   const allAnswered = Object.keys(answers).length === set.questions.length;
   const correctCount = Object.values(answers).filter((a) => a.correct).length;
+  const revealed = allAnswered || peeked;
 
   return (
     <div>
@@ -32,13 +40,28 @@ export default function Comprehension() {
           <h2 lang="zh-Hant" className="font-han text-base text-ink">
             {set.title}
           </h2>
-          <button
-            type="button"
-            onClick={() => setShowEn((v) => !v)}
-            className="rounded-full border border-border px-3 py-1 text-xs text-ink-soft"
-          >
-            {showEn ? "Hide English" : "Show English"}
-          </button>
+          <ListenSpeed rate={rate} onChange={setRate} />
+        </div>
+
+        <div className="mb-3 flex items-center gap-2">
+          {revealed && (
+            <button
+              type="button"
+              onClick={() => setShowEn((v) => !v)}
+              className="rounded-full border border-border px-3 py-1 text-xs text-ink-soft"
+            >
+              {showEn ? "Hide English" : "Show English"}
+            </button>
+          )}
+          {!revealed && (
+            <button
+              type="button"
+              onClick={() => setPeeked(true)}
+              className="rounded-full border border-dashed border-border px-3 py-1 text-xs text-ink-faint"
+            >
+              Show transcript
+            </button>
+          )}
         </div>
         <div className="space-y-2">
           {set.dialogue.map((line, i) => (
@@ -47,14 +70,20 @@ export default function Comprehension() {
               <button
                 type="button"
                 lang="zh-Hant"
-                onClick={() => play(line.audio_text, { voice: line.voice, rate: settings?.playback_rate })}
-                className="mt-0.5 text-left font-han text-lg text-ink"
+                onClick={() => play(line.audio_text, { voice: line.voice, rate })}
+                className="mt-0.5 flex w-full items-center gap-2 text-left font-han text-lg text-ink"
               >
-                {line.hanzi}
-                <span className="ml-1 text-xs text-ink-faint">🔊</span>
+                {revealed ? (
+                  <span>{line.hanzi}</span>
+                ) : (
+                  <span className="text-sm font-sans text-ink-soft">Play line {i + 1}</span>
+                )}
+                <span className="text-xs text-ink-faint">🔊</span>
               </button>
-              {settings?.show_pinyin && <div className="text-sm text-ink-soft">{line.pinyin}</div>}
-              {showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
+              {revealed && settings?.show_pinyin && (
+                <div className="text-sm text-ink-soft">{line.pinyin}</div>
+              )}
+              {revealed && showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
             </div>
           ))}
         </div>

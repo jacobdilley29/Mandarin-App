@@ -527,6 +527,48 @@ where to start.
 | `GET /api/placement/summary` | Band verdicts and where to start |
 | `POST /api/placement/reset` | Retake it (keeps SRS history) |
 
+## Listening and speaking
+
+**Pitch analysis uses Praat** (via `praat-parselmouth`), not librosa. Spec §4
+names both; librosa is deliberately not used, after measuring all three against
+synthesised tone contours with known f0 (`backend/tests/test_pitch.py`):
+
+| Tracker | Median error (tones 2/3/4) | Time | Install |
+|---|---|---|---|
+| **parselmouth** | **0.018–0.028 semitones** | **1–2 ms** | +136 MB |
+| numpy fallback | 0.056–0.085 semitones | 5–6 ms | — |
+| librosa pyin | 0.108–0.194 semitones | 73 ms (+25 s first call) | +425 MB |
+
+librosa is built for music retrieval; on clean tonal speech it was the least
+accurate and by far the slowest. The numpy autocorrelation tracker stays as a
+fallback, so a machine without parselmouth still scores tones — a little less
+precisely. On a *level* tone both are exact and neither has an edge; Praat's
+advantage is on contours that move, which is where tone discrimination is hard.
+
+**Both halves of the pronunciation score** (spec §3.5) now run:
+
+- **Tone accuracy** — per-syllable pitch contour against the expected tone, with
+  sandhi applied first, so 你好 is scored as ní hǎo rather than marked wrong for
+  being pronounced correctly.
+- **Segmental accuracy** — "did you say the right sounds", from local
+  transcription via `faster-whisper`. This was previously commented out of
+  requirements, so that half of the score never ran. It reports `null` rather
+  than zero when transcription is unavailable: the question wasn't asked.
+
+Whisper's word timestamps also place the syllable boundaries. Without them the
+utterance is sliced into equal parts, which assumes every syllable takes the
+same time — a misplaced boundary classifies the wrong stretch of pitch. The
+response flags which was used (`approximate`).
+
+The model (~480 MB for `small`, set by `WHISPER_MODEL`) downloads on **first
+use**, not at build time, so the image stays lean and the app starts offline.
+
+**Listening exercises** carry their own slow / normal / native speed control
+(§3.4), separate from the app-wide playback rate. Comprehension dialogues play
+as audio only — the transcript appears once you've answered, or when you
+deliberately ask for it. With the characters on screen from the start it was a
+reading exercise with audio attached.
+
 ## Grammar
 
 Grammar is a first-class module, not a footnote on the vocabulary (spec §3.3).

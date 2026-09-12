@@ -2,12 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { api, type DictationItem, type DiffResult, type DiffSegment } from "../../api";
 import { useSpeak } from "../../audio";
 import { useSettings } from "../../SettingsContext";
-
-const SPEEDS = [
-  { value: 0.75, label: "0.75×" },
-  { value: 1.0, label: "1×" },
-  { value: 1.25, label: "1.25×" },
-];
+import { DEFAULT_LISTEN_SPEED, ListenSpeed } from "../../components/ListenSpeed";
 
 function Segment({ seg }: { seg: DiffSegment }) {
   switch (seg.type) {
@@ -36,7 +31,7 @@ export default function Dictation() {
   const { play } = useSpeak();
   const [item, setItem] = useState<DictationItem | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [rate, setRate] = useState(1.0);
+  const [rate, setRate] = useState(DEFAULT_LISTEN_SPEED);
   const [answer, setAnswer] = useState("");
   const [toneSensitive, setToneSensitive] = useState(true);
   const [result, setResult] = useState<DiffResult | null>(null);
@@ -85,24 +80,13 @@ export default function Dictation() {
             <path d="M8 5v14l11-7z" />
           </svg>
         </button>
-        <div className="inline-flex rounded-md border border-border bg-surface-2 p-1">
-          {SPEEDS.map((s) => (
-            <button
-              key={s.value}
-              type="button"
-              onClick={() => {
-                setRate(s.value);
-                playClip(s.value);
-              }}
-              className={[
-                "tap rounded px-3 text-sm font-medium transition-colors",
-                s.value === rate ? "bg-primary text-primary-ink" : "text-ink-soft",
-              ].join(" ")}
-            >
-              {s.label}
-            </button>
-          ))}
-        </div>
+        <ListenSpeed
+          rate={rate}
+          onChange={(r) => {
+            setRate(r);
+            playClip(r);
+          }}
+        />
       </div>
 
       <input

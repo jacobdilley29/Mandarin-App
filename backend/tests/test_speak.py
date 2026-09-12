@@ -106,3 +106,114 @@ def test_sandhi_rules():
     assert tone_classify.apply_sandhi("不是", [4, 4]) == [2, 4]
     assert tone_classify.apply_sandhi("一個", [1, 4]) == [2, 4]
     assert tone_classify.apply_sandhi("一天", [1, 1]) == [4, 1]
+
+
+# ---------------------------------------------------------------------------
+# Segmental accuracy and syllable segmentation (spec §3.5)
+# ---------------------------------------------------------------------------
+import io as _io
+import wave as _wave
+
+import numpy as _np
+
+from app import speak as _speak
+
+
+def _tone_wav(curve, dur=0.6, sr=16000):
+    n = int(sr * dur)
+    f0 = _np.interp(_np.linspace(0, 1, n), _np.linspace(0, 1, len(curve)), curve)
+    sig = sum(_np.sin(k * 2 * _np.pi * _np.cumsum(f0) / sr) / k for k in range(1, 7))
+    sig = (sig * _np.hanning(n) * 0.5).astype(_np.float32)
+    buf = _io.BytesIO()
+    with _wave.open(buf, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes((sig * 32767).astype("<i2").tobytes())
+    return buf.getvalue()
+
+
+def test_third_tone_sandhi_is_applied_to_the_target():
+    """你好 is nǐ hǎo on paper but ní hǎo in the mouth — scoring the written
+    tones would mark a correct pronunciation wrong."""
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert [s["expected"] for s in result["syllables"]] == [2, 3]
+
+
+def test_segmental_is_none_when_transcription_is_unavailable(monkeypatch):
+    """Not zero and not perfect — the question simply wasn't asked."""
+    monkeypatch.setattr(_speak.whisper_asr, "transcribe", lambda *a, **k: None)
+    result = _speak.score(_tone_wav([110, 125, 145, 180]), "好", "hǎo")
+
+    assert result["segmental_correct"] is None
+    assert result["segmental_total"] is None
+    assert result["whisper_available"] is False
+
+
+def test_segmental_is_scored_when_transcription_runs(monkeypatch):
+    monkeypatch.setattr(
+        _speak.whisper_asr, "transcribe",
+        lambda *a, **k: {"text": "你好", "words": [{"word": "你好", "start": 0.05, "end": 0.5}]},
+    )
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert result["segmental_total"] == 2
+    assert result["segmental_correct"] == 2
+    assert result["transcription"] == "你好"
+
+
+def test_a_wrong_sound_costs_segmental_but_not_necessarily_tone(monkeypatch):
+    monkeypatch.setattr(
+        _speak.whisper_asr, "transcribe",
+        lambda *a, **k: {"text": "你貓", "words": [{"word": "你貓", "start": 0.05, "end": 0.5}]},
+    )
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert result["segmental_correct"] == 1, "你 matched, 貓 did not"
+
+
+def test_word_timings_are_used_for_syllable_boundaries(monkeypatch):
+    """Equal-time slicing assumes every syllable is the same length; a fourth
+    tone followed by a drawled 嗎 plainly isn't, and a misplaced boundary
+    classifies the wrong stretch of pitch."""
+    monkeypatch.setattr(
+        _speak.whisper_asr, "transcribe",
+        lambda *a, **k: {"text": "你好", "words": [
+            {"word": "你", "start": 0.05, "end": 0.20},
+            {"word": "好", "start": 0.25, "end": 0.55},
+        ]},
+    )
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert result["approximate"] is False
+
+
+def test_equal_time_segmentation_is_flagged_as_approximate(monkeypatch):
+    monkeypatch.setattr(_speak.whisper_asr, "transcribe", lambda *a, **k: None)
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert result["approximate"] is True
+
+
+def test_mismatched_timing_counts_fall_back_to_equal_slices(monkeypatch):
+    """Whisper hearing three syllables for a two-syllable target must not
+    produce bounds that index backwards."""
+    monkeypatch.setattr(
+        _speak.whisper_asr, "transcribe",
+        lambda *a, **k: {"text": "你好嗎", "words": [
+            {"word": "你好嗎", "start": 0.05, "end": 0.55},
+        ]},
+    )
+    result = _speak.score(_tone_wav([110, 125, 145, 180, 110, 95, 80, 95]), "你好", "nǐ hǎo")
+
+    assert result["approximate"] is True
+    assert len(result["syllables"]) == 2
+
+
+def test_a_contour_is_always_returned_for_the_plot():
+    result = _speak.score(_tone_wav([110, 125, 145, 180]), "好", "hǎo")
+
+    assert result["contour"]["points"], "the pitch plot needs points to draw"
+    assert result["expected_contour"], "and a reference contour to compare against"
+    assert len(result["contour"]["syllable_bounds"]) == 2

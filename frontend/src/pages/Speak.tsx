@@ -187,9 +187,18 @@ export default function Speak() {
           {score && (
             <div className="mt-6 border-t border-border pt-5">
               <div className="mb-1 flex items-center justify-between">
-                <h3 className="text-sm font-semibold text-ink">Tone check</h3>
-                <span className="text-xs text-ink-soft">
-                  {score.tone_correct}/{score.tone_total} tones
+                <h3 className="text-sm font-semibold text-ink">Pronunciation</h3>
+                <span className="flex items-baseline gap-3 text-xs text-ink-soft">
+                  <span>
+                    {score.tone_correct}/{score.tone_total} tones
+                  </span>
+                  {/* The other half of the score (spec §3.5). Shown only when
+                      transcription actually ran — a dash would read as zero. */}
+                  {score.segmental_total != null && (
+                    <span>
+                      {score.segmental_correct}/{score.segmental_total} sounds
+                    </span>
+                  )}
                 </span>
               </div>
               <div className="rounded-md border border-border bg-surface-2 p-2">

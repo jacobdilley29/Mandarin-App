@@ -46,11 +46,58 @@ _TEMPLATES = {
 }
 
 
+def _syllable_bounds(
+    times: np.ndarray, lo: int, hi: int, n_syll: int, asr: dict | None
+) -> np.ndarray:
+    """Frame indices splitting the voiced span into syllables.
+
+    Prefers Whisper's word timestamps; falls back to equal slices when they are
+    absent or don't line up with the expected syllable count.
+    """
+    equal = np.linspace(lo, hi, n_syll + 1).astype(int)
+    words = (asr or {}).get("words") or []
+    if not words:
+        return equal
+
+    # A Chinese "word" from Whisper may hold several characters; split its span
+    # evenly across them, which is a far better guess than splitting the whole
+    # utterance evenly.
+    starts: list[float] = []
+    ends: list[float] = []
+    for w in words:
+        chars = _han_chars(w.get("word", ""))
+        n = len(chars) or 1
+        w0, w1 = float(w.get("start", 0.0)), float(w.get("end", 0.0))
+        if w1 <= w0:
+            continue
+        step = (w1 - w0) / n
+        for i in range(n):
+            starts.append(w0 + i * step)
+            ends.append(w0 + (i + 1) * step)
+
+    if len(starts) != n_syll:
+        return equal
+
+    edges = [starts[0]] + [(ends[i] + starts[i + 1]) / 2 for i in range(n_syll - 1)] + [ends[-1]]
+    idx = np.searchsorted(times, np.asarray(edges)).astype(int)
+    idx = np.clip(idx, lo, hi)
+    # Monotonic and non-degenerate, or the slices below index backwards.
+    if not np.all(np.diff(idx) > 0):
+        return equal
+    return idx
+
+
 def _voiced_span(times: np.ndarray, f0: np.ndarray) -> tuple[int, int]:
     voiced = np.where(~np.isnan(f0))[0]
     if voiced.size == 0:
         return 0, len(f0)
     return int(voiced[0]), int(voiced[-1]) + 1
+
+
+def _used_word_timings(bounds: np.ndarray, lo: int, hi: int, n_syll: int) -> bool:
+    """Whether the bounds came from timestamps rather than even division."""
+    equal = np.linspace(lo, hi, n_syll + 1).astype(int)
+    return not np.array_equal(np.asarray(bounds), equal)
 
 
 def score(audio_wav: bytes, target_hanzi: str, target_pinyin: str) -> dict:
@@ -76,9 +123,12 @@ def score(audio_wav: bytes, target_hanzi: str, target_pinyin: str) -> dict:
     median = float(np.median(voiced_vals)) if voiced_vals.size else 0.0
     st = np.where(np.isnan(f0), np.nan, 12.0 * np.log2(np.where(f0 > 0, f0, np.nan) / median)) if median > 0 else f0 * np.nan
 
-    # Segment the voiced span into n_syll equal slices for per-syllable tones.
+    # Segment the utterance into per-syllable spans. Whisper's word timestamps
+    # are used when available: equal-time slicing assumes every syllable takes
+    # the same length, which a fourth tone followed by a drawled 嗎 plainly does
+    # not, and a misplaced boundary classifies the wrong stretch of pitch.
     lo, hi = _voiced_span(times, f0)
-    bounds = np.linspace(lo, hi, n_syll + 1).astype(int)
+    bounds = _syllable_bounds(times, lo, hi, n_syll, asr)
 
     syllables = []
     for i in range(n_syll):
@@ -118,14 +168,25 @@ def score(audio_wav: bytes, target_hanzi: str, target_pinyin: str) -> dict:
     syllable_bounds = [round((bounds[i] - lo) / max(1, hi - lo), 4) for i in range(n_syll + 1)]
     correct = sum(1 for s in syllables if s["ok"])
 
+    # Segmental accuracy (spec §3.5): did the right sounds come out, regardless
+    # of tone. Only meaningful when transcription ran — otherwise it is reported
+    # as None rather than silently scored as zero or as perfect.
+    judged = [s for s in syllables if s.get("char_ok") is not None]
+    segmental_correct = sum(1 for s in judged if s["char_ok"]) if judged else None
+    segmental_total = len(judged) if judged else None
+
     return {
         "target": {"hanzi": target_hanzi, "pinyin": target_pinyin},
-        "approximate": True,
+        # True when syllable boundaries were guessed by even division rather than
+        # taken from transcription timings.
+        "approximate": not _used_word_timings(bounds, lo, hi, n_syll),
         "whisper_available": asr is not None,
         "transcription": transcript,
         "syllables": syllables,
         "tone_correct": correct,
         "tone_total": n_syll,
+        "segmental_correct": segmental_correct,
+        "segmental_total": segmental_total,
         "contour": {"points": points, "syllable_bounds": syllable_bounds},
         "expected_contour": expected_contour,
         "median_hz": round(median, 1) if median else None,

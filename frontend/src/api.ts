@@ -318,6 +318,11 @@ export interface SpeakScore {
   syllables: SyllableVerdict[];
   tone_correct: number;
   tone_total: number;
+  // Segmental accuracy — "did you say the right sounds", as opposed to the
+  // right tones (spec §3.5). null when transcription didn't run: the question
+  // wasn't asked, which is different from scoring zero.
+  segmental_correct: number | null;
+  segmental_total: number | null;
   contour: { points: ContourPoint[]; syllable_bounds: number[] };
   expected_contour: ContourPoint[];
   median_hz: number | null;
