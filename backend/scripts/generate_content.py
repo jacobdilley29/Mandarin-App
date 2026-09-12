@@ -180,10 +180,36 @@ def apply_to_lesson(lesson: dict, content: dict) -> None:
             v["example"] = {"hanzi": ex["hanzi"], "pinyin": ex["pinyin"], "gloss": ex["gloss"]}
 
 
-def make_client():
+def resolve_api_key() -> str | None:
+    """The Anthropic key from wherever the user actually put it.
+
+    Three places, and all three have to work, because each is the obvious one
+    from a different starting point: the Me tab in the app (stored in
+    progress.db — no file editing, and the only option if you only ever touch
+    the UI), ANTHROPIC_API_KEY in .env, or an export in the shell.
+
+    app.conversation.effective_api_key already implements exactly this
+    precedence for the Talk tab, so it is reused rather than reimplemented —
+    otherwise a key entered in the app enables Talk but mysteriously does not
+    work here, which is precisely the trap this replaced.
+    """
+    from app import conversation, db
+
+    try:
+        conn = db.connect()
+    except Exception:
+        # No database yet (fresh checkout) — .env and the environment still work.
+        return conversation.effective_api_key(None)
+    try:
+        return conversation.effective_api_key(conn)
+    finally:
+        conn.close()
+
+
+def make_client(api_key: str | None = None):
     import anthropic
 
-    return anthropic.Anthropic()
+    return anthropic.Anthropic(api_key=api_key) if api_key else anthropic.Anthropic()
 
 
 def _select_units(data: dict, args) -> list[dict]:
@@ -227,13 +253,18 @@ def main(argv: list[str] | None = None, client=None) -> int:
         return 0
 
     if client is None:
-        if not os.environ.get("ANTHROPIC_API_KEY"):
-            print("✗ ANTHROPIC_API_KEY not set. This authoring tool needs an API key.")
-            print("  The app itself runs fine without it — the committed live units")
-            print("  are hand-authored, and drafts simply stay out of Learn.")
+        key = resolve_api_key()
+        if not key:
+            print("✗ No Anthropic API key found. This authoring tool needs one.")
+            print("  Set it in any of these — the app checks all three:")
+            print("    • the Me tab in the app (stored with your progress)")
+            print("    • ANTHROPIC_API_KEY in .env at the repo root")
+            print("    • export ANTHROPIC_API_KEY=... in your shell")
+            print("  The app itself runs fine without a key — the committed live")
+            print("  units are hand-authored, and drafts simply stay out of Learn.")
             return 1
         try:
-            client = make_client()
+            client = make_client(key)
         except ImportError:
             print("✗ anthropic SDK not installed. `pip install anthropic`.")
             return 1

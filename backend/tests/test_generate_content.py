@@ -202,3 +202,70 @@ def test_vocab_examples_fall_back_to_position_when_ids_do_not_match(sandbox):
 
     assert lesson["vocab"][0]["example"]["hanzi"] == "A"
     assert lesson["vocab"][1]["example"]["hanzi"] == "B"
+
+
+# ---------------------------------------------------------------------------
+# Where the API key comes from
+# ---------------------------------------------------------------------------
+def test_a_key_entered_in_the_app_is_found(tmp_path, monkeypatch):
+    """The Me tab stores it in progress.db. That must be enough on its own.
+
+    Entering a key in the app and finding generation still says "not set" is a
+    dead end with no visible cause, so all three sources are checked.
+    """
+    from app import config, conversation, db
+    from scripts import generate_content as g
+
+    settings = config.Settings(data_dir=tmp_path, anthropic_api_key=None)
+    monkeypatch.setattr(config, "get_settings", lambda: settings)
+    monkeypatch.setattr(db, "get_settings", lambda: settings)
+    monkeypatch.setattr(conversation, "get_settings", lambda: settings)
+    db.init_db()
+    conn = db.connect()
+    conn.execute("UPDATE settings SET anthropic_api_key = 'sk-in-app'")
+    conn.commit()
+    conn.close()
+
+    assert g.resolve_api_key() == "sk-in-app"
+
+
+def test_the_env_key_is_used_when_the_app_has_none(tmp_path, monkeypatch):
+    from app import config, conversation, db
+    from scripts import generate_content as g
+
+    settings = config.Settings(data_dir=tmp_path, anthropic_api_key="sk-in-env")
+    monkeypatch.setattr(config, "get_settings", lambda: settings)
+    monkeypatch.setattr(db, "get_settings", lambda: settings)
+    monkeypatch.setattr(conversation, "get_settings", lambda: settings)
+
+    assert g.resolve_api_key() == "sk-in-env"
+
+
+def test_the_in_app_key_wins_over_the_environment(tmp_path, monkeypatch):
+    """Matches how the Talk tab resolves it — one precedence, not two."""
+    from app import config, conversation, db
+    from scripts import generate_content as g
+
+    settings = config.Settings(data_dir=tmp_path, anthropic_api_key="sk-in-env")
+    monkeypatch.setattr(config, "get_settings", lambda: settings)
+    monkeypatch.setattr(db, "get_settings", lambda: settings)
+    monkeypatch.setattr(conversation, "get_settings", lambda: settings)
+    db.init_db()
+    conn = db.connect()
+    conn.execute("UPDATE settings SET anthropic_api_key = 'sk-in-app'")
+    conn.commit()
+    conn.close()
+
+    assert g.resolve_api_key() == "sk-in-app"
+
+
+def test_no_key_anywhere_resolves_to_none(tmp_path, monkeypatch):
+    from app import config, conversation, db
+    from scripts import generate_content as g
+
+    settings = config.Settings(data_dir=tmp_path, anthropic_api_key=None)
+    monkeypatch.setattr(config, "get_settings", lambda: settings)
+    monkeypatch.setattr(db, "get_settings", lambda: settings)
+    monkeypatch.setattr(conversation, "get_settings", lambda: settings)
+
+    assert g.resolve_api_key() is None

@@ -440,10 +440,18 @@ cd backend && python -m scripts.build_skeleton --report-readings
 ### Completing the drafts (needs an API key)
 
 The 63 draft units have vocabulary but no sentences. Filling them in is the one
-step that needs the Claude API:
+step that needs the Claude API.
+
+Put your key in **any** of these — all three are checked, in this order:
+
+1. the **Me** tab in the app (stored with your progress; no file editing, and it
+   enables the Talk tab at the same time)
+2. `ANTHROPIC_API_KEY` in `.env` at the repo root
+3. `export ANTHROPIC_API_KEY=...` in your shell
+
+Then:
 
 ```bash
-export ANTHROPIC_API_KEY=sk-...
 make generate-content ARGS=--dry-run          # see the plan first
 make generate-content ARGS="--unit u_hsk1_01" # one unit, to check the output
 make generate-content ARGS="--level 1"        # a whole level
