@@ -35,7 +35,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from app import completeness, curriculum_source  # noqa: E402
 from app.config import REPO_ROOT
 from app.llm import MODEL  # noqa: E402
-from app.validation import han_chars, validate_curriculum  # noqa: E402
+from app.validation import (  # noqa: E402
+    han_chars,
+    placement_pool_chars,
+    placement_pool_words,
+    validate_curriculum,
+)
 
 
 GENERATED_DIR = REPO_ROOT / "content" / ".generated"
@@ -130,14 +135,31 @@ def _make_models():
     return LessonContent
 
 
-def generate_lesson(client, lesson: dict, allowed_words: list[str]) -> dict:
+RETRY_NOTE = """\
+Your previous attempt used characters the learner has not met yet, so it was \
+rejected: {chars}
+
+Rewrite the whole lesson. Keep the same vocabulary and the same teaching intent, \
+but express every sentence using ONLY the allowed characters above. If a natural \
+sentence needs a word you may not use, choose a different sentence rather than \
+stretching the rule — a lesson that is slightly plainer is worth far more than \
+one that gets thrown away."""
+
+
+def generate_lesson(
+    client, lesson: dict, allowed_words: list[str], rejected: list[str] | None = None
+) -> dict:
+    """One lesson's content. `rejected` re-asks, naming what went out of scope."""
     LessonContent = _make_models()
+    prompt = _lesson_prompt(lesson, allowed_words)
+    if rejected:
+        prompt += "\n\n" + RETRY_NOTE.format(chars=" ".join(sorted(set(rejected))))
     response = client.messages.parse(
         model=MODEL,
         max_tokens=8000,
         thinking={"type": "adaptive"},
         system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": _lesson_prompt(lesson, allowed_words)}],
+        messages=[{"role": "user", "content": prompt}],
         output_format=LessonContent,
     )
     parsed = response.parsed_output
@@ -147,8 +169,14 @@ def generate_lesson(client, lesson: dict, allowed_words: list[str]) -> dict:
 
 
 def _allowed_words_upto(skeleton: dict, lesson_id: str) -> list[str]:
-    """Cumulative vocabulary words available up to and including a lesson."""
-    words: list[str] = []
+    """Cumulative vocabulary available up to and including a lesson.
+
+    Starts from the placement pool: those words are seeded as already-mastered
+    before lesson one and never taught, so they are in scope throughout. Leaving
+    them out told the model it could not use 老師, 學校 or 朋友 — which is not
+    true of the learner, and made natural Taiwan sentences fail validation.
+    """
+    words: list[str] = list(placement_pool_words())
     units = sorted(skeleton["units"], key=lambda u: u.get("sort_order", 0))
     for unit in units:
         for lesson in sorted(unit["lessons"], key=lambda l: l.get("sort_order", 0)):
@@ -244,6 +272,59 @@ def _select_units(data: dict, args) -> list[dict]:
     return [u for u in units if not completeness.evaluate_unit(u).complete]
 
 
+def _violations_for(data: dict, by_id: dict, unit: dict) -> list:
+    """This unit's out-of-scope sentences, judged as the content loader judges them.
+
+    `where` reads like "l_conv_1 sentence 3", so the first token is the lesson
+    id — only this unit's violations decide this unit's fate.
+    """
+    result = validate_curriculum(
+        {"meta": data.get("meta", {}), "units": list(by_id.values())},
+        # The same known-set load_content uses. Without it the generator was
+        # stricter than the loader and discarded content `make load-content`
+        # would have accepted — 17 of 23 units in one run.
+        extra_known_chars=placement_pool_chars(),
+    )
+    lesson_ids = {l["id"] for l in (unit.get("lessons") or [])}
+    return [v for v in result.violations if v.where.split()[0] in lesson_ids]
+
+
+def _retry_lessons(client, data: dict, unit: dict, violations: list) -> int:
+    """Regenerate just the lessons that broke scope. Returns how many were redone.
+
+    Capped at this one attempt: if the model cannot stay in scope when told
+    exactly which characters it may not use, asking again is paying to watch it
+    fail. A lesson discarded over one word is the worst outcome available.
+    """
+    rejected: dict[str, set[str]] = {}
+    for v in violations:
+        rejected.setdefault(v.where.split()[0], set()).update(v.unknown)
+
+    redone = 0
+    for lesson in unit.get("lessons") or []:
+        chars = rejected.get(lesson["id"])
+        if not chars:
+            continue
+        print(f"  \u21bb {lesson['id']}: retrying — out of scope: {' '.join(sorted(chars))}")
+        try:
+            content = generate_lesson(
+                client,
+                lesson,
+                _allowed_words_upto(data, lesson["id"]),
+                rejected=sorted(chars),
+            )
+        except Exception as exc:  # noqa: BLE001 — a failed retry is not fatal
+            print(f"  ✗ {lesson['id']}: retry failed: {exc}")
+            continue
+        # Overwrite the cache: the retry is the better version of this lesson.
+        (GENERATED_DIR / f"{lesson['id']}.json").write_text(
+            json.dumps(content, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        apply_to_lesson(lesson, content)
+        redone += 1
+    return redone
+
+
 def main(argv: list[str] | None = None, client=None) -> int:
     ap = argparse.ArgumentParser(description="Generate lesson content via Claude.")
     ap.add_argument("--unit", action="append", help="only this unit id (repeatable)")
@@ -251,6 +332,9 @@ def main(argv: list[str] | None = None, client=None) -> int:
     ap.add_argument("--all", action="store_true", help="regenerate complete units too")
     ap.add_argument("--limit", type=int, help="stop after this many units")
     ap.add_argument("--dry-run", action="store_true", help="report the plan, call nothing")
+    ap.add_argument("--no-retry", dest="retry", action="store_false",
+                    help="don't re-ask a lesson that broke scope "
+                         "(saves a call, loses the lesson)")
     args = ap.parse_args(argv)
 
     data = curriculum_source.load()
@@ -330,13 +414,15 @@ def main(argv: list[str] | None = None, client=None) -> int:
 
         # Promote only on BOTH gates: the content validates, and it is complete.
         by_id[unit["id"]] = unit
-        result = validate_curriculum({"meta": data.get("meta", {}), "units": list(by_id.values())})
-        # `where` reads like "l_conv_1 sentence 3", so the first token is the
-        # lesson id. Only this unit's violations decide this unit's fate.
-        lesson_ids = {l["id"] for l in (unit.get("lessons") or [])}
-        unit_violations = [
-            v for v in result.violations if v.where.split()[0] in lesson_ids
-        ]
+        unit_violations = _violations_for(data, by_id, unit)
+
+        # One retry, naming what went out of scope. A lesson that cost a call
+        # and is then discarded over a single word is the worst outcome
+        # available; re-asking with the rejected characters usually clears it.
+        if unit_violations and args.retry and client is not None:
+            if _retry_lessons(client, data, unit, unit_violations):
+                unit_violations = _violations_for(data, by_id, unit)
+
         report = completeness.evaluate_unit(unit)
 
         if unit_violations:

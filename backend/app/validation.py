@@ -12,8 +12,17 @@ ignoring punctuation and latin/digits.
 
 from __future__ import annotations
 
+import json
 import re
 from dataclasses import dataclass, field
+
+from .config import REPO_ROOT
+
+# Foundation vocabulary the learner starts with: seeded into the SRS deck as
+# already-mastered by the first-run placement check (spec §3.2), never taught in
+# a lesson. It is therefore in scope for lesson sentences from the very first
+# lesson — see placement_pool_chars().
+HSK1_POOL_PATH = REPO_ROOT / "content" / "hsk1.json"
 
 # CJK Unified Ideographs (incl. common extension A). Good enough for HSK-range
 # Traditional text.
@@ -23,6 +32,29 @@ _HAN_RE = re.compile(r"[㐀-䶿一-鿿]")
 def han_chars(text: str) -> set[str]:
     """The set of Han characters in a string (drops punctuation/latin/digits)."""
     return set(_HAN_RE.findall(text))
+
+
+def placement_pool_words() -> list[str]:
+    """The words the learner already knows before lesson one, if the file exists."""
+    if not HSK1_POOL_PATH.is_file():
+        return []
+    data = json.loads(HSK1_POOL_PATH.read_text(encoding="utf-8"))
+    return [v["traditional"] for v in data.get("vocab", []) if v.get("traditional")]
+
+
+def placement_pool_chars() -> set[str]:
+    """Characters of the placement pool, for `extra_known_chars`.
+
+    Every caller that decides what counts as "in scope" must use this. The
+    content loader and the generator each had their own answer, and the
+    generator's omitted the pool — so it rejected sentences using 老師, 學校,
+    朋友 and 中文 as out of scope, while the loader accepted the same content
+    happily. One source of truth, so the two cannot disagree again.
+    """
+    chars: set[str] = set()
+    for word in placement_pool_words():
+        chars |= han_chars(word)
+    return chars
 
 
 @dataclass

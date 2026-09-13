@@ -481,6 +481,19 @@ cached under `content/.generated/`, so an interrupted run resumes for free and a
 re-run costs nothing. Start with one unit and read what it produced before
 committing to a level — the model's output becomes Jacob's curriculum.
 
+**What "out of scope" means.** A sentence may only use characters the learner has
+met: the vocabulary of every lesson up to that point, the function-word
+allowlist, and the **HSK 1 placement pool** (`content/hsk1.json`) — 42 words
+seeded into the deck as already-mastered by the placement check and never taught
+in a lesson. That last part is easy to forget: the generator once omitted it
+while the loader included it, so the generator rejected ordinary sentences using
+老師, 學校 and 朋友 and threw away 17 of 23 units in a run. Both now read the same
+`validation.placement_pool_chars()`.
+
+When a lesson does break scope, it is re-asked **once**, told exactly which
+characters were rejected, and the better version replaces the cached one. Pass
+`--no-retry` to skip that — it saves a call and loses the lesson.
+
 Each unit is promoted the moment it passes both gates, so progress is
 incremental and a failed unit simply stays a draft. A unit where *nothing*
 generated — an outage, a rate limit — is left untouched on disk rather than

@@ -332,3 +332,93 @@ def test_a_live_unit_is_not_demoted_by_a_failed_run(sandbox):
     after = cs.load_unit("u_live")
     assert after == before
     assert cs.status_of(after) == cs.STATUS_LIVE
+
+
+def test_the_generator_tells_the_model_about_the_placement_pool(sandbox):
+    """The prompt's allowed list must include what the learner already knows.
+
+    The pool is seeded as mastered before lesson one and never taught, so
+    omitting it told the model 老師 and 朋友 were off-limits — and then the
+    validator rejected the natural sentences it wrote anyway.
+    """
+    data = cs.load()
+    first = data["units"][0]["lessons"][0]["id"]
+
+    allowed = gc._allowed_words_upto(data, first)
+
+    assert "老師" in allowed and "朋友" in allowed
+
+
+def test_the_generator_and_the_loader_agree_on_what_is_in_scope(sandbox):
+    """Two copies of "what counts as known" drifted apart once. Pin them together.
+
+    The generator used to validate without the placement pool while
+    load_content validated with it, so the generator discarded whole units of
+    content that the loader would have accepted without complaint.
+    """
+    import scripts.load_content as lc
+
+    assert gc.placement_pool_chars() == lc.placement_pool_chars()
+    assert set("老師朋友學校") <= gc.placement_pool_chars()
+
+
+class StraysOnce(StubClient):
+    """Breaks scope on the first attempt, stays inside it on the retry."""
+
+    def __init__(self):
+        super().__init__(stray="嚇")
+        self.prompts: list[str] = []
+
+    def parse(self, *, messages, **kw):
+        self.prompts.append(messages[0]["content"])
+        if self.calls >= 1:
+            self.stray = ""  # the retry behaves
+        return super().parse(messages=messages, **kw)
+
+
+def test_a_lesson_that_breaks_scope_is_retried_once(sandbox):
+    """One stray character used to cost the whole lesson, and the call that made it."""
+    client = StraysOnce()
+
+    gc.main(["--unit", "u_draft"], client=client)
+
+    assert client.calls == 2, "one generate, one retry"
+    assert cs.load_unit("u_draft")["status"] == cs.STATUS_LIVE
+
+
+def test_the_retry_says_which_characters_were_rejected(sandbox):
+    """Re-asking without naming the problem is just paying for another guess."""
+    client = StraysOnce()
+
+    gc.main(["--unit", "u_draft"], client=client)
+
+    assert "嚇" in client.prompts[1]
+    assert "嚇" not in client.prompts[0], "the first attempt had no complaint to carry"
+
+
+def test_no_retry_leaves_the_lesson_rejected(sandbox):
+    client = StraysOnce()
+
+    gc.main(["--unit", "u_draft", "--no-retry"], client=client)
+
+    assert client.calls == 1
+    assert cs.load_unit("u_draft")["status"] == cs.STATUS_DRAFT
+
+
+def test_the_retry_is_capped_at_one_attempt(sandbox):
+    """A model that can't stay in scope when told exactly what to avoid won't
+    start on the third ask — it would just cost more."""
+    client = StubClient(stray="嚇")
+
+    gc.main(["--unit", "u_draft"], client=client)
+
+    assert client.calls == 2
+    assert cs.load_unit("u_draft")["status"] == cs.STATUS_DRAFT
+
+
+def test_a_successful_retry_replaces_the_cached_lesson(sandbox):
+    """Otherwise the next run would reload the bad version from cache for free."""
+    gc.main(["--unit", "u_draft"], client=StraysOnce())
+
+    cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
+    assert "嚇" not in json.dumps(cached, ensure_ascii=False)

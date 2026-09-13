@@ -25,6 +25,7 @@ from app.config import REPO_ROOT  # noqa: E402
 from app.validation import (  # noqa: E402
     allowed_chars,
     han_chars,
+    placement_pool_chars,
     validate_curriculum,
     validate_grammar_prerequisites,
     validate_listen,
@@ -61,15 +62,10 @@ def main() -> int:
         print(f"Source: content/units/ — {n_live} live, {n_draft} draft")
 
     # The HSK 1 placement pool is pre-known (seeded as mastered on first run),
-    # so lesson sentences may draw on its characters. Feed them to the validator
-    # as always-known, mirroring the learner's real starting point.
-    hsk1_chars: set[str] = set()
-    if content.HSK1_PATH.is_file():
-        hsk1 = json.loads(content.HSK1_PATH.read_text(encoding="utf-8"))
-        for v in hsk1.get("vocab", []):
-            hsk1_chars |= han_chars(v["traditional"])
-
-    result = validate_curriculum(data, extra_known_chars=hsk1_chars)
+    # so lesson sentences may draw on its characters. Shared with the generator
+    # via validation.placement_pool_chars() — two copies of this rule drifted
+    # apart once already.
+    result = validate_curriculum(data, extra_known_chars=placement_pool_chars())
     if result.ok:
         print("✓ curriculum validation passed — all sentences use in-scope characters")
     else:

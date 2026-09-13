@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from app import curriculum_source
+from app import curriculum_source, validation
 from app.config import REPO_ROOT
 from app.validation import (
     allowed_chars,
@@ -78,3 +78,51 @@ def test_validate_curriculum_detects_out_of_scope():
     # The unknown set contains the out-of-scope characters.
     unknown = set(result.violations[0].unknown)
     assert {"珍", "珠"} <= unknown
+
+
+# ---------------------------------------------------------------------------
+# The placement pool is in scope from lesson one
+# ---------------------------------------------------------------------------
+def _one_lesson(sentence_tokens: list[str], teaches: str) -> dict:
+    return {"meta": {"function_words": []}, "units": [{
+        "id": "u", "sort_order": 1, "lessons": [{
+            "id": "l", "sort_order": 1,
+            "vocab": [{"id": "v", "traditional": teaches}],
+            "sentences": [{"tokens": sentence_tokens}],
+        }]}]}
+
+
+def test_the_placement_pool_is_known_before_any_lesson():
+    """老師 and 學校 are seeded as mastered at placement, never taught.
+
+    They must therefore be usable in lesson one. The generator did not know
+    this and rejected 17 of 23 units for writing ordinary Taiwanese.
+    """
+    data = _one_lesson(["老師", "講"], teaches="講")
+
+    assert validation.validate_curriculum(data).violations, "bare check should object"
+
+    pooled = validation.validate_curriculum(
+        data, extra_known_chars=validation.placement_pool_chars()
+    )
+    unknown = {c for v in pooled.violations for c in v.unknown}
+    assert not (unknown & set("老師")), f"pool words still rejected: {unknown}"
+
+
+def test_the_pool_helper_actually_finds_the_pool():
+    """A silently-empty pool would make the fix a no-op and nobody would notice."""
+    words = validation.placement_pool_words()
+
+    assert len(words) > 20, "the placement pool should not be empty"
+    assert "老師" in words and "朋友" in words
+    assert set("老師朋友") <= validation.placement_pool_chars()
+
+
+def test_a_genuinely_untaught_word_is_still_rejected():
+    """The gate still has to work — this is not a licence to write anything."""
+    data = _one_lesson(["老師", "嚇", "到"], teaches="講")
+
+    pooled = validation.validate_curriculum(
+        data, extra_known_chars=validation.placement_pool_chars()
+    )
+    assert "嚇" in {c for v in pooled.violations for c in v.unknown}
