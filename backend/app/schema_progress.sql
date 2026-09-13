@@ -119,6 +119,10 @@ CREATE INDEX IF NOT EXISTS idx_talkmsg_session ON talk_messages(session_id);
 CREATE TABLE IF NOT EXISTS settings (
     id                 INTEGER PRIMARY KEY CHECK (id = 1),
     show_pinyin        INTEGER NOT NULL DEFAULT 1,   -- global default; hidden in review to force recall
+    -- WHICH phonetic system to show when show_pinyin is on: pinyin | zhuyin |
+    -- both. Zhuyin is Taiwan's own, so it is offered rather than assumed —
+    -- plenty of learners arrive already reading pinyin.
+    script             TEXT    NOT NULL DEFAULT 'pinyin',
     playback_rate      REAL    NOT NULL DEFAULT 1.0, -- 0.75 / 1.0 / 1.25
     tts_voice          TEXT    NOT NULL DEFAULT 'zh-TW-HsiaoChenNeural',
     theme              TEXT    NOT NULL DEFAULT 'system', -- system|light|dark

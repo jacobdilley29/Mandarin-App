@@ -15,6 +15,11 @@ const RATES = [
   { value: 1.0, label: "1×" },
   { value: 1.25, label: "1.25×" },
 ];
+const SCRIPTS = [
+  { value: "pinyin", label: "Pinyin" },
+  { value: "zhuyin", label: "注音" },
+  { value: "both", label: "Both" },
+];
 const THEMES = [
   { value: "system", label: "System" },
   { value: "light", label: "Light" },
@@ -228,6 +233,17 @@ export default function Me() {
           <section className="card divide-y divide-border">
             <Row label="Show pinyin" hint="Global default; hidden in review to force recall">
               <Toggle on={settings.show_pinyin} onClick={() => update({ show_pinyin: !settings.show_pinyin })} />
+            </Row>
+
+            <Row
+              label="Phonetics"
+              hint="Zhuyin (注音) is Taiwan's own system — transcribed from the same reading, so the two always agree"
+            >
+              <Segmented
+                value={settings.script}
+                options={SCRIPTS}
+                onChange={(v) => update({ script: v as typeof settings.script })}
+              />
             </Row>
 
             <Row label="Playback speed" hint="Used across Learn, Listen, and audio playback">

@@ -20,6 +20,7 @@ router = APIRouter(prefix="/api/settings", tags=["settings"])
 # Pydantic model below.
 _WRITABLE = {
     "show_pinyin",
+    "script",
     "playback_rate",
     "tts_voice",
     "theme",
@@ -34,8 +35,12 @@ THEMES = ("system", "light", "dark")
 RATES = (0.75, 1.0, 1.25)
 
 
+SCRIPTS = ("pinyin", "zhuyin", "both")
+
+
 class SettingsOut(BaseModel):
     show_pinyin: bool
+    script: str
     playback_rate: float
     tts_voice: str
     theme: str
@@ -51,6 +56,7 @@ class SettingsOut(BaseModel):
 
 class SettingsUpdate(BaseModel):
     show_pinyin: bool | None = None
+    script: str | None = None
     playback_rate: float | None = None
     tts_voice: str | None = None
     theme: str | None = None
@@ -66,6 +72,7 @@ def _row_to_out(row: sqlite3.Row) -> SettingsOut:
     env_key = (get_settings().anthropic_api_key or "").strip()
     return SettingsOut(
         show_pinyin=bool(row["show_pinyin"]),
+        script=(row["script"] if "script" in row.keys() else None) or "pinyin",
         playback_rate=row["playback_rate"],
         tts_voice=row["tts_voice"],
         theme=row["theme"],
@@ -102,6 +109,8 @@ def update_settings_endpoint(
         raise HTTPException(422, f"theme must be one of {THEMES}")
     if "playback_rate" in data and data["playback_rate"] not in RATES:
         raise HTTPException(422, f"playback_rate must be one of {RATES}")
+    if "script" in data and data["script"] not in SCRIPTS:
+        raise HTTPException(422, f"script must be one of {SCRIPTS}")
 
     # A blank key means "clear the in-app key" → store NULL, not "".
     if "anthropic_api_key" in data and not (data["anthropic_api_key"] or "").strip():

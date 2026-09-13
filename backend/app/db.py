@@ -191,6 +191,10 @@ def _migrate_progress(conn: sqlite3.Connection) -> None:
     cols = {r["name"] for r in conn.execute("PRAGMA table_info(settings)").fetchall()}
     if "anthropic_api_key" not in cols:
         conn.execute("ALTER TABLE settings ADD COLUMN anthropic_api_key TEXT")
+    if "script" not in cols:
+        conn.execute(
+            "ALTER TABLE settings ADD COLUMN script TEXT NOT NULL DEFAULT 'pinyin'"
+        )
 
     # Tutor threads share the talk tables (spec §7 counts tutor history as
     # progress data, so it belongs here and in the backups either way).

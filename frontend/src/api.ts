@@ -17,6 +17,9 @@ export interface AppStatus {
 
 export interface Settings {
   show_pinyin: boolean;
+  // WHICH phonetic system to show when show_pinyin is on. Zhuyin is Taiwan's
+  // own; pinyin stays the default because plenty of learners arrive reading it.
+  script: "pinyin" | "zhuyin" | "both";
   playback_rate: number;
   tts_voice: string;
   theme: "system" | "light" | "dark";

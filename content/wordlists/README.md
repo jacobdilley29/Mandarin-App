@@ -50,11 +50,16 @@ Each file is `{ meta, words: [...] }`; `words` is sorted by descending frequency
 `readings` is present only on polyphonic entries (多音字) — it lists every
 reading the source carried, so a wrong pick is recoverable. See "Readings" below.
 
-`bopomofo` is not used to render the app's zhuyin (that is derived from pinyin by
-`backend/app/zhuyin.py`); it is kept as an independent cross-check. Validating the
-converter against all 1,193 entries found **zero genuine mismatches** — the only
-differences were neutral-tone dot placement, where this app follows the Taiwan MOE
-convention (`˙ㄒㄧㄝ`) and the dataset does not (`ㄒㄧㄝ˙`).
+`bopomofo` is not used to render the app's zhuyin — that is transcribed from the
+pinyin by `backend/app/zhuyin.py` — so it serves as independent ground truth.
+`backend/tests/test_zhuyin.py` checks the converter against **all 1,193 entries
+on every test run**, and they match exactly. The one systematic difference is
+neutral-tone dot placement: this app follows the Taiwan MOE convention
+(`˙ㄒㄧㄝ`), the dataset trails it (`ㄒㄧㄝ˙`), and the test normalises that
+before comparing.
+
+(An earlier version of this file described that validation before the converter
+existed. It exists now, and the number above is measured rather than claimed.)
 
 ## These lists are mainland-standard — read `taiwan_overrides.json`
 

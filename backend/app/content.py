@@ -12,6 +12,7 @@ import sqlite3
 from pathlib import Path
 
 from . import levels as _levels
+from . import zhuyin as _zhuyin
 from .config import REPO_ROOT
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
@@ -26,18 +27,22 @@ def _upsert_vocab(conn: sqlite3.Connection, v: dict) -> None:
     conn.execute(
         """INSERT INTO vocab
              (id, traditional, pinyin, gloss, hsk_level, taiwan_note,
-              example_hanzi, example_pinyin, example_gloss)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+              example_hanzi, example_pinyin, example_gloss, zhuyin)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(id) DO UPDATE SET
              traditional=excluded.traditional, pinyin=excluded.pinyin,
              gloss=excluded.gloss, hsk_level=excluded.hsk_level,
              taiwan_note=excluded.taiwan_note,
              example_hanzi=excluded.example_hanzi,
              example_pinyin=excluded.example_pinyin,
-             example_gloss=excluded.example_gloss""",
+             example_gloss=excluded.example_gloss,
+             zhuyin=excluded.zhuyin""",
         (v["id"], v["traditional"], v["pinyin"], v["gloss"],
          v.get("hsk_level"), v.get("taiwan_note"),
-         ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss")),
+         ex.get("hanzi"), ex.get("pinyin"), ex.get("gloss"),
+         # Derived from the pinyin above, so the two can never contradict
+         # each other on the card. See app/zhuyin.py.
+         _zhuyin.for_word(v["traditional"], v["pinyin"]) or None),
     )
 
 
@@ -342,6 +347,9 @@ def _vocab_dict(v: sqlite3.Row) -> dict:
         "gloss": v["gloss"],
         "hsk_level": v["hsk_level"],
         "taiwan_note": v["taiwan_note"],
+        # Taiwan's own phonetic system, for learners who want it instead of (or
+        # beside) pinyin. Tolerant of a database older than the column.
+        "zhuyin": _column(v, "zhuyin"),
         "example": {
             "hanzi": v["example_hanzi"],
             "pinyin": v["example_pinyin"],

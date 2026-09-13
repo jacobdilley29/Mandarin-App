@@ -44,9 +44,38 @@ function PlayButton({ text, big }: { text: string; big?: boolean }) {
   );
 }
 
-function Pinyin({ text, show }: { text?: string; show: boolean }) {
-  if (!text || !show) return null;
-  return <div className="font-sans text-sm text-ink-soft">{text}</div>;
+// The reading under a word — pinyin, zhuyin, or both, per the Me-tab setting.
+// Zhuyin is Taiwan's own phonetic system; it is transcribed server-side from
+// the very pinyin shown here, so the two can never contradict each other.
+// Falls back to pinyin whenever an item carries no zhuyin.
+function Pinyin({
+  text,
+  zhuyin,
+  show,
+}: {
+  text?: string;
+  zhuyin?: string | null;
+  show: boolean;
+}) {
+  const { settings } = useSettings();
+  if (!show) return null;
+
+  const script = settings?.script ?? "pinyin";
+  const zh = script !== "pinyin" ? zhuyin : null;
+  const py = script === "zhuyin" && zh ? null : text;
+  if (!zh && !py) return null;
+
+  return (
+    <div className="font-sans text-sm text-ink-soft">
+      {zh && (
+        <span lang="zh-Hant" className="font-han">
+          {zh}
+        </span>
+      )}
+      {zh && py && <span className="mx-1.5 text-ink-faint">·</span>}
+      {py}
+    </div>
+  );
 }
 
 // --- Multiple-choice drill (shared by audio_meaning / cloze / translate) ---
@@ -95,7 +124,7 @@ function VocabIntro({ ex, showPinyin, onDone }: DrillProps) {
   const p = ex.payload;
   return (
     <div className="text-center">
-      <Pinyin text={p.pinyin} show={showPinyin} />
+      <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
       <Speakable text={p.traditional} showIcon={false} className="mx-auto mt-1 justify-center">
         <span lang="zh-Hant" className="font-serifhan text-hero-lg text-ink">
           {p.traditional}
@@ -262,7 +291,7 @@ function AudioMeaning({ ex, showPinyin, onDone }: DrillProps) {
       <div className="flex justify-center">
         <PlayButton text={p.audio_text} big />
       </div>
-      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
+      <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
       {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
     </div>
@@ -286,7 +315,7 @@ function CharRecognition({ ex, showPinyin, onDone }: DrillProps) {
     <div className="text-center">
       <div className="mb-2 text-sm text-ink-soft">Which one is this?</div>
       <div className="text-xl font-medium text-ink">{p.gloss}</div>
-      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
+      <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
       <div className="mt-3 flex justify-center">
         <PlayButton text={p.audio_text} />
       </div>
@@ -339,7 +368,7 @@ function ClozeDrill({ ex, showPinyin, onDone }: DrillProps) {
             {p.tokens.join(" ")}
           </span>
         </Speakable>
-        <Pinyin text={p.pinyin} show={showPinyin} />
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
         {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
@@ -377,7 +406,7 @@ function ParticleCloze({ ex, showPinyin, onDone }: DrillProps) {
             {p.masked}
           </span>
         </Speakable>
-        <Pinyin text={p.pinyin} show={showPinyin} />
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
         {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
@@ -400,7 +429,7 @@ function TranslateDrill({ ex, showPinyin, onDone }: DrillProps) {
             {p.prompt_hanzi}
           </span>
         </Speakable>
-        <Pinyin text={p.pinyin} show={showPinyin} />
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
       </div>
       <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
       {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
@@ -515,7 +544,7 @@ function ListenType({ ex, showPinyin, onDone }: DrillProps) {
             {checked ? "✓ " : ""}
             {p.answer}
           </div>
-          <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin} />
+          <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
           <div className="text-sm text-ink-soft">{p.gloss}</div>
         </div>
       )}
