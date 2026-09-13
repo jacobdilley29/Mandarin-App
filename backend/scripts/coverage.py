@@ -18,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import completeness, curriculum_source  # noqa: E402
+from app import completeness, curriculum_source, sequence  # noqa: E402
 
 GREEN, YELLOW, DIM, RESET = "\033[32m", "\033[33m", "\033[2m", "\033[0m"
 
@@ -31,9 +31,10 @@ def main() -> int:
 
     data = curriculum_source.load()
     s = completeness.summary(data)
+    seq = sequence.summary(data)
 
     if args.json:
-        print(json.dumps(s, ensure_ascii=False, indent=2))
+        print(json.dumps({**s, "sequence": seq}, ensure_ascii=False, indent=2))
         return 0
 
     t = s["totals"]
@@ -55,6 +56,24 @@ def main() -> int:
             print(f"      {YELLOW}missing{RESET}  {key:<20} {completeness.DESCRIPTIONS[key]}")
         for key in r["missing_optional"]:
             print(f"      {DIM}optional {key:<20} {completeness.DESCRIPTIONS[key]}{RESET}")
+
+    # Sequencing, which is a different question from completeness: can the
+    # learner actually read the live units, walking them in order? A unit can be
+    # complete and still lean on a word only a draft teaches.
+    print()
+    if not seq["holes"]:
+        print(f"{GREEN}✓ sequence is continuous — every live lesson reads from what came before.{RESET}")
+    else:
+        print(f"{YELLOW}○ {seq['holes']} untaught character(s) across "
+              f"{seq['lessons_affected']} live lesson(s):{RESET}")
+        for hole in sequence.holes(data)[:8]:
+            print(f"      {hole.char}  [{hole.where}]  {DIM}{hole.reason}{RESET}")
+        if seq["holes"] > 8:
+            print(f"      {DIM}… and {seq['holes'] - 8} more{RESET}")
+        if seq["waiting_on_drafts"]:
+            print(f"  Fill these drafts to close it: {' '.join(seq['waiting_on_drafts'])}")
+        if seq["taught_nowhere"]:
+            print(f"  {YELLOW}Taught nowhere at all:{RESET} {' '.join(seq['taught_nowhere'])}")
 
     if s["draft"]:
         print(f"\n{YELLOW}{s['draft']} unit(s) are staged but not taught.{RESET}")

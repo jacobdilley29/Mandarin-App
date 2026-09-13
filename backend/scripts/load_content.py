@@ -20,7 +20,7 @@ from pathlib import Path
 # Allow running as `python backend/scripts/load_content.py` too.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import content, curriculum_source, db  # noqa: E402
+from app import content, curriculum_source, db, sequence  # noqa: E402
 from app.config import REPO_ROOT  # noqa: E402
 from app.validation import (  # noqa: E402
     allowed_chars,
@@ -138,6 +138,19 @@ def main() -> int:
             if not args.force and not args.check:
                 print("Refusing to load. Fix content/listen.json or pass --force.")
                 return 1
+
+    # Sequencing: can the learner read the live units walking them in order?
+    # Reported, never a refusal — a hole means a draft below is still empty,
+    # which is a thing to finish rather than an error in what is here.
+    seq = sequence.summary(data)
+    if seq["holes"]:
+        print(f"• {seq['holes']} untaught character(s) across "
+              f"{seq['lessons_affected']} live lesson(s): {' '.join(seq['characters'][:12])}")
+        if seq["waiting_on_drafts"]:
+            print(f"  waiting on drafts: {' '.join(seq['waiting_on_drafts'])} "
+                  f"— `make coverage` shows where")
+    else:
+        print("✓ sequence is continuous — live lessons read from what came before")
 
     if args.check:
         return 0 if (result.ok and gres.ok) else 1

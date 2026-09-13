@@ -504,6 +504,37 @@ is already complete" about content the learner cannot see.
 a draft. Drafts are gated out of Learn anyway, and one unfinished draft sentence
 should not stop every finished unit from loading.
 
+### Is the sequence continuous?
+
+Completeness and sequencing are different questions. A unit can have every
+example, grammar point and sentence it needs — complete — and still lean on a
+word that only a **draft** unit teaches, which the learner never sees. That
+happened: six generated units were promoted above thirteen still-empty drafts
+holding 232 words, and nothing reported it, because the generator validates one
+unit against the whole curriculum rather than against the sequence actually
+walked.
+
+`make coverage` now answers it directly:
+
+```
+✓ sequence is continuous — every live lesson reads from what came before
+```
+
+or, when it isn't:
+
+```
+○ 9 untaught character(s) across 5 live lesson(s):
+      餐  [l_dir_1 sentence 4]  taught in u_food, still a draft
+  Fill these drafts to close it: u_food
+```
+
+Three ways to be a hole, each named: the word waits in a **draft**, it is taught
+in a unit that **comes later**, or it is **taught nowhere at all**. The placement
+pool never counts as a hole. `app/sequence.py` runs the existing validator over
+live units only — the whole check is that framing. It reports and never blocks;
+a hole means a draft below is still empty, which is work to finish rather than an
+error in what is already there.
+
 Each unit is promoted the moment it passes both gates, so progress is
 incremental and a failed unit simply stays a draft. A unit where *nothing*
 generated — an outage, a rate limit — is left untouched on disk rather than
