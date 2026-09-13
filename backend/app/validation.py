@@ -162,6 +162,13 @@ def validate_curriculum(
                     unknown = check_sentence(line["hanzi"], cumulative)
                     result.add(f"{lid} dialogue {i}", line["hanzi"], unknown)
 
+            # The reading passage is the longest thing in a lesson and the
+            # easiest place for an unknown character to hide. Same budget.
+            passage = lesson.get("passage") or {}
+            if passage.get("hanzi"):
+                unknown = check_sentence(passage["hanzi"], cumulative)
+                result.add(f"{lid} passage", passage["hanzi"], unknown)
+
     return result
 
 

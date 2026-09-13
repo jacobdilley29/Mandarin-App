@@ -91,16 +91,19 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
         for lesson in unit.get("lessons", []):
             n_lessons += 1
             conn.execute(
-                """INSERT INTO lessons (id, unit_id, title, sort_order, dialogue, sentences)
-                   VALUES (?, ?, ?, ?, ?, ?)
+                """INSERT INTO lessons
+                     (id, unit_id, title, sort_order, dialogue, sentences, passage)
+                   VALUES (?, ?, ?, ?, ?, ?, ?)
                    ON CONFLICT(id) DO UPDATE SET
                      unit_id=excluded.unit_id, title=excluded.title,
                      sort_order=excluded.sort_order, dialogue=excluded.dialogue,
-                     sentences=excluded.sentences""",
+                     sentences=excluded.sentences, passage=excluded.passage""",
                 (lesson["id"], unit["id"], lesson["title"],
                  lesson.get("sort_order", 0),
                  json.dumps(lesson.get("dialogue", []), ensure_ascii=False),
-                 json.dumps(lesson.get("sentences", []), ensure_ascii=False)),
+                 json.dumps(lesson.get("sentences", []), ensure_ascii=False),
+                 json.dumps(lesson["passage"], ensure_ascii=False)
+                 if lesson.get("passage") else None),
             )
 
             for i, v in enumerate(lesson.get("vocab", [])):
@@ -117,16 +120,19 @@ def load_curriculum(conn: sqlite3.Connection, data: dict) -> dict:
                 conn.execute(
                     """INSERT INTO grammar
                          (id, title, pattern, explanation, examples, taiwan_note,
-                          hsk_level, sort_order)
-                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                          contrast, common_error, hsk_level, sort_order)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                        ON CONFLICT(id) DO UPDATE SET
                          title=excluded.title, pattern=excluded.pattern,
                          explanation=excluded.explanation, examples=excluded.examples,
                          taiwan_note=excluded.taiwan_note,
+                         contrast=excluded.contrast,
+                         common_error=excluded.common_error,
                          hsk_level=excluded.hsk_level, sort_order=excluded.sort_order""",
                     (g["id"], g["title"], g["pattern"], g["explanation"],
                      json.dumps(g.get("examples", []), ensure_ascii=False),
-                     g.get("taiwan_note"), g.get("hsk_level"), i),
+                     g.get("taiwan_note"), g.get("contrast"), g.get("common_error"),
+                     g.get("hsk_level"), i),
                 )
                 conn.execute(
                     """INSERT INTO lesson_grammar (lesson_id, grammar_id, sort_order)
@@ -324,6 +330,7 @@ def get_lesson_content(conn: sqlite3.Connection, lesson_id: str) -> dict | None:
         ],
         "dialogue": json.loads(lesson["dialogue"] or "[]"),
         "sentences": json.loads(lesson["sentences"] or "[]"),
+        "passage": json.loads(_column(lesson, "passage") or "null"),
     }
 
 
@@ -351,8 +358,17 @@ def _grammar_dict(g: sqlite3.Row) -> dict:
         "explanation": g["explanation"],
         "examples": json.loads(g["examples"] or "[]"),
         "taiwan_note": g["taiwan_note"],
+        # What it is confused with, and the mistake learners make — both often
+        # NULL, and the card only shows what is actually there.
+        "contrast": _column(g, "contrast"),
+        "common_error": _column(g, "common_error"),
         "hsk_level": g["hsk_level"],
     }
+
+
+def _column(row: sqlite3.Row, name: str):
+    """A column that may predate this schema — None rather than an exception."""
+    return row[name] if name in row.keys() else None
 
 
 def all_vocab(conn: sqlite3.Connection) -> list[dict]:

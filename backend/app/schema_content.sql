@@ -74,6 +74,12 @@ CREATE TABLE IF NOT EXISTS grammar (
     -- the many patterns that are simply the same in both — a note is only worth
     -- reading when there is a real difference behind it.
     taiwan_note  TEXT,
+    -- What this pattern is easily confused with, and the mistake learners
+    -- actually make with it. A pattern is learned by its boundaries, not just
+    -- its definition, so these are taught beside the explanation rather than
+    -- buried in it. Both NULL where there is nothing honest to say.
+    contrast     TEXT,
+    common_error TEXT,
     hsk_level    INTEGER,
     sort_order   INTEGER NOT NULL DEFAULT 0
 );
@@ -102,7 +108,12 @@ CREATE TABLE IF NOT EXISTS lessons (
     title       TEXT NOT NULL,
     sort_order  INTEGER NOT NULL DEFAULT 0,
     dialogue    TEXT,                    -- JSON array of dialogue lines
-    sentences   TEXT                     -- JSON array of drill sentences (tokens+pinyin+gloss)
+    sentences   TEXT,                    -- JSON array of drill sentences (tokens+pinyin+gloss)
+    -- A short reading passage at exactly this lesson's level: JSON
+    -- {title, hanzi, gloss}. Longer than a drill sentence and connected, so the
+    -- learner reads rather than decodes, and held to the same character scope as
+    -- everything else (see app/validation.py).
+    passage     TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_lessons_unit ON lessons(unit_id);
 

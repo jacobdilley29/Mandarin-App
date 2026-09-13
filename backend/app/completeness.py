@@ -38,6 +38,7 @@ CHECKS: tuple[tuple[str, bool, str], ...] = (
     ("grammar_seeded", True, "every lesson introduces a grammar point"),
     ("sentences_present", True, "every lesson has drill sentences"),
     ("dialogue_present", False, "every lesson has a dialogue"),
+    ("passage_present", False, "every lesson has a reading passage"),
     ("taiwan_notes", False, "at least one Taiwan usage note in the unit"),
 )
 
@@ -110,6 +111,9 @@ def evaluate_unit(unit: dict) -> UnitCompleteness:
         "grammar_seeded": bool(lessons) and all(l.get("grammar") for l in lessons),
         "sentences_present": bool(lessons) and all(l.get("sentences") for l in lessons),
         "dialogue_present": bool(lessons) and all(l.get("dialogue") for l in lessons),
+        "passage_present": bool(lessons) and all(
+            (l.get("passage") or {}).get("hanzi") for l in lessons
+        ),
         "taiwan_notes": counts["taiwan_notes"] > 0,
     }
 

@@ -172,6 +172,14 @@ def _migrate_content(conn: sqlite3.Connection) -> None:
     gcols = {r["name"] for r in conn.execute("PRAGMA table_info(grammar)").fetchall()}
     if "taiwan_note" not in gcols:
         conn.execute("ALTER TABLE grammar ADD COLUMN taiwan_note TEXT")
+    if "contrast" not in gcols:
+        conn.execute("ALTER TABLE grammar ADD COLUMN contrast TEXT")
+    if "common_error" not in gcols:
+        conn.execute("ALTER TABLE grammar ADD COLUMN common_error TEXT")
+
+    lcols = {r["name"] for r in conn.execute("PRAGMA table_info(lessons)").fetchall()}
+    if "passage" not in lcols:
+        conn.execute("ALTER TABLE lessons ADD COLUMN passage TEXT")
 
 
 def _migrate_progress(conn: sqlite3.Connection) -> None:

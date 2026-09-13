@@ -17,6 +17,7 @@ import types
 import pytest
 
 from app import completeness, curriculum_source as cs
+from app.validation import validate_curriculum
 from scripts import generate_content as gc
 
 
@@ -51,9 +52,14 @@ class StubClient:
                 "title": "g", "pattern": "p", "explanation": "e",
                 # The wire field name — apply_to_lesson maps it to `examples`.
                 "example_sentences": [{"hanzi": words[0], "pinyin": "p", "gloss": "g"}],
+                "contrast": "unlike X, this one …",
+                "common_error": "learners drop the particle",
             }],
             "sentences": [{"tokens": [words[0]], "pinyin": "p", "gloss": "g", "cloze_index": 0}],
             "dialogue": [{"speaker": "A", "hanzi": words[0], "pinyin": "p", "gloss": "g"}],
+            # Built from the lesson's own words, so it stays inside scope like
+            # everything else the stub returns.
+            "passage": {"title": "t", "hanzi": words[0] * 3, "gloss": "a short read"},
         }
         return types.SimpleNamespace(
             parsed_output=types.SimpleNamespace(model_dump=lambda: out)
@@ -519,3 +525,42 @@ def test_the_run_says_why_it_is_regenerating(sandbox, capsys):
     gc.main(["--unit", "u_draft"], client=StubClient())
 
     assert "words changed" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# Contrastive grammar and the reading passage
+# ---------------------------------------------------------------------------
+def test_a_generated_lesson_gets_a_reading_passage(sandbox):
+    """Connected prose at the lesson's level — the thing drill sentences aren't."""
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    passage = cs.load_unit("u_draft")["lessons"][0]["passage"]
+    assert passage["hanzi"] and passage["gloss"]
+
+
+def test_grammar_carries_what_it_contrasts_with(sandbox):
+    """Zhong's framing: a pattern is learned by its boundaries, not its definition."""
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    grammar = cs.load_unit("u_draft")["lessons"][0]["grammar"][0]
+    assert grammar["contrast"]
+    assert grammar["common_error"]
+
+
+def test_an_out_of_scope_passage_is_caught_like_any_other_sentence(sandbox):
+    """The passage is the longest text in a lesson and the easiest hiding place."""
+    unit = cs.load_unit("u_draft")
+    lesson = unit["lessons"][0]
+    lesson["passage"] = {"title": "t", "hanzi": "他嚇到了", "gloss": "he got a fright"}
+    cs.write_unit(unit)
+
+    result = validate_curriculum(cs.load(), extra_known_chars=gc.placement_pool_chars())
+
+    assert any("passage" in v.where and "嚇" in v.unknown for v in result.violations)
+
+
+def test_a_missing_passage_does_not_hold_a_unit_back(sandbox):
+    """Optional, so the units generated before this existed don't drop to draft."""
+    report = completeness.evaluate_unit(cs.load_unit("u_live"))
+
+    assert "passage_present" not in report.missing

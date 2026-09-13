@@ -79,10 +79,17 @@ Write, as JSON matching the provided schema:
   keyed by the word's id — a short, natural Taiwan-register sentence that shows
   the word in use. Every word must get one; the lesson is not usable without them.
 - one grammar point that uses this lesson's vocab, with 3 example sentences
-  in `example_sentences`,
+  in `example_sentences`. Also give `contrast` — the pattern it is most easily
+  confused with and what decides between them — and `common_error`, the mistake
+  learners actually make with it, in plain English. Use null for either only
+  when there is genuinely nothing to say; a manufactured contrast is worse than
+  none,
 - 5 short drill sentences, each split into word tokens, each with a cloze_index
   pointing at a good word to blank out (prefer a new-vocab word),
-- a 4–6 line dialogue set in a Taiwan daily-life scene using this vocab.
+- a 4–6 line dialogue set in a Taiwan daily-life scene using this vocab,
+- a `passage`: 60–120 characters of connected prose set in Taiwan, using this
+  lesson's vocabulary, with a short title and an English translation. Not a list
+  of sentences — a small piece of writing someone would actually read.
 Every Chinese string must stay within the ALLOWED characters.
 """
 
@@ -100,6 +107,12 @@ def _make_models():
         title: str
         pattern: str
         explanation: str
+        # A pattern is learned by its boundaries. What it is confused with, and
+        # the mistake learners actually make, are worth more than a longer
+        # definition — and are what a reference grammar gives you that a
+        # vocabulary list does not.
+        contrast: str | None
+        common_error: str | None
         # NOT `examples`. That is a reserved JSON Schema keyword, and pydantic
         # emits a $ref for such a field while dropping its $defs entry, so the
         # schema the SDK sends references a definition that isn't there and the
@@ -126,11 +139,20 @@ def _make_models():
         pinyin: str
         gloss: str
 
+    class Passage(BaseModel):
+        title: str
+        hanzi: str
+        gloss: str
+
     class LessonContent(BaseModel):
         vocab_examples: list[VocabExample]
         grammar: list[Grammar]
         sentences: list[Sentence]
         dialogue: list[DialogueLine]
+        # Connected prose at exactly this lesson's level, so the learner reads
+        # rather than decodes. Generated in the same call as everything else,
+        # so it costs nothing on top.
+        passage: Passage
 
     return LessonContent
 
@@ -211,6 +233,8 @@ def apply_to_lesson(lesson: dict, content: dict) -> None:
     lesson["grammar"] = grammar
     lesson["sentences"] = content.get("sentences") or []
     lesson["dialogue"] = content.get("dialogue") or []
+    if passage := content.get("passage"):
+        lesson["passage"] = passage
 
     examples = content.get("vocab_examples") or []
     by_id = {e["vocab_id"]: e for e in examples if e.get("vocab_id")}
