@@ -422,3 +422,28 @@ def test_a_successful_retry_replaces_the_cached_lesson(sandbox):
 
     cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
     assert "嚇" not in json.dumps(cached, ensure_ascii=False)
+
+
+def test_a_blocked_draft_is_still_selected_for_work(sandbox):
+    """A unit held back by an out-of-scope sentence is complete but not done.
+
+    Selection used to filter on completeness, so a unit whose lessons all had
+    content but failed validation was skipped — the run reported "every unit in
+    scope is already complete" about units the learner cannot see, and the retry
+    that would have fixed them never got the chance.
+    """
+    unit = cs.load_unit("u_draft")
+    assert completeness.evaluate_unit(unit).complete is False
+
+    # Give it full content, as a generation run does, but leave it a draft —
+    # exactly the state a validation failure leaves behind.
+    gc.main(["--unit", "u_draft"], client=StubClient(stray="嚇"))
+    blocked = cs.load_unit("u_draft")
+    assert blocked["status"] == cs.STATUS_DRAFT
+    assert completeness.evaluate_unit(blocked).complete, "it has all its content"
+
+    args = types.SimpleNamespace(unit=None, level=None, all=False)
+    selected = [u["id"] for u in gc._select_units(cs.load(), args)]
+
+    assert "u_draft" in selected, "a blocked draft still needs work"
+    assert "u_live" not in selected, "a finished unit is still left alone"

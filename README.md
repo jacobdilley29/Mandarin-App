@@ -494,6 +494,16 @@ When a lesson does break scope, it is re-asked **once**, told exactly which
 characters were rejected, and the better version replaces the cached one. Pass
 `--no-retry` to skip that — it saves a call and loses the lesson.
 
+A blocked unit is still a draft, so a later `make generate-content` picks it up
+again and retries it. Selection filters on **status, not completeness**: a unit
+stopped by one bad sentence has all of its content, so filtering on completeness
+skipped exactly the units that needed the retry and reported "every unit in scope
+is already complete" about content the learner cannot see.
+
+`make load-content` refuses a violation in a **live** unit and only reports one in
+a draft. Drafts are gated out of Learn anyway, and one unfinished draft sentence
+should not stop every finished unit from loading.
+
 Each unit is promoted the moment it passes both gates, so progress is
 incremental and a failed unit simply stays a draft. A unit where *nothing*
 generated — an outage, a rate limit — is left untouched on disk rather than

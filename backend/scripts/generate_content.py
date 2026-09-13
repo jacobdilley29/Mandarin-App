@@ -255,12 +255,18 @@ def make_client(api_key: str | None = None):
 def _select_units(data: dict, args) -> list[dict]:
     """Which units to generate: narrow by id/level, then drop the finished ones.
 
-    --unit and --level narrow *what is considered*; completeness still decides
-    what is generated, unless --all says otherwise. They used to return their
-    match directly and skip the completeness filter, so `--level 3` meant "every
-    HSK 3 unit" — including the hand-authored, hand-corrected live ones, which
-    it would then pay to overwrite with generated text. Only --all does that
-    now, which is what its help has always said.
+    --unit and --level narrow *what is considered*; status still decides what is
+    generated, unless --all says otherwise. They used to return their match
+    directly and skip that filter, so `--level 3` meant "every HSK 3 unit" —
+    including the hand-authored, hand-corrected live ones, which it would then
+    pay to overwrite with generated text. Only --all does that now, which is
+    what its help has always said.
+
+    The filter is *status*, not completeness. A unit blocked by an out-of-scope
+    sentence has all its content — it is "complete" — but it is still a draft
+    and still needs work. Filtering on completeness skipped exactly those units,
+    reporting "every unit in scope is already complete" about units the learner
+    cannot see, and denying them the retry that would fix them.
     """
     units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
     if args.unit:
@@ -269,7 +275,10 @@ def _select_units(data: dict, args) -> list[dict]:
         units = [u for u in units if u.get("hsk_level") in set(args.level)]
     if args.all:
         return units
-    return [u for u in units if not completeness.evaluate_unit(u).complete]
+    return [
+        u for u in units
+        if curriculum_source.status_of(u) != curriculum_source.STATUS_LIVE
+    ]
 
 
 def _violations_for(data: dict, by_id: dict, unit: dict) -> list:

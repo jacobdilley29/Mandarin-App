@@ -32,6 +32,26 @@ from app.validation import (  # noqa: E402
 )
 
 
+def split_violations_by_status(data: dict, violations: list) -> tuple[list, list]:
+    """Split violations into (live, draft).
+
+    A violation only matters where the learner can reach it. Draft units are
+    gated out of Learn by design (spec §3.1), so a half-finished draft is
+    reported and left alone rather than blocking the whole load — otherwise one
+    unfinished generated lesson stops every *finished* unit from loading too.
+    A violation in a live unit is still a refusal: that is what gets served.
+    """
+    draft_lessons = {
+        lesson["id"]
+        for unit in data.get("units", [])
+        if curriculum_source.status_of(unit) != curriculum_source.STATUS_LIVE
+        for lesson in unit.get("lessons", [])
+    }
+    live = [v for v in violations if v.where.split()[0] not in draft_lessons]
+    draft = [v for v in violations if v.where.split()[0] in draft_lessons]
+    return live, draft
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Load curriculum content into SQLite.")
     ap.add_argument("--check", action="store_true", help="validate only")
@@ -66,11 +86,21 @@ def main() -> int:
     # via validation.placement_pool_chars() — two copies of this rule drifted
     # apart once already.
     result = validate_curriculum(data, extra_known_chars=placement_pool_chars())
-    if result.ok:
+
+    live_bad, draft_bad = split_violations_by_status(data, result.violations)
+
+    if not result.violations:
         print("✓ curriculum validation passed — all sentences use in-scope characters")
-    else:
-        print(f"✗ {len(result.violations)} curriculum violation(s):")
-        for v in result.violations:
+    if draft_bad:
+        print(f"• {len(draft_bad)} out-of-scope sentence(s) in DRAFT units — not loaded into Learn:")
+        for v in draft_bad[:10]:
+            print(f"    [{v.where}] {v.text}  → unknown: {' '.join(v.unknown)}")
+        if len(draft_bad) > 10:
+            print(f"    … and {len(draft_bad) - 10} more")
+        print("  Re-run `make generate-content` to have those lessons rewritten in scope.")
+    if live_bad:
+        print(f"✗ {len(live_bad)} curriculum violation(s) in LIVE units:")
+        for v in live_bad:
             print(f"    [{v.where}] {v.text}  → unknown: {' '.join(v.unknown)}")
         if not args.force and not args.check:
             print("Refusing to load. Fix the content or pass --force.")
