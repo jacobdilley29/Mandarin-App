@@ -361,7 +361,7 @@ def bin_claude(words: list[dict], level: int, existing: list[str],
     fixes = plan.get("reading_fixes", [])
     for fix in fixes:
         w = by_word.get(fix["traditional"])
-        if w and _norm_pinyin(fix["pinyin"]) != _norm_pinyin(w["pinyin"]):
+        if w and taiwanize.norm_pinyin(fix["pinyin"]) != taiwanize.norm_pinyin(w["pinyin"]):
             w["pinyin"] = fix["pinyin"]
             w.pop("bopomofo", None)
 

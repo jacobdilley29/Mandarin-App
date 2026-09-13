@@ -10,6 +10,8 @@ entered in the app's Me tab themed nothing and failed on auth.
 
 from __future__ import annotations
 
+import json
+
 from scripts import build_skeleton as bs
 
 
@@ -142,3 +144,71 @@ def test_a_stalled_run_warns_against_generating_into_it(monkeypatch, capsys):
     out = capsys.readouterr().out
     assert "paid for twice" in out
     assert "cached" in out, "say that retrying costs nothing for levels that worked"
+
+
+# ---------------------------------------------------------------------------
+# The reading-fix path, which no test had ever executed
+# ---------------------------------------------------------------------------
+def test_a_plan_s_reading_fixes_are_applied(monkeypatch, tmp_path):
+    """This path called a function that does not exist.
+
+    `_norm_pinyin` was never defined anywhere — a NameError sitting in
+    bin_claude, waiting for the first plan whose reading_fixes list was
+    non-empty. Which is to say: it fired on the very first real themed build,
+    after the API call had been made and paid for, and after the plan had been
+    cached. Nothing caught it because no test had ever run bin_claude at all.
+
+    Driven through the plan cache, so it needs no key and makes no call.
+    """
+    monkeypatch.setattr(bs, "CACHE_DIR", tmp_path)
+    (tmp_path / "skeleton-hsk1.json").write_text(
+        json.dumps(
+            {
+                "units": [{"title": "打招呼", "subtitle": "Greetings",
+                           "lessons": [{"title": "你好", "words": ["喜歡", "朋友"]}]}],
+                # The model correcting a mainland reading to the Taiwan one.
+                "reading_fixes": [
+                    {"traditional": "喜歡", "pinyin": "xǐhuān", "why": "Taiwan reading"}
+                ],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    words = [
+        {"traditional": "喜歡", "pinyin": "xǐ huan", "gloss": "to like",
+         "hsk_level": 1, "bopomofo": "ㄒㄧˇ ˙ㄏㄨㄢ"},
+        {"traditional": "朋友", "pinyin": "péngyǒu", "gloss": "friend", "hsk_level": 1},
+    ]
+
+    units, fixes = bs.bin_claude(words, 1, existing=[], per_lesson=6, refresh=False)
+
+    assert len(fixes) == 1
+    assert words[0]["pinyin"] == "xǐhuān", "the corrected reading must be applied"
+    assert "bopomofo" not in words[0], "a stale zhuyin from the old reading must go"
+    assert units[0]["title"] == "打招呼", "and the themed title still comes through"
+
+
+def test_a_reading_fix_that_agrees_changes_nothing(monkeypatch, tmp_path):
+    """Spacing and Unicode form must not read as a disagreement."""
+    monkeypatch.setattr(bs, "CACHE_DIR", tmp_path)
+    (tmp_path / "skeleton-hsk1.json").write_text(
+        json.dumps(
+            {
+                "units": [{"title": "打招呼", "subtitle": "Greetings",
+                           "lessons": [{"title": "你好", "words": ["朋友"]}]}],
+                "reading_fixes": [
+                    {"traditional": "朋友", "pinyin": "péng yǒu", "why": "same reading, spaced"}
+                ],
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+    words = [{"traditional": "朋友", "pinyin": "péngyǒu", "gloss": "friend",
+              "hsk_level": 1, "bopomofo": "ㄆㄥˊ ㄧㄡˇ"}]
+
+    bs.bin_claude(words, 1, existing=[], per_lesson=6, refresh=False)
+
+    assert words[0]["pinyin"] == "péngyǒu", "an agreeing fix must not rewrite the reading"
+    assert words[0]["bopomofo"] == "ㄆㄥˊ ㄧㄡˇ", "nor discard its zhuyin"
