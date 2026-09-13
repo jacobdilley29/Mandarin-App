@@ -603,6 +603,25 @@ fills them in exactly as before.
 > for exactly this purpose. Lesson text is someone's work — this app writes its
 > own sentences rather than taking them from another site.
 
+### Themed units, not word-list positions
+
+`make build-skeleton` groups words into units by **situation** — 便利商店, 夜市,
+捷運, 看醫生, 租房子 — the same shape as the hand-authored units. That needs an
+API key, and it is now the default; without a key the build stops and says so
+rather than quietly producing something worse.
+
+`ARGS="--theme offline"` is the no-key fallback. It bins words by frequency and
+names the result "HSK 3 詞彙 7" — a word-list position wearing a title. It was
+the default for months, which is why the generated half of the curriculum reads
+nothing like the curated half.
+
+> **Re-theming regroups words but keeps lesson ids** (`l_hsk2_01_1` means "first
+> lesson of the first HSK 2 unit", whatever it currently holds). The generation
+> cache records which words each entry was written for, so a re-themed lesson is
+> a miss reported as `words changed`, not a silent hit serving content written
+> for different vocabulary. Re-theming therefore costs a regeneration — that is
+> the honest price, not a bug.
+
 ### A trap worth knowing about: `examples`
 
 Every structured-output model in this app is checked by

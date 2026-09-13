@@ -267,6 +267,33 @@ def _theme_models():
     return LevelPlan
 
 
+def resolve_api_key() -> str | None:
+    """The Anthropic key from wherever the user actually put it.
+
+    The Me tab in the app (progress.db), .env, or the shell — the precedence
+    app.conversation.effective_api_key already implements for the Talk tab.
+    This used to call anthropic.Anthropic() bare, which reads the environment
+    only, so a key entered in the app themed nothing and failed on auth.
+    """
+    from app import conversation, db
+
+    try:
+        conn = db.connect()
+    except Exception:  # noqa: BLE001 — a fresh checkout has no database yet
+        return conversation.effective_api_key(None)
+    try:
+        return conversation.effective_api_key(conn)
+    finally:
+        conn.close()
+
+
+def _client():
+    import anthropic
+
+    key = resolve_api_key()
+    return anthropic.Anthropic(api_key=key) if key else anthropic.Anthropic()
+
+
 def bin_claude(words: list[dict], level: int, existing: list[str],
                per_lesson: int, refresh: bool) -> tuple[list[dict], list[dict]]:
     """Ask Claude to theme a level. Cached per level so runs are resumable."""
@@ -279,7 +306,7 @@ def bin_claude(words: list[dict], level: int, existing: list[str],
         plan = load_json(cache)
     else:
         print(f"  ⟳ HSK {level}: theming {len(words)} words…")
-        client = anthropic.Anthropic()
+        client = _client()
         response = client.messages.parse(
             model=MODEL,
             max_tokens=16000,
@@ -412,10 +439,12 @@ def assemble(existing: dict, generated: dict[int, list[dict]], tocfl: dict) -> d
     return out
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Build the curriculum skeleton.")
-    ap.add_argument("--theme", choices=("claude", "offline"), default="offline",
-                    help="how to group words into units (default: offline)")
+    ap.add_argument("--theme", choices=("claude", "offline"), default="claude",
+                    help="how to group words into units (default: claude — "
+                         "situation-based themes; 'offline' needs no key but "
+                         "produces numbered frequency sets)")
     ap.add_argument("--per-lesson", type=int, default=6,
                     help="target new words per lesson (spec §3.1 says 5-8)")
     ap.add_argument("--lessons-per-unit", type=int, default=3)
@@ -427,7 +456,7 @@ def main() -> int:
                     help="ignore the cached Claude plans and re-theme")
     ap.add_argument("--report-readings", action="store_true",
                     help="audit reading selection and exit without writing")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
     levels = [int(x) for x in args.levels.split(",") if x.strip()]
     lists = load_wordlists()
@@ -464,6 +493,12 @@ def main() -> int:
         print(f"  {n}")
     if len(notes) > 12:
         print(f"  … and {len(notes) - 12} more")
+
+    if args.theme == "claude" and not resolve_api_key():
+        print("✗ --theme claude needs an Anthropic key. Put it in the Me tab, in")
+        print("  .env as ANTHROPIC_API_KEY, or export it in your shell.")
+        print("  Or group words without one:  make build-skeleton ARGS=\"--theme offline\"")
+        return 1
 
     existing_themes = [u["title"] for u in existing["units"] if not u.get("generated")]
 

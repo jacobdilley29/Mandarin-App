@@ -276,7 +276,7 @@ import-tocfl:
 
 .PHONY: build-skeleton
 build-skeleton: $(SYNC_IMAGE)
-	@$(RUN_BACKEND) -m scripts.build_skeleton --theme offline $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
+	@$(RUN_BACKEND) -m scripts.build_skeleton $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
 	@echo ""
 	@echo "Drafts are staged, not taught. Next: make generate-content"
 
