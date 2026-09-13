@@ -294,20 +294,34 @@ def _client():
     return anthropic.Anthropic(api_key=key) if key else anthropic.Anthropic()
 
 
+# Words per theming call. Measured, not guessed: 106 words (HSK 1) fit inside
+# 16000 tokens; 129 words (HSK 2) ran out of them. The plan itself is small —
+# HSK 1's was 8KB, a few thousand tokens — so what consumes the budget is the
+# adaptive thinking, and placing every word of a level into coherent themes is a
+# grouping problem that gets harder faster than the word count grows.
+#
+# Raising max_tokens alone does not survive HSK 4's 590 words, so a level is
+# themed in chunks and each chunk is told the themes already used, so the later
+# ones complement rather than repeat. A chunk is cached on its own, which also
+# means a failure costs only the chunk it happened in.
+CHUNK_WORDS = 80
+
+
 def theme_budget(word_count: int) -> int:
-    """`max_tokens` for one level's theming call, scaled to the level's size.
+    """`max_tokens` for one theming call, scaled to how many words it must place.
 
-    This was a flat 16000, which is a guess that fits the smallest level and
-    nothing else: HSK 4 is 590 words against HSK 1's 106, and the plan for it is
-    proportionally longer — while adaptive thinking draws from the same budget,
-    and a grouping problem gets harder, not easier, with more words to place.
-
-    A truncated response is the worst shape of failure here, because it does not
-    look like truncation: the parse simply yields nothing and the error says the
-    model returned no plan, which reads like a model or key problem. So the
-    budget scales, and _plan_from_response names truncation when it happens.
+    This was a flat 16000 — a guess that fit the smallest level and nothing
+    else. Set from the measurement above with real headroom, because a truncated
+    response is the worst shape of failure available here: the parse yields
+    nothing, and before _plan_from_response the error read like a key or model
+    problem rather than a token limit.
     """
-    return max(16000, 6000 + word_count * 60)
+    return min(32000, max(16000, 4000 + word_count * 250))
+
+
+def _chunk(words: list[dict], size: int) -> list[list[dict]]:
+    """Split a level into theming batches, keeping the frequency order."""
+    return [words[i:i + size] for i in range(0, len(words), size)] or [[]]
 
 
 def _plan_from_response(response, level: int):
@@ -327,35 +341,66 @@ def _plan_from_response(response, level: int):
     )
 
 
+def _theme_call(words: list[dict], level: int, existing: list[str],
+                per_lesson: int, label: str) -> dict:
+    """One theming call. Streamed, because this is a long generation."""
+    budget = theme_budget(len(words))
+    print(f"  ⟳ {label}: theming {len(words)} words (budget {budget} tokens)…")
+    client = _client()
+    # Streamed: a non-streaming request this size can exceed the request timeout
+    # and fail for a reason that has nothing to do with the plan.
+    with client.messages.stream(
+        model=MODEL,
+        max_tokens=budget,
+        thinking={"type": "adaptive"},
+        system=THEME_SYSTEM,
+        messages=[{"role": "user",
+                   "content": theme_prompt(words, level, existing, per_lesson)}],
+        output_format=_theme_models(),
+    ) as stream:
+        response = stream.get_final_message()
+    return _plan_from_response(response, level)
+
+
 def bin_claude(words: list[dict], level: int, existing: list[str],
                per_lesson: int, refresh: bool) -> tuple[list[dict], list[dict]]:
-    """Ask Claude to theme a level. Cached per level so runs are resumable."""
+    """Ask Claude to theme a level, in chunks, caching each one."""
     import anthropic
 
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    cache = CACHE_DIR / f"skeleton-hsk{level}.json"
-    if cache.is_file() and not refresh:
+
+    whole = CACHE_DIR / f"skeleton-hsk{level}.json"
+    if whole.is_file() and not refresh:
+        # A plan for the whole level, from before chunking. Honoured as-is:
+        # re-theming a level that is already planned costs money and changes the
+        # word grouping, which invalidates every generated lesson under it.
         print(f"  • HSK {level}: cached plan, skipping API call")
-        plan = load_json(cache)
+        plans = [load_json(whole)]
     else:
-        budget = theme_budget(len(words))
-        print(f"  ⟳ HSK {level}: theming {len(words)} words (budget {budget} tokens)…")
-        client = _client()
-        # Streamed: a themed level is a long generation, and a non-streaming
-        # request of this size can exceed the request timeout and fail for a
-        # reason that has nothing to do with the plan.
-        with client.messages.stream(
-            model=MODEL,
-            max_tokens=budget,
-            thinking={"type": "adaptive"},
-            system=THEME_SYSTEM,
-            messages=[{"role": "user",
-                       "content": theme_prompt(words, level, existing, per_lesson)}],
-            output_format=_theme_models(),
-        ) as stream:
-            response = stream.get_final_message()
-        plan = _plan_from_response(response, level)
-        cache.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
+        batches = _chunk(words, CHUNK_WORDS)
+        plans = []
+        # Each chunk sees the themes already chosen — the curated ones, then
+        # every theme this level has produced so far — so the second half of a
+        # level complements the first instead of inventing 夜市 twice.
+        seen = list(existing)
+        for i, batch in enumerate(batches, start=1):
+            label = f"HSK {level}" if len(batches) == 1 else f"HSK {level} part {i}/{len(batches)}"
+            cache = CACHE_DIR / f"skeleton-hsk{level}-{i:02d}.json"
+            if cache.is_file() and not refresh:
+                print(f"  • {label}: cached plan, skipping API call")
+                plan = load_json(cache)
+            else:
+                plan = _theme_call(batch, level, seen, per_lesson, label)
+                cache.write_text(json.dumps(plan, ensure_ascii=False, indent=2),
+                                 encoding="utf-8")
+            plans.append(plan)
+            seen.extend(u["title"] for u in plan.get("units", []))
+
+    # One plan again, so everything downstream is unchanged by chunking.
+    plan = {
+        "units": [u for p in plans for u in p.get("units", [])],
+        "reading_fixes": [f for p in plans for f in p.get("reading_fixes", [])],
+    }
 
     by_word = {w["traditional"]: w for w in words}
     fixes = plan.get("reading_fixes", [])

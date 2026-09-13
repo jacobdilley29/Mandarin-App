@@ -622,6 +622,27 @@ nothing like the curated half.
 > for different vocabulary. Re-theming therefore costs a regeneration — that is
 > the honest price, not a bug.
 
+### Why theming is chunked
+
+`build_skeleton.py` asks Claude to group a level's words into situational units.
+That call is made in batches of `CHUNK_WORDS`, not once per level, because a
+whole level does not fit in one response — measured, not assumed: HSK 1's 106
+words planned inside 16000 tokens and HSK 2's 129 ran out of them. The plan
+itself is small (HSK 1's was 8KB); what consumes the budget is the adaptive
+thinking, and placing every word of a level into coherent themes gets harder
+faster than the word count grows. HSK 4 is 590 words, so no single call was ever
+going to do it.
+
+Each batch is told the themes already chosen — the curated units first, then
+whatever this level has produced so far — so the second half of a level
+complements the first rather than inventing 夜市 twice. Each batch caches on its
+own under `content/.generated/skeleton-hsk{level}-{n}.json`, so a failure costs
+only the batch it happened in, and a retry pays for nothing that already worked.
+
+A whole-level plan from before chunking (`skeleton-hsk{level}.json`) is still
+honoured as-is. Re-theming a level that is already planned costs money *and*
+regroups its words, which invalidates every lesson generated under it.
+
 ### What invalidates the generation cache
 
 Each lesson's generated content is cached under `content/.generated/`, so a

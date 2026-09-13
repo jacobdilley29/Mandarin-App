@@ -212,3 +212,99 @@ def test_a_reading_fix_that_agrees_changes_nothing(monkeypatch, tmp_path):
 
     assert words[0]["pinyin"] == "péngyǒu", "an agreeing fix must not rewrite the reading"
     assert words[0]["bopomofo"] == "ㄆㄥˊ ㄧㄡˇ", "nor discard its zhuyin"
+
+
+# ---------------------------------------------------------------------------
+# Chunking — because a whole level does not fit in one response
+# ---------------------------------------------------------------------------
+def _words(n: int, start: int = 0) -> list[dict]:
+    return [
+        {"traditional": f"詞{i}", "pinyin": f"ci{i}", "gloss": f"word {i}", "hsk_level": 2}
+        for i in range(start, start + n)
+    ]
+
+
+def _capture_calls(monkeypatch, tmp_path):
+    """Replace the API call with a recorder that themes whatever it is given."""
+    monkeypatch.setattr(bs, "CACHE_DIR", tmp_path)
+    calls = []
+
+    def fake(words, level, existing, per_lesson, label):
+        calls.append({"n": len(words), "existing": list(existing), "label": label})
+        return {
+            "units": [{
+                "title": f"主題{len(calls)}",
+                "subtitle": "theme",
+                "lessons": [{"title": "一", "words": [w["traditional"] for w in words]}],
+            }],
+            "reading_fixes": [],
+        }
+
+    monkeypatch.setattr(bs, "_theme_call", fake)
+    return calls
+
+
+def test_a_level_too_big_for_one_response_is_themed_in_chunks(monkeypatch, tmp_path):
+    """Measured: 106 words fit in 16000 tokens, 129 did not. HSK 4 is 590."""
+    calls = _capture_calls(monkeypatch, tmp_path)
+    words = _words(bs.CHUNK_WORDS * 2 + 5)
+
+    units, _ = bs.bin_claude(words, 2, existing=[], per_lesson=6, refresh=False)
+
+    assert len(calls) == 3, "three chunks for two-and-a-bit chunks' worth of words"
+    assert [c["n"] for c in calls] == [bs.CHUNK_WORDS, bs.CHUNK_WORDS, 5]
+    placed = [v["traditional"] for u in units for l in u["lessons"] for v in l["vocab"]]
+    assert len(placed) == len(words), "every word still lands somewhere"
+
+
+def test_each_chunk_is_told_the_themes_already_chosen(monkeypatch, tmp_path):
+    """Otherwise the second half of a level invents 夜市 a second time."""
+    calls = _capture_calls(monkeypatch, tmp_path)
+
+    bs.bin_claude(_words(bs.CHUNK_WORDS + 1), 2, existing=["便利商店"], per_lesson=6,
+                  refresh=False)
+
+    assert calls[0]["existing"] == ["便利商店"]
+    assert calls[1]["existing"] == ["便利商店", "主題1"], "chunk 2 sees chunk 1's theme"
+
+
+def test_a_chunk_is_cached_on_its_own(monkeypatch, tmp_path):
+    """So a failure costs only the chunk it happened in, not the level."""
+    calls = _capture_calls(monkeypatch, tmp_path)
+    words = _words(bs.CHUNK_WORDS + 1)
+
+    bs.bin_claude(words, 2, existing=[], per_lesson=6, refresh=False)
+    assert len(calls) == 2
+    assert (tmp_path / "skeleton-hsk2-01.json").is_file()
+    assert (tmp_path / "skeleton-hsk2-02.json").is_file()
+
+    bs.bin_claude(words, 2, existing=[], per_lesson=6, refresh=False)
+    assert len(calls) == 2, "a second run must cost nothing"
+
+
+def test_a_whole_level_plan_from_before_chunking_is_still_honoured(monkeypatch, tmp_path):
+    """Re-theming a level that is already planned costs money AND regroups its
+    words, which throws away every lesson generated under it."""
+    calls = _capture_calls(monkeypatch, tmp_path)
+    (tmp_path / "skeleton-hsk2.json").write_text(
+        json.dumps({"units": [{"title": "夜市", "subtitle": "Night market",
+                               "lessons": [{"title": "一", "words": ["詞0"]}]}],
+                    "reading_fixes": []}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+    units, _ = bs.bin_claude(_words(1), 2, existing=[], per_lesson=6, refresh=False)
+
+    assert calls == [], "a level with a whole-level plan must not be re-themed"
+    assert units[0]["title"] == "夜市"
+
+
+def test_the_budget_covers_what_a_chunk_actually_needs(): 
+    """129 words exhausted 16000 tokens in the real run that found this.
+
+    A chunk is CHUNK_WORDS, so its budget has to sit well clear of that per-word
+    rate, and under a ceiling the API will accept.
+    """
+    per_word_that_failed = 16000 / 129
+    assert bs.theme_budget(bs.CHUNK_WORDS) > bs.CHUNK_WORDS * per_word_that_failed * 1.5
+    assert bs.theme_budget(10_000) <= 32000, "never ask for more than the API allows"
