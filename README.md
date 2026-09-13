@@ -643,6 +643,30 @@ A whole-level plan from before chunking (`skeleton-hsk{level}.json`) is still
 honoured as-is. Re-theming a level that is already planned costs money *and*
 regroups its words, which invalidates every lesson generated under it.
 
+### When a call fails, the error says why
+
+Both authoring scripts use structured outputs, where `parsed_output` comes back
+`None` for two completely different reasons: the model returned nothing, or the
+response was **cut off at the token limit** so there was no complete JSON to
+parse. The symptom is identical, and the obvious message — "no valid content
+came back" — sends you to check your key, your model id and your schema, none of
+which are wrong.
+
+That cost two rounds of misdiagnosis on the skeleton builder. `llm.parsed_or_raise`
+in `backend/app/llm.py` now tells the two apart, names the stop reason, and on a
+truncation reports the output-token count and says the budget is the thing to
+raise. Both call sites go through it, so the diagnosis cannot drift between them.
+
+`generate_content.py` also prints, at the end of every run:
+
+```
+peak tokens      : 3480 of 16000 (78% headroom)
+```
+
+Every token budget in this pipeline that was estimated rather than measured
+turned out to be wrong. That line is the measurement — and under 20% headroom it
+warns, which is the notice before a truncation rather than after one.
+
 ### What invalidates the generation cache
 
 Each lesson's generated content is cached under `content/.generated/`, so a

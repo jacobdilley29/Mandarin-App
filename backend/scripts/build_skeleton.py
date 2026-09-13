@@ -48,6 +48,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app import curriculum_source, taiwanize  # noqa: E402
 from app.config import REPO_ROOT
+from app import llm  # noqa: E402
 from app.llm import MODEL  # noqa: E402
 
 
@@ -325,20 +326,13 @@ def _chunk(words: list[dict], size: int) -> list[list[dict]]:
 
 
 def _plan_from_response(response, level: int):
-    """The parsed plan, or an error that says what actually went wrong."""
-    if response.parsed_output is not None:
-        return response.parsed_output.model_dump()
-    if getattr(response, "stop_reason", None) == "max_tokens":
-        used = getattr(getattr(response, "usage", None), "output_tokens", "?")
-        raise RuntimeError(
-            f"HSK {level}: the plan was cut off at the token limit "
-            f"({used} output tokens). Raise theme_budget(), or split the level "
-            f"with --levels."
-        )
-    raise RuntimeError(
-        f"HSK {level}: no plan came back (stop_reason="
-        f"{getattr(response, 'stop_reason', 'unknown')})"
-    )
+    """The parsed plan, or an error that says what actually went wrong.
+
+    The diagnosis lives in app/llm.py because generate_content.py needs exactly
+    the same one, and a truncation message that exists in two places is a
+    truncation message that will eventually only be right in one of them.
+    """
+    return llm.parsed_or_raise(response, f"HSK {level}").model_dump()
 
 
 def _theme_call(words: list[dict], level: int, existing: list[str],

@@ -29,16 +29,43 @@ class StubClient:
     out-of-scope path.
     """
 
-    def __init__(self, stray: str = ""):
+    def __init__(self, stray: str = "", output_tokens: int = 1200):
         self.stray = stray
         self.calls = 0
+        self.output_tokens = output_tokens
+        self.budgets: list[int] = []
 
     @property
     def messages(self):
         return self
 
-    def parse(self, *, messages, **kw):
+    def stream(self, **kw):
+        """The real client streams, so the stub is a context manager too.
+
+        Non-streaming was how a long generation could fail on a request timeout
+        for reasons unrelated to the content, so the shape matters enough to
+        mirror here rather than stub around.
+        """
+        response = self.parse(**kw)
+        client = self
+
+        class _Stream:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *exc):
+                return False
+
+            def get_final_message(self):
+                return response
+
+        del client
+        return _Stream()
+
+    def parse(self, *, messages, max_tokens=None, **kw):
         self.calls += 1
+        if max_tokens is not None:
+            self.budgets.append(max_tokens)
         lines = [l.strip() for l in messages[0]["content"].splitlines() if l.strip().startswith("- [")]
         ids = [l.split("]")[0].lstrip("- [") for l in lines]
         words = [l.split("] ", 1)[1].split(" (")[0] for l in lines]
@@ -62,8 +89,18 @@ class StubClient:
             "passage": {"title": "t", "hanzi": words[0] * 3, "gloss": "a short read"},
         }
         return types.SimpleNamespace(
-            parsed_output=types.SimpleNamespace(model_dump=lambda: out)
+            parsed_output=types.SimpleNamespace(model_dump=lambda: out),
+            stop_reason="end_turn",
+            usage=types.SimpleNamespace(output_tokens=self.output_tokens),
         )
+
+
+@pytest.fixture(autouse=True)
+def _reset_peak():
+    """PEAK_TOKENS is per-run state; one test's peak must not leak into the next."""
+    gc.PEAK_TOKENS = 0
+    yield
+    gc.PEAK_TOKENS = 0
 
 
 @pytest.fixture
@@ -598,3 +635,71 @@ def test_the_run_says_which_field_was_missing(sandbox, capsys):
     gc.main(["--unit", "u_draft", "--all"], client=StubClient())
 
     assert "missing passage" in capsys.readouterr().out
+
+
+# ---------------------------------------------------------------------------
+# Truncation, and knowing about it before it costs 185 calls
+# ---------------------------------------------------------------------------
+class TruncatedClient(StubClient):
+    """A response cut off at the token limit, which parses to nothing."""
+
+    def parse(self, **kw):
+        super().parse(**kw)
+        return types.SimpleNamespace(
+            parsed_output=None,
+            stop_reason="max_tokens",
+            usage=types.SimpleNamespace(output_tokens=gc.LESSON_BUDGET),
+        )
+
+
+def test_a_truncated_lesson_says_it_was_truncated(sandbox, capsys):
+    """The error that sent two rounds of debugging at the wrong thing.
+
+    parsed_output is None whether the model was cut off or returned nothing, and
+    "model did not return valid content" reads as a key, model or schema
+    problem — none of which are wrong. This is the exact failure that stalled
+    the skeleton builder, in the script that makes 185 calls instead of 14.
+    """
+    gc.main(["--unit", "u_draft"], client=TruncatedClient())
+
+    out = capsys.readouterr().out
+    assert "cut off at the token limit" in out
+    assert "Raise the max_tokens budget" in out
+
+
+def test_a_truncated_lesson_is_not_cached(sandbox):
+    """Caching a failure would make the next run free and still broken."""
+    gc.main(["--unit", "u_draft"], client=TruncatedClient())
+    assert not list((gc.GENERATED_DIR).glob("l_draft*.json")), "nothing to cache from a failure"
+
+
+def test_the_run_reports_the_tokens_it_actually_needed(sandbox, capsys):
+    """Every budget in this pipeline that was estimated rather than measured
+    turned out wrong. This is the measurement."""
+    gc.main(["--unit", "u_draft"], client=StubClient(output_tokens=1234))
+
+    out = capsys.readouterr().out
+    assert "peak tokens" in out
+    assert "1234" in out and str(gc.LESSON_BUDGET) in out
+
+
+def test_a_tight_budget_is_called_out(sandbox, capsys):
+    """A lesson using most of its budget is the warning before the truncation."""
+    gc.main(["--unit", "u_draft"], client=StubClient(output_tokens=gc.LESSON_BUDGET - 100))
+
+    assert "raise LESSON_BUDGET" in capsys.readouterr().out
+
+
+def test_a_comfortable_budget_is_not_nagged_about(sandbox, capsys):
+    gc.main(["--unit", "u_draft"], client=StubClient(output_tokens=1000))
+
+    assert "raise LESSON_BUDGET" not in capsys.readouterr().out
+
+
+def test_the_lesson_budget_has_room_for_the_current_prompt(sandbox):
+    """8000 was set when a lesson had no passage and no contrastive grammar."""
+    client = StubClient()
+    gc.main(["--unit", "u_draft"], client=client)
+
+    assert client.budgets, "the budget must actually reach the API call"
+    assert all(b >= 16000 for b in client.budgets)
