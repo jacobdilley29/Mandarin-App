@@ -21,6 +21,7 @@ from .routers import (
     admin,
     audio,
     content as content_router,
+    dictionary as dictionary_router,
     health,
     learn,
     listen,
@@ -70,6 +71,7 @@ def _startup() -> None:
 app.include_router(health.router)
 app.include_router(admin.router)
 app.include_router(content_router.router)
+app.include_router(dictionary_router.router)
 app.include_router(settings_router.router)
 app.include_router(learn.router)
 app.include_router(review.router)

@@ -19,12 +19,16 @@ CONTENT_SCHEMA = (APP_DIR / "schema_content.sql").read_text(encoding="utf-8")
 PROGRESS_SCHEMA = (APP_DIR / "schema_progress.sql").read_text(encoding="utf-8")
 
 
-def attached_conn(tmp_path: Path) -> sqlite3.Connection:
+def attached_conn(tmp_path: Path, *, same_thread: bool = True) -> sqlite3.Connection:
     """A content+progress connection over two real files under tmp_path.
 
     Real files rather than :memory: — an in-memory ATTACH would give each
     schema its own private database and hide exactly the cross-file behaviour
     these tests exist to check.
+
+    ``same_thread=False`` is for TestClient, which serves requests on a worker
+    thread: one connection handed to the app has to cross threads, and sqlite
+    refuses that by default.
     """
     content_path = tmp_path / "content.db"
     progress_path = tmp_path / "progress.db"
@@ -37,7 +41,7 @@ def attached_conn(tmp_path: Path) -> sqlite3.Connection:
         c.commit()
         c.close()
 
-    conn = sqlite3.connect(content_path)
+    conn = sqlite3.connect(content_path, check_same_thread=same_thread)
     conn.row_factory = sqlite3.Row
     conn.execute("ATTACH DATABASE ? AS progress", (str(progress_path),))
     conn.execute("PRAGMA foreign_keys = ON")

@@ -769,6 +769,58 @@ as audio only — the transcript appears once you've answered, or when you
 deliberately ask for it. With the characters on screen from the start it was a
 reading exercise with audio attached.
 
+## Reading
+
+### Zhuyin (注音符號) beside pinyin
+
+Zhuyin is Taiwan's native phonetic system — what children learn, what keyboards
+use, what Taiwanese dictionaries print. The **Me** tab has a script toggle:
+pinyin, 注音, or both, honoured everywhere a reading is shown.
+
+The conversion is the part worth reading about. `backend/app/zhuyin.py`
+transcribes **this app's own pinyin**, never the character. pypinyin can go
+straight from 銀行 to zhuyin, but it reads it yínxíng; Taiwan says yínháng.
+Measured across the 1,208 curriculum words, deriving from characters disagrees
+with the stored reading for **9.2%** of them — and the disagreements are exactly
+the readings this app exists to get right (和 hàn, 認識 rènshì, 誰 shéi, 東西
+dōngxi). Since a card shows pinyin and zhuyin an inch apart, a disagreement is
+not a subtle inconsistency; it is two contradictory answers side by side.
+Transcribing the pinyin inherits the Taiwan readings, the sandhi and
+`content/taiwan_overrides.json` for free.
+
+Two Taiwan conventions it follows: the neutral tone dot goes **before** the
+syllable (˙ㄉㄜ), where pypinyin and most Mainland sources trail it; and a
+reading it cannot split confidently comes back **empty rather than wrong** — a
+garbled transcription beside a character teaches something false, a missing one
+teaches nothing.
+
+`tests/test_zhuyin.py` checks the converter against the `bopomofo` field of
+every word in `content/wordlists/*.json`: **1,193 of 1,193**, not a claim.
+
+### Tap-to-define
+
+Tap any Han text in a dialogue, drill sentence or passage and the word, its
+reading and its gloss appear in place. Leaving the lesson to look a word up is
+how reading practice turns into dictionary practice.
+
+```
+POST /api/dictionary/annotate   {"text": "..."}  -> tappable spans
+GET  /api/dictionary/{word}                      -> one entry
+```
+
+**The curriculum answers first, CC-CEDICT second.** The vocab table holds the
+Taiwan reading the lesson taught; CC-CEDICT is broader but Mainland-oriented, so
+it disagrees on precisely the words this app is careful about. Looking there
+first would show one reading in the lesson and another on tap. CC-CEDICT is also
+optional — it is a download that may never have been run (see
+[CC-CEDICT](#cc-cedict) above), and everything here works with an empty
+`dictionary` table, which is the state a fresh install is in.
+
+Segmentation happens server-side for a whole string at once rather than once per
+tap: 我要喝水 is four characters but three words, and 便利商店 is one. It is greedy
+longest-match against what the app knows, up to four characters, so word
+boundaries agree with what the learner has been taught.
+
 ## Grammar
 
 Grammar is a first-class module, not a footnote on the vocabulary (spec §3.3).

@@ -60,6 +60,19 @@ export interface Example {
   pinyin: string;
   gloss: string;
 }
+export interface DictEntry {
+  text: string;
+  pinyin: string;
+  zhuyin: string | null;
+  gloss: string;
+  source: "curriculum" | "cedict";
+}
+export interface GlossSpan {
+  text: string;
+  entry: DictEntry | null;
+  plain: boolean;
+}
+
 export interface Option {
   text: string;
   correct: boolean;
@@ -495,6 +508,12 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     }).then(json<TutorAnswer>),
+  annotate: (text: string) =>
+    fetch("/api/dictionary/annotate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    }).then(json<{ spans: GlossSpan[] }>),
   practiceNeeds: () => fetch("/api/practice/needs").then(json<PracticeSet>),
   practiceKnown: () => fetch("/api/practice/known").then(json<PracticeSet>),
   practiceResult: (answered: number, correct: number) =>

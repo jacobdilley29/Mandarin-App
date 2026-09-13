@@ -12,6 +12,7 @@ import {
 import { useSettings } from "../../SettingsContext";
 import { useSpeak } from "../../audio";
 import { AskAbout } from "../../components/AskAbout";
+import { Glossable } from "../../components/Glossable";
 import { Speakable } from "../../components/Speakable";
 import { ToneMark } from "../../components/ToneMark";
 
@@ -583,8 +584,10 @@ function DialogueDrill({ ex, showPinyin: initialShow, onDone }: DrillProps) {
         {p.lines.map((line: { speaker: string; hanzi: string; pinyin: string; gloss: string }, i: number) => (
           <div key={i} className="rounded-md border border-border p-3">
             <div className="text-xs font-medium text-primary">{line.speaker}</div>
-            <Speakable text={line.hanzi} className="mt-0.5 font-han text-lg text-ink">
-              {line.hanzi}
+            {/* Tap any word for its reading and meaning without leaving the
+                dialogue — the place a learner most often gets stuck. */}
+            <Speakable text={line.hanzi} className="mt-0.5 block font-han text-lg text-ink">
+              <Glossable text={line.hanzi} />
             </Speakable>
             <Pinyin text={line.pinyin} show={initialShow} />
             {showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
