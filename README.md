@@ -297,6 +297,12 @@ no certificates, nothing exposed to the public internet.
 3. `make tailscale-up` — it prints your `https://<machine>.<tailnet>.ts.net/` URL.
 4. Open that on your phone and **Add to Home Screen** to install the PWA.
 
+> **If you installed from the Mac App Store**, its CLI lives inside the app
+> bundle (`/Applications/Tailscale.app/Contents/MacOS/Tailscale`) and is never
+> put on your `PATH` — only the standalone and Homebrew builds do that.
+> `make tailscale-up` looks in the bundle too, so either build works; if it still
+> says it can't find the command, the app genuinely isn't installed.
+
 `make tailscale-down` stops serving; `make tailscale-status` shows what's currently
 served.
 

@@ -18,12 +18,40 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 die() { printf '\033[31merror:\033[0m %s\n' "$*" >&2; exit 1; }
 info() { printf '\033[36m%s\033[0m\n' "$*"; }
 
-command -v tailscale >/dev/null 2>&1 || die \
-  "tailscale is not installed or not on PATH.
-  Install it from https://tailscale.com/download, then sign in with 'tailscale up'."
+# Find the CLI. PATH is not enough on macOS: the Mac App Store build — which is
+# what tailscale.com/download hands most Mac users — keeps its CLI inside the app
+# bundle and never puts `tailscale` on PATH. Looking only at PATH reports "not
+# installed" about an app sitting in /Applications, which is a maddening thing to
+# be told. The standalone and Homebrew builds do install onto PATH; the Homebrew
+# prefixes are listed too, for when make runs with a trimmed PATH.
+find_tailscale() {
+  local candidate
+  if candidate="$(command -v tailscale 2>/dev/null)"; then
+    printf '%s' "$candidate"
+    return 0
+  fi
+  for candidate in \
+    "/Applications/Tailscale.app/Contents/MacOS/Tailscale" \
+    "$HOME/Applications/Tailscale.app/Contents/MacOS/Tailscale" \
+    "/opt/homebrew/bin/tailscale" \
+    "/usr/local/bin/tailscale"
+  do
+    [[ -x "$candidate" ]] && { printf '%s' "$candidate"; return 0; }
+  done
+  return 1
+}
 
-if ! tailscale status >/dev/null 2>&1; then
-  die "tailscale is installed but this machine isn't connected. Run 'tailscale up' first."
+TS="$(find_tailscale)" || die \
+  "can't find the tailscale command.
+  Install it from https://tailscale.com/download (or: brew install tailscale),
+  then sign in with 'tailscale up'.
+  Already installed from the Mac App Store? Its CLI lives inside the app bundle
+  rather than on your PATH — this script looks there too, so if you are seeing
+  this the app itself isn't in /Applications either."
+
+if ! "$TS" status >/dev/null 2>&1; then
+  die "found tailscale at $TS, but this machine isn't connected.
+  Run 'tailscale up' (or open the Tailscale app and sign in) first."
 fi
 
 # Port: explicit argument > PORT in .env > 3002 (the app's default).
@@ -35,12 +63,12 @@ port_from_env() {
 case "${1:-}" in
   --off|off|down)
     info "Stopping Tailscale Serve…"
-    tailscale serve --https=443 off
+    "$TS" serve --https=443 off
     echo "Stopped. The app is no longer reachable from your tailnet."
     exit 0
     ;;
   --status|status)
-    tailscale serve status
+    "$TS" serve status
     exit 0
     ;;
   "")
@@ -58,10 +86,14 @@ if ! curl -fsS -o /dev/null --max-time 3 "http://127.0.0.1:${PORT}/api/health"; 
 fi
 
 info "Serving http://127.0.0.1:${PORT} over HTTPS on your tailnet…"
-tailscale serve --bg "${PORT}"
+"$TS" serve --bg "${PORT}"
 
 echo
-HOSTNAME_TS="$(tailscale status --json 2>/dev/null | grep -o '"DNSName"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | cut -d'"' -f4 | sed 's/\.$//')"
+# `|| true` is load-bearing: under `set -euo pipefail` a grep that matches
+# nothing fails the whole command substitution, and the script would exit right
+# here — after starting to serve, but before ever printing the URL. The check
+# below already handles an empty result; it just never got the chance.
+HOSTNAME_TS="$("$TS" status --json 2>/dev/null | grep -o '"DNSName"[[:space:]]*:[[:space:]]*"[^"]*"' | head -1 | cut -d'"' -f4 | sed 's/\.$//')" || true
 if [[ -n "${HOSTNAME_TS:-}" ]]; then
   echo "  Open this on your phone:  https://${HOSTNAME_TS}/"
 else
