@@ -13,6 +13,7 @@ import { useSettings } from "../../SettingsContext";
 import { useSpeak } from "../../audio";
 import { AskAbout } from "../../components/AskAbout";
 import { Glossable } from "../../components/Glossable";
+import { Phonetic } from "../../components/Phonetic";
 import { Speakable } from "../../components/Speakable";
 import { ToneMark } from "../../components/ToneMark";
 
@@ -58,23 +59,10 @@ function Pinyin({
   zhuyin?: string | null;
   show: boolean;
 }) {
-  const { settings } = useSettings();
   if (!show) return null;
-
-  const script = settings?.script ?? "pinyin";
-  const zh = script !== "pinyin" ? zhuyin : null;
-  const py = script === "zhuyin" && zh ? null : text;
-  if (!zh && !py) return null;
-
   return (
     <div className="font-sans text-sm text-ink-soft">
-      {zh && (
-        <span lang="zh-Hant" className="font-han">
-          {zh}
-        </span>
-      )}
-      {zh && py && <span className="mx-1.5 text-ink-faint">·</span>}
-      {py}
+      <Phonetic pinyin={text} zhuyin={zhuyin} />
     </div>
   );
 }

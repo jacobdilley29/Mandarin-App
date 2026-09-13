@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { api, type GlossSpan } from "../api";
-import { useSettings } from "../SettingsContext";
+import { Phonetic } from "./Phonetic";
 
 // Tap a word to see what it means, without leaving the sentence (spec §5).
 //
@@ -18,11 +18,7 @@ import { useSettings } from "../SettingsContext";
 // the sentence still reads exactly the same.
 
 function Popover({ span, onClose }: { span: GlossSpan; onClose: () => void }) {
-  const { settings } = useSettings();
-  const script = settings?.script ?? "pinyin";
   const entry = span.entry!;
-  const zh = script !== "pinyin" ? entry.zhuyin : null;
-  const py = script === "zhuyin" && zh ? null : entry.pinyin;
 
   return (
     <span
@@ -37,15 +33,11 @@ function Popover({ span, onClose }: { span: GlossSpan; onClose: () => void }) {
       <span lang="zh-Hant" className="block font-han text-lg text-ink">
         {entry.text}
       </span>
-      <span className="block text-sm text-ink-soft">
-        {zh && (
-          <span lang="zh-Hant" className="font-han">
-            {zh}
-          </span>
-        )}
-        {zh && py && <span className="mx-1.5 text-ink-faint">·</span>}
-        {py}
-      </span>
+      <Phonetic
+        pinyin={entry.pinyin}
+        zhuyin={entry.zhuyin}
+        className="block text-sm text-ink-soft"
+      />
       <span className="mt-0.5 block text-sm text-ink">{entry.gloss}</span>
     </span>
   );

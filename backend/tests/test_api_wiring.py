@@ -33,6 +33,7 @@ EXPECTED_PREFIXES = [
     "/api/review",
     "/api/listen",
     "/api/practice",
+    "/api/reading",
     "/api/speak",
     "/api/talk",
     "/api/tutor",

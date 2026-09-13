@@ -821,6 +821,51 @@ tap: 我要喝水 is four characters but three words, and 便利商店 is one. I
 longest-match against what the app knows, up to four characters, so word
 boundaries agree with what the learner has been taught.
 
+### Passages on their own schedule
+
+Every lesson carries a short passage — 60-120 characters of connected prose
+written to exactly that lesson's level and held to the same character scope as
+the rest of it. The drills teach words one at a time; the passage is where they
+come back as a paragraph, which is a different skill and the one that turns into
+reading Chinese.
+
+The **Read** tab lists them, and the reader hides the English behind a tap: with
+the translation on screen the eye reads it first and the Chinese becomes
+decoration. Tap-to-define works inside a passage, so an unknown word does not end
+the reading.
+
+**Each passage is FSRS-scheduled in its own right.** Reading a passage once and
+never again is how it becomes a text you half-remember rather than one you can
+read, so it is rated Again/Hard/Good/Easy on the same four buttons as a card and
+a passage that came out hard resurfaces sooner. This is not a second scheduler —
+`app/srs.py` already schedules by `(item_type, item_id)`, and a passage is simply
+`item_type='passage'` with the lesson id.
+
+Two rules it keeps:
+
+* **A passage unlocks with its lesson, not before.** The prose is built from what
+  that lesson taught; served earlier it is exactly the out-of-scope reading the
+  content pipeline exists to prevent.
+* **Reading never disturbs the vocabulary deck.** Rating a passage moves that
+  passage's card and nothing else — the rule practice sessions already keep, for
+  the same reason: an extra reading session must not cost you a pile of
+  vocabulary reviews the next morning.
+
+Passage cards are also kept out of the review queue and the practice sets, where
+they cannot be rendered as flashcards. That filter is `srs.QUEUE_ITEM_TYPES`, and
+it is there because without it the symptom is invisible: the queue does not show
+a broken item, it just silently comes back shorter than it says.
+
+```
+GET  /api/reading              the library — unlocked, due, locked
+GET  /api/reading/due          just what FSRS says to reread today
+GET  /api/reading/{lesson_id}  one passage, with the words its lesson taught
+POST /api/reading/answer       {lesson_id, rating} -> the passage's new schedule
+```
+
+Passages arrive with generation, so a curriculum built before they existed shows
+an empty Read tab until `make generate-content` runs again.
+
 ## Grammar
 
 Grammar is a first-class module, not a footnote on the vocabulary (spec §3.3).

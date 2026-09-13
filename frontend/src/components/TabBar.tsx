@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-// Bottom tab bar: 學 Learn / 複習 Review / 聽 Listen / 說 Speak / 聊 Talk / 我 Me.
+// Bottom tab bar: 學 Learn / 複習 Review / 閱讀 Read / 聽 Listen / 說 Speak / 聊 Talk / 我 Me.
 // Han label is the hero; the English gloss sits small beneath.
 interface Tab {
   to: string;
@@ -11,6 +11,7 @@ interface Tab {
 const TABS: Tab[] = [
   { to: "/learn", han: "學", en: "Learn" },
   { to: "/review", han: "複習", en: "Review" },
+  { to: "/read", han: "閱讀", en: "Read" },
   { to: "/listen", han: "聽", en: "Listen" },
   { to: "/speak", han: "說", en: "Speak" },
   { to: "/talk", han: "聊", en: "Talk" },

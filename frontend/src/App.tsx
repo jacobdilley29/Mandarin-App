@@ -4,6 +4,7 @@ import { StatusProvider } from "./StatusContext";
 import { SettingsProvider } from "./SettingsContext";
 import Learn from "./pages/Learn";
 import LessonPlayer from "./pages/learn/LessonPlayer";
+import Read from "./pages/Read";
 import Review from "./pages/Review";
 import Listen from "./pages/Listen";
 import Speak from "./pages/Speak";
@@ -24,6 +25,7 @@ export default function App() {
               <Route path="/" element={<Navigate to="/learn" replace />} />
               <Route path="/learn" element={<Learn />} />
               <Route path="/learn/:lessonId" element={<LessonPlayer />} />
+              <Route path="/read" element={<Read />} />
               <Route path="/review" element={<Review />} />
               <Route path="/listen" element={<Listen />} />
               <Route path="/speak" element={<Speak />} />

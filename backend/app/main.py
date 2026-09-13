@@ -27,6 +27,7 @@ from .routers import (
     listen,
     practice,
     progress,
+    reading as reading_router,
     review,
     speak,
     talk,
@@ -74,6 +75,7 @@ app.include_router(content_router.router)
 app.include_router(dictionary_router.router)
 app.include_router(settings_router.router)
 app.include_router(learn.router)
+app.include_router(reading_router.router)
 app.include_router(review.router)
 app.include_router(listen.router)
 app.include_router(practice.router)

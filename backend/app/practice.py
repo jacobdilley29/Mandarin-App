@@ -30,7 +30,7 @@ from __future__ import annotations
 import random
 import sqlite3
 
-from . import content, review
+from . import content, review, srs
 
 DEFAULT_SIZE = 12
 
@@ -40,6 +40,12 @@ TONE_WEAK_BELOW = 0.7
 # A card is "mastered" once FSRS has it holding for this long (days). Matches
 # the threshold the progress dashboard already calls mature.
 MATURE_STABILITY = 21.0
+
+# Practice renders flashcard drills, so it draws from the same item types the
+# review queue does. A reading passage is scheduled like a card but read, not
+# drilled: picked up here it would be dropped at render time, quietly making
+# every practice set shorter than it claims to be.
+_QUEUE = "item_type IN ({})".format(", ".join("?" * len(srs.QUEUE_ITEM_TYPES)))
 
 
 def _rows_to_items(
@@ -96,7 +102,10 @@ def weak_items(conn: sqlite3.Connection, limit: int = DEFAULT_SIZE) -> list[dict
         reasons.setdefault(card_id, []).append(why)
 
     for r in conn.execute(
-        "SELECT id, lapses FROM srs_cards WHERE lapses > 0 ORDER BY lapses DESC LIMIT 200"
+        f"""SELECT id, lapses FROM srs_cards
+            WHERE lapses > 0 AND {_QUEUE}
+            ORDER BY lapses DESC LIMIT 200""",  # noqa: S608 — filter is a literal
+        srs.QUEUE_ITEM_TYPES,
     ):
         add(r["id"], 2.0 * r["lapses"], f"forgotten {r['lapses']}x")
 
@@ -156,10 +165,10 @@ def known_material(conn: sqlite3.Connection, limit: int = DEFAULT_SIZE) -> dict:
     serving the same dozen words would defeat it.
     """
     rows = conn.execute(
-        """SELECT * FROM srs_cards
-           WHERE state = 'review' AND COALESCE(stability, 0) >= ?
-           ORDER BY RANDOM() LIMIT ?""",
-        (MATURE_STABILITY, limit),
+        f"""SELECT * FROM srs_cards
+            WHERE state = 'review' AND COALESCE(stability, 0) >= ? AND {_QUEUE}
+            ORDER BY RANDOM() LIMIT ?""",  # noqa: S608 — filter is a literal
+        (MATURE_STABILITY, *srs.QUEUE_ITEM_TYPES, limit),
     ).fetchall()
 
     items = _rows_to_items(conn, rows)

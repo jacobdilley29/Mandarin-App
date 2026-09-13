@@ -28,6 +28,14 @@ _TEXT_TO_STATE = {v: k for k, v in _STATE_TO_TEXT.items()}
 _MATURE_STABILITY = 10.0
 _MATURE_DIFFICULTY = 5.0
 
+# Item types the daily review queue serves. Reading passages are scheduled by
+# this same engine (item_type 'passage') but are read in the Reading tab, not
+# answered as flashcards: without this filter they would take slots in a queue
+# that cannot render them — shrinking it silently — and inflate a due badge that
+# reviewing could never clear.
+QUEUE_ITEM_TYPES = ("vocab", "grammar")
+_QUEUE_FILTER = "item_type IN ({})".format(", ".join("?" * len(QUEUE_ITEM_TYPES)))
+
 
 def now_utc() -> datetime:
     return datetime.now(timezone.utc)
@@ -151,17 +159,17 @@ def due_cards(conn: sqlite3.Connection, new_limit: int, limit: int = 60) -> list
     """Today's queue: due reviews first, then up to `new_limit` new cards."""
     now = now_utc().isoformat()
     due = conn.execute(
-        """SELECT * FROM srs_cards
-           WHERE state != 'new' AND due <= ?
-           ORDER BY due ASC LIMIT ?""",
-        (now, limit),
+        f"""SELECT * FROM srs_cards
+            WHERE state != 'new' AND due <= ? AND {_QUEUE_FILTER}
+            ORDER BY due ASC LIMIT ?""",  # noqa: S608 — filter is a literal
+        (now, *QUEUE_ITEM_TYPES, limit),
     ).fetchall()
     remaining = max(0, limit - len(due))
     new = conn.execute(
-        """SELECT * FROM srs_cards
-           WHERE state = 'new'
-           ORDER BY created_at ASC LIMIT ?""",
-        (min(new_limit, remaining),),
+        f"""SELECT * FROM srs_cards
+            WHERE state = 'new' AND {_QUEUE_FILTER}
+            ORDER BY created_at ASC LIMIT ?""",  # noqa: S608 — filter is a literal
+        (*QUEUE_ITEM_TYPES, min(new_limit, remaining)),
     ).fetchall()
     return list(due) + list(new)
 
@@ -169,12 +177,21 @@ def due_cards(conn: sqlite3.Connection, new_limit: int, limit: int = 60) -> list
 def counts(conn: sqlite3.Connection) -> dict:
     """Summary counts for the dashboard / Review landing."""
     now = now_utc().isoformat()
+    q = QUEUE_ITEM_TYPES
     due = conn.execute(
-        "SELECT COUNT(*) AS n FROM srs_cards WHERE state != 'new' AND due <= ?", (now,)
+        f"SELECT COUNT(*) AS n FROM srs_cards "  # noqa: S608 — filter is a literal
+        f"WHERE state != 'new' AND due <= ? AND {_QUEUE_FILTER}",
+        (now, *q),
     ).fetchone()["n"]
-    new = conn.execute("SELECT COUNT(*) AS n FROM srs_cards WHERE state = 'new'").fetchone()["n"]
-    total = conn.execute("SELECT COUNT(*) AS n FROM srs_cards").fetchone()["n"]
+    new = conn.execute(
+        f"SELECT COUNT(*) AS n FROM srs_cards WHERE state = 'new' AND {_QUEUE_FILTER}",  # noqa: S608
+        q,
+    ).fetchone()["n"]
+    total = conn.execute(
+        f"SELECT COUNT(*) AS n FROM srs_cards WHERE {_QUEUE_FILTER}", q  # noqa: S608
+    ).fetchone()["n"]
     mature = conn.execute(
-        "SELECT COUNT(*) AS n FROM srs_cards WHERE stability >= 21"
+        f"SELECT COUNT(*) AS n FROM srs_cards WHERE stability >= 21 AND {_QUEUE_FILTER}",  # noqa: S608
+        q,
     ).fetchone()["n"]
     return {"due": due, "new": new, "total": total, "mature": mature}

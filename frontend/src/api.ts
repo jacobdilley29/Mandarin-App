@@ -455,6 +455,48 @@ export interface PracticeSet {
   empty_reason: string | null;
 }
 
+// --- Reading (spec §3.2, §3.6) ---
+// Each lesson carries a passage written to its own level, and each passage is
+// FSRS-scheduled in its own right: one that came out hard comes back sooner.
+export interface PassageSummary {
+  lesson_id: string;
+  lesson_title: string;
+  unit_id: string;
+  unit_title: string;
+  hsk_level: number | null;
+  level: LevelBand | null;
+  title: string;
+  chars: number;
+  /** A passage opens when its lesson is finished, not before. */
+  unlocked: boolean;
+  read: boolean;
+  due: boolean;
+  due_at: string | null;
+  reps: number;
+}
+export interface ReadingLibrary {
+  passages: PassageSummary[];
+  total: number;
+  unlocked: number;
+  due: number;
+  unread: number;
+}
+export interface Passage extends PassageSummary {
+  hanzi: string;
+  gloss: string;
+  vocab: {
+    id: string;
+    traditional: string;
+    pinyin: string | null;
+    zhuyin: string | null;
+    gloss: string;
+  }[];
+  card_id: number | null;
+}
+export interface PassageRated extends ReviewAnswerResult {
+  lesson_id: string;
+}
+
 async function json<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const body = await res.text().catch(() => "");
@@ -522,6 +564,16 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ answered, correct }),
     }).then(json<{ answered: number; correct: number; srs_unchanged: boolean }>),
+  reading: () => fetch("/api/reading").then(json<ReadingLibrary>),
+  readingDue: () =>
+    fetch("/api/reading/due").then(json<{ passages: PassageSummary[]; count: number }>),
+  passage: (lessonId: string) => fetch(`/api/reading/${lessonId}`).then(json<Passage>),
+  readingAnswer: (lesson_id: string, rating: number) =>
+    fetch("/api/reading/answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lesson_id, rating }),
+    }).then(json<PassageRated>),
   reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
   reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
   reviewAnswer: (card_id: number, rating: number) =>
