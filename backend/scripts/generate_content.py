@@ -281,6 +281,46 @@ def _select_units(data: dict, args) -> list[dict]:
     ]
 
 
+def _lesson_fingerprint(lesson: dict) -> list[str]:
+    """The vocabulary ids this lesson teaches — what its content was written for."""
+    return [v["id"] for v in (lesson.get("vocab") or []) if v.get("id")]
+
+
+def read_cache(path: Path, lesson: dict) -> dict | None:
+    """Cached content for this lesson, or None when it cannot be trusted.
+
+    Lesson ids are positional — l_hsk2_01_1 is "the first lesson of the first
+    HSK 2 unit", whatever words that unit currently holds. Re-theming regroups
+    the words and keeps the ids, so a cache keyed on the id alone would hand back
+    content written for an entirely different word set, print "cached", and
+    produce a lesson whose examples have nothing to do with its vocabulary — for
+    free, and looking like success. So the cache records what it was generated
+    for, and a changed word set is a miss.
+
+    A cache file from before this existed cannot be checked, so it is not
+    trusted. That costs a regeneration once, which is the safe direction.
+    """
+    if not path.is_file():
+        return None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or "_content" not in payload:
+        return None
+    if payload.get("_for_vocab") != _lesson_fingerprint(lesson):
+        return None
+    return payload["_content"]
+
+
+def write_cache(path: Path, lesson: dict, content: dict) -> None:
+    path.write_text(
+        json.dumps(
+            {"_for_vocab": _lesson_fingerprint(lesson), "_content": content},
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
 def _violations_for(data: dict, by_id: dict, unit: dict) -> list:
     """This unit's out-of-scope sentences, judged as the content loader judges them.
 
@@ -326,9 +366,7 @@ def _retry_lessons(client, data: dict, unit: dict, violations: list) -> int:
             print(f"  ✗ {lesson['id']}: retry failed: {exc}")
             continue
         # Overwrite the cache: the retry is the better version of this lesson.
-        (GENERATED_DIR / f"{lesson['id']}.json").write_text(
-            json.dumps(content, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
+        write_cache(GENERATED_DIR / f"{lesson['id']}.json", lesson, content)
         apply_to_lesson(lesson, content)
         redone += 1
     return redone
@@ -397,11 +435,12 @@ def main(argv: list[str] | None = None, client=None) -> int:
         applied = 0
         for lesson in unit.get("lessons") or []:
             cache = GENERATED_DIR / f"{lesson['id']}.json"
-            if cache.is_file():
+            content = read_cache(cache, lesson)
+            if content is not None:
                 print(f"  • {lesson['id']}: cached")
-                content = json.loads(cache.read_text(encoding="utf-8"))
             else:
-                print(f"  ⟳ {lesson['id']}: generating…")
+                why = "words changed" if cache.is_file() else "generating"
+                print(f"  ⟳ {lesson['id']}: {why}…")
                 allowed = _allowed_words_upto(data, lesson["id"])
                 try:
                     content = generate_lesson(client, lesson, allowed)
@@ -409,9 +448,7 @@ def main(argv: list[str] | None = None, client=None) -> int:
                     print(f"  ✗ {lesson['id']}: {exc}")
                     failed.append(lesson["id"])
                     continue
-                cache.write_text(
-                    json.dumps(content, ensure_ascii=False, indent=2), encoding="utf-8"
-                )
+                write_cache(cache, lesson, content)
             apply_to_lesson(lesson, content)
             applied += 1
 

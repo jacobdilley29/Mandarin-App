@@ -447,3 +447,75 @@ def test_a_blocked_draft_is_still_selected_for_work(sandbox):
 
     assert "u_draft" in selected, "a blocked draft still needs work"
     assert "u_live" not in selected, "a finished unit is still left alone"
+
+
+# ---------------------------------------------------------------------------
+# The cache has to know what it was generated FOR
+# ---------------------------------------------------------------------------
+def test_changing_a_lesson_s_words_invalidates_its_cache(sandbox):
+    """Lesson ids are positional, so re-theming reuses them with other words.
+
+    A cache keyed on the id alone would hand back content written for a
+    completely different word set, print "cached", and produce a lesson whose
+    examples have nothing to do with its vocabulary — free, and looking like a
+    successful run. That is the trap re-theming walks straight into.
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    unit = cs.load_unit("u_draft")
+    unit["lessons"][0]["vocab"] = [
+        {"id": "v_茶", "traditional": "茶", "pinyin": "chá", "gloss": "tea", "hsk_level": 1}
+    ]
+    unit["status"] = cs.STATUS_DRAFT
+    cs.write_unit(unit)
+
+    second = StubClient()
+    gc.main(["--unit", "u_draft"], client=second)
+
+    assert second.calls == 1, "different words must mean a regeneration, not a cache hit"
+
+
+def test_the_same_words_still_hit_the_cache(sandbox):
+    """The saving has to survive the fix, or every run pays full price.
+
+    `--all` so the unit is reconsidered after the first run promotes it to live;
+    without it this passes for the wrong reason — nothing is selected at all.
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    second = StubClient()
+    gc.main(["--unit", "u_draft", "--all"], client=second)
+
+    assert second.calls == 0
+
+
+def test_a_cache_file_from_before_this_check_is_not_trusted(sandbox):
+    """It carries no record of what it was for, so it cannot be verified.
+
+    Costs one regeneration; the alternative is silently shipping mismatched
+    content, which is the failure this whole check exists to prevent.
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    cached = gc.GENERATED_DIR / "l_draft.json"
+    # Rewrite it in the old shape: the bare content, no fingerprint.
+    payload = json.loads(cached.read_text(encoding="utf-8"))
+    cached.write_text(json.dumps(payload["_content"], ensure_ascii=False), encoding="utf-8")
+
+    second = StubClient()
+    gc.main(["--unit", "u_draft", "--all"], client=second)
+
+    assert second.calls == 1
+
+
+def test_the_run_says_why_it_is_regenerating(sandbox, capsys):
+    """"words changed" is the difference between a free run and a paid one."""
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    unit = cs.load_unit("u_draft")
+    unit["lessons"][0]["vocab"] = [{"id": "v_茶", "traditional": "茶", "gloss": "tea"}]
+    unit["status"] = cs.STATUS_DRAFT
+    cs.write_unit(unit)
+    capsys.readouterr()
+
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    assert "words changed" in capsys.readouterr().out
