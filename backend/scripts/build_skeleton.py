@@ -294,6 +294,39 @@ def _client():
     return anthropic.Anthropic(api_key=key) if key else anthropic.Anthropic()
 
 
+def theme_budget(word_count: int) -> int:
+    """`max_tokens` for one level's theming call, scaled to the level's size.
+
+    This was a flat 16000, which is a guess that fits the smallest level and
+    nothing else: HSK 4 is 590 words against HSK 1's 106, and the plan for it is
+    proportionally longer — while adaptive thinking draws from the same budget,
+    and a grouping problem gets harder, not easier, with more words to place.
+
+    A truncated response is the worst shape of failure here, because it does not
+    look like truncation: the parse simply yields nothing and the error says the
+    model returned no plan, which reads like a model or key problem. So the
+    budget scales, and _plan_from_response names truncation when it happens.
+    """
+    return max(16000, 6000 + word_count * 60)
+
+
+def _plan_from_response(response, level: int):
+    """The parsed plan, or an error that says what actually went wrong."""
+    if response.parsed_output is not None:
+        return response.parsed_output.model_dump()
+    if getattr(response, "stop_reason", None) == "max_tokens":
+        used = getattr(getattr(response, "usage", None), "output_tokens", "?")
+        raise RuntimeError(
+            f"HSK {level}: the plan was cut off at the token limit "
+            f"({used} output tokens). Raise theme_budget(), or split the level "
+            f"with --levels."
+        )
+    raise RuntimeError(
+        f"HSK {level}: no plan came back (stop_reason="
+        f"{getattr(response, 'stop_reason', 'unknown')})"
+    )
+
+
 def bin_claude(words: list[dict], level: int, existing: list[str],
                per_lesson: int, refresh: bool) -> tuple[list[dict], list[dict]]:
     """Ask Claude to theme a level. Cached per level so runs are resumable."""
@@ -305,20 +338,23 @@ def bin_claude(words: list[dict], level: int, existing: list[str],
         print(f"  • HSK {level}: cached plan, skipping API call")
         plan = load_json(cache)
     else:
-        print(f"  ⟳ HSK {level}: theming {len(words)} words…")
+        budget = theme_budget(len(words))
+        print(f"  ⟳ HSK {level}: theming {len(words)} words (budget {budget} tokens)…")
         client = _client()
-        response = client.messages.parse(
+        # Streamed: a themed level is a long generation, and a non-streaming
+        # request of this size can exceed the request timeout and fail for a
+        # reason that has nothing to do with the plan.
+        with client.messages.stream(
             model=MODEL,
-            max_tokens=16000,
+            max_tokens=budget,
             thinking={"type": "adaptive"},
             system=THEME_SYSTEM,
             messages=[{"role": "user",
                        "content": theme_prompt(words, level, existing, per_lesson)}],
             output_format=_theme_models(),
-        )
-        if response.parsed_output is None:
-            raise RuntimeError(f"model returned no plan for HSK {level}")
-        plan = response.parsed_output.model_dump()
+        ) as stream:
+            response = stream.get_final_message()
+        plan = _plan_from_response(response, level)
         cache.write_text(json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8")
 
     by_word = {w["traditional"]: w for w in words}
@@ -388,6 +424,32 @@ def apply_readings_to_authored(existing: dict, overrides: dict) -> list[str]:
                     changed.append(f"{v['traditional']} {v['pinyin']} → {want}")
                     v["pinyin"] = want
     return changed
+
+
+def _report_stalled(stalled: list[int]) -> None:
+    """Say loudly what was not re-themed, and what not to do about it.
+
+    The expensive mistake is generating into a level that was never regrouped:
+    its words move when the re-theme eventually succeeds, and the generation
+    cache treats a changed word set as a miss, so that content is paid for twice.
+    """
+    if not stalled:
+        return
+    levels_txt = ", ".join(f"HSK {lv}" for lv in stalled)
+    verb = "is" if len(stalled) == 1 else "are"
+    print(f"\n! {levels_txt} could not be re-themed and {verb} unchanged.")
+    print("  Re-run `make build-skeleton` to retry — levels that already succeeded")
+    print("  are cached and cost nothing. Do NOT run generate-content for a stalled")
+    print("  level yet: its words will be regrouped, and anything generated now is")
+    print("  paid for twice.")
+
+
+def _existing_generated(existing: dict, level: int) -> list[dict]:
+    """This level's generated units as they stand, for a level that failed to re-theme."""
+    return [
+        u for u in existing.get("units", [])
+        if u.get("generated") and (u.get("hsk_level") or 0) == level
+    ]
 
 
 def assemble(existing: dict, generated: dict[int, list[dict]], tocfl: dict) -> dict:
@@ -504,6 +566,7 @@ def main(argv: list[str] | None = None) -> int:
 
     generated: dict[int, list[dict]] = {}
     total_new = 0
+    stalled: list[int] = []
     for level in levels:
         words, _ = apply_overrides(lists[level], overrides)
         fresh = [w for w in words if w["traditional"] not in curated]
@@ -512,8 +575,24 @@ def main(argv: list[str] | None = None) -> int:
             print(f"HSK {level}: all {len(words)} words already taught")
             continue
         if args.theme == "claude":
-            units, fixes = bin_claude(fresh, level, existing_themes,
-                                      args.per_lesson, args.refresh)
+            try:
+                units, fixes = bin_claude(fresh, level, existing_themes,
+                                          args.per_lesson, args.refresh)
+            except Exception as exc:  # noqa: BLE001 — one level must not sink the run
+                # Keep this level exactly as it is rather than dropping it.
+                # Dropping would delete every unit at this level from the
+                # curriculum — including generated lesson content that was paid
+                # for — and the coverage check would then fail on words that are
+                # not missing at all. Aborting the whole run is no better: it
+                # throws away the levels that succeeded, and their plans cost
+                # money too.
+                print(f"  ✗ HSK {level}: {exc}")
+                print(f"    leaving HSK {level} as it is; the other levels continue")
+                stalled.append(level)
+                kept = _existing_generated(existing, level)
+                if kept:
+                    generated[level] = kept
+                continue
             if fixes:
                 print(f"  HSK {level}: {len(fixes)} reading(s) settled by the model")
         else:
@@ -543,9 +622,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"✗ {len(missing)} word(s) never placed: {sorted(missing)[:10]}")
         return 1
 
+    _report_stalled(stalled)
+
     if args.dry_run:
         print(f"\n(--dry-run) would write {len(merged['units'])} unit files; nothing written")
-        return 0
+        return 1 if stalled else 0
 
     for unit in merged["units"]:
         curriculum_source.write_unit(unit)
@@ -567,7 +648,8 @@ def main(argv: list[str] | None = None) -> int:
         print("  Units are frequency-ordered sets. Re-run with --theme claude "
               "and an API key to group them into Taiwan daily-life themes.")
     print("  Next: python -m scripts.generate_content --level N   (adds sentences)")
-    return 0
+
+    return 1 if stalled else 0
 
 
 if __name__ == "__main__":
