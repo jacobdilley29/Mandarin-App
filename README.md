@@ -622,6 +622,27 @@ nothing like the curated half.
 > for different vocabulary. Re-theming therefore costs a regeneration — that is
 > the honest price, not a bug.
 
+### What invalidates the generation cache
+
+Each lesson's generated content is cached under `content/.generated/`, so a
+re-run is free for anything that hasn't changed. Two things make it a miss, and
+both print the reason so a paid run is never a mystery:
+
+* **The lesson's words changed.** Lesson ids are positional (`l_hsk2_01_1` is
+  "the first lesson of the first HSK 2 unit"), so re-theming keeps the ids and
+  swaps the words underneath them. A cache keyed on the id alone would hand back
+  content written for a different word set, print `• cached`, and look like a
+  free success.
+* **The content is missing a field the prompt now asks for** (`CONTENT_FIELDS`
+  in `scripts/generate_content.py`). This is the half that is easy to forget:
+  when lessons gained a reading passage, every cached lesson still had exactly
+  the same words, so a regeneration would have reported `• cached` for all 185
+  of them and applied content with no passage in it — a paid-looking run that
+  changed nothing, with no error anywhere.
+
+So a prompt that grows a field invalidates the cache by itself, at the cost of
+one regeneration. That is the safe direction.
+
 ### A trap worth knowing about: `examples`
 
 Every structured-output model in this app is checked by

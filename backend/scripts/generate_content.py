@@ -305,9 +305,27 @@ def _select_units(data: dict, args) -> list[dict]:
     ]
 
 
+# What a cached lesson is expected to contain. Bump this whenever the prompt
+# starts asking for something a cached lesson would not have — it is the other
+# half of cache invalidation, and the half that is easy to forget.
+#
+# The word set alone is not enough. When lessons gained a reading passage and
+# contrastive grammar, every cached lesson still had exactly the same words, so
+# a regeneration run would have reported "• cached" for all 185 of them and
+# applied content with no passage in it: a paid-looking run that changed nothing,
+# with no error anywhere. Naming the fields the content must carry means a
+# prompt that grows a field invalidates the cache by itself.
+CONTENT_FIELDS = ("vocab_examples", "grammar", "sentences", "dialogue", "passage")
+
+
 def _lesson_fingerprint(lesson: dict) -> list[str]:
     """The vocabulary ids this lesson teaches — what its content was written for."""
     return [v["id"] for v in (lesson.get("vocab") or []) if v.get("id")]
+
+
+def _has_current_shape(content: dict) -> bool:
+    """Whether cached content carries everything the prompt now asks for."""
+    return isinstance(content, dict) and all(f in content for f in CONTENT_FIELDS)
 
 
 def read_cache(path: Path, lesson: dict) -> dict | None:
@@ -321,6 +339,11 @@ def read_cache(path: Path, lesson: dict) -> dict | None:
     free, and looking like success. So the cache records what it was generated
     for, and a changed word set is a miss.
 
+    The same applies to the *shape* of the content: a cache entry written before
+    the prompt asked for a reading passage has the right words and the wrong
+    fields, and trusting it would quietly produce a lesson missing everything
+    the run was for. See CONTENT_FIELDS.
+
     A cache file from before this existed cannot be checked, so it is not
     trusted. That costs a regeneration once, which is the safe direction.
     """
@@ -331,7 +354,27 @@ def read_cache(path: Path, lesson: dict) -> dict | None:
         return None
     if payload.get("_for_vocab") != _lesson_fingerprint(lesson):
         return None
+    if not _has_current_shape(payload["_content"]):
+        return None
     return payload["_content"]
+
+
+def _miss_reason(path: Path, lesson: dict) -> str:
+    """Why this lesson is about to cost a call — so a paid run is never a mystery."""
+    if not path.is_file():
+        return "generating"
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return "cache unreadable"
+    if not isinstance(payload, dict) or "_content" not in payload:
+        return "cache from an older format"
+    if payload.get("_for_vocab") != _lesson_fingerprint(lesson):
+        return "words changed"
+    missing = [f for f in CONTENT_FIELDS if f not in payload["_content"]]
+    if missing:
+        return f"missing {', '.join(missing)}"
+    return "regenerating"
 
 
 def write_cache(path: Path, lesson: dict, content: dict) -> None:
@@ -463,7 +506,7 @@ def main(argv: list[str] | None = None, client=None) -> int:
             if content is not None:
                 print(f"  • {lesson['id']}: cached")
             else:
-                why = "words changed" if cache.is_file() else "generating"
+                why = _miss_reason(cache, lesson)
                 print(f"  ⟳ {lesson['id']}: {why}…")
                 allowed = _allowed_words_upto(data, lesson["id"])
                 try:

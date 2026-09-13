@@ -564,3 +564,37 @@ def test_a_missing_passage_does_not_hold_a_unit_back(sandbox):
     report = completeness.evaluate_unit(cs.load_unit("u_live"))
 
     assert "passage_present" not in report.missing
+
+
+def test_a_cache_entry_missing_a_new_field_is_regenerated(sandbox):
+    """The other half of invalidation, and the half that is easy to miss.
+
+    When lessons gained a reading passage, every cached lesson still had exactly
+    the same words — so the word-set check passed and a regeneration run would
+    have printed "• cached" for all of them and applied content with no passage
+    in it. A paid-looking run that changes nothing, with no error anywhere.
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    cached = gc.GENERATED_DIR / "l_draft.json"
+    payload = json.loads(cached.read_text(encoding="utf-8"))
+    del payload["_content"]["passage"]  # a cache entry from before passages
+    cached.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+    second = StubClient()
+    gc.main(["--unit", "u_draft", "--all"], client=second)
+
+    assert second.calls == 1, "content missing a field the prompt asks for must be a miss"
+
+
+def test_the_run_says_which_field_was_missing(sandbox, capsys):
+    """A paid run must never be a mystery — it names what it is paying for."""
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    cached = gc.GENERATED_DIR / "l_draft.json"
+    payload = json.loads(cached.read_text(encoding="utf-8"))
+    del payload["_content"]["passage"]
+    cached.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    capsys.readouterr()
+
+    gc.main(["--unit", "u_draft", "--all"], client=StubClient())
+
+    assert "missing passage" in capsys.readouterr().out
