@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 13",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_13_1",
@@ -17,7 +17,12 @@
           "pinyin": "yún",
           "gloss": "cloud",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那朵雲很白，真好看。",
+            "pinyin": "Nà duǒ yún hěn bái, zhēn hǎokàn.",
+            "gloss": "That cloud is very white — it looks really nice."
+          }
         },
         {
           "id": "v_鄰居",
@@ -25,7 +30,12 @@
           "pinyin": "lín jū",
           "gloss": "neighbor; next door",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的鄰居很好，常常幫我。",
+            "pinyin": "Wǒ de línjū hěn hǎo, chángcháng bāng wǒ.",
+            "gloss": "My neighbor is really nice; he often helps me."
+          }
         },
         {
           "id": "v_校長",
@@ -33,7 +43,12 @@
           "pinyin": "xiào zhǎng",
           "gloss": "(college, university) president; headmaster",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "校長明天要來我們班看看。",
+            "pinyin": "Xiàozhǎng míngtiān yào lái wǒmen bān kànkan.",
+            "gloss": "The principal is coming to our class tomorrow to take a look."
+          }
         },
         {
           "id": "v_花園",
@@ -41,7 +56,12 @@
           "pinyin": "huā yuán",
           "gloss": "garden",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家後面有一個小花園。",
+            "pinyin": "Wǒ jiā hòumiàn yǒu yí ge xiǎo huāyuán.",
+            "gloss": "There's a small garden behind my house."
+          }
         },
         {
           "id": "v_耳朵",
@@ -49,7 +69,12 @@
           "pinyin": "ěr duo",
           "gloss": "ear; handle (on a cup)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的耳朵有點痛，要去看醫生。",
+            "pinyin": "Wǒ de ěrduo yǒudiǎn tòng, yào qù kàn yīshēng.",
+            "gloss": "My ear hurts a bit; I need to see a doctor."
+          }
         },
         {
           "id": "v_節日",
@@ -57,12 +82,156 @@
           "pinyin": "jié rì",
           "gloss": "holiday; festival",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個節日我要回家跟爸媽一起吃飯。",
+            "pinyin": "Zhè ge jiérì wǒ yào huí jiā gēn bà mā yìqǐ chīfàn.",
+            "gloss": "This holiday I'm going home to eat with my parents."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Place + 有 + Noun (existence)",
+          "pattern": "[地方] + 有 + (數量) + 名詞",
+          "explanation": "Use 有 after a place word to say something exists there. The place goes first, then 有, then the thing. To make it negative, use 沒有 (not 不有). Common place words: 家裡、旁邊、後面、天上、學校。",
+          "examples": [
+            {
+              "hanzi": "我家旁邊有一個花園。",
+              "pinyin": "Wǒ jiā pángbiān yǒu yí ge huāyuán.",
+              "gloss": "There's a garden next to my house."
+            },
+            {
+              "hanzi": "天上有很多雲。",
+              "pinyin": "Tiānshàng yǒu hěn duō yún.",
+              "gloss": "There are a lot of clouds in the sky."
+            },
+            {
+              "hanzi": "我們學校有一位新校長。",
+              "pinyin": "Wǒmen xuéxiào yǒu yí wèi xīn xiàozhǎng.",
+              "gloss": "Our school has a new principal."
+            }
+          ],
+          "id": "g_hsk3_13_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_13_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "小雲，你家後面的花園真好看！",
+          "pinyin": "Xiǎo Yún, nǐ jiā hòumiàn de huāyuán zhēn hǎokàn!",
+          "gloss": "Xiao Yun, the garden behind your house looks great!"
+        },
+        {
+          "speaker": "小雲",
+          "hanzi": "謝謝！那是我跟鄰居一起種的。",
+          "pinyin": "Xièxie! Nà shì wǒ gēn línjū yìqǐ zhòng de.",
+          "gloss": "Thanks! My neighbor and I planted it together."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "天氣真好，天上一朵雲都沒有。",
+          "pinyin": "Tiānqì zhēn hǎo, tiānshàng yì duǒ yún dōu méiyǒu.",
+          "gloss": "The weather is great — there isn't a single cloud in the sky."
+        },
+        {
+          "speaker": "小雲",
+          "hanzi": "對啊，明天是節日，我們學校不用上課。",
+          "pinyin": "Duì a, míngtiān shì jiérì, wǒmen xuéxiào búyòng shàngkè.",
+          "gloss": "Right, tomorrow's a holiday, so we don't have class."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我知道校長也會來這裡看花。",
+          "pinyin": "Wǒ zhīdào xiàozhǎng yě huì lái zhèlǐ kàn huā.",
+          "gloss": "I know the principal is also coming here to look at the flowers."
+        },
+        {
+          "speaker": "小雲",
+          "hanzi": "真的嗎？那我明天要早一點來花園。",
+          "pinyin": "Zhēn de ma? Nà wǒ míngtiān yào zǎo yìdiǎn lái huāyuán.",
+          "gloss": "Really? Then I'll come to the garden a bit earlier tomorrow."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "的",
+            "鄰居",
+            "很",
+            "愛",
+            "種",
+            "花"
+          ],
+          "pinyin": "Wǒ de línjū hěn ài zhòng huā.",
+          "gloss": "My neighbor loves growing flowers.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "天上",
+            "的",
+            "雲",
+            "又",
+            "白",
+            "又",
+            "多"
+          ],
+          "pinyin": "Tiānshàng de yún yòu bái yòu duō.",
+          "gloss": "The clouds in the sky are white and plentiful.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "校長",
+            "在",
+            "花園",
+            "裡",
+            "跟",
+            "學生",
+            "講話"
+          ],
+          "pinyin": "Xiàozhǎng zài huāyuán lǐ gēn xuéshēng jiǎnghuà.",
+          "gloss": "The principal is talking with students in the garden.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "耳朵",
+            "有點",
+            "不",
+            "舒服"
+          ],
+          "pinyin": "Wǒ de ěrduo yǒudiǎn bù shūfú.",
+          "gloss": "My ears feel a bit uncomfortable.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這個",
+            "節日",
+            "我們",
+            "都",
+            "不用",
+            "上班"
+          ],
+          "pinyin": "Zhè ge jiérì wǒmen dōu búyòng shàngbān.",
+          "gloss": "This holiday none of us has to work.",
+          "cloze_index": 1
+        }
+      ]
     },
     {
       "id": "l_hsk3_13_2",
@@ -75,7 +244,12 @@
           "pinyin": "bí zi",
           "gloss": "nose",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我弟弟的鼻子很高。",
+            "pinyin": "Wǒ dìdi de bízi hěn gāo.",
+            "gloss": "My younger brother's nose is very tall (high-bridged)."
+          }
         },
         {
           "id": "v_叔叔",
@@ -83,7 +257,12 @@
           "pinyin": "shū shu",
           "gloss": "father's younger brother; uncle; Taiwan pr. [shú shu]",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我叔叔明天要來我家。",
+            "pinyin": "Wǒ shúshu míngtiān yào lái wǒ jiā.",
+            "gloss": "My uncle is coming to my house tomorrow."
+          }
         },
         {
           "id": "v_洗澡",
@@ -91,7 +270,12 @@
           "pinyin": "xǐ zǎo",
           "gloss": "to bathe; to take a shower",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要先洗澡,再睡覺。",
+            "pinyin": "Wǒ yào xiān xǐzǎo, zài shuìjiào.",
+            "gloss": "I want to shower first, then go to sleep."
+          }
         },
         {
           "id": "v_地圖",
@@ -99,7 +283,12 @@
           "pinyin": "dì tú",
           "gloss": "map",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你有沒有這個城市的地圖?",
+            "pinyin": "Nǐ yǒu méiyǒu zhège chéngshì de dìtú?",
+            "gloss": "Do you have a map of this city?"
+          }
         },
         {
           "id": "v_帽子",
@@ -107,7 +296,12 @@
           "pinyin": "mào zi",
           "gloss": "hat; cap; (fig.) label",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你的新帽子很好看喔!",
+            "pinyin": "Nǐ de xīn màozi hěn hǎokàn ō!",
+            "gloss": "Your new hat looks really good!"
+          }
         },
         {
           "id": "v_街道",
@@ -115,12 +309,145 @@
           "pinyin": "jiē dào",
           "gloss": "street; subdistrict; residential district",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條街道晚上很安靜。",
+            "pinyin": "Zhè tiáo jiēdào wǎnshàng hěn ānjìng.",
+            "gloss": "This street is very quiet at night."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "先……再…… (first ... then ...)",
+          "pattern": "Subject + 先 + Verb1 + ,再 + Verb2",
+          "explanation": "先 marks the action done first, and 再 marks the action that follows. Both verbs share the same subject. This pattern is very common in everyday Taiwan Mandarin when talking about the order of daily activities.",
+          "examples": [
+            {
+              "hanzi": "我先洗澡,再吃飯。",
+              "pinyin": "Wǒ xiān xǐzǎo, zài chīfàn.",
+              "gloss": "I'll shower first, then eat."
+            },
+            {
+              "hanzi": "我們先看地圖,再走吧。",
+              "pinyin": "Wǒmen xiān kàn dìtú, zài zǒu ba.",
+              "gloss": "Let's look at the map first, then go."
+            },
+            {
+              "hanzi": "他先買帽子,再去逛街。",
+              "pinyin": "Tā xiān mǎi màozi, zài qù guàngjiē.",
+              "gloss": "He'll buy a hat first, then go shopping."
+            }
+          ],
+          "id": "g_hsk3_13_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "叔叔,明天我們要去哪裡玩?",
+          "pinyin": "Shúshu, míngtiān wǒmen yào qù nǎlǐ wán?",
+          "gloss": "Uncle, where are we going tomorrow?"
+        },
+        {
+          "speaker": "叔叔",
+          "hanzi": "我們去逛那條老街道,好嗎?",
+          "pinyin": "Wǒmen qù guàng nà tiáo lǎo jiēdào, hǎo ma?",
+          "gloss": "Let's go stroll down that old street, okay?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊!那我要帶地圖和帽子。",
+          "pinyin": "Hǎo a! Nà wǒ yào dài dìtú hàn màozi.",
+          "gloss": "Sure! Then I'll bring a map and a hat."
+        },
+        {
+          "speaker": "叔叔",
+          "hanzi": "外面很熱,帽子一定要帶喔。",
+          "pinyin": "Wàimiàn hěn rè, màozi yīdìng yào dài ō.",
+          "gloss": "It's hot outside, you definitely need to bring a hat."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我先去洗澡,再準備東西。",
+          "pinyin": "Wǒ xiān qù xǐzǎo, zài zhǔnbèi dōngxi.",
+          "gloss": "I'll shower first, then get my things ready."
+        },
+        {
+          "speaker": "叔叔",
+          "hanzi": "好,早點睡,明天早上八點出發!",
+          "pinyin": "Hǎo, zǎodiǎn shuì, míngtiān zǎoshàng bā diǎn chūfā!",
+          "gloss": "Okay, sleep early — we leave at eight tomorrow morning!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "叔叔",
+            "的",
+            "鼻子",
+            "很",
+            "大"
+          ],
+          "pinyin": "Wǒ shúshu de bízi hěn dà.",
+          "gloss": "My uncle's nose is big.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "每天",
+            "晚上",
+            "都",
+            "洗澡"
+          ],
+          "pinyin": "Tā měitiān wǎnshàng dōu xǐzǎo.",
+          "gloss": "He takes a shower every night.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "條",
+            "街道",
+            "上",
+            "有",
+            "很多",
+            "商店"
+          ],
+          "pinyin": "Zhè tiáo jiēdào shàng yǒu hěnduō shāngdiàn.",
+          "gloss": "There are many shops on this street.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "要",
+            "買",
+            "一",
+            "張",
+            "地圖"
+          ],
+          "pinyin": "Wǒ yào mǎi yī zhāng dìtú.",
+          "gloss": "I want to buy a map.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "你",
+            "的",
+            "帽子",
+            "在",
+            "哪裡",
+            "?"
+          ],
+          "pinyin": "Nǐ de màozi zài nǎlǐ?",
+          "gloss": "Where is your hat?",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_13_3",
@@ -133,7 +460,12 @@
           "pinyin": "chí dào",
           "gloss": "to arrive late",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我早上上課遲到了。",
+            "pinyin": "Wǒ zǎoshang shàngkè chídào le.",
+            "gloss": "I was late for class this morning."
+          }
         },
         {
           "id": "v_刻",
@@ -141,7 +473,12 @@
           "pinyin": "kè",
           "gloss": "quarter (hour); moment; to carve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "現在是七點一刻。",
+            "pinyin": "Xiànzài shì qī diǎn yí kè.",
+            "gloss": "It's a quarter past seven now."
+          }
         },
         {
           "id": "v_鍛鍊",
@@ -149,7 +486,12 @@
           "pinyin": "duàn liàn",
           "gloss": "to toughen; to temper; to engage in physical exercise",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上都去公園鍛鍊身體。",
+            "pinyin": "Wǒ měi tiān zǎoshang dōu qù gōngyuán duànliàn shēntǐ.",
+            "gloss": "I go to the park every morning to exercise."
+          }
         },
         {
           "id": "v_褲子",
@@ -157,7 +499,12 @@
           "pinyin": "kù zi",
           "gloss": "trousers; pants",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條褲子太長了。",
+            "pinyin": "Zhè tiáo kùzi tài cháng le.",
+            "gloss": "These trousers are too long."
+          }
         },
         {
           "id": "v_夏",
@@ -165,7 +512,12 @@
           "pinyin": "xià",
           "gloss": "summer",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "夏天很熱，我常常喝冰的。",
+            "pinyin": "Xiàtiān hěn rè, wǒ chángcháng hē bīng de.",
+            "gloss": "Summer is hot; I often drink cold drinks."
+          }
         },
         {
           "id": "v_圖書館",
@@ -173,12 +525,149 @@
           "pinyin": "tú shū guǎn",
           "gloss": "library",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們下午在圖書館讀書吧。",
+            "pinyin": "Wǒmen xiàwǔ zài túshūguǎn dúshū ba.",
+            "gloss": "Let's study at the library this afternoon."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「刻」說時間：…點一刻／…點三刻",
+          "pattern": "時間點 + 一刻 / 三刻",
+          "explanation": "「刻」是十五分鐘。「八點一刻」就是八點十五分，「八點三刻」就是八點四十五分。說時間的時候，「刻」比「分」更口語，常常用在早上、上班或上課的時間上。",
+          "examples": [
+            {
+              "hanzi": "現在三點一刻，我們走吧。",
+              "pinyin": "Xiànzài sān diǎn yí kè, wǒmen zǒu ba.",
+              "gloss": "It's a quarter past three now, let's go."
+            },
+            {
+              "hanzi": "我六點一刻起床，去公園鍛鍊。",
+              "pinyin": "Wǒ liù diǎn yí kè qǐchuáng, qù gōngyuán duànliàn.",
+              "gloss": "I get up at 6:15 and go to the park to work out."
+            },
+            {
+              "hanzi": "圖書館九點一刻開門，你別遲到。",
+              "pinyin": "Túshūguǎn jiǔ diǎn yí kè kāimén, nǐ bié chídào.",
+              "gloss": "The library opens at 9:15; don't be late."
+            }
+          ],
+          "id": "g_hsk3_13_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_13_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "喂，你到圖書館了嗎？",
+          "pinyin": "Wéi, nǐ dào túshūguǎn le ma?",
+          "gloss": "Hello, have you got to the library yet?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "還沒，我剛出門，可能會遲到一點。",
+          "pinyin": "Hái méi, wǒ gāng chūmén, kěnéng huì chídào yìdiǎn.",
+          "gloss": "Not yet, I just left home; I might be a bit late."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "現在已經九點一刻了啊！",
+          "pinyin": "Xiànzài yǐjīng jiǔ diǎn yí kè le a!",
+          "gloss": "It's already a quarter past nine!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對不起，我先換褲子，十分鐘後就到。",
+          "pinyin": "Duìbùqǐ, wǒ xiān huàn kùzi, shí fēnzhōng hòu jiù dào.",
+          "gloss": "Sorry, I'll change my trousers first and be there in ten minutes."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好，我在裡面讀書，夏天外面太熱了。",
+          "pinyin": "Hǎo, wǒ zài lǐmiàn dúshū, xiàtiān wàimiàn tài rè le.",
+          "gloss": "OK, I'll read inside; it's too hot outside in summer."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "了解！我先騎腳踏車過去，下午再一起去鍛鍊。",
+          "pinyin": "Liǎojiě! Wǒ xiān qí jiǎotàchē guòqù, xiàwǔ zài yìqǐ qù duànliàn.",
+          "gloss": "Got it! I'll bike over now; this afternoon we can go work out together."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "你",
+            "昨天",
+            "為什麼",
+            "遲到",
+            "？"
+          ],
+          "pinyin": "Nǐ zuótiān wèishénme chídào?",
+          "gloss": "Why were you late yesterday?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "現在",
+            "八點",
+            "一刻",
+            "了"
+          ],
+          "pinyin": "Xiànzài bā diǎn yí kè le.",
+          "gloss": "It's a quarter past eight now.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "晚上",
+            "都",
+            "鍛鍊",
+            "身體"
+          ],
+          "pinyin": "Wǒ měi tiān wǎnshang dōu duànliàn shēntǐ.",
+          "gloss": "I exercise every evening.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "條",
+            "褲子",
+            "不",
+            "貴"
+          ],
+          "pinyin": "Zhè tiáo kùzi bú guì.",
+          "gloss": "These trousers aren't expensive.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "夏天",
+            "我",
+            "常",
+            "去",
+            "圖書館",
+            "看書"
+          ],
+          "pinyin": "Xiàtiān wǒ cháng qù túshūguǎn kànshū.",
+          "gloss": "In summer I often go to the library to read.",
+          "cloze_index": 4
+        }
+      ]
     }
   ],
   "sort_order": 41,

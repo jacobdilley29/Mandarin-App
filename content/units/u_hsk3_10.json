@@ -17,7 +17,12 @@
           "pinyin": "niǎo",
           "gloss": "bird; \"bird\" radical in Chinese characters (Kangxi radical 196); (dialect) to pay attention to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "樹上有很多鳥，真好看。",
+            "pinyin": "Shù shàng yǒu hěn duō niǎo, zhēn hǎokàn.",
+            "gloss": "There are a lot of birds in the tree — they're really pretty."
+          }
         },
         {
           "id": "v_藍",
@@ -25,7 +30,12 @@
           "pinyin": "lán",
           "gloss": "blue; indigo plant",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最喜歡藍色的鞋子。",
+            "pinyin": "Wǒ zuì xǐhuān lán sè de xiézi.",
+            "gloss": "I like blue shoes the most."
+          }
         },
         {
           "id": "v_照顧",
@@ -33,7 +43,12 @@
           "pinyin": "zhào gu",
           "gloss": "to take care of; to show consideration; to attend to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我週末要照顧我妹妹。",
+            "pinyin": "Wǒ zhōumò yào zhàogù wǒ mèimei.",
+            "gloss": "I have to take care of my little sister this weekend."
+          }
         },
         {
           "id": "v_文化",
@@ -41,7 +56,12 @@
           "pinyin": "wén huà",
           "gloss": "culture; civilization; cultural",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想多知道一點這裡的文化。",
+            "pinyin": "Wǒ xiǎng duō zhīdào yìdiǎn zhèlǐ de wénhuà.",
+            "gloss": "I want to learn a bit more about the culture here."
+          }
         },
         {
           "id": "v_疼",
@@ -49,7 +69,12 @@
           "pinyin": "téng",
           "gloss": "(it) hurts; sore; to love dearly",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的腳很疼，走不動了。",
+            "pinyin": "Wǒ de jiǎo hěn téng, zǒu bú dòng le.",
+            "gloss": "My foot really hurts; I can't walk anymore."
+          }
         },
         {
           "id": "v_奇怪",
@@ -57,12 +82,150 @@
           "pinyin": "qí guài",
           "gloss": "strange; odd; to marvel",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他昨天很奇怪，什麼都不說。",
+            "pinyin": "Tā zuótiān hěn qíguài, shénme dōu bù shuō.",
+            "gloss": "He was really strange yesterday; he didn't say anything."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "有點 + Adjective (a bit…)",
+          "pattern": "Subject + 有點 + Adjective",
+          "explanation": "有點 means \"a little / a bit\" and goes before an adjective. It is used for things the speaker feels are not so good or not quite right, like 疼 (sore) or 奇怪 (strange). Note that 有點 comes BEFORE the adjective, and you cannot say 很有點.",
+          "examples": [
+            {
+              "hanzi": "我的頭有點疼。",
+              "pinyin": "Wǒ de tóu yǒudiǎn téng.",
+              "gloss": "My head hurts a bit."
+            },
+            {
+              "hanzi": "這件事有點奇怪。",
+              "pinyin": "Zhè jiàn shì yǒudiǎn qíguài.",
+              "gloss": "This is a bit strange."
+            },
+            {
+              "hanzi": "他最近有點奇怪，都不出門。",
+              "pinyin": "Tā zuìjìn yǒudiǎn qíguài, dōu bù chūmén.",
+              "gloss": "He's been a bit odd lately; he never goes out."
+            }
+          ],
+          "id": "g_hsk3_10_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_10_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你看，那邊的鳥是藍色的耶！",
+          "pinyin": "Nǐ kàn, nà biān de niǎo shì lán sè de yē!",
+          "gloss": "Look, that bird over there is blue!"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "真的耶，好奇怪，我沒看過藍色的鳥。",
+          "pinyin": "Zhēnde yē, hǎo qíguài, wǒ méi kàn guò lán sè de niǎo.",
+          "gloss": "Wow, really — how strange, I've never seen a blue bird."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "這是我們這裡的鳥，我哥在照顧那些鳥。",
+          "pinyin": "Zhè shì wǒmen zhèlǐ de niǎo, wǒ gē zài zhàogù nàxiē niǎo.",
+          "gloss": "It's a local bird here; my older brother takes care of them."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "照顧鳥不容易吧？",
+          "pinyin": "Zhàogù niǎo bù róngyì ba?",
+          "gloss": "Taking care of birds isn't easy, right?"
+        },
+        {
+          "speaker": "A",
+          "hanzi": "對啊，不過很有意思，也是一種文化喔。",
+          "pinyin": "Duì a, búguò hěn yǒu yìsi, yě shì yì zhǒng wénhuà ō.",
+          "gloss": "Yeah, but it's really interesting — it's a kind of culture too."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我們走很久了，我的腳有點疼，先坐一下吧。",
+          "pinyin": "Wǒmen zǒu hěn jiǔ le, wǒ de jiǎo yǒudiǎn téng, xiān zuò yíxià ba.",
+          "gloss": "We've walked a long time; my feet hurt a bit, let's sit down first."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "樹上",
+            "有",
+            "很多",
+            "鳥"
+          ],
+          "pinyin": "Shù shàng yǒu hěn duō niǎo.",
+          "gloss": "There are many birds in the tree.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "週末",
+            "要",
+            "照顧",
+            "弟弟"
+          ],
+          "pinyin": "Wǒ zhōumò yào zhàogù dìdi.",
+          "gloss": "I have to look after my little brother this weekend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "事",
+            "有點",
+            "奇怪"
+          ],
+          "pinyin": "Zhè jiàn shì yǒudiǎn qíguài.",
+          "gloss": "This matter is a bit strange.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "她",
+            "買",
+            "了",
+            "一",
+            "雙",
+            "藍色",
+            "的",
+            "鞋子"
+          ],
+          "pinyin": "Tā mǎi le yì shuāng lán sè de xiézi.",
+          "gloss": "She bought a pair of blue shoes.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "眼睛",
+            "有點",
+            "疼"
+          ],
+          "pinyin": "Wǒ de yǎnjīng yǒudiǎn téng.",
+          "gloss": "My eyes hurt a little.",
+          "cloze_index": 4
+        }
+      ]
     },
     {
       "id": "l_hsk3_10_2",
@@ -75,7 +238,12 @@
           "pinyin": "lǐ wù",
           "gloss": "gift; present",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個禮物是我媽媽送我的。",
+            "pinyin": "Zhè ge lǐwù shì wǒ māma sòng wǒ de.",
+            "gloss": "This gift was given to me by my mom."
+          }
         },
         {
           "id": "v_南",
@@ -83,7 +251,12 @@
           "pinyin": "nán",
           "gloss": "south",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台南的天氣很熱。",
+            "pinyin": "Táinán de tiānqì hěn rè.",
+            "gloss": "The weather in Tainan is very hot."
+          }
         },
         {
           "id": "v_提高",
@@ -91,7 +264,12 @@
           "pinyin": "tí gāo",
           "gloss": "to raise; to increase; to improve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師說我們要提高聽力。",
+            "pinyin": "Lǎoshī shuō wǒmen yào tígāo tīnglì.",
+            "gloss": "The teacher says we need to improve our listening ability."
+          }
         },
         {
           "id": "v_滿意",
@@ -99,7 +277,12 @@
           "pinyin": "mǎn yì",
           "gloss": "satisfied; pleased; to one's satisfaction",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆對我的工作很滿意。",
+            "pinyin": "Lǎobǎn duì wǒ de gōngzuò hěn mǎnyì.",
+            "gloss": "The boss is very satisfied with my work."
+          }
         },
         {
           "id": "v_舊",
@@ -107,7 +290,12 @@
           "pinyin": "jiù",
           "gloss": "old; opposite: new 新; former",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的腳踏車太舊了,該換新的了。",
+            "pinyin": "Wǒ de jiǎotàchē tài jiù le, gāi huàn xīn de le.",
+            "gloss": "My bike is too old; it's time to get a new one."
+          }
         },
         {
           "id": "v_司機",
@@ -115,12 +303,167 @@
           "pinyin": "sī jī",
           "gloss": "chauffeur; driver",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那位司機開車開得又快又安全。",
+            "pinyin": "Nà wèi sījī kāichē kāi de yòu kuài yòu ānquán.",
+            "gloss": "That driver drives fast and safely."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "對……(很/不)滿意",
+          "pattern": "A + 對 + B + 很/不太 + 滿意",
+          "explanation": "用「對……滿意」表示某人覺得某件事或某個東西很好。「對」後面放你評論的對象,「滿意」前面可以加「很」或「不太」。",
+          "examples": [
+            {
+              "hanzi": "我對這個禮物很滿意。",
+              "pinyin": "Wǒ duì zhè ge lǐwù hěn mǎnyì.",
+              "gloss": "I'm very pleased with this gift."
+            },
+            {
+              "hanzi": "他對那輛舊車不太滿意。",
+              "pinyin": "Tā duì nà liàng jiù chē bú tài mǎnyì.",
+              "gloss": "He isn't very satisfied with that old car."
+            },
+            {
+              "hanzi": "老闆對這位司機很滿意。",
+              "pinyin": "Lǎobǎn duì zhè wèi sījī hěn mǎnyì.",
+              "gloss": "The boss is very satisfied with this driver."
+            }
+          ],
+          "id": "g_hsk3_10_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "提高 + 名詞",
+          "pattern": "主語 + 想/要 + 提高 + (的) + 名詞",
+          "explanation": "「提高」後面接可以變好、變多的東西,例如程度、聽力。",
+          "examples": [
+            {
+              "hanzi": "我想提高我的中文程度。",
+              "pinyin": "Wǒ xiǎng tígāo wǒ de Zhōngwén chéngdù.",
+              "gloss": "I want to improve my Chinese level."
+            },
+            {
+              "hanzi": "多聽音樂可以提高聽力嗎?",
+              "pinyin": "Duō tīng yīnyuè kěyǐ tígāo tīnglì ma?",
+              "gloss": "Can listening to lots of music improve listening ability?"
+            },
+            {
+              "hanzi": "老闆想提高大家的興趣。",
+              "pinyin": "Lǎobǎn xiǎng tígāo dàjiā de xìngqù.",
+              "gloss": "The boss wants to raise everyone's interest."
+            }
+          ],
+          "id": "g_hsk3_10_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "司機先生,請問到台南火車站要多久?",
+          "pinyin": "Sījī xiānshēng, qǐngwèn dào Táinán huǒchēzhàn yào duōjiǔ?",
+          "gloss": "Driver, how long does it take to get to Tainan Train Station?"
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "二十分鐘就到了,今天路上很快。",
+          "pinyin": "Èrshí fēnzhōng jiù dào le, jīntiān lùshàng hěn kuài.",
+          "gloss": "We'll be there in twenty minutes; the roads are clear today."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "好,我要去買禮物送我弟弟。",
+          "pinyin": "Hǎo, wǒ yào qù mǎi lǐwù sòng wǒ dìdi.",
+          "gloss": "Great, I'm going to buy a gift for my younger brother."
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "他喜歡什麼?",
+          "pinyin": "Tā xǐhuān shénme?",
+          "gloss": "What does he like?"
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "他的腳踏車太舊了,可是新的太貴。",
+          "pinyin": "Tā de jiǎotàchē tài jiù le, kěshì xīn de tài guì.",
+          "gloss": "His bike is too old, but a new one is too expensive."
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "那買一雙新鞋吧,他一定很滿意喔!",
+          "pinyin": "Nà mǎi yì shuāng xīn xié ba, tā yídìng hěn mǎnyì o!",
+          "gloss": "Then buy him a pair of new shoes — he'll surely be pleased!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這個",
+            "禮物",
+            "是",
+            "給",
+            "你",
+            "的"
+          ],
+          "pinyin": "Zhè ge lǐwù shì gěi nǐ de.",
+          "gloss": "This gift is for you.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "那位",
+            "司機",
+            "很",
+            "會",
+            "開車"
+          ],
+          "pinyin": "Nà wèi sījī hěn huì kāichē.",
+          "gloss": "That driver drives really well.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "提高",
+            "我的",
+            "中文",
+            "程度"
+          ],
+          "pinyin": "Wǒ xiǎng tígāo wǒ de Zhōngwén chéngdù.",
+          "gloss": "I want to improve my Chinese level.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我的",
+            "手機",
+            "太",
+            "舊",
+            "了"
+          ],
+          "pinyin": "Wǒ de shǒujī tài jiù le.",
+          "gloss": "My cellphone is too old.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "老闆",
+            "對",
+            "我的",
+            "工作",
+            "很",
+            "滿意"
+          ],
+          "pinyin": "Lǎobǎn duì wǒ de gōngzuò hěn mǎnyì.",
+          "gloss": "The boss is very satisfied with my work.",
+          "cloze_index": 5
+        }
+      ]
     },
     {
       "id": "l_hsk3_10_3",
@@ -133,7 +476,12 @@
           "pinyin": "huáng",
           "gloss": "yellow; pornographic; to fall through",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那雙黃色的鞋真好看。",
+            "pinyin": "Nà shuāng huángsè de xié zhēn hǎokàn.",
+            "gloss": "That pair of yellow shoes looks really nice."
+          }
         },
         {
           "id": "v_經理",
@@ -141,7 +489,12 @@
           "pinyin": "jīng lǐ",
           "gloss": "manager; director",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "經理明天要去北京開會。",
+            "pinyin": "Jīnglǐ míngtiān yào qù Běijīng kāihuì.",
+            "gloss": "The manager is going to Beijing for a meeting tomorrow."
+          }
         },
         {
           "id": "v_興趣",
@@ -149,7 +502,12 @@
           "pinyin": "xìng qù",
           "gloss": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我對畫畫很有興趣。",
+            "pinyin": "Wǒ duì huàhuà hěn yǒu xìngqù.",
+            "gloss": "I'm very interested in drawing."
+          }
         },
         {
           "id": "v_幫忙",
@@ -157,7 +515,12 @@
           "pinyin": "bāng máng",
           "gloss": "to help; to lend a hand; to do a favor",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個太重了，可以幫忙一下嗎？",
+            "pinyin": "Zhège tài zhòng le, kěyǐ bāngmáng yíxià ma?",
+            "gloss": "This is too heavy — could you give me a hand?"
+          }
         },
         {
           "id": "v_電子",
@@ -165,7 +528,12 @@
           "pinyin": "diàn zǐ",
           "gloss": "electronic; electron (particle physics)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我用電子郵件把照片寄給你。",
+            "pinyin": "Wǒ yòng diànzǐ yóujiàn bǎ zhàopiàn jì gěi nǐ.",
+            "gloss": "I'll send you the photos by email."
+          }
         },
         {
           "id": "v_成績",
@@ -173,12 +541,142 @@
           "pinyin": "chéng jì",
           "gloss": "achievement; performance records; grades",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹這次考試的成績很好。",
+            "pinyin": "Wǒ mèimei zhè cì kǎoshì de chéngjī hěn hǎo.",
+            "gloss": "My younger sister's grades on this test were very good."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "對……（很）有興趣 — to be interested in something",
+          "pattern": "Subject + 對 + Noun/Verb phrase + (很)有興趣 / 沒有興趣",
+          "explanation": "To say what you are interested in, use 對 to introduce the thing, then 有興趣 at the end. Add 很 for emphasis, or use 沒有興趣 for the negative. The question form is 對……有興趣嗎？",
+          "examples": [
+            {
+              "hanzi": "我對音樂很有興趣。",
+              "pinyin": "Wǒ duì yīnyuè hěn yǒu xìngqù.",
+              "gloss": "I'm very interested in music."
+            },
+            {
+              "hanzi": "他對打籃球沒有興趣。",
+              "pinyin": "Tā duì dǎ lánqiú méiyǒu xìngqù.",
+              "gloss": "He isn't interested in playing basketball."
+            },
+            {
+              "hanzi": "你對學漢語有興趣嗎？",
+              "pinyin": "Nǐ duì xué Hànyǔ yǒu xìngqù ma?",
+              "gloss": "Are you interested in learning Chinese?"
+            }
+          ],
+          "id": "g_hsk3_10_3_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "黃經理，您要的電子郵件我已經寄出去了。",
+          "pinyin": "Huáng jīnglǐ, nín yào de diànzǐ yóujiàn wǒ yǐjīng jì chūqù le.",
+          "gloss": "Manager Huang, I've already sent out the email you wanted."
+        },
+        {
+          "speaker": "黃經理",
+          "hanzi": "謝謝你幫忙，這次的成績真的很好。",
+          "pinyin": "Xièxie nǐ bāngmáng, zhè cì de chéngjī zhēnde hěn hǎo.",
+          "gloss": "Thanks for your help — this time the results were really good."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我對這些事很有興趣，所以做得很開心。",
+          "pinyin": "Wǒ duì zhèxiē shì hěn yǒu xìngqù, suǒyǐ zuò de hěn kāixīn.",
+          "gloss": "I'm really interested in this kind of thing, so I enjoy doing it."
+        },
+        {
+          "speaker": "黃經理",
+          "hanzi": "那下個月的會，也請你幫忙喔。",
+          "pinyin": "Nà xià ge yuè de huì, yě qǐng nǐ bāngmáng ō.",
+          "gloss": "Then please help out with next month's meeting too."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "好啊，沒問題！",
+          "pinyin": "Hǎo a, méi wèntí!",
+          "gloss": "Sure, no problem!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "經理",
+            "很",
+            "會",
+            "說",
+            "漢語"
+          ],
+          "pinyin": "Wǒmen jīnglǐ hěn huì shuō Hànyǔ.",
+          "gloss": "Our manager speaks Chinese very well.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "對",
+            "跳舞",
+            "很",
+            "有",
+            "興趣"
+          ],
+          "pinyin": "Tā duì tiàowǔ hěn yǒu xìngqù.",
+          "gloss": "He is very interested in dancing.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "請",
+            "你",
+            "幫忙",
+            "寄",
+            "電子",
+            "郵件"
+          ],
+          "pinyin": "Qǐng nǐ bāngmáng jì diànzǐ yóujiàn.",
+          "gloss": "Please help send the email.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "那",
+            "輛",
+            "黃色",
+            "的",
+            "車",
+            "是",
+            "經理",
+            "的"
+          ],
+          "pinyin": "Nà liàng huángsè de chē shì jīnglǐ de.",
+          "gloss": "That yellow car is the manager's.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "老師",
+            "說",
+            "我",
+            "的",
+            "成績",
+            "有",
+            "進步"
+          ],
+          "pinyin": "Lǎoshī shuō wǒ de chéngjī yǒu jìnbù.",
+          "gloss": "The teacher said my grades have improved.",
+          "cloze_index": 4
+        }
+      ]
     }
   ],
   "sort_order": 38,

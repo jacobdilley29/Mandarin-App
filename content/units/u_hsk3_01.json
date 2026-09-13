@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 1",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_01_1",
@@ -17,7 +17,12 @@
           "pinyin": "à",
           "gloss": "interjection or grunt of agreement; uhm; Ah, OK",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "啊，我知道了！",
+            "pinyin": "À, wǒ zhīdào le!",
+            "gloss": "Ah, I get it now!"
+          }
         },
         {
           "id": "v_把",
@@ -25,7 +30,12 @@
           "pinyin": "bǎ",
           "gloss": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請把門關上。",
+            "pinyin": "Qǐng bǎ mén guān shàng.",
+            "gloss": "Please close the door."
+          }
         },
         {
           "id": "v_被",
@@ -33,7 +43,12 @@
           "pinyin": "bèi",
           "gloss": "quilt; to cover (with); (literary) to suffer (a misfortune)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的傘被他帶走了。",
+            "pinyin": "Wǒ de sǎn bèi tā dài zǒu le.",
+            "gloss": "My umbrella was taken away by him."
+          }
         },
         {
           "id": "v_自己",
@@ -41,7 +56,12 @@
           "pinyin": "zì jǐ",
           "gloss": "oneself; one's own",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我自己一個人去看電影。",
+            "pinyin": "Wǒ zìjǐ yí ge rén qù kàn diànyǐng.",
+            "gloss": "I go to the movies by myself."
+          }
         },
         {
           "id": "v_用",
@@ -49,7 +69,12 @@
           "pinyin": "yòng",
           "gloss": "to use; to employ; to have to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我用悠遊卡搭捷運。",
+            "pinyin": "Wǒ yòng Yōuyóukǎ dā jiéyùn.",
+            "gloss": "I use an EasyCard to take the MRT."
+          }
         },
         {
           "id": "v_如果",
@@ -57,12 +82,156 @@
           "pinyin": "rú guǒ",
           "gloss": "if; in case; in the event that",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "如果下雨，我們就不去了。",
+            "pinyin": "Rúguǒ xià yǔ, wǒmen jiù bú qù le.",
+            "gloss": "If it rains, we won't go."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "把字句：把 + 受詞 + 動詞",
+          "pattern": "主語 + 把 + 受詞 + 動詞 + 了／完／補語",
+          "explanation": "用「把」可以先說出你要處理的東西，再說你對它做了什麼。動詞後面常常要加「了」、「完」或方向、地點等補語，不能只用一個動詞。",
+          "examples": [
+            {
+              "hanzi": "我把藥吃了。",
+              "pinyin": "Wǒ bǎ yào chī le.",
+              "gloss": "I took the medicine."
+            },
+            {
+              "hanzi": "我把腳踏車騎到學校。",
+              "pinyin": "Wǒ bǎ jiǎotàchē qí dào xuéxiào.",
+              "gloss": "I rode the bike to school."
+            },
+            {
+              "hanzi": "請把電視關了，我要睡了。",
+              "pinyin": "Qǐng bǎ diànshì guān le, wǒ yào shuì le.",
+              "gloss": "Please turn off the TV, I'm going to sleep."
+            }
+          ],
+          "id": "g_hsk3_01_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_01_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "姐姐",
+          "hanzi": "弟弟，我的便當呢？",
+          "pinyin": "Dìdi, wǒ de biàndāng ne?",
+          "gloss": "Little brother, where's my lunchbox?"
+        },
+        {
+          "speaker": "弟弟",
+          "hanzi": "啊，被我吃了，對不起啦。",
+          "pinyin": "À, bèi wǒ chī le, duìbùqǐ la.",
+          "gloss": "Ah, I ate it. Sorry!"
+        },
+        {
+          "speaker": "姐姐",
+          "hanzi": "你自己不會去買嗎？",
+          "pinyin": "Nǐ zìjǐ bú huì qù mǎi ma?",
+          "gloss": "Can't you go buy your own?"
+        },
+        {
+          "speaker": "弟弟",
+          "hanzi": "如果你想吃，我現在就去買。",
+          "pinyin": "Rúguǒ nǐ xiǎng chī, wǒ xiànzài jiù qù mǎi.",
+          "gloss": "If you want to eat, I'll go buy some now."
+        },
+        {
+          "speaker": "姐姐",
+          "hanzi": "好啦，那你把錢帶著。",
+          "pinyin": "Hǎo la, nà nǐ bǎ qián dài zhe.",
+          "gloss": "OK then, take the money with you."
+        },
+        {
+          "speaker": "弟弟",
+          "hanzi": "好，我快去快回！",
+          "pinyin": "Hǎo, wǒ kuài qù kuài huí!",
+          "gloss": "OK, I'll be right back!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "用",
+            "手機",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Wǒ yòng shǒujī kàn diànyǐng.",
+          "gloss": "I watch movies on my phone.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "如果",
+            "你",
+            "累",
+            "了",
+            "，",
+            "就",
+            "早",
+            "點",
+            "睡"
+          ],
+          "pinyin": "Rúguǒ nǐ lèi le, jiù zǎo diǎn shuì.",
+          "gloss": "If you're tired, go to bed early.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "便當",
+            "被",
+            "弟弟",
+            "吃",
+            "了"
+          ],
+          "pinyin": "Wǒ de biàndāng bèi dìdi chī le.",
+          "gloss": "My lunchbox was eaten by my little brother.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "自己",
+            "走",
+            "路",
+            "回家"
+          ],
+          "pinyin": "Tā zìjǐ zǒu lù huí jiā.",
+          "gloss": "He walks home by himself.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "那",
+            "杯",
+            "茶",
+            "給",
+            "我"
+          ],
+          "pinyin": "Qǐng bǎ nà bēi chá gěi wǒ.",
+          "gloss": "Please give me that cup of tea.",
+          "cloze_index": 1
+        }
+      ]
     },
     {
       "id": "l_hsk3_01_2",
@@ -75,7 +244,12 @@
           "pinyin": "yòu",
           "gloss": "(once) again; also; both... and...",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他昨天又來我家了。",
+            "pinyin": "Tā zuótiān yòu lái wǒ jiā le.",
+            "gloss": "He came to my place again yesterday."
+          }
         },
         {
           "id": "v_只",
@@ -83,7 +257,12 @@
           "pinyin": "zhǐ",
           "gloss": "only; merely; just",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我身上只有一百塊。",
+            "pinyin": "Wǒ shēnshàng zhǐ yǒu yìbǎi kuài.",
+            "gloss": "I only have a hundred dollars on me."
+          }
         },
         {
           "id": "v_更",
@@ -91,7 +270,12 @@
           "pinyin": "gèng",
           "gloss": "more; even more; further",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件紅色的更好看喔。",
+            "pinyin": "Zhè jiàn hóngsè de gèng hǎokàn ō.",
+            "gloss": "This red one looks even better."
+          }
         },
         {
           "id": "v_需要",
@@ -99,7 +283,12 @@
           "pinyin": "xū yào",
           "gloss": "to need; to want; to demand; to require; needs",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你需要我幫忙嗎?",
+            "pinyin": "Nǐ xūyào wǒ bāngmáng ma?",
+            "gloss": "Do you need me to help?"
+          }
         },
         {
           "id": "v_地",
@@ -107,7 +296,12 @@
           "pinyin": "dì",
           "gloss": "earth; ground; field",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下雨了,地上都是水。",
+            "pinyin": "Xià yǔ le, dìshàng dōu shì shuǐ.",
+            "gloss": "It's raining; there's water all over the ground."
+          }
         },
         {
           "id": "v_才",
@@ -115,12 +309,149 @@
           "pinyin": "cái",
           "gloss": "ability; talent; sb of a certain type; a capable individual",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他晚上十點才回家。",
+            "pinyin": "Tā wǎnshàng shí diǎn cái huí jiā.",
+            "gloss": "He doesn't get home until ten at night."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "又……又…… (both... and...)",
+          "pattern": "Subject + 又 + Adj/Verb 1 + 又 + Adj/Verb 2",
+          "explanation": "用「又……又……」放在兩個形容詞或動詞前面,表示兩個情況同時存在,像英文的 both... and...。注意兩邊的意思要一樣是好的,或一樣是不好的。",
+          "examples": [
+            {
+              "hanzi": "這家店的麵又便宜又好吃。",
+              "pinyin": "Zhè jiā diàn de miàn yòu piányí yòu hǎochī.",
+              "gloss": "The noodles at this shop are both cheap and tasty."
+            },
+            {
+              "hanzi": "他又高又會打籃球。",
+              "pinyin": "Tā yòu gāo yòu huì dǎ lánqiú.",
+              "gloss": "He is tall and good at basketball."
+            },
+            {
+              "hanzi": "她又累又想睡覺。",
+              "pinyin": "Tā yòu lèi yòu xiǎng shuìjiào.",
+              "gloss": "She is tired and sleepy."
+            }
+          ],
+          "id": "g_hsk3_01_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "外面又下雨了,地上都是水。",
+          "pinyin": "Wàimiàn yòu xià yǔ le, dìshàng dōu shì shuǐ.",
+          "gloss": "It's raining again outside; the ground is all wet."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "對啊,你需要雨傘嗎?我有兩把。",
+          "pinyin": "Duì a, nǐ xūyào yǔsǎn ma? Wǒ yǒu liǎng bǎ.",
+          "gloss": "Yeah. Do you need an umbrella? I have two."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "謝謝,我只要一把就好。",
+          "pinyin": "Xièxie, wǒ zhǐ yào yì bǎ jiù hǎo.",
+          "gloss": "Thanks, one is enough for me."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "這家店的麵又便宜又好吃,我們先進去吃吧。",
+          "pinyin": "Zhè jiā diàn de miàn yòu piányí yòu hǎochī, wǒmen xiān jìnqù chī ba.",
+          "gloss": "The noodles here are cheap and tasty; let's go in and eat first."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "好啊,可是我八點才能回家。",
+          "pinyin": "Hǎo a, kěshì wǒ bā diǎn cái néng huí jiā.",
+          "gloss": "Sure, but I can't head home until eight."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "沒問題,坐捷運更快。",
+          "pinyin": "Méi wèntí, zuò jiéyùn gèng kuài.",
+          "gloss": "No problem, taking the MRT is even faster."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "家",
+            "店",
+            "的",
+            "便當",
+            "又",
+            "便宜",
+            "又",
+            "好吃"
+          ],
+          "pinyin": "Zhè jiā diàn de biàndāng yòu piányí yòu hǎochī.",
+          "gloss": "The bentos at this shop are both cheap and tasty.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "只",
+            "有",
+            "五十",
+            "塊",
+            "錢"
+          ],
+          "pinyin": "Wǒ zhǐ yǒu wǔshí kuài qián.",
+          "gloss": "I only have fifty dollars.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "比",
+            "那",
+            "件",
+            "更",
+            "貴"
+          ],
+          "pinyin": "Zhè jiàn bǐ nà jiàn gèng guì.",
+          "gloss": "This one is even more expensive than that one.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "你",
+            "需要",
+            "我",
+            "幫",
+            "你",
+            "嗎"
+          ],
+          "pinyin": "Nǐ xūyào wǒ bāng nǐ ma?",
+          "gloss": "Do you need me to help you?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "九",
+            "點",
+            "才",
+            "到",
+            "家"
+          ],
+          "pinyin": "Tā jiǔ diǎn cái dào jiā.",
+          "gloss": "He didn't get home until nine.",
+          "cloze_index": 3
+        }
+      ]
     },
     {
       "id": "l_hsk3_01_3",
@@ -133,7 +464,12 @@
           "pinyin": "gēn",
           "gloss": "heel; to follow closely; to go with",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我跟同學一起去吃飯。",
+            "pinyin": "Wǒ gēn tóngxué yìqǐ qù chīfàn.",
+            "gloss": "I'm going to eat with my classmate."
+          }
         },
         {
           "id": "v_像",
@@ -141,7 +477,12 @@
           "pinyin": "xiàng",
           "gloss": "to resemble; to be like; to look as if",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你哥哥長得很像你爸爸。",
+            "pinyin": "Nǐ gēge zhǎng de hěn xiàng nǐ bàba.",
+            "gloss": "Your older brother looks a lot like your dad."
+          }
         },
         {
           "id": "v_還是",
@@ -149,7 +490,12 @@
           "pinyin": "hái shi",
           "gloss": "still (as before); had better; unexpectedly",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "太晚了，你還是早點睡吧。",
+            "pinyin": "Tài wǎn le, nǐ háishì zǎodiǎn shuì ba.",
+            "gloss": "It's late — you'd better go to sleep early."
+          }
         },
         {
           "id": "v_認為",
@@ -157,7 +503,12 @@
           "pinyin": "rèn wéi",
           "gloss": "to believe; to think; to consider; to feel",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我認為這家店的牛肉麵最好吃。",
+            "pinyin": "Wǒ rènwéi zhè jiā diàn de niúròumiàn zuì hǎochī.",
+            "gloss": "I think this shop's beef noodles are the tastiest."
+          }
         },
         {
           "id": "v_應該",
@@ -165,7 +516,12 @@
           "pinyin": "yīng gāi",
           "gloss": "ought to; should; must",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你不舒服，應該多喝水。",
+            "pinyin": "Nǐ bù shūfú, yīnggāi duō hē shuǐ.",
+            "gloss": "You're not feeling well; you should drink more water."
+          }
         },
         {
           "id": "v_位",
@@ -173,12 +529,172 @@
           "pinyin": "wèi",
           "gloss": "position; location; place",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那位老闆人很好。",
+            "pinyin": "Nà wèi lǎobǎn rén hěn hǎo.",
+            "gloss": "That boss is very nice."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "應該 — expressing what someone should do",
+          "pattern": "Subject + (不) 應該 + Verb Phrase",
+          "explanation": "應該 (yīnggāi) goes before the verb to say what someone ought to do. To make it negative, put 不 before 應該: 不應該 means \"shouldn't\". It is often used with 我認為 to give an opinion, for example 我認為你應該早點睡。",
+          "examples": [
+            {
+              "hanzi": "你應該早點出門。",
+              "pinyin": "Nǐ yīnggāi zǎodiǎn chūmén.",
+              "gloss": "You should leave a bit earlier."
+            },
+            {
+              "hanzi": "我們應該搭捷運去。",
+              "pinyin": "Wǒmen yīnggāi dā jiéyùn qù.",
+              "gloss": "We should take the MRT there."
+            },
+            {
+              "hanzi": "你不應該吃太多糖。",
+              "pinyin": "Nǐ bù yīnggāi chī tài duō táng.",
+              "gloss": "You shouldn't eat too much sugar."
+            }
+          ],
+          "id": "g_hsk3_01_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "跟 — doing something with someone",
+          "pattern": "A + 跟 + B + 一起 + Verb",
+          "explanation": "跟 (gēn) links two people and means \"with\". It comes before the verb, and 一起 (together) is often added after it: 我跟他一起去。",
+          "examples": [
+            {
+              "hanzi": "我跟妹妹一起看電視。",
+              "pinyin": "Wǒ gēn mèimei yìqǐ kàn diànshì.",
+              "gloss": "I watch TV with my little sister."
+            },
+            {
+              "hanzi": "你要跟我們一起去嗎？",
+              "pinyin": "Nǐ yào gēn wǒmen yìqǐ qù ma?",
+              "gloss": "Do you want to go with us?"
+            },
+            {
+              "hanzi": "他跟老闆一起去餐廳。",
+              "pinyin": "Tā gēn lǎobǎn yìqǐ qù cāntīng.",
+              "gloss": "He went to the restaurant with the boss."
+            }
+          ],
+          "id": "g_hsk3_01_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "週末我們去哪裡玩？",
+          "pinyin": "Zhōumò wǒmen qù nǎlǐ wán?",
+          "gloss": "Where should we go this weekend?"
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "我認為我們可以去騎腳踏車。",
+          "pinyin": "Wǒ rènwéi wǒmen kěyǐ qù qí jiǎotàchē.",
+          "gloss": "I think we could go ride bikes."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "可是外面下雨，我們還是搭捷運去看電影吧。",
+          "pinyin": "Kěshì wàimiàn xià yǔ, wǒmen háishì dā jiéyùn qù kàn diànyǐng ba.",
+          "gloss": "But it's raining outside — let's just take the MRT to see a movie."
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "好啊，你跟我一起去買票。",
+          "pinyin": "Hǎo a, nǐ gēn wǒ yìqǐ qù mǎi piào.",
+          "gloss": "Okay, come buy tickets with me."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "那位小姐說，晚上的票已經賣完了。",
+          "pinyin": "Nà wèi xiǎojiě shuō, wǎnshàng de piào yǐjīng mài wán le.",
+          "gloss": "That lady says the evening tickets are already sold out."
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "那我們應該早一點來。",
+          "pinyin": "Nà wǒmen yīnggāi zǎo yìdiǎn lái.",
+          "gloss": "Then we should come earlier."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "跟",
+            "姐姐",
+            "一起",
+            "去",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Wǒ gēn jiějie yìqǐ qù kàn diànyǐng.",
+          "gloss": "I'm going to see a movie with my older sister.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "應該",
+            "多",
+            "休息"
+          ],
+          "pinyin": "Nǐ yīnggāi duō xiūxí.",
+          "gloss": "You should rest more.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "認為",
+            "這",
+            "家",
+            "餐廳",
+            "不",
+            "貴"
+          ],
+          "pinyin": "Wǒ rènwéi zhè jiā cāntīng bú guì.",
+          "gloss": "I think this restaurant isn't expensive.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "那",
+            "位",
+            "小姐",
+            "長得",
+            "很",
+            "像",
+            "我",
+            "同學"
+          ],
+          "pinyin": "Nà wèi xiǎojiě zhǎng de hěn xiàng wǒ tóngxué.",
+          "gloss": "That lady looks a lot like my classmate.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "下雨",
+            "了",
+            "我們",
+            "還是",
+            "搭",
+            "捷運",
+            "吧"
+          ],
+          "pinyin": "Xià yǔ le, wǒmen háishì dā jiéyùn ba.",
+          "gloss": "It's raining; we'd better take the MRT.",
+          "cloze_index": 3
+        }
+      ]
     }
   ],
   "sort_order": 29,

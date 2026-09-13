@@ -4,7 +4,7 @@
   "subtitle": "HSK 2 vocabulary · set 8",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_08_1",
@@ -17,7 +17,12 @@
           "pinyin": "qíng",
           "gloss": "clear; fine (weather)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "昨天是晴天，我和哥哥去打籃球。",
+            "pinyin": "Zuótiān shì qíngtiān, wǒ hé gēge qù dǎ lánqiú.",
+            "gloss": "Yesterday was a clear day; my older brother and I went to play basketball."
+          }
         },
         {
           "id": "v_羊肉",
@@ -25,7 +30,12 @@
           "pinyin": "yáng ròu",
           "gloss": "mutton; goat meat",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的羊肉麵很好吃。",
+            "pinyin": "Zhè jiā diàn de yángròu miàn hěn hǎochī.",
+            "gloss": "The mutton noodles at this shop are delicious."
+          }
         },
         {
           "id": "v_打籃球",
@@ -33,12 +43,148 @@
           "pinyin": "dǎ lán qiú",
           "gloss": "to play basketball",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我常和同學打籃球。",
+            "pinyin": "Zhōumò wǒ cháng hé tóngxué dǎ lánqiú.",
+            "gloss": "On weekends I often play basketball with my classmates."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "因為…，所以… (because…, therefore…)",
+          "pattern": "因為 + 原因，所以 + 結果",
+          "explanation": "In Chinese, 因為 introduces the reason and 所以 introduces the result. Unlike English, both words can appear in the same sentence. The 因為 clause comes first, and the subject can go before or after 因為.",
+          "examples": [
+            {
+              "hanzi": "因為昨天是晴天，所以我們去打籃球。",
+              "pinyin": "Yīnwèi zuótiān shì qíngtiān, suǒyǐ wǒmen qù dǎ lánqiú.",
+              "gloss": "Because yesterday was a clear day, we went to play basketball."
+            },
+            {
+              "hanzi": "因為我身體不舒服，所以沒去打籃球。",
+              "pinyin": "Yīnwèi wǒ shēntǐ bù shūfú, suǒyǐ méi qù dǎ lánqiú.",
+              "gloss": "Because I wasn't feeling well, I didn't go play basketball."
+            },
+            {
+              "hanzi": "因為他不吃羊肉，所以我們吃牛肉麵。",
+              "pinyin": "Yīnwèi tā bù chī yángròu, suǒyǐ wǒmen chī niúròu miàn.",
+              "gloss": "Because he doesn't eat mutton, we're having beef noodles."
+            }
+          ],
+          "id": "g_hsk2_08_1_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk2_08_1_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "喂，週末天氣好嗎？",
+          "pinyin": "Wéi, zhōumò tiānqì hǎo ma?",
+          "gloss": "Hey, is the weather good this weekend?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "電視說週末是晴天。",
+          "pinyin": "Diànshì shuō zhōumò shì qíngtiān.",
+          "gloss": "The TV says this weekend will be clear."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太好了！我們去打籃球，好不好？",
+          "pinyin": "Tài hǎo le! Wǒmen qù dǎ lánqiú, hǎo bù hǎo?",
+          "gloss": "Great! Let's go play basketball, okay?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好，打完籃球去吃羊肉麵吧。",
+          "pinyin": "Hǎo, dǎ wán lánqiú qù chī yángròu miàn ba.",
+          "gloss": "Sure, after basketball let's go eat mutton noodles."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那家店就在捷運站旁邊，很近。",
+          "pinyin": "Nà jiā diàn jiù zài jiéyùn zhàn pángbiān, hěn jìn.",
+          "gloss": "That shop is right next to the MRT station, very close."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我們早一點去，人不會太多。",
+          "pinyin": "Wǒmen zǎo yìdiǎn qù, rén bú huì tài duō.",
+          "gloss": "Let's go a bit early, then there won't be too many people."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "昨天",
+            "是",
+            "晴天"
+          ],
+          "pinyin": "Zuótiān shì qíngtiān.",
+          "gloss": "Yesterday was a clear day.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "最",
+            "常",
+            "吃",
+            "羊肉",
+            "麵"
+          ],
+          "pinyin": "Wǒ zuì cháng chī yángròu miàn.",
+          "gloss": "I eat mutton noodles the most often.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "他們",
+            "在",
+            "外面",
+            "打籃球"
+          ],
+          "pinyin": "Tāmen zài wàimiàn dǎ lánqiú.",
+          "gloss": "They are playing basketball outside.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "餐廳",
+            "的",
+            "羊肉",
+            "很",
+            "好吃"
+          ],
+          "pinyin": "Zhè jiā cāntīng de yángròu hěn hǎochī.",
+          "gloss": "The mutton at this restaurant is delicious.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "週末",
+            "我",
+            "想",
+            "去",
+            "打籃球"
+          ],
+          "pinyin": "Zhōumò wǒ xiǎng qù dǎ lánqiú.",
+          "gloss": "I want to go play basketball this weekend.",
+          "cloze_index": 4
+        }
+      ]
     }
   ],
   "sort_order": 28,

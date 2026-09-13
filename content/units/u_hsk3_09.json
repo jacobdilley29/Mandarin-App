@@ -17,7 +17,12 @@
           "pinyin": "huài",
           "gloss": "bad; spoiled; broken",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的手機壞了，不能打電話。",
+            "pinyin": "Wǒ de shǒujī huài le, bù néng dǎ diànhuà.",
+            "gloss": "My phone is broken; I can't make calls."
+          }
         },
         {
           "id": "v_一邊",
@@ -25,7 +30,12 @@
           "pinyin": "yī biān",
           "gloss": "one side; either side; on the one hand",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他一邊走路一邊聽音樂。",
+            "pinyin": "Tā yìbiān zǒulù yìbiān tīng yīnyuè.",
+            "gloss": "He listens to music while walking."
+          }
         },
         {
           "id": "v_鞋",
@@ -33,7 +43,12 @@
           "pinyin": "xié",
           "gloss": "shoe",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這雙鞋很漂亮，也不貴。",
+            "pinyin": "Zhè shuāng xié hěn piàoliang, yě bú guì.",
+            "gloss": "These shoes are pretty, and not expensive either."
+          }
         },
         {
           "id": "v_習慣",
@@ -41,7 +56,12 @@
           "pinyin": "xí guàn",
           "gloss": "habit; custom; usual practice",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我已經習慣早起了。",
+            "pinyin": "Wǒ yǐjīng xíguàn zǎo qǐ le.",
+            "gloss": "I've already gotten used to getting up early."
+          }
         },
         {
           "id": "v_變化",
@@ -49,7 +69,12 @@
           "pinyin": "biàn huà",
           "gloss": "(intransitive) to change; to vary; change; variation",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台北的天氣變化很大。",
+            "pinyin": "Táiběi de tiānqì biànhuà hěn dà.",
+            "gloss": "Taipei's weather changes a lot."
+          }
         },
         {
           "id": "v_忘記",
@@ -57,12 +82,143 @@
           "pinyin": "wàng jì",
           "gloss": "to forget",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我忘記帶悠遊卡了。",
+            "pinyin": "Wǒ wàngjì dài Yōuyóukǎ le.",
+            "gloss": "I forgot to bring my EasyCard."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "一邊……一邊…… (doing two things at once)",
+          "pattern": "Subject + 一邊 + V1 + 一邊 + V2",
+          "explanation": "Use 一邊……一邊…… to say that someone does two actions at the same time. Each 一邊 goes right before a verb phrase. In Taiwan it is usually read yìbiān. It is only for two actions done by the same person at the same time.",
+          "examples": [
+            {
+              "hanzi": "她一邊吃早餐一邊看新聞。",
+              "pinyin": "Tā yìbiān chī zǎocān yìbiān kàn xīnwén.",
+              "gloss": "She watches the news while eating breakfast."
+            },
+            {
+              "hanzi": "我們一邊喝茶一邊說話。",
+              "pinyin": "Wǒmen yìbiān hē chá yìbiān shuōhuà.",
+              "gloss": "We chat while drinking tea."
+            },
+            {
+              "hanzi": "別一邊騎腳踏車一邊看手機。",
+              "pinyin": "Bié yìbiān qí jiǎotàchē yìbiān kàn shǒujī.",
+              "gloss": "Don't look at your phone while riding a bike."
+            }
+          ],
+          "id": "g_hsk3_09_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你的鞋怎麼了？",
+          "pinyin": "Nǐ de xié zěnme le?",
+          "gloss": "What happened to your shoes?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我一邊跑一邊看手機，走一走就壞了。",
+          "pinyin": "Wǒ yìbiān pǎo yìbiān kàn shǒujī, zǒu yi zǒu jiù huài le.",
+          "gloss": "I was running and looking at my phone, and after a while they broke."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那我們去那家店看看新鞋吧。",
+          "pinyin": "Nà wǒmen qù nà jiā diàn kànkan xīn xié ba.",
+          "gloss": "Then let's go to that shop and look at new shoes."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好啊，我習慣穿黑色的鞋。",
+          "pinyin": "Hǎo a, wǒ xíguàn chuān hēisè de xié.",
+          "gloss": "OK, I'm used to wearing black shoes."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "這雙怎麼樣？顏色很好看，也不貴。",
+          "pinyin": "Zhè shuāng zěnmeyàng? Yánsè hěn hǎokàn, yě bú guì.",
+          "gloss": "How about this pair? The color looks nice and it's not expensive."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不錯！可是我差點忘記帶錢了。",
+          "pinyin": "Búcuò! Kěshì wǒ chàdiǎn wàngjì dài qián le.",
+          "gloss": "Not bad! But I almost forgot to bring money."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "忘記",
+            "你的",
+            "名字",
+            "了"
+          ],
+          "pinyin": "Wǒ wàngjì nǐ de míngzì le.",
+          "gloss": "I forgot your name.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "雙",
+            "鞋",
+            "太",
+            "小",
+            "了"
+          ],
+          "pinyin": "Zhè shuāng xié tài xiǎo le.",
+          "gloss": "These shoes are too small.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "一邊",
+            "洗",
+            "衣服",
+            "一邊",
+            "唱歌"
+          ],
+          "pinyin": "Tā yìbiān xǐ yīfú yìbiān chànggē.",
+          "gloss": "He sings while washing clothes.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "還",
+            "不",
+            "習慣",
+            "這裡",
+            "的",
+            "天氣"
+          ],
+          "pinyin": "Wǒ hái bù xíguàn zhèlǐ de tiānqì.",
+          "gloss": "I'm still not used to the weather here.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我的",
+            "手機",
+            "壞",
+            "了"
+          ],
+          "pinyin": "Wǒ de shǒujī huài le.",
+          "gloss": "My phone is broken.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_09_2",
@@ -75,7 +231,12 @@
           "pinyin": "dǎ suàn",
           "gloss": "to plan; to intend; to calculate",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我這個週末打算去看電影。",
+            "pinyin": "Wǒ zhè ge zhōumò dǎsuàn qù kàn diànyǐng.",
+            "gloss": "I plan to go see a movie this weekend."
+          }
         },
         {
           "id": "v_極",
@@ -83,7 +244,12 @@
           "pinyin": "jí",
           "gloss": "extremely; pole (geography, physics); utmost",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的牛肉麵好吃極了。",
+            "pinyin": "Zhè jiā diàn de niúròumiàn hǎochī jí le.",
+            "gloss": "The beef noodles at this shop are extremely tasty."
+          }
         },
         {
           "id": "v_小心",
@@ -91,7 +257,12 @@
           "pinyin": "xiǎo xīn",
           "gloss": "to be careful; to take care",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面在下雨，騎腳踏車要小心一點。",
+            "pinyin": "Wàimiàn zài xià yǔ, qí jiǎotàchē yào xiǎoxīn yìdiǎn.",
+            "gloss": "It's raining outside; be a bit careful riding your bike."
+          }
         },
         {
           "id": "v_舉行",
@@ -99,7 +270,12 @@
           "pinyin": "jǔ xíng",
           "gloss": "to hold (a meeting, ceremony etc)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "學校下個月要舉行籃球賽。",
+            "pinyin": "Xuéxiào xià ge yuè yào jǔxíng lánqiúsài.",
+            "gloss": "The school is holding a basketball game next month."
+          }
         },
         {
           "id": "v_動物",
@@ -107,7 +283,12 @@
           "pinyin": "dòng wù",
           "gloss": "animal",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最愛的動物是馬。",
+            "pinyin": "Wǒ zuì ài de dòngwù shì mǎ.",
+            "gloss": "My favorite animal is the horse."
+          }
         },
         {
           "id": "v_餓",
@@ -115,12 +296,149 @@
           "pinyin": "è",
           "gloss": "to be hungry; hungry; to starve (sb)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我餓了，我們去吃飯吧。",
+            "pinyin": "Wǒ è le, wǒmen qù chīfàn ba.",
+            "gloss": "I'm hungry; let's go eat."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「打算」說你的計畫",
+          "pattern": "主語 + 打算 + 動詞短語",
+          "explanation": "「打算」放在動詞前面，表示心裡已經想好要做的事，像英文的 plan to / intend to。問人家的計畫可以說「你打算……？」，否定用「不打算」。",
+          "examples": [
+            {
+              "hanzi": "我打算這個週末去看球賽。",
+              "pinyin": "Wǒ dǎsuàn zhè ge zhōumò qù kàn qiúsài.",
+              "gloss": "I plan to go watch the ball game this weekend."
+            },
+            {
+              "hanzi": "學校打算下週六舉行籃球賽。",
+              "pinyin": "Xuéxiào dǎsuàn xià zhōuliù jǔxíng lánqiúsài.",
+              "gloss": "The school plans to hold a basketball game next Saturday."
+            },
+            {
+              "hanzi": "我餓了，打算先去買個便當。",
+              "pinyin": "Wǒ è le, dǎsuàn xiān qù mǎi ge biàndāng.",
+              "gloss": "I'm hungry, so I plan to go buy a lunch box first."
+            }
+          ],
+          "id": "g_hsk3_09_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_09_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "你這個週末打算做什麼？",
+          "pinyin": "Nǐ zhè ge zhōumò dǎsuàn zuò shénme?",
+          "gloss": "What do you plan to do this weekend?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "我打算跟弟弟去看動物，你要一起來嗎？",
+          "pinyin": "Wǒ dǎsuàn gēn dìdi qù kàn dòngwù, nǐ yào yìqǐ lái ma?",
+          "gloss": "I plan to go see the animals with my little brother. Want to come along?"
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "學校那天要舉行籃球賽，我看完就過去找你們。",
+          "pinyin": "Xuéxiào nà tiān yào jǔxíng lánqiúsài, wǒ kàn wán jiù guòqù zhǎo nǐmen.",
+          "gloss": "The school is holding a basketball game that day; I'll come find you after I watch it."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啊！你現在餓不餓？我餓極了。",
+          "pinyin": "Hǎo a! Nǐ xiànzài è bu è? Wǒ è jí le.",
+          "gloss": "Great! Are you hungry now? I'm starving."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "我也是，我們先去買便當吧。",
+          "pinyin": "Wǒ yě shì, wǒmen xiān qù mǎi biàndāng ba.",
+          "gloss": "Me too. Let's go buy lunch boxes first."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好，外面在下雨，騎車小心一點。",
+          "pinyin": "Hǎo, wàimiàn zài xià yǔ, qí chē xiǎoxīn yìdiǎn.",
+          "gloss": "OK. It's raining outside, so ride carefully."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "打算",
+            "明天",
+            "去",
+            "看",
+            "動物。"
+          ],
+          "pinyin": "Wǒ dǎsuàn míngtiān qù kàn dòngwù.",
+          "gloss": "I plan to go see animals tomorrow.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "騎",
+            "腳踏車",
+            "要",
+            "小心",
+            "一點。"
+          ],
+          "pinyin": "Qí jiǎotàchē yào xiǎoxīn yìdiǎn.",
+          "gloss": "You should be careful riding a bike.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "現在",
+            "餓",
+            "極了。"
+          ],
+          "pinyin": "Wǒ xiànzài è jí le.",
+          "gloss": "I'm extremely hungry right now.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "學校",
+            "明天",
+            "舉行",
+            "籃球賽。"
+          ],
+          "pinyin": "Xuéxiào míngtiān jǔxíng lánqiúsài.",
+          "gloss": "The school is holding a basketball game tomorrow.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "餐廳",
+            "的",
+            "菜",
+            "好吃",
+            "極了。"
+          ],
+          "pinyin": "Zhè jiā cāntīng de cài hǎochī jí le.",
+          "gloss": "The food at this restaurant is extremely delicious.",
+          "cloze_index": 6
+        }
+      ]
     },
     {
       "id": "l_hsk3_09_3",
@@ -133,7 +451,12 @@
           "pinyin": "shù",
           "gloss": "tree; to cultivate; to set up",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "學校前面有很多樹。",
+            "pinyin": "Xuéxiào qiánmiàn yǒu hěn duō shù.",
+            "gloss": "There are many trees in front of the school."
+          }
         },
         {
           "id": "v_水平",
@@ -141,7 +464,12 @@
           "pinyin": "shuǐ píng",
           "gloss": "level (of achievement etc); standard; horizontal",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的中文水平很高。",
+            "pinyin": "Tā de Zhōngwén shuǐpíng hěn gāo.",
+            "gloss": "His Chinese level is very high."
+          }
         },
         {
           "id": "v_借",
@@ -149,7 +477,12 @@
           "pinyin": "jiè",
           "gloss": "to lend; to borrow; by means of",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你可以借我一把傘嗎?",
+            "pinyin": "Nǐ kěyǐ jiè wǒ yì bǎ sǎn ma?",
+            "gloss": "Can you lend me an umbrella?"
+          }
         },
         {
           "id": "v_東",
@@ -157,7 +490,12 @@
           "pinyin": "dōng",
           "gloss": "east; host (i.e. sitting on east side of guest); landlord",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在學校的東邊。",
+            "pinyin": "Yóujú zài xuéxiào de dōngbiān.",
+            "gloss": "The post office is on the east side of the school."
+          }
         },
         {
           "id": "v_頭髮",
@@ -165,7 +503,12 @@
           "pinyin": "tóu fa",
           "gloss": "hair (on the head)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹的頭髮很長。",
+            "pinyin": "Wǒ mèimei de tóufǎ hěn cháng.",
+            "gloss": "My younger sister's hair is very long."
+          }
         },
         {
           "id": "v_害怕",
@@ -173,12 +516,149 @@
           "pinyin": "hài pà",
           "gloss": "to be afraid; to be scared",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我弟弟晚上很害怕。",
+            "pinyin": "Wǒ dìdi wǎnshàng hěn hàipà.",
+            "gloss": "My younger brother gets scared at night."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "跟⋯⋯借⋯⋯ (borrow something from someone)",
+          "pattern": "A + 跟 + 人 + 借 + 東西",
+          "explanation": "In Taiwan Mandarin, 借 can mean both \"borrow\" and \"lend\". To say you borrow something FROM someone, use 跟 + person + 借 + thing. To say you lend something TO someone, say 借 + person + thing (我借你錢).",
+          "examples": [
+            {
+              "hanzi": "我跟同學借了一本書。",
+              "pinyin": "Wǒ gēn tóngxué jiè le yì běn shū.",
+              "gloss": "I borrowed a book from my classmate."
+            },
+            {
+              "hanzi": "你可以跟我借錢,不用害怕。",
+              "pinyin": "Nǐ kěyǐ gēn wǒ jiè qián, búyòng hàipà.",
+              "gloss": "You can borrow money from me, don't be afraid."
+            },
+            {
+              "hanzi": "他跟哥哥借了一輛腳踏車。",
+              "pinyin": "Tā gēn gēge jiè le yí liàng jiǎotàchē.",
+              "gloss": "He borrowed a bike from his older brother."
+            }
+          ],
+          "id": "g_hsk3_09_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_09_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小雨",
+          "hanzi": "你可以借我腳踏車嗎?我要去車站。",
+          "pinyin": "Nǐ kěyǐ jiè wǒ jiǎotàchē ma? Wǒ yào qù chēzhàn.",
+          "gloss": "Can you lend me your bike? I want to go to the station."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "可以啊,不過車站在東邊,有一點遠喔。",
+          "pinyin": "Kěyǐ a, búguò chēzhàn zài dōngbiān, yǒu yìdiǎn yuǎn ō.",
+          "gloss": "Sure, but the station is on the east side, it's a bit far."
+        },
+        {
+          "speaker": "小雨",
+          "hanzi": "沒關係,我騎車的水平很好!",
+          "pinyin": "Méi guānxi, wǒ qí chē de shuǐpíng hěn hǎo!",
+          "gloss": "It's fine, my bike-riding level is pretty good!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那條路旁邊有很多樹,晚上很黑。",
+          "pinyin": "Nà tiáo lù pángbiān yǒu hěn duō shù, wǎnshàng hěn hēi.",
+          "gloss": "There are lots of trees beside that road, it's dark at night."
+        },
+        {
+          "speaker": "小雨",
+          "hanzi": "我不害怕啦!我八點就回來。",
+          "pinyin": "Wǒ bú hàipà la! Wǒ bā diǎn jiù huílái.",
+          "gloss": "I'm not scared! I'll be back at eight."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好,騎慢一點喔,風大,你的頭髮會亂。",
+          "pinyin": "Hǎo, qí màn yìdiǎn ō, fēng dà, nǐ de tóufǎ huì luàn.",
+          "gloss": "OK, ride slowly; the wind is strong, your hair will get messy."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "跟",
+            "朋友",
+            "借",
+            "腳踏車"
+          ],
+          "pinyin": "Wǒ gēn péngyǒu jiè jiǎotàchē.",
+          "gloss": "I borrow a bike from my friend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "的",
+            "中文",
+            "水平",
+            "很",
+            "高"
+          ],
+          "pinyin": "Tā de Zhōngwén shuǐpíng hěn gāo.",
+          "gloss": "His Chinese level is very high.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "郵局",
+            "在",
+            "車站",
+            "的",
+            "東邊"
+          ],
+          "pinyin": "Yóujú zài chēzhàn de dōngbiān.",
+          "gloss": "The post office is on the east side of the station.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "學校",
+            "裡",
+            "有",
+            "很多",
+            "樹"
+          ],
+          "pinyin": "Xuéxiào lǐ yǒu hěn duō shù.",
+          "gloss": "There are many trees in the school.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "很",
+            "害怕",
+            "大",
+            "狗"
+          ],
+          "pinyin": "Dìdi hěn hàipà dà gǒu.",
+          "gloss": "My little brother is very afraid of big dogs.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 37,

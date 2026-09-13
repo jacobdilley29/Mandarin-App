@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 15",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_15_1",
@@ -17,7 +17,12 @@
           "pinyin": "xiāng jiāo",
           "gloss": "banana",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我早上吃了兩根香蕉。",
+            "pinyin": "Wǒ zǎoshang chī le liǎng gēn xiāngjiāo.",
+            "gloss": "I ate two bananas this morning."
+          }
         },
         {
           "id": "v_秋",
@@ -25,7 +30,12 @@
           "pinyin": "qiū",
           "gloss": "autumn; fall; harvest time",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "秋天的風很舒服。",
+            "pinyin": "Qiūtiān de fēng hěn shūfú.",
+            "gloss": "The autumn wind is very pleasant."
+          }
         },
         {
           "id": "v_傘",
@@ -33,7 +43,12 @@
           "pinyin": "sǎn",
           "gloss": "umbrella; parasol",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面下雨了，記得帶傘。",
+            "pinyin": "Wàimiàn xià yǔ le, jìde dài sǎn.",
+            "gloss": "It's raining outside, remember to bring an umbrella."
+          }
         },
         {
           "id": "v_打掃",
@@ -41,7 +56,12 @@
           "pinyin": "dǎ sǎo",
           "gloss": "to clean; to sweep",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我要打掃房間。",
+            "pinyin": "Zhōumò wǒ yào dǎsǎo fángjiān.",
+            "gloss": "I'm going to clean my room this weekend."
+          }
         },
         {
           "id": "v_葡萄",
@@ -49,7 +69,12 @@
           "pinyin": "pú tao",
           "gloss": "grape",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這些葡萄真甜啊！",
+            "pinyin": "Zhèxiē pútáo zhēn tián a!",
+            "gloss": "These grapes are really sweet!"
+          }
         },
         {
           "id": "v_複習",
@@ -57,12 +82,148 @@
           "pinyin": "fù xí",
           "gloss": "variant of 复习",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "考試前我要複習課文。",
+            "pinyin": "Kǎoshì qián wǒ yào fùxí kèwén.",
+            "gloss": "I need to review the text before the exam."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "先……再…… (first… then…)",
+          "pattern": "Subject + 先 + Verb Phrase 1 + 再 + Verb Phrase 2",
+          "explanation": "Use 先……再…… to put two actions in order: do the first thing first, then do the second. 先 goes before the first verb, 再 before the second verb. Both parts usually share the same subject.",
+          "examples": [
+            {
+              "hanzi": "我先打掃房間，再複習中文。",
+              "pinyin": "Wǒ xiān dǎsǎo fángjiān, zài fùxí Zhōngwén.",
+              "gloss": "I'll clean my room first, then review Chinese."
+            },
+            {
+              "hanzi": "她先洗葡萄，再拿給孩子吃。",
+              "pinyin": "Tā xiān xǐ pútáo, zài ná gěi háizi chī.",
+              "gloss": "She washes the grapes first, then gives them to the kids to eat."
+            },
+            {
+              "hanzi": "下雨了，你先帶傘，再出門。",
+              "pinyin": "Xià yǔ le, nǐ xiān dài sǎn, zài chū mén.",
+              "gloss": "It's raining; take an umbrella first, then head out."
+            }
+          ],
+          "id": "g_hsk3_15_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_15_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "小明，週末了，快來幫我打掃。",
+          "pinyin": "Xiǎomíng, zhōumò le, kuài lái bāng wǒ dǎsǎo.",
+          "gloss": "Xiaoming, it's the weekend—come help me clean."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我先打掃，再複習中文，可以嗎？",
+          "pinyin": "Hǎo, wǒ xiān dǎsǎo, zài fùxí Zhōngwén, kěyǐ ma?",
+          "gloss": "OK, I'll clean first and then review Chinese, all right?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "可以。廚房裡有香蕉和葡萄，你先吃一點。",
+          "pinyin": "Kěyǐ. Chúfáng lǐ yǒu xiāngjiāo hé pútáo, nǐ xiān chī yìdiǎn.",
+          "gloss": "Sure. There are bananas and grapes in the kitchen; have some first."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "太好了，我最愛吃葡萄！",
+          "pinyin": "Tài hǎo le, wǒ zuì ài chī pútáo!",
+          "gloss": "Great, grapes are my favorite!"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "對了，下午可能下雨，出門記得帶傘。",
+          "pinyin": "Duì le, xiàwǔ kěnéng xià yǔ, chū mén jìde dài sǎn.",
+          "gloss": "By the way, it may rain this afternoon—remember your umbrella when you go out."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "知道了，秋天的雨真多。",
+          "pinyin": "Zhīdào le, qiūtiān de yǔ zhēn duō.",
+          "gloss": "Got it. It really rains a lot in autumn."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "很",
+            "愛",
+            "吃",
+            "香蕉"
+          ],
+          "pinyin": "Wǒ hěn ài chī xiāngjiāo.",
+          "gloss": "I really love eating bananas.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "秋天",
+            "的",
+            "天氣",
+            "不",
+            "熱"
+          ],
+          "pinyin": "Qiūtiān de tiānqì bú rè.",
+          "gloss": "The weather in autumn isn't hot.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "你",
+            "有",
+            "帶",
+            "傘",
+            "嗎"
+          ],
+          "pinyin": "Nǐ yǒu dài sǎn ma?",
+          "gloss": "Did you bring an umbrella?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "週末",
+            "我",
+            "要",
+            "打掃",
+            "房間"
+          ],
+          "pinyin": "Zhōumò wǒ yào dǎsǎo fángjiān.",
+          "gloss": "I'm cleaning my room this weekend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "考試",
+            "前",
+            "要",
+            "好好",
+            "複習"
+          ],
+          "pinyin": "Kǎoshì qián yào hǎohǎo fùxí.",
+          "gloss": "You should review well before the exam.",
+          "cloze_index": 4
+        }
+      ]
     },
     {
       "id": "l_hsk3_15_2",
@@ -75,7 +236,12 @@
           "pinyin": "xióng māo",
           "gloss": "panda",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "動物園裡的熊貓真的很可愛。",
+            "pinyin": "Dòng wù yuán lǐ de xióng māo zhēn de hěn kě ài.",
+            "gloss": "The pandas in the zoo are really cute."
+          }
         },
         {
           "id": "v_護照",
@@ -83,7 +249,12 @@
           "pinyin": "hù zhào",
           "gloss": "passport",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "出國別忘了帶護照喔。",
+            "pinyin": "Chū guó bié wàng le dài hù zhào ō.",
+            "gloss": "Don't forget to bring your passport when you go abroad."
+          }
         },
         {
           "id": "v_年級",
@@ -91,7 +262,12 @@
           "pinyin": "nián jí",
           "gloss": "grade; year (in school, college etc)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你弟弟現在幾年級?",
+            "pinyin": "Nǐ dì di xiàn zài jǐ nián jí?",
+            "gloss": "What grade is your younger brother in now?"
+          }
         },
         {
           "id": "v_果汁",
@@ -99,7 +275,12 @@
           "pinyin": "guǒ zhī",
           "gloss": "fruit juice",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想喝一杯果汁,不要咖啡。",
+            "pinyin": "Wǒ xiǎng hē yì bēi guǒ zhī, bú yào kā fēi.",
+            "gloss": "I'd like a glass of fruit juice, not coffee."
+          }
         },
         {
           "id": "v_麵條",
@@ -107,7 +288,12 @@
           "pinyin": "miàn tiáo",
           "gloss": "noodles",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的麵條很好吃,也很便宜。",
+            "pinyin": "Zhè jiā diàn de miàn tiáo hěn hǎo chī, yě hěn pián yí.",
+            "gloss": "The noodles at this shop are tasty and cheap."
+          }
         },
         {
           "id": "v_盤子",
@@ -115,12 +301,151 @@
           "pinyin": "pán zi",
           "gloss": "tray; plate; dish",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "吃完飯,我幫媽媽洗盤子。",
+            "pinyin": "Chī wán fàn, wǒ bāng mā ma xǐ pán zi.",
+            "gloss": "After the meal, I help my mom wash the dishes."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "數量詞:數字 + 量詞 + 名詞",
+          "pattern": "數字 + 量詞(杯/碗/盤/本)+ 名詞",
+          "explanation": "在中文裡,說東西的數量時,數字後面一定要加量詞,才能接名詞。喝的東西用「杯」,湯麵、飯用「碗」,放在盤子上的菜用「盤」。例如:一杯果汁、兩碗麵條、三盤菜。",
+          "examples": [
+            {
+              "hanzi": "我點了兩碗麵條。",
+              "pinyin": "Wǒ diǎn le liǎng wǎn miàn tiáo.",
+              "gloss": "I ordered two bowls of noodles."
+            },
+            {
+              "hanzi": "她一天喝三杯果汁。",
+              "pinyin": "Tā yì tiān hē sān bēi guǒ zhī.",
+              "gloss": "She drinks three glasses of fruit juice a day."
+            },
+            {
+              "hanzi": "老闆送我們一盤水果。",
+              "pinyin": "Lǎo bǎn sòng wǒ men yì pán shuǐ guǒ.",
+              "gloss": "The boss gave us a plate of fruit."
+            }
+          ],
+          "id": "g_hsk3_15_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_15_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "老闆,我要一碗麵條,謝謝。",
+          "pinyin": "Lǎo bǎn, wǒ yào yì wǎn miàn tiáo, xiè xie.",
+          "gloss": "Boss, I'd like a bowl of noodles, thanks."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "好!要不要再點一杯果汁?",
+          "pinyin": "Hǎo! Yào bú yào zài diǎn yì bēi guǒ zhī?",
+          "gloss": "Sure! Would you like to order a glass of juice too?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好啊,給我一杯果汁,還有一盤小菜。",
+          "pinyin": "Hǎo a, gěi wǒ yì bēi guǒ zhī, hái yǒu yì pán xiǎo cài.",
+          "gloss": "Okay, give me a glass of juice and a plate of side dishes."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "沒問題,麵條馬上來。",
+          "pinyin": "Méi wèn tí, miàn tiáo mǎ shàng lái.",
+          "gloss": "No problem, the noodles will be right out."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "這個盤子好像不太乾淨。",
+          "pinyin": "Zhè ge pán zi hǎo xiàng bú tài gān jìng.",
+          "gloss": "This plate doesn't seem very clean."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "對不起!我馬上幫你換一個新的。",
+          "pinyin": "Duì bù qǐ! Wǒ mǎ shàng bāng nǐ huàn yí ge xīn de.",
+          "gloss": "Sorry! I'll change it for a new one right away."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "動物園",
+            "裡",
+            "的",
+            "熊貓",
+            "很",
+            "可愛"
+          ],
+          "pinyin": "Dòng wù yuán lǐ de xióng māo hěn kě ài.",
+          "gloss": "The pandas in the zoo are very cute.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "出國",
+            "以前",
+            "要",
+            "帶",
+            "護照"
+          ],
+          "pinyin": "Chū guó yǐ qián yào dài hù zhào.",
+          "gloss": "You need to bring your passport before going abroad.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "妹妹",
+            "讀",
+            "五",
+            "年級"
+          ],
+          "pinyin": "Wǒ mèi mei dú wǔ nián jí.",
+          "gloss": "My little sister is in fifth grade.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "要",
+            "喝",
+            "果汁",
+            "還是",
+            "茶"
+          ],
+          "pinyin": "Nǐ yào hē guǒ zhī hái shì chá?",
+          "gloss": "Do you want juice or tea?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "盤子",
+            "拿",
+            "給",
+            "我"
+          ],
+          "pinyin": "Qǐng bǎ pán zi ná gěi wǒ.",
+          "gloss": "Please hand me the plate.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_15_3",
@@ -133,7 +458,12 @@
           "pinyin": "qiān bǐ",
           "gloss": "(lead) pencil",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你可以借我鉛筆嗎？",
+            "pinyin": "Nǐ kěyǐ jiè wǒ qiānbǐ ma?",
+            "gloss": "Can you lend me a pencil?"
+          }
         },
         {
           "id": "v_渴",
@@ -141,7 +471,12 @@
           "pinyin": "kě",
           "gloss": "thirsty",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我好渴，想喝一點水。",
+            "pinyin": "Wǒ hǎo kě, xiǎng hē yìdiǎn shuǐ.",
+            "gloss": "I'm so thirsty, I want to drink some water."
+          }
         },
         {
           "id": "v_洗手間",
@@ -149,7 +484,12 @@
           "pinyin": "xǐ shǒu jiān",
           "gloss": "toilet; lavatory; washroom",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請問，洗手間在哪裡？",
+            "pinyin": "Qǐngwèn, xǐshǒujiān zài nǎlǐ?",
+            "gloss": "Excuse me, where is the washroom?"
+          }
         },
         {
           "id": "v_詞語",
@@ -157,7 +497,12 @@
           "pinyin": "cí yǔ",
           "gloss": "word (general term including monosyllables through to short phrases); term (e.g. technical term); expression",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個詞語我不懂，你可以教我嗎？",
+            "pinyin": "Zhège cíyǔ wǒ bù dǒng, nǐ kěyǐ jiāo wǒ ma?",
+            "gloss": "I don't understand this word; can you teach me?"
+          }
         },
         {
           "id": "v_句子",
@@ -165,7 +510,12 @@
           "pinyin": "jù zi",
           "gloss": "sentence",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個句子太長了。",
+            "pinyin": "Zhège jùzi tài cháng le.",
+            "gloss": "This sentence is too long."
+          }
         },
         {
           "id": "v_照相機",
@@ -173,12 +523,138 @@
           "pinyin": "zhào xiàng jī",
           "gloss": "camera",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我帶了照相機，我們去照相吧！",
+            "pinyin": "Wǒ dài le zhàoxiàngjī, wǒmen qù zhàoxiàng ba!",
+            "gloss": "I brought the camera, let's go take photos!"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "有一點 + adjective (a bit / slightly)",
+          "pattern": "Subject + 有一點 + Adjective",
+          "explanation": "有一點 goes before an adjective to say something is 'a bit' or 'slightly' — usually about something the speaker is not happy about. In Taiwan people often shorten it to 有點. Note: you cannot say 一點有渴; 有一點 always comes first, and it is not used after the adjective.",
+          "examples": [
+            {
+              "hanzi": "我有一點渴，我們去買飲料吧。",
+              "pinyin": "Wǒ yǒu yìdiǎn kě, wǒmen qù mǎi yǐnliào ba.",
+              "gloss": "I'm a bit thirsty, let's go buy drinks."
+            },
+            {
+              "hanzi": "這個句子有一點難。",
+              "pinyin": "Zhège jùzi yǒu yìdiǎn nán.",
+              "gloss": "This sentence is a bit difficult."
+            },
+            {
+              "hanzi": "這個照相機有一點貴。",
+              "pinyin": "Zhège zhàoxiàngjī yǒu yìdiǎn guì.",
+              "gloss": "This camera is a bit expensive."
+            }
+          ],
+          "id": "g_hsk3_15_3_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "阿文",
+          "hanzi": "小明，你可以借我鉛筆嗎？",
+          "pinyin": "Xiǎomíng, nǐ kěyǐ jiè wǒ qiānbǐ ma?",
+          "gloss": "Xiaoming, can you lend me a pencil?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "可以啊。你要畫畫嗎？",
+          "pinyin": "Kěyǐ a. Nǐ yào huàhuà ma?",
+          "gloss": "Sure. Are you going to draw?"
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "不是，我想練習這些詞語和句子。",
+          "pinyin": "Bú shì, wǒ xiǎng liànxí zhèxiē cíyǔ hàn jùzi.",
+          "gloss": "No, I want to practice these words and sentences."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊。啊，我有一點渴，我們先去買飲料。",
+          "pinyin": "Hǎo a. A, wǒ yǒu yìdiǎn kě, wǒmen xiān qù mǎi yǐnliào.",
+          "gloss": "OK. Ah, I'm a bit thirsty, let's go buy drinks first."
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "好！我先去洗手間，馬上回來。",
+          "pinyin": "Hǎo! Wǒ xiān qù xǐshǒujiān, mǎshàng huílái.",
+          "gloss": "OK! I'll go to the washroom first and come right back."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "沒問題。我帶了照相機，我們也可以去公園照相。",
+          "pinyin": "Méi wèntí. Wǒ dài le zhàoxiàngjī, wǒmen yě kěyǐ qù gōngyuán zhàoxiàng.",
+          "gloss": "No problem. I brought my camera, we can also go to the park to take photos."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "有一點",
+            "渴"
+          ],
+          "pinyin": "Wǒ yǒu yìdiǎn kě.",
+          "gloss": "I'm a little thirsty.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "洗手間",
+            "在",
+            "二樓"
+          ],
+          "pinyin": "Xǐshǒujiān zài èr lóu.",
+          "gloss": "The washroom is on the second floor.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "這個",
+            "句子",
+            "太",
+            "長",
+            "了"
+          ],
+          "pinyin": "Zhège jùzi tài cháng le.",
+          "gloss": "This sentence is too long.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這個",
+            "詞語",
+            "你",
+            "懂",
+            "嗎"
+          ],
+          "pinyin": "Zhège cíyǔ nǐ dǒng ma?",
+          "gloss": "Do you understand this word?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "買",
+            "一個",
+            "新",
+            "的",
+            "照相機"
+          ],
+          "pinyin": "Wǒ xiǎng mǎi yí ge xīn de zhàoxiàngjī.",
+          "gloss": "I want to buy a new camera.",
+          "cloze_index": 6
+        }
+      ]
     }
   ],
   "sort_order": 43,

@@ -4,7 +4,7 @@
   "subtitle": "HSK 2 vocabulary · set 7",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_07_1",
@@ -17,7 +17,12 @@
           "pinyin": "lǚ yóu",
           "gloss": "trip; journey; tourism",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想去日本旅遊。",
+            "pinyin": "wǒ xiǎng qù Rìběn lǚyóu.",
+            "gloss": "I want to go to Japan for a trip."
+          }
         },
         {
           "id": "v_起床",
@@ -25,7 +30,12 @@
           "pinyin": "qǐ chuáng",
           "gloss": "to get out of bed; to get up",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天六點半起床。",
+            "pinyin": "wǒ měi tiān liù diǎn bàn qǐchuáng.",
+            "gloss": "I get up at six thirty every day."
+          }
         },
         {
           "id": "v_題",
@@ -33,7 +43,12 @@
           "pinyin": "tí",
           "gloss": "topic; problem for discussion; exam question",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這一題我不懂。",
+            "pinyin": "zhè yī tí wǒ bù dǒng.",
+            "gloss": "I don't understand this question."
+          }
         },
         {
           "id": "v_唱歌",
@@ -41,7 +56,12 @@
           "pinyin": "chàng gē",
           "gloss": "to sing a song",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹很會唱歌。",
+            "pinyin": "wǒ mèimei hěn huì chànggē.",
+            "gloss": "My younger sister sings really well."
+          }
         },
         {
           "id": "v_右邊",
@@ -49,7 +69,12 @@
           "pinyin": "yòu bian",
           "gloss": "right side; right, to the right",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在銀行的右邊。",
+            "pinyin": "yóujú zài yínháng de yòubiān.",
+            "gloss": "The post office is to the right of the bank."
+          }
         },
         {
           "id": "v_雞蛋",
@@ -57,12 +82,149 @@
           "pinyin": "jī dàn",
           "gloss": "(chicken) egg; hen's egg",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我早餐吃了兩個雞蛋。",
+            "pinyin": "wǒ zǎocān chī le liǎng ge jīdàn.",
+            "gloss": "I ate two eggs for breakfast."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "先……再…… (first ... then ...)",
+          "pattern": "Subject + 先 + Verb1 + 再 + Verb2",
+          "explanation": "用「先……再……」說出動作的前後次序：先做第一件事，做完以後再做第二件事。兩個動作都是同一個人做的，主語放在「先」的前面。",
+          "examples": [
+            {
+              "hanzi": "我每天先起床，再吃早餐。",
+              "pinyin": "wǒ měi tiān xiān qǐchuáng, zài chī zǎocān.",
+              "gloss": "Every day I get up first, then eat breakfast."
+            },
+            {
+              "hanzi": "我們先吃飯，再去唱歌。",
+              "pinyin": "wǒmen xiān chīfàn, zài qù chànggē.",
+              "gloss": "Let's eat first, then go sing."
+            },
+            {
+              "hanzi": "你先答完這題，再看電視。",
+              "pinyin": "nǐ xiān dá wán zhè tí, zài kàn diànshì.",
+              "gloss": "Finish this question first, then watch TV."
+            }
+          ],
+          "id": "g_hsk2_07_1_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk2_07_1_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你早上幾點起床？",
+          "pinyin": "nǐ zǎoshàng jǐ diǎn qǐchuáng?",
+          "gloss": "What time did you get up this morning?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我六點半起床，先去買早餐。",
+          "pinyin": "wǒ liù diǎn bàn qǐchuáng, xiān qù mǎi zǎocān.",
+          "gloss": "I got up at six thirty and went to buy breakfast first."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "你買了什麼？",
+          "pinyin": "nǐ mǎi le shénme?",
+          "gloss": "What did you buy?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我買了雞蛋和牛奶，早餐店就在郵局的右邊。",
+          "pinyin": "wǒ mǎi le jīdàn hé niúnǎi, zǎocān diàn jiù zài yóujú de yòubiān.",
+          "gloss": "I bought eggs and milk; the breakfast shop is right next to the post office, on the right."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "對了，週末我們去旅遊，好嗎？",
+          "pinyin": "duì le, zhōumò wǒmen qù lǚyóu, hǎo ma?",
+          "gloss": "By the way, shall we go on a trip this weekend?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好，那我們先去玩，晚上再去唱歌吧！",
+          "pinyin": "hǎo, nà wǒmen xiān qù wán, wǎnshàng zài qù chànggē ba!",
+          "gloss": "Sure, let's go have fun first and then go sing in the evening!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "七點",
+            "起床"
+          ],
+          "pinyin": "wǒ měi tiān qī diǎn qǐchuáng",
+          "gloss": "I get up at seven every day.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "便利商店",
+            "在",
+            "學校",
+            "的",
+            "右邊"
+          ],
+          "pinyin": "biànlì shāngdiàn zài xuéxiào de yòubiān",
+          "gloss": "The convenience store is to the right of the school.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "買",
+            "了",
+            "十",
+            "個",
+            "雞蛋"
+          ],
+          "pinyin": "wǒ mǎi le shí ge jīdàn",
+          "gloss": "I bought ten eggs.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "他",
+            "晚上",
+            "常常",
+            "和",
+            "朋友",
+            "唱歌"
+          ],
+          "pinyin": "tā wǎnshàng chángcháng hé péngyǒu chànggē",
+          "gloss": "He often sings with friends in the evening.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "週末",
+            "我們",
+            "要",
+            "去",
+            "旅遊"
+          ],
+          "pinyin": "zhōumò wǒmen yào qù lǚyóu",
+          "gloss": "This weekend we are going on a trip.",
+          "cloze_index": 4
+        }
+      ]
     },
     {
       "id": "l_hsk2_07_2",
@@ -75,7 +237,12 @@
           "pinyin": "xìng",
           "gloss": "family name; surname; to be surnamed",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請問您姓什麼?我姓張。",
+            "pinyin": "Qǐngwèn nín xìng shénme? Wǒ xìng Zhāng.",
+            "gloss": "May I ask your surname? My surname is Zhang."
+          }
         },
         {
           "id": "v_游泳",
@@ -83,7 +250,12 @@
           "pinyin": "yóu yǒng",
           "gloss": "swimming; to swim",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每個週末都去游泳。",
+            "pinyin": "Wǒ měi ge zhōumò dōu qù yóuyǒng.",
+            "gloss": "I go swimming every weekend."
+          }
         },
         {
           "id": "v_跳舞",
@@ -91,7 +263,12 @@
           "pinyin": "tiào wǔ",
           "gloss": "to dance",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹很會跳舞。",
+            "pinyin": "Wǒ mèimei hěn huì tiàowǔ.",
+            "gloss": "My younger sister dances really well."
+          }
         },
         {
           "id": "v_陰",
@@ -99,7 +276,12 @@
           "pinyin": "yīn",
           "gloss": "overcast (weather); cloudy; shady",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣有點陰,我們帶傘吧。",
+            "pinyin": "Tiānqì yǒudiǎn yīn, wǒmen dài sǎn ba.",
+            "gloss": "The weather is a bit overcast; let's take an umbrella."
+          }
         },
         {
           "id": "v_生病",
@@ -107,7 +289,12 @@
           "pinyin": "shēng bìng",
           "gloss": "to fall ill",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他生病了,要去醫院看醫生。",
+            "pinyin": "Tā shēngbìng le, yào qù yīyuàn kàn yīshēng.",
+            "gloss": "He got sick and has to go to the hospital to see a doctor."
+          }
         },
         {
           "id": "v_左邊",
@@ -115,12 +302,170 @@
           "pinyin": "zuǒ bian",
           "gloss": "left; the left side; to the left of",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在便利商店的左邊。",
+            "pinyin": "Yóujú zài biànlì shāngdiàn de zuǒbiān.",
+            "gloss": "The post office is to the left of the convenience store."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "因為……,所以……(because…, so…)",
+          "pattern": "因為 + 原因 ,所以 + 結果",
+          "explanation": "用「因為」說明原因,用「所以」說明結果,兩個一起用很常見。也可以只用其中一個。",
+          "examples": [
+            {
+              "hanzi": "因為我生病了,所以不能去游泳。",
+              "pinyin": "Yīnwèi wǒ shēngbìng le, suǒyǐ bù néng qù yóuyǒng.",
+              "gloss": "Because I'm sick, I can't go swimming."
+            },
+            {
+              "hanzi": "因為天氣很陰,所以我們沒去騎腳踏車。",
+              "pinyin": "Yīnwèi tiānqì hěn yīn, suǒyǐ wǒmen méi qù qí jiǎotàchē.",
+              "gloss": "Because it was overcast, we didn't go cycling."
+            },
+            {
+              "hanzi": "因為她很想學跳舞,所以每週六都去上課。",
+              "pinyin": "Yīnwèi tā hěn xiǎng xué tiàowǔ, suǒyǐ měi zhōu liù dōu qù shàngkè.",
+              "gloss": "Because she really wants to learn to dance, she goes to class every Saturday."
+            }
+          ],
+          "id": "g_hsk2_07_2_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "A 在 B 的左邊 (A is to the left of B)",
+          "pattern": "A + 在 + B + 的左邊",
+          "explanation": "說明東西或地點的位置時,用「在……的左邊」。",
+          "examples": [
+            {
+              "hanzi": "醫院在郵局的左邊。",
+              "pinyin": "Yīyuàn zài yóujú de zuǒbiān.",
+              "gloss": "The hospital is to the left of the post office."
+            },
+            {
+              "hanzi": "我家在那家咖啡店的左邊。",
+              "pinyin": "Wǒ jiā zài nà jiā kāfēi diàn de zuǒbiān.",
+              "gloss": "My home is to the left of that coffee shop."
+            },
+            {
+              "hanzi": "捷運站在銀行的左邊,很近。",
+              "pinyin": "Jiéyùn zhàn zài yínháng de zuǒbiān, hěn jìn.",
+              "gloss": "The MRT station is to the left of the bank, very close."
+            }
+          ],
+          "id": "g_hsk2_07_2_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "張先生",
+          "hanzi": "你好,我姓張。請問您姓什麼?",
+          "pinyin": "Nǐ hǎo, wǒ xìng Zhāng. Qǐngwèn nín xìng shénme?",
+          "gloss": "Hello, my surname is Zhang. May I ask your surname?"
+        },
+        {
+          "speaker": "高小姐",
+          "hanzi": "你好,我姓高。請問哪裡可以游泳?",
+          "pinyin": "Nǐ hǎo, wǒ xìng Gāo. Qǐngwèn nǎlǐ kěyǐ yóuyǒng?",
+          "gloss": "Hello, my surname is Gao. Excuse me, where can I swim?"
+        },
+        {
+          "speaker": "張先生",
+          "hanzi": "郵局的左邊就有,走路五分鐘。",
+          "pinyin": "Yóujú de zuǒbiān jiù yǒu, zǒulù wǔ fēnzhōng.",
+          "gloss": "There's one right to the left of the post office, a five-minute walk."
+        },
+        {
+          "speaker": "高小姐",
+          "hanzi": "謝謝!我每個週末都想去游泳,也想學跳舞。",
+          "pinyin": "Xièxie! Wǒ měi ge zhōumò dōu xiǎng qù yóuyǒng, yě xiǎng xué tiàowǔ.",
+          "gloss": "Thanks! Every weekend I want to go swimming, and I also want to learn to dance."
+        },
+        {
+          "speaker": "張先生",
+          "hanzi": "真好!我昨天生病了,所以沒去運動。",
+          "pinyin": "Zhēn hǎo! Wǒ zuótiān shēngbìng le, suǒyǐ méi qù yùndòng.",
+          "gloss": "That's great! I was sick yesterday, so I didn't go exercise."
+        },
+        {
+          "speaker": "高小姐",
+          "hanzi": "天氣有點陰,你多休息喔!",
+          "pinyin": "Tiānqì yǒudiǎn yīn, nǐ duō xiūxí ō!",
+          "gloss": "The weather is a bit overcast; get plenty of rest!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "請問",
+            "您",
+            "姓",
+            "什麼",
+            "?"
+          ],
+          "pinyin": "Qǐngwèn nín xìng shénme?",
+          "gloss": "May I ask your surname?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "昨天",
+            "生病",
+            "了",
+            "。"
+          ],
+          "pinyin": "Wǒ zuótiān shēngbìng le.",
+          "gloss": "I got sick yesterday.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "銀行",
+            "在",
+            "醫院",
+            "的",
+            "左邊",
+            "。"
+          ],
+          "pinyin": "Yínháng zài yīyuàn de zuǒbiān.",
+          "gloss": "The bank is to the left of the hospital.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "他",
+            "每天",
+            "早上",
+            "都",
+            "去",
+            "游泳",
+            "。"
+          ],
+          "pinyin": "Tā měitiān zǎoshang dōu qù yóuyǒng.",
+          "gloss": "He goes swimming every morning.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "天氣",
+            "很",
+            "陰",
+            ",",
+            "可能",
+            "會",
+            "下雨",
+            "。"
+          ],
+          "pinyin": "Tiānqì hěn yīn, kěnéng huì xià yǔ.",
+          "gloss": "It's very overcast; it might rain.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk2_07_3",
@@ -133,7 +478,12 @@
           "pinyin": "gōng jīn",
           "gloss": "kilogram (kg)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個西瓜有五公斤。",
+            "pinyin": "Zhè ge xī guā yǒu wǔ gōng jīn.",
+            "gloss": "This watermelon weighs five kilograms."
+          }
         },
         {
           "id": "v_教室",
@@ -141,7 +491,12 @@
           "pinyin": "jiào shì",
           "gloss": "classroom",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們的教室很大。",
+            "pinyin": "Wǒ men de jiào shì hěn dà.",
+            "gloss": "Our classroom is very big."
+          }
         },
         {
           "id": "v_服務生",
@@ -150,7 +505,12 @@
           "gloss": "waiter; waitress; attendant",
           "hsk_level": 2,
           "taiwan_note": "台灣餐廳多說「服務生」。",
-          "prc_form": "服務員"
+          "prc_form": "服務員",
+          "example": {
+            "hanzi": "服務生,我要點菜。",
+            "pinyin": "Fú wù shēng, wǒ yào diǎn cài.",
+            "gloss": "Waiter, I'd like to order."
+          }
         },
         {
           "id": "v_手錶",
@@ -158,7 +518,12 @@
           "pinyin": "shǒu biǎo",
           "gloss": "wristwatch",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你的手錶很好看。",
+            "pinyin": "Nǐ de shǒu biǎo hěn hǎo kàn.",
+            "gloss": "Your watch looks really nice."
+          }
         },
         {
           "id": "v_跑步",
@@ -166,7 +531,12 @@
           "pinyin": "pǎo bù",
           "gloss": "to run; to jog; (military) to march at the double",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上都去跑步。",
+            "pinyin": "Wǒ měi tiān zǎo shang dōu qù pǎo bù.",
+            "gloss": "I go running every morning."
+          }
         },
         {
           "id": "v_西瓜",
@@ -174,12 +544,150 @@
           "pinyin": "xī guā",
           "gloss": "watermelon",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買了一個大西瓜。",
+            "pinyin": "Wǒ mǎi le yí ge dà xī guā.",
+            "gloss": "I bought a big watermelon."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Quantity with 公斤 (Number + 公斤 + Noun)",
+          "pattern": "Subject + 買/要/有 + Number + 公斤 + (Noun)",
+          "explanation": "公斤 (kilogram) is a measure word for weight. Put it directly after a number, and the noun comes after it: 兩公斤西瓜 'two kilos of watermelon'. When the noun is already known, you can leave it out: 我要三公斤。 In Taiwan you will hear this a lot at markets and shops.",
+          "examples": [
+            {
+              "hanzi": "我買了兩公斤西瓜。",
+              "pinyin": "Wǒ mǎi le liǎng gōng jīn xī guā.",
+              "gloss": "I bought two kilos of watermelon."
+            },
+            {
+              "hanzi": "老闆,我要一公斤魚。",
+              "pinyin": "Lǎo bǎn, wǒ yào yì gōng jīn yú.",
+              "gloss": "Boss, I'd like one kilo of fish."
+            },
+            {
+              "hanzi": "這些菜有三公斤,不太貴。",
+              "pinyin": "Zhè xiē cài yǒu sān gōng jīn, bú tài guì.",
+              "gloss": "These vegetables weigh three kilos and aren't too expensive."
+            }
+          ],
+          "id": "g_hsk2_07_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk2_07_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "服務生,請問今天有什麼菜?",
+          "pinyin": "Fú wù shēng, qǐng wèn jīn tiān yǒu shén me cài?",
+          "gloss": "Waiter, what dishes do you have today?"
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "有魚,也有麵,還有西瓜喔。",
+          "pinyin": "Yǒu yú, yě yǒu miàn, hái yǒu xī guā o.",
+          "gloss": "We have fish, noodles, and also watermelon."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "那我要一個便當,還要兩公斤西瓜。",
+          "pinyin": "Nà wǒ yào yí ge biàn dāng, hái yào liǎng gōng jīn xī guā.",
+          "gloss": "Then I'll have a lunchbox, and two kilos of watermelon."
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "好的,今天的西瓜很甜。",
+          "pinyin": "Hǎo de, jīn tiān de xī guā hěn tián.",
+          "gloss": "Sure, today's watermelon is very sweet."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我看一下手錶……五點我要去跑步,可以快一點嗎?",
+          "pinyin": "Wǒ kàn yí xià shǒu biǎo…… wǔ diǎn wǒ yào qù pǎo bù, kě yǐ kuài yì diǎn ma?",
+          "gloss": "Let me check my watch... I'm going running at five, could you be a bit quicker?"
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "沒問題,十分鐘就好!",
+          "pinyin": "Méi wèn tí, shí fēn zhōng jiù hǎo!",
+          "gloss": "No problem, just ten minutes!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "服務生",
+            "在",
+            "餐廳",
+            "裡",
+            "很",
+            "忙"
+          ],
+          "pinyin": "Fú wù shēng zài cān tīng lǐ hěn máng.",
+          "gloss": "The waiter is very busy in the restaurant.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "晚上",
+            "都",
+            "去",
+            "跑步"
+          ],
+          "pinyin": "Wǒ měi tiān wǎn shang dōu qù pǎo bù.",
+          "gloss": "I go running every evening.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這個",
+            "西瓜",
+            "有",
+            "三",
+            "公斤"
+          ],
+          "pinyin": "Zhè ge xī guā yǒu sān gōng jīn.",
+          "gloss": "This watermelon weighs three kilos.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "老師",
+            "的",
+            "手錶",
+            "很",
+            "貴"
+          ],
+          "pinyin": "Lǎo shī de shǒu biǎo hěn guì.",
+          "gloss": "The teacher's watch is expensive.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我們",
+            "在",
+            "教室",
+            "裡",
+            "上課"
+          ],
+          "pinyin": "Wǒ men zài jiào shì lǐ shàng kè.",
+          "gloss": "We are having class in the classroom.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 27,

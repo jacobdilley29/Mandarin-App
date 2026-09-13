@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 8",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_08_1",
@@ -17,7 +17,12 @@
           "pinyin": "jī hū",
           "gloss": "almost; nearly; practically",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我幾乎每天都搭捷運上班。",
+            "pinyin": "Wǒ jīhū měi tiān dōu dā jiéyùn shàngbān.",
+            "gloss": "I take the MRT to work almost every day."
+          }
         },
         {
           "id": "v_認真",
@@ -25,7 +30,12 @@
           "pinyin": "rèn zhēn",
           "gloss": "conscientious; earnest; serious",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他上課很認真，答得也很好。",
+            "pinyin": "Tā shàngkè hěn rènzhēn, dá de yě hěn hǎo.",
+            "gloss": "He's very serious in class, and answers well too."
+          }
         },
         {
           "id": "v_腳",
@@ -33,7 +43,12 @@
           "pinyin": "jiǎo",
           "gloss": "foot; leg (of an animal or an object); base (of an object)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的腳很痛，today不能跑步。",
+            "pinyin": "Wǒ de jiǎo hěn tòng, jīntiān bù néng pǎobù.",
+            "gloss": "My foot hurts a lot; I can't run today."
+          }
         },
         {
           "id": "v_主要",
@@ -41,7 +56,12 @@
           "pinyin": "zhǔ yào",
           "gloss": "main; principal; major",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店主要賣便當和飲料。",
+            "pinyin": "Zhè jiā diàn zhǔyào mài biàndāng hàn yǐnliào.",
+            "gloss": "This shop mainly sells lunchboxes and drinks."
+          }
         },
         {
           "id": "v_遇到",
@@ -49,7 +69,12 @@
           "pinyin": "yù dào",
           "gloss": "to meet; to run into; to come across",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天在路上遇到同學。",
+            "pinyin": "Wǒ zuótiān zài lù shàng yùdào tóngxué.",
+            "gloss": "I ran into a classmate on the street yesterday."
+          }
         },
         {
           "id": "v_年輕",
@@ -57,12 +82,150 @@
           "pinyin": "nián qīng",
           "gloss": "young",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那位老闆很年輕喔。",
+            "pinyin": "Nà wèi lǎobǎn hěn niánqīng ō.",
+            "gloss": "That boss is really young."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "幾乎 — almost / nearly",
+          "pattern": "Subject + 幾乎 + (都／沒) + Verb / Adjective",
+          "explanation": "幾乎 goes before the verb or adjective to say something is almost or nearly the case. It is often used with 都 (all) for 'almost all / almost every', and with 沒(有) for 'almost none / hardly'.",
+          "examples": [
+            {
+              "hanzi": "我幾乎每天都騎腳踏車。",
+              "pinyin": "Wǒ jīhū měi tiān dōu qí jiǎotàchē.",
+              "gloss": "I ride a bike almost every day."
+            },
+            {
+              "hanzi": "他太忙了，幾乎沒有時間休息。",
+              "pinyin": "Tā tài máng le, jīhū méiyǒu shíjiān xiūxí.",
+              "gloss": "He's so busy he has almost no time to rest."
+            },
+            {
+              "hanzi": "這裡的東西幾乎都很貴。",
+              "pinyin": "Zhèlǐ de dōngxi jīhū dōu hěn guì.",
+              "gloss": "Almost everything here is expensive."
+            }
+          ],
+          "id": "g_hsk3_08_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_08_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你怎麼了？腳不舒服嗎？",
+          "pinyin": "Nǐ zěnme le? Jiǎo bù shūfú ma?",
+          "gloss": "What's wrong? Is your foot bothering you?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "對啊，我昨天跑步跑太多，現在腳很痛。",
+          "pinyin": "Duì a, wǒ zuótiān pǎobù pǎo tài duō, xiànzài jiǎo hěn tòng.",
+          "gloss": "Yeah, I ran too much yesterday, and now my foot hurts."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "你要不要去醫院檢查一下？",
+          "pinyin": "Nǐ yào bú yào qù yīyuàn jiǎnchá yíxià?",
+          "gloss": "Do you want to go to the hospital for a check-up?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不用啦，休息一下就好。對了，我昨天在捷運站遇到你哥哥。",
+          "pinyin": "Búyòng la, xiūxí yíxià jiù hǎo. Duì le, wǒ zuótiān zài jiéyùn zhàn yùdào nǐ gēge.",
+          "gloss": "No need, I'll just rest. Oh right, I ran into your brother at the MRT station yesterday."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "真的嗎？他現在在哪裡上班？",
+          "pinyin": "Zhēn de ma? Tā xiànzài zài nǎlǐ shàngbān?",
+          "gloss": "Really? Where does he work now?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "他在一家新開的店上班，老闆很年輕，做事也很認真。",
+          "pinyin": "Tā zài yì jiā xīn kāi de diàn shàngbān, lǎobǎn hěn niánqīng, zuòshì yě hěn rènzhēn.",
+          "gloss": "He works at a newly opened shop; the boss is young and very conscientious."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "上課",
+            "很",
+            "認真"
+          ],
+          "pinyin": "Tā shàngkè hěn rènzhēn.",
+          "gloss": "He is very earnest in class.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "幾乎",
+            "每天",
+            "都",
+            "走路",
+            "回家"
+          ],
+          "pinyin": "Wǒ jīhū měi tiān dōu zǒulù huí jiā.",
+          "gloss": "I walk home almost every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "昨天",
+            "在",
+            "車站",
+            "遇到",
+            "他"
+          ],
+          "pinyin": "Wǒ zuótiān zài chēzhàn yùdào tā.",
+          "gloss": "I ran into him at the station yesterday.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這家",
+            "店",
+            "的",
+            "客人",
+            "主要",
+            "是",
+            "年輕人"
+          ],
+          "pinyin": "Zhè jiā diàn de kèrén zhǔyào shì niánqīngrén.",
+          "gloss": "This shop's customers are mainly young people.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我的",
+            "腳",
+            "很",
+            "痛"
+          ],
+          "pinyin": "Wǒ de jiǎo hěn tòng.",
+          "gloss": "My foot really hurts.",
+          "cloze_index": 1
+        }
+      ]
     },
     {
       "id": "l_hsk3_08_2",
@@ -75,7 +238,12 @@
           "pinyin": "jiǔ",
           "gloss": "(long) time; (long) duration of time",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們很久沒見了。",
+            "pinyin": "Wǒmen hěn jiǔ méi jiàn le.",
+            "gloss": "We haven't seen each other for a long time."
+          }
         },
         {
           "id": "v_畫",
@@ -83,7 +251,12 @@
           "pinyin": "huà",
           "gloss": "to draw; to paint; picture; painting; to draw (a line) (variant of 划)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹很愛畫畫。",
+            "pinyin": "Wǒ mèimei hěn ài huàhuà.",
+            "gloss": "My little sister loves to draw."
+          }
         },
         {
           "id": "v_表演",
@@ -91,7 +264,12 @@
           "pinyin": "biǎo yǎn",
           "gloss": "play; show; performance",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "晚上的表演八點開始。",
+            "pinyin": "Wǎnshàng de biǎoyǎn bā diǎn kāishǐ.",
+            "gloss": "Tonight's performance starts at eight."
+          }
         },
         {
           "id": "v_關",
@@ -99,7 +277,12 @@
           "pinyin": "guān",
           "gloss": "mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請幫我關門，好嗎？",
+            "pinyin": "Qǐng bāng wǒ guān mén, hǎo ma?",
+            "gloss": "Please close the door for me, okay?"
+          }
         },
         {
           "id": "v_剛才",
@@ -107,7 +290,12 @@
           "pinyin": "gāng cái",
           "gloss": "just now; a moment ago",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "剛才老闆打電話給你。",
+            "pinyin": "Gāngcái lǎobǎn dǎ diànhuà gěi nǐ.",
+            "gloss": "The boss called you just now."
+          }
         },
         {
           "id": "v_辦公室",
@@ -115,12 +303,168 @@
           "pinyin": "bàn gōng shì",
           "gloss": "office; business premises; bureau",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我哥哥的辦公室在三樓。",
+            "pinyin": "Wǒ gēge de bàngōngshì zài sān lóu.",
+            "gloss": "My older brother's office is on the third floor."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "動詞 + 了 + 很久（做某事做了很長時間）",
+          "pattern": "主語 + 動詞 + 了 + 很久",
+          "explanation": "要說一件事做了很長的時間，可以用「動詞 + 了 + 很久」。「久」表示時間長。常用的還有「好久不見」，是朋友很長時間沒見面時說的話。",
+          "examples": [
+            {
+              "hanzi": "我在門口站了很久。",
+              "pinyin": "Wǒ zài ménkǒu zhàn le hěn jiǔ.",
+              "gloss": "I stood at the door for a long time."
+            },
+            {
+              "hanzi": "他畫了很久，畫得很好。",
+              "pinyin": "Tā huà le hěn jiǔ, huà de hěn hǎo.",
+              "gloss": "He drew for a long time, and he draws well."
+            },
+            {
+              "hanzi": "剛才我跑了很久，現在很累。",
+              "pinyin": "Gāngcái wǒ pǎo le hěn jiǔ, xiànzài hěn lèi.",
+              "gloss": "I ran for a long time just now; now I'm tired."
+            }
+          ],
+          "id": "g_hsk3_08_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "剛才（表示過去很短的時間）",
+          "pattern": "剛才 + 主語 + 動詞 / 主語 + 剛才 + 動詞",
+          "explanation": "「剛才」表示說話前不久的時間，放在主語前面或後面都可以，句子說的是已經發生的事。",
+          "examples": [
+            {
+              "hanzi": "剛才他在辦公室。",
+              "pinyin": "Gāngcái tā zài bàngōngshì.",
+              "gloss": "He was in the office just now."
+            },
+            {
+              "hanzi": "我剛才關了電視。",
+              "pinyin": "Wǒ gāngcái guān le diànshì.",
+              "gloss": "I turned off the TV just now."
+            },
+            {
+              "hanzi": "剛才的表演真好看。",
+              "pinyin": "Gāngcái de biǎoyǎn zhēn hǎokàn.",
+              "gloss": "The performance just now was really great."
+            }
+          ],
+          "id": "g_hsk3_08_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "小安，好久不見！",
+          "pinyin": "Xiǎo Ān, hǎo jiǔ bú jiàn!",
+          "gloss": "Xiao An, long time no see!"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "是啊，你剛才在哪裡？我打電話給你。",
+          "pinyin": "Shì a, nǐ gāngcái zài nǎlǐ? Wǒ dǎ diànhuà gěi nǐ.",
+          "gloss": "Yeah! Where were you just now? I called you."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我在辦公室，太忙了。",
+          "pinyin": "Wǒ zài bàngōngshì, tài máng le.",
+          "gloss": "I was in the office, too busy."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "晚上有表演，你要不要一起去看？",
+          "pinyin": "Wǎnshàng yǒu biǎoyǎn, nǐ yào bú yào yìqǐ qù kàn?",
+          "gloss": "There's a show tonight; do you want to go watch it together?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊！辦公室六點關門，我們幾點見？",
+          "pinyin": "Hǎo a! Bàngōngshì liù diǎn guān mén, wǒmen jǐ diǎn jiàn?",
+          "gloss": "Sure! The office closes at six; what time shall we meet?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "那我們六點半在捷運站見。",
+          "pinyin": "Nà wǒmen liù diǎn bàn zài jiéyùn zhàn jiàn.",
+          "gloss": "Then let's meet at the MRT station at six thirty."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "剛才",
+            "在",
+            "辦公室",
+            "打",
+            "電話"
+          ],
+          "pinyin": "Wǒ gāngcái zài bàngōngshì dǎ diànhuà.",
+          "gloss": "I made a phone call in the office just now.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "請",
+            "你",
+            "關",
+            "門",
+            "，",
+            "謝謝"
+          ],
+          "pinyin": "Qǐng nǐ guān mén, xièxie.",
+          "gloss": "Please close the door, thank you.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "妹妹",
+            "很",
+            "會",
+            "畫畫"
+          ],
+          "pinyin": "Wǒ mèimei hěn huì huàhuà.",
+          "gloss": "My little sister is very good at drawing.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "晚上",
+            "的",
+            "表演",
+            "很",
+            "好看"
+          ],
+          "pinyin": "Wǎnshàng de biǎoyǎn hěn hǎokàn.",
+          "gloss": "Tonight's performance is very good.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "學",
+            "中文",
+            "學",
+            "了",
+            "很久",
+            "了"
+          ],
+          "pinyin": "Tā xué Zhōngwén xué le hěn jiǔ le.",
+          "gloss": "He has been studying Chinese for a long time.",
+          "cloze_index": 5
+        }
+      ]
     },
     {
       "id": "l_hsk3_08_3",
@@ -133,7 +477,12 @@
           "pinyin": "huán jìng",
           "gloss": "environment; circumstances; surroundings",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的環境很好，也很安靜。",
+            "pinyin": "Zhè jiā diàn de huánjìng hěn hǎo, yě hěn ānjìng.",
+            "gloss": "This shop's environment is nice and quiet."
+          }
         },
         {
           "id": "v_關心",
@@ -141,7 +490,12 @@
           "pinyin": "guān xīn",
           "gloss": "to be concerned about; to care about",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "謝謝你的關心，我已經好多了。",
+            "pinyin": "Xièxie nǐ de guānxīn, wǒ yǐjīng hǎo duō le.",
+            "gloss": "Thanks for your concern, I'm much better already."
+          }
         },
         {
           "id": "v_祝",
@@ -149,7 +503,12 @@
           "pinyin": "zhù",
           "gloss": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "祝你生日快樂！",
+            "pinyin": "Zhù nǐ shēngrì kuàilè!",
+            "gloss": "Happy birthday to you!"
+          }
         },
         {
           "id": "v_層",
@@ -157,7 +516,12 @@
           "pinyin": "céng",
           "gloss": "to pile on top of one another; layer; stratum; floor (of a building); story",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那家餐廳在第二層樓。",
+            "pinyin": "Nà jiā cāntīng zài dì-èr céng lóu.",
+            "gloss": "That restaurant is on the second floor."
+          }
         },
         {
           "id": "v_腿",
@@ -165,7 +529,12 @@
           "pinyin": "tuǐ",
           "gloss": "leg",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天跑步，今天腿很痛。",
+            "pinyin": "Wǒ zuótiān pǎobù, jīntiān tuǐ hěn tòng.",
+            "gloss": "I went running yesterday, and today my legs hurt."
+          }
         },
         {
           "id": "v_班",
@@ -173,12 +542,149 @@
           "pinyin": "bān",
           "gloss": "team; class; grade; (military) squad; work shift",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們班有二十個學生。",
+            "pinyin": "Wǒmen bān yǒu èrshí ge xuéshēng.",
+            "gloss": "There are twenty students in our class."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「祝」說祝福的話",
+          "pattern": "祝 + 對象 + 好事",
+          "explanation": "「祝」用在句子開頭，後面先說對象（你、你們、大家），再說希望發生的好事，像「生日快樂」、「身體健康」。這是台灣人在生日、過年或朋友出門旅行時常說的話。",
+          "examples": [
+            {
+              "hanzi": "祝你生日快樂！",
+              "pinyin": "Zhù nǐ shēngrì kuàilè!",
+              "gloss": "Happy birthday!"
+            },
+            {
+              "hanzi": "祝你身體健康。",
+              "pinyin": "Zhù nǐ shēntǐ jiànkāng.",
+              "gloss": "Wishing you good health."
+            },
+            {
+              "hanzi": "祝你們旅行快樂！",
+              "pinyin": "Zhù nǐmen lǚxíng kuàilè!",
+              "gloss": "Have a great trip!"
+            }
+          ],
+          "id": "g_hsk3_08_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_08_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小張",
+          "hanzi": "小明，你的新家在哪裡？環境好嗎？",
+          "pinyin": "Xiǎo Zhāng: Xiǎo Míng, nǐ de xīn jiā zài nǎlǐ? Huánjìng hǎo ma?",
+          "gloss": "Xiao Ming, where's your new place? Is the environment good?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "在第十二層，很安靜，住起來很舒服。",
+          "pinyin": "Zài dì-shí'èr céng, hěn ānjìng, zhù qǐlái hěn shūfú.",
+          "gloss": "On the twelfth floor; it's quiet and comfortable to live in."
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "那你怎麼上班？走路去嗎？",
+          "pinyin": "Nà nǐ zěnme shàngbān? Zǒulù qù ma?",
+          "gloss": "Then how do you get to work? Do you walk?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我搭捷運，很快。可是昨天走太多路，腿有點痛。",
+          "pinyin": "Wǒ dā jiéyùn, hěn kuài. Kěshì zuótiān zǒu tài duō lù, tuǐ yǒudiǎn tòng.",
+          "gloss": "I take the MRT, it's fast. But I walked too much yesterday, so my legs hurt a bit."
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "你要多休息喔。對了，明天是你生日，祝你生日快樂！",
+          "pinyin": "Nǐ yào duō xiūxí ō. Duì le, míngtiān shì nǐ shēngrì, zhù nǐ shēngrì kuàilè!",
+          "gloss": "You should rest more. Oh right, tomorrow is your birthday — happy birthday!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "謝謝你的關心！明天一起去吃飯吧。",
+          "pinyin": "Xièxie nǐ de guānxīn! Míngtiān yìqǐ qù chīfàn ba.",
+          "gloss": "Thanks for caring! Let's go eat together tomorrow."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這家",
+            "店",
+            "的",
+            "環境",
+            "很",
+            "安靜"
+          ],
+          "pinyin": "Zhè jiā diàn de huánjìng hěn ānjìng.",
+          "gloss": "This shop's environment is very quiet.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "謝謝",
+            "你",
+            "的",
+            "關心"
+          ],
+          "pinyin": "Xièxie nǐ de guānxīn.",
+          "gloss": "Thank you for your concern.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "祝",
+            "你",
+            "身體",
+            "健康"
+          ],
+          "pinyin": "Zhù nǐ shēntǐ jiànkāng.",
+          "gloss": "Wishing you good health.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "腿",
+            "有",
+            "一點",
+            "痛"
+          ],
+          "pinyin": "Wǒ de tuǐ yǒu yìdiǎn tòng.",
+          "gloss": "My legs hurt a little.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我們",
+            "班",
+            "有",
+            "二十",
+            "個",
+            "學生"
+          ],
+          "pinyin": "Wǒmen bān yǒu èrshí ge xuéshēng.",
+          "gloss": "Our class has twenty students.",
+          "cloze_index": 1
+        }
+      ]
     }
   ],
   "sort_order": 36,

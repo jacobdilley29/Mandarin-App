@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 14",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_14_1",
@@ -17,7 +17,12 @@
           "pinyin": "diàn tī",
           "gloss": "elevator; escalator",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們搭電梯上樓吧。",
+            "pinyin": "Wǒmen dā diàntī shàng lóu ba.",
+            "gloss": "Let's take the elevator upstairs."
+          }
         },
         {
           "id": "v_刮",
@@ -25,7 +30,12 @@
           "pinyin": "guā",
           "gloss": "to scrape; to blow; to shave",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面刮大風，記得帶傘。",
+            "pinyin": "Wàimiàn guā dà fēng, jìde dài sǎn.",
+            "gloss": "It's blowing hard outside, remember to take an umbrella."
+          }
         },
         {
           "id": "v_矮",
@@ -33,7 +43,12 @@
           "pinyin": "ǎi",
           "gloss": "low; short (in length)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我弟弟比我矮一點。",
+            "pinyin": "Wǒ dìdi bǐ wǒ ǎi yìdiǎn.",
+            "gloss": "My younger brother is a little shorter than me."
+          }
         },
         {
           "id": "v_眼鏡",
@@ -41,7 +56,12 @@
           "pinyin": "yǎn jìng",
           "gloss": "spectacles; eyeglasses",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的眼鏡不見了，你有看到嗎？",
+            "pinyin": "Wǒ de yǎnjìng bú jiàn le, nǐ yǒu kàndào ma?",
+            "gloss": "My glasses are gone — have you seen them?"
+          }
         },
         {
           "id": "v_春",
@@ -49,7 +69,12 @@
           "pinyin": "chūn",
           "gloss": "spring (season); gay; joyful",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "春天的天氣很舒服。",
+            "pinyin": "Chūntiān de tiānqì hěn shūfú.",
+            "gloss": "The weather in spring is very pleasant."
+          }
         },
         {
           "id": "v_冰箱",
@@ -57,12 +82,152 @@
           "pinyin": "bīng xiāng",
           "gloss": "icebox; freezer cabinet; refrigerator",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "冰箱裡有牛奶和雞蛋。",
+            "pinyin": "Bīngxiāng lǐ yǒu niúnǎi hé jīdàn.",
+            "gloss": "There's milk and eggs in the fridge."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「比」做比較",
+          "pattern": "A + 比 + B + 形容詞（+ 一點／多了）",
+          "explanation": "「比」用來比較兩個人或兩樣東西。形容詞前面不能加「很」，要說「一點」或「多了」來表示差別大小，例如「他比我矮一點」。",
+          "examples": [
+            {
+              "hanzi": "我妹妹比我矮一點。",
+              "pinyin": "Wǒ mèimei bǐ wǒ ǎi yìdiǎn.",
+              "gloss": "My younger sister is a bit shorter than me."
+            },
+            {
+              "hanzi": "這個冰箱比那個大多了。",
+              "pinyin": "Zhège bīngxiāng bǐ nàge dà duō le.",
+              "gloss": "This fridge is much bigger than that one."
+            },
+            {
+              "hanzi": "春天比夏天舒服。",
+              "pinyin": "Chūntiān bǐ xiàtiān shūfú.",
+              "gloss": "Spring is more comfortable than summer."
+            }
+          ],
+          "id": "g_hsk3_14_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_14_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "我的眼鏡呢？你看到了嗎？",
+          "pinyin": "Wǒ de yǎnjìng ne? Nǐ kàndào le ma?",
+          "gloss": "Where are my glasses? Have you seen them?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "在冰箱上面啊。",
+          "pinyin": "Zài bīngxiāng shàngmiàn a.",
+          "gloss": "They're on top of the fridge."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "喔，找到了！外面刮大風，我要多穿一件。",
+          "pinyin": "Ō, zhǎodào le! Wàimiàn guā dà fēng, wǒ yào duō chuān yí jiàn.",
+          "gloss": "Oh, found them! It's windy outside, I'll wear one more layer."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好，我們搭電梯下樓吧。",
+          "pinyin": "Hǎo, wǒmen dā diàntī xià lóu ba.",
+          "gloss": "OK, let's take the elevator downstairs."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "電梯壞了耶，只能走樓梯。",
+          "pinyin": "Diàntī huài le ye, zhǐ néng zǒu lóutī.",
+          "gloss": "The elevator's broken — we can only take the stairs."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "沒關係，春天的天氣很舒服，走路也很好。",
+          "pinyin": "Méi guānxi, chūntiān de tiānqì hěn shūfú, zǒulù yě hěn hǎo.",
+          "gloss": "No problem, spring weather is nice, walking is good too."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "搭",
+            "電梯",
+            "上班"
+          ],
+          "pinyin": "Wǒ měi tiān dā diàntī shàng bān.",
+          "gloss": "I take the elevator to work every day.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "今天",
+            "的",
+            "風",
+            "刮",
+            "得",
+            "很",
+            "大"
+          ],
+          "pinyin": "Jīntiān de fēng guā de hěn dà.",
+          "gloss": "The wind is blowing very hard today.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "眼鏡",
+            "在",
+            "哪裡",
+            "？"
+          ],
+          "pinyin": "Wǒ de yǎnjìng zài nǎlǐ?",
+          "gloss": "Where are my glasses?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "張",
+            "床",
+            "太",
+            "矮",
+            "了"
+          ],
+          "pinyin": "Zhè zhāng chuáng tài ǎi le.",
+          "gloss": "This bed is too low.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "冰箱",
+            "裡",
+            "沒有",
+            "水果",
+            "了"
+          ],
+          "pinyin": "Bīngxiāng lǐ méiyǒu shuǐguǒ le.",
+          "gloss": "There's no fruit left in the fridge.",
+          "cloze_index": 0
+        }
+      ]
     },
     {
       "id": "l_hsk3_14_2",
@@ -75,7 +240,12 @@
           "pinyin": "ā yí",
           "gloss": "maternal aunt; step-mother; childcare worker",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我阿姨明天要來我家。",
+            "pinyin": "Wǒ āyí míngtiān yào lái wǒ jiā.",
+            "gloss": "My aunt is coming to my house tomorrow."
+          }
         },
         {
           "id": "v_超市",
@@ -83,7 +253,12 @@
           "pinyin": "chāo shì",
           "gloss": "supermarket (abbr. for 超级市场)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我去超市買水果。",
+            "pinyin": "Wǒ qù chāoshì mǎi shuǐguǒ.",
+            "gloss": "I'm going to the supermarket to buy fruit."
+          }
         },
         {
           "id": "v_著急",
@@ -91,7 +266,12 @@
           "pinyin": "zháo jí",
           "gloss": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhāo jí]",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "別著急，時間還很多。",
+            "pinyin": "Bié zhāojí, shíjiān hái hěn duō.",
+            "gloss": "Don't worry, there's still plenty of time."
+          }
         },
         {
           "id": "v_季節",
@@ -99,7 +279,12 @@
           "pinyin": "jì jié",
           "gloss": "time; season; period",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最愛的季節是春天。",
+            "pinyin": "Wǒ zuì ài de jìjié shì chūntiān.",
+            "gloss": "My favorite season is spring."
+          }
         },
         {
           "id": "v_空調",
@@ -107,7 +292,12 @@
           "pinyin": "kōng tiáo",
           "gloss": "air conditioning; air conditioner (including units that have a heating mode)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "房間裡的空調壞了。",
+            "pinyin": "Fángjiān lǐ de kōngtiáo huài le.",
+            "gloss": "The air conditioner in the room is broken."
+          }
         },
         {
           "id": "v_月亮",
@@ -115,12 +305,169 @@
           "pinyin": "yuè liang",
           "gloss": "the moon",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你看，月亮好亮喔！",
+            "pinyin": "Nǐ kàn, yuèliàng hǎo liàng ō!",
+            "gloss": "Look, the moon is so bright!"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "別 + Verb (Don't ...)",
+          "pattern": "別 + 動詞 (+ 了)",
+          "explanation": "別 means \"don't\" and is used before a verb to tell someone not to do something. It is softer and more spoken than 不要, and is very common in daily Taiwan Mandarin. Adding 了 at the end means \"stop doing it now\".",
+          "examples": [
+            {
+              "hanzi": "別著急，我們還有時間。",
+              "pinyin": "Bié zhāojí, wǒmen hái yǒu shíjiān.",
+              "gloss": "Don't worry, we still have time."
+            },
+            {
+              "hanzi": "別買太多，超市明天也開。",
+              "pinyin": "Bié mǎi tài duō, chāoshì míngtiān yě kāi.",
+              "gloss": "Don't buy too much; the supermarket is open tomorrow too."
+            },
+            {
+              "hanzi": "別開空調了，外面不熱。",
+              "pinyin": "Bié kāi kōngtiáo le, wàimiàn bù rè.",
+              "gloss": "Stop turning on the AC; it's not hot outside."
+            }
+          ],
+          "id": "g_hsk3_14_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "Time-word + 的 + Noun",
+          "pattern": "時間詞 + 的 + 名詞",
+          "explanation": "A time word can modify a noun with 的, like 晚上的月亮 (the moon at night) or 這個季節的水果 (this season's fruit).",
+          "examples": [
+            {
+              "hanzi": "晚上的月亮很大。",
+              "pinyin": "Wǎnshàng de yuèliàng hěn dà.",
+              "gloss": "The moon at night is very big."
+            },
+            {
+              "hanzi": "這個季節的水果很甜。",
+              "pinyin": "Zhè ge jìjié de shuǐguǒ hěn tián.",
+              "gloss": "The fruit this season is very sweet."
+            },
+            {
+              "hanzi": "夏天的空調很重要。",
+              "pinyin": "Xiàtiān de kōngtiáo hěn zhòngyào.",
+              "gloss": "Air conditioning in summer is very important."
+            }
+          ],
+          "id": "g_hsk3_14_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "阿姨，超市在哪裡？",
+          "pinyin": "Āyí, chāoshì zài nǎlǐ?",
+          "gloss": "Auntie, where is the supermarket?"
+        },
+        {
+          "speaker": "阿姨",
+          "hanzi": "就在前面，走五分鐘就到了。",
+          "pinyin": "Jiù zài qiánmiàn, zǒu wǔ fēnzhōng jiù dào le.",
+          "gloss": "It's just ahead; five minutes' walk and you're there."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我要買水果，還要買一點菜。",
+          "pinyin": "Wǒ yào mǎi shuǐguǒ, hái yào mǎi yìdiǎn cài.",
+          "gloss": "I want to buy fruit and also some vegetables."
+        },
+        {
+          "speaker": "阿姨",
+          "hanzi": "別著急，超市晚上十點才關門。",
+          "pinyin": "Bié zhāojí, chāoshì wǎnshàng shí diǎn cái guānmén.",
+          "gloss": "Don't rush; the supermarket doesn't close until ten at night."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對了，這個季節的水果很甜喔！",
+          "pinyin": "Duì le, zhè ge jìjié de shuǐguǒ hěn tián ō!",
+          "gloss": "By the way, the fruit this season is really sweet!"
+        },
+        {
+          "speaker": "阿姨",
+          "hanzi": "是啊！買完回家開空調，晚上還可以看月亮。",
+          "pinyin": "Shì a! Mǎi wán huí jiā kāi kōngtiáo, wǎnshàng hái kěyǐ kàn yuèliàng.",
+          "gloss": "Yes! After shopping we'll go home and turn on the AC; at night we can also look at the moon."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "阿姨",
+            "在",
+            "超市",
+            "買",
+            "菜"
+          ],
+          "pinyin": "Wǒ āyí zài chāoshì mǎi cài.",
+          "gloss": "My aunt buys vegetables at the supermarket.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "別",
+            "著急",
+            "，",
+            "車",
+            "快",
+            "來",
+            "了"
+          ],
+          "pinyin": "Bié zhāojí, chē kuài lái le.",
+          "gloss": "Don't worry, the bus is coming soon.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "春天",
+            "是",
+            "最",
+            "舒服",
+            "的",
+            "季節"
+          ],
+          "pinyin": "Chūntiān shì zuì shūfú de jìjié.",
+          "gloss": "Spring is the most comfortable season.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "房間",
+            "裡",
+            "的",
+            "空調",
+            "壞",
+            "了"
+          ],
+          "pinyin": "Fángjiān lǐ de kōngtiáo huài le.",
+          "gloss": "The air conditioner in the room is broken.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "晚上",
+            "的",
+            "月亮",
+            "很",
+            "亮"
+          ],
+          "pinyin": "Wǎnshàng de yuèliàng hěn liàng.",
+          "gloss": "The moon at night is very bright.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_14_3",
@@ -133,7 +480,12 @@
           "pinyin": "běi fāng",
           "gloss": "north; the northern part a country; China north of the Yellow River",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "北方的冬天常常下雪。",
+            "pinyin": "Běifāng de dōngtiān chángcháng xià xuě.",
+            "gloss": "It often snows in the north in winter."
+          }
         },
         {
           "id": "v_愛好",
@@ -141,7 +493,12 @@
           "pinyin": "ài hào",
           "gloss": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的愛好是游泳。",
+            "pinyin": "Wǒ de àihào shì yóuyǒng.",
+            "gloss": "My hobby is swimming."
+          }
         },
         {
           "id": "v_襯衫",
@@ -149,7 +506,12 @@
           "pinyin": "chèn shān",
           "gloss": "shirt; blouse",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件白襯衫很好看。",
+            "pinyin": "Zhè jiàn bái chènshān hěn hǎokàn.",
+            "gloss": "This white shirt looks really nice."
+          }
         },
         {
           "id": "v_旅館",
@@ -158,7 +520,12 @@
           "gloss": "guesthouse; lodge; hotel",
           "hsk_level": 3,
           "taiwan_note": "台灣說「旅館」或「飯店」。",
-          "prc_form": "賓館"
+          "prc_form": "賓館",
+          "example": {
+            "hanzi": "我們在火車站附近找了一家旅館。",
+            "pinyin": "Wǒmen zài huǒchēzhàn fùjìn zhǎo le yì jiā lǚguǎn.",
+            "gloss": "We found a hotel near the train station."
+          }
         },
         {
           "id": "v_冬",
@@ -166,7 +533,12 @@
           "pinyin": "dōng",
           "gloss": "winter",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "冬天的早上很難起床。",
+            "pinyin": "Dōngtiān de zǎoshang hěn nán qǐchuáng.",
+            "gloss": "It's hard to get out of bed on winter mornings."
+          }
         },
         {
           "id": "v_裙子",
@@ -174,12 +546,169 @@
           "pinyin": "qún zi",
           "gloss": "skirt",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她穿了一條藍色的裙子。",
+            "pinyin": "Tā chuān le yì tiáo lán sè de qúnzi.",
+            "gloss": "She is wearing a blue skirt."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "我的愛好是＋動詞短語 (My hobby is ...)",
+          "pattern": "（某人）的愛好是 ＋ 動詞短語",
+          "explanation": "愛好 is a noun meaning 'hobby / interest'. Use 「(某人)的愛好是…」 to say what someone likes doing. After 是 you put a verb phrase such as 游泳, 跳舞, 逛街. To ask, say 「你的愛好是什麼？」",
+          "examples": [
+            {
+              "hanzi": "我的愛好是畫畫。",
+              "pinyin": "Wǒ de àihào shì huà huà.",
+              "gloss": "My hobby is drawing."
+            },
+            {
+              "hanzi": "我姐姐的愛好是唱歌。",
+              "pinyin": "Wǒ jiějie de àihào shì chàng gē.",
+              "gloss": "My older sister's hobby is singing."
+            },
+            {
+              "hanzi": "你的愛好是什麼？我的愛好是騎腳踏車。",
+              "pinyin": "Nǐ de àihào shì shénme? Wǒ de àihào shì qí jiǎotàchē.",
+              "gloss": "What's your hobby? My hobby is riding a bike."
+            }
+          ],
+          "id": "g_hsk3_14_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "冬天＋穿／喝… (talking about seasons)",
+          "pattern": "冬天 ＋ 主語 ＋ 動詞",
+          "explanation": "冬 means winter; in daily speech Taiwanese people usually say 冬天. A season word like 冬天 often comes at the front of the sentence as a time word, before the subject or right after it.",
+          "examples": [
+            {
+              "hanzi": "冬天我很愛喝熱茶。",
+              "pinyin": "Dōngtiān wǒ hěn ài hē rè chá.",
+              "gloss": "In winter I really love drinking hot tea."
+            },
+            {
+              "hanzi": "冬天她還是穿裙子。",
+              "pinyin": "Dōngtiān tā háishì chuān qúnzi.",
+              "gloss": "She still wears skirts in winter."
+            },
+            {
+              "hanzi": "北方的冬天，人人都穿長褲。",
+              "pinyin": "Běifāng de dōngtiān, rénrén dōu chuān chángkù.",
+              "gloss": "In the northern winter, everyone wears long pants."
+            }
+          ],
+          "id": "g_hsk3_14_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "你看，這件襯衫好看嗎？",
+          "pinyin": "Nǐ kàn, zhè jiàn chènshān hǎokàn ma?",
+          "gloss": "Look, does this shirt look good?"
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "好看！不過我比較愛那條裙子。",
+          "pinyin": "Hǎokàn! Búguò wǒ bǐjiào ài nà tiáo qúnzi.",
+          "gloss": "It's nice! But I like that skirt more."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "冬天穿裙子，你不怕風喔？",
+          "pinyin": "Dōngtiān chuān qúnzi, nǐ bú pà fēng o?",
+          "gloss": "Wearing a skirt in winter — you're not afraid of the wind?"
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "我是北方人，北方的冬天我都習慣了。",
+          "pinyin": "Wǒ shì běifāng rén, běifāng de dōngtiān wǒ dōu xíguàn le.",
+          "gloss": "I'm a northerner; I'm used to northern winters."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那你買吧！我們還要回旅館。",
+          "pinyin": "Nà nǐ mǎi ba! Wǒmen hái yào huí lǚguǎn.",
+          "gloss": "Then buy it! We still have to go back to the hotel."
+        },
+        {
+          "speaker": "阿文",
+          "hanzi": "好啦，我的愛好就是逛街買東西。",
+          "pinyin": "Hǎo la, wǒ de àihào jiùshì guàng jiē mǎi dōngxi.",
+          "gloss": "Fine, my hobby is exactly shopping on the street."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "北方",
+            "的",
+            "冬天",
+            "常常",
+            "下雪。"
+          ],
+          "pinyin": "Běifāng de dōngtiān chángcháng xià xuě.",
+          "gloss": "It often snows in the north in winter.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "愛好",
+            "是",
+            "游泳。"
+          ],
+          "pinyin": "Wǒ de àihào shì yóuyǒng.",
+          "gloss": "My hobby is swimming.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "襯衫",
+            "太",
+            "貴",
+            "了。"
+          ],
+          "pinyin": "Zhè jiàn chènshān tài guì le.",
+          "gloss": "This shirt is too expensive.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我們",
+            "住",
+            "在",
+            "車站",
+            "附近",
+            "的",
+            "旅館。"
+          ],
+          "pinyin": "Wǒmen zhù zài chēzhàn fùjìn de lǚguǎn.",
+          "gloss": "We're staying at the hotel near the station.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "她",
+            "想",
+            "買",
+            "一",
+            "條",
+            "新",
+            "裙子。"
+          ],
+          "pinyin": "Tā xiǎng mǎi yì tiáo xīn qúnzi.",
+          "gloss": "She wants to buy a new skirt.",
+          "cloze_index": 6
+        }
+      ]
     }
   ],
   "sort_order": 42,

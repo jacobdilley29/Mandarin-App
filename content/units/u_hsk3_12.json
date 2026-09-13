@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 12",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_12_1",
@@ -17,7 +17,12 @@
           "pinyin": "fàng xīn",
           "gloss": "to feel relieved; to feel reassured; to be at ease",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你放心，我一定準時到。",
+            "pinyin": "nǐ fàngxīn, wǒ yídìng zhǔnshí dào.",
+            "gloss": "Don't worry, I'll definitely be there on time."
+          }
         },
         {
           "id": "v_草",
@@ -25,7 +30,12 @@
           "pinyin": "cǎo",
           "gloss": "grass; straw; manuscript",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "草地上有很多人在玩。",
+            "pinyin": "cǎodì shàng yǒu hěn duō rén zài wán.",
+            "gloss": "There are a lot of people playing on the grass."
+          }
         },
         {
           "id": "v_甜",
@@ -33,7 +43,12 @@
           "pinyin": "tián",
           "gloss": "sweet",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這杯茶太甜了。",
+            "pinyin": "zhè bēi chá tài tián le.",
+            "gloss": "This cup of tea is too sweet."
+          }
         },
         {
           "id": "v_作業",
@@ -41,7 +56,12 @@
           "pinyin": "zuò yè",
           "gloss": "school assignment; homework; work",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我還沒做完作業。",
+            "pinyin": "wǒ hái méi zuò wán zuòyè.",
+            "gloss": "I haven't finished my homework yet."
+          }
         },
         {
           "id": "v_瘦",
@@ -49,7 +69,12 @@
           "pinyin": "shòu",
           "gloss": "thin; to lose weight; (of clothing) tight",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他最近瘦了很多。",
+            "pinyin": "tā zuìjìn shòu le hěn duō.",
+            "gloss": "He has lost a lot of weight recently."
+          }
         },
         {
           "id": "v_綠",
@@ -57,12 +82,149 @@
           "pinyin": "lǜ",
           "gloss": "green; (slang) (derived from 绿帽子) to cheat on (one's spouse or boyfriend or girlfriend)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買了一雙綠色的鞋子。",
+            "pinyin": "wǒ mǎi le yì shuāng lǜsè de xiézi.",
+            "gloss": "I bought a pair of green shoes."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "讓 + 某人 + 放心 (to put someone at ease)",
+          "pattern": "A + 讓 + B + (很/不太) + 放心",
+          "explanation": "用「讓」說明某件事或某個人使別人的心情變得安心。動詞「放心」前面可以加「很」或「不太」。這是台灣日常生活中很常用的說法。",
+          "examples": [
+            {
+              "hanzi": "他做事很認真，讓老闆很放心。",
+              "pinyin": "tā zuò shì hěn rènzhēn, ràng lǎobǎn hěn fàngxīn.",
+              "gloss": "He works conscientiously, which puts the boss at ease."
+            },
+            {
+              "hanzi": "弟弟的成績讓爸爸很放心。",
+              "pinyin": "dìdi de chéngjī ràng bàba hěn fàngxīn.",
+              "gloss": "My little brother's grades put Dad at ease."
+            },
+            {
+              "hanzi": "你自己騎腳踏車去，媽媽不太放心。",
+              "pinyin": "nǐ zìjǐ qí jiǎotàchē qù, māma bú tài fàngxīn.",
+              "gloss": "Mom isn't quite at ease with you riding a bike there by yourself."
+            }
+          ],
+          "id": "g_hsk3_12_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_12_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "你的作業做完了嗎？",
+          "pinyin": "nǐ de zuòyè zuò wán le ma?",
+          "gloss": "Have you finished your homework?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "做完了，你放心啦！",
+          "pinyin": "zuò wán le, nǐ fàngxīn la!",
+          "gloss": "I've finished it, don't worry!"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "那我們去公園走走，那邊的草很綠喔。",
+          "pinyin": "nà wǒmen qù gōngyuán zǒu zǒu, nà biān de cǎo hěn lǜ ō.",
+          "gloss": "Then let's go for a walk in the park; the grass over there is really green."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊！我想吃甜的，可以買西瓜嗎？",
+          "pinyin": "hǎo a! wǒ xiǎng chī tián de, kěyǐ mǎi xīguā ma?",
+          "gloss": "Sure! I want something sweet — can we buy a watermelon?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "可以，你最近瘦了，多吃一點。",
+          "pinyin": "kěyǐ, nǐ zuìjìn shòu le, duō chī yìdiǎn.",
+          "gloss": "Sure. You've gotten thinner lately, so eat a bit more."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "謝謝媽媽，我們騎腳踏車去吧！",
+          "pinyin": "xièxie māma, wǒmen qí jiǎotàchē qù ba!",
+          "gloss": "Thanks, Mom. Let's ride our bikes there!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "公園",
+            "的",
+            "草",
+            "很",
+            "綠"
+          ],
+          "pinyin": "gōngyuán de cǎo hěn lǜ.",
+          "gloss": "The grass in the park is very green.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "做完",
+            "作業",
+            "就",
+            "去",
+            "玩"
+          ],
+          "pinyin": "wǒ zuò wán zuòyè jiù qù wán.",
+          "gloss": "I'll go play as soon as I finish my homework.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "西瓜",
+            "很",
+            "甜"
+          ],
+          "pinyin": "zhè ge xīguā hěn tián.",
+          "gloss": "This watermelon is very sweet.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "妹妹",
+            "最近",
+            "瘦",
+            "了",
+            "很多"
+          ],
+          "pinyin": "mèimei zuìjìn shòu le hěn duō.",
+          "gloss": "My little sister has gotten a lot thinner lately.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這樣",
+            "媽媽",
+            "就",
+            "放心",
+            "了"
+          ],
+          "pinyin": "zhèyàng māma jiù fàngxīn le.",
+          "gloss": "This way Mom can feel at ease.",
+          "cloze_index": 3
+        }
+      ]
     },
     {
       "id": "l_hsk3_12_2",
@@ -75,7 +237,12 @@
           "pinyin": "pí jiǔ",
           "gloss": "beer (loanword)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我爸爸最愛喝冰啤酒。",
+            "pinyin": "Wǒ bàba zuì ài hē bīng píjiǔ.",
+            "gloss": "My dad loves drinking cold beer the most."
+          }
         },
         {
           "id": "v_蛋糕",
@@ -83,7 +250,12 @@
           "pinyin": "dàn gāo",
           "gloss": "cake",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這塊蛋糕真好吃!",
+            "pinyin": "Zhè kuài dàngāo zhēn hǎochī!",
+            "gloss": "This piece of cake is really delicious!"
+          }
         },
         {
           "id": "v_新鮮",
@@ -91,7 +263,12 @@
           "pinyin": "xīn xiān",
           "gloss": "fresh (experience, food etc); freshness; novel",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這些魚很新鮮喔!",
+            "pinyin": "Zhèxiē yú hěn xīnxiān o!",
+            "gloss": "These fish are very fresh!"
+          }
         },
         {
           "id": "v_難過",
@@ -99,7 +276,12 @@
           "pinyin": "nán guò",
           "gloss": "to feel sad; to feel unwell; (of life) to be difficult",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他考得不好,心裡很難過。",
+            "pinyin": "Tā kǎo de bù hǎo, xīnlǐ hěn nánguò.",
+            "gloss": "He didn't do well on the test and feels really sad."
+          }
         },
         {
           "id": "v_客人",
@@ -107,7 +289,12 @@
           "pinyin": "kè rén",
           "gloss": "visitor; guest; customer",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "晚上店裡的客人很多。",
+            "pinyin": "Wǎnshàng diàn lǐ de kèrén hěn duō.",
+            "gloss": "There are a lot of customers in the shop in the evening."
+          }
         },
         {
           "id": "v_奶奶",
@@ -115,12 +302,152 @@
           "pinyin": "nǎi nai",
           "gloss": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; (coll.) boobies",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我奶奶做的麵最好吃。",
+            "pinyin": "Wǒ nǎinai zuò de miàn zuì hǎochī.",
+            "gloss": "The noodles my grandma makes are the best."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「讓」表示某事使人有某種感覺",
+          "pattern": "A + 讓 + B + 感覺/狀態",
+          "explanation": "「讓」here means \"to make (someone feel a certain way)\". A is the thing or person that causes the feeling, B is the one who feels it, and after B comes an adjective or a verb phrase like 很難過、很開心、很想哭. This is very common in everyday Taiwan Mandarin.",
+          "examples": [
+            {
+              "hanzi": "昨天的事讓我很難過。",
+              "pinyin": "Zuótiān de shì ràng wǒ hěn nánguò.",
+              "gloss": "What happened yesterday made me really sad."
+            },
+            {
+              "hanzi": "奶奶做的蛋糕讓客人都很開心。",
+              "pinyin": "Nǎinai zuò de dàngāo ràng kèrén dōu hěn kāixīn.",
+              "gloss": "The cake grandma made made all the guests happy."
+            },
+            {
+              "hanzi": "這杯冰啤酒讓我覺得很舒服。",
+              "pinyin": "Zhè bēi bīng píjiǔ ràng wǒ juéde hěn shūfú.",
+              "gloss": "This cold beer makes me feel great."
+            }
+          ],
+          "id": "g_hsk3_12_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_12_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "奶奶,晚上有客人要來嗎?",
+          "pinyin": "Nǎinai, wǎnshàng yǒu kèrén yào lái ma?",
+          "gloss": "Grandma, are guests coming tonight?"
+        },
+        {
+          "speaker": "奶奶",
+          "hanzi": "對啊,你哥哥要來吃飯。",
+          "pinyin": "Duì a, nǐ gēge yào lái chīfàn.",
+          "gloss": "Yes, your older brother is coming for dinner."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我去買一個蛋糕,再買兩瓶啤酒。",
+          "pinyin": "Nà wǒ qù mǎi yí ge dàngāo, zài mǎi liǎng píng píjiǔ.",
+          "gloss": "Then I'll go buy a cake and two bottles of beer."
+        },
+        {
+          "speaker": "奶奶",
+          "hanzi": "好,魚也要買新鮮的喔。",
+          "pinyin": "Hǎo, yú yě yào mǎi xīnxiān de o.",
+          "gloss": "OK, and buy fresh fish too."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "沒問題!上次哥哥沒來,你很難過。",
+          "pinyin": "Méi wèntí! Shàng cì gēge méi lái, nǐ hěn nánguò.",
+          "gloss": "No problem! Last time my brother didn't come, you were really sad."
+        },
+        {
+          "speaker": "奶奶",
+          "hanzi": "是啊,這次他來,我最開心了。",
+          "pinyin": "Shì a, zhè cì tā lái, wǒ zuì kāixīn le.",
+          "gloss": "Yes, this time he's coming, so I'm the happiest."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這些",
+            "菜",
+            "很",
+            "新鮮"
+          ],
+          "pinyin": "Zhèxiē cài hěn xīnxiān.",
+          "gloss": "These vegetables are very fresh.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "奶奶",
+            "做",
+            "的",
+            "蛋糕",
+            "最",
+            "好吃"
+          ],
+          "pinyin": "Nǎinai zuò de dàngāo zuì hǎochī.",
+          "gloss": "The cake grandma makes is the tastiest.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "爸爸",
+            "晚上",
+            "愛",
+            "喝",
+            "啤酒"
+          ],
+          "pinyin": "Bàba wǎnshàng ài hē píjiǔ.",
+          "gloss": "Dad likes to drink beer in the evening.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "家",
+            "裡",
+            "來",
+            "了",
+            "三",
+            "個",
+            "客人"
+          ],
+          "pinyin": "Jiā lǐ lái le sān ge kèrén.",
+          "gloss": "Three guests came to the house.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "事",
+            "讓",
+            "我",
+            "很",
+            "難過"
+          ],
+          "pinyin": "Zhè jiàn shì ràng wǒ hěn nánguò.",
+          "gloss": "This makes me very sad.",
+          "cloze_index": 6
+        }
+      ]
     },
     {
       "id": "l_hsk3_12_3",
@@ -133,7 +460,12 @@
           "pinyin": "wǎn",
           "gloss": "bowl; cup",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個碗很乾淨。",
+            "pinyin": "zhè ge wǎn hěn gān jìng.",
+            "gloss": "This bowl is very clean."
+          }
         },
         {
           "id": "v_數學",
@@ -141,7 +473,12 @@
           "pinyin": "shù xué",
           "gloss": "mathematics; mathematical",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我覺得數學很難。",
+            "pinyin": "wǒ jué de shù xué hěn nán.",
+            "gloss": "I think math is very hard."
+          }
         },
         {
           "id": "v_刷",
@@ -149,7 +486,12 @@
           "pinyin": "shuā",
           "gloss": "to brush; to paint; to daub",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "弟弟在廚房刷碗。",
+            "pinyin": "dì di zài chú fáng shuā wǎn.",
+            "gloss": "My younger brother is washing (scrubbing) bowls in the kitchen."
+          }
         },
         {
           "id": "v_廚房",
@@ -157,7 +499,12 @@
           "pinyin": "chú fáng",
           "gloss": "kitchen",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽在廚房做菜。",
+            "pinyin": "mā ma zài chú fáng zuò cài.",
+            "gloss": "Mom is cooking in the kitchen."
+          }
         },
         {
           "id": "v_練習",
@@ -165,7 +512,12 @@
           "pinyin": "liàn xí",
           "gloss": "to practice; exercise; drill",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天練習說中文。",
+            "pinyin": "wǒ měi tiān liàn xí shuō zhōng wén.",
+            "gloss": "I practice speaking Chinese every day."
+          }
         },
         {
           "id": "v_爺爺",
@@ -173,12 +525,143 @@
           "pinyin": "yé ye",
           "gloss": "(coll.) father's father; paternal grandfather",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "爺爺很愛喝茶。",
+            "pinyin": "yé ye hěn ài hē chá.",
+            "gloss": "Grandpa really loves drinking tea."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Saying where an action happens: 在 + place + verb",
+          "pattern": "Subject + 在 + Place + Verb (+ Object)",
+          "explanation": "In Chinese, the place where an action happens comes BEFORE the verb, not after it. Use 在 + place, then the verb phrase. So 'I wash bowls in the kitchen' becomes 我在廚房刷碗 (I + at kitchen + wash bowls). Putting the place after the verb sounds wrong.",
+          "examples": [
+            {
+              "hanzi": "我在廚房刷碗。",
+              "pinyin": "wǒ zài chú fáng shuā wǎn.",
+              "gloss": "I wash the bowls in the kitchen."
+            },
+            {
+              "hanzi": "爺爺在房間裡練習寫字。",
+              "pinyin": "yé ye zài fáng jiān lǐ liàn xí xiě zì.",
+              "gloss": "Grandpa practices writing characters in his room."
+            },
+            {
+              "hanzi": "她每天在家練習數學。",
+              "pinyin": "tā měi tiān zài jiā liàn xí shù xué.",
+              "gloss": "She practices math at home every day."
+            }
+          ],
+          "id": "g_hsk3_12_3_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "小明，你可以幫我刷碗嗎？",
+          "pinyin": "xiǎo míng, nǐ kě yǐ bāng wǒ shuā wǎn ma?",
+          "gloss": "Xiaoming, can you help me wash the bowls?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊，我現在就去廚房。",
+          "pinyin": "hǎo a, wǒ xiàn zài jiù qù chú fáng.",
+          "gloss": "Sure, I'll go to the kitchen right now."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "謝謝。刷完碗再去練習數學喔。",
+          "pinyin": "xiè xie. shuā wán wǎn zài qù liàn xí shù xué o.",
+          "gloss": "Thanks. After you finish the bowls, go practice math, okay?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "知道了。爺爺呢？",
+          "pinyin": "zhī dào le. yé ye ne?",
+          "gloss": "Got it. Where's Grandpa?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "爺爺在客廳看電視。",
+          "pinyin": "yé ye zài kè tīng kàn diàn shì.",
+          "gloss": "Grandpa is watching TV in the living room."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我先刷碗，晚一點跟爺爺去走走。",
+          "pinyin": "nà wǒ xiān shuā wǎn, wǎn yì diǎn gēn yé ye qù zǒu zǒu.",
+          "gloss": "Then I'll wash the bowls first, and go for a walk with Grandpa later."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "在",
+            "廚房",
+            "刷",
+            "碗"
+          ],
+          "pinyin": "wǒ zài chú fáng shuā wǎn.",
+          "gloss": "I am washing bowls in the kitchen.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "爺爺",
+            "在",
+            "客廳",
+            "看",
+            "電視"
+          ],
+          "pinyin": "yé ye zài kè tīng kàn diàn shì.",
+          "gloss": "Grandpa is watching TV in the living room.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "數學",
+            "老師",
+            "很",
+            "好"
+          ],
+          "pinyin": "wǒ de shù xué lǎo shī hěn hǎo.",
+          "gloss": "My math teacher is very nice.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "要",
+            "多",
+            "練習",
+            "說",
+            "中文"
+          ],
+          "pinyin": "nǐ yào duō liàn xí shuō zhōng wén.",
+          "gloss": "You should practice speaking Chinese more.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "碗",
+            "太",
+            "大",
+            "了"
+          ],
+          "pinyin": "zhè ge wǎn tài dà le.",
+          "gloss": "This bowl is too big.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 40,

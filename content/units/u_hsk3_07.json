@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 7",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_07_1",
@@ -17,7 +17,12 @@
           "pinyin": "mǎ shàng",
           "gloss": "at once; right away; immediately",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你別走，我馬上就回來。",
+            "pinyin": "nǐ bié zǒu, wǒ mǎshàng jiù huílái.",
+            "gloss": "Don't go, I'll be right back."
+          }
         },
         {
           "id": "v_表示",
@@ -25,7 +30,12 @@
           "pinyin": "biǎo shì",
           "gloss": "to express; to show; to say",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他點頭表示他懂了。",
+            "pinyin": "tā diǎntóu biǎoshì tā dǒng le.",
+            "gloss": "He nodded to show that he understood."
+          }
         },
         {
           "id": "v_經過",
@@ -33,7 +43,12 @@
           "pinyin": "jīng guò",
           "gloss": "to pass; to go through; process",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天都會經過那家咖啡店。",
+            "pinyin": "wǒ měi tiān dōu huì jīngguò nà jiā kāfēi diàn.",
+            "gloss": "I pass by that coffee shop every day."
+          }
         },
         {
           "id": "v_歷史",
@@ -41,7 +56,12 @@
           "pinyin": "lì shǐ",
           "gloss": "history",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個城市的歷史很長。",
+            "pinyin": "zhè ge chéngshì de lìshǐ hěn cháng.",
+            "gloss": "This city has a long history."
+          }
         },
         {
           "id": "v_哭",
@@ -49,7 +69,12 @@
           "pinyin": "kū",
           "gloss": "to cry; to weep",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "妹妹哭了，她說她的車票不見了。",
+            "pinyin": "mèimei kū le, tā shuō tā de chēpiào bú jiàn le.",
+            "gloss": "My little sister cried; she said her ticket was gone."
+          }
         },
         {
           "id": "v_敢",
@@ -57,12 +82,165 @@
           "pinyin": "gǎn",
           "gloss": "to dare; daring; (polite) may I venture",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我不敢一個人騎車去那麼遠的地方。",
+            "pinyin": "wǒ bù gǎn yí ge rén qí chē qù nàme yuǎn de dìfāng.",
+            "gloss": "I don't dare ride that far all by myself."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "馬上就… (right away / immediately)",
+          "pattern": "主語 + 馬上 + 就 + 動詞 (+ 了)",
+          "explanation": "馬上 means \"at once, right away\". In Taiwan Mandarin it very often goes together with 就 before the verb: 馬上就+動詞. Adding 了 at the end shows the action happens or is about to happen very soon. 馬上就要…了 means something is about to start.",
+          "examples": [
+            {
+              "hanzi": "電影馬上就要開始了。",
+              "pinyin": "diànyǐng mǎshàng jiù yào kāishǐ le.",
+              "gloss": "The movie is about to start."
+            },
+            {
+              "hanzi": "我吃完飯馬上就去找你。",
+              "pinyin": "wǒ chī wán fàn mǎshàng jiù qù zhǎo nǐ.",
+              "gloss": "I'll go find you right after I finish eating."
+            },
+            {
+              "hanzi": "媽媽一說，他馬上就懂了。",
+              "pinyin": "māma yì shuō, tā mǎshàng jiù dǒng le.",
+              "gloss": "As soon as Mom explained, he understood right away."
+            }
+          ],
+          "id": "g_hsk3_07_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "敢 / 不敢 + 動詞 (dare / not dare to do)",
+          "pattern": "主語 + (不) 敢 + 動詞",
+          "explanation": "敢 goes before a verb to say someone dares to do something; the negative 不敢 is far more common in daily speech. To ask a question, use 敢不敢 or 敢…嗎.",
+          "examples": [
+            {
+              "hanzi": "我不敢跟老闆說這件事。",
+              "pinyin": "wǒ bù gǎn gēn lǎobǎn shuō zhè jiàn shì.",
+              "gloss": "I don't dare tell the boss about this."
+            },
+            {
+              "hanzi": "你敢不敢吃臭豆腐？",
+              "pinyin": "nǐ gǎn bu gǎn chī chòudòufu?",
+              "gloss": "Do you dare eat stinky tofu?"
+            },
+            {
+              "hanzi": "他不敢哭，因為爸爸就在旁邊。",
+              "pinyin": "tā bù gǎn kū, yīnwèi bàba jiù zài pángbiān.",
+              "gloss": "He didn't dare cry, because Dad was right beside him."
+            }
+          ],
+          "id": "g_hsk3_07_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你怎麼了？眼睛紅紅的，是不是哭了？",
+          "pinyin": "nǐ zěnme le? yǎnjīng hónghóng de, shì bú shì kū le?",
+          "gloss": "What's up? Your eyes are red — were you crying?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "沒有啦，是風太大。",
+          "pinyin": "méiyǒu la, shì fēng tài dà.",
+          "gloss": "No I wasn't — it's just that the wind is too strong."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好啦，我們馬上就到了，經過前面那間店，右轉就到。",
+          "pinyin": "hǎo la, wǒmen mǎshàng jiù dào le, jīngguò qiánmiàn nà jiān diàn, yòu zhuǎn jiù dào.",
+          "gloss": "OK, we're almost there — go past that shop up ahead, turn right and we're there."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "那間店很有歷史喔，我媽說她小時候就在那裡買糖。",
+          "pinyin": "nà jiān diàn hěn yǒu lìshǐ o, wǒ mā shuō tā xiǎo shíhòu jiù zài nàlǐ mǎi táng.",
+          "gloss": "That shop has a lot of history! My mom says she bought candy there when she was little."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "真的嗎？我都不敢問老闆他幾歲了。",
+          "pinyin": "zhēn de ma? wǒ dōu bù gǎn wèn lǎobǎn tā jǐ suì le.",
+          "gloss": "Really? I never dare ask the owner how old he is."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "別問啦！不過他人很好，每次都多給我一塊糖，表示歡迎。",
+          "pinyin": "bié wèn la! búguò tā rén hěn hǎo, měi cì dōu duō gěi wǒ yí kuài táng, biǎoshì huānyíng.",
+          "gloss": "Don't ask! But he's really nice — every time he gives me an extra candy to show I'm welcome."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "馬上",
+            "就",
+            "回來"
+          ],
+          "pinyin": "wǒ mǎshàng jiù huílái",
+          "gloss": "I'll be right back.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "哭",
+            "得",
+            "很",
+            "大聲"
+          ],
+          "pinyin": "dìdi kū de hěn dàshēng",
+          "gloss": "My little brother is crying very loudly.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "不",
+            "敢",
+            "一",
+            "個",
+            "人",
+            "去"
+          ],
+          "pinyin": "wǒ bù gǎn yí ge rén qù",
+          "gloss": "I don't dare go by myself.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "點頭",
+            "表示",
+            "同意"
+          ],
+          "pinyin": "tā diǎntóu biǎoshì tóngyì",
+          "gloss": "He nodded to show he agreed.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "經過",
+            "這",
+            "家",
+            "店"
+          ],
+          "pinyin": "wǒ měi tiān jīngguò zhè jiā diàn",
+          "gloss": "I pass this shop every day.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_07_2",
@@ -75,7 +253,12 @@
           "pinyin": "huì yì",
           "gloss": "meeting; conference",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我下午有一個重要的會議。",
+            "pinyin": "Wǒ xiàwǔ yǒu yí ge zhòngyào de huìyì.",
+            "gloss": "I have an important meeting this afternoon."
+          }
         },
         {
           "id": "v_經常",
@@ -83,7 +266,12 @@
           "pinyin": "jīng cháng",
           "gloss": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他經常搭捷運去上班。",
+            "pinyin": "Tā jīngcháng dā jiéyùn qù shàngbān.",
+            "gloss": "He often takes the MRT to work."
+          }
         },
         {
           "id": "v_低",
@@ -91,7 +279,12 @@
           "pinyin": "dī",
           "gloss": "low; beneath; to lower (one's head)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "早上氣溫很低,要多穿一點。",
+            "pinyin": "Zǎoshang qìwēn hěn dī, yào duō chuān yìdiǎn.",
+            "gloss": "The temperature is low in the morning; wear a bit more."
+          }
         },
         {
           "id": "v_節目",
@@ -99,7 +292,12 @@
           "pinyin": "jié mù",
           "gloss": "program; item (on a program)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個電視節目很好看,我每週都看。",
+            "pinyin": "Zhè ge diànshì jiémù hěn hǎokàn, wǒ měi zhōu dōu kàn.",
+            "gloss": "This TV program is great; I watch it every week."
+          }
         },
         {
           "id": "v_健康",
@@ -107,7 +305,12 @@
           "pinyin": "jiàn kāng",
           "gloss": "health; healthy",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "多運動對身體健康很好。",
+            "pinyin": "Duō yùndòng duì shēntǐ jiànkāng hěn hǎo.",
+            "gloss": "Exercising more is good for your health."
+          }
         },
         {
           "id": "v_作用",
@@ -115,12 +318,149 @@
           "pinyin": "zuò yòng",
           "gloss": "to act on; to affect; action",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個藥的作用很快,吃了就不痛了。",
+            "pinyin": "Zhè ge yào de zuòyòng hěn kuài, chī le jiù bú tòng le.",
+            "gloss": "This medicine acts fast; after taking it, it doesn't hurt anymore."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「經常」表示常常做的事",
+          "pattern": "主語 + 經常 + 動詞短語",
+          "explanation": "「經常」是頻率副詞,放在動詞前面,表示這件事很常發生,比「有時候」多很多。台灣口語裡也常說「常常」,「經常」語氣比較正式一點,常用在工作或生活習慣上。否定要說「不經常」或「很少」。",
+          "examples": [
+            {
+              "hanzi": "我經常在家看電視節目。",
+              "pinyin": "Wǒ jīngcháng zài jiā kàn diànshì jiémù.",
+              "gloss": "I often watch TV programs at home."
+            },
+            {
+              "hanzi": "我們公司經常開會議。",
+              "pinyin": "Wǒmen gōngsī jīngcháng kāi huìyì.",
+              "gloss": "Our company holds meetings frequently."
+            },
+            {
+              "hanzi": "他經常運動,身體很健康。",
+              "pinyin": "Tā jīngcháng yùndòng, shēntǐ hěn jiànkāng.",
+              "gloss": "He exercises often, and he's very healthy."
+            }
+          ],
+          "id": "g_hsk3_07_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_07_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "你明天早上有時間嗎?我們去喝咖啡。",
+          "pinyin": "Nǐ míngtiān zǎoshang yǒu shíjiān ma? Wǒmen qù hē kāfēi.",
+          "gloss": "Do you have time tomorrow morning? Let's go for coffee."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "沒有耶,我們公司明天有會議。",
+          "pinyin": "Méiyǒu ye, wǒmen gōngsī míngtiān yǒu huìyì.",
+          "gloss": "Nope, our company has a meeting tomorrow."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "你們經常開會議喔?",
+          "pinyin": "Nǐmen jīngcháng kāi huìyì o?",
+          "gloss": "You guys have meetings a lot, huh?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對啊,所以我每天睡得很少,身體不太健康。",
+          "pinyin": "Duì a, suǒyǐ wǒ měitiān shuì de hěn shǎo, shēntǐ bú tài jiànkāng.",
+          "gloss": "Yeah, so I sleep very little every day and I'm not very healthy."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "那你早點睡,也多運動,對健康很有作用。",
+          "pinyin": "Nà nǐ zǎo diǎn shuì, yě duō yùndòng, duì jiànkāng hěn yǒu zuòyòng.",
+          "gloss": "Then sleep earlier and exercise more; it really helps your health."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啦,我明天下班後就去跑步,晚上再看電視節目。",
+          "pinyin": "Hǎo la, wǒ míngtiān xiàbān hòu jiù qù pǎobù, wǎnshàng zài kàn diànshì jiémù.",
+          "gloss": "OK, tomorrow after work I'll go running, and watch TV programs at night."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "明天",
+            "下午",
+            "有",
+            "會議"
+          ],
+          "pinyin": "Wǒmen míngtiān xiàwǔ yǒu huìyì.",
+          "gloss": "We have a meeting tomorrow afternoon.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "他",
+            "經常",
+            "去",
+            "游泳"
+          ],
+          "pinyin": "Tā jīngcháng qù yóuyǒng.",
+          "gloss": "He often goes swimming.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "昨天",
+            "晚上",
+            "的",
+            "氣溫",
+            "很",
+            "低"
+          ],
+          "pinyin": "Zuótiān wǎnshàng de qìwēn hěn dī.",
+          "gloss": "Last night's temperature was very low.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這個",
+            "節目",
+            "真的",
+            "很",
+            "好看"
+          ],
+          "pinyin": "Zhè ge jiémù zhēn de hěn hǎokàn.",
+          "gloss": "This program is really good.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "運動",
+            "對",
+            "健康",
+            "很",
+            "有",
+            "作用"
+          ],
+          "pinyin": "Yùndòng duì jiànkāng hěn yǒu zuòyòng.",
+          "gloss": "Exercise really has an effect on your health.",
+          "cloze_index": 5
+        }
+      ]
     },
     {
       "id": "l_hsk3_07_3",
@@ -133,7 +473,12 @@
           "pinyin": "xī",
           "gloss": "west",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那家店在車站的西邊,很好找。",
+            "pinyin": "Nà jiā diàn zài chēzhàn de xībiān, hěn hǎo zhǎo.",
+            "gloss": "That shop is on the west side of the station; it's easy to find."
+          }
         },
         {
           "id": "v_差",
@@ -141,7 +486,12 @@
           "pinyin": "chà",
           "gloss": "different; wrong; mistaken; to fall short; to lack",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的漢語還很差,要多學一點。",
+            "pinyin": "Wǒ de Hànyǔ hái hěn chà, yào duō xué yìdiǎn.",
+            "gloss": "My Chinese is still poor; I need to study more."
+          }
         },
         {
           "id": "v_結婚",
@@ -149,7 +499,12 @@
           "pinyin": "jié hūn",
           "gloss": "to marry; to get married",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我姐姐下個月要結婚了。",
+            "pinyin": "Wǒ jiějie xià ge yuè yào jiéhūn le.",
+            "gloss": "My older sister is getting married next month."
+          }
         },
         {
           "id": "v_短",
@@ -157,7 +512,12 @@
           "pinyin": "duǎn",
           "gloss": "short; brief; to lack",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條路很短,走十分鐘就到了。",
+            "pinyin": "Zhè tiáo lù hěn duǎn, zǒu shí fēnzhōng jiù dào le.",
+            "gloss": "This road is short; you get there in a ten-minute walk."
+          }
         },
         {
           "id": "v_同意",
@@ -165,7 +525,12 @@
           "pinyin": "tóng yì",
           "gloss": "to agree; to consent; to approve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我很同意你說的話。",
+            "pinyin": "Wǒ hěn tóngyì nǐ shuō de huà.",
+            "gloss": "I quite agree with what you said."
+          }
         },
         {
           "id": "v_教",
@@ -173,12 +538,144 @@
           "pinyin": "jiào",
           "gloss": "religion; teaching; to make",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你可以教我怎麼用悠遊卡嗎?",
+            "pinyin": "Nǐ kěyǐ jiāo wǒ zěnme yòng Yōuyóukǎ ma?",
+            "gloss": "Can you teach me how to use an EasyCard?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "差不多:about the same / roughly",
+          "pattern": "A 跟 B + 差不多 + (形容詞);差不多 + 數量/時間",
+          "explanation": "差不多 means \"about the same\" or \"roughly\". Put 「A 跟 B 差不多 + adjective」 to say two things are similar, or put 差不多 before a number/time to mean \"about, approximately\". It is very common in daily Taiwan speech.",
+          "examples": [
+            {
+              "hanzi": "我跟我哥差不多高。",
+              "pinyin": "Wǒ gēn wǒ gē chàbùduō gāo.",
+              "gloss": "My older brother and I are about the same height."
+            },
+            {
+              "hanzi": "這兩條路差不多長,你選哪條都可以。",
+              "pinyin": "Zhè liǎng tiáo lù chàbùduō cháng, nǐ xuǎn nǎ tiáo dōu kěyǐ.",
+              "gloss": "These two roads are about the same length; pick either one."
+            },
+            {
+              "hanzi": "他差不多七點半到家。",
+              "pinyin": "Tā chàbùduō qī diǎn bàn dào jiā.",
+              "gloss": "He gets home at about seven thirty."
+            }
+          ],
+          "id": "g_hsk3_07_3_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "你知道嗎?小明下個月要結婚了耶!",
+          "pinyin": "Nǐ zhīdào ma? Xiǎomíng xià ge yuè yào jiéhūn le ye!",
+          "gloss": "Did you know? Xiaoming is getting married next month!"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "真的啊?他們認識的時間很短耶。",
+          "pinyin": "Zhēn de a? Tāmen rènshì de shíjiān hěn duǎn ye.",
+          "gloss": "Really? They've known each other for such a short time."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "對啊,差不多半年,不過他爸媽也同意了。",
+          "pinyin": "Duì a, chàbùduō bàn nián, búguò tā bàmā yě tóngyì le.",
+          "gloss": "Yeah, about half a year, but his parents agreed too."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那很好啊!他們家在哪裡?",
+          "pinyin": "Nà hěn hǎo a! Tāmen jiā zài nǎlǐ?",
+          "gloss": "That's great! Where is their home?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "在火車站的西邊,不遠,搭捷運就到了。",
+          "pinyin": "Zài huǒchēzhàn de xībiān, bù yuǎn, dā jiéyùn jiù dào le.",
+          "gloss": "West of the train station, not far—just take the MRT."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "我想買點東西送他們,你教我選,好嗎?",
+          "pinyin": "Wǒ xiǎng mǎi diǎn dōngxi sòng tāmen, nǐ jiāo wǒ xuǎn, hǎo ma?",
+          "gloss": "I want to buy something for them—can you teach me how to choose?"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "同意",
+            "你",
+            "的",
+            "想法"
+          ],
+          "pinyin": "Wǒ tóngyì nǐ de xiǎngfǎ.",
+          "gloss": "I agree with your idea.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他們",
+            "下",
+            "個",
+            "月",
+            "要",
+            "結婚",
+            "了"
+          ],
+          "pinyin": "Tāmen xià ge yuè yào jiéhūn le.",
+          "gloss": "They are getting married next month.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "郵局",
+            "就",
+            "在",
+            "銀行",
+            "的",
+            "西邊"
+          ],
+          "pinyin": "Yóujú jiù zài yínháng de xībiān.",
+          "gloss": "The post office is just west of the bank.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "節目",
+            "太",
+            "短",
+            "了"
+          ],
+          "pinyin": "Zhè ge jiémù tài duǎn le.",
+          "gloss": "This show is too short.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "他",
+            "每天",
+            "教",
+            "我們",
+            "漢語"
+          ],
+          "pinyin": "Tā měitiān jiāo wǒmen Hànyǔ.",
+          "gloss": "He teaches us Chinese every day.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 35,

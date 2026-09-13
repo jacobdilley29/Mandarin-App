@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 2",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_02_1",
@@ -17,7 +17,12 @@
           "pinyin": "zhǒng",
           "gloss": "seed; species; kind",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這種茶很好喝。",
+            "pinyin": "Zhè zhǒng chá hěn hǎo hē.",
+            "gloss": "This kind of tea is very good."
+          }
         },
         {
           "id": "v_發現",
@@ -25,7 +30,12 @@
           "pinyin": "fā xiàn",
           "gloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我發現他不在家。",
+            "pinyin": "Wǒ fāxiàn tā bú zài jiā.",
+            "gloss": "I noticed he isn't home."
+          }
         },
         {
           "id": "v_一定",
@@ -33,7 +43,12 @@
           "pinyin": "yī dìng",
           "gloss": "surely; certainly; necessarily",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你一定要吃早餐。",
+            "pinyin": "Nǐ yídìng yào chī zǎocān.",
+            "gloss": "You definitely have to eat breakfast."
+          }
         },
         {
           "id": "v_一直",
@@ -41,7 +56,12 @@
           "pinyin": "yī zhí",
           "gloss": "straight (in a straight line); continuously; always; all the way through",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面的雨一直下。",
+            "pinyin": "Wàimiàn de yǔ yìzhí xià.",
+            "gloss": "The rain outside keeps falling."
+          }
         },
         {
           "id": "v_為了",
@@ -49,7 +69,12 @@
           "pinyin": "wèi le",
           "gloss": "for; for the purpose of; in order to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "為了考試,我每天都很早起床。",
+            "pinyin": "Wèile kǎoshì, wǒ měi tiān dōu hěn zǎo qǐchuáng.",
+            "gloss": "For the exam, I get up early every day."
+          }
         },
         {
           "id": "v_一樣",
@@ -57,12 +82,161 @@
           "pinyin": "yī yàng",
           "gloss": "same; like; equal to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的手機跟你的一樣。",
+            "pinyin": "Wǒ de shǒujī gēn nǐ de yíyàng.",
+            "gloss": "My phone is the same as yours."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "跟……一樣 (the same as)",
+          "pattern": "A + 跟 + B + 一樣 (+ adjective)",
+          "explanation": "Use 跟……一樣 to say two things are the same. You can add an adjective after 一樣 to say they are equally big, tall, expensive, and so on. To make it negative, say 跟……不一樣.",
+          "examples": [
+            {
+              "hanzi": "這個包跟那個一樣大。",
+              "pinyin": "Zhège bāo gēn nàge yíyàng dà.",
+              "gloss": "This bag is as big as that one."
+            },
+            {
+              "hanzi": "我跟我哥一樣高。",
+              "pinyin": "Wǒ gēn wǒ gē yíyàng gāo.",
+              "gloss": "I'm as tall as my older brother."
+            },
+            {
+              "hanzi": "這種茶跟那種不一樣貴。",
+              "pinyin": "Zhè zhǒng chá gēn nà zhǒng bù yíyàng guì.",
+              "gloss": "This kind of tea is not the same price as that kind."
+            }
+          ],
+          "id": "g_hsk3_02_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_02_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "店員",
+          "hanzi": "你要哪一種飲料?",
+          "pinyin": "Nǐ yào nǎ yì zhǒng yǐnliào?",
+          "gloss": "Which kind of drink would you like?"
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "我要珍珠奶茶,不要太甜。",
+          "pinyin": "Wǒ yào zhēnzhū nǎichá, bú yào tài tián.",
+          "gloss": "I'll have bubble milk tea, not too sweet."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "我要跟她一樣的。",
+          "pinyin": "Wǒ yào gēn tā yíyàng de.",
+          "gloss": "I'll have the same as hers."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "我發現這家的珍珠真的很好吃。",
+          "pinyin": "Wǒ fāxiàn zhè jiā de zhēnzhū zhēn de hěn hǎochī.",
+          "gloss": "I've found that this shop's pearls are really good."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對啊,我一直都來這家買。",
+          "pinyin": "Duì a, wǒ yìzhí dōu lái zhè jiā mǎi.",
+          "gloss": "Right, I always come to this shop to buy it."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "為了這杯茶,下次我一定再走十分鐘來!",
+          "pinyin": "Wèile zhè bēi chá, xià cì wǒ yídìng zài zǒu shí fēnzhōng lái!",
+          "gloss": "For this cup of tea, next time I'll definitely walk ten minutes here again!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "發現",
+            "這",
+            "家",
+            "店",
+            "的",
+            "麵",
+            "很",
+            "好吃"
+          ],
+          "pinyin": "Wǒ fāxiàn zhè jiā diàn de miàn hěn hǎochī.",
+          "gloss": "I discovered that this shop's noodles are really tasty.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "一直",
+            "在",
+            "家",
+            "裡",
+            "看",
+            "電視"
+          ],
+          "pinyin": "Tā yìzhí zài jiā lǐ kàn diànshì.",
+          "gloss": "He keeps watching TV at home.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "為了",
+            "身體",
+            "好",
+            "我",
+            "每天",
+            "都",
+            "跑步"
+          ],
+          "pinyin": "Wèile shēntǐ hǎo, wǒ měi tiān dōu pǎobù.",
+          "gloss": "For my health, I run every day.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "這",
+            "兩",
+            "種",
+            "茶",
+            "的",
+            "顏色",
+            "不",
+            "一樣"
+          ],
+          "pinyin": "Zhè liǎng zhǒng chá de yánsè bù yíyàng.",
+          "gloss": "These two kinds of tea are different colors.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "週末",
+            "一定",
+            "要",
+            "來",
+            "我",
+            "家"
+          ],
+          "pinyin": "Nǐ zhōumò yídìng yào lái wǒ jiā.",
+          "gloss": "You must come to my place this weekend.",
+          "cloze_index": 2
+        }
+      ]
     },
     {
       "id": "l_hsk3_02_2",
@@ -75,7 +249,12 @@
           "pinyin": "shì jiè",
           "gloss": "world",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我很想去看看這個世界。",
+            "pinyin": "Wǒ hěn xiǎng qù kànkan zhè ge shìjiè.",
+            "gloss": "I really want to go and see this world."
+          }
         },
         {
           "id": "v_而且",
@@ -83,7 +262,12 @@
           "pinyin": "ér qiě",
           "gloss": "(not only ...) but also; moreover; in addition",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的菜很好吃，而且不貴。",
+            "pinyin": "Zhè jiā diàn de cài hěn hǎochī, érqiě bú guì.",
+            "gloss": "This restaurant's food is tasty, and it's not expensive either."
+          }
         },
         {
           "id": "v_重要",
@@ -91,7 +275,12 @@
           "pinyin": "zhòng yào",
           "gloss": "important; significant; major",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "明天的考試很重要。",
+            "pinyin": "Míngtiān de kǎoshì hěn zhòngyào.",
+            "gloss": "Tomorrow's exam is very important."
+          }
         },
         {
           "id": "v_必須",
@@ -99,7 +288,12 @@
           "pinyin": "bì xū",
           "gloss": "to have to; must; compulsory",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你明天必須早一點到。",
+            "pinyin": "Nǐ míngtiān bìxū zǎo yìdiǎn dào.",
+            "gloss": "You have to arrive a bit earlier tomorrow."
+          }
         },
         {
           "id": "v_地方",
@@ -107,7 +301,12 @@
           "pinyin": "dì fang",
           "gloss": "area; place; space",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台北有很多好玩的地方。",
+            "pinyin": "Táiběi yǒu hěn duō hǎowán de dìfang.",
+            "gloss": "Taipei has a lot of fun places."
+          }
         },
         {
           "id": "v_其他",
@@ -115,12 +314,158 @@
           "pinyin": "qí tā",
           "gloss": "other; (sth or sb) else; the rest",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "其他人都已經回家了。",
+            "pinyin": "Qítā rén dōu yǐjīng huí jiā le.",
+            "gloss": "Everyone else has already gone home."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "……，而且…… (not only ..., but also)",
+          "pattern": "A，而且 B",
+          "explanation": "而且 links two clauses and adds more information about the same topic. The second clause usually goes one step further than the first: 'and what's more...'. In Taiwan speech it is very common after a short comment: 這裡很近，而且很安靜。",
+          "examples": [
+            {
+              "hanzi": "這個地方很漂亮，而且很安靜。",
+              "pinyin": "Zhè ge dìfang hěn piàoliang, érqiě hěn ānjìng.",
+              "gloss": "This place is beautiful, and it's quiet too."
+            },
+            {
+              "hanzi": "他會說中文，而且說得很好。",
+              "pinyin": "Tā huì shuō Zhōngwén, érqiě shuō de hěn hǎo.",
+              "gloss": "He can speak Chinese, and he speaks it very well."
+            },
+            {
+              "hanzi": "這件事很重要，而且你必須自己做。",
+              "pinyin": "Zhè jiàn shì hěn zhòngyào, érqiě nǐ bìxū zìjǐ zuò.",
+              "gloss": "This matter is important, and you have to do it yourself."
+            }
+          ],
+          "id": "g_hsk3_02_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_02_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "這個週末我們去台中玩，好嗎？",
+          "pinyin": "Zhè ge zhōumò wǒmen qù Táizhōng wán, hǎo ma?",
+          "gloss": "Shall we go to Taichung this weekend?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好啊！那裡有很多好玩的地方，而且東西很便宜。",
+          "pinyin": "Hǎo a! Nàlǐ yǒu hěn duō hǎowán de dìfang, érqiě dōngxi hěn piányí.",
+          "gloss": "Sure! There are lots of fun places there, and things are cheap too."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我們可以搭火車去，其他的地方下次再去。",
+          "pinyin": "Wǒmen kěyǐ dā huǒchē qù, qítā de dìfang xià cì zài qù.",
+          "gloss": "We can take the train there; we'll go to the other places next time."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "沒問題，但是你必須早一點起床。",
+          "pinyin": "Méi wèntí, dànshì nǐ bìxū zǎo yìdiǎn qǐchuáng.",
+          "gloss": "No problem, but you have to get up a bit earlier."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我知道，這件事很重要，我不會睡太晚。",
+          "pinyin": "Wǒ zhīdào, zhè jiàn shì hěn zhòngyào, wǒ bú huì shuì tài wǎn.",
+          "gloss": "I know; this is important, I won't sleep in."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我也很想看看世界上其他的地方，可是先去台中吧！",
+          "pinyin": "Wǒ yě hěn xiǎng kànkan shìjiè shàng qítā de dìfang, kěshì xiān qù Táizhōng ba!",
+          "gloss": "I'd also love to see other places in the world, but let's go to Taichung first!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "個",
+            "地方",
+            "的",
+            "東西",
+            "很",
+            "便宜"
+          ],
+          "pinyin": "Zhè ge dìfang de dōngxi hěn piányí.",
+          "gloss": "Things in this place are very cheap.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "學",
+            "中文",
+            "對",
+            "我",
+            "很",
+            "重要"
+          ],
+          "pinyin": "Xué Zhōngwén duì wǒ hěn zhòngyào.",
+          "gloss": "Learning Chinese is very important to me.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "你",
+            "必須",
+            "每天",
+            "運動"
+          ],
+          "pinyin": "Nǐ bìxū měitiān yùndòng.",
+          "gloss": "You must exercise every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "去",
+            "世界",
+            "上",
+            "其他",
+            "的",
+            "國家"
+          ],
+          "pinyin": "Wǒ xiǎng qù shìjiè shàng qítā de guójiā.",
+          "gloss": "I want to go to other countries in the world.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "餐廳",
+            "的",
+            "菜",
+            "很",
+            "好吃",
+            "而且",
+            "不",
+            "貴"
+          ],
+          "pinyin": "Zhè jiā cāntīng de cài hěn hǎochī, érqiě bú guì.",
+          "gloss": "This restaurant's food is tasty and not expensive.",
+          "cloze_index": 7
+        }
+      ]
     },
     {
       "id": "l_hsk3_02_3",
@@ -133,7 +478,12 @@
           "pinyin": "bǐ sài",
           "gloss": "competition (sports etc); match; to compete",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末有籃球比賽。",
+            "pinyin": "Zhōumò yǒu lánqiú bǐsài.",
+            "gloss": "There's a basketball game this weekend."
+          }
         },
         {
           "id": "v_然後",
@@ -141,7 +491,12 @@
           "pinyin": "rán hòu",
           "gloss": "then; after that; afterwards",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們先吃飯，然後去看電影。",
+            "pinyin": "Wǒmen xiān chīfàn, ránhòu qù kàn diànyǐng.",
+            "gloss": "We'll eat first, then go see a movie."
+          }
         },
         {
           "id": "v_擔心",
@@ -149,7 +504,12 @@
           "pinyin": "dān xīn",
           "gloss": "anxious; worried; uneasy",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你別擔心，我會幫你。",
+            "pinyin": "Nǐ bié dānxīn, wǒ huì bāng nǐ.",
+            "gloss": "Don't worry, I'll help you."
+          }
         },
         {
           "id": "v_條",
@@ -157,7 +517,12 @@
           "pinyin": "tiáo",
           "gloss": "strip; item; article",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條路很長，也很遠。",
+            "pinyin": "Zhè tiáo lù hěn cháng, yě hěn yuǎn.",
+            "gloss": "This road is long and far."
+          }
         },
         {
           "id": "v_放",
@@ -165,7 +530,12 @@
           "pinyin": "fàng",
           "gloss": "to put; to place; to release",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請把傘放在門口。",
+            "pinyin": "Qǐng bǎ sǎn fàng zài ménkǒu.",
+            "gloss": "Please put the umbrella by the door."
+          }
         },
         {
           "id": "v_拿",
@@ -173,12 +543,159 @@
           "pinyin": "ná",
           "gloss": "to hold; to seize; to catch",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我去幫你拿飲料。",
+            "pinyin": "Wǒ qù bāng nǐ ná yǐnliào.",
+            "gloss": "I'll go get a drink for you."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "先……然後…… (first…, then…)",
+          "pattern": "Subject + 先 + V1，然後 + V2",
+          "explanation": "Use 先 before the first action and 然後 before the next action to put two events in order. 然後 usually starts the second clause and often takes 再 or 就 in other patterns, but 先……然後…… is the simplest way to say “first…, then…”.",
+          "examples": [
+            {
+              "hanzi": "我先去銀行，然後去郵局。",
+              "pinyin": "Wǒ xiān qù yínháng, ránhòu qù yóujú.",
+              "gloss": "I'll go to the bank first, then to the post office."
+            },
+            {
+              "hanzi": "她先洗手，然後吃飯。",
+              "pinyin": "Tā xiān xǐshǒu, ránhòu chīfàn.",
+              "gloss": "She washes her hands first, then eats."
+            },
+            {
+              "hanzi": "我們先看比賽，然後去吃麵。",
+              "pinyin": "Wǒmen xiān kàn bǐsài, ránhòu qù chī miàn.",
+              "gloss": "Let's watch the game first, then go eat noodles."
+            }
+          ],
+          "id": "g_hsk3_02_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_02_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "安安",
+          "hanzi": "你拿到票了嗎？我們的籃球比賽快開始了。",
+          "pinyin": "Nǐ ná dào piào le ma? Wǒmen de lánqiú bǐsài kuài kāishǐ le.",
+          "gloss": "Did you get the tickets? Our basketball game is starting soon."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "拿到了！我把票放在包包裡。",
+          "pinyin": "Ná dào le! Wǒ bǎ piào fàng zài bāobāo lǐ.",
+          "gloss": "Got them! I put the tickets in my bag."
+        },
+        {
+          "speaker": "安安",
+          "hanzi": "那就好，我還擔心你沒帶。",
+          "pinyin": "Nà jiù hǎo, wǒ hái dānxīn nǐ méi dài.",
+          "gloss": "Great, I was worried you didn't bring them."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "別擔心啦！我們先進去，然後買飲料。",
+          "pinyin": "Bié dānxīn la! Wǒmen xiān jìnqù, ránhòu mǎi yǐnliào.",
+          "gloss": "Don't worry! Let's go in first, then buy drinks."
+        },
+        {
+          "speaker": "安安",
+          "hanzi": "好，那條路太多人，我們走旁邊那條。",
+          "pinyin": "Hǎo, nà tiáo lù tài duō rén, wǒmen zǒu pángbiān nà tiáo.",
+          "gloss": "OK, that road has too many people; let's take the one beside it."
+        },
+        {
+          "speaker": "小東",
+          "hanzi": "沒問題，快點走吧！",
+          "pinyin": "Méi wèntí, kuài diǎn zǒu ba!",
+          "gloss": "No problem, let's hurry!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "先",
+            "拿",
+            "錢",
+            "然後",
+            "去",
+            "買",
+            "東西"
+          ],
+          "pinyin": "Wǒ xiān ná qián, ránhòu qù mǎi dōngxī.",
+          "gloss": "I'll get money first, then go shopping.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "別",
+            "擔心",
+            "這",
+            "件",
+            "事"
+          ],
+          "pinyin": "Nǐ bié dānxīn zhè jiàn shì.",
+          "gloss": "Don't worry about this matter.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "傘",
+            "放",
+            "在",
+            "門",
+            "旁邊"
+          ],
+          "pinyin": "Qǐng bǎ sǎn fàng zài mén pángbiān.",
+          "gloss": "Please put the umbrella beside the door.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "條",
+            "路",
+            "很",
+            "遠",
+            "我們",
+            "搭",
+            "捷運",
+            "吧"
+          ],
+          "pinyin": "Zhè tiáo lù hěn yuǎn, wǒmen dā jiéyùn ba.",
+          "gloss": "This road is far; let's take the MRT.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "昨天",
+            "的",
+            "比賽",
+            "真",
+            "好",
+            "看"
+          ],
+          "pinyin": "Zuótiān de bǐsài zhēn hǎokàn.",
+          "gloss": "Yesterday's game was really fun to watch.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 30,

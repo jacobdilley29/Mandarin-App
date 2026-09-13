@@ -4,7 +4,7 @@
   "subtitle": "HSK 3 vocabulary · set 16",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_16_1",
@@ -17,7 +17,12 @@
           "pinyin": "kuài zi",
           "gloss": "chopsticks",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請給我一雙筷子，謝謝。",
+            "pinyin": "Qǐng gěi wǒ yì shuāng kuàizi, xièxie.",
+            "gloss": "Please give me a pair of chopsticks, thanks."
+          }
         },
         {
           "id": "v_字典",
@@ -25,7 +30,12 @@
           "pinyin": "zì diǎn",
           "gloss": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這本字典是老師給我的。",
+            "pinyin": "Zhè běn zìdiǎn shì lǎoshī gěi wǒ de.",
+            "gloss": "This dictionary was given to me by my teacher."
+          }
         },
         {
           "id": "v_普通話",
@@ -33,7 +43,12 @@
           "pinyin": "pǔ tōng huà",
           "gloss": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的普通話說得很好。",
+            "pinyin": "Tā de pǔtōnghuà shuō de hěn hǎo.",
+            "gloss": "He speaks Mandarin very well."
+          }
         },
         {
           "id": "v_爬山",
@@ -41,7 +56,12 @@
           "pinyin": "pá shān",
           "gloss": "to climb a mountain; to mountaineer; hiking",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個週末我想去爬山。",
+            "pinyin": "Zhège zhōumò wǒ xiǎng qù páshān.",
+            "gloss": "I want to go hiking this weekend."
+          }
         },
         {
           "id": "v_黑板",
@@ -49,7 +69,12 @@
           "pinyin": "hēi bǎn",
           "gloss": "blackboard",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師在黑板上畫了一張圖。",
+            "pinyin": "Lǎoshī zài hēibǎn shàng huà le yì zhāng tú.",
+            "gloss": "The teacher drew a picture on the blackboard."
+          }
         },
         {
           "id": "v_行李箱",
@@ -57,12 +82,150 @@
           "pinyin": "xíng li xiāng",
           "gloss": "suitcase; baggage compartment; overhead bin",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的行李箱太重了。",
+            "pinyin": "Wǒ de xínglǐxiāng tài zhòng le.",
+            "gloss": "My suitcase is too heavy."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用 + 工具 + 動作 (using something to do something)",
+          "pattern": "主語 + 用 + 工具 + 動詞 + 賓語",
+          "explanation": "To say what tool or language you use to do something, put 用 plus the tool before the verb. 用 always comes before the main verb, not after it. The negative is 不用 or 沒用.",
+          "examples": [
+            {
+              "hanzi": "我們用筷子吃麵。",
+              "pinyin": "Wǒmen yòng kuàizi chī miàn.",
+              "gloss": "We eat noodles with chopsticks."
+            },
+            {
+              "hanzi": "你可以用字典查這個字。",
+              "pinyin": "Nǐ kěyǐ yòng zìdiǎn chá zhège zì.",
+              "gloss": "You can look up this character in a dictionary."
+            },
+            {
+              "hanzi": "老師用普通話跟我們說話。",
+              "pinyin": "Lǎoshī yòng pǔtōnghuà gēn wǒmen shuōhuà.",
+              "gloss": "The teacher speaks with us in Mandarin."
+            }
+          ],
+          "id": "g_hsk3_16_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "examples": [],
+          "id": "g_hsk3_16_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "阿明",
+          "hanzi": "這個週末我們去爬山，好嗎？",
+          "pinyin": "Zhège zhōumò wǒmen qù páshān, hǎo ma?",
+          "gloss": "Shall we go hiking this weekend?"
+        },
+        {
+          "speaker": "小李",
+          "hanzi": "好啊！可是我的行李箱太大了，不好帶。",
+          "pinyin": "Hǎo a! Kěshì wǒ de xínglǐxiāng tài dà le, bù hǎo dài.",
+          "gloss": "Sure! But my suitcase is too big, it's hard to carry."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "爬山不用帶行李箱，帶一個袋子就好。",
+          "pinyin": "Páshān búyòng dài xínglǐxiāng, dài yí ge dàizi jiù hǎo.",
+          "gloss": "You don't need a suitcase for hiking, just bring a bag."
+        },
+        {
+          "speaker": "小李",
+          "hanzi": "那我要帶筷子嗎？山上有麵店嗎？",
+          "pinyin": "Nà wǒ yào dài kuàizi ma? Shān shàng yǒu miàndiàn ma?",
+          "gloss": "Then should I bring chopsticks? Is there a noodle shop on the mountain?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "有啊，山上有一家小店，也賣便當。",
+          "pinyin": "Yǒu a, shān shàng yǒu yì jiā xiǎo diàn, yě mài biàndāng.",
+          "gloss": "Yes, there's a small shop on the mountain, it also sells lunch boxes."
+        },
+        {
+          "speaker": "小李",
+          "hanzi": "太好了！那我也不帶字典了，太重了。",
+          "pinyin": "Tài hǎo le! Nà wǒ yě bú dài zìdiǎn le, tài zhòng le.",
+          "gloss": "Great! Then I won't bring my dictionary either, it's too heavy."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "用",
+            "筷子",
+            "吃",
+            "飯"
+          ],
+          "pinyin": "Wǒ yòng kuàizi chī fàn.",
+          "gloss": "I eat with chopsticks.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "本",
+            "字典",
+            "很",
+            "貴"
+          ],
+          "pinyin": "Zhè běn zìdiǎn hěn guì.",
+          "gloss": "This dictionary is very expensive.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "週末",
+            "我們",
+            "去",
+            "爬山",
+            "吧"
+          ],
+          "pinyin": "Zhōumò wǒmen qù páshān ba.",
+          "gloss": "Let's go hiking on the weekend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "老師",
+            "在",
+            "黑板",
+            "上",
+            "畫",
+            "圖"
+          ],
+          "pinyin": "Lǎoshī zài hēibǎn shàng huà tú.",
+          "gloss": "The teacher draws pictures on the blackboard.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "行李箱",
+            "太",
+            "重",
+            "了"
+          ],
+          "pinyin": "Wǒ de xínglǐxiāng tài zhòng le.",
+          "gloss": "My suitcase is too heavy.",
+          "cloze_index": 2
+        }
+      ]
     }
   ],
   "sort_order": 44,
