@@ -39,6 +39,7 @@ from app.validation import (  # noqa: E402
     han_chars,
     placement_pool_chars,
     placement_pool_words,
+    register_slips,
     validate_curriculum,
 )
 
@@ -52,6 +53,10 @@ Taiwan-register Mandarin for a HelloChinese-style learning app.
 Hard rules:
 - Traditional characters only. Taiwan usage and vocabulary (e.g. 腳踏車 not 自行車,
   捷運, 便當, 悠遊卡, 週末). Taiwan register particles where natural (喔/耶/啦).
+- Greetings the Taiwan way: 早安 (never 早上好), 晚安 (never 晚上好), 午安. Likewise
+  馬鈴薯 not 土豆, 影片 not 視頻, 訊息 not 信息, 冷氣 not 空調, 品質 not 質量,
+  泡麵 not 方便麵, 軟體 not 軟件. A Mainland word in a Taiwan lesson teaches the
+  learner something this app exists to get right.
 - Every sentence you write may ONLY use characters from the ALLOWED set you are
   given (the learner's known vocabulary so far, plus this lesson's new words and
   the common function words). Do not introduce any character outside that set.
@@ -558,6 +563,17 @@ def main(argv: list[str] | None = None, client=None) -> int:
         if unit_violations and args.retry and client is not None:
             if _retry_lessons(client, data, unit, unit_violations):
                 unit_violations = _violations_for(data, by_id, unit)
+
+        slips = register_slips({"units": [unit]})
+        if slips:
+            print(f"  ! {len(slips)} Mainland word(s) in Taiwan content:")
+            for slip in slips[:5]:
+                swaps = ", ".join(f"{prc}→{tw}" for prc, tw in slip.found)
+                print(f"      [{slip.where}] {swaps}")
+            if len(slips) > 5:
+                print(f"      … and {len(slips) - 5} more")
+            print("      Not blocking. Edit content/units/ by hand, or re-run this")
+            print("      unit with --unit to buy a fresh draft of those lessons.")
 
         report = completeness.evaluate_unit(unit)
 

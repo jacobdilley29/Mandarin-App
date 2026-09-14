@@ -664,6 +664,29 @@ A whole-level plan from before chunking (`skeleton-hsk{level}.json`) is still
 honoured as-is. Re-theming a level that is already planned costs money *and*
 regroups its words, which invalidates every lesson generated under it.
 
+### Taiwan register in generated text
+
+The scope validator answers "may this sentence use these characters". Nothing
+answered **"is this how Taiwan says it"** — and that is the app's entire premise.
+The first themed generation run produced a reading passage titled 「早上好」, a
+greeting no one in Taiwan uses, in a Taiwanese Mandarin course.
+
+`content/taiwan_overrides.json` already knew 自行車→腳踏車 and a dozen more, but
+that table was only ever applied to *imported vocabulary*. It now also carries
+`vocabulary.phrases` for forms that never appear as vocabulary entries at all
+(早上好→早安, 土豆→馬鈴薯, 視頻→影片), and `validation.register_slips` checks
+generated prose **and titles** against both. Titles matter: the real slip was in
+a passage title, and a checker that walked only the body would have called that
+passage clean.
+
+The generation prompt names the common ones outright, because a check that only
+reports is a check the next run repeats.
+
+It reports rather than blocks. Whether one Mainland word is worth another API
+call to regenerate a lesson is the author's judgement, not the loader's — so
+`make generate-content` and `make load-content` both name what they found and
+leave it.
+
 ### When a call fails, the error says why
 
 Both authoring scripts use structured outputs, where `parsed_output` comes back

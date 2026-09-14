@@ -75,7 +75,8 @@ def to_traditional_tw(text: str) -> str:
 @lru_cache(maxsize=1)
 def overrides() -> dict:
     if not OVERRIDES_PATH.is_file():
-        return {"vocabulary": {"substitutions": []}, "canonical_forms": {"by_simplified": {}},
+        return {"vocabulary": {"substitutions": [], "phrases": []},
+                "canonical_forms": {"by_simplified": {}},
                 "readings": {}}
     return json.loads(OVERRIDES_PATH.read_text(encoding="utf-8"))
 
@@ -84,6 +85,25 @@ def overrides() -> dict:
 def substitutions() -> dict[str, dict]:
     """PRC word -> the Taiwan word that replaces it wholesale."""
     return {s["hsk"]: s for s in overrides()["vocabulary"]["substitutions"]}
+
+
+@lru_cache(maxsize=1)
+def prc_forms() -> dict[str, str]:
+    """Every PRC form we know a Taiwan replacement for: PRC -> Taiwan.
+
+    Two sources, because they are caught at two different moments. The
+    `substitutions` are HSK *vocabulary* entries, swapped at import so the
+    Taiwan word is the one taught. The `phrases` never appear as vocabulary at
+    all — 早上好 is not an HSK entry — so nothing was looking for them, and they
+    arrive inside generated sentences, dialogue and passages instead.
+
+    Merged here so there is one answer to "is this how Taiwan says it", whoever
+    is asking.
+    """
+    vocab = overrides().get("vocabulary", {})
+    out = {s["hsk"]: s["taiwan"] for s in vocab.get("substitutions", [])}
+    out.update({p["prc"]: p["taiwan"] for p in vocab.get("phrases", [])})
+    return out
 
 
 @lru_cache(maxsize=1)
