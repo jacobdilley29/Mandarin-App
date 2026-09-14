@@ -17,7 +17,12 @@
           "pinyin": "yǐ jīng",
           "gloss": "already",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我已經吃飽了,謝謝。",
+            "pinyin": "Wǒ yǐjīng chī bǎo le, xièxie.",
+            "gloss": "I'm already full, thanks."
+          }
         },
         {
           "id": "v_正在",
@@ -25,7 +30,12 @@
           "pinyin": "zhèng zài",
           "gloss": "just at (that time); right in (that place); right in the middle of (doing sth)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他正在看電視,沒聽見你說話。",
+            "pinyin": "Tā zhèngzài kàn diànshì, méi tīngjiàn nǐ shuōhuà.",
+            "gloss": "He's watching TV right now and didn't hear you."
+          }
         },
         {
           "id": "v_小時",
@@ -33,7 +43,12 @@
           "pinyin": "xiǎo shí",
           "gloss": "hour",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天看了兩個小時的書。",
+            "pinyin": "Wǒ jīntiān kàn le liǎng ge xiǎoshí de shū.",
+            "gloss": "I read for two hours today."
+          }
         },
         {
           "id": "v_去年",
@@ -41,7 +56,12 @@
           "pinyin": "qù nián",
           "gloss": "last year",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "去年我住在台中,現在住台北。",
+            "pinyin": "Qùnián wǒ zhù zài Táizhōng, xiànzài zhù Táiběi.",
+            "gloss": "Last year I lived in Taichung; now I live in Taipei."
+          }
         },
         {
           "id": "v_著",
@@ -49,12 +69,149 @@
           "pinyin": "zhe",
           "gloss": "to touch; to come in contact with; to feel",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "門開著,你進來吧。",
+            "pinyin": "Mén kāi zhe, nǐ jìnlái ba.",
+            "gloss": "The door is open — come on in."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "正在…(呢) and V著: actions in progress",
+          "pattern": "Subject + 正在 + Verb + (Object) + 呢 / Verb + 著",
+          "explanation": "正在 goes right before the verb to say an action is happening at this moment: 我正在吃飯(呢). The particle 呢 at the end makes it sound softer and more spoken. 著 goes right after the verb and describes a state that keeps going, either the state of a thing (門開著) or a second action done 'while' doing the main one (她笑著說). Use 正在 for 'in the middle of doing', 著 for 'is in this state / doing it this way'.",
+          "contrast": "已經…了 is the opposite side: it marks something finished (我已經做完了 = I've already finished), while 正在 marks something still going on (我正在做 = I'm still doing it). If you can add 完, it is 已經…了; if the action is unfinished right now, it is 正在.",
+          "common_error": "Learners add 了 to a 正在 sentence, saying 我正在吃飯了. Don't — 正在 means the action is unfinished, so it never takes the completed 了. Also, 著 attaches directly to the verb (坐著看書), never before it.",
+          "examples": [
+            {
+              "hanzi": "我正在吃飯呢,一個小時後再打給你。",
+              "pinyin": "Wǒ zhèngzài chīfàn ne, yí ge xiǎoshí hòu zài dǎ gěi nǐ.",
+              "gloss": "I'm eating right now; I'll call you back in an hour."
+            },
+            {
+              "hanzi": "老闆正在打電話,你先坐一下。",
+              "pinyin": "Lǎobǎn zhèngzài dǎ diànhuà, nǐ xiān zuò yíxià.",
+              "gloss": "The boss is on the phone; have a seat first."
+            },
+            {
+              "hanzi": "她坐著看書,看得很認真。",
+              "pinyin": "Tā zuò zhe kàn shū, kàn de hěn rènzhēn.",
+              "gloss": "She sits reading, very focused."
+            }
+          ],
+          "id": "g_hsk2_05_1_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "喂,小文,你的事做完了嗎?",
+          "pinyin": "Wéi, Xiǎowén, nǐ de shì zuò wán le ma?",
+          "gloss": "Hey, Xiaowen, have you finished your work?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "還沒,我正在寫呢。",
+          "pinyin": "Hái méi, wǒ zhèngzài xiě ne.",
+          "gloss": "Not yet, I'm still writing."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "你已經寫了幾個小時了?",
+          "pinyin": "Nǐ yǐjīng xiě le jǐ ge xiǎoshí le?",
+          "gloss": "How many hours have you been writing?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "三個小時了,我的眼睛好痛喔。",
+          "pinyin": "Sān ge xiǎoshí le, wǒ de yǎnjīng hǎo tòng ō.",
+          "gloss": "Three hours — my eyes really hurt."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "那你先下來喝杯珍珠奶茶吧,門開著。",
+          "pinyin": "Nà nǐ xiān xiàlái hē bēi zhēnzhū nǎichá ba, mén kāi zhe.",
+          "gloss": "Then come down for a bubble tea first — the door's open."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好啊,我這就下去。",
+          "pinyin": "Hǎo a, wǒ zhè jiù xiàqù.",
+          "gloss": "OK, I'll come down right now."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "已經",
+            "到",
+            "家",
+            "了"
+          ],
+          "pinyin": "Wǒ yǐjīng dào jiā le.",
+          "gloss": "I'm already home.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "正在",
+            "喝",
+            "咖啡"
+          ],
+          "pinyin": "Tā zhèngzài hē kāfēi.",
+          "gloss": "He's drinking coffee right now.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "去年",
+            "我",
+            "開始",
+            "學",
+            "中文"
+          ],
+          "pinyin": "Qùnián wǒ kāishǐ xué Zhōngwén.",
+          "gloss": "Last year I started learning Chinese.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "坐",
+            "了",
+            "三",
+            "個",
+            "小時",
+            "的",
+            "火車"
+          ],
+          "pinyin": "Wǒ zuò le sān ge xiǎoshí de huǒchē.",
+          "gloss": "I took the train for three hours.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "她",
+            "笑",
+            "著",
+            "說",
+            "謝謝"
+          ],
+          "pinyin": "Tā xiào zhe shuō xièxie.",
+          "gloss": "She said thank you with a smile.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我的一天",
+        "hanzi": "去年我來台北工作,住的房子離捷運站很近。今天早上我正在吃早餐,老闆就打電話來,說有一件事要我今天做完。我在公司做了三個小時,現在已經做完了。下午我騎著腳踏車去附近的書店,買了一本新書,坐著看,覺得很舒服。",
+        "gloss": "Last year I came to Taipei to work; the place I live is close to the MRT station. This morning, just as I was eating breakfast, my boss called and said there was something he needed me to finish today. I worked on it at the office for three hours, and now it's done. In the afternoon I rode my bike to the bookshop nearby, bought a new book, and sat reading it — it felt really nice."
+      }
     },
     {
       "id": "l_hsk2_05_2",
@@ -67,7 +224,12 @@
           "pinyin": "gōng sī",
           "gloss": "company; firm; corporation",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們公司就在捷運站附近。",
+            "pinyin": "Wǒmen gōngsī jiù zài jiéyùn zhàn fùjìn.",
+            "gloss": "Our company is right near the MRT station."
+          }
         },
         {
           "id": "v_事情",
@@ -75,7 +237,12 @@
           "pinyin": "shìqíng",
           "gloss": "affair; matter; thing; business",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天公司的事情太多了，我還不能走。",
+            "pinyin": "Jīntiān gōngsī de shìqíng tài duō le, wǒ hái bù néng zǒu.",
+            "gloss": "There's too much to do at the company today; I can't leave yet."
+          }
         },
         {
           "id": "v_幫助",
@@ -83,7 +250,12 @@
           "pinyin": "bāng zhù",
           "gloss": "assistance; aid; to help; to assist",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "謝謝你的幫助，我學得很快。",
+            "pinyin": "Xièxie nǐ de bāngzhù, wǒ xué de hěn kuài.",
+            "gloss": "Thanks for your help — I'm learning fast."
+          }
         },
         {
           "id": "v_讓",
@@ -91,7 +263,12 @@
           "pinyin": "ràng",
           "gloss": "to yield; to permit; to let sb do sth",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆讓我今天早一點回家。",
+            "pinyin": "Lǎobǎn ràng wǒ jīntiān zǎo yìdiǎn huí jiā.",
+            "gloss": "The boss is letting me go home a bit earlier today."
+          }
         },
         {
           "id": "v_別",
@@ -99,7 +276,12 @@
           "pinyin": "bié",
           "gloss": "to leave; to part (from); (literary) to differentiate; to distinguish; (bound form) other; another; different",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "別客氣，這是小事。",
+            "pinyin": "Bié kèqì, zhè shì xiǎo shì.",
+            "gloss": "Don't mention it, it's a small thing."
+          }
         },
         {
           "id": "v_為",
@@ -107,7 +289,12 @@
           "pinyin": "wèi",
           "gloss": "as (in the capacity of); to take sth as; to act as",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他為公司做了很多事情。",
+            "pinyin": "Tā wèi gōngsī zuò le hěn duō shìqíng.",
+            "gloss": "He has done a lot for the company."
+          }
         },
         {
           "id": "v_告訴",
@@ -115,12 +302,149 @@
           "pinyin": "gào sù",
           "gloss": "to press charges; to file a complaint",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他告訴我老闆今天會來公司。",
+            "pinyin": "Tā gàosù wǒ lǎobǎn jīntiān huì lái gōngsī.",
+            "gloss": "He told me the boss is coming to the company today."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Three ways to say \"help\": 幫 / 幫忙 / 幫助",
+          "pattern": "A 幫 B + V ／ A 幫 B 的忙 ／ A 幫助 B",
+          "explanation": "幫 is the everyday verb and takes a person directly, usually followed by what you do for them: 我幫你做. 幫忙 is verb + object already (\"do a favour\"), so it cannot take another object right after it — say 幫我一個忙 or just 幫忙. 幫助 is a bit more formal and works both as a verb taking a person (他幫助新同事) and as a noun (謝謝你的幫助).",
+          "contrast": "幫忙 vs 幫助: if a person follows immediately, you need 幫 or 幫助, not 幫忙. If the person is split out (幫我的忙) or there is no object at all (請你幫忙), use 幫忙. As a noun after 的, only 幫助 works.",
+          "common_error": "Learners say 他幫忙我做事情 or 謝謝你的幫忙我. Because 忙 is already the object of 幫, you must say 他幫我做事情 / 他幫助我, and for the noun 謝謝你的幫助.",
+          "examples": [
+            {
+              "hanzi": "我幫你做這些事情吧。",
+              "pinyin": "Wǒ bāng nǐ zuò zhèxiē shìqíng ba.",
+              "gloss": "Let me do these things for you."
+            },
+            {
+              "hanzi": "他常常幫助新來的同事。",
+              "pinyin": "Tā chángcháng bāngzhù xīn lái de tóngshì.",
+              "gloss": "He often helps new colleagues."
+            },
+            {
+              "hanzi": "別忙了，讓我來幫忙。",
+              "pinyin": "Bié máng le, ràng wǒ lái bāngmáng.",
+              "gloss": "Stop rushing around — let me help."
+            }
+          ],
+          "id": "g_hsk2_05_2_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小張",
+          "hanzi": "小明，你今天的事情做完了嗎？",
+          "pinyin": "Xiǎo Míng, nǐ jīntiān de shìqíng zuò wán le ma?",
+          "gloss": "Xiao Ming, have you finished your work for today?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "還沒，有點多，我可能會做到很晚。",
+          "pinyin": "Hái méi, yǒudiǎn duō, wǒ kěnéng huì zuò dào hěn wǎn.",
+          "gloss": "Not yet — there's quite a lot, I might be at it till late."
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "讓我幫你吧，我的事已經做完了。",
+          "pinyin": "Ràng wǒ bāng nǐ ba, wǒ de shì yǐjīng zuò wán le.",
+          "gloss": "Let me help you — I've already finished mine."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "真的嗎？謝謝你的幫助喔！",
+          "pinyin": "Zhēn de ma? Xièxie nǐ de bāngzhù ō!",
+          "gloss": "Really? Thanks so much for the help!"
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "別客氣，在公司大家本來就要幫忙。",
+          "pinyin": "Bié kèqì, zài gōngsī dàjiā běnlái jiù yào bāngmáng.",
+          "gloss": "Don't mention it — at the company we're supposed to help each other."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那明天我請你喝咖啡，我來付錢。",
+          "pinyin": "Nà míngtiān wǒ qǐng nǐ hē kāfēi, wǒ lái fù qián.",
+          "gloss": "Then tomorrow I'll treat you to coffee — I'll pay."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "老闆",
+            "讓",
+            "我",
+            "明天",
+            "去",
+            "公司"
+          ],
+          "pinyin": "Lǎobǎn ràng wǒ míngtiān qù gōngsī.",
+          "gloss": "The boss is having me go to the company tomorrow.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "謝謝",
+            "你",
+            "的",
+            "幫助"
+          ],
+          "pinyin": "Xièxie nǐ de bāngzhù.",
+          "gloss": "Thank you for your help.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "別",
+            "太",
+            "客氣",
+            "了"
+          ],
+          "pinyin": "Bié tài kèqì le.",
+          "gloss": "Don't be so polite.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "他",
+            "告訴",
+            "我",
+            "公司",
+            "的",
+            "事情"
+          ],
+          "pinyin": "Tā gàosù wǒ gōngsī de shìqíng.",
+          "gloss": "He told me about the company's business.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "為",
+            "公司",
+            "做",
+            "了",
+            "很多",
+            "事"
+          ],
+          "pinyin": "Tā wèi gōngsī zuò le hěn duō shì.",
+          "gloss": "He has done a lot for the company.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我們公司",
+        "hanzi": "我在一家不大的公司上班。公司就在捷運站附近，騎腳踏車十分鐘就到了。老闆人很好，他常告訴我們：事情太多的時候，別一個人做，可以請同事幫忙。上個週末我身體不舒服，他讓我在家多睡一點；同事還為我做完了那些事情。他們的幫助讓我覺得，公司就是我的第二個家。",
+        "gloss": "I work at a small company. The company is right by the MRT station — ten minutes by bike and you're there. The boss is a good person; he often tells us: when there's too much to do, don't do it alone, you can ask a colleague for help. Last weekend I wasn't feeling well, and he let me stay home and sleep more; my colleagues even finished those tasks for me. Their help makes me feel that the company is my second home."
+      }
     }
   ],
   "sort_order": 26,

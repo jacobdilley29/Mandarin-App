@@ -4,7 +4,7 @@
   "subtitle": "Shopping for clothes and gifts",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_02_1",
@@ -17,7 +17,12 @@
           "pinyin": "chuān",
           "gloss": "to wear; to put on; to dress",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你今天穿的這件衣服很漂亮。",
+            "pinyin": "Nǐ jīntiān chuān de zhè jiàn yīfú hěn piàoliàng.",
+            "gloss": "The outfit you're wearing today is really pretty."
+          }
         },
         {
           "id": "v_件",
@@ -25,7 +30,12 @@
           "pinyin": "jiàn",
           "gloss": "item; component; classifier for events, things, clothes etc",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想買兩件白的衣服。",
+            "pinyin": "Wǒ xiǎng mǎi liǎng jiàn bái de yīfú.",
+            "gloss": "I want to buy two white pieces of clothing."
+          }
         },
         {
           "id": "v_張",
@@ -33,7 +43,12 @@
           "pinyin": "zhāng",
           "gloss": "to open up; to spread; sheet of paper",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這張悠遊卡是我的。",
+            "pinyin": "Zhè zhāng Yōuyóukǎ shì wǒ de.",
+            "gloss": "This EasyCard is mine."
+          }
         },
         {
           "id": "v_號",
@@ -41,7 +56,12 @@
           "pinyin": "hào",
           "gloss": "ordinal number; day of a month; mark",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆，這件有大號的嗎？",
+            "pinyin": "Lǎobǎn, zhè jiàn yǒu dà hào de ma?",
+            "gloss": "Boss, do you have this one in a large?"
+          }
         },
         {
           "id": "v_賣",
@@ -49,7 +69,12 @@
           "pinyin": "mài",
           "gloss": "to sell; to betray; to spare no effort",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店也賣男生的衣服。",
+            "pinyin": "Zhè jiā diàn yě mài nánshēng de yīfú.",
+            "gloss": "This shop also sells men's clothes."
+          }
         },
         {
           "id": "v_要",
@@ -57,12 +82,158 @@
           "pinyin": "yào",
           "gloss": "to want; to need; to ask for; will; shall; about to; need to; should",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要那件紅的，謝謝。",
+            "pinyin": "Wǒ yào nà jiàn hóng de, xièxie.",
+            "gloss": "I want that red one, thanks."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Measure words 件 and 張",
+          "pattern": "這／那／(number) + 件／張 + noun",
+          "explanation": "In Chinese a number or 這/那 cannot sit directly in front of a noun; a measure word goes in between. 件 counts clothes and matters/affairs (一件衣服, 一件事), while 張 counts flat things such as tickets, cards, tables and chairs (一張票, 一張悠遊卡, 一張桌子). When the noun is obvious in a shop, you can drop it and just say 這件、那張.",
+          "contrast": "個 is the all-purpose measure word, but it is not a free substitute here: clothing takes 件 and flat objects take 張. What decides it is the shape/type of the noun, not how general you want to sound. Use 個 for people and objects with no special measure word.",
+          "common_error": "Learners say 一個衣服 or 這個票, or leave the measure word out completely (兩衣服, 這票). After any number or 這/那 you must insert 件 or 張.",
+          "examples": [
+            {
+              "hanzi": "這件衣服我穿起來太大了。",
+              "pinyin": "Zhè jiàn yīfú wǒ chuān qǐlái tài dà le.",
+              "gloss": "This piece of clothing is too big on me."
+            },
+            {
+              "hanzi": "老闆，我要兩張票。",
+              "pinyin": "Lǎobǎn, wǒ yào liǎng zhāng piào.",
+              "gloss": "Boss, I want two tickets."
+            },
+            {
+              "hanzi": "我今天買了三件衣服，也買了一張新的卡。",
+              "pinyin": "Wǒ jīntiān mǎi le sān jiàn yīfú, yě mǎi le yì zhāng xīn de kǎ.",
+              "gloss": "Today I bought three items of clothing and also a new card."
+            }
+          ],
+          "id": "g_hsk2_02_1_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "老闆",
+          "hanzi": "歡迎光臨！這些衣服今天都賣得很便宜喔。",
+          "pinyin": "Huānyíng guānglín! Zhèxiē yīfú jīntiān dōu mài de hěn piányí ō.",
+          "gloss": "Welcome! These clothes are all going really cheap today."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我想買一件紅的，有小號的嗎？",
+          "pinyin": "Wǒ xiǎng mǎi yí jiàn hóng de, yǒu xiǎo hào de ma?",
+          "gloss": "I'd like to buy a red one — do you have it in small?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "有，你要不要穿穿看？",
+          "pinyin": "Yǒu, nǐ yào bú yào chuān chuān kàn?",
+          "gloss": "Yes — do you want to try it on?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好，謝謝。我穿起來很舒服，這件多少錢？",
+          "pinyin": "Hǎo, xièxie. Wǒ chuān qǐlái hěn shūfú, zhè jiàn duōshǎo qián?",
+          "gloss": "Sure, thanks. It feels comfortable on me — how much is this one?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "九十九塊，真的很便宜。",
+          "pinyin": "Jiǔshíjiǔ kuài, zhēn de hěn piányí.",
+          "gloss": "Ninety-nine dollars — it really is cheap."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "那我要這件，我用這張卡付。",
+          "pinyin": "Nà wǒ yào zhè jiàn, wǒ yòng zhè zhāng kǎ fù.",
+          "gloss": "Then I'll take this one; I'll pay with this card."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "要",
+            "買",
+            "這",
+            "件",
+            "衣服"
+          ],
+          "pinyin": "Wǒ yào mǎi zhè jiàn yīfú.",
+          "gloss": "I want to buy this piece of clothing.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "張",
+            "票",
+            "是",
+            "誰",
+            "的"
+          ],
+          "pinyin": "Zhè zhāng piào shì shéi de?",
+          "gloss": "Whose ticket is this?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "穿",
+            "幾",
+            "號",
+            "的",
+            "衣服"
+          ],
+          "pinyin": "Nǐ chuān jǐ hào de yīfú?",
+          "gloss": "What size clothes do you wear?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "店",
+            "也",
+            "賣",
+            "男",
+            "生",
+            "的",
+            "衣服"
+          ],
+          "pinyin": "Zhè jiā diàn yě mài nánshēng de yīfú.",
+          "gloss": "This shop also sells men's clothes.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "穿",
+            "穿",
+            "看",
+            "那",
+            "件",
+            "白",
+            "的"
+          ],
+          "pinyin": "Wǒ xiǎng chuān chuān kàn nà jiàn bái de.",
+          "gloss": "I'd like to try on that white one.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "週末買衣服",
+        "hanzi": "週末的下午，我和朋友去附近的店裡買衣服。那家店賣的衣服很漂亮，也很便宜。我看見一件紅的，很喜歡。老闆說：「你穿穿看，這件是小號的。」我穿了覺得有點小，老闆再找一件大號的，我穿起來很舒服。後來我買了兩件，用悠遊卡付錢，我們都很高興。",
+        "gloss": "On Saturday afternoon my friend and I went to a shop nearby to buy clothes. The clothes that shop sells are pretty and also cheap. I saw a red one and liked it a lot. The owner said, \"Try it on — this one is a small.\" I put it on and felt it was a bit tight, so the owner found me a large, and it felt comfortable on me. In the end I bought two pieces and paid with my EasyCard. We were both very happy."
+      }
     },
     {
       "id": "l_hsk2_02_2",
@@ -75,7 +246,12 @@
           "pinyin": "hóng",
           "gloss": "red; popular; revolutionary",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天買了一件紅衣服。",
+            "pinyin": "Wǒ zuótiān mǎi le yí jiàn hóng yīfú.",
+            "gloss": "I bought a red piece of clothing yesterday."
+          }
         },
         {
           "id": "v_白",
@@ -83,7 +259,12 @@
           "pinyin": "bái",
           "gloss": "white; snowy; pure",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她家的貓是白的,非常漂亮。",
+            "pinyin": "Tā jiā de māo shì bái de, fēicháng piàoliàng.",
+            "gloss": "Her family's cat is white and very pretty."
+          }
         },
         {
           "id": "v_比",
@@ -91,7 +272,12 @@
           "pinyin": "bǐ",
           "gloss": "to compare; (followed by a noun and adjective) more {adj.} than {noun}; ratio",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我比我姐姐高一點。",
+            "pinyin": "Wǒ bǐ wǒ jiějie gāo yìdiǎn.",
+            "gloss": "I'm a little taller than my older sister."
+          }
         },
         {
           "id": "v_最",
@@ -99,7 +285,12 @@
           "pinyin": "zuì",
           "gloss": "most; the most; -est (superlative suffix)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的珍珠奶茶最好喝。",
+            "pinyin": "Zhè jiā diàn de zhēnzhū nǎichá zuì hǎo hē.",
+            "gloss": "This shop's bubble tea is the best-tasting."
+          }
         },
         {
           "id": "v_非常",
@@ -107,7 +298,12 @@
           "pinyin": "fēi cháng",
           "gloss": "very; really; unusual; extraordinary",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天台北非常熱。",
+            "pinyin": "Jīntiān Táiběi fēicháng rè.",
+            "gloss": "It's extremely hot in Taipei today."
+          }
         },
         {
           "id": "v_它",
@@ -115,12 +311,178 @@
           "pinyin": "tā",
           "gloss": "it",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個包包很漂亮,它是我媽買的。",
+            "pinyin": "Zhège bāobāo hěn piàoliàng, tā shì wǒ mā mǎi de.",
+            "gloss": "This bag is pretty; it was bought by my mom."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "A 比 B + Adjective (comparison)",
+          "pattern": "A + 比 + B + Adj (+ 一點/多了)",
+          "explanation": "To say A is more ... than B, put 比 between the two things and then the adjective. The adjective goes bare — no 很, no 非常 in front of it. You can add 一點 after the adjective to say 'a bit more'. For the superlative, use 最 + Adj instead: 最便宜 = the cheapest.",
+          "contrast": "比 vs 最: 比 needs two items and says which one is more (白的比紅的便宜 = the white one is cheaper than the red one); 最 picks the top of a whole group and takes no second item (白的最便宜 = the white one is the cheapest). If you can say 'than X', use 比; if you mean 'of them all', use 最.",
+          "common_error": "Learners say 我比他很高 or 我比他非常高. Degree words like 很 and 非常 cannot appear inside a 比 sentence — say 我比他高 or 我比他高一點.",
+          "examples": [
+            {
+              "hanzi": "這件白衣服比那件紅的便宜。",
+              "pinyin": "Zhè jiàn bái yīfú bǐ nà jiàn hóng de piányí.",
+              "gloss": "This white shirt is cheaper than that red one."
+            },
+            {
+              "hanzi": "台北今天比昨天冷一點。",
+              "pinyin": "Táiběi jīntiān bǐ zuótiān lěng yìdiǎn.",
+              "gloss": "Taipei is a bit colder today than yesterday."
+            },
+            {
+              "hanzi": "我的腳踏車比你的新,可是你的最漂亮。",
+              "pinyin": "Wǒ de jiǎotàchē bǐ nǐ de xīn, kěshì nǐ de zuì piàoliàng.",
+              "gloss": "My bike is newer than yours, but yours is the prettiest."
+            }
+          ],
+          "id": "g_hsk2_02_2_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "它 for things and animals",
+          "pattern": "它 + 是/很 + ...",
+          "explanation": "它 is the third-person pronoun for objects and animals. It sounds the same as 他/她 but is written with 宀. In Taiwan it is used mostly for a thing already mentioned: 這個包包很漂亮,它是我媽買的。",
+          "contrast": "他/她 are for people; 它 is for things and animals. Same sound, different character — the choice is only visible in writing.",
+          "common_error": "Learners overuse 它 as an object, saying 我很喜歡它 for every 'I like it'. In natural Mandarin the object is often just left out: 我很喜歡 or 我喜歡那個。",
+          "examples": [
+            {
+              "hanzi": "這是我的狗,它非常愛吃飯。",
+              "pinyin": "Zhè shì wǒ de gǒu, tā fēicháng ài chīfàn.",
+              "gloss": "This is my dog; it really loves to eat."
+            },
+            {
+              "hanzi": "那個紅包包不大,可是它很好用。",
+              "pinyin": "Nàge hóng bāobāo bú dà, kěshì tā hěn hǎo yòng.",
+              "gloss": "That red bag isn't big, but it's very handy."
+            },
+            {
+              "hanzi": "它是我家最老的貓。",
+              "pinyin": "Tā shì wǒ jiā zuì lǎo de māo.",
+              "gloss": "It's the oldest cat in my family."
+            }
+          ],
+          "id": "g_hsk2_02_2_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "店員",
+          "hanzi": "您好,這件紅衣服很漂亮,要看看嗎?",
+          "pinyin": "Nín hǎo, zhè jiàn hóng yīfú hěn piàoliàng, yào kànkan ma?",
+          "gloss": "Hello, this red top is very pretty — would you like to take a look?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "白的和紅的,哪一件好看?",
+          "pinyin": "Bái de hé hóng de, nǎ yí jiàn hǎokàn?",
+          "gloss": "The white one or the red one — which looks better?"
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "我覺得白的比紅的好看,它也比紅的便宜。",
+          "pinyin": "Wǒ juéde bái de bǐ hóng de hǎokàn, tā yě bǐ hóng de piányí.",
+          "gloss": "I think the white one looks better than the red one, and it's cheaper too."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "真的嗎?那我穿穿看。",
+          "pinyin": "Zhēn de ma? Nà wǒ chuānchuān kàn.",
+          "gloss": "Really? Then let me try it on."
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "非常好看!這件是我們店裡最新的。",
+          "pinyin": "Fēicháng hǎokàn! Zhè jiàn shì wǒmen diàn lǐ zuì xīn de.",
+          "gloss": "It looks great! This one is the newest in our shop."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好,我買白的,用悠遊卡付,謝謝!",
+          "pinyin": "Hǎo, wǒ mǎi bái de, yòng Yōuyóukǎ fù, xièxie!",
+          "gloss": "OK, I'll take the white one and pay with my EasyCard, thanks!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "比",
+            "姐姐",
+            "高",
+            "一點"
+          ],
+          "pinyin": "Wǒ bǐ jiějie gāo yìdiǎn.",
+          "gloss": "I'm a little taller than my older sister.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "紅",
+            "衣服",
+            "非常",
+            "漂亮"
+          ],
+          "pinyin": "Zhè jiàn hóng yīfú fēicháng piàoliàng.",
+          "gloss": "This red piece of clothing is extremely pretty.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "白",
+            "的",
+            "比",
+            "黑",
+            "的",
+            "好看"
+          ],
+          "pinyin": "Bái de bǐ hēi de hǎokàn.",
+          "gloss": "The white one looks better than the black one.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "最",
+            "喜歡",
+            "喝",
+            "珍珠奶茶"
+          ],
+          "pinyin": "Wǒ zuì xǐhuān hē zhēnzhū nǎichá.",
+          "gloss": "I like drinking bubble tea the most.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "它",
+            "是",
+            "我",
+            "家",
+            "最",
+            "老",
+            "的",
+            "貓"
+          ],
+          "pinyin": "Tā shì wǒ jiā zuì lǎo de māo.",
+          "gloss": "It is the oldest cat in my family.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "週末去逛逛",
+        "hanzi": "週末我和姐姐去台北逛逛。店裡有很多衣服,我看了一件紅的,也看了一件白的。紅的非常漂亮,白的比紅的便宜一點。姐姐說白的最好看,最後我買了白的那件,它真的很舒服。回家的時候我們搭捷運,我非常高興。",
+        "gloss": "On the weekend my older sister and I went to look around in Taipei. The shop had lots of clothes; I looked at a red one and also a white one. The red one was extremely pretty, and the white one was a bit cheaper than the red one. My sister said the white one looked the best, so in the end I bought the white one — it really is comfortable. We took the MRT home, and I was very happy."
+      }
     },
     {
       "id": "l_hsk2_02_3",
@@ -133,7 +495,12 @@
           "pinyin": "sòng",
           "gloss": "to send; to deliver; to transmit; to give (as a present); to see (sb) off",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "生日的時候，我想送朋友一本書。",
+            "pinyin": "Shēngrì de shíhòu, wǒ xiǎng sòng péngyǒu yì běn shū.",
+            "gloss": "For his birthday, I want to give my friend a book."
+          }
         },
         {
           "id": "v_給",
@@ -141,7 +508,12 @@
           "pinyin": "gěi",
           "gloss": "to; for; for the benefit of",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這杯珍珠奶茶是我買給你的。",
+            "pinyin": "Zhè bēi zhēnzhū nǎichá shì wǒ mǎi gěi nǐ de.",
+            "gloss": "This bubble tea is the one I bought for you."
+          }
         },
         {
           "id": "v_元",
@@ -149,7 +521,12 @@
           "pinyin": "yuán",
           "gloss": "currency unit (esp. Chinese yuan); first; original",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件衣服九十元，很便宜。",
+            "pinyin": "Zhè jiàn yīfú jiǔshí yuán, hěn piányí.",
+            "gloss": "This piece of clothing is ninety dollars — very cheap."
+          }
         },
         {
           "id": "v_可以",
@@ -157,7 +534,12 @@
           "pinyin": "kě yǐ",
           "gloss": "can; may; possible",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們可以一起去買東西嗎？",
+            "pinyin": "Wǒmen kěyǐ yìqǐ qù mǎi dōngxi ma?",
+            "gloss": "Can we go shopping together?"
+          }
         },
         {
           "id": "v_還",
@@ -165,12 +547,177 @@
           "pinyin": "hái",
           "gloss": "still; still in progress; still more",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他還在睡覺，還沒起來。",
+            "pinyin": "Tā hái zài shuìjiào, hái méi qǐlái.",
+            "gloss": "He's still sleeping; he hasn't got up yet."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "送給 / 寄給 — marking the person who receives",
+          "pattern": "S + 送/寄/買/賣 + 給 + 人 + 東西　(也可以說：S + 送 + 人 + 東西)",
+          "explanation": "After a verb of handing over or sending, 給 introduces the person who gets the thing. The person comes straight after 給, then the thing. 送給 means to give as a present (no money), 寄給 means to send/mail to someone. With 送 you can also drop 給: 我送他一本書 = 我送給他一本書. Another common order puts the thing first and the 給-phrase at the end: 我買了一杯茶給她。",
+          "contrast": "給 on its own is a full verb meaning 'hand over' (請給我一張票). 送給 adds the 'as a gift' sense, and 寄給 the 'mail it' sense. If the other person pays you, the verb must be 賣, not 送.",
+          "common_error": "Learners put the object before the person after 給: ✗ 我送給一本書他. The person always comes right after 給 — 我送給他一本書 — or move the whole 給-phrase to the end: 我送一本書給他。",
+          "examples": [
+            {
+              "hanzi": "我送給媽媽一件新衣服。",
+              "pinyin": "Wǒ sòng gěi māma yí jiàn xīn yīfú.",
+              "gloss": "I gave my mom a new piece of clothing."
+            },
+            {
+              "hanzi": "他寄了一個包裹給我。",
+              "pinyin": "Tā jì le yí ge bāoguǒ gěi wǒ.",
+              "gloss": "He mailed a package to me."
+            },
+            {
+              "hanzi": "這本書是老師送給我的。",
+              "pinyin": "Zhè běn shū shì lǎoshī sòng gěi wǒ de.",
+              "gloss": "This book was given to me by my teacher."
+            }
+          ],
+          "id": "g_hsk2_02_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "可以 — permission and possibility",
+          "pattern": "S + 可以 + V；問句：…可以…嗎？／可不可以…？",
+          "explanation": "可以 before a verb asks for or gives permission, or says something is a workable option. The negative is 不可以 (not allowed).",
+          "contrast": "會 is about learned ability (我會說中文), 能 is about physical possibility or being free to do it; 可以 is mainly about permission or an acceptable option.",
+          "common_error": "Saying ✗ 我可以說中文 when you mean 'I can speak Chinese' (ability). That should be 我會說中文。",
+          "examples": [
+            {
+              "hanzi": "可以用悠遊卡付錢嗎？",
+              "pinyin": "Kěyǐ yòng Yōuyóukǎ fù qián ma?",
+              "gloss": "Can I pay with an EasyCard?"
+            },
+            {
+              "hanzi": "你可以送她一本書。",
+              "pinyin": "Nǐ kěyǐ sòng tā yì běn shū.",
+              "gloss": "You could give her a book."
+            },
+            {
+              "hanzi": "這裡不可以吃東西。",
+              "pinyin": "Zhèlǐ bù kěyǐ chī dōngxi.",
+              "gloss": "You can't eat here."
+            }
+          ],
+          "id": "g_hsk2_02_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "老闆，這個小包多少錢？我想送給我朋友。",
+          "pinyin": "Lǎobǎn, zhège xiǎo bāo duōshǎo qián? Wǒ xiǎng sòng gěi wǒ péngyǒu.",
+          "gloss": "Boss, how much is this little bag? I want to give it to my friend."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "九十元。這個很漂亮，很多女生都喜歡喔。",
+          "pinyin": "Jiǔshí yuán. Zhège hěn piàoliàng, hěn duō nǚshēng dōu xǐhuān o.",
+          "gloss": "Ninety dollars. It's very pretty — lots of girls like it."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好，那我買兩個。可以用悠遊卡付錢嗎？",
+          "pinyin": "Hǎo, nà wǒ mǎi liǎng ge. Kěyǐ yòng Yōuyóukǎ fù qián ma?",
+          "gloss": "OK, then I'll take two. Can I pay with an EasyCard?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "可以。你還要什麼嗎？",
+          "pinyin": "Kěyǐ. Nǐ hái yào shénme ma?",
+          "gloss": "Sure. Do you still want anything else?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "不用了，謝謝。我還要去郵局寄東西。",
+          "pinyin": "Búyòng le, xièxie. Wǒ hái yào qù yóujú jì dōngxi.",
+          "gloss": "No thanks. I still have to go to the post office to mail something."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "郵局在附近，走路五分鐘。",
+          "pinyin": "Yóujú zài fùjìn, zǒu lù wǔ fēnzhōng.",
+          "gloss": "The post office is nearby — a five-minute walk."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "想",
+            "送",
+            "你",
+            "一",
+            "杯",
+            "咖啡"
+          ],
+          "pinyin": "Wǒ xiǎng sòng nǐ yì bēi kāfēi.",
+          "gloss": "I want to buy you a coffee.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "本",
+            "書",
+            "九十",
+            "元"
+          ],
+          "pinyin": "Zhè běn shū jiǔshí yuán.",
+          "gloss": "This book is ninety dollars.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "可以",
+            "用",
+            "悠遊卡",
+            "付",
+            "錢"
+          ],
+          "pinyin": "Nǐ kěyǐ yòng Yōuyóukǎ fù qián.",
+          "gloss": "You can pay with an EasyCard.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "還",
+            "沒",
+            "回",
+            "家"
+          ],
+          "pinyin": "Tā hái méi huí jiā.",
+          "gloss": "He hasn't come home yet.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "請",
+            "給",
+            "我",
+            "一",
+            "張",
+            "票"
+          ],
+          "pinyin": "Qǐng gěi wǒ yì zhāng piào.",
+          "gloss": "Please give me a ticket.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "給媽媽的生日",
+        "hanzi": "這個星期天是我媽媽的生日。早上我騎腳踏車去附近的店，買了一件很漂亮的衣服送給她，九十元，真的很便宜。我還買了一杯珍珠奶茶給她喝。晚上我們一家人可以一起去餐廳吃飯。媽媽很高興，她說這是她最好的生日。",
+        "gloss": "This Sunday is my mom's birthday. In the morning I rode my bike to a shop nearby and bought a very pretty piece of clothing to give her — ninety dollars, really cheap. I also bought her a cup of bubble tea to drink. In the evening our whole family can go out to a restaurant together. My mom was very happy; she said it was her best birthday."
+      }
     }
   ],
   "sort_order": 23,

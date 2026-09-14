@@ -4,7 +4,7 @@
   "subtitle": "Meeting people and talking about them",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_01_1",
@@ -17,7 +17,12 @@
           "pinyin": "nín",
           "gloss": "you (courteous, as opposed to informal 你)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師，您好！我是新同學。",
+            "pinyin": "Lǎoshī, nín hǎo! Wǒ shì xīn tóngxué.",
+            "gloss": "Teacher, hello! I'm a new student."
+          }
         },
         {
           "id": "v_歡迎",
@@ -25,7 +30,12 @@
           "pinyin": "huān yíng",
           "gloss": "to welcome; welcome",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "歡迎您來我家吃飯。",
+            "pinyin": "Huānyíng nín lái wǒ jiā chī fàn.",
+            "gloss": "Welcome to my home for a meal."
+          }
         },
         {
           "id": "v_大家",
@@ -33,7 +43,12 @@
           "pinyin": "dà jiā",
           "gloss": "everyone; influential family; great expert",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "大家好，我叫小文。",
+            "pinyin": "Dàjiā hǎo, wǒ jiào Xiǎowén.",
+            "gloss": "Hello everyone, my name is Xiaowen."
+          }
         },
         {
           "id": "v_介紹",
@@ -41,7 +56,12 @@
           "pinyin": "jiè shào",
           "gloss": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我介紹一下，這是我的朋友小明。",
+            "pinyin": "Wǒ jièshào yíxià, zhè shì wǒ de péngyǒu Xiǎomíng.",
+            "gloss": "Let me introduce — this is my friend Xiaoming."
+          }
         },
         {
           "id": "v_笑",
@@ -49,7 +69,12 @@
           "pinyin": "xiào",
           "gloss": "to laugh; to smile; to laugh at",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她笑得很漂亮。",
+            "pinyin": "Tā xiào de hěn piàoliàng.",
+            "gloss": "She has a beautiful smile."
+          }
         },
         {
           "id": "v_一起",
@@ -57,12 +82,177 @@
           "pinyin": "yī qǐ",
           "gloss": "in the same place; together; with",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我們一起去逛夜市，好嗎？",
+            "pinyin": "Zhōumò wǒmen yìqǐ qù guàng yèshì, hǎo ma?",
+            "gloss": "Shall we go to the night market together this weekend?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Doing things together: (A 和 B) + 一起 + Verb",
+          "pattern": "Subject（A 和 B）+ 一起 + Verb + Object",
+          "explanation": "一起 means 'together' and must come before the verb, never after it. If you want to say who you do something with, name both people first with 和: 我和小明一起去. 一起 tells us the people share one action at the same time.",
+          "contrast": "一起 vs 都: both sit before the verb, but 都 means 'all (of them) do it', while 一起 means 'do it together, as one group'. 我們都去看電影 = each of us goes (maybe alone); 我們一起去看電影 = we go as a group.",
+          "common_error": "Learners often put 一起 after the verb (我們去一起) or use 一起 to mean 'with', saying 我一起你去. Chinese needs 和 for 'with': 我和你一起去.",
+          "examples": [
+            {
+              "hanzi": "我和朋友一起去吃晚飯。",
+              "pinyin": "Wǒ hé péngyǒu yìqǐ qù chī wǎnfàn.",
+              "gloss": "My friend and I are going to eat dinner together."
+            },
+            {
+              "hanzi": "我們一起騎腳踏車去學校。",
+              "pinyin": "Wǒmen yìqǐ qí jiǎotàchē qù xuéxiào.",
+              "gloss": "We ride bikes to school together."
+            },
+            {
+              "hanzi": "老師和同學一起笑了。",
+              "pinyin": "Lǎoshī hé tóngxué yìqǐ xiào le.",
+              "gloss": "The teacher and the students laughed together."
+            }
+          ],
+          "id": "g_hsk2_01_1_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "歡迎 + Verb Phrase / 歡迎 + Person",
+          "pattern": "歡迎 + (Person) + Verb Phrase",
+          "explanation": "歡迎 can take a person (歡迎大家) or go straight onto a verb phrase (歡迎來台灣). It works as a verb, so it needs no 是 and no 很 in front of it.",
+          "contrast": "歡迎你來 vs 請你來: 歡迎 greets someone who is already coming or has arrived; 請 is a request asking someone to come.",
+          "common_error": "Learners say 很歡迎你 or 你是歡迎, copying the English adjective 'welcome'. In Mandarin 歡迎 is a verb: 歡迎你來我家。",
+          "examples": [
+            {
+              "hanzi": "歡迎大家來我們班。",
+              "pinyin": "Huānyíng dàjiā lái wǒmen bān.",
+              "gloss": "Welcome, everyone, to our class."
+            },
+            {
+              "hanzi": "老闆說：「歡迎光臨！」",
+              "pinyin": "Lǎobǎn shuō: “Huānyíng guānglín!”",
+              "gloss": "The shop owner said, “Welcome!”"
+            },
+            {
+              "hanzi": "歡迎您來台灣讀書。",
+              "pinyin": "Huānyíng nín lái Táiwān dúshū.",
+              "gloss": "Welcome to Taiwan to study."
+            }
+          ],
+          "id": "g_hsk2_01_1_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "老師",
+          "hanzi": "大家好！今天歡迎新同學來我們班。",
+          "pinyin": "Dàjiā hǎo! Jīntiān huānyíng xīn tóngxué lái wǒmen bān.",
+          "gloss": "Hello everyone! Today we welcome a new classmate to our class."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "老師好，大家好。我叫小文，很高興認識您。",
+          "pinyin": "Lǎoshī hǎo, dàjiā hǎo. Wǒ jiào Xiǎowén, hěn gāoxìng rènshì nín.",
+          "gloss": "Hello teacher, hello everyone. My name is Xiaowen; nice to meet you."
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "我介紹一下，這是小明，他是台北人。",
+          "pinyin": "Wǒ jièshào yíxià, zhè shì Xiǎomíng, tā shì Táiběi rén.",
+          "gloss": "Let me introduce — this is Xiaoming, he's from Taipei."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "小文你好！週末我們一起去逛夜市，好嗎？",
+          "pinyin": "Xiǎowén nǐ hǎo! Zhōumò wǒmen yìqǐ qù guàng yèshì, hǎo ma?",
+          "gloss": "Hi Xiaowen! Shall we go to the night market together this weekend?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "太好了，謝謝你！",
+          "pinyin": "Tài hǎo le, xièxie nǐ!",
+          "gloss": "Great, thank you!"
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "你們看，小文一直在笑，她很喜歡這個班。",
+          "pinyin": "Nǐmen kàn, Xiǎowén yìzhí zài xiào, tā hěn xǐhuān zhè ge bān.",
+          "gloss": "Look, Xiaowen keeps smiling — she really likes this class."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "歡迎",
+            "大家",
+            "來",
+            "台灣"
+          ],
+          "pinyin": "Huānyíng dàjiā lái Táiwān.",
+          "gloss": "Welcome everyone to Taiwan.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "介紹",
+            "我",
+            "的",
+            "新",
+            "朋友"
+          ],
+          "pinyin": "Wǒ xiǎng jièshào wǒ de xīn péngyǒu.",
+          "gloss": "I want to introduce my new friend.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "您",
+            "是",
+            "我們",
+            "的",
+            "新",
+            "老師",
+            "嗎"
+          ],
+          "pinyin": "Nín shì wǒmen de xīn lǎoshī ma?",
+          "gloss": "Are you our new teacher?",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "她",
+            "笑",
+            "得",
+            "很",
+            "甜"
+          ],
+          "pinyin": "Tā xiào de hěn tián.",
+          "gloss": "Her smile is very sweet.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "週末",
+            "我們",
+            "一起",
+            "去",
+            "逛",
+            "夜市"
+          ],
+          "pinyin": "Zhōumò wǒmen yìqǐ qù guàng yèshì.",
+          "gloss": "This weekend we'll go to the night market together.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "新同學",
+        "hanzi": "今天早上，老師對大家說：「歡迎新同學！」新同學叫小文，她說：「大家好，我是台北人，很高興認識你們。」老師請小明介紹學校，小明很高興。下午他們一起騎腳踏車去逛書店，小文一直在笑。她說台灣的同學都很好。",
+        "gloss": "This morning the teacher said to everyone, \"Welcome to our new classmate!\" The new student is called Xiaowen. She said, \"Hello everyone, I'm from Taipei. I'm very happy to meet you all.\" The teacher asked Xiaoming to show her around the school, and Xiaoming was delighted. In the afternoon they rode bikes together to browse a bookshop, and Xiaowen kept smiling. She said the classmates in Taiwan are all very nice."
+      }
     },
     {
       "id": "l_hsk2_01_2",
@@ -75,7 +265,12 @@
           "pinyin": "hái zi",
           "gloss": "child",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這兩個孩子都很喜歡吃冰。",
+            "pinyin": "Zhè liǎng ge háizi dōu hěn xǐhuān chī bīng.",
+            "gloss": "Both of these children love eating shaved ice."
+          }
         },
         {
           "id": "v_男人",
@@ -83,7 +278,12 @@
           "pinyin": "nán rén",
           "gloss": "a man; a male; men",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那個男人是我爸爸的朋友。",
+            "pinyin": "Nà ge nánrén shì wǒ bàba de péngyǒu.",
+            "gloss": "That man is my dad's friend."
+          }
         },
         {
           "id": "v_女人",
@@ -91,7 +291,12 @@
           "pinyin": "nǚ rén",
           "gloss": "woman",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個女人是我們學校的老師。",
+            "pinyin": "Zhè ge nǚrén shì wǒmen xuéxiào de lǎoshī.",
+            "gloss": "This woman is a teacher at our school."
+          }
         },
         {
           "id": "v_兩",
@@ -99,7 +304,12 @@
           "pinyin": "liǎng",
           "gloss": "two; both; some",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上喝兩杯咖啡。",
+            "pinyin": "Wǒ měi tiān zǎoshang hē liǎng bēi kāfēi.",
+            "gloss": "I drink two cups of coffee every morning."
+          }
         },
         {
           "id": "v_每",
@@ -107,7 +317,12 @@
           "pinyin": "měi",
           "gloss": "each; every",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每個週末都去夜市逛逛。",
+            "pinyin": "Wǒ měi ge zhōumò dōu qù yèshì guàngguang.",
+            "gloss": "I go wander around the night market every weekend."
+          }
         },
         {
           "id": "v_也",
@@ -115,12 +330,154 @@
           "pinyin": "yě",
           "gloss": "(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我喜歡珍珠奶茶，我媽媽也喜歡。",
+            "pinyin": "Wǒ xǐhuān zhēnzhū nǎichá, wǒ māma yě xǐhuān.",
+            "gloss": "I like bubble milk tea, and my mom likes it too."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "也 — \"also\", placed before the verb",
+          "pattern": "Subject + 也 + Verb / Adjective (+ Object)",
+          "explanation": "也 means \"also / too\". It is an adverb, so it must sit after the subject and right before the verb or adjective — never at the end of the sentence like English \"too\". It links two different subjects doing the same thing: 我是老師，她也是老師。With a negative, 也 comes before 不 or 沒: 我也不想去。",
+          "contrast": "也 vs 都: 也 adds a second subject that does the same thing (我喜歡，我姐姐也喜歡 = \"my sister likes it too\"), while 都 sums up one group and means \"all/both\" (我們兩個都喜歡 = \"both of us like it\"). If you are adding a new person, use 也; if you are covering everyone already mentioned, use 都. They can appear together: 他們也都是學生。",
+          "common_error": "Learners copy English word order and say 我喜歡珍珠奶茶也 or put 也 in front of the subject (也我喜歡). 也 always goes after the subject and immediately before the verb/adjective.",
+          "examples": [
+            {
+              "hanzi": "我是台北人，她也是台北人。",
+              "pinyin": "Wǒ shì Táiběi rén, tā yě shì Táiběi rén.",
+              "gloss": "I'm from Taipei, and she's from Taipei too."
+            },
+            {
+              "hanzi": "我爸爸會做菜，我媽媽也會。",
+              "pinyin": "Wǒ bàba huì zuò cài, wǒ māma yě huì.",
+              "gloss": "My dad can cook, and my mom can too."
+            },
+            {
+              "hanzi": "那個女人也有兩個孩子。",
+              "pinyin": "Nà ge nǚrén yě yǒu liǎng ge háizi.",
+              "gloss": "That woman also has two children."
+            }
+          ],
+          "id": "g_hsk2_01_2_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "這是你的家人嗎？",
+          "pinyin": "Zhè shì nǐ de jiārén ma?",
+          "gloss": "Is this your family?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "對，這個男人是我爸爸，那個女人是我媽媽。",
+          "pinyin": "Duì, zhè ge nánrén shì wǒ bàba, nà ge nǚrén shì wǒ māma.",
+          "gloss": "Yes. This man is my dad, and that woman is my mom."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那兩個小孩子呢？",
+          "pinyin": "Nà liǎng ge xiǎo háizi ne?",
+          "gloss": "What about those two little kids?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "那是我姐姐的孩子，一個八歲，一個五歲。",
+          "pinyin": "Nà shì wǒ jiějie de háizi, yí ge bā suì, yí ge wǔ suì.",
+          "gloss": "Those are my sister's kids — one is eight, the other is five."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "他們兩個都很漂亮耶！",
+          "pinyin": "Tāmen liǎng ge dōu hěn piàoliàng ye!",
+          "gloss": "They're both really cute!"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "他們每個週末都來我家，我媽媽也很喜歡他們。",
+          "pinyin": "Tāmen měi ge zhōumò dōu lái wǒ jiā, wǒ māma yě hěn xǐhuān tāmen.",
+          "gloss": "They come to my place every weekend; my mom loves them too."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "家",
+            "有",
+            "兩",
+            "個",
+            "孩子"
+          ],
+          "pinyin": "Wǒ jiā yǒu liǎng ge háizi.",
+          "gloss": "There are two children in my family.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "都",
+            "搭",
+            "捷運",
+            "去",
+            "上班"
+          ],
+          "pinyin": "Wǒ měi tiān dōu dā jiéyùn qù shàngbān.",
+          "gloss": "I take the MRT to work every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "那個",
+            "男人",
+            "是",
+            "我",
+            "姐姐",
+            "的",
+            "朋友"
+          ],
+          "pinyin": "Nà ge nánrén shì wǒ jiějie de péngyǒu.",
+          "gloss": "That man is my older sister's friend.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "她",
+            "也",
+            "想",
+            "去",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Tā yě xiǎng qù kàn diànyǐng.",
+          "gloss": "She wants to go see a movie too.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這個",
+            "女人",
+            "有",
+            "兩",
+            "個",
+            "孩子"
+          ],
+          "pinyin": "Zhè ge nǚrén yǒu liǎng ge háizi.",
+          "gloss": "This woman has two children.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我的家人",
+        "hanzi": "我家有四個人：爸爸、媽媽、姐姐和我。爸爸是老師，每天早上騎腳踏車去學校。媽媽在附近的一家餐廳工作，她很會做菜。姐姐現在有兩個孩子，一個八歲，一個五歲。每個週末，那兩個孩子都會來我家。他們喜歡吃媽媽做的麵，我也很喜歡。那時候，我家的每個人都很高興。",
+        "gloss": "There are four people in my family: Dad, Mom, my older sister, and me. Dad is a teacher; every morning he rides his bike to school. Mom works at a restaurant nearby, and she cooks really well. My sister now has two children, one eight years old and one five. Every weekend those two kids come over to our place. They love eating the noodles Mom makes, and I love them too. At times like that, everyone in my family is very happy."
+      }
     },
     {
       "id": "l_hsk2_01_3",
@@ -133,7 +490,12 @@
           "pinyin": "gāo",
           "gloss": "high; tall; above average",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我爸爸很高，我也很高。",
+            "pinyin": "Wǒ bàba hěn gāo, wǒ yě hěn gāo.",
+            "gloss": "My dad is tall, and I'm tall too."
+          }
         },
         {
           "id": "v_長",
@@ -141,7 +503,12 @@
           "pinyin": "cháng",
           "gloss": "chief; head; elder",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那個電影很長，三個鐘頭。",
+            "pinyin": "Nà ge diànyǐng hěn cháng, sān ge zhōngtóu.",
+            "gloss": "That movie is long — three hours."
+          }
         },
         {
           "id": "v_眼睛",
@@ -149,7 +516,12 @@
           "pinyin": "yǎnjīng",
           "gloss": "eye",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的眼睛有點痛，想早一點睡。",
+            "pinyin": "Wǒ de yǎnjīng yǒudiǎn tòng, xiǎng zǎo yìdiǎn shuì.",
+            "gloss": "My eyes hurt a bit; I want to sleep a little earlier."
+          }
         },
         {
           "id": "v_身體",
@@ -157,7 +529,12 @@
           "pinyin": "shēn tǐ",
           "gloss": "the body; one's health; in person",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她每天走路上班，身體很好。",
+            "pinyin": "Tā měi tiān zǒulù shàngbān, shēntǐ hěn hǎo.",
+            "gloss": "She walks to work every day; she's in good health."
+          }
         },
         {
           "id": "v_黑",
@@ -165,7 +542,12 @@
           "pinyin": "hēi",
           "gloss": "black; dark; sinister",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天黑了，我們騎腳踏車回家。",
+            "pinyin": "Tiān hēi le, wǒmen qí jiǎotàchē huí jiā.",
+            "gloss": "It's dark now; let's ride our bikes home."
+          }
         },
         {
           "id": "v_真",
@@ -173,12 +555,157 @@
           "pinyin": "zhēn",
           "gloss": "really; truly; indeed",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天真熱，我想喝冰的。",
+            "pinyin": "Jīntiān zhēn rè, wǒ xiǎng hē bīng de.",
+            "gloss": "It's really hot today; I want something cold to drink."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "真 + adjective (exclaiming about what you see)",
+          "pattern": "Subject + 真 + Adjective（！）",
+          "explanation": "真 means \"really, truly\". You put it right in front of an adjective to react to something you have just seen, heard or felt: 他真高！(Wow, he's tall!) It carries the speaker's feeling or surprise, so it is normally used in exclamations, not in plain, neutral descriptions. 很, on the other hand, is the everyday default word before an adjective and adds almost no emphasis.",
+          "contrast": "真 vs 很: both sit before an adjective, but 很 is the neutral \"filler\" degree word used in ordinary statements and answers (他很高 = He is tall), while 真 expresses the speaker's reaction (他真高！ = Wow, he's so tall!). If you are simply giving information, use 很; if you are exclaiming, use 真.",
+          "common_error": "Learners put 真 into yes/no questions and negative sentences, saying things like ✗他真高嗎？ or ✗他不真高。 真 is for exclaiming, so say 他很高嗎？/ 他高嗎？ and 他不高。 Another frequent mistake is adding 是: ✗他是真高 — just say 他真高。",
+          "examples": [
+            {
+              "hanzi": "你家的狗真黑！",
+              "pinyin": "Nǐ jiā de gǒu zhēn hēi!",
+              "gloss": "Your dog is really black!"
+            },
+            {
+              "hanzi": "這路真長，我的腳很痛。",
+              "pinyin": "Zhè lù zhēn cháng, wǒ de jiǎo hěn tòng.",
+              "gloss": "This road is really long — my feet hurt."
+            },
+            {
+              "hanzi": "他的身體真好，每天騎車上班。",
+              "pinyin": "Tā de shēntǐ zhēn hǎo, měi tiān qí chē shàngbān.",
+              "gloss": "He's really healthy — he rides to work every day."
+            }
+          ],
+          "id": "g_hsk2_01_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk2_01_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你看，那個男生真高！",
+          "pinyin": "Nǐ kàn, nà ge nánshēng zhēn gāo!",
+          "gloss": "Look, that guy is really tall!"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "對，他是新來的同學，眼睛大大的。",
+          "pinyin": "Duì, tā shì xīn lái de tóngxué, yǎnjīng dàdà de.",
+          "gloss": "Yes, he's the new classmate — he's got big eyes."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "他每天騎腳踏車來學校，身體很好。",
+          "pinyin": "Tā měi tiān qí jiǎotàchē lái xuéxiào, shēntǐ hěn hǎo.",
+          "gloss": "He rides his bike to school every day; he's really fit."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我也想騎車上學，這樣身體會好一點。",
+          "pinyin": "Wǒ yě xiǎng qí chē shàngxué, zhèyàng shēntǐ huì hǎo yìdiǎn.",
+          "gloss": "I'd like to bike to school too; I'd be healthier that way."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那我們週末一起去騎，好不好？",
+          "pinyin": "Nà wǒmen zhōumò yìqǐ qù qí, hǎo bù hǎo?",
+          "gloss": "Then let's go riding together this weekend, OK?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "好，天黑前我們回來。",
+          "pinyin": "Hǎo, tiān hēi qián wǒmen huílái.",
+          "gloss": "Sure, we'll come back before it gets dark."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "的",
+            "眼睛",
+            "真",
+            "大"
+          ],
+          "pinyin": "Tā de yǎnjīng zhēn dà.",
+          "gloss": "His eyes are really big.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "爸爸",
+            "的",
+            "身體",
+            "很",
+            "好"
+          ],
+          "pinyin": "Wǒ bàba de shēntǐ hěn hǎo.",
+          "gloss": "My dad is in good health.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "那個",
+            "男生",
+            "真",
+            "高"
+          ],
+          "pinyin": "Nà ge nánshēng zhēn gāo.",
+          "gloss": "That guy is really tall.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "狗",
+            "是",
+            "黑",
+            "的"
+          ],
+          "pinyin": "Wǒ de gǒu shì hēi de.",
+          "gloss": "My dog is black.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "那個",
+            "電影",
+            "真",
+            "長"
+          ],
+          "pinyin": "Nà ge diànyǐng zhēn cháng.",
+          "gloss": "That movie is really long.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "早餐店的老闆",
+        "hanzi": "我家附近有一家早餐店。老闆很高，眼睛大大的，人也很好。他每天早上五點開店，店裡的客人真多，有學生，也有上班的人。老闆的狗是黑的，每天坐在店外面看大家吃早餐。老闆說他不搭捷運，每天騎腳踏車來店裡，所以身體真好。",
+        "gloss": "There's a breakfast shop near my home. The owner is tall, has big eyes, and is a really nice guy. He opens the shop at five every morning, and there are so many customers — students and people on their way to work. The owner's dog is black; it sits outside the shop every day watching everyone eat breakfast. The owner says he doesn't take the MRT — he rides his bike to the shop every day, so he's really healthy."
+      }
     }
   ],
   "sort_order": 22,

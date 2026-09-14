@@ -4,7 +4,7 @@
   "subtitle": "In class and expressing your ideas",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_04_1",
@@ -17,7 +17,12 @@
           "pinyin": "wèn",
           "gloss": "to ask; to inquire",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師，我可以問您一個問題嗎？",
+            "pinyin": "Lǎoshī, wǒ kěyǐ wèn nín yí ge wèntí ma?",
+            "gloss": "Teacher, may I ask you a question?"
+          }
         },
         {
           "id": "v_問題",
@@ -25,7 +30,12 @@
           "pinyin": "wèn tí",
           "gloss": "question; problem; issue",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他今天問了很多問題喔。",
+            "pinyin": "Tā jīntiān wèn le hěn duō wèntí o.",
+            "gloss": "He asked a lot of questions today."
+          }
         },
         {
           "id": "v_懂",
@@ -33,7 +43,12 @@
           "pinyin": "dǒng",
           "gloss": "to understand; to comprehend",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師說的話，我都懂了。",
+            "pinyin": "Lǎoshī shuō de huà, wǒ dōu dǒng le.",
+            "gloss": "I understand everything the teacher said."
+          }
         },
         {
           "id": "v_知道",
@@ -41,7 +56,12 @@
           "pinyin": "zhī dào",
           "gloss": "to know; to become aware of; also pr. [zhī dao]",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你知道他家在哪裡嗎？",
+            "pinyin": "Nǐ zhīdào tā jiā zài nǎlǐ ma?",
+            "gloss": "Do you know where his home is?"
+          }
         },
         {
           "id": "v_錯",
@@ -49,7 +69,12 @@
           "pinyin": "cuò",
           "gloss": "mistake; wrong; bad",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "對不起，這個字我寫錯了。",
+            "pinyin": "Duìbùqǐ, zhè ge zì wǒ xiě cuò le.",
+            "gloss": "Sorry, I wrote this character wrong."
+          }
         },
         {
           "id": "v_第一",
@@ -57,12 +82,157 @@
           "pinyin": "dì yī",
           "gloss": "first; number one; primary",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我是第一個到學校的。",
+            "pinyin": "Wǒ shì dì yī ge dào xuéxiào de.",
+            "gloss": "I was the first one to get to school."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Potential complement with 懂: 聽得懂 / 看不懂",
+          "pattern": "Verb (聽/看/讀) + 得/不 + 懂",
+          "explanation": "To say whether you are able to understand something through listening or reading, put 得 (able) or 不 (not able) between the verb and 懂. 聽得懂 = can understand by ear; 看不懂 = can't understand by reading. The question form is 聽得懂嗎？or 聽得懂聽不懂？The object usually goes to the front: 這本書我看不懂。",
+          "contrast": "沒聽懂 vs 聽不懂: 沒聽懂 means on one particular occasion you didn't catch it (a past event — maybe he spoke too fast), while 聽不懂 means you lack the ability to understand at all. Ask yourself: one time, or in general?",
+          "common_error": "Learners copy English and say 我不聽懂 or 我不能聽懂. In Chinese the 不 goes inside, between the verb and 懂: 我聽不懂.",
+          "examples": [
+            {
+              "hanzi": "這本書我看不懂。",
+              "pinyin": "Zhè běn shū wǒ kàn bù dǒng.",
+              "gloss": "I can't understand this book."
+            },
+            {
+              "hanzi": "老師說的中文，你聽得懂嗎？",
+              "pinyin": "Lǎoshī shuō de Zhōngwén, nǐ tīng de dǒng ma?",
+              "gloss": "Can you understand the Chinese the teacher speaks?"
+            },
+            {
+              "hanzi": "這個字我看得懂，可是不知道怎麼寫。",
+              "pinyin": "Zhè ge zì wǒ kàn de dǒng, kěshì bù zhīdào zěnme xiě.",
+              "gloss": "I can read this character, but I don't know how to write it."
+            }
+          ],
+          "id": "g_hsk2_04_1_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "學生",
+          "hanzi": "老師，我可以問您一個問題嗎？",
+          "pinyin": "Lǎoshī, wǒ kěyǐ wèn nín yí ge wèntí ma?",
+          "gloss": "Teacher, may I ask you a question?"
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "可以啊，你問吧。",
+          "pinyin": "Kěyǐ a, nǐ wèn ba.",
+          "gloss": "Sure, go ahead and ask."
+        },
+        {
+          "speaker": "學生",
+          "hanzi": "這個字我看不懂，要怎麼讀？",
+          "pinyin": "Zhè ge zì wǒ kàn bù dǒng, yào zěnme dú?",
+          "gloss": "I can't read this character. How is it pronounced?"
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "這個字和「知道」的「知」一樣喔。",
+          "pinyin": "Zhè ge zì hé「zhīdào」de「zhī」yíyàng o.",
+          "gloss": "This character is the same as the 知 in 知道."
+        },
+        {
+          "speaker": "學生",
+          "hanzi": "我懂了！我昨天寫錯了，謝謝老師。",
+          "pinyin": "Wǒ dǒng le! Wǒ zuótiān xiě cuò le, xièxie lǎoshī.",
+          "gloss": "I get it! I wrote it wrong yesterday. Thank you, teacher."
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "不客氣，有問題就來問我。",
+          "pinyin": "Bú kèqì, yǒu wèntí jiù lái wèn wǒ.",
+          "gloss": "You're welcome. If you have questions, just come ask me."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "有",
+            "一",
+            "個",
+            "問題",
+            "想",
+            "問",
+            "老師"
+          ],
+          "pinyin": "Wǒ yǒu yí ge wèntí xiǎng wèn lǎoshī.",
+          "gloss": "I have a question I want to ask the teacher.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "知道",
+            "他",
+            "的",
+            "名字",
+            "嗎"
+          ],
+          "pinyin": "Nǐ zhīdào tā de míngzi ma?",
+          "gloss": "Do you know his name?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "字",
+            "我",
+            "寫",
+            "錯",
+            "了"
+          ],
+          "pinyin": "Zhè ge zì wǒ xiě cuò le.",
+          "gloss": "I wrote this character wrong.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "是",
+            "班",
+            "上",
+            "第一",
+            "名"
+          ],
+          "pinyin": "Wǒ shì bān shàng dì yī míng.",
+          "gloss": "I'm number one in the class.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "老師",
+            "說",
+            "的",
+            "話",
+            "我",
+            "聽",
+            "不",
+            "懂"
+          ],
+          "pinyin": "Lǎoshī shuō de huà wǒ tīng bù dǒng.",
+          "gloss": "I can't understand what the teacher says.",
+          "cloze_index": 7
+        }
+      ],
+      "passage": {
+        "title": "第一天學中文",
+        "hanzi": "我第一天在台灣學中文的時候，老師說的話我都聽不懂。我很想問問題，可是不知道要怎麼問。老師看到了，就笑一笑，對我說：「有問題就問，說錯也沒關係。」現在我常常第一個問老師問題，中文也比以前好多了。",
+        "gloss": "On my first day studying Chinese in Taiwan, I couldn't understand a word the teacher said. I really wanted to ask questions, but I didn't know how to ask. The teacher noticed, smiled, and said to me, \"If you have a question, just ask — it's fine to say it wrong.\" Now I'm often the first to ask the teacher a question, and my Chinese is much better than before."
+      }
     },
     {
       "id": "l_hsk2_04_2",
@@ -75,7 +245,12 @@
           "pinyin": "kāi shǐ",
           "gloss": "to begin; beginning; to start",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "電影八點開始。",
+            "pinyin": "Diànyǐng bā diǎn kāishǐ.",
+            "gloss": "The movie starts at eight."
+          }
         },
         {
           "id": "v_完",
@@ -83,7 +258,12 @@
           "pinyin": "wán",
           "gloss": "to finish; to be over; whole",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我吃完飯就去找你。",
+            "pinyin": "Wǒ chī wán fàn jiù qù zhǎo nǐ.",
+            "gloss": "I'll come find you as soon as I finish eating."
+          }
         },
         {
           "id": "v_再",
@@ -91,7 +271,12 @@
           "pinyin": "zài",
           "gloss": "again; once more; re-; second; another; then (after sth, and not until then)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我明天再打電話給你。",
+            "pinyin": "Wǒ míngtiān zài dǎ diànhuà gěi nǐ.",
+            "gloss": "I'll call you again tomorrow."
+          }
         },
         {
           "id": "v_次",
@@ -99,7 +284,12 @@
           "pinyin": "cì",
           "gloss": "next in sequence; second; the second (day, time etc)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這是我第一次搭捷運。",
+            "pinyin": "Zhè shì wǒ dì-yī cì dā jiéyùn.",
+            "gloss": "This is my first time taking the MRT."
+          }
         },
         {
           "id": "v_得",
@@ -107,12 +297,172 @@
           "pinyin": "de",
           "gloss": "to obtain; to get; to gain",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我得了兩張電影票，真高興！",
+            "pinyin": "Wǒ dé le liǎng zhāng diànyǐng piào, zhēn gāoxìng!",
+            "gloss": "I got two movie tickets — I'm so happy!"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "V + 完 + 再 + V：finish one thing, then do the next",
+          "pattern": "S + V1 + 完 + (O) + 再 + V2 + (O)",
+          "explanation": "完 after a verb says the action is finished or completed. Put 再 in front of the second verb to show that the second action only happens after the first one is over: 吃完飯再看電視 = eat first, and not until then watch TV. This 再 is not 'again' here — it means 'and then'. It always goes right before the second verb, never at the end of the sentence. This pattern is very common for plans, instructions and gentle orders in daily Taiwan speech.",
+          "contrast": "先 A 再 B also means 'A first, then B', but 先…再… just orders two actions, while V完再V stresses that A must be *completed* first. If the first action has a clear end point (eat a meal, read a book, write the characters), use V完再V; if you are only listing the order, 先…再… is enough. You can also combine them: 先吃完飯再出去.",
+          "common_error": "Learners say things like 我吃飯再看書 (leaving out 完) or put 再 at the end, e.g. 我吃完飯看書再. Also, 再 is for things that have not happened yet; for a repeated past action you need 又, so 我昨天再去 is wrong.",
+          "examples": [
+            {
+              "hanzi": "我吃完晚餐再看書。",
+              "pinyin": "Wǒ chī wán wǎncān zài kàn shū.",
+              "gloss": "I'll read after I finish dinner."
+            },
+            {
+              "hanzi": "你寫完字再玩電腦。",
+              "pinyin": "Nǐ xiě wán zì zài wán diànnǎo.",
+              "gloss": "Finish writing the characters, then play on the computer."
+            },
+            {
+              "hanzi": "我們逛完夜市再回家，好嗎？",
+              "pinyin": "Wǒmen guàng wán yèshì zài huí jiā, hǎo ma?",
+              "gloss": "Let's go home after we finish walking around the night market, okay?"
+            }
+          ],
+          "id": "g_hsk2_04_2_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "第 + number + 次：the nth time",
+          "pattern": "這/那 + 是 + 我 + 第 + Num + 次 + V",
+          "explanation": "次 counts times or occasions. With 第 in front of the number it means 'the nth time': 第一次 (the first time), 第三次 (the third time). The verb phrase follows directly, with no 的: 這是我第二次來台南.",
+          "contrast": "Plain 次 without 第 counts how many times something happened (我去過兩次 = I've been twice), while 第…次 points to one particular occasion in the sequence.",
+          "common_error": "Learners add 的 (這是我第一次的來) or say 一次 when they mean 第一次. 這是我一次來台北 is wrong; say 這是我第一次來台北.",
+          "examples": [
+            {
+              "hanzi": "這是我第一次吃臭豆腐。",
+              "pinyin": "Zhè shì wǒ dì-yī cì chī chòu dòufu.",
+              "gloss": "This is my first time eating stinky tofu."
+            },
+            {
+              "hanzi": "我今年第三次感冒了。",
+              "pinyin": "Wǒ jīnnián dì-sān cì gǎnmào le.",
+              "gloss": "This is my third time catching a cold this year."
+            },
+            {
+              "hanzi": "下次我們再一起去。",
+              "pinyin": "Xià cì wǒmen zài yìqǐ qù.",
+              "gloss": "Next time let's go together again."
+            }
+          ],
+          "id": "g_hsk2_04_2_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "你的書讀完了嗎？我們去逛夜市啦！",
+          "pinyin": "Nǐ de shū dú wán le ma? Wǒmen qù guàng yèshì la!",
+          "gloss": "Have you finished reading your book? Let's go to the night market!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "還沒，我再半個鐘頭就好了。",
+          "pinyin": "Hái méi, wǒ zài bàn ge zhōngtóu jiù hǎo le.",
+          "gloss": "Not yet — half an hour more and I'll be done."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "好，那我先去買一杯珍珠奶茶。",
+          "pinyin": "Hǎo, nà wǒ xiān qù mǎi yì bēi zhēnzhū nǎichá.",
+          "gloss": "Okay, then I'll go buy a bubble tea first."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我讀完再打電話給你喔。",
+          "pinyin": "Wǒ dú wán zài dǎ diànhuà gěi nǐ ō.",
+          "gloss": "I'll call you when I've finished reading."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "這是我這星期第三次去那家店耶！",
+          "pinyin": "Zhè shì wǒ zhè xīngqí dì-sān cì qù nà jiā diàn ye!",
+          "gloss": "This is my third time going to that shop this week!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "下次我請你，我得了一張飲料票。",
+          "pinyin": "Xià cì wǒ qǐng nǐ, wǒ dé le yì zhāng yǐnliào piào.",
+          "gloss": "Next time it's on me — I got a drink coupon."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "電影",
+            "幾點",
+            "開始"
+          ],
+          "pinyin": "Diànyǐng jǐ diǎn kāishǐ?",
+          "gloss": "What time does the movie start?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "吃完",
+            "飯",
+            "再",
+            "出去"
+          ],
+          "pinyin": "Wǒ chī wán fàn zài chūqù.",
+          "gloss": "I'll go out after I finish eating.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "是",
+            "我",
+            "第二",
+            "次",
+            "來",
+            "台北"
+          ],
+          "pinyin": "Zhè shì wǒ dì-èr cì lái Táiběi.",
+          "gloss": "This is my second time coming to Taipei.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "寫完",
+            "了",
+            "嗎"
+          ],
+          "pinyin": "Nǐ xiě wán le ma?",
+          "gloss": "Have you finished writing?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "得",
+            "了",
+            "第一",
+            "名"
+          ],
+          "pinyin": "Wǒ dé le dì-yī míng.",
+          "gloss": "I got first place.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "週末的第一件事",
+        "hanzi": "週末早上，我八點就開始讀書。讀完書，我先騎腳踏車去郵局寄一個包裹，再搭捷運到台北車站和朋友見面。那是我第二次去那家麵店，麵很好吃，也很便宜。吃完飯，我們還去逛了書店。回家的時候，天開始下雨了。",
+        "gloss": "On Saturday morning I started studying at eight. After I finished, I first rode my bike to the post office to send a package, and then took the MRT to Taipei Main Station to meet a friend. That was my second time at that noodle shop; the noodles were tasty and cheap too. After eating, we also went to browse a bookstore. On the way home, it started to rain."
+      }
     },
     {
       "id": "l_hsk2_04_3",
@@ -125,7 +475,12 @@
           "pinyin": "jué de",
           "gloss": "to think that ...; to feel that ...; to feel (uncomfortable etc)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我覺得這家店的麵很好吃。",
+            "pinyin": "Wǒ juéde zhè jiā diàn de miàn hěn hǎochī.",
+            "gloss": "I think the noodles at this place are really good."
+          }
         },
         {
           "id": "v_可能",
@@ -133,7 +488,12 @@
           "pinyin": "kě néng",
           "gloss": "might (happen); possible; probable",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "明天可能會下雨，記得帶傘。",
+            "pinyin": "Míngtiān kěnéng huì xià yǔ, jìde dài sǎn.",
+            "gloss": "It might rain tomorrow — remember to bring an umbrella."
+          }
         },
         {
           "id": "v_因為",
@@ -141,7 +501,12 @@
           "pinyin": "yīn wèi",
           "gloss": "because; owing to; on account of",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "因為今天很忙，所以我沒有時間吃飯。",
+            "pinyin": "Yīnwèi jīntiān hěn máng, suǒyǐ wǒ méiyǒu shíjiān chīfàn.",
+            "gloss": "Because I'm busy today, I didn't have time to eat."
+          }
         },
         {
           "id": "v_所以",
@@ -149,7 +514,12 @@
           "pinyin": "suǒ yǐ",
           "gloss": "therefore; as a result; so",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面在下雨，所以我搭捷運去。",
+            "pinyin": "Wàimiàn zài xià yǔ, suǒyǐ wǒ dā jiéyùn qù.",
+            "gloss": "It's raining outside, so I'm taking the MRT."
+          }
         },
         {
           "id": "v_但是",
@@ -157,12 +527,167 @@
           "pinyin": "dàn shì",
           "gloss": "but; however",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件衣服很漂亮，但是不便宜。",
+            "pinyin": "Zhè jiàn yīfú hěn piàoliàng, dànshì bù piányí.",
+            "gloss": "This piece of clothing is pretty, but it isn't cheap."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "因為……，所以……（because … , so …）",
+          "pattern": "因為 + 原因，所以 + 結果",
+          "explanation": "Use 因為 before the reason and 所以 before the result. Unlike English, Chinese keeps BOTH words in the same sentence; it is not repetitive. You can also drop one of them (因為下雨，我沒去 / 下雨了，所以我沒去), but keeping both is the safest, most natural pattern for learners. 因為 goes at the very start of its clause, or right after the subject: 我因為不舒服，所以早點回家了。",
+          "contrast": "因為……所以…… gives a cause and its result; 但是 links two facts that clash. 我覺得很累，所以早點睡 (tired → sleep early) vs 我覺得很累，但是還要讀書 (tired, yet still must study). Ask yourself: does the second clause FOLLOW from the first (所以) or go AGAINST it (但是)?",
+          "common_error": "Learners translate from English and delete 所以 (or 因為), saying things like 因為下大雨，我沒騎腳踏車 when the full pair sounds better — and, worse, they mix the pair wrongly as 因為……但是……. Another frequent slip is putting 因為 after the verb, e.g. 我沒去因為下雨, which sounds like English word order.",
+          "examples": [
+            {
+              "hanzi": "因為下大雨，所以我今天沒騎腳踏車。",
+              "pinyin": "Yīnwèi xià dà yǔ, suǒyǐ wǒ jīntiān méi qí jiǎotàchē.",
+              "gloss": "Because it rained hard, I didn't ride my bike today."
+            },
+            {
+              "hanzi": "因為我覺得不舒服，所以想早點回家。",
+              "pinyin": "Yīnwèi wǒ juéde bù shūfú, suǒyǐ xiǎng zǎodiǎn huíjiā.",
+              "gloss": "Because I feel unwell, I want to go home early."
+            },
+            {
+              "hanzi": "因為週末可能有颱風，所以我們不去台北了。",
+              "pinyin": "Yīnwèi zhōumò kěnéng yǒu táifēng, suǒyǐ wǒmen bú qù Táiběi le.",
+              "gloss": "Because there might be a typhoon this weekend, we're not going to Taipei."
+            }
+          ],
+          "id": "g_hsk2_04_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk2_04_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "這個週末我們去逛夜市，好嗎？",
+          "pinyin": "Zhège zhōumò wǒmen qù guàng yèshì, hǎo ma?",
+          "gloss": "Shall we go walk around the night market this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我很想去，但是網路上說可能會有颱風。",
+          "pinyin": "Wǒ hěn xiǎng qù, dànshì wǎnglù shàng shuō kěnéng huì yǒu táifēng.",
+          "gloss": "I'd love to go, but online they say there might be a typhoon."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "真的嗎？因為有颱風，所以夜市可能不開。",
+          "pinyin": "Zhēn de ma? Yīnwèi yǒu táifēng, suǒyǐ yèshì kěnéng bù kāi.",
+          "gloss": "Really? Because of the typhoon, the night market might not open."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對，我覺得我們在家看電影就好。",
+          "pinyin": "Duì, wǒ juéde wǒmen zài jiā kàn diànyǐng jiù hǎo.",
+          "gloss": "Right, I think we should just watch a movie at home."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好，那我去買一點吃的。",
+          "pinyin": "Hǎo, nà wǒ qù mǎi yìdiǎn chī de.",
+          "gloss": "OK, then I'll go buy some food."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我請你喝珍珠奶茶！",
+          "pinyin": "Nà wǒ qǐng nǐ hē zhēnzhū nǎichá!",
+          "gloss": "Then I'll treat you to bubble tea!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "覺得",
+            "這家",
+            "咖啡店",
+            "很",
+            "安靜"
+          ],
+          "pinyin": "Wǒ juéde zhè jiā kāfēidiàn hěn ānjìng.",
+          "gloss": "I think this coffee shop is very quiet.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "可能",
+            "還",
+            "在",
+            "學校",
+            "讀書"
+          ],
+          "pinyin": "Tā kěnéng hái zài xuéxiào dúshū.",
+          "gloss": "He might still be studying at school.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "因為",
+            "我",
+            "沒",
+            "帶",
+            "悠遊卡",
+            "所以",
+            "走路",
+            "回家"
+          ],
+          "pinyin": "Yīnwèi wǒ méi dài Yōuyóukǎ, suǒyǐ zǒulù huíjiā.",
+          "gloss": "Because I didn't bring my EasyCard, I walked home.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這個",
+            "便當",
+            "很",
+            "好吃",
+            "但是",
+            "太",
+            "多",
+            "了"
+          ],
+          "pinyin": "Zhège biàndāng hěn hǎochī, dànshì tài duō le.",
+          "gloss": "This lunchbox is tasty, but it's too much food.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "覺得",
+            "明天",
+            "可能",
+            "會",
+            "很",
+            "熱"
+          ],
+          "pinyin": "Wǒ juéde míngtiān kěnéng huì hěn rè.",
+          "gloss": "I think tomorrow might be very hot.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "晚上去夜市",
+        "hanzi": "昨天晚上我想去夜市吃臭豆腐，但是外面下大雨，所以我沒出門。今天早上天氣很晴，我覺得下午可能不會下雨。我打電話給小明，問他要不要一起去，他說他晚上有時間。所以我們六點在捷運站見面，一起去吃臭豆腐。",
+        "gloss": "Last night I wanted to go to the night market for stinky tofu, but it was pouring outside, so I didn't go out. This morning the weather is clear, and I think it probably won't rain this afternoon. I called Xiaoming and asked if he wanted to come along; he said he's free in the evening. So we're meeting at the MRT station at six and going for stinky tofu together."
+      }
     }
   ],
   "sort_order": 25,
