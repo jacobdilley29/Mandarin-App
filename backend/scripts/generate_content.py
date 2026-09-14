@@ -25,6 +25,7 @@ This is an authoring tool. It is NOT needed to run the app.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import os
 import sys
@@ -163,14 +164,18 @@ def _make_models():
 
 
 RETRY_NOTE = """\
-Your previous attempt used characters the learner has not met yet, so it was \
-rejected: {chars}
+Earlier attempts at this lesson used characters the learner has not met yet. \
+These are now BANNED outright — not one of them may appear anywhere in your \
+output, in any word: {chars}
 
 Rewrite the whole lesson. Keep the same vocabulary and the same teaching intent, \
-but express every sentence using ONLY the allowed characters above. If a natural \
-sentence needs a word you may not use, choose a different sentence rather than \
-stretching the rule — a lesson that is slightly plainer is worth far more than \
-one that gets thrown away."""
+but express every sentence using ONLY the allowed characters above.
+
+Two things matter more than cleverness here. Every sentence must be **natural \
+and grammatical** — a contorted sentence written to dodge a character is worse \
+than a plain one, and much worse than a wrong one. And if a sentence needs a \
+word you may not use, write about something else instead of forcing it: a \
+simpler lesson is worth far more than one that gets thrown away."""
 
 
 # max_tokens for one lesson. Was 8000, set when a lesson was a grammar point,
@@ -405,10 +410,63 @@ def _miss_reason(path: Path, lesson: dict) -> str:
     return "regenerating"
 
 
-def write_cache(path: Path, lesson: dict, content: dict) -> None:
+def read_rejected(path: Path) -> set[str]:
+    """Every character this lesson has ever been refused for.
+
+    Retries used to see only the *current* run's violations, so a lesson could
+    be told to avoid 較, come back using 定, be told to avoid 定, and come back
+    using 較 again. Twice in one real run a retry re-used a character it had
+    just been banned from (南, 隻) — because by then nothing was still saying so.
+
+    Kept in the cache rather than in memory so the bans survive the run, and a
+    lesson retried tomorrow starts from everything learned about it today.
+    """
+    if not path.is_file():
+        return set()
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return set()
+    if not isinstance(payload, dict):
+        return set()
+    return set(payload.get("_rejected") or [])
+
+
+def _remember_rejected(path: Path, rejected: set[str]) -> None:
+    """Record a ban without touching the cached content.
+
+    A retry that came back no better must not become the cached version, but
+    what it was refused for is still worth knowing — the next attempt should
+    start from every character tried so far, not repeat one.
+    """
+    if not path.is_file():
+        return
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return
+    if not isinstance(payload, dict):
+        return
+    payload["_rejected"] = sorted(set(payload.get("_rejected") or []) | set(rejected))
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def write_cache(
+    path: Path, lesson: dict, content: dict, rejected: set[str] | None = None
+) -> None:
+    """Cache a lesson's content, keeping its accumulated ban list.
+
+    `rejected` accumulates: what a lesson was refused for does not stop being
+    true because a later attempt avoided it.
+    """
+    banned = read_rejected(path) | set(rejected or ())
     path.write_text(
         json.dumps(
-            {"_for_vocab": _lesson_fingerprint(lesson), "_content": content},
+            {
+                "_for_vocab": _lesson_fingerprint(lesson),
+                "_rejected": sorted(banned),
+                "_content": content,
+            },
             ensure_ascii=False,
             indent=2,
         ),
@@ -433,37 +491,88 @@ def _violations_for(data: dict, by_id: dict, unit: dict) -> list:
     return [v for v in result.violations if v.where.split()[0] in lesson_ids]
 
 
-def _retry_lessons(client, data: dict, unit: dict, violations: list) -> int:
-    """Regenerate just the lessons that broke scope. Returns how many were redone.
-
-    Capped at this one attempt: if the model cannot stay in scope when told
-    exactly which characters it may not use, asking again is paying to watch it
-    fail. A lesson discarded over one word is the worst outcome available.
-    """
-    rejected: dict[str, set[str]] = {}
+def _by_lesson(violations: list) -> dict[str, set[str]]:
+    """Out-of-scope characters, grouped by the lesson that used them."""
+    out: dict[str, set[str]] = {}
     for v in violations:
-        rejected.setdefault(v.where.split()[0], set()).update(v.unknown)
+        out.setdefault(v.where.split()[0], set()).update(v.unknown)
+    return out
 
+
+# Where a lesson keeps its generated content, for restoring the best attempt.
+_CONTENT_KEYS = ("vocab", "grammar", "sentences", "dialogue", "passage")
+
+
+def _retry_lessons(
+    client, data: dict, by_id: dict, unit: dict, violations: list, attempts: int
+) -> int:
+    """Re-ask the lessons that broke scope, until they stop breaking it.
+
+    Three things this has to get right, each learned from a run that got it
+    wrong.
+
+    **The ban list accumulates.** Every attempt is told every character this
+    lesson has ever been refused for, not only the latest batch. Without that it
+    cycles: told to avoid a character it returns another, is told to avoid that
+    one, and comes back to the first. Twice in one real run a retry re-used a
+    character it had just been banned from, because by then nothing was still
+    saying so.
+
+    **More than one attempt.** This was capped at one, on the reasoning that a
+    model which ignores an explicit ban will ignore it twice over. The evidence
+    says otherwise: of five failures in that run, three came back clean of the
+    banned characters and tripped on a different word instead. That is
+    converging, and it was being stopped one step short.
+
+    **The best attempt wins, not the last.** A retry can be worse than what it
+    replaced, and caching it unconditionally made the worse version permanent.
+    Each attempt is scored by how much of the lesson is still out of scope, and
+    only an improvement is kept.
+    """
+    wanted = _by_lesson(violations)
     redone = 0
+
     for lesson in unit.get("lessons") or []:
-        chars = rejected.get(lesson["id"])
-        if not chars:
+        if lesson["id"] not in wanted:
             continue
-        print(f"  \u21bb {lesson['id']}: retrying — out of scope: {' '.join(sorted(chars))}")
-        try:
-            content = generate_lesson(
-                client,
-                lesson,
-                _allowed_words_upto(data, lesson["id"]),
-                rejected=sorted(chars),
-            )
-        except Exception as exc:  # noqa: BLE001 — a failed retry is not fatal
-            print(f"  ✗ {lesson['id']}: retry failed: {exc}")
-            continue
-        # Overwrite the cache: the retry is the better version of this lesson.
-        write_cache(GENERATED_DIR / f"{lesson['id']}.json", lesson, content)
-        apply_to_lesson(lesson, content)
-        redone += 1
+        cache = GENERATED_DIR / f"{lesson['id']}.json"
+        banned = read_rejected(cache) | wanted[lesson["id"]]
+        best = {k: copy.deepcopy(lesson[k]) for k in _CONTENT_KEYS if k in lesson}
+        best_score = len(wanted[lesson["id"]])
+
+        for attempt in range(1, attempts + 1):
+            label = f"attempt {attempt}/{attempts}" if attempts > 1 else "retrying"
+            print(f"  ↻ {lesson['id']}: {label} — avoiding: {' '.join(sorted(banned))}")
+            try:
+                content = generate_lesson(
+                    client, lesson, _allowed_words_upto(data, lesson["id"]),
+                    rejected=sorted(banned),
+                )
+            except Exception as exc:  # noqa: BLE001 — a failed attempt is not fatal
+                print(f"  ✗ {lesson['id']}: {exc}")
+                break
+
+            apply_to_lesson(lesson, content)
+            still = _by_lesson(_violations_for(data, by_id, unit)).get(lesson["id"], set())
+            banned |= still
+
+            if len(still) < best_score:
+                best = {k: copy.deepcopy(lesson[k]) for k in _CONTENT_KEYS if k in lesson}
+                best_score = len(still)
+                write_cache(cache, lesson, content, rejected=banned)
+                redone += 1
+                if not still:
+                    print(f"  ✓ {lesson['id']}: back in scope")
+                    break
+            else:
+                # Not an improvement, so it must not become the cached version.
+                # The ban it earned is still worth keeping for the next attempt.
+                print(f"  · {lesson['id']}: no better — keeping the earlier draft")
+                _remember_rejected(cache, banned)
+
+        # Whichever attempt scored best is what the lesson keeps.
+        for key, value in best.items():
+            lesson[key] = value
     return redone
 
 
@@ -474,7 +583,11 @@ def main(argv: list[str] | None = None, client=None) -> int:
     ap.add_argument("--all", action="store_true", help="regenerate complete units too")
     ap.add_argument("--limit", type=int, help="stop after this many units")
     ap.add_argument("--dry-run", action="store_true", help="report the plan, call nothing")
-    ap.add_argument("--no-retry", dest="retry", action="store_false",
+    ap.add_argument("--retries", type=int, default=2,
+                    help="attempts to bring a lesson back into scope (default 2). "
+                         "Each one is told every character the lesson has been "
+                         "refused for, so they do not go in circles.")
+    ap.add_argument("--no-retry", dest="retries", action="store_const", const=0,
                     help="don't re-ask a lesson that broke scope "
                          "(saves a call, loses the lesson)")
     args = ap.parse_args(argv)
@@ -560,8 +673,10 @@ def main(argv: list[str] | None = None, client=None) -> int:
         # One retry, naming what went out of scope. A lesson that cost a call
         # and is then discarded over a single word is the worst outcome
         # available; re-asking with the rejected characters usually clears it.
-        if unit_violations and args.retry and client is not None:
-            if _retry_lessons(client, data, unit, unit_violations):
+        if unit_violations and args.retries and client is not None:
+            if _retry_lessons(
+                client, data, by_id, unit, unit_violations, args.retries
+            ):
                 unit_violations = _violations_for(data, by_id, unit)
 
         slips = register_slips({"units": [unit]})

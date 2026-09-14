@@ -711,6 +711,30 @@ Every token budget in this pipeline that was estimated rather than measured
 turned out to be wrong. That line is the measurement — and under 20% headroom it
 warns, which is the notice before a truncation rather than after one.
 
+### When a lesson breaks scope
+
+A generated lesson may only use characters the learner has already met. When one
+strays, the generator re-asks it, naming what it may not use. Three rules make
+that converge instead of circling, each learned from a run where it didn't:
+
+* **Bans accumulate.** Every attempt is told every character the lesson has ever
+  been refused for, kept in the cache as `_rejected` so it survives the run.
+  Without this a lesson cycles — told to avoid 較 it returns 定, told to avoid 定
+  it returns 較 — and in one real run two retries re-used a character they had
+  just been banned from.
+* **Two attempts, not one.** The cap was one, reasoning that a model ignoring an
+  explicit ban would ignore it twice over. The evidence disagreed: of five
+  failures in that run, three came back clean of the banned characters and
+  tripped on a *different* word. They were converging and were being stopped one
+  step short. `--retries N` sets it; `--no-retry` is still nought.
+* **The best attempt wins, not the last.** Attempts are scored by how much of the
+  lesson is still out of scope, and only an improvement is cached. A retry once
+  produced 「我以前住在台南邊的小鎮嗎」 — not a sentence — and caching it
+  unconditionally would have made that the lesson's permanent version.
+
+A lesson that never comes good costs exactly 1 + `--retries` calls and stays a
+draft, naming the character it could not avoid.
+
 ### What invalidates the generation cache
 
 Each lesson's generated content is cached under `content/.generated/`, so a
