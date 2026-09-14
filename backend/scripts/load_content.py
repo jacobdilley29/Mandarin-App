@@ -20,7 +20,7 @@ from pathlib import Path
 # Allow running as `python backend/scripts/load_content.py` too.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import content, curriculum_source, db, sequence  # noqa: E402
+from app import completeness, content, curriculum_source, db, sequence  # noqa: E402
 from app.config import REPO_ROOT  # noqa: E402
 from app.validation import (  # noqa: E402
     allowed_chars,
@@ -50,6 +50,31 @@ def split_violations_by_status(data: dict, violations: list) -> tuple[list, list
     live = [v for v in violations if v.where.split()[0] not in draft_lessons]
     draft = [v for v in violations if v.where.split()[0] in draft_lessons]
     return live, draft
+
+
+def unfinished_live_units(data: dict) -> list[tuple[str, list[str]]]:
+    """Generated units marked live that are not actually finished.
+
+    The loader is the last point before content reaches the learner, and until
+    now it took a unit's status on trust. That trust was misplaced exactly once
+    and it was enough: the themed skeleton builder omitted the status field,
+    `status_of` defaults to live, and 70 units whose lessons had no grammar, no
+    sentences and no dialogue were ready to load and be taught.
+
+    Only generated units are checked. A hand-authored unit with no status is
+    live by design — that is what the default is for — and the curated units
+    predate these checks.
+    """
+    out = []
+    for unit in data.get("units", []):
+        if not unit.get("generated"):
+            continue
+        if curriculum_source.status_of(unit) != curriculum_source.STATUS_LIVE:
+            continue
+        missing = completeness.evaluate_unit(unit).missing
+        if missing:
+            out.append((unit["id"], missing))
+    return out
 
 
 def main() -> int:
@@ -102,6 +127,22 @@ def main() -> int:
         print(f"✗ {len(live_bad)} curriculum violation(s) in LIVE units:")
         for v in live_bad:
             print(f"    [{v.where}] {v.text}  → unknown: {' '.join(v.unknown)}")
+        if not args.force and not args.check:
+            print("Refusing to load. Fix the content or pass --force.")
+            return 1
+
+    # A generated unit cannot be taught unless it is finished, whatever its
+    # status field claims. See unfinished_live_units.
+    unfinished = unfinished_live_units(data)
+    if unfinished:
+        print(f"✗ {len(unfinished)} generated unit(s) marked live but unfinished:")
+        for unit_id, missing in unfinished[:10]:
+            print(f"    {unit_id} — missing: {', '.join(missing)}")
+        if len(unfinished) > 10:
+            print(f"    … and {len(unfinished) - 10} more")
+        print("  These would be taught as lessons with no exercises in them.")
+        print("  Re-run `make build-skeleton` (cached, free) to stage them, then")
+        print("  `make generate-content` to fill them in.")
         if not args.force and not args.check:
             print("Refusing to load. Fix the content or pass --force.")
             return 1

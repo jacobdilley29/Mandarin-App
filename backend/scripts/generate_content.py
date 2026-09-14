@@ -32,7 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import completeness, curriculum_source  # noqa: E402
+from app import completeness, curriculum_source, llm  # noqa: E402
 from app.config import REPO_ROOT
 from app.llm import MODEL  # noqa: E402
 from app.validation import (  # noqa: E402
@@ -168,26 +168,49 @@ stretching the rule — a lesson that is slightly plainer is worth far more than
 one that gets thrown away."""
 
 
+# max_tokens for one lesson. Was 8000, set when a lesson was a grammar point,
+# some drill sentences and a dialogue. It now also asks for `contrast`,
+# `common_error` and a 60-120 character passage with a title and translation —
+# so the output grew and the budget did not, and 8000 has never actually been
+# run against this prompt.
+#
+# No chunking, unlike the skeleton builder: one lesson is already a bounded unit
+# of work (5-8 words), where a level is up to 590. It just needs headroom.
+# PEAK_TOKENS reports what a run really used, so this is a measurement next time
+# rather than another estimate.
+LESSON_BUDGET = 16000
+
+# Highest output-token count any lesson in this run needed.
+PEAK_TOKENS = 0
+
+
 def generate_lesson(
     client, lesson: dict, allowed_words: list[str], rejected: list[str] | None = None
 ) -> dict:
     """One lesson's content. `rejected` re-asks, naming what went out of scope."""
+    global PEAK_TOKENS
+
     LessonContent = _make_models()
     prompt = _lesson_prompt(lesson, allowed_words)
     if rejected:
         prompt += "\n\n" + RETRY_NOTE.format(chars=" ".join(sorted(set(rejected))))
-    response = client.messages.parse(
+    # Streamed: a full lesson is a long generation, and a non-streaming request
+    # of this size can exceed the request timeout for reasons that have nothing
+    # to do with the content.
+    with client.messages.stream(
         model=MODEL,
-        max_tokens=8000,
+        max_tokens=LESSON_BUDGET,
         thinking={"type": "adaptive"},
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": prompt}],
         output_format=LessonContent,
-    )
-    parsed = response.parsed_output
-    if parsed is None:
-        raise RuntimeError(f"model did not return valid content for {lesson['id']}")
-    return parsed.model_dump()
+    ) as stream:
+        response = stream.get_final_message()
+
+    used = getattr(getattr(response, "usage", None), "output_tokens", None)
+    if isinstance(used, int):
+        PEAK_TOKENS = max(PEAK_TOKENS, used)
+    return llm.parsed_or_raise(response, lesson["id"]).model_dump()
 
 
 def _allowed_words_upto(skeleton: dict, lesson_id: str) -> list[str]:
@@ -560,6 +583,14 @@ def main(argv: list[str] | None = None, client=None) -> int:
     print(f"still draft      : {len(still_draft)}")
     if failed:
         print(f"failed lessons   : {len(failed)} (re-run to retry; cached ones are skipped)")
+    if PEAK_TOKENS:
+        # The number that decides LESSON_BUDGET. Printed because every budget in
+        # this pipeline that was estimated rather than measured turned out wrong,
+        # and a truncation here is 185 calls' worth of wrong.
+        headroom = round(100 * (1 - PEAK_TOKENS / LESSON_BUDGET))
+        print(f"peak tokens      : {PEAK_TOKENS} of {LESSON_BUDGET} ({headroom}% headroom)")
+        if headroom < 20:
+            print("                   ⚠ tight — raise LESSON_BUDGET before a long run")
     print("\nRun `make coverage` for the full picture, then `make load-content`.")
     return 0
 
