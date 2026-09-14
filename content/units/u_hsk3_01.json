@@ -1,39 +1,328 @@
 {
   "id": "u_hsk3_01",
-  "title": "HSK 3 詞彙 1",
-  "subtitle": "HSK 3 vocabulary · set 1",
+  "title": "聊天與表達想法",
+  "subtitle": "Chatting: opinions, reactions and giving reasons",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_01_1",
-      "title": "詞彙 1–1",
+      "title": "我認為…：說出你的看法",
       "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_認為",
+          "traditional": "認為",
+          "pinyin": "rèn wéi",
+          "gloss": "to believe; to think; to consider; to feel",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我認為這家店的菜很好吃。",
+            "pinyin": "Wǒ rènwéi zhè jiā diàn de cài hěn hǎochī.",
+            "gloss": "I think the food at this restaurant is really good."
+          }
+        },
+        {
+          "id": "v_相信",
+          "traditional": "相信",
+          "pinyin": "xiāng xìn",
+          "gloss": "to be convinced (that sth is true); to believe; to accept sth as true",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我相信你能考得很好。",
+            "pinyin": "Wǒ xiāngxìn nǐ néng kǎo de hěn hǎo.",
+            "gloss": "I believe you can do well on the exam."
+          }
+        },
+        {
+          "id": "v_其實",
+          "traditional": "其實",
+          "pinyin": "qí shí",
+          "gloss": "actually; in fact; really",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "其實我不太喜歡喝咖啡。",
+            "pinyin": "Qíshí wǒ bú tài xǐhuān hē kāfēi.",
+            "gloss": "Actually, I don't really like drinking coffee."
+          }
+        },
+        {
+          "id": "v_以為",
+          "traditional": "以為",
+          "pinyin": "yǐ wéi",
+          "gloss": "to think (i.e. to take it to be true that ...) (Usually there is an implication that the notion is mistaken – except when expressing one's own current opinion.)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我以為今天會下雨，其實沒有。",
+            "pinyin": "Wǒ yǐwéi jīntiān huì xià yǔ, qíshí méiyǒu.",
+            "gloss": "I thought it would rain today, but actually it didn't."
+          }
+        },
+        {
+          "id": "v_了解",
+          "traditional": "了解",
+          "pinyin": "liǎo jiě",
+          "gloss": "to understand; to realize; to find out",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我不太了解他的意思。",
+            "pinyin": "Wǒ bú tài liǎojiě tā de yìsi.",
+            "gloss": "I don't quite understand what he means."
+          }
+        },
+        {
+          "id": "v_講",
+          "traditional": "講",
+          "pinyin": "jiǎng",
+          "gloss": "to speak; to explain; to negotiate",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師講得很慢，我都聽得懂。",
+            "pinyin": "Lǎoshī jiǎng de hěn màn, wǒ dōu tīng de dǒng.",
+            "gloss": "The teacher speaks slowly, so I can understand it all."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "說出看法：認為 / 以為 / 相信",
+          "pattern": "主語 + 認為／以為／相信 + （一個句子）",
+          "explanation": "To give an opinion, put a whole sentence after 認為, 以為 or 相信. 認為 = 'I think / in my view', used for an opinion you still hold. 以為 = 'I thought (but I was wrong)', used when what follows turns out not to be true; it is often followed by 其實… to say what is really the case. 相信 = 'I believe / I'm sure', used when you trust that something is or will be true. Note that you do not need 是 or 說 before the clause: 我認為這家店很貴。",
+          "contrast": "認為 vs 以為: both translate as 'think', but 以為 tells the listener the idea was mistaken. 我認為他會來 = I think he'll come (still my view); 我以為他會來 = I thought he'd come (he didn't). If you are stating your current opinion, always use 認為.",
+          "common_error": "Learners say 我以為這本書很好 when they simply mean 'I think this book is good'. To a Taiwanese ear that says 'I used to think it was good — but it isn't.' Use 認為 (or 覺得) for a current opinion, and save 以為 for beliefs that turned out to be wrong.",
+          "examples": [
+            {
+              "hanzi": "我認為騎腳踏車比搭捷運快。",
+              "pinyin": "Wǒ rènwéi qí jiǎotàchē bǐ dā jiéyùn kuài.",
+              "gloss": "I think riding a bike is faster than taking the MRT."
+            },
+            {
+              "hanzi": "我以為你今天不來，其實你來了。",
+              "pinyin": "Wǒ yǐwéi nǐ jīntiān bù lái, qíshí nǐ lái le.",
+              "gloss": "I thought you weren't coming today, but actually you came."
+            },
+            {
+              "hanzi": "我相信他講的話都是真的。",
+              "pinyin": "Wǒ xiāngxìn tā jiǎng de huà dōu shì zhēn de.",
+              "gloss": "I believe everything he says is true."
+            }
+          ],
+          "id": "g_hsk3_01_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "其實：其實…（跟你想的不一樣）",
+          "pattern": "（前面的話），其實 + 句子",
+          "explanation": "其實 'actually, in fact' comes at the start of the second clause, before the verb. It corrects or adds something the listener may not expect, and it very often follows a 以為 clause: 我以為…，其實…。",
+          "contrast": "真的 means 'really/truly' and stresses that something IS so; 其實 signals that the real situation is different from what was assumed. 這家店真的很貴 = it really is expensive; 其實這家店很貴 = actually (contrary to what you thought) it's expensive.",
+          "common_error": "Learners put 其實 after the verb, like English 'I like it actually'. In Chinese 其實 goes before the subject or right after it — 其實我很喜歡, never 我很喜歡其實.",
+          "examples": [
+            {
+              "hanzi": "其實我不會游泳。",
+              "pinyin": "Qíshí wǒ bú huì yóuyǒng.",
+              "gloss": "Actually, I can't swim."
+            },
+            {
+              "hanzi": "他以為我生病了，其實我只是太累。",
+              "pinyin": "Tā yǐwéi wǒ shēngbìng le, qíshí wǒ shì tài lèi.",
+              "gloss": "He thought I was sick; in fact I was just too tired."
+            },
+            {
+              "hanzi": "其實你很了解我。",
+              "pinyin": "Qíshí nǐ hěn liǎojiě wǒ.",
+              "gloss": "Actually, you understand me very well."
+            }
+          ],
+          "id": "g_hsk3_01_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "小明，你認為這家店的牛肉麵好吃嗎？",
+          "pinyin": "Xiǎomíng, nǐ rènwéi zhè jiā diàn de niúròu miàn hǎochī ma?",
+          "gloss": "Xiaoming, do you think the beef noodles at this place are good?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我認為很好吃，我每個週末都來吃。",
+          "pinyin": "Wǒ rènwéi hěn hǎochī, wǒ měi ge zhōumò dōu lái chī.",
+          "gloss": "I think they're great — I come and eat here every weekend."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "真的嗎？我以為你不喜歡吃麵。",
+          "pinyin": "Zhēn de ma? Wǒ yǐwéi nǐ bù xǐhuān chī miàn.",
+          "gloss": "Really? I thought you didn't like noodles."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "其實我最喜歡吃麵，你不太了解我。",
+          "pinyin": "Qíshí wǒ zuì xǐhuān chī miàn, nǐ bú tài liǎojiě wǒ.",
+          "gloss": "Actually, noodles are my favourite — you don't really know me."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "那你講講看，附近還有哪家好吃？",
+          "pinyin": "Nà nǐ jiǎngjiang kàn, fùjìn hái yǒu nǎ jiā hǎochī?",
+          "gloss": "Then tell me — what other good places are there nearby?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我相信你吃了就知道，這家最好吧！",
+          "pinyin": "Wǒ xiāngxìn nǐ chī le jiù zhīdào, zhè jiā zuì hǎo ba!",
+          "gloss": "I'm sure once you eat you'll know — this one's the best!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "認為",
+            "這",
+            "件",
+            "衣服",
+            "很",
+            "漂亮"
+          ],
+          "pinyin": "Wǒ rènwéi zhè jiàn yīfú hěn piàoliang.",
+          "gloss": "I think this piece of clothing is very pretty.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "以為",
+            "今天",
+            "是",
+            "星期五"
+          ],
+          "pinyin": "Wǒ yǐwéi jīntiān shì xīngqíwǔ.",
+          "gloss": "I thought today was Friday.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "其實",
+            "我",
+            "不",
+            "會",
+            "游泳"
+          ],
+          "pinyin": "Qíshí wǒ bú huì yóuyǒng.",
+          "gloss": "Actually, I can't swim.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "相信",
+            "他",
+            "說",
+            "的",
+            "話"
+          ],
+          "pinyin": "Wǒ xiāngxìn tā shuō de huà.",
+          "gloss": "I believe what he says.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "老闆",
+            "講",
+            "得",
+            "太",
+            "快",
+            "了"
+          ],
+          "pinyin": "Lǎobǎn jiǎng de tài kuài le.",
+          "gloss": "The boss speaks too fast.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "那家店",
+        "hanzi": "昨天我和小明去學校附近吃飯。我以為那家店很貴，其實一個便當八十塊。小明說他常常來，老闆對客人很好，還會多給一點菜。我認為這家店的菜真的很好吃。回家的路上，小明和我講了很多他家裡的事，我也比以前了解他了。我相信下個週末我們還會再來。",
+        "gloss": "Yesterday Xiaoming and I went to eat near the school. I thought that place was expensive, but actually a lunchbox is only eighty dollars. Xiaoming said he comes often; the owner is nice to customers and even gives you a little extra food. I think the food there really is delicious. On the way home, Xiaoming told me a lot about his family, and I understand him better than before. I'm sure we'll come again next weekend."
+      }
+    },
+    {
+      "id": "l_hsk3_01_2",
+      "title": "聊天的回應與話題",
+      "sort_order": 2,
       "vocab": [
         {
           "id": "v_啊",
           "traditional": "啊",
-          "pinyin": "à",
+          "pinyin": "a",
           "gloss": "interjection or grunt of agreement; uhm; Ah, OK",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "對啊，我也覺得這家店的麵很好吃。",
+            "pinyin": "Duì a, wǒ yě juéde zhè jiā diàn de miàn hěn hǎochī.",
+            "gloss": "Yeah, I also think the noodles at this place are really good."
+          }
         },
         {
-          "id": "v_把",
-          "traditional": "把",
-          "pinyin": "bǎ",
-          "gloss": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar",
+          "id": "v_跟",
+          "traditional": "跟",
+          "pinyin": "gēn",
+          "gloss": "heel; to follow closely; to go with",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我週末想跟朋友去逛夜市。",
+            "pinyin": "Wǒ zhōumò xiǎng gēn péngyǒu qù guàng yèshì.",
+            "gloss": "I want to go to the night market with friends this weekend."
+          }
         },
         {
-          "id": "v_被",
-          "traditional": "被",
-          "pinyin": "bèi",
-          "gloss": "quilt; to cover (with); (literary) to suffer (a misfortune)",
+          "id": "v_關於",
+          "traditional": "關於",
+          "pinyin": "guān yú",
+          "gloss": "pertaining to; concerning; with regard to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "關於這個問題，我們明天再說。",
+            "pinyin": "Guānyú zhège wèntí, wǒmen míngtiān zài shuō.",
+            "gloss": "As for this question, let's talk about it tomorrow."
+          }
+        },
+        {
+          "id": "v_別人",
+          "traditional": "別人",
+          "pinyin": "bié ren",
+          "gloss": "other people; others; other person",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "別人的事情，你不要問太多。",
+            "pinyin": "Biérén de shìqíng, nǐ búyào wèn tài duō.",
+            "gloss": "Don't ask too much about other people's business."
+          }
+        },
+        {
+          "id": "v_其他",
+          "traditional": "其他",
+          "pinyin": "qí tā",
+          "gloss": "other; (sth or sb) else; the rest",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "其他同學都已經回家了。",
+            "pinyin": "Qítā tóngxué dōu yǐjīng huí jiā le.",
+            "gloss": "All the other classmates have already gone home."
+          }
         },
         {
           "id": "v_自己",
@@ -41,15 +330,216 @@
           "pinyin": "zì jǐ",
           "gloss": "oneself; one's own",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個便當是我自己做的。",
+            "pinyin": "Zhège biàndāng shì wǒ zìjǐ zuò de.",
+            "gloss": "I made this lunchbox myself."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "「跟」— doing something with someone / telling someone",
+          "pattern": "Subject + 跟 + Person + Verb (一起做／說)",
+          "explanation": "跟 goes BEFORE the verb, not after it. 我跟他一起吃飯 = 'I eat with him'; 我跟他說 = 'I tell him / say to him'. 跟 can also simply link two nouns like 'and': 我跟我妹 (me and my sister). In Taiwan spoken Mandarin 跟 is the everyday choice for both uses.",
+          "contrast": "跟 vs 和: both can mean 'with/and', but 和 sounds more written and is used mostly to link nouns in lists, while 跟 is what people actually say out loud in Taiwan, especially before a verb (跟你說, 跟我去). 對 also appears with 說 (對我說), but it feels one-directional and more formal; if two people are talking, use 跟.",
+          "common_error": "Learners copy English word order and put the 'with' phrase after the verb: ✗ 我去看電影跟朋友. Chinese needs 跟 + person BEFORE the verb: ✓ 我跟朋友去看電影.",
+          "examples": [
+            {
+              "hanzi": "我跟老闆說了這件事。",
+              "pinyin": "Wǒ gēn lǎobǎn shuō le zhè jiàn shì.",
+              "gloss": "I told the boss about this."
+            },
+            {
+              "hanzi": "你要不要跟我們一起去逛夜市？",
+              "pinyin": "Nǐ yào bú yào gēn wǒmen yìqǐ qù guàng yèshì?",
+              "gloss": "Do you want to go to the night market with us?"
+            },
+            {
+              "hanzi": "這件事我不想跟別人說。",
+              "pinyin": "Zhè jiàn shì wǒ bù xiǎng gēn biérén shuō.",
+              "gloss": "I don't want to tell other people about this."
+            }
+          ],
+          "id": "g_hsk3_01_2_1",
+          "hsk_level": 3
         },
         {
-          "id": "v_用",
-          "traditional": "用",
-          "pinyin": "yòng",
-          "gloss": "to use; to employ; to have to",
+          "title": "「關於」— bringing up a topic",
+          "pattern": "關於 + Topic，Subject + ……",
+          "explanation": "關於 introduces the topic you are about to talk about, and it normally sits at the front of the sentence, followed by a small pause: 關於那個工作，我還沒想好。It is very common when you change subject while chatting.",
+          "contrast": "關於 vs 對: 關於 marks a topic ('concerning X'), while 對 marks the target of an attitude (對這個工作很有興趣 → 'toward'). If you can say 'as for', use 關於.",
+          "common_error": "Putting 關於 in the middle like English 'about': ✗ 我想說關於我自己. Say ✓ 關於我自己，我想說一點事情，or just use 說 + object: 我想說我自己的事。",
+          "examples": [
+            {
+              "hanzi": "關於週末的事，我晚一點再跟你說。",
+              "pinyin": "Guānyú zhōumò de shì, wǒ wǎn yìdiǎn zài gēn nǐ shuō.",
+              "gloss": "As for the weekend plan, I'll tell you a bit later."
+            },
+            {
+              "hanzi": "關於這本書，其他人有什麼意思？",
+              "pinyin": "Guānyú zhè běn shū, qítā rén yǒu shénme yìsi?",
+              "gloss": "About this book, what do the others think?"
+            },
+            {
+              "hanzi": "關於台北的捷運，我知道的不多。",
+              "pinyin": "Guānyú Táiběi de jiéyùn, wǒ zhīdào de bù duō.",
+              "gloss": "When it comes to the Taipei MRT, I don't know much."
+            }
+          ],
+          "id": "g_hsk3_01_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你在跟誰說話啊？",
+          "pinyin": "Nǐ zài gēn shéi shuōhuà a?",
+          "gloss": "Who are you talking to?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我跟我哥。他問我關於週末的事情。",
+          "pinyin": "Wǒ gēn wǒ gē. Tā wèn wǒ guānyú zhōumò de shìqíng.",
+          "gloss": "With my older brother. He's asking me about the weekend."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "你們週末要去哪裡玩？",
+          "pinyin": "Nǐmen zhōumò yào qù nǎlǐ wán?",
+          "gloss": "Where are you guys going this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "還沒想好。其他人想看電影，我自己想去逛夜市。",
+          "pinyin": "Hái méi xiǎng hǎo. Qítā rén xiǎng kàn diànyǐng, wǒ zìjǐ xiǎng qù guàng yèshì.",
+          "gloss": "Not decided yet. The others want to see a movie; I myself want to go to the night market."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "夜市好玩啊！別人怎麼說，你聽自己的就好。",
+          "pinyin": "Yèshì hǎowán a! Biérén zěnme shuō, nǐ tīng zìjǐ de jiù hǎo.",
+          "gloss": "The night market is fun! Whatever others say, just listen to yourself."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "是啊，那我們一起去吧！",
+          "pinyin": "Shì a, nà wǒmen yìqǐ qù ba!",
+          "gloss": "Yeah! Then let's go together."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "跟",
+            "我",
+            "妹妹",
+            "一起",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Wǒ gēn wǒ mèimei yìqǐ kàn diànyǐng.",
+          "gloss": "I watch a movie with my little sister.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "關於",
+            "週末",
+            "的",
+            "事",
+            "我",
+            "晚一點",
+            "再",
+            "跟",
+            "你",
+            "說"
+          ],
+          "pinyin": "Guānyú zhōumò de shì, wǒ wǎn yìdiǎn zài gēn nǐ shuō.",
+          "gloss": "As for the weekend, I'll tell you a bit later.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "這個",
+            "便當",
+            "是",
+            "我",
+            "自己",
+            "做",
+            "的"
+          ],
+          "pinyin": "Zhège biàndāng shì wǒ zìjǐ zuò de.",
+          "gloss": "I made this lunchbox myself.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "別人",
+            "的",
+            "事情",
+            "你",
+            "不要",
+            "問",
+            "太多"
+          ],
+          "pinyin": "Biérén de shìqíng, nǐ búyào wèn tài duō.",
+          "gloss": "Don't ask too much about other people's business.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "不想",
+            "吃",
+            "其他",
+            "的",
+            "東西"
+          ],
+          "pinyin": "Wǒ bù xiǎng chī qítā de dōngxi.",
+          "gloss": "I don't want to eat anything else.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "中午的話題",
+        "hanzi": "我在台北上班，中午常跟同事一起吃便當。我們最愛說的話題是吃的東西：哪家店的牛肉麵好吃，哪家的珍珠奶茶最甜。有的人也喜歡說關於別人的事，我自己不太喜歡那樣。我覺得跟人說話，說自己知道的、喜歡的就好；其他的事，別人想說我再聽。",
+        "gloss": "I work in Taipei, and at noon I often eat a lunchbox with my coworkers. Our favorite topic is food: which shop has good beef noodles, whose bubble tea is the sweetest. Some people also like to talk about other people's affairs, but I don't really like that. I think when you chat with people, it's enough to talk about what you yourself know and like; as for other things, I'll listen if someone wants to bring them up."
+      }
+    },
+    {
+      "id": "l_hsk3_01_3",
+      "title": "說原因、說順序",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_為什麼",
+          "traditional": "為什麼",
+          "pinyin": "wèi shén me",
+          "gloss": "why?; for what reason?",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你今天為什麼沒來上課？",
+            "pinyin": "Nǐ jīntiān wèishénme méi lái shàngkè?",
+            "gloss": "Why didn't you come to class today?"
+          }
+        },
+        {
+          "id": "v_為了",
+          "traditional": "為了",
+          "pinyin": "wèi le",
+          "gloss": "for; for the purpose of; in order to",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "為了考試，我每天晚上都讀書。",
+            "pinyin": "Wèile kǎoshì, wǒ měi tiān wǎnshàng dōu dúshū.",
+            "gloss": "For the exam, I study every evening."
+          }
         },
         {
           "id": "v_如果",
@@ -57,131 +547,229 @@
           "pinyin": "rú guǒ",
           "gloss": "if; in case; in the event that",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "如果明天下雨，我們就不去夜市了。",
+            "pinyin": "Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù yèshì le.",
+            "gloss": "If it rains tomorrow, we won't go to the night market."
+          }
+        },
+        {
+          "id": "v_雖然",
+          "traditional": "雖然",
+          "pinyin": "suī rán",
+          "gloss": "although; even though (often used correlatively with 是 or 是 etc)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的麵雖然貴，可是真的好吃。",
+            "pinyin": "Zhè jiā diàn de miàn suīrán guì, kěshì zhēn de hǎochī.",
+            "gloss": "Although this shop's noodles are expensive, they're really tasty."
+          }
+        },
+        {
+          "id": "v_而且",
+          "traditional": "而且",
+          "pinyin": "ér qiě",
+          "gloss": "(not only ...) but also; moreover; in addition",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他會說中文，而且說得很好。",
+            "pinyin": "Tā huì shuō Zhōngwén, érqiě shuō de hěn hǎo.",
+            "gloss": "He can speak Chinese, and he speaks it well too."
+          }
+        },
+        {
+          "id": "v_然後",
+          "traditional": "然後",
+          "pinyin": "rán hòu",
+          "gloss": "then; after that; afterwards",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我先洗手，然後吃飯。",
+            "pinyin": "Wǒ xiān xǐ shǒu, ránhòu chīfàn.",
+            "gloss": "I wash my hands first, then eat."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_01_2",
-      "title": "詞彙 1–2",
-      "sort_order": 2,
-      "vocab": [
+      "grammar": [
         {
-          "id": "v_又",
-          "traditional": "又",
-          "pinyin": "yòu",
-          "gloss": "(once) again; also; both... and...",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "title": "為了 (purpose) vs 因為 (reason)",
+          "pattern": "為了 + [purpose]，S + V ／ 因為 + [reason]，(所以) + [result]",
+          "explanation": "為了 tells you what someone is aiming at: it is followed by a noun or a verb phrase that is the goal, and the main clause says what they do to reach it. 因為 tells you why something happened: it is followed by a full reason clause, and is often paired with 所以 in the second half. Both start the first clause, but 為了 answers 'what for?' while 因為 answers 'why?'.",
+          "contrast": "因為 + [reason]，所以 + [result]. If the part after the connector is something you already know is true (I'm tired / it's raining), use 因為. If it is something you still want to get or achieve (to pass the exam / for my health), use 為了.",
+          "common_error": "Learners put a whole reason clause after 為了, e.g. 為了我很忙，我沒去. That must be 因為我很忙，所以我沒去. 為了 can only be followed by the goal itself, not by a reason with a subject and a state verb.",
+          "examples": [
+            {
+              "hanzi": "為了學中文，我來台灣了。",
+              "pinyin": "Wèile xué Zhōngwén, wǒ lái Táiwān le.",
+              "gloss": "I came to Taiwan in order to learn Chinese."
+            },
+            {
+              "hanzi": "為了身體好，他每天早上跑步。",
+              "pinyin": "Wèile shēntǐ hǎo, tā měi tiān zǎoshàng pǎobù.",
+              "gloss": "For his health, he runs every morning."
+            },
+            {
+              "hanzi": "因為天氣太熱，所以我們不出門。",
+              "pinyin": "Yīnwèi tiānqì tài rè, suǒyǐ wǒmen bù chūmén.",
+              "gloss": "Because the weather is too hot, we're not going out."
+            }
+          ],
+          "id": "g_hsk3_01_3_1",
+          "hsk_level": 3
         },
         {
-          "id": "v_只",
-          "traditional": "只",
-          "pinyin": "zhǐ",
-          "gloss": "only; merely; just",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_更",
-          "traditional": "更",
-          "pinyin": "gèng",
-          "gloss": "more; even more; further",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_需要",
-          "traditional": "需要",
-          "pinyin": "xū yào",
-          "gloss": "to need; to want; to demand; to require; needs",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_地",
-          "traditional": "地",
-          "pinyin": "dì",
-          "gloss": "earth; ground; field",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_才",
-          "traditional": "才",
-          "pinyin": "cái",
-          "gloss": "ability; talent; sb of a certain type; a capable individual",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "title": "先……然後……",
+          "pattern": "S + 先 + V1，然後 + (S) + V2",
+          "explanation": "Use 先 in the first clause and 然後 in the second to lay out two actions in order. 先 goes after the subject and before the verb; 然後 goes at the front of the second clause.",
+          "contrast": "而且 also joins two clauses, but it adds one more fact about the same thing (它很便宜，而且很好吃), not a next step in time.",
+          "common_error": "Saying 我先吃飯，然後我先看電視 — 先 belongs only to the first action. Also don't put 先 before the subject (先我吃飯 is wrong).",
+          "examples": [
+            {
+              "hanzi": "我們先去吃便當，然後去看電影。",
+              "pinyin": "Wǒmen xiān qù chī biàndāng, ránhòu qù kàn diànyǐng.",
+              "gloss": "Let's first go eat a lunch box, then go see a movie."
+            },
+            {
+              "hanzi": "她先搭捷運，然後騎腳踏車回家。",
+              "pinyin": "Tā xiān dā jiéyùn, ránhòu qí jiǎotàchē huí jiā.",
+              "gloss": "She takes the MRT first, then rides a bike home."
+            },
+            {
+              "hanzi": "你先寫名字，然後給我這張紙。",
+              "pinyin": "Nǐ xiān xiě míngzì, ránhòu gěi wǒ zhè zhāng zhǐ.",
+              "gloss": "Write your name first, then give me this sheet of paper."
+            }
+          ],
+          "id": "g_hsk3_01_3_2",
+          "hsk_level": 3
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_01_3",
-      "title": "詞彙 1–3",
-      "sort_order": 3,
-      "vocab": [
+      "dialogue": [
         {
-          "id": "v_跟",
-          "traditional": "跟",
-          "pinyin": "gēn",
-          "gloss": "heel; to follow closely; to go with",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "小美",
+          "hanzi": "你上個週末為什麼沒去夜市？",
+          "pinyin": "Nǐ shàng ge zhōumò wèishénme méi qù yèshì?",
+          "gloss": "Why didn't you go to the night market last weekend?"
         },
         {
-          "id": "v_像",
-          "traditional": "像",
-          "pinyin": "xiàng",
-          "gloss": "to resemble; to be like; to look as if",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "阿明",
+          "hanzi": "因為我頭痛，所以在家睡覺。",
+          "pinyin": "Yīnwèi wǒ tóu tòng, suǒyǐ zài jiā shuìjiào.",
+          "gloss": "Because I had a headache, so I slept at home."
         },
         {
-          "id": "v_還是",
-          "traditional": "還是",
-          "pinyin": "hái shi",
-          "gloss": "still (as before); had better; unexpectedly",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "小美",
+          "hanzi": "那這個週末呢？如果天氣好，我們一起去騎腳踏車。",
+          "pinyin": "Nà zhège zhōumò ne? Rúguǒ tiānqì hǎo, wǒmen yìqǐ qù qí jiǎotàchē.",
+          "gloss": "What about this weekend? If the weather's good, let's go bike riding together."
         },
         {
-          "id": "v_認為",
-          "traditional": "認為",
-          "pinyin": "rèn wéi",
-          "gloss": "to believe; to think; to consider; to feel",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "阿明",
+          "hanzi": "好啊！雖然我騎得不快，可是我很想去。",
+          "pinyin": "Hǎo a! Suīrán wǒ qí de bú kuài, kěshì wǒ hěn xiǎng qù.",
+          "gloss": "Sure! Although I don't ride fast, I really want to go."
         },
         {
-          "id": "v_應該",
-          "traditional": "應該",
-          "pinyin": "yīng gāi",
-          "gloss": "ought to; should; must",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "小美",
+          "hanzi": "我們先去吃早餐，然後騎到學校那邊。",
+          "pinyin": "Wǒmen xiān qù chī zǎocān, ránhòu qí dào xuéxiào nà biān.",
+          "gloss": "We'll eat breakfast first, then ride over to the school area."
         },
         {
-          "id": "v_位",
-          "traditional": "位",
-          "pinyin": "wèi",
-          "gloss": "position; location; place",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "speaker": "阿明",
+          "hanzi": "好，那邊的珍珠奶茶很好喝，而且不貴喔！",
+          "pinyin": "Hǎo, nà biān de zhēnzhū nǎichá hěn hǎohē, érqiě bú guì o!",
+          "gloss": "OK, the bubble tea over there is really good, and it's cheap too!"
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "sentences": [
+        {
+          "tokens": [
+            "如果",
+            "明天",
+            "下雨，",
+            "我",
+            "就",
+            "不",
+            "去",
+            "了"
+          ],
+          "pinyin": "Rúguǒ míngtiān xià yǔ, wǒ jiù bú qù le.",
+          "gloss": "If it rains tomorrow, I won't go.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "餐廳",
+            "雖然",
+            "小，",
+            "但是",
+            "菜",
+            "很",
+            "好吃"
+          ],
+          "pinyin": "Zhè jiā cāntīng suīrán xiǎo, dànshì cài hěn hǎochī.",
+          "gloss": "Although this restaurant is small, the food is delicious.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "她",
+            "為了",
+            "考試，",
+            "週末",
+            "沒",
+            "去",
+            "玩"
+          ],
+          "pinyin": "Tā wèile kǎoshì, zhōumò méi qù wán.",
+          "gloss": "For the exam, she didn't go out to play on the weekend.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "先",
+            "吃",
+            "早餐，",
+            "然後",
+            "去",
+            "上班"
+          ],
+          "pinyin": "Wǒ xiān chī zǎocān, ránhòu qù shàngbān.",
+          "gloss": "I eat breakfast first, then go to work.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "衣服",
+            "很",
+            "漂亮，",
+            "而且",
+            "不",
+            "貴"
+          ],
+          "pinyin": "Zhè jiàn yīfú hěn piàoliàng, érqiě bú guì.",
+          "gloss": "This piece of clothing is pretty, and it's not expensive either.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "週末的早餐",
+        "hanzi": "週末的早上，我先搭捷運到台北車站，然後在附近的一家小店吃早餐。那家店雖然不大，可是東西很好吃，而且很便宜。老闆問我為什麼每個週末都來，我說：「為了你們的熱珍珠奶茶啊！」如果下次你也有時間，我們一起來。",
+        "gloss": "On weekend mornings I first take the MRT to Taipei Main Station, then eat breakfast at a little shop nearby. Although that shop isn't big, the food is delicious and very cheap. The owner asked me why I come every weekend, and I said, \"For your hot bubble tea!\" If you have time next time, let's come together."
+      }
     }
   ],
-  "sort_order": 29,
+  "sort_order": 30,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

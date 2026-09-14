@@ -1,61 +1,61 @@
 {
   "id": "u_hsk4_23",
-  "title": "HSK 4 詞彙 23",
-  "subtitle": "HSK 4 vocabulary · set 23",
+  "title": "讀書、興趣與活動",
+  "subtitle": "Studying, reading and things people do for fun",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_23_1",
-      "title": "詞彙 23–1",
+      "title": "念書、學位與看書",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_果然",
-          "traditional": "果然",
-          "pinyin": "guǒ rán",
-          "gloss": "really; sure enough; as expected",
+          "id": "v_知識",
+          "traditional": "知識",
+          "pinyin": "zhī shi",
+          "gloss": "knowledge; intellectual",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_隨著",
-          "traditional": "隨著",
-          "pinyin": "suí zhe",
-          "gloss": "along with; in the wake of; following",
+          "id": "v_博士",
+          "traditional": "博士",
+          "pinyin": "bó shì",
+          "gloss": "doctor; court academician (in feudal China); Ph.D.",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_只好",
-          "traditional": "只好",
-          "pinyin": "zhǐ hǎo",
-          "gloss": "to have no other option but to ...; to have to; to be forced to",
+          "id": "v_專門",
+          "traditional": "專門",
+          "pinyin": "zhuān mén",
+          "gloss": "specialist; specialized; customized",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_密碼",
-          "traditional": "密碼",
-          "pinyin": "mì mǎ",
-          "gloss": "cipher; secret code; password; PIN",
+          "id": "v_小說",
+          "traditional": "小說",
+          "pinyin": "xiǎo shuō",
+          "gloss": "novel; fiction",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_亞洲",
-          "traditional": "亞洲",
-          "pinyin": "Yà zhōu",
-          "gloss": "Asia (abbr. for 亚细亚洲)",
+          "id": "v_作者",
+          "traditional": "作者",
+          "pinyin": "zuò zhě",
+          "gloss": "author; writer",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_道歉",
-          "traditional": "道歉",
-          "pinyin": "dào qiàn",
-          "gloss": "to apologize",
+          "id": "v_頁",
+          "traditional": "頁",
+          "pinyin": "yè",
+          "gloss": "page; leaf",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,112 +66,62 @@
     },
     {
       "id": "l_hsk4_23_2",
-      "title": "詞彙 23–2",
+      "title": "辦活動、才藝與流行",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_趟",
-          "traditional": "趟",
-          "pinyin": "tāng",
-          "gloss": "to wade; to trample; to turn the soil",
+          "id": "v_舉辦",
+          "traditional": "舉辦",
+          "pinyin": "jǔ bàn",
+          "gloss": "to conduct; to hold",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_軟",
-          "traditional": "軟",
-          "pinyin": "ruǎn",
-          "gloss": "soft; flexible",
+          "id": "v_流行",
+          "traditional": "流行",
+          "pinyin": "liú xíng",
+          "gloss": "(of a contagious disease etc) to spread; to propagate; (of a style of clothing, song etc) popular",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_訪問",
-          "traditional": "訪問",
-          "pinyin": "fǎng wèn",
-          "gloss": "to visit; to call on; to interview",
+          "id": "v_現代",
+          "traditional": "現代",
+          "pinyin": "xiàn dài",
+          "gloss": "modern times; modern age; modern era",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_森林",
-          "traditional": "森林",
-          "pinyin": "sēn lín",
-          "gloss": "forest",
+          "id": "v_有趣",
+          "traditional": "有趣",
+          "pinyin": "yǒu qù",
+          "gloss": "interesting; fascinating; amusing",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_友好",
-          "traditional": "友好",
-          "pinyin": "yǒu hǎo",
-          "gloss": "friendly; amicable; close friend",
+          "id": "v_彈",
+          "traditional": "彈",
+          "pinyin": "tán",
+          "gloss": "to pluck (a string); to play (a string instrument); to spring or leap",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_嘗",
-          "traditional": "嘗",
-          "pinyin": "cháng",
-          "gloss": "to taste; to try (food); to experience; (literary) ever; once",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_23_3",
-      "title": "詞彙 23–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_億",
-          "traditional": "億",
-          "pinyin": "yì",
-          "gloss": "100 million",
+          "id": "v_組成",
+          "traditional": "組成",
+          "pinyin": "zǔ chéng",
+          "gloss": "to form; to make up; to constitute",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_對話",
-          "traditional": "對話",
-          "pinyin": "duì huà",
-          "gloss": "to talk (with sb); dialogue; conversation",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_收拾",
-          "traditional": "收拾",
-          "pinyin": "shōu shi",
-          "gloss": "to put in order; to tidy up; to pack",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_廣播",
-          "traditional": "廣播",
-          "pinyin": "guǎng bō",
-          "gloss": "broadcast; broadcasting; to broadcast",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_逐漸",
-          "traditional": "逐漸",
-          "pinyin": "zhú jiàn",
-          "gloss": "gradually",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_鑰匙",
-          "traditional": "鑰匙",
-          "pinyin": "yào shi",
-          "gloss": "key",
+          "id": "v_聊天",
+          "traditional": "聊天",
+          "pinyin": "liáo tiān",
+          "gloss": "to chat; to gossip",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +131,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 67,
+  "sort_order": 71,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

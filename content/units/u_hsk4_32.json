@@ -1,21 +1,45 @@
 {
   "id": "u_hsk4_32",
-  "title": "HSK 4 詞彙 32",
-  "subtitle": "HSK 4 vocabulary · set 32",
+  "title": "家中用品與親戚長輩",
+  "subtitle": "Household goods, tidying up and family health habits",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_32_1",
-      "title": "詞彙 32–1",
+      "title": "浴室與洗衣間",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_打折",
-          "traditional": "打折",
-          "pinyin": "dǎ zhé",
-          "gloss": "to give a discount",
+          "id": "v_毛巾",
+          "traditional": "毛巾",
+          "pinyin": "máo jīn",
+          "gloss": "towel",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_牙膏",
+          "traditional": "牙膏",
+          "pinyin": "yá gāo",
+          "gloss": "toothpaste",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鏡子",
+          "traditional": "鏡子",
+          "pinyin": "jìng zi",
+          "gloss": "mirror",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_襪子",
+          "traditional": "襪子",
+          "pinyin": "wà zi",
+          "gloss": "socks; stockings",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -28,35 +52,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_堵車",
-          "traditional": "堵車",
-          "pinyin": "dǔ chē",
-          "gloss": "traffic jam; (of traffic) to get congested",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_番茄",
-          "traditional": "番茄",
-          "pinyin": "fānqié",
-          "gloss": "tomato",
-          "hsk_level": 4,
-          "taiwan_note": "台灣說「番茄」；「西紅柿」是大陸用法。",
-          "prc_form": "西紅柿"
-        },
-        {
-          "id": "v_個子",
-          "traditional": "個子",
-          "pinyin": "gè zi",
-          "gloss": "height; stature; build",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_大使館",
-          "traditional": "大使館",
-          "pinyin": "dà shǐ guǎn",
-          "gloss": "embassy",
+          "id": "v_瓶子",
+          "traditional": "瓶子",
+          "pinyin": "píng zi",
+          "gloss": "bottle",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -67,54 +66,54 @@
     },
     {
       "id": "l_hsk4_32_2",
-      "title": "詞彙 32–2",
+      "title": "收納與整理房間",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_餃子",
-          "traditional": "餃子",
-          "pinyin": "jiǎo zi",
-          "gloss": "dumpling; pot-sticker",
+          "id": "v_盒子",
+          "traditional": "盒子",
+          "pinyin": "hé zi",
+          "gloss": "box; case",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_垃圾桶",
-          "traditional": "垃圾桶",
-          "pinyin": "lā jī tǒng",
-          "gloss": "rubbish bin; trash can; garbage can",
+          "id": "v_整齊",
+          "traditional": "整齊",
+          "pinyin": "zhěng qí",
+          "gloss": "orderly; neat; even",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_塑料袋",
-          "traditional": "塑料袋",
-          "pinyin": "sù liào dài",
-          "gloss": "plastic bag",
+          "id": "v_排列",
+          "traditional": "排列",
+          "pinyin": "pái liè",
+          "gloss": "to arrange in order; (math.) permutation",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_養成",
-          "traditional": "養成",
-          "pinyin": "yǎng chéng",
-          "gloss": "to cultivate; to raise; to form (a habit)",
+          "id": "v_順序",
+          "traditional": "順序",
+          "pinyin": "shùn xù",
+          "gloss": "sequence; order",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_打針",
-          "traditional": "打針",
-          "pinyin": "dǎ zhēn",
-          "gloss": "to give or have an injection",
+          "id": "v_窄",
+          "traditional": "窄",
+          "pinyin": "zhǎi",
+          "gloss": "narrow; narrow-minded; badly off",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_理髮",
-          "traditional": "理髮",
-          "pinyin": "lǐ fà",
-          "gloss": "to get a haircut; to have one's hair done; to cut (sb's) hair; to give (sb) a haircut",
+          "id": "v_力氣",
+          "traditional": "力氣",
+          "pinyin": "lì qi",
+          "gloss": "strength",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -125,54 +124,54 @@
     },
     {
       "id": "l_hsk4_32_3",
-      "title": "詞彙 32–3",
+      "title": "親戚、長輩與壞習慣",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_語法",
-          "traditional": "語法",
-          "pinyin": "yǔ fǎ",
-          "gloss": "grammar",
+          "id": "v_親戚",
+          "traditional": "親戚",
+          "pinyin": "qīn qi",
+          "gloss": "a relative (i.e. family relation)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_乾杯",
-          "traditional": "乾杯",
-          "pinyin": "gān bēi",
-          "gloss": "to drink a toast; Cheers! (proposing a toast); Here's to you!",
+          "id": "v_孫子",
+          "traditional": "孫子",
+          "pinyin": "sūn zi",
+          "gloss": "grandson; son's son",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_複印",
-          "traditional": "複印",
-          "pinyin": "fù yìn",
-          "gloss": "to photocopy; to duplicate a document",
+          "id": "v_性別",
+          "traditional": "性別",
+          "pinyin": "xìng bié",
+          "gloss": "gender; sex",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_留學",
-          "traditional": "留學",
-          "pinyin": "liú xué",
-          "gloss": "to study abroad",
+          "id": "v_大夫",
+          "traditional": "大夫",
+          "pinyin": "dài fu",
+          "gloss": "doctor; physician",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_濕潤",
-          "traditional": "濕潤",
-          "pinyin": "shī rùn",
-          "gloss": "moist",
+          "id": "v_咳嗽",
+          "traditional": "咳嗽",
+          "pinyin": "ké sou",
+          "gloss": "to cough",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_羽毛球",
-          "traditional": "羽毛球",
-          "pinyin": "yǔ máo qiú",
-          "gloss": "shuttlecock; badminton",
+          "id": "v_抽煙",
+          "traditional": "抽煙",
+          "pinyin": "chōu yān",
+          "gloss": "to smoke (a cigarette, tobacco)",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -182,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 76,
+  "sort_order": 80,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

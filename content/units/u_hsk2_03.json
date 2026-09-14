@@ -1,130 +1,466 @@
 {
   "id": "u_hsk2_03",
-  "title": "HSK 2 詞彙 3",
-  "subtitle": "HSK 2 vocabulary · set 3",
+  "title": "在附近走走",
+  "subtitle": "Getting around your neighborhood",
   "hsk_level": 2,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk2_03_1",
-      "title": "詞彙 3–1",
+      "title": "進進出出",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_孩子",
-          "traditional": "孩子",
-          "pinyin": "hái zi",
-          "gloss": "child",
+          "id": "v_進",
+          "traditional": "進",
+          "pinyin": "jìn",
+          "gloss": "to go forward; to advance; to go in",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆說：請進來坐。",
+            "pinyin": "Lǎobǎn shuō: qǐng jìnlái zuò.",
+            "gloss": "The owner said: please come in and sit down."
+          }
         },
         {
-          "id": "v_別",
-          "traditional": "別",
-          "pinyin": "bié",
-          "gloss": "to leave; to part (from); (literary) to differentiate; to distinguish; (bound form) other; another; different",
+          "id": "v_出",
+          "traditional": "出",
+          "pinyin": "chū",
+          "gloss": "to go out; to come out; to occur",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天沒出去，在家看電視。",
+            "pinyin": "Wǒ zuótiān méi chūqù, zài jiā kàn diànshì.",
+            "gloss": "I didn't go out yesterday; I watched TV at home."
+          }
         },
         {
-          "id": "v_公司",
-          "traditional": "公司",
-          "pinyin": "gōng sī",
-          "gloss": "company; firm; corporation",
+          "id": "v_門",
+          "traditional": "門",
+          "pinyin": "mén",
+          "gloss": "gate; door; gateway",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請關門，外面很冷。",
+            "pinyin": "Qǐng guān mén, wàimiàn hěn lěng.",
+            "gloss": "Please close the door, it's cold outside."
+          }
         },
         {
-          "id": "v_第一",
-          "traditional": "第一",
-          "pinyin": "dì yī",
-          "gloss": "first; number one; primary",
+          "id": "v_外",
+          "traditional": "外",
+          "pinyin": "wài",
+          "gloss": "outside; in addition; foreign",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面下雨了，記得帶傘。",
+            "pinyin": "Wàimiàn xià yǔ le, jìde dài sǎn.",
+            "gloss": "It's raining outside; remember to take an umbrella."
+          }
         },
         {
-          "id": "v_問",
-          "traditional": "問",
-          "pinyin": "wèn",
-          "gloss": "to ask; to inquire",
+          "id": "v_到",
+          "traditional": "到",
+          "pinyin": "dào",
+          "gloss": "to reach; to arrive; to leave for; to go to; to (a place); until (a time); up to (a point)",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我七點半到家。",
+            "pinyin": "Wǒ qī diǎn bàn dào jiā.",
+            "gloss": "I get home at seven thirty."
+          }
         },
         {
-          "id": "v_長",
-          "traditional": "長",
-          "pinyin": "cháng",
-          "gloss": "chief; head; elder",
+          "id": "v_從",
+          "traditional": "從",
+          "pinyin": "cóng",
+          "gloss": "from; through; via",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我從捷運站走到學校。",
+            "pinyin": "Wǒ cóng jiéyùn zhàn zǒu dào xuéxiào.",
+            "gloss": "I walk from the MRT station to school."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "從 A 到 B — from A to B",
+          "pattern": "Subject + 從 + starting point + 到 + destination + (Verb)",
+          "explanation": "從 marks where something starts and 到 marks where it ends. Both phrases come before the verb, or 到 can attach right after a movement verb (走到、搭車到). Use this pattern for places (從台北到台中) and also for times (從早上到晚上).",
+          "contrast": "Easily confused with using 到 alone: 我到台北 only names the destination. Add 從 when you also want to say where you set out from; if the starting point is already clear, just drop 從.",
+          "common_error": "Learners copy English word order and put the 從-phrase after the verb: ✗我走從家到學校 / ✗我來從台北. In Chinese the 從-phrase goes before the verb: 我從台北來.",
+          "examples": [
+            {
+              "hanzi": "我從家裡走到捷運站，要十分鐘。",
+              "pinyin": "Wǒ cóng jiā lǐ zǒu dào jiéyùn zhàn, yào shí fēnzhōng.",
+              "gloss": "It takes ten minutes to walk from my place to the MRT station."
+            },
+            {
+              "hanzi": "他從外面進來，門也沒關。",
+              "pinyin": "Tā cóng wàimiàn jìnlái, mén yě méi guān.",
+              "gloss": "He came in from outside and didn't even close the door."
+            },
+            {
+              "hanzi": "從這裡到學校不遠。",
+              "pinyin": "Cóng zhèlǐ dào xuéxiào bù yuǎn.",
+              "gloss": "It's not far from here to school."
+            }
+          ],
+          "id": "g_hsk2_03_1_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk2_03_1_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "喂，我到你家門口了。",
+          "pinyin": "Wéi, wǒ dào nǐ jiā ménkǒu le.",
+          "gloss": "Hello? I'm at your front door."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我開門，你進來坐。",
+          "pinyin": "Hǎo, wǒ kāi mén, nǐ jìnlái zuò.",
+          "gloss": "OK, I'll open the door — come in and sit down."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "外面雨很大喔！我從捷運站走到這裡，走了十分鐘。",
+          "pinyin": "Wàimiàn yǔ hěn dà o! Wǒ cóng jiéyùn zhàn zǒu dào zhèlǐ, zǒu le shí fēnzhōng.",
+          "gloss": "It's raining hard outside! I walked here from the MRT station — ten minutes."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "進來喝一杯熱茶吧。",
+          "pinyin": "Jìnlái hē yì bēi rè chá ba.",
+          "gloss": "Come in and have a cup of hot tea."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "謝謝！晚一點我們出去吃麵，好嗎？",
+          "pinyin": "Xièxie! Wǎn yìdiǎn wǒmen chūqù chī miàn, hǎo ma?",
+          "gloss": "Thanks! Let's go out later for noodles, OK?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好喔，門外那家麵店很近。",
+          "pinyin": "Hǎo o, mén wài nà jiā miàn diàn hěn jìn.",
+          "gloss": "Sure, that noodle shop just outside is very close."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "七點",
+            "出門"
+          ],
+          "pinyin": "Wǒ měitiān qī diǎn chūmén.",
+          "gloss": "I leave the house at seven every day.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "從",
+            "台中",
+            "搭車",
+            "到",
+            "台北"
+          ],
+          "pinyin": "Tā cóng Táizhōng dāchē dào Táiběi.",
+          "gloss": "He takes a bus from Taichung to Taipei.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "門",
+            "外面",
+            "有",
+            "很多",
+            "人"
+          ],
+          "pinyin": "Mén wàimiàn yǒu hěn duō rén.",
+          "gloss": "There are a lot of people outside the door.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "捷運",
+            "到",
+            "站",
+            "了"
+          ],
+          "pinyin": "Jiéyùn dào zhàn le.",
+          "gloss": "The MRT has arrived at the station.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "老闆",
+            "說",
+            "請",
+            "進",
+            "來",
+            "坐"
+          ],
+          "pinyin": "Lǎobǎn shuō qǐng jìnlái zuò.",
+          "gloss": "The owner says please come in and have a seat.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "週末的早上",
+        "hanzi": "週末早上，我從家裡出門，走到附近的捷運站。外面的天氣很好，不太熱。我先買了一杯珍珠奶茶，再搭捷運到台北。十二點，我進了一家小麵店，老闆笑笑說：請進！外面人很多，裡面很安靜。吃飽以後，我出來走到書店，逛了一個鐘頭。",
+        "gloss": "On the weekend morning I left home and walked to the nearby MRT station. The weather outside was lovely, not too hot. First I bought a cup of bubble tea, then took the MRT to Taipei. At twelve I went into a small noodle shop; the owner smiled and said, \"Come in!\" There were lots of people outside, but it was quiet inside. After eating my fill, I came out and walked to a bookshop, where I browsed for an hour."
+      }
     },
     {
       "id": "l_hsk2_03_2",
-      "title": "詞彙 3–2",
+      "title": "遠近和方向",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_告訴",
-          "traditional": "告訴",
-          "pinyin": "gào sù",
-          "gloss": "to press charges; to file a complaint",
+          "id": "v_近",
+          "traditional": "近",
+          "pinyin": "jìn",
+          "gloss": "near; close to; approximately",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家離捷運站很近。",
+            "pinyin": "Wǒ jiā lí jiéyùn zhàn hěn jìn.",
+            "gloss": "My home is very close to the MRT station."
+          }
         },
         {
-          "id": "v_事情",
-          "traditional": "事情",
-          "pinyin": "shìqíng",
-          "gloss": "affair; matter; thing; business",
+          "id": "v_離",
+          "traditional": "離",
+          "pinyin": "lí",
+          "gloss": "to leave; to part from; to be away from",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "學校離我家不遠,走路就到。",
+            "pinyin": "Xuéxiào lí wǒ jiā bù yuǎn, zǒulù jiù dào.",
+            "gloss": "The school isn't far from my home; you can walk there."
+          }
         },
         {
-          "id": "v_號",
-          "traditional": "號",
-          "pinyin": "hào",
-          "gloss": "ordinal number; day of a month; mark",
+          "id": "v_路",
+          "traditional": "路",
+          "pinyin": "lù",
+          "gloss": "road; journey; route",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天走路去學校,路上有一家早餐店。",
+            "pinyin": "Wǒ měi tiān zǒulù qù xuéxiào, lù shàng yǒu yì jiā zǎocān diàn.",
+            "gloss": "I walk to school every day; there's a breakfast shop on the way."
+          }
         },
         {
-          "id": "v_高",
-          "traditional": "高",
-          "pinyin": "gāo",
-          "gloss": "high; tall; above average",
+          "id": "v_向",
+          "traditional": "向",
+          "pinyin": "xiàng",
+          "gloss": "towards; to face; to turn towards",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "向前走五分鐘就到郵局了。",
+            "pinyin": "Xiàng qián zǒu wǔ fēnzhōng jiù dào yóujú le.",
+            "gloss": "Walk straight ahead for five minutes and you'll reach the post office."
+          }
         },
         {
-          "id": "v_件",
-          "traditional": "件",
-          "pinyin": "jiàn",
-          "gloss": "item; component; classifier for events, things, clothes etc",
+          "id": "v_快",
+          "traditional": "快",
+          "pinyin": "kuài",
+          "gloss": "rapid; quick; speed",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "搭捷運很快,十分鐘就到了。",
+            "pinyin": "Dā jiéyùn hěn kuài, shí fēnzhōng jiù dào le.",
+            "gloss": "Taking the MRT is fast — you get there in ten minutes."
+          }
         },
         {
-          "id": "v_張",
-          "traditional": "張",
-          "pinyin": "zhāng",
-          "gloss": "to open up; to spread; sheet of paper",
+          "id": "v_就",
+          "traditional": "就",
+          "pinyin": "jiù",
+          "gloss": "(after a suppositional clause) in that case; then; (after a clause of action) as soon as; immediately after; (same as 是) merely; nothing else but; simply; just; precisely; exactly",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他一到家就睡了。",
+            "pinyin": "Tā yí dào jiā jiù shuì le.",
+            "gloss": "He went to sleep as soon as he got home."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Saying how far apart two places are: A 離 B 很近/很遠",
+          "pattern": "A + 離 + B + 很近 / 很遠 / 不遠 / 有多遠",
+          "explanation": "離 marks the gap between two points. Put the place you are talking about first (A), then 離, then the reference point (B), and finish with a word describing the distance: 很近, 很遠, 不遠. 離 is not a verb of motion — the sentence describes a static distance, so no 是 is needed before 很近/很遠. You often add a follow-up with 就: 我家離學校很近,走路五分鐘就到了。",
+          "contrast": "從…到… also links two places, but it describes a trip: 從我家到學校要三十分鐘 (how long the journey takes). Use 離 when you are stating the distance between them (我家離學校很近). If the sentence has a verb of going/travelling, use 從…到…; if it ends in 近/遠, use 離.",
+          "common_error": "Learners drop 離 and say 我家很近學校, or swap in 從 and say 我家從學校很近. They also insert 是 (我家離學校是很近). Say 我家離學校很近 — 離 + place, then 很近/很遠, with no 是.",
+          "examples": [
+            {
+              "hanzi": "我家離捷運站很近,走路五分鐘就到了。",
+              "pinyin": "Wǒ jiā lí jiéyùn zhàn hěn jìn, zǒulù wǔ fēnzhōng jiù dào le.",
+              "gloss": "My home is close to the MRT station; it's a five-minute walk."
+            },
+            {
+              "hanzi": "那家麵店離這裡遠嗎?",
+              "pinyin": "Nà jiā miàn diàn lí zhèlǐ yuǎn ma?",
+              "gloss": "Is that noodle shop far from here?"
+            },
+            {
+              "hanzi": "郵局離這裡不遠,向前走就看到了。",
+              "pinyin": "Yóujú lí zhèlǐ bù yuǎn, xiàng qián zǒu jiù kàndào le.",
+              "gloss": "The post office isn't far from here — walk straight ahead and you'll see it."
+            }
+          ],
+          "id": "g_hsk2_03_2_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "女生",
+          "hanzi": "請問,郵局離這裡遠嗎?",
+          "pinyin": "Qǐngwèn, yóujú lí zhèlǐ yuǎn ma?",
+          "gloss": "Excuse me, is the post office far from here?"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "不遠喔,向前走就看得到。",
+          "pinyin": "Bù yuǎn ō, xiàng qián zǒu jiù kàn de dào.",
+          "gloss": "Not far at all — just walk straight ahead and you'll see it."
+        },
+        {
+          "speaker": "女生",
+          "hanzi": "走路要幾分鐘?",
+          "pinyin": "Zǒulù yào jǐ fēnzhōng?",
+          "gloss": "How many minutes does it take on foot?"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "五分鐘就到了,很近。",
+          "pinyin": "Wǔ fēnzhōng jiù dào le, hěn jìn.",
+          "gloss": "You'll be there in five minutes — it's very close."
+        },
+        {
+          "speaker": "女生",
+          "hanzi": "那我騎腳踏車會不會快一點?",
+          "pinyin": "Nà wǒ qí jiǎotàchē huì bú huì kuài yìdiǎn?",
+          "gloss": "Then would it be faster if I rode a bike?"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "路這麼近,走路就好了啦!",
+          "pinyin": "Lù zhème jìn, zǒulù jiù hǎo le la!",
+          "gloss": "It's such a short way — just walk!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我家",
+            "離",
+            "捷運站",
+            "很",
+            "近"
+          ],
+          "pinyin": "Wǒ jiā lí jiéyùn zhàn hěn jìn.",
+          "gloss": "My home is very close to the MRT station.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "向",
+            "前",
+            "走",
+            "五",
+            "分鐘",
+            "就",
+            "到",
+            "了"
+          ],
+          "pinyin": "Xiàng qián zǒu wǔ fēnzhōng jiù dào le.",
+          "gloss": "Walk straight ahead for five minutes and you're there.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "走路",
+            "去",
+            "學校"
+          ],
+          "pinyin": "Wǒ měi tiān zǒulù qù xuéxiào.",
+          "gloss": "I walk to school every day.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "搭",
+            "捷運",
+            "比",
+            "騎",
+            "腳踏車",
+            "快"
+          ],
+          "pinyin": "Dā jiéyùn bǐ qí jiǎotàchē kuài.",
+          "gloss": "Taking the MRT is faster than riding a bike.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "他",
+            "一",
+            "到",
+            "家",
+            "就",
+            "睡",
+            "了"
+          ],
+          "pinyin": "Tā yí dào jiā jiù shuì le.",
+          "gloss": "He went to sleep as soon as he got home.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "我的上學路",
+        "hanzi": "我家在台北,離捷運站很近,走路五分鐘就到了。每天早上,我先走路到站裡,再搭捷運去學校。捷運很快,七點半出門,八點就到學校了。週末的時候,我喜歡騎腳踏車,從家裡向東騎,一路上有很多小店,還有一家很好吃的麵店。",
+        "gloss": "My home is in Taipei, very close to the MRT station — a five-minute walk and I'm there. Every morning I walk to the station first, then take the MRT to school. The MRT is fast: I leave at seven thirty and I'm at school by eight. On weekends I like to ride my bike, heading east from home. There are lots of little shops along the way, and a really tasty noodle place too."
+      }
     },
     {
       "id": "l_hsk2_03_3",
-      "title": "詞彙 3–3",
+      "title": "約出門玩",
       "sort_order": 3,
       "vocab": [
         {
@@ -133,55 +469,229 @@
           "pinyin": "zhǔn bèi",
           "gloss": "preparation; to prepare; to intend",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我在準備明天出門的東西。",
+            "pinyin": "Wǒ zài zhǔnbèi míngtiān chūmén de dōngxi.",
+            "gloss": "I'm getting ready the things for going out tomorrow."
+          }
         },
         {
-          "id": "v_進",
-          "traditional": "進",
-          "pinyin": "jìn",
-          "gloss": "to go forward; to advance; to go in",
+          "id": "v_玩",
+          "traditional": "玩",
+          "pinyin": "wán",
+          "gloss": "to play; to have fun; to trifle with",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我們去台北玩，好不好？",
+            "pinyin": "Zhōumò wǒmen qù Táiběi wán, hǎo bù hǎo?",
+            "gloss": "Let's go to Taipei to have fun this weekend, okay?"
+          }
         },
         {
-          "id": "v_每",
-          "traditional": "每",
-          "pinyin": "měi",
-          "gloss": "each; every",
+          "id": "v_快樂",
+          "traditional": "快樂",
+          "pinyin": "kuài lè",
+          "gloss": "happy; joyful",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天真快樂，謝謝你們。",
+            "pinyin": "Jīntiān zhēn kuàilè, xièxie nǐmen.",
+            "gloss": "Today was really happy — thank you all."
+          }
         },
         {
-          "id": "v_您",
-          "traditional": "您",
-          "pinyin": "nín",
-          "gloss": "you (courteous, as opposed to informal 你)",
+          "id": "v_希望",
+          "traditional": "希望",
+          "pinyin": "xī wàng",
+          "gloss": "to hope; a hope; a wish",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我希望明天不會下雨。",
+            "pinyin": "Wǒ xīwàng míngtiān bú huì xià yǔ.",
+            "gloss": "I hope it won't rain tomorrow."
+          }
         },
         {
-          "id": "v_送",
-          "traditional": "送",
-          "pinyin": "sòng",
-          "gloss": "to send; to deliver; to transmit; to give (as a present); to see (sb) off",
+          "id": "v_吧",
+          "traditional": "吧",
+          "pinyin": "ba",
+          "gloss": "bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang",
           "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_笑",
-          "traditional": "笑",
-          "pinyin": "xiào",
-          "gloss": "to laugh; to smile; to laugh at",
-          "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們一起騎腳踏車去吧！",
+            "pinyin": "Wǒmen yìqǐ qí jiǎotàchē qù ba!",
+            "gloss": "Let's ride bikes there together!"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Making a suggestion with 吧",
+          "pattern": "(我們／你) + Verb Phrase + 吧",
+          "explanation": "Put 吧 at the end of a sentence to turn it into a soft suggestion or a gentle push: 'let's ...' or 'why don't you ...'. It is not a question — you are not really asking, you are proposing. With 我們 it means 'let's', with 你 it means 'go ahead and ...'. In Taiwan 吧 is said lightly and makes the sentence sound friendly instead of bossy.",
+          "contrast": "嗎 vs 吧: 我們去玩嗎？ is a real yes/no question (you have no idea what the other person wants). 我們去玩吧！ is a suggestion (you already want to go and are inviting them). If you expect an answer, use 嗎; if you are proposing, use 吧.",
+          "common_error": "Learners often stack the two particles and say 我們去玩嗎吧, or use 嗎 when they mean 'let's'. A sentence can end with only one of them, and an invitation takes 吧, never 嗎.",
+          "examples": [
+            {
+              "hanzi": "我們去看電影吧。",
+              "pinyin": "Wǒmen qù kàn diànyǐng ba.",
+              "gloss": "Let's go see a movie."
+            },
+            {
+              "hanzi": "太熱了，喝杯冰的吧。",
+              "pinyin": "Tài rè le, hē bēi bīng de ba.",
+              "gloss": "It's too hot — let's have a cold drink."
+            },
+            {
+              "hanzi": "你先準備一下吧。",
+              "pinyin": "Nǐ xiān zhǔnbèi yíxià ba.",
+              "gloss": "Why don't you get ready first."
+            }
+          ],
+          "id": "g_hsk2_03_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "希望 + clause (hoping something happens)",
+          "pattern": "Subject + 希望 + (Subject) + Verb Phrase",
+          "explanation": "希望 is followed by a whole sentence, not by a noun. You say 我希望明天是晴天, literally 'I hope tomorrow is a sunny day'. The thing hoped for is usually in the future, so words like 明天、週末 often appear after it.",
+          "contrast": "想 vs 希望: 我想去玩 says what you yourself want to do; 我希望你去玩 says you hope about something you cannot control. Use 想 for your own plan, 希望 for wishes about weather, other people, or results.",
+          "common_error": "Saying 我希望好天氣 (hope + noun). 希望 needs a full clause: 我希望天氣很好。",
+          "examples": [
+            {
+              "hanzi": "我希望這個週末不會有颱風。",
+              "pinyin": "Wǒ xīwàng zhè ge zhōumò bú huì yǒu táifēng.",
+              "gloss": "I hope there won't be a typhoon this weekend."
+            },
+            {
+              "hanzi": "她希望你今天很快樂。",
+              "pinyin": "Tā xīwàng nǐ jīntiān hěn kuàilè.",
+              "gloss": "She hopes you're happy today."
+            },
+            {
+              "hanzi": "我希望我們能一起出門玩。",
+              "pinyin": "Wǒ xīwàng wǒmen néng yìqǐ chūmén wán.",
+              "gloss": "I hope we can go out and have fun together."
+            }
+          ],
+          "id": "g_hsk2_03_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "明天是週末，我們出去玩吧！",
+          "pinyin": "Míngtiān shì zhōumò, wǒmen chūqù wán ba!",
+          "gloss": "Tomorrow's the weekend — let's go out and have fun!"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "好，我想去台北逛逛，還想喝珍珠奶茶。",
+          "pinyin": "Hǎo, wǒ xiǎng qù Táiběi guàng guàng, hái xiǎng hē zhēnzhū nǎichá.",
+          "gloss": "Sure, I'd like to walk around Taipei, and I also want bubble tea."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那我們搭捷運去，早上九點在站前見。",
+          "pinyin": "Nà wǒmen dā jiéyùn qù, zǎoshang jiǔ diǎn zài zhàn qián jiàn.",
+          "gloss": "Then let's take the MRT; see you at nine in front of the station."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我要準備什麼嗎？",
+          "pinyin": "Wǒ yào zhǔnbèi shénme ma?",
+          "gloss": "Do I need to prepare anything?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "帶悠遊卡就好。希望明天不會下雨。",
+          "pinyin": "Dài yōuyóukǎ jiù hǎo. Xīwàng míngtiān bú huì xià yǔ.",
+          "gloss": "Just bring your EasyCard. I hope it won't rain tomorrow."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我也希望！明天會很好玩。",
+          "pinyin": "Wǒ yě xīwàng! Míngtiān huì hěn hǎowán.",
+          "gloss": "Me too! Tomorrow will be a lot of fun."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "週末",
+            "一起",
+            "出門",
+            "玩",
+            "吧"
+          ],
+          "pinyin": "Wǒmen zhōumò yìqǐ chūmén wán ba.",
+          "gloss": "Let's go out and have fun together this weekend.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "希望",
+            "明天",
+            "是",
+            "晴天"
+          ],
+          "pinyin": "Wǒ xīwàng míngtiān shì qíngtiān.",
+          "gloss": "I hope tomorrow is sunny.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "在",
+            "準備",
+            "晚餐"
+          ],
+          "pinyin": "Māma zài zhǔnbèi wǎncān.",
+          "gloss": "Mom is preparing dinner.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這個",
+            "週末",
+            "我",
+            "真",
+            "快樂"
+          ],
+          "pinyin": "Zhè ge zhōumò wǒ zhēn kuàilè.",
+          "gloss": "I was really happy this weekend.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我們",
+            "搭",
+            "捷運",
+            "去",
+            "玩",
+            "吧"
+          ],
+          "pinyin": "Wǒmen dā jiéyùn qù wán ba.",
+          "gloss": "Let's take the MRT there to have fun.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "週末出門玩",
+        "hanzi": "這個週末，我和朋友要一起出門玩。我們早上八點在捷運站見面，先去台北逛逛，中午吃便當，下午喝珍珠奶茶。昨天晚上我就準備好了，帶了悠遊卡、錢和雨傘。希望明天天氣很好，不會下雨，那一天一定會很快樂。",
+        "gloss": "This weekend I'm going out to have fun with a friend. We'll meet at the MRT station at eight in the morning, first walk around Taipei, eat lunch boxes at noon, and drink bubble tea in the afternoon. I already got ready last night — I packed my EasyCard, money and an umbrella. I hope the weather will be nice tomorrow and it won't rain; that day is sure to be a very happy one."
+      }
     }
   ],
-  "sort_order": 23,
+  "sort_order": 24,
   "tocfl_level": "Level 1",
   "tocfl_band": "A"
 }

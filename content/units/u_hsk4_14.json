@@ -1,45 +1,37 @@
 {
   "id": "u_hsk4_14",
-  "title": "HSK 4 詞彙 14",
-  "subtitle": "HSK 4 vocabulary · set 14",
+  "title": "廚房、安全與出遊",
+  "subtitle": "Cooking at home, staying safe, and day trips",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_14_1",
-      "title": "詞彙 14–1",
+      "title": "在家煮一頓飯",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_當地",
-          "traditional": "當地",
-          "pinyin": "dāng dì",
-          "gloss": "local",
+          "id": "v_火",
+          "traditional": "火",
+          "pinyin": "huǒ",
+          "gloss": "fire; urgent; ammunition",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_大概",
-          "traditional": "大概",
-          "pinyin": "dà gài",
-          "gloss": "roughly; probably; rough",
+          "id": "v_刀",
+          "traditional": "刀",
+          "pinyin": "dāo",
+          "gloss": "knife; blade; single-edged sword",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_允許",
-          "traditional": "允許",
-          "pinyin": "yǔn xǔ",
-          "gloss": "to permit; to allow",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_教授",
-          "traditional": "教授",
-          "pinyin": "jiào shòu",
-          "gloss": "professor; to instruct; to lecture on",
+          "id": "v_豬",
+          "traditional": "豬",
+          "pinyin": "zhū",
+          "gloss": "hog; pig; swine",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -52,10 +44,18 @@
           "taiwan_note": null
         },
         {
-          "id": "v_吸引",
-          "traditional": "吸引",
-          "pinyin": "xī yǐn",
-          "gloss": "to attract; to appeal to; to fascinate",
+          "id": "v_夠",
+          "traditional": "夠",
+          "pinyin": "gòu",
+          "gloss": "enough (sufficient); enough (too much); (coll.) (before adj.) really",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_破",
+          "traditional": "破",
+          "pinyin": "pò",
+          "gloss": "broken; damaged; worn out",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,54 +66,46 @@
     },
     {
       "id": "l_hsk4_14_2",
-      "title": "詞彙 14–2",
+      "title": "注意安全與突發狀況",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_共同",
-          "traditional": "共同",
-          "pinyin": "gòng tóng",
-          "gloss": "common; joint; jointly",
+          "id": "v_危險",
+          "traditional": "危險",
+          "pinyin": "wéixiǎn",
+          "gloss": "danger; dangerous",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_雜誌",
-          "traditional": "雜誌",
-          "pinyin": "zá zhì",
-          "gloss": "magazine",
+          "id": "v_引起",
+          "traditional": "引起",
+          "pinyin": "yǐn qǐ",
+          "gloss": "to give rise to; to lead to; to cause; to arouse",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_既然",
-          "traditional": "既然",
-          "pinyin": "jì rán",
-          "gloss": "since; as; this being the case",
+          "id": "v_亂",
+          "traditional": "亂",
+          "pinyin": "luàn",
+          "gloss": "in confusion or disorder; in a confused state of mind; disorder",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_停止",
-          "traditional": "停止",
-          "pinyin": "tíng zhǐ",
-          "gloss": "to stop; to halt; to cease",
+          "id": "v_推",
+          "traditional": "推",
+          "pinyin": "tuī",
+          "gloss": "to push; to cut; to refuse",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_提醒",
-          "traditional": "提醒",
-          "pinyin": "tí xǐng",
-          "gloss": "to remind; to call attention to; to warn of",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_演員",
-          "traditional": "演員",
-          "pinyin": "yǎn yuán",
-          "gloss": "actor or actress; performer",
+          "id": "v_方向",
+          "traditional": "方向",
+          "pinyin": "fāng xiàng",
+          "gloss": "direction; orientation",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -124,54 +116,54 @@
     },
     {
       "id": "l_hsk4_14_3",
-      "title": "詞彙 14–3",
+      "title": "出門旅行與參觀景點",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_態度",
-          "traditional": "態度",
-          "pinyin": "tài du",
-          "gloss": "manner; bearing; attitude",
+          "id": "v_當地",
+          "traditional": "當地",
+          "pinyin": "dāng dì",
+          "gloss": "local",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_周圍",
-          "traditional": "周圍",
-          "pinyin": "zhōu wéi",
-          "gloss": "environs; surroundings; periphery",
+          "id": "v_世紀",
+          "traditional": "世紀",
+          "pinyin": "shì jì",
+          "gloss": "century",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_丟",
-          "traditional": "丟",
-          "pinyin": "diū",
-          "gloss": "to lose; to put aside; to throw",
+          "id": "v_取",
+          "traditional": "取",
+          "pinyin": "qǔ",
+          "gloss": "to take; to get; to choose",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_複雜",
-          "traditional": "複雜",
-          "pinyin": "fù zá",
-          "gloss": "complicated; complex",
+          "id": "v_醒",
+          "traditional": "醒",
+          "pinyin": "xǐng",
+          "gloss": "to wake up; to be awake; to become aware",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_表達",
-          "traditional": "表達",
-          "pinyin": "biǎo dá",
-          "gloss": "to express; to convey",
+          "id": "v_免費",
+          "traditional": "免費",
+          "pinyin": "miǎn fèi",
+          "gloss": "free (of charge)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_數字",
-          "traditional": "數字",
-          "pinyin": "shù zì",
-          "gloss": "numeral; digit; number",
+          "id": "v_大概",
+          "traditional": "大概",
+          "pinyin": "dà gài",
+          "gloss": "roughly; probably; rough",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +173,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 58,
+  "sort_order": 62,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

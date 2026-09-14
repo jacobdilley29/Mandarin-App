@@ -1,55 +1,41 @@
 {
   "id": "u_hsk3_13",
-  "title": "HSK 3 詞彙 13",
-  "subtitle": "HSK 3 vocabulary · set 13",
+  "title": "過節、請客與早上梳洗",
+  "subtitle": "Festivals, having guests over, and your morning routine",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_13_1",
-      "title": "詞彙 13–1",
+      "title": "過節與招待客人",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_雲",
-          "traditional": "雲",
-          "pinyin": "yún",
-          "gloss": "cloud",
+          "id": "v_客人",
+          "traditional": "客人",
+          "pinyin": "kè rén",
+          "gloss": "visitor; guest; customer",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天家裡來了很多客人。",
+            "pinyin": "Jīntiān jiā lǐ lái le hěn duō kèrén.",
+            "gloss": "A lot of guests came to our house today."
+          }
         },
         {
-          "id": "v_鄰居",
-          "traditional": "鄰居",
-          "pinyin": "lín jū",
-          "gloss": "neighbor; next door",
+          "id": "v_禮物",
+          "traditional": "禮物",
+          "pinyin": "lǐ wù",
+          "gloss": "gift; present",
           "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_校長",
-          "traditional": "校長",
-          "pinyin": "xiào zhǎng",
-          "gloss": "(college, university) president; headmaster",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_花園",
-          "traditional": "花園",
-          "pinyin": "huā yuán",
-          "gloss": "garden",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_耳朵",
-          "traditional": "耳朵",
-          "pinyin": "ěr duo",
-          "gloss": "ear; handle (on a cup)",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個禮物是送你的。",
+            "pinyin": "Zhè ge lǐwù shì sòng nǐ de.",
+            "gloss": "This present is for you."
+          }
         },
         {
           "id": "v_節日",
@@ -57,131 +43,462 @@
           "pinyin": "jié rì",
           "gloss": "holiday; festival",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "過年是台灣最重要的節日。",
+            "pinyin": "Guònián shì Táiwān zuì zhòngyào de jiérì.",
+            "gloss": "Lunar New Year is Taiwan's most important holiday."
+          }
+        },
+        {
+          "id": "v_文化",
+          "traditional": "文化",
+          "pinyin": "wén huà",
+          "gloss": "culture; civilization; cultural",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我很喜歡台灣的飲食文化。",
+            "pinyin": "Wǒ hěn xǐhuān Táiwān de yǐnshí wénhuà.",
+            "gloss": "I really like Taiwan's food culture."
+          }
+        },
+        {
+          "id": "v_熱情",
+          "traditional": "熱情",
+          "pinyin": "rè qíng",
+          "gloss": "cordial; enthusiastic; passion",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的老闆對客人很熱情。",
+            "pinyin": "Zhè jiā diàn de lǎobǎn duì kèrén hěn rèqíng.",
+            "gloss": "The owner of this shop is very warm to customers."
+          }
+        },
+        {
+          "id": "v_蛋糕",
+          "traditional": "蛋糕",
+          "pinyin": "dàn gāo",
+          "gloss": "cake",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買了一個蛋糕給妹妹。",
+            "pinyin": "Wǒ mǎi le yí ge dàngāo gěi mèimei.",
+            "gloss": "I bought a cake for my little sister."
+          }
+        },
+        {
+          "id": "v_啤酒",
+          "traditional": "啤酒",
+          "pinyin": "pí jiǔ",
+          "gloss": "beer (loanword)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "叔叔一個人喝了兩瓶啤酒。",
+            "pinyin": "Shūshu yí ge rén hē le liǎng píng píjiǔ.",
+            "gloss": "My uncle drank two bottles of beer by himself."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Double object with 送 / 給: give someone something",
+          "pattern": "主語 + 送/給 + 人 + (數量) + 東西",
+          "explanation": "With 送 (give as a gift) and 給 (hand over / give), the person comes first and the thing comes second: 我送客人一個禮物. You can also say it as 送/給 + 東西 + 給 + 人 (我送一個禮物給客人), but the person can never simply follow the thing with nothing in between.",
+          "contrast": "送 vs 給: 送 means giving as a gift, usually on a 節日 or special occasion, and is polite; 給 is neutral — just passing or handing something over (她給我一塊蛋糕 = she handed me a piece of cake). If money or a gift-giving occasion is involved, choose 送; if it is just handing something to someone right now, choose 給.",
+          "common_error": "Learners say 我送一個禮物客人 (thing before person with nothing linking them). Either put the person right after the verb (送客人一個禮物) or add 給 before the person (送一個禮物給客人).",
+          "examples": [
+            {
+              "hanzi": "我送客人一個小禮物。",
+              "pinyin": "Wǒ sòng kèrén yí ge xiǎo lǐwù.",
+              "gloss": "I gave the guest a small present."
+            },
+            {
+              "hanzi": "她給我一塊蛋糕。",
+              "pinyin": "Tā gěi wǒ yí kuài dàngāo.",
+              "gloss": "She gave me a piece of cake."
+            },
+            {
+              "hanzi": "節日的時候,我們會送朋友禮物。",
+              "pinyin": "Jiérì de shíhòu, wǒmen huì sòng péngyǒu lǐwù.",
+              "gloss": "On holidays we give our friends presents."
+            }
+          ],
+          "id": "g_hsk3_13_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "對 + 人 + 很熱情",
+          "pattern": "A + 對 + B + 很/真的 + 熱情",
+          "explanation": "To say someone is warm or hospitable toward another person, use 對 to introduce the person receiving the warmth: 台灣人對客人很熱情.",
+          "contrast": "跟 + 人 + 說話 marks who you talk with; 對 + 人 + 很熱情 marks who your attitude is aimed at. If the sentence is about an attitude or feeling (熱情, 好), use 對, not 跟.",
+          "common_error": "Learners drop 對 and say 台灣人很熱情客人. 熱情 is an adjective, so the person must be marked with 對 before the adjective.",
+          "examples": [
+            {
+              "hanzi": "台灣人對客人很熱情。",
+              "pinyin": "Táiwān rén duì kèrén hěn rèqíng.",
+              "gloss": "Taiwanese people are very warm to guests."
+            },
+            {
+              "hanzi": "他的媽媽對我真的很熱情。",
+              "pinyin": "Tā de māma duì wǒ zhēn de hěn rèqíng.",
+              "gloss": "His mother was really warm to me."
+            },
+            {
+              "hanzi": "老闆對每個客人都很熱情。",
+              "pinyin": "Lǎobǎn duì měi ge kèrén dōu hěn rèqíng.",
+              "gloss": "The boss is warm to every customer."
+            }
+          ],
+          "id": "g_hsk3_13_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "快進來!外面下雨了。",
+          "pinyin": "Kuài jìnlái! Wàimiàn xià yǔ le.",
+          "gloss": "Come in quick! It's raining outside."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "這是給你們的禮物,一個蛋糕和兩瓶啤酒。",
+          "pinyin": "Zhè shì gěi nǐmen de lǐwù, yí ge dàngāo hé liǎng píng píjiǔ.",
+          "gloss": "This is a present for you — a cake and two bottles of beer."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "你太熱情了,謝謝你喔!",
+          "pinyin": "Nǐ tài rèqíng le, xièxie nǐ ō!",
+          "gloss": "That's so kind of you, thank you!"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "今天是節日,應該的啦。",
+          "pinyin": "Jīntiān shì jiérì, yīnggāi de la.",
+          "gloss": "It's a holiday today, it's the least I could do."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我媽做了很多菜,今天你一定要吃飽。",
+          "pinyin": "Wǒ mā zuò le hěn duō cài, jīntiān nǐ yídìng yào chī bǎo.",
+          "gloss": "My mom made a lot of dishes; you have to eat your fill today."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "台灣的節日文化真好,大家都這麼熱情。",
+          "pinyin": "Táiwān de jiérì wénhuà zhēn hǎo, dàjiā dōu zhème rèqíng.",
+          "gloss": "Taiwan's holiday culture is really nice — everyone is so warm."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "老闆",
+            "對",
+            "客人",
+            "很",
+            "熱情"
+          ],
+          "pinyin": "Lǎobǎn duì kèrén hěn rèqíng.",
+          "gloss": "The boss is very warm to the customers.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "很",
+            "想",
+            "學",
+            "台灣",
+            "文化"
+          ],
+          "pinyin": "Wǒ hěn xiǎng xué Táiwān wénhuà.",
+          "gloss": "I really want to learn about Taiwanese culture.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "是",
+            "我",
+            "給",
+            "你",
+            "的",
+            "禮物"
+          ],
+          "pinyin": "Zhè shì wǒ gěi nǐ de lǐwù.",
+          "gloss": "This is the present I'm giving you.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "這個",
+            "節日",
+            "你",
+            "會",
+            "回",
+            "家",
+            "嗎"
+          ],
+          "pinyin": "Zhè ge jiérì nǐ huì huí jiā ma?",
+          "gloss": "Will you go home for this holiday?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "帶",
+            "了",
+            "蛋糕",
+            "和",
+            "啤酒",
+            "來"
+          ],
+          "pinyin": "Wǒ dài le dàngāo hé píjiǔ lái.",
+          "gloss": "I brought cake and beer.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "到朋友家過節",
+        "hanzi": "過節的時候,台灣人很喜歡請客人到家裡吃飯。上個週末,我第一次到朋友家過節。我帶了一個蛋糕和幾瓶啤酒當禮物。他的爸媽很熱情,一直叫我多吃一點,還說下次節日也要來。那天我才真的懂了台灣的文化。",
+        "gloss": "At festival time, Taiwanese people love inviting guests over for a meal. Last weekend I celebrated a holiday at a friend's house for the first time. I brought a cake and a few bottles of beer as gifts. His parents were so warm — they kept telling me to eat more, and said I should come again for the next holiday too. Only that day did I really understand Taiwanese culture."
+      }
     },
     {
       "id": "l_hsk3_13_2",
-      "title": "詞彙 13–2",
+      "title": "早上梳洗",
       "sort_order": 2,
       "vocab": [
-        {
-          "id": "v_鼻子",
-          "traditional": "鼻子",
-          "pinyin": "bí zi",
-          "gloss": "nose",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_叔叔",
-          "traditional": "叔叔",
-          "pinyin": "shū shu",
-          "gloss": "father's younger brother; uncle; Taiwan pr. [shú shu]",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
         {
           "id": "v_洗澡",
           "traditional": "洗澡",
           "pinyin": "xǐ zǎo",
           "gloss": "to bathe; to take a shower",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天晚上都洗澡。",
+            "pinyin": "Wǒ měi tiān wǎnshàng dōu xǐzǎo.",
+            "gloss": "I take a shower every night."
+          }
         },
         {
-          "id": "v_地圖",
-          "traditional": "地圖",
-          "pinyin": "dì tú",
-          "gloss": "map",
+          "id": "v_刷",
+          "traditional": "刷",
+          "pinyin": "shuā",
+          "gloss": "to brush; to paint; to daub",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我在捷運站刷悠遊卡進去。",
+            "pinyin": "Wǒ zài jiéyùn zhàn shuā Yōuyóukǎ jìnqù.",
+            "gloss": "I swipe my EasyCard at the MRT station to go in."
+          }
         },
         {
-          "id": "v_帽子",
-          "traditional": "帽子",
-          "pinyin": "mào zi",
-          "gloss": "hat; cap; (fig.) label",
+          "id": "v_頭髮",
+          "traditional": "頭髮",
+          "pinyin": "tóu fa",
+          "gloss": "hair (on the head)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她的頭髮又長又漂亮。",
+            "pinyin": "Tā de tóufa yòu cháng yòu piàoliàng.",
+            "gloss": "Her hair is long and pretty."
+          }
         },
         {
-          "id": "v_街道",
-          "traditional": "街道",
-          "pinyin": "jiē dào",
-          "gloss": "street; subdistrict; residential district",
+          "id": "v_耳朵",
+          "traditional": "耳朵",
+          "pinyin": "ěr duo",
+          "gloss": "ear; handle (on a cup)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的耳朵有點痛,想去看醫生。",
+            "pinyin": "Wǒ de ěrduo yǒudiǎn tòng, xiǎng qù kàn yīshēng.",
+            "gloss": "My ear hurts a bit; I want to see a doctor."
+          }
+        },
+        {
+          "id": "v_鼻子",
+          "traditional": "鼻子",
+          "pinyin": "bí zi",
+          "gloss": "nose",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣太冷,我的鼻子紅紅的。",
+            "pinyin": "Tiānqì tài lěng, wǒ de bízi hónghóng de.",
+            "gloss": "It's too cold, so my nose is all red."
+          }
+        },
+        {
+          "id": "v_刮",
+          "traditional": "刮",
+          "pinyin": "guā",
+          "gloss": "to scrape; to blow; to shave",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面刮風下雨,你要帶傘喔。",
+            "pinyin": "Wàimiàn guā fēng xià yǔ, nǐ yào dài sǎn ō.",
+            "gloss": "It's windy and raining outside — take an umbrella."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_13_3",
-      "title": "詞彙 13–3",
-      "sort_order": 3,
-      "vocab": [
+      "grammar": [
         {
-          "id": "v_遲到",
-          "traditional": "遲到",
-          "pinyin": "chí dào",
-          "gloss": "to arrive late",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "title": "先……再…… (first … then …)",
+          "pattern": "Subject + 先 + V1,再 + V2",
+          "explanation": "Use 先 before the first action and 再 before the second to show a planned order of two actions. Both 先 and 再 go directly in front of the verb, never after it. This pattern is very common for daily routines: 先洗澡,再洗頭髮。It is most natural for plans, instructions and habits.",
+          "contrast": "先……然後…… also means \"first … then …\", but 然後 just narrates what happened next, so it works fine for finished past events (我先洗澡,然後就睡了). 再 points to an action that still has to come, so for a single finished story-like sequence Taiwanese speakers prefer 然後/就; for plans and instructions use 再.",
+          "common_error": "Learners put 再 after the verb or at the end of the clause (✗ 我洗澡再,洗頭髮), or they drop 再 and say only 先洗澡,洗頭髮, which sounds unfinished. Also avoid 再 for a completed past action with 了 — use 然後 or 就 instead.",
+          "examples": [
+            {
+              "hanzi": "我先洗澡,再洗頭髮。",
+              "pinyin": "Wǒ xiān xǐzǎo, zài xǐ tóufa.",
+              "gloss": "I shower first, then wash my hair."
+            },
+            {
+              "hanzi": "你先把鞋子刷乾淨,再出去玩。",
+              "pinyin": "Nǐ xiān bǎ xiézi shuā gānjìng, zài chūqù wán.",
+              "gloss": "Brush your shoes clean first, then go out to play."
+            },
+            {
+              "hanzi": "外面刮風,我們先回家,再打電話給他。",
+              "pinyin": "Wàimiàn guā fēng, wǒmen xiān huí jiā, zài dǎ diànhuà gěi tā.",
+              "gloss": "It's windy out; let's go home first and then call him."
+            }
+          ],
+          "id": "g_hsk3_13_2_1",
+          "hsk_level": 3
         },
         {
-          "id": "v_刻",
-          "traditional": "刻",
-          "pinyin": "kè",
-          "gloss": "quarter (hour); moment; to carve",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_鍛鍊",
-          "traditional": "鍛鍊",
-          "pinyin": "duàn liàn",
-          "gloss": "to toughen; to temper; to engage in physical exercise",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_褲子",
-          "traditional": "褲子",
-          "pinyin": "kù zi",
-          "gloss": "trousers; pants",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_夏",
-          "traditional": "夏",
-          "pinyin": "xià",
-          "gloss": "summer",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_圖書館",
-          "traditional": "圖書館",
-          "pinyin": "tú shū guǎn",
-          "gloss": "library",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_13_2_2",
+          "hsk_level": 3
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "早!你先去洗澡,洗完再吃早餐。",
+          "pinyin": "Zǎo! Nǐ xiān qù xǐzǎo, xǐ wán zài chī zǎocān.",
+          "gloss": "Morning! Go shower first, then eat breakfast."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啦,我的頭髮也要洗嗎?",
+          "pinyin": "Hǎo la, wǒ de tóufa yě yào xǐ ma?",
+          "gloss": "OK, OK. Do I have to wash my hair too?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "要,耳朵跟鼻子也要洗乾淨喔。",
+          "pinyin": "Yào, ěrduo gēn bízi yě yào xǐ gānjìng ō.",
+          "gloss": "Yes, and wash your ears and nose clean too."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "知道了!爸爸呢?",
+          "pinyin": "Zhīdào le! Bàba ne?",
+          "gloss": "Got it! Where's Dad?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "他刷完鞋子就去上班了。外面刮風,你帶傘。",
+          "pinyin": "Tā shuā wán xiézi jiù qù shàngbān le. Wàimiàn guā fēng, nǐ dài sǎn.",
+          "gloss": "He brushed his shoes and left for work. It's windy out — take an umbrella."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我也要快一點,不然會晚到學校。",
+          "pinyin": "Nà wǒ yě yào kuài yìdiǎn, bùrán huì wǎn dào xuéxiào.",
+          "gloss": "Then I'd better hurry, or I'll be late to school."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "早上",
+            "都",
+            "洗澡"
+          ],
+          "pinyin": "Wǒ měi tiān zǎoshàng dōu xǐzǎo.",
+          "gloss": "I take a shower every morning.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "她",
+            "的",
+            "頭髮",
+            "很",
+            "長"
+          ],
+          "pinyin": "Tā de tóufa hěn cháng.",
+          "gloss": "Her hair is very long.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "外面",
+            "在",
+            "刮",
+            "風"
+          ],
+          "pinyin": "Wàimiàn zài guā fēng.",
+          "gloss": "It's windy outside.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "請",
+            "你",
+            "刷",
+            "一下",
+            "鞋子"
+          ],
+          "pinyin": "Qǐng nǐ shuā yíxià xiézi.",
+          "gloss": "Please give the shoes a brush.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "的",
+            "耳朵",
+            "紅",
+            "了"
+          ],
+          "pinyin": "Tā de ěrduo hóng le.",
+          "gloss": "His ears have turned red.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我家的早上",
+        "hanzi": "我家早上很忙。我七點起床,先洗澡,再洗頭髮,把耳朵和鼻子都洗乾淨。妹妹在客廳刷她的白鞋子,媽媽在廚房做早餐。爸爸看了看外面,外面刮風下雨,他說今天別騎腳踏車,搭捷運上班比較安全。",
+        "gloss": "Mornings at my house are busy. I get up at seven, shower first, then wash my hair, and wash my ears and nose clean. My little sister is in the living room brushing her white shoes, and Mum is making breakfast in the kitchen. Dad takes a look outside — it's windy and raining — and says not to ride the bike today; taking the MRT to work is safer."
+      }
     }
   ],
-  "sort_order": 41,
+  "sort_order": 42,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

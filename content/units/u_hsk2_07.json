@@ -1,139 +1,28 @@
 {
   "id": "u_hsk2_07",
-  "title": "HSK 2 詞彙 7",
-  "subtitle": "HSK 2 vocabulary · set 7",
+  "title": "上課與運動",
+  "subtitle": "Classroom life, exams, and getting up early to exercise",
   "hsk_level": 2,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk2_07_1",
-      "title": "詞彙 7–1",
+      "title": "教室與考試",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_旅遊",
-          "traditional": "旅遊",
-          "pinyin": "lǚ yóu",
-          "gloss": "trip; journey; tourism",
+          "id": "v_課",
+          "traditional": "課",
+          "pinyin": "kè",
+          "gloss": "subject; course; class",
           "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_起床",
-          "traditional": "起床",
-          "pinyin": "qǐ chuáng",
-          "gloss": "to get out of bed; to get up",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_題",
-          "traditional": "題",
-          "pinyin": "tí",
-          "gloss": "topic; problem for discussion; exam question",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_唱歌",
-          "traditional": "唱歌",
-          "pinyin": "chàng gē",
-          "gloss": "to sing a song",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_右邊",
-          "traditional": "右邊",
-          "pinyin": "yòu bian",
-          "gloss": "right side; right, to the right",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_雞蛋",
-          "traditional": "雞蛋",
-          "pinyin": "jī dàn",
-          "gloss": "(chicken) egg; hen's egg",
-          "hsk_level": 2,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk2_07_2",
-      "title": "詞彙 7–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_姓",
-          "traditional": "姓",
-          "pinyin": "xìng",
-          "gloss": "family name; surname; to be surnamed",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_游泳",
-          "traditional": "游泳",
-          "pinyin": "yóu yǒng",
-          "gloss": "swimming; to swim",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_跳舞",
-          "traditional": "跳舞",
-          "pinyin": "tiào wǔ",
-          "gloss": "to dance",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_陰",
-          "traditional": "陰",
-          "pinyin": "yīn",
-          "gloss": "overcast (weather); cloudy; shady",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_生病",
-          "traditional": "生病",
-          "pinyin": "shēng bìng",
-          "gloss": "to fall ill",
-          "hsk_level": 2,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_左邊",
-          "traditional": "左邊",
-          "pinyin": "zuǒ bian",
-          "gloss": "left; the left side; to the left of",
-          "hsk_level": 2,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk2_07_3",
-      "title": "詞彙 7–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_公斤",
-          "traditional": "公斤",
-          "pinyin": "gōng jīn",
-          "gloss": "kilogram (kg)",
-          "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天的課很有意思。",
+            "pinyin": "Jīntiān de kè hěn yǒu yìsi.",
+            "gloss": "Today's class was really interesting."
+          }
         },
         {
           "id": "v_教室",
@@ -141,24 +30,243 @@
           "pinyin": "jiào shì",
           "gloss": "classroom",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師已經在教室裡了。",
+            "pinyin": "Lǎoshī yǐjīng zài jiàoshì lǐ le.",
+            "gloss": "The teacher is already in the classroom."
+          }
         },
         {
-          "id": "v_服務生",
-          "traditional": "服務生",
-          "pinyin": "fúwùshēng",
-          "gloss": "waiter; waitress; attendant",
+          "id": "v_題",
+          "traditional": "題",
+          "pinyin": "tí",
+          "gloss": "topic; problem for discussion; exam question",
           "hsk_level": 2,
-          "taiwan_note": "台灣餐廳多說「服務生」。",
-          "prc_form": "服務員"
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這題我不會，你可以教我嗎？",
+            "pinyin": "Zhè tí wǒ bú huì, nǐ kěyǐ jiāo wǒ ma?",
+            "gloss": "I can't do this question — can you teach me?"
+          }
         },
         {
-          "id": "v_手錶",
-          "traditional": "手錶",
-          "pinyin": "shǒu biǎo",
-          "gloss": "wristwatch",
+          "id": "v_回答",
+          "traditional": "回答",
+          "pinyin": "huí dá",
+          "gloss": "to reply; to answer; reply; answer",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師問的問題，我回答錯了。",
+            "pinyin": "Lǎoshī wèn de wèntí, wǒ huídá cuò le.",
+            "gloss": "I answered the teacher's question wrong."
+          }
+        },
+        {
+          "id": "v_考試",
+          "traditional": "考試",
+          "pinyin": "kǎo shì",
+          "gloss": "to take an exam; exam",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下星期一我們要考試。",
+            "pinyin": "Xià xīngqíyī wǒmen yào kǎoshì.",
+            "gloss": "We have an exam next Monday."
+          }
+        },
+        {
+          "id": "v_意思",
+          "traditional": "意思",
+          "pinyin": "yì si",
+          "gloss": "idea; opinion; meaning",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個字是什麼意思？",
+            "pinyin": "Zhège zì shì shénme yìsi?",
+            "gloss": "What does this character mean?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Asking and giving meaning: A 是什麼意思？／A 的意思是 B",
+          "pattern": "A + 是什麼意思？　／　A + 的意思是 + B。",
+          "explanation": "To ask what a word, character or exam question means, put the thing first and say 是什麼意思？ The answer uses 的意思是 plus the explanation. Notice that the thing you ask about always comes at the front of the sentence — Chinese does not start with 什麼 the way English starts with \"what\".",
+          "contrast": "「A 是什麼意思？」asks for the meaning; 「A 怎麼說？」asks how to say something in Chinese. If you already have the Chinese word and want the meaning, use 意思; if you have the idea but not the word, use 怎麼說。",
+          "common_error": "Learners copy English word order and say 什麼是這個字的意思？ or drop the 是 and say 這個字什麼意思是？ Keep it simple: topic first, then 是什麼意思。",
+          "examples": [
+            {
+              "hanzi": "「便當」是什麼意思？",
+              "pinyin": "\"Biàndāng\" shì shénme yìsi?",
+              "gloss": "What does \"biàndāng\" mean?"
+            },
+            {
+              "hanzi": "老師，這題的意思我不懂。",
+              "pinyin": "Lǎoshī, zhè tí de yìsi wǒ bù dǒng.",
+              "gloss": "Teacher, I don't understand what this question means."
+            },
+            {
+              "hanzi": "這個字的意思是「很高興」。",
+              "pinyin": "Zhège zì de yìsi shì \"hěn gāoxìng\".",
+              "gloss": "This character means \"very happy\"."
+            }
+          ],
+          "id": "g_hsk2_07_1_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk2_07_1_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "小明，下午的課在哪個教室？",
+          "pinyin": "Xiǎomíng, xiàwǔ de kè zài nǎge jiàoshì?",
+          "gloss": "Xiaoming, which classroom is the afternoon class in?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我也不知道，我們去問老師吧。",
+          "pinyin": "Wǒ yě bù zhīdào, wǒmen qù wèn lǎoshī ba.",
+          "gloss": "I don't know either — let's go ask the teacher."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好。我還想問她，考試有幾題。",
+          "pinyin": "Hǎo. Wǒ hái xiǎng wèn tā, kǎoshì yǒu jǐ tí.",
+          "gloss": "OK. I also want to ask her how many questions are on the exam."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "老師說有二十題，都要回答。",
+          "pinyin": "Lǎoshī shuō yǒu èrshí tí, dōu yào huídá.",
+          "gloss": "The teacher said there are twenty questions, and you have to answer them all."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那我今天要早點讀書了。",
+          "pinyin": "Nà wǒ jīntiān yào zǎodiǎn dúshū le.",
+          "gloss": "Then I'd better start studying early today."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對，我也有一個字的意思不懂，要問老師。",
+          "pinyin": "Duì, wǒ yě yǒu yí ge zì de yìsi bù dǒng, yào wèn lǎoshī.",
+          "gloss": "Right, and there's a character whose meaning I don't get, so I want to ask the teacher too."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "的",
+            "課",
+            "很",
+            "有意思"
+          ],
+          "pinyin": "Jīntiān de kè hěn yǒu yìsi.",
+          "gloss": "Today's class was very interesting.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "老師",
+            "已經",
+            "到",
+            "教室",
+            "了"
+          ],
+          "pinyin": "Lǎoshī yǐjīng dào jiàoshì le.",
+          "gloss": "The teacher has already arrived at the classroom.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "題",
+            "我",
+            "不",
+            "會",
+            "回答"
+          ],
+          "pinyin": "Zhè tí wǒ bú huì huídá.",
+          "gloss": "I don't know how to answer this question.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "下",
+            "個",
+            "星期",
+            "我們",
+            "有",
+            "考試"
+          ],
+          "pinyin": "Xià ge xīngqí wǒmen yǒu kǎoshì.",
+          "gloss": "We have an exam next week.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "字",
+            "是",
+            "什麼",
+            "意思"
+          ],
+          "pinyin": "Zhège zì shì shénme yìsi?",
+          "gloss": "What does this character mean?",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "考試前的教室",
+        "hanzi": "今天早上八點，我們的教室裡很安靜。老師說，下個星期三要考試，一共有三十題。我問老師：「不懂的題可以問嗎？」老師笑著說：「可以，但是考試的時候不能問別人。」下課後，我和同學去問了很多字的意思。我想，這次考試我會考得很好。",
+        "gloss": "At eight this morning our classroom was very quiet. The teacher said we have an exam next Wednesday, with thirty questions in all. I asked her, \"Can we ask about questions we don't understand?\" She smiled and said, \"Yes, but during the exam you can't ask anyone.\" After class, my classmates and I went and asked about the meanings of a lot of characters. I think I'll do well on this exam."
+      }
+    },
+    {
+      "id": "l_hsk2_07_2",
+      "title": "早起去運動",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_起床",
+          "traditional": "起床",
+          "pinyin": "qǐ chuáng",
+          "gloss": "to get out of bed; to get up",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上六點起床。",
+            "pinyin": "Wǒ měi tiān zǎoshang liù diǎn qǐchuáng.",
+            "gloss": "I get up at six every morning."
+          }
+        },
+        {
+          "id": "v_運動",
+          "traditional": "運動",
+          "pinyin": "yùn dòng",
+          "gloss": "to move; to exercise; sports",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我週末常常去學校運動。",
+            "pinyin": "Wǒ zhōumò chángcháng qù xuéxiào yùndòng.",
+            "gloss": "On weekends I often go to the school to exercise."
+          }
         },
         {
           "id": "v_跑步",
@@ -166,23 +274,216 @@
           "pinyin": "pǎo bù",
           "gloss": "to run; to jog; (military) to march at the double",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他每天晚上都去跑步。",
+            "pinyin": "Tā měi tiān wǎnshang dōu qù pǎobù.",
+            "gloss": "He goes jogging every evening."
+          }
         },
         {
-          "id": "v_西瓜",
-          "traditional": "西瓜",
-          "pinyin": "xī guā",
-          "gloss": "watermelon",
+          "id": "v_游泳",
+          "traditional": "游泳",
+          "pinyin": "yóu yǒng",
+          "gloss": "swimming; to swim",
           "hsk_level": 2,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣熱的時候，我喜歡去游泳。",
+            "pinyin": "Tiānqì rè de shíhòu, wǒ xǐhuān qù yóuyǒng.",
+            "gloss": "When the weather is hot, I like to go swimming."
+          }
+        },
+        {
+          "id": "v_打籃球",
+          "traditional": "打籃球",
+          "pinyin": "dǎ lán qiú",
+          "gloss": "to play basketball",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "弟弟和朋友在學校打籃球。",
+            "pinyin": "Dìdi hàn péngyǒu zài xuéxiào dǎ lánqiú.",
+            "gloss": "My younger brother is playing basketball at school with friends."
+          }
+        },
+        {
+          "id": "v_踢",
+          "traditional": "踢",
+          "pinyin": "tī",
+          "gloss": "to kick; to play (e.g. soccer); (slang) butch (in a lesbian relationship)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們下午去踢球，好不好？",
+            "pinyin": "Wǒmen xiàwǔ qù tī qiú, hǎo bù hǎo?",
+            "gloss": "Let's go play ball (soccer) this afternoon, okay?"
+          }
+        },
+        {
+          "id": "v_慢",
+          "traditional": "慢",
+          "pinyin": "màn",
+          "gloss": "slow",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你走得太慢了，快一點啦！",
+            "pinyin": "Nǐ zǒu de tài màn le, kuài yìdiǎn la!",
+            "gloss": "You're walking too slowly — hurry up!"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Verb + 得 + 很慢／很快 (saying how well or how someone does something)",
+          "pattern": "Subject + (Verb + Object) + Verb + 得 + 很／太 + Adjective",
+          "explanation": "To comment on the manner or level of an action, put 得 right after the verb and follow it with a describing word such as 慢, 快, 好 or 不錯. If the verb already has an object (跑步, 打籃球, 游泳), you repeat the verb part before 得: 他打籃球打得很好. Without an object it is simply 他跑得很快. Negation goes on the adjective, not the verb: 我跑得不快.",
+          "contrast": "Compare 慢慢跑 / 快一點走 (adjective before the verb), which tells someone HOW to do the action — an instruction. 跑得很慢 describes or evaluates how the action actually goes. So 慢慢來 = 'take your time', but 你來得很慢 = 'you came slowly / you were slow getting here'.",
+          "common_error": "Learners drop the repeated verb when there is an object and say things like ✗他打籃球得很好 or ✗我游泳得很慢. You must say 他打籃球打得很好 / 我游泳游得很慢 (or just 他打得很好 / 我游得很慢).",
+          "examples": [
+            {
+              "hanzi": "他跑步跑得很快。",
+              "pinyin": "Tā pǎobù pǎo de hěn kuài.",
+              "gloss": "He runs very fast."
+            },
+            {
+              "hanzi": "我游泳游得很慢。",
+              "pinyin": "Wǒ yóuyǒng yóu de hěn màn.",
+              "gloss": "I swim very slowly."
+            },
+            {
+              "hanzi": "妹妹打籃球打得不錯喔。",
+              "pinyin": "Mèimei dǎ lánqiú dǎ de búcuò o.",
+              "gloss": "My little sister plays basketball pretty well, you know."
+            }
+          ],
+          "id": "g_hsk2_07_2_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk2_07_2_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "你今天怎麼這麼早？",
+          "pinyin": "Nǐ jīntiān zěnme zhème zǎo?",
+          "gloss": "How come you're so early today?"
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "我五點就起床了，去跑步。",
+          "pinyin": "Wǒ wǔ diǎn jiù qǐchuáng le, qù pǎobù.",
+          "gloss": "I got up at five and went for a run."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "真的喔？可是我跑得很慢耶。",
+          "pinyin": "Zhēnde o? Kěshì wǒ pǎo de hěn màn ye.",
+          "gloss": "Really? But I run really slowly."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "沒關係，慢慢跑也是運動啊。",
+          "pinyin": "Méi guānxi, mànman pǎo yě shì yùndòng a.",
+          "gloss": "It doesn't matter — running slowly is exercise too."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那明天早上我們一起去踢球，好不好？",
+          "pinyin": "Nà míngtiān zǎoshang wǒmen yìqǐ qù tī qiú, hǎo bù hǎo?",
+          "gloss": "Then shall we go play ball together tomorrow morning?"
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "好啊！踢完球再去游泳。",
+          "pinyin": "Hǎo a! Tī wán qiú zài qù yóuyǒng.",
+          "gloss": "Sure! After the game we can go swimming."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "早上",
+            "六點",
+            "起床"
+          ],
+          "pinyin": "Wǒ měi tiān zǎoshang liù diǎn qǐchuáng.",
+          "gloss": "I get up at six every morning.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "爸爸",
+            "週末",
+            "都",
+            "去",
+            "跑步"
+          ],
+          "pinyin": "Bàba zhōumò dōu qù pǎobù.",
+          "gloss": "Dad goes jogging every weekend.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "天氣",
+            "熱",
+            "的",
+            "時候",
+            "我",
+            "想",
+            "去",
+            "游泳"
+          ],
+          "pinyin": "Tiānqì rè de shíhòu wǒ xiǎng qù yóuyǒng.",
+          "gloss": "When it's hot I want to go swimming.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "我們",
+            "下午",
+            "去",
+            "打籃球",
+            "好不好"
+          ],
+          "pinyin": "Wǒmen xiàwǔ qù dǎ lánqiú hǎo bù hǎo?",
+          "gloss": "Shall we go play basketball this afternoon?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "跑步",
+            "跑",
+            "得",
+            "很",
+            "慢"
+          ],
+          "pinyin": "Dìdi pǎobù pǎo de hěn màn.",
+          "gloss": "My little brother runs very slowly.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "早起去運動",
+        "hanzi": "我每天早上六點起床，騎腳踏車去附近的學校運動。我跑步跑得很慢，可是我很喜歡。星期六早上，我和弟弟一起打籃球，下午去游泳。星期天，我們常常在學校踢球。朋友說：慢慢來，天天運動最好。",
+        "gloss": "I get up at six every morning and ride my bike to the school nearby to exercise. I run very slowly, but I really enjoy it. On Saturday mornings my little brother and I play basketball together, and in the afternoon we go swimming. On Sundays we often play ball at the school. My friend says: take it slow — exercising every day is best."
+      }
     }
   ],
-  "sort_order": 27,
+  "sort_order": 28,
   "tocfl_level": "Level 1",
   "tocfl_band": "A"
 }

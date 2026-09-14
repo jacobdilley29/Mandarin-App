@@ -1,171 +1,67 @@
 {
   "id": "u_hsk3_06",
-  "title": "HSK 3 詞彙 6",
-  "subtitle": "HSK 3 vocabulary · set 6",
+  "title": "身體與健康習慣",
+  "subtitle": "Your body, feeling unwell, and everyday habits",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_06_1",
-      "title": "詞彙 6–1",
+      "title": "身體部位",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_米",
-          "traditional": "米",
-          "pinyin": "mǐ",
-          "gloss": "rice; meter (classifier)",
+          "id": "v_臉",
+          "traditional": "臉",
+          "pinyin": "liǎn",
+          "gloss": "face",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上都會洗臉。",
+            "pinyin": "Wǒ měi tiān zǎoshang dōu huì xǐ liǎn.",
+            "gloss": "I wash my face every morning."
+          }
         },
         {
-          "id": "v_容易",
-          "traditional": "容易",
-          "pinyin": "róng yì",
-          "gloss": "easy; straightforward; likely; liable to; apt to",
+          "id": "v_口",
+          "traditional": "口",
+          "pinyin": "kǒu",
+          "gloss": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我只喝了一口茶。",
+            "pinyin": "Wǒ zhǐ hē le yī kǒu chá.",
+            "gloss": "I only drank one mouthful of tea."
+          }
         },
         {
-          "id": "v_明白",
-          "traditional": "明白",
-          "pinyin": "míng bai",
-          "gloss": "clear; obvious; unequivocal",
+          "id": "v_腳",
+          "traditional": "腳",
+          "pinyin": "jiǎo",
+          "gloss": "foot; leg (of an animal or an object); base (of an object)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "走太多路，我的腳好痛。",
+            "pinyin": "Zǒu tài duō lù, wǒ de jiǎo hǎo tòng.",
+            "gloss": "I walked too much, my feet really hurt."
+          }
         },
         {
-          "id": "v_根據",
-          "traditional": "根據",
-          "pinyin": "gēn jù",
-          "gloss": "according to; based on; basis",
+          "id": "v_腿",
+          "traditional": "腿",
+          "pinyin": "tuǐ",
+          "gloss": "leg",
           "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_輛",
-          "traditional": "輛",
-          "pinyin": "liàng",
-          "gloss": "classifier for vehicles",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_簡單",
-          "traditional": "簡單",
-          "pinyin": "jiǎn dān",
-          "gloss": "simple; not complicated",
-          "hsk_level": 3,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_06_2",
-      "title": "詞彙 6–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_半",
-          "traditional": "半",
-          "pinyin": "bàn",
-          "gloss": "half; semi-; incomplete",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_願意",
-          "traditional": "願意",
-          "pinyin": "yuàn yì",
-          "gloss": "to wish; to want; ready",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_音樂",
-          "traditional": "音樂",
-          "pinyin": "yīn yuè",
-          "gloss": "music",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_包",
-          "traditional": "包",
-          "pinyin": "bāo",
-          "gloss": "to cover; to wrap; to hold",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_樓",
-          "traditional": "樓",
-          "pinyin": "lóu",
-          "gloss": "house with more than 1 story; storied building; floor",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_清楚",
-          "traditional": "清楚",
-          "pinyin": "qīng chu",
-          "gloss": "clear; distinct; to understand thoroughly",
-          "hsk_level": 3,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_06_3",
-      "title": "詞彙 6–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_照片",
-          "traditional": "照片",
-          "pinyin": "zhào piàn",
-          "gloss": "photograph; picture",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_故事",
-          "traditional": "故事",
-          "pinyin": "gù shì",
-          "gloss": "old practice",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_一般",
-          "traditional": "一般",
-          "pinyin": "yī bān",
-          "gloss": "same; ordinary; so-so",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_可愛",
-          "traditional": "可愛",
-          "pinyin": "kě ài",
-          "gloss": "adorable; cute; lovely",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_新聞",
-          "traditional": "新聞",
-          "pinyin": "xīn wén",
-          "gloss": "news",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的腿很長，跑得很快。",
+            "pinyin": "Tā de tuǐ hěn cháng, pǎo de hěn kuài.",
+            "gloss": "His legs are long, and he runs fast."
+          }
         },
         {
           "id": "v_聲音",
@@ -173,15 +69,650 @@
           "pinyin": "shēng yīn",
           "gloss": "voice; sound",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師的聲音很好聽。",
+            "pinyin": "Lǎoshī de shēngyīn hěn hǎotīng.",
+            "gloss": "The teacher's voice is very nice."
+          }
+        },
+        {
+          "id": "v_健康",
+          "traditional": "健康",
+          "pinyin": "jiàn kāng",
+          "gloss": "health; healthy",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "多運動對身體健康很好。",
+            "pinyin": "Duō yùndòng duì shēntǐ jiànkāng hěn hǎo.",
+            "gloss": "Exercising a lot is good for your health."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Topic–comment with body parts：A + 身體部位 + 很 + 形容詞",
+          "pattern": "人 + 身體部位 + 很/好 + 形容詞",
+          "explanation": "In Mandarin you can put a person first as the topic, then a body part as the small subject, then the description: 我腳很痛 (literally 'me — feet — very hurt'). The adjective needs a degree word like 很 or 好 in front of it; you do not use 是 before an adjective. This pattern is the most natural way to talk about how a part of your body feels or looks.",
+          "contrast": "我的腳很痛 (with 的) is also correct, but it names one thing — 'my foot' — as the subject, and sounds more like pointing out a fact. 我腳很痛 keeps 我 as the topic and describes my condition, which is what people say when they are complaining or telling a doctor. Use 的 when you contrast whose body part it is (我的腳不痛，他的腳很痛).",
+          "common_error": "Learners say 我的腳是很痛 or 他腿是長的, inserting 是 before the adjective. With adjectives, drop 是 and use 很/好: 我腳很痛、他腿很長.",
+          "examples": [
+            {
+              "hanzi": "我腳很痛，今天不能跑步。",
+              "pinyin": "Wǒ jiǎo hěn tòng, jīntiān bù néng pǎobù.",
+              "gloss": "My feet hurt; I can't go running today."
+            },
+            {
+              "hanzi": "你臉好紅，是不是發燒了？",
+              "pinyin": "Nǐ liǎn hǎo hóng, shì bú shì fāshāo le?",
+              "gloss": "Your face is really red — do you have a fever?"
+            },
+            {
+              "hanzi": "他聲音很大，我在門外都聽得到。",
+              "pinyin": "Tā shēngyīn hěn dà, wǒ zài mén wài dōu tīng de dào.",
+              "gloss": "His voice is loud; I can hear it even outside the door."
+            }
+          ],
+          "id": "g_hsk3_06_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_06_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "病人",
+          "hanzi": "醫生，我的腿和腳都很痛。",
+          "pinyin": "Yīshēng, wǒ de tuǐ hé jiǎo dōu hěn tòng.",
+          "gloss": "Doctor, both my legs and my feet hurt."
+        },
+        {
+          "speaker": "醫生",
+          "hanzi": "你是不是走太多路了？",
+          "pinyin": "Nǐ shì bú shì zǒu tài duō lù le?",
+          "gloss": "Did you walk too much?"
+        },
+        {
+          "speaker": "病人",
+          "hanzi": "對啊，我週末走了很遠。",
+          "pinyin": "Duì a, wǒ zhōumò zǒu le hěn yuǎn.",
+          "gloss": "Yes, I walked a long way on the weekend."
+        },
+        {
+          "speaker": "醫生",
+          "hanzi": "你臉色不太好，聲音也很小，最近睡得好嗎？",
+          "pinyin": "Nǐ liǎnsè bú tài hǎo, shēngyīn yě hěn xiǎo, zuìjìn shuì de hǎo ma?",
+          "gloss": "You don't look well and your voice is weak. Have you been sleeping well lately?"
+        },
+        {
+          "speaker": "病人",
+          "hanzi": "沒有，我常常很晚睡。",
+          "pinyin": "Méiyǒu, wǒ chángcháng hěn wǎn shuì.",
+          "gloss": "No, I often go to bed very late."
+        },
+        {
+          "speaker": "醫生",
+          "hanzi": "早點睡，多運動，身體才會健康。",
+          "pinyin": "Zǎodiǎn shuì, duō yùndòng, shēntǐ cái huì jiànkāng.",
+          "gloss": "Sleep earlier and exercise more — only then will you be healthy."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "的",
+            "聲音",
+            "很",
+            "好聽"
+          ],
+          "pinyin": "Tā de shēngyīn hěn hǎotīng.",
+          "gloss": "His voice sounds very nice.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "早上",
+            "都",
+            "要",
+            "洗",
+            "臉"
+          ],
+          "pinyin": "Wǒ zǎoshang dōu yào xǐ liǎn.",
+          "gloss": "I have to wash my face every morning.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "走",
+            "太",
+            "多",
+            "路",
+            "，",
+            "腳",
+            "會",
+            "痛"
+          ],
+          "pinyin": "Zǒu tài duō lù, jiǎo huì tòng.",
+          "gloss": "If you walk too much, your feet will hurt.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "多",
+            "吃",
+            "水果",
+            "對",
+            "健康",
+            "很",
+            "好"
+          ],
+          "pinyin": "Duō chī shuǐguǒ duì jiànkāng hěn hǎo.",
+          "gloss": "Eating more fruit is good for your health.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "妹妹",
+            "的",
+            "腿",
+            "很",
+            "長"
+          ],
+          "pinyin": "Wǒ mèimei de tuǐ hěn cháng.",
+          "gloss": "My younger sister's legs are very long.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我的健康週末",
+        "hanzi": "我最近身體不太好，臉白白的，聲音也很小。醫生說我睡得太晚，又不運動。所以這個週末我沒有在家玩電腦，早上就騎腳踏車出去，跑了三十分鐘。回家的時候腿有點痛，不過我喝了一大口冰水，覺得很舒服。醫生說得對，多動一動，身體才會健康。",
+        "gloss": "My health hasn't been great lately — my face is pale and my voice is weak. The doctor said I go to bed too late and don't exercise. So this weekend I didn't stay home playing on the computer; in the morning I rode my bike out and ran for thirty minutes. My legs ached a bit when I got home, but I drank a big mouthful of ice water and felt great. The doctor was right: move around more and your body will be healthy."
+      }
+    },
+    {
+      "id": "l_hsk3_06_2",
+      "title": "突然不舒服",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_檢查",
+          "traditional": "檢查",
+          "pinyin": "jiǎn chá",
+          "gloss": "inspection; to examine; to inspect",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "醫生說要幫我檢查眼睛。",
+            "pinyin": "Yīshēng shuō yào bāng wǒ jiǎnchá yǎnjīng.",
+            "gloss": "The doctor said he wants to examine my eyes for me."
+          }
+        },
+        {
+          "id": "v_突然",
+          "traditional": "突然",
+          "pinyin": "tū rán",
+          "gloss": "sudden; abrupt; unexpected",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他突然說他不去了。",
+            "pinyin": "Tā túrán shuō tā bú qù le.",
+            "gloss": "He suddenly said he wasn't going anymore."
+          }
+        },
+        {
+          "id": "v_小心",
+          "traditional": "小心",
+          "pinyin": "xiǎo xīn",
+          "gloss": "to be careful; to take care",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面在下雨，騎腳踏車要小心一點。",
+            "pinyin": "Wàimiàn zài xiàyǔ, qí jiǎotàchē yào xiǎoxīn yìdiǎn.",
+            "gloss": "It's raining outside; be careful riding your bike."
+          }
+        },
+        {
+          "id": "v_餓",
+          "traditional": "餓",
+          "pinyin": "è",
+          "gloss": "to be hungry; hungry; to starve (sb)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我有點餓，我們去吃麵吧。",
+            "pinyin": "Wǒ yǒudiǎn è, wǒmen qù chī miàn ba.",
+            "gloss": "I'm a bit hungry — let's go eat noodles."
+          }
+        },
+        {
+          "id": "v_哭",
+          "traditional": "哭",
+          "pinyin": "kū",
+          "gloss": "to cry; to weep",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那個小孩為什麼在哭？",
+            "pinyin": "Nàge xiǎohái wèishéme zài kū?",
+            "gloss": "Why is that child crying?"
+          }
+        },
+        {
+          "id": "v_馬上",
+          "traditional": "馬上",
+          "pinyin": "mǎ shàng",
+          "gloss": "at once; right away; immediately",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我馬上就到，你別擔心。",
+            "pinyin": "Wǒ mǎshàng jiù dào, nǐ bié dānxīn.",
+            "gloss": "I'll be there right away, don't worry."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "突然 + Verb: something happens unexpectedly",
+          "pattern": "Subject + 突然 + Verb / Adjective (＋了)",
+          "explanation": "突然 is an adverb, so it goes after the subject and right before the verb or adjective. It tells you the action or change came with no warning: 我突然覺得不舒服 (I suddenly felt unwell). It very often describes something that has already happened, so 了 is common at the end. 突然 can also work as an adjective with 很: 這件事很突然。",
+          "contrast": "馬上 also stands before the verb, but it means 'right away' and looks forward to something about to happen (我馬上去). 突然 looks at something that already happened without warning. So: 他突然生病了，我馬上帶他去醫院。Use 突然 for the surprise, 馬上 for the quick reaction.",
+          "common_error": "Learners put 突然 at the end of the sentence, like a English 'suddenly' tag: ✗ 他不舒服突然。It must come before the verb: ✓ 他突然不舒服。Another common slip is using 突然 to mean 'immediately' — for that you need 馬上.",
+          "examples": [
+            {
+              "hanzi": "她昨天晚上突然發燒，我們馬上帶她去醫院。",
+              "pinyin": "Tā zuótiān wǎnshang túrán fāshāo, wǒmen mǎshàng dài tā qù yīyuàn.",
+              "gloss": "She suddenly ran a fever last night, so we took her to the hospital right away."
+            },
+            {
+              "hanzi": "妹妹突然哭了，我不知道為什麼。",
+              "pinyin": "Mèimei túrán kū le, wǒ bù zhīdào wèishéme.",
+              "gloss": "My little sister suddenly started crying; I don't know why."
+            },
+            {
+              "hanzi": "外面突然下大雨，我沒帶傘。",
+              "pinyin": "Wàimiàn túrán xià dàyǔ, wǒ méi dài sǎn.",
+              "gloss": "It suddenly poured outside and I didn't bring an umbrella."
+            }
+          ],
+          "id": "g_hsk3_06_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "小明，你怎麼了？臉這麼白。",
+          "pinyin": "Xiǎomíng, nǐ zěnme le? Liǎn zhème bái.",
+          "gloss": "Xiaoming, what's wrong? Your face is so pale."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我突然覺得頭很痛，很不舒服。",
+          "pinyin": "Wǒ túrán juéde tóu hěn tòng, hěn bù shūfú.",
+          "gloss": "I suddenly have a bad headache; I feel really unwell."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "我馬上帶你去醫院檢查。",
+          "pinyin": "Wǒ mǎshàng dài nǐ qù yīyuàn jiǎnchá.",
+          "gloss": "I'll take you to the hospital for a check-up right away."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "可能是我太餓了，早上沒吃早餐。",
+          "pinyin": "Kěnéng shì wǒ tài è le, zǎoshang méi chī zǎocān.",
+          "gloss": "Maybe I'm just too hungry — I didn't eat breakfast this morning."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "那先吃點東西。下次要小心，別不吃早餐。",
+          "pinyin": "Nà xiān chī diǎn dōngxi. Xià cì yào xiǎoxīn, bié bù chī zǎocān.",
+          "gloss": "Then eat something first. Be careful next time — don't skip breakfast."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我知道了，謝謝媽媽。",
+          "pinyin": "Hǎo, wǒ zhīdào le, xièxie māma.",
+          "gloss": "OK, I get it. Thanks, Mom."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "突然",
+            "覺得",
+            "不",
+            "舒服"
+          ],
+          "pinyin": "Wǒ túrán juéde bù shūfú.",
+          "gloss": "I suddenly feel unwell.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "醫生",
+            "馬上",
+            "幫",
+            "他",
+            "檢查",
+            "身體"
+          ],
+          "pinyin": "Yīshēng mǎshàng bāng tā jiǎnchá shēntǐ.",
+          "gloss": "The doctor examined his body right away.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "餓",
+            "了",
+            "就",
+            "開始",
+            "哭"
+          ],
+          "pinyin": "Dìdi è le jiù kāishǐ kū.",
+          "gloss": "When my little brother got hungry, he started crying.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "開車",
+            "要",
+            "小心",
+            "一點"
+          ],
+          "pinyin": "Nǐ kāichē yào xiǎoxīn yìdiǎn.",
+          "gloss": "You should be a bit more careful when you drive.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "馬上",
+            "就",
+            "回",
+            "家"
+          ],
+          "pinyin": "Wǒ mǎshàng jiù huí jiā.",
+          "gloss": "I'm going home right away.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "突然不舒服",
+        "hanzi": "昨天早上我很餓，只喝了一杯咖啡就去上班。中午的時候，我突然覺得頭很痛，身體也不舒服，臉都白了。同事馬上幫我叫車，帶我去醫院。醫生檢查以後說，我沒有生病，只是沒吃飯。他讓我小心一點，每天要吃早餐。回家的路上，我聽到旁邊有小孩在哭，我也想哭。",
+        "gloss": "Yesterday morning I was very hungry, but I only drank a cup of coffee before going to work. At noon I suddenly got a bad headache and felt unwell all over; my face went pale. A coworker called a taxi for me right away and took me to the hospital. After examining me, the doctor said I wasn't sick — I just hadn't eaten. He told me to be more careful and to eat breakfast every day. On the way home I heard a child crying next to me, and I felt like crying too."
+      }
+    },
+    {
+      "id": "l_hsk3_06_3",
+      "title": "生活習慣",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_習慣",
+          "traditional": "習慣",
+          "pinyin": "xí guàn",
+          "gloss": "habit; custom; usual practice",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我已經習慣搭捷運上班了。",
+            "pinyin": "Wǒ yǐjīng xíguàn dā jiéyùn shàngbān le.",
+            "gloss": "I'm already used to taking the MRT to work."
+          }
+        },
+        {
+          "id": "v_經常",
+          "traditional": "經常",
+          "pinyin": "jīng cháng",
+          "gloss": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他經常騎腳踏車去學校。",
+            "pinyin": "Tā jīngcháng qí jiǎotàchē qù xuéxiào.",
+            "gloss": "He frequently rides his bike to school."
+          }
+        },
+        {
+          "id": "v_總是",
+          "traditional": "總是",
+          "pinyin": "zǒng shì",
+          "gloss": "always",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我媽媽總是叫我多喝水。",
+            "pinyin": "Wǒ māma zǒngshì jiào wǒ duō hē shuǐ.",
+            "gloss": "My mom always tells me to drink more water."
+          }
+        },
+        {
+          "id": "v_一般",
+          "traditional": "一般",
+          "pinyin": "yī bān",
+          "gloss": "same; ordinary; so-so",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "一般來說，週末我都在家休息。",
+            "pinyin": "Yībān láishuō, zhōumò wǒ dōu zài jiā xiūxí.",
+            "gloss": "Generally speaking, I rest at home on weekends."
+          }
+        },
+        {
+          "id": "v_容易",
+          "traditional": "容易",
+          "pinyin": "róng yì",
+          "gloss": "easy; straightforward; likely; liable to; apt to",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這課的漢字很容易，我都懂。",
+            "pinyin": "Zhè kè de Hànzì hěn róngyì, wǒ dōu dǒng.",
+            "gloss": "The characters in this lesson are easy; I understand them all."
+          }
+        },
+        {
+          "id": "v_作用",
+          "traditional": "作用",
+          "pinyin": "zuò yòng",
+          "gloss": "to act on; to affect; action",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "多喝熱水對感冒很有作用。",
+            "pinyin": "Duō hē rè shuǐ duì gǎnmào hěn yǒu zuòyòng.",
+            "gloss": "Drinking more hot water really helps with a cold."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Frequency adverbs 經常 / 總是 (subject + adverb + verb)",
+          "pattern": "主語 + 經常／總是 + 動詞（＋賓語）",
+          "explanation": "經常 and 總是 are adverbs, so they go after the subject and right before the verb, never at the end of the sentence. 經常 means something happens often (but not every single time); 總是 means it happens every time, with no exception, and often carries a small feeling of complaint or surprise. You can open a sentence with 一般來說 (generally speaking) and then use these adverbs: 一般來說，我經常六點起床。",
+          "contrast": "經常 vs 總是: use 經常 when the action is frequent but has exceptions (他經常加班 = he often works late), and 總是 when it is every single time (他總是加班 = he always works late, without fail). For the negative, Taiwanese speakers say 不常, not 不經常 or 不總是.",
+          "common_error": "Learners put the adverb after the verb or at the end ('我起床總是很早' / '我吃便當經常'), or add 很 in front ('很經常'). These adverbs already carry the frequency meaning, so no 很 is needed, and they must sit directly before the verb.",
+          "examples": [
+            {
+              "hanzi": "他經常在那家店買便當。",
+              "pinyin": "Tā jīngcháng zài nà jiā diàn mǎi biàndāng.",
+              "gloss": "He often buys a lunchbox at that shop."
+            },
+            {
+              "hanzi": "我弟弟總是很晚睡，早上起不來。",
+              "pinyin": "Wǒ dìdi zǒngshì hěn wǎn shuì, zǎoshang qǐ bù lái.",
+              "gloss": "My younger brother always goes to bed late and can't get up in the morning."
+            },
+            {
+              "hanzi": "一般來說，我經常六點半起床。",
+              "pinyin": "Yībān láishuō, wǒ jīngcháng liù diǎn bàn qǐchuáng.",
+              "gloss": "Generally speaking, I usually get up at six thirty."
+            }
+          ],
+          "id": "g_hsk3_06_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "對……有作用 (to have an effect on ...)",
+          "pattern": "A + 對 + B + 有／沒有 + 作用",
+          "explanation": "Use 對……有作用 to say that one thing has a real effect on another, most often about health, study or habits: 運動對身體很有作用。You can add 很 or 沒 before 有 to strengthen or negate it.",
+          "contrast": "對……有作用 vs 對……有興趣: 作用 is about an effect on something, 興趣 is about a person's interest in something. The subject of 有作用 is a thing or activity, not a person.",
+          "common_error": "Learners say '運動很有作用身體' — the 對 phrase must come before 有作用, not after it.",
+          "examples": [
+            {
+              "hanzi": "早睡早起對身體很有作用。",
+              "pinyin": "Zǎo shuì zǎo qǐ duì shēntǐ hěn yǒu zuòyòng.",
+              "gloss": "Going to bed early and getting up early is really good for your health."
+            },
+            {
+              "hanzi": "這個藥對我沒有作用。",
+              "pinyin": "Zhège yào duì wǒ méiyǒu zuòyòng.",
+              "gloss": "This medicine has no effect on me."
+            },
+            {
+              "hanzi": "每天讀報對學中文很有作用。",
+              "pinyin": "Měitiān dú bào duì xué Zhōngwén hěn yǒu zuòyòng.",
+              "gloss": "Reading the paper every day really helps with learning Chinese."
+            }
+          ],
+          "id": "g_hsk3_06_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你早上經常吃什麼？",
+          "pinyin": "Nǐ zǎoshang jīngcháng chī shénme?",
+          "gloss": "What do you usually eat in the morning?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我一般都在早餐店買麵包和牛奶。",
+          "pinyin": "Wǒ yībān dōu zài zǎocān diàn mǎi miànbāo hé niúnǎi.",
+          "gloss": "I generally buy bread and milk at the breakfast shop."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "我總是睡到很晚，沒時間吃早餐。",
+          "pinyin": "Wǒ zǒngshì shuì dào hěn wǎn, méi shíjiān chī zǎocān.",
+          "gloss": "I always sleep in late and have no time for breakfast."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "這個習慣不太好，早餐對身體很有作用。",
+          "pinyin": "Zhège xíguàn bú tài hǎo, zǎocān duì shēntǐ hěn yǒu zuòyòng.",
+          "gloss": "That habit isn't great — breakfast really does your body good."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "你說得對，早一點起床其實也不難。",
+          "pinyin": "Nǐ shuō de duì, zǎo yīdiǎn qǐchuáng qíshí yě bù nán.",
+          "gloss": "You're right; getting up a bit earlier isn't actually hard."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "對啊，習慣以後就很容易了。",
+          "pinyin": "Duì a, xíguàn yǐhòu jiù hěn róngyì le.",
+          "gloss": "Right — once you get used to it, it's easy."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "習慣",
+            "每天",
+            "走路",
+            "上班"
+          ],
+          "pinyin": "Wǒ xíguàn měitiān zǒulù shàngbān.",
+          "gloss": "I'm used to walking to work every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "經常",
+            "去",
+            "夜市",
+            "吃",
+            "麵"
+          ],
+          "pinyin": "Tā jīngcháng qù yèshì chī miàn.",
+          "gloss": "He often goes to the night market to eat noodles.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "總是",
+            "這麼",
+            "忙",
+            "嗎"
+          ],
+          "pinyin": "Nǐ zǒngshì zhème máng ma?",
+          "gloss": "Are you always this busy?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "題",
+            "很",
+            "容易",
+            "，",
+            "我",
+            "會",
+            "答"
+          ],
+          "pinyin": "Zhè tí hěn róngyì, wǒ huì dá.",
+          "gloss": "This question is easy; I can answer it.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "多",
+            "運動",
+            "對",
+            "身體",
+            "很",
+            "有",
+            "作用"
+          ],
+          "pinyin": "Duō yùndòng duì shēntǐ hěn yǒu zuòyòng.",
+          "gloss": "Exercising more is really good for your body.",
+          "cloze_index": 6
+        }
+      ],
+      "passage": {
+        "title": "我的習慣",
+        "hanzi": "我叫小明，住在台北。我的習慣很一般。我經常六點半起床，先喝一杯水，再走路到捷運站上班。中午我總是在公司附近的小店買便當。下班以後，我會去跑步，因為運動對身體很有作用。這樣的習慣很容易，也讓我覺得很健康。",
+        "gloss": "My name is Xiaoming and I live in Taipei. My habits are pretty ordinary. I usually get up at six thirty, first drink a glass of water, then walk to the MRT station to go to work. At noon I always buy a lunchbox at the little shop near my company. After work I go running, because exercise really does the body good. Habits like these are easy to keep, and they make me feel very healthy."
+      }
     }
   ],
-  "sort_order": 34,
+  "sort_order": 35,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

@@ -1,97 +1,259 @@
 {
   "id": "u_hsk3_02",
-  "title": "HSK 3 詞彙 2",
-  "subtitle": "HSK 3 vocabulary · set 2",
+  "title": "做選擇與安排時間",
+  "subtitle": "Choosing, rules you must follow, and sequencing your day",
   "hsk_level": 3,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_02_1",
-      "title": "詞彙 2–1",
+      "title": "選哪一個？",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_種",
-          "traditional": "種",
-          "pinyin": "zhǒng",
-          "gloss": "seed; species; kind",
+          "id": "v_決定",
+          "traditional": "決定",
+          "pinyin": "jué dìng",
+          "gloss": "to decide (to do something); to resolve; decision",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們決定週末去台北玩。",
+            "pinyin": "Wǒmen juédìng zhōumò qù Táiběi wán.",
+            "gloss": "We've decided to go to Taipei this weekend."
+          }
         },
         {
-          "id": "v_發現",
-          "traditional": "發現",
-          "pinyin": "fā xiàn",
-          "gloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
+          "id": "v_選擇",
+          "traditional": "選擇",
+          "pinyin": "xuǎn zé",
+          "gloss": "to select; to pick; choice",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的飲料選擇很多。",
+            "pinyin": "Zhè jiā diàn de yǐnliào xuǎnzé hěn duō.",
+            "gloss": "This shop has a lot of drink choices."
+          }
         },
         {
-          "id": "v_一定",
-          "traditional": "一定",
-          "pinyin": "yī dìng",
-          "gloss": "surely; certainly; necessarily",
+          "id": "v_或者",
+          "traditional": "或者",
+          "pinyin": "huò zhě",
+          "gloss": "or; possibly; maybe; perhaps",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們可以搭捷運或者騎腳踏車去。",
+            "pinyin": "Wǒmen kěyǐ dā jiéyùn huòzhě qí jiǎotàchē qù.",
+            "gloss": "We can go by MRT or by bike."
+          }
         },
         {
-          "id": "v_一直",
-          "traditional": "一直",
-          "pinyin": "yī zhí",
-          "gloss": "straight (in a straight line); continuously; always; all the way through",
+          "id": "v_還是",
+          "traditional": "還是",
+          "pinyin": "hái shi",
+          "gloss": "still (as before); had better; unexpectedly",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你要喝咖啡還是茶？",
+            "pinyin": "Nǐ yào hē kāfēi háishì chá?",
+            "gloss": "Do you want coffee or tea?"
+          }
         },
         {
-          "id": "v_為了",
-          "traditional": "為了",
-          "pinyin": "wèi le",
-          "gloss": "for; for the purpose of; in order to",
+          "id": "v_機會",
+          "traditional": "機會",
+          "pinyin": "jī huì",
+          "gloss": "opportunity; chance; occasion",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這是一個很好的機會，你要試試看。",
+            "pinyin": "Zhè shì yí ge hěn hǎo de jīhuì, nǐ yào shìshì kàn.",
+            "gloss": "This is a great opportunity; you should give it a try."
+          }
         },
         {
-          "id": "v_一樣",
-          "traditional": "一樣",
-          "pinyin": "yī yàng",
-          "gloss": "same; like; equal to",
+          "id": "v_需要",
+          "traditional": "需要",
+          "pinyin": "xū yào",
+          "gloss": "to need; to want; to demand; to require; needs",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我需要一點時間決定。",
+            "pinyin": "Wǒ xūyào yìdiǎn shíjiān juédìng.",
+            "gloss": "I need a little time to decide."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "還是 in questions, 或者 in statements",
+          "pattern": "A 還是 B？（問句） ／ A 或者 B（說明）",
+          "explanation": "When you ask someone to pick between two things, use 還是: 你要吃麵還是吃飯？ When you are not asking a question, but just saying that either one is possible, use 或者: 我們搭捷運或者走路都可以。 So 還是 belongs to choice questions, and 或者 belongs to statements about open possibilities. Both can follow words like 決定, 選擇 and 需要: 我還沒決定要去看電影或者去逛夜市。",
+          "contrast": "還是 vs 或者: both mean \"or\", but the sentence type decides. If there is a question mark and you want the other person to choose one, use 還是. If you are telling, not asking, use 或者. (Note 還是 also means \"still\", as in 我還是不知道。)",
+          "common_error": "Learners say 你要喝咖啡或者茶？ using 或者 in a choice question. In a question offering two options it must be 還是: 你要喝咖啡還是茶？",
+          "examples": [
+            {
+              "hanzi": "你想吃麵還是吃飯？",
+              "pinyin": "Nǐ xiǎng chī miàn háishì chī fàn?",
+              "gloss": "Do you want noodles or rice?"
+            },
+            {
+              "hanzi": "週末我想去逛書店或者看電影。",
+              "pinyin": "Zhōumò wǒ xiǎng qù guàng shūdiàn huòzhě kàn diànyǐng.",
+              "gloss": "This weekend I'd like to browse a bookstore or watch a movie."
+            },
+            {
+              "hanzi": "你要現在決定還是明天告訴我？",
+              "pinyin": "Nǐ yào xiànzài juédìng háishì míngtiān gàosù wǒ?",
+              "gloss": "Do you want to decide now or tell me tomorrow?"
+            }
+          ],
+          "id": "g_hsk3_02_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "週末我們要做什麼？你決定吧。",
+          "pinyin": "Zhōumò wǒmen yào zuò shénme? Nǐ juédìng ba.",
+          "gloss": "What are we doing this weekend? You decide."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我還沒決定。去看電影或者去逛夜市，你選一個。",
+          "pinyin": "Wǒ hái méi juédìng. Qù kàn diànyǐng huòzhě qù guàng yèshì, nǐ xuǎn yí ge.",
+          "gloss": "I haven't decided yet. Go see a movie or walk around the night market — you pick one."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "我想去夜市，那裡吃的選擇很多。",
+          "pinyin": "Wǒ xiǎng qù yèshì, nàlǐ chī de xuǎnzé hěn duō.",
+          "gloss": "I want the night market; there are lots of food choices there."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊。那我們搭捷運還是騎腳踏車？",
+          "pinyin": "Hǎo a. Nà wǒmen dā jiéyùn háishì qí jiǎotàchē?",
+          "gloss": "OK. So are we taking the MRT or riding bikes?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "搭捷運吧，快一點。我需要帶悠遊卡嗎？",
+          "pinyin": "Dā jiéyùn ba, kuài yìdiǎn. Wǒ xūyào dài Yōuyóukǎ ma?",
+          "gloss": "Let's take the MRT, it's faster. Do I need to bring my EasyCard?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "要啊，不然不能進站喔。",
+          "pinyin": "Yào a, bùrán bù néng jìn zhàn ō.",
+          "gloss": "Yes, otherwise you can't get into the station."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "需要",
+            "一點",
+            "時間",
+            "決定",
+            "。"
+          ],
+          "pinyin": "Wǒ xūyào yìdiǎn shíjiān juédìng.",
+          "gloss": "I need a little time to decide.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "要",
+            "搭",
+            "捷運",
+            "還是",
+            "騎",
+            "腳踏車",
+            "？"
+          ],
+          "pinyin": "Nǐ yào dā jiéyùn háishì qí jiǎotàchē?",
+          "gloss": "Are you taking the MRT or riding a bike?",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這家",
+            "餐廳",
+            "的",
+            "菜",
+            "選擇",
+            "很",
+            "多",
+            "。"
+          ],
+          "pinyin": "Zhè jiā cāntīng de cài xuǎnzé hěn duō.",
+          "gloss": "This restaurant has a lot of choices of dishes.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "喝",
+            "茶",
+            "或者",
+            "咖啡",
+            "都",
+            "可以",
+            "。"
+          ],
+          "pinyin": "Wǒ hē chá huòzhě kāfēi dōu kěyǐ.",
+          "gloss": "Tea or coffee, either is fine for me.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "是",
+            "一個",
+            "很",
+            "好",
+            "的",
+            "機會",
+            "。"
+          ],
+          "pinyin": "Zhè shì yí ge hěn hǎo de jīhuì.",
+          "gloss": "This is a very good opportunity.",
+          "cloze_index": 6
+        }
+      ],
+      "passage": {
+        "title": "選哪一個？",
+        "hanzi": "我很不會做決定。昨天下班以後，朋友問我要喝珍珠奶茶還是咖啡，我想了半天。店裡的飲料選擇太多了，我真的需要時間。朋友笑著說：「珍珠奶茶或者咖啡都很好喝，你別想太多。這也是一個學習決定的機會啊！」最後我決定買一杯珍珠奶茶，也給朋友買了咖啡。",
+        "gloss": "I'm really bad at making decisions. Yesterday after work, a friend asked me whether I wanted bubble tea or coffee, and I thought about it forever. The shop had too many drink choices — I really needed time. My friend laughed and said, \"Bubble tea or coffee, both taste great. Don't overthink it. This is also a chance to practise deciding!\" In the end I decided to buy a bubble tea, and I bought my friend a coffee too."
+      }
     },
     {
       "id": "l_hsk3_02_2",
-      "title": "詞彙 2–2",
+      "title": "一定要嗎？規定與要求",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_世界",
-          "traditional": "世界",
-          "pinyin": "shì jiè",
-          "gloss": "world",
+          "id": "v_應該",
+          "traditional": "應該",
+          "pinyin": "yīng gāi",
+          "gloss": "ought to; should; must",
           "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_而且",
-          "traditional": "而且",
-          "pinyin": "ér qiě",
-          "gloss": "(not only ...) but also; moreover; in addition",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_重要",
-          "traditional": "重要",
-          "pinyin": "zhòng yào",
-          "gloss": "important; significant; major",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你應該早一點睡，明天要上課。",
+            "pinyin": "Nǐ yīnggāi zǎo yìdiǎn shuì, míngtiān yào shàngkè.",
+            "gloss": "You should sleep a bit earlier; you have class tomorrow."
+          }
         },
         {
           "id": "v_必須",
@@ -99,89 +261,467 @@
           "pinyin": "bì xū",
           "gloss": "to have to; must; compulsory",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "上課的時候必須關手機。",
+            "pinyin": "Shàngkè de shíhòu bìxū guān shǒujī.",
+            "gloss": "During class you must turn off your phone."
+          }
         },
         {
-          "id": "v_地方",
-          "traditional": "地方",
-          "pinyin": "dì fang",
-          "gloss": "area; place; space",
+          "id": "v_要求",
+          "traditional": "要求",
+          "pinyin": "yāo qiú",
+          "gloss": "to request; to require; requirement",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆要求我們七點到公司。",
+            "pinyin": "Lǎobǎn yāoqiú wǒmen qī diǎn dào gōngsī.",
+            "gloss": "The boss requires us to get to the company at seven."
+          }
         },
         {
-          "id": "v_其他",
-          "traditional": "其他",
-          "pinyin": "qí tā",
-          "gloss": "other; (sth or sb) else; the rest",
+          "id": "v_一定",
+          "traditional": "一定",
+          "pinyin": "yī dìng",
+          "gloss": "surely; certainly; necessarily",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末人很多，你一定要早一點去。",
+            "pinyin": "Zhōumò rén hěn duō, nǐ yídìng yào zǎo yìdiǎn qù.",
+            "gloss": "There are lots of people on the weekend; you definitely have to go earlier."
+          }
+        },
+        {
+          "id": "v_只",
+          "traditional": "只",
+          "pinyin": "zhǐ",
+          "gloss": "only; merely; just",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我只有一百塊，不能買那個。",
+            "pinyin": "Wǒ zhǐ yǒu yìbǎi kuài, bù néng mǎi nàge.",
+            "gloss": "I only have a hundred dollars, I can't buy that."
+          }
+        },
+        {
+          "id": "v_當然",
+          "traditional": "當然",
+          "pinyin": "dāng rán",
+          "gloss": "only natural; as it should be; certainly",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "「可以幫我嗎？」「當然可以啊！」",
+            "pinyin": "“Kěyǐ bāng wǒ ma?” “Dāngrán kěyǐ a!”",
+            "gloss": "\"Can you help me?\" \"Of course!\""
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "應該／必須／一定要：three levels of \"must\"",
+          "pattern": "Subject + 應該／必須／一定要 + Verb Phrase",
+          "explanation": "應該 is advice or expectation — \"ought to, should\" (the speaker thinks it is the right thing, but you can still say no). 必須 is a rule or hard requirement, common in written notices and formal speech (school, company, 捷運). 一定要 is the everyday spoken way to say \"really must\", used for strong advice or emphasis; it is far more common in daily Taiwan conversation than 必須. 一定 can also stand alone before a verb to mean \"surely\": 他一定會來。",
+          "contrast": "必須 vs 一定要: both mean \"must\", but 必須 states an outside rule (郵局的要求), while 一定要 expresses the speaker's own insistence or emphasis. If a sign or a boss imposes it, use 必須; if you are urging a friend, use 一定要. 應該 is weaker than both — it leaves room for choice.",
+          "common_error": "Learners say 必須要 (doubling the \"must\") and negate it as 不必須. 必須 already contains \"must\", so drop the 要; and for the negative use 不用 or 不必 (你不用寫電話), never 不必須.",
+          "examples": [
+            {
+              "hanzi": "你感冒了，應該去看醫生。",
+              "pinyin": "Nǐ gǎnmào le, yīnggāi qù kàn yīshēng.",
+              "gloss": "You've caught a cold; you should go see a doctor."
+            },
+            {
+              "hanzi": "在書店裡必須安靜一點。",
+              "pinyin": "Zài shūdiàn lǐ bìxū ānjìng yìdiǎn.",
+              "gloss": "Inside the bookstore you must be a bit quiet."
+            },
+            {
+              "hanzi": "明天有考試，你一定要準備好。",
+              "pinyin": "Míngtiān yǒu kǎoshì, nǐ yídìng yào zhǔnbèi hǎo.",
+              "gloss": "There's a test tomorrow; you really have to be well prepared."
+            }
+          ],
+          "id": "g_hsk3_02_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_02_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "您好，我想寄這個包裹到台北。",
+          "pinyin": "Nín hǎo, wǒ xiǎng jì zhège bāoguǒ dào Táiběi.",
+          "gloss": "Hello, I'd like to send this package to Taipei."
+        },
+        {
+          "speaker": "郵局小姐",
+          "hanzi": "沒問題，可是您必須先寫名字和電話。",
+          "pinyin": "Méi wèntí, kěshì nín bìxū xiān xiě míngzì hé diànhuà.",
+          "gloss": "No problem, but you have to write your name and phone number first."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "一定要寫電話嗎？我只想快一點寄出去。",
+          "pinyin": "Yídìng yào xiě diànhuà ma? Wǒ zhǐ xiǎng kuài yìdiǎn jì chūqù.",
+          "gloss": "Do I really have to write a phone number? I just want to send it off quickly."
+        },
+        {
+          "speaker": "郵局小姐",
+          "hanzi": "當然要喔，這是郵局的要求。",
+          "pinyin": "Dāngrán yào ō, zhè shì yóujú de yāoqiú.",
+          "gloss": "Of course you do — it's the post office's requirement."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好，那我應該寫在哪裡？",
+          "pinyin": "Hǎo, nà wǒ yīnggāi xiě zài nǎlǐ?",
+          "gloss": "OK, then where should I write it?"
+        },
+        {
+          "speaker": "郵局小姐",
+          "hanzi": "寫在這張紙的右邊就可以了。",
+          "pinyin": "Xiě zài zhè zhāng zhǐ de yòubiān jiù kěyǐ le.",
+          "gloss": "Just write it on the right side of this piece of paper."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "你",
+            "應該",
+            "多",
+            "喝",
+            "水",
+            "。"
+          ],
+          "pinyin": "Nǐ yīnggāi duō hē shuǐ.",
+          "gloss": "You should drink more water.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "上課",
+            "的",
+            "時候",
+            "必須",
+            "關",
+            "手機",
+            "。"
+          ],
+          "pinyin": "Shàngkè de shíhòu bìxū guān shǒujī.",
+          "gloss": "During class you must turn off your phone.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "老闆",
+            "要求",
+            "我們",
+            "每天",
+            "八點",
+            "到",
+            "公司",
+            "。"
+          ],
+          "pinyin": "Lǎobǎn yāoqiú wǒmen měitiān bā diǎn dào gōngsī.",
+          "gloss": "The boss requires us to arrive at the company at eight every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "只",
+            "想",
+            "喝",
+            "一",
+            "杯",
+            "咖啡",
+            "。"
+          ],
+          "pinyin": "Wǒ zhǐ xiǎng hē yì bēi kāfēi.",
+          "gloss": "I only want to drink one cup of coffee.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "當然",
+            "可以",
+            "跟",
+            "我們",
+            "一起",
+            "去",
+            "。"
+          ],
+          "pinyin": "Nǐ dāngrán kěyǐ gēn wǒmen yìqǐ qù.",
+          "gloss": "Of course you can go with us.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "捷運上的要求",
+        "hanzi": "在台北搭捷運，有一件事一定要記得：車上不能吃東西，也不能喝飲料。有朋友問我，只喝水可以嗎？當然不行。這是捷運公司的要求，每個人都必須做到。我第一次聽到的時候有點不懂，現在我很喜歡這個要求，因為車上真的很安靜、很舒服。",
+        "gloss": "When you take the MRT in Taipei, there's one thing you absolutely must remember: you can't eat on the train, and you can't drink beverages either. A friend asked me, is just drinking water OK? Of course not. This is the MRT company's rule, and everyone has to follow it. The first time I heard it I didn't quite get it, but now I really like this rule, because the trains are truly quiet and comfortable."
+      }
     },
     {
       "id": "l_hsk3_02_3",
-      "title": "詞彙 2–3",
+      "title": "先…才…：時間的前後",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_比賽",
-          "traditional": "比賽",
-          "pinyin": "bǐ sài",
-          "gloss": "competition (sports etc); match; to compete",
+          "id": "v_先",
+          "traditional": "先",
+          "pinyin": "xiān",
+          "gloss": "early; prior; former",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你先坐,我去買飲料。",
+            "pinyin": "Nǐ xiān zuò, wǒ qù mǎi yǐnliào.",
+            "gloss": "You sit down first, I'll go buy drinks."
+          }
         },
         {
-          "id": "v_然後",
-          "traditional": "然後",
-          "pinyin": "rán hòu",
-          "gloss": "then; after that; afterwards",
+          "id": "v_才",
+          "traditional": "才",
+          "pinyin": "cái",
+          "gloss": "ability; talent; sb of a certain type; a capable individual",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他每天九點才起床。",
+            "pinyin": "Tā měi tiān jiǔ diǎn cái qǐchuáng.",
+            "gloss": "He doesn't get up until nine every day."
+          }
         },
         {
-          "id": "v_擔心",
-          "traditional": "擔心",
-          "pinyin": "dān xīn",
-          "gloss": "anxious; worried; uneasy",
+          "id": "v_又",
+          "traditional": "又",
+          "pinyin": "yòu",
+          "gloss": "(once) again; also; both... and...",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天又下雨了,真累。",
+            "pinyin": "Jīntiān yòu xià yǔ le, zhēn lèi.",
+            "gloss": "It's raining again today, so tiring."
+          }
         },
         {
-          "id": "v_條",
-          "traditional": "條",
-          "pinyin": "tiáo",
-          "gloss": "strip; item; article",
+          "id": "v_一直",
+          "traditional": "一直",
+          "pinyin": "yī zhí",
+          "gloss": "straight (in a straight line); continuously; always; all the way through",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我一直很喜歡吃牛肉麵。",
+            "pinyin": "Wǒ yìzhí hěn xǐhuān chī niúròumiàn.",
+            "gloss": "I've always really liked beef noodles."
+          }
         },
         {
-          "id": "v_放",
-          "traditional": "放",
-          "pinyin": "fàng",
-          "gloss": "to put; to place; to release",
+          "id": "v_以後",
+          "traditional": "以後",
+          "pinyin": "yǐ hòu",
+          "gloss": "after; later; afterwards",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下課以後我要去游泳。",
+            "pinyin": "Xiàkè yǐhòu wǒ yào qù yóuyǒng.",
+            "gloss": "After class I'm going swimming."
+          }
         },
         {
-          "id": "v_拿",
-          "traditional": "拿",
-          "pinyin": "ná",
-          "gloss": "to hold; to seize; to catch",
+          "id": "v_以前",
+          "traditional": "以前",
+          "pinyin": "yǐ qián",
+          "gloss": "before; formerly; previous",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我以前住在台南邊的小鎮嗎",
+            "pinyin": "Wǒ yǐqián zhù zài Táiběi.",
+            "gloss": "I used to live in Taipei."
+          }
+        },
+        {
+          "id": "v_最近",
+          "traditional": "最近",
+          "pinyin": "zuì jìn",
+          "gloss": "recently; soon; nearest",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你最近怎麼樣?忙嗎?",
+            "pinyin": "Nǐ zuìjìn zěnmeyàng? Máng ma?",
+            "gloss": "How have you been lately? Busy?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "先…才…: A must happen before B",
+          "pattern": "Subject + 先 + V1 + ,(然後) + 才 + V2",
+          "explanation": "先 marks the first action and 才 marks the action that can only happen after it. 才 goes right before the second verb, never at the end, and the 才-clause takes no 了. Use this pattern when the first step is a condition for the second: 'only after A, then B'.",
+          "contrast": "先…再… is the neutral way to say 'first A, then B' (simple order, often a plan or suggestion: 我們先吃飯,再去看電影). 先…才… adds the feeling that B is impossible or late without A (要先刷卡才能進去). If you are just listing steps, use 再; if A is a requirement, use 才.",
+          "common_error": "Learners put 了 in the first clause and treat 才 like 就 or 然後: 我先吃飯了才去 is wrong. Also they often say 我先做完課才 or leave 才 at the end of the sentence. Keep it as 先 + V1,才 + V2, with no 了 after the 才 verb.",
+          "examples": [
+            {
+              "hanzi": "我們先吃飯,才去看電影。",
+              "pinyin": "Wǒmen xiān chī fàn, cái qù kàn diànyǐng.",
+              "gloss": "We'll eat first, and only then go see the movie."
+            },
+            {
+              "hanzi": "你要先讀完書才能玩電腦。",
+              "pinyin": "Nǐ yào xiān dú wán shū cái néng wán diànnǎo.",
+              "gloss": "You have to finish studying before you can play on the computer."
+            },
+            {
+              "hanzi": "搭捷運要先刷卡才能進去。",
+              "pinyin": "Dā jiéyùn yào xiān shuā kǎ cái néng jìnqù.",
+              "gloss": "To take the MRT you have to swipe your card before you can get in."
+            }
+          ],
+          "id": "g_hsk3_02_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_02_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你最近怎麼樣?我一直沒看到你。",
+          "pinyin": "Nǐ zuìjìn zěnmeyàng? Wǒ yìzhí méi kàndào nǐ.",
+          "gloss": "How have you been lately? I haven't seen you at all."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我最近很忙,常常晚上九點才回家。",
+          "pinyin": "Wǒ zuìjìn hěn máng, chángcháng wǎnshàng jiǔ diǎn cái huí jiā.",
+          "gloss": "I've been really busy — I often don't get home until nine at night."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太累了吧!以前你都六點就下班。",
+          "pinyin": "Tài lèi le ba! Yǐqián nǐ dōu liù diǎn jiù xiàbān.",
+          "gloss": "That's too tiring! You used to get off work at six."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "對啊,今天又要加班。我先走了喔。",
+          "pinyin": "Duì a, jīntiān yòu yào jiābān. Wǒ xiān zǒu le ō.",
+          "gloss": "Yeah, and today I have to work late again. I'm heading off first."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "好,下班以後打電話給我,我們去吃麵。",
+          "pinyin": "Hǎo, xiàbān yǐhòu dǎ diànhuà gěi wǒ, wǒmen qù chī miàn.",
+          "gloss": "OK, call me after work and we'll go eat noodles."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "沒問題!",
+          "pinyin": "Méi wèntí!",
+          "gloss": "No problem!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "以前",
+            "住",
+            "在",
+            "台北"
+          ],
+          "pinyin": "Wǒ yǐqián zhù zài Táiběi.",
+          "gloss": "I used to live in Taipei.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "最近",
+            "很",
+            "忙",
+            "嗎"
+          ],
+          "pinyin": "Tā zuìjìn hěn máng ma?",
+          "gloss": "Has he been busy lately?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我們",
+            "先",
+            "吃飯",
+            "才",
+            "去",
+            "逛",
+            "夜市"
+          ],
+          "pinyin": "Wǒmen xiān chī fàn cái qù guàng yèshì.",
+          "gloss": "We'll eat first and only then go stroll the night market.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "今天",
+            "又",
+            "下雨",
+            "了"
+          ],
+          "pinyin": "Jīntiān yòu xià yǔ le.",
+          "gloss": "It's raining again today.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "下課",
+            "以後",
+            "我",
+            "要",
+            "去",
+            "游泳"
+          ],
+          "pinyin": "Xiàkè yǐhòu wǒ yào qù yóuyǒng.",
+          "gloss": "After class I'm going swimming.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我的早上",
+        "hanzi": "我以前一直不喜歡早起,常常十點才起床,起來又慢慢吃早餐。最近我開始運動,每天早上先去跑步,回家以後才吃早餐。我發現這樣一天的時間長了很多,身體也比以前舒服。以後我還想學游泳。",
+        "gloss": "I never used to like getting up early. I often wouldn't get out of bed until ten, and then I'd eat breakfast slowly. Recently I started exercising: every morning I go running first, and only after I get home do I eat breakfast. I've found that this way the day feels much longer, and my body feels better than before. In the future I also want to learn to swim."
+      }
     }
   ],
-  "sort_order": 30,
+  "sort_order": 31,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

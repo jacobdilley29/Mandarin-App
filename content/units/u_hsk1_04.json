@@ -1,81 +1,41 @@
 {
   "id": "u_hsk1_04",
-  "title": "HSK 1 詞彙 4",
-  "subtitle": "HSK 1 vocabulary · set 4",
+  "title": "日期與一天的作息",
+  "subtitle": "Dates and your daily routine",
   "hsk_level": 1,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk1_04_1",
-      "title": "詞彙 4–1",
+      "title": "今天幾月幾日",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_塊",
-          "traditional": "塊",
-          "pinyin": "kuài",
-          "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
+          "id": "v_月",
+          "traditional": "月",
+          "pinyin": "yuè",
+          "gloss": "moon; month; monthly",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "八月的台灣太熱了。",
+            "pinyin": "Bā yuè de Táiwān tài rè le.",
+            "gloss": "Taiwan is way too hot in August."
+          }
         },
         {
-          "id": "v_謝謝",
-          "traditional": "謝謝",
-          "pinyin": "xiè xie",
-          "gloss": "to thank; thanks; thank you",
+          "id": "v_日",
+          "traditional": "日",
+          "pinyin": "rì",
+          "gloss": "sun; day; date, day of the month",
           "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_多少",
-          "traditional": "多少",
-          "pinyin": "duō shǎo",
-          "gloss": "number; amount; somewhat",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_媽媽",
-          "traditional": "媽媽",
-          "pinyin": "mā ma",
-          "gloss": "mama; mommy; mother",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_少",
-          "traditional": "少",
-          "pinyin": "shǎo",
-          "gloss": "few; less; to lack",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_電影",
-          "traditional": "電影",
-          "pinyin": "diàn yǐng",
-          "gloss": "movie; film",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_04_2",
-      "title": "詞彙 4–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_哪",
-          "traditional": "哪",
-          "pinyin": "nǎ",
-          "gloss": "how; which",
-          "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天是九月一日，開學了。",
+            "pinyin": "Jīntiān shì jiǔ yuè yī rì, kāixué le.",
+            "gloss": "Today is September 1st — school has started."
+          }
         },
         {
           "id": "v_昨天",
@@ -83,102 +43,429 @@
           "pinyin": "zuó tiān",
           "gloss": "yesterday",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "昨天下大雨，我沒騎機車。",
+            "pinyin": "Zuótiān xià dà yǔ, wǒ méi qí jīchē.",
+            "gloss": "It rained hard yesterday, so I didn't ride my scooter."
+          }
         },
         {
-          "id": "v_五",
-          "traditional": "五",
-          "pinyin": "wǔ",
-          "gloss": "five; 5",
+          "id": "v_現在",
+          "traditional": "現在",
+          "pinyin": "xiàn zài",
+          "gloss": "now; at present; at the moment",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "現在幾點？我的手機沒電了。",
+            "pinyin": "Xiànzài jǐ diǎn? Wǒ de shǒujī méi diàn le.",
+            "gloss": "What time is it now? My phone is out of battery."
+          }
         },
         {
-          "id": "v_先生",
-          "traditional": "先生",
-          "pinyin": "xiānshēng",
-          "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+          "id": "v_時候",
+          "traditional": "時候",
+          "pinyin": "shíhòu",
+          "gloss": "time; length of time; moment",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你什麼時候下班？",
+            "pinyin": "Nǐ shénme shíhòu xiàbān?",
+            "gloss": "What time do you get off work?"
+          }
         },
         {
-          "id": "v_醫院",
-          "traditional": "醫院",
-          "pinyin": "yī yuàn",
-          "gloss": "hospital",
+          "id": "v_分鐘",
+          "traditional": "分鐘",
+          "pinyin": "fēn zhōng",
+          "gloss": "minute",
           "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_些",
-          "traditional": "些",
-          "pinyin": "xiē",
-          "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
-          "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家附近有捷運站，走路五分鐘。",
+            "pinyin": "Wǒ jiā fùjìn yǒu jiéyùn zhàn, zǒulù wǔ fēnzhōng.",
+            "gloss": "There's an MRT station near my place, five minutes on foot."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Asking and saying the date: 今天(是)幾月幾日",
+          "pattern": "今天／昨天／明天 ＋（是）＋ ＿月＿日（號）",
+          "explanation": "Chinese dates go from big to small: month first, then the day. To ask, put 幾 in the slot you don't know: 幾月幾日. The answer just fills those slots in: 六月三日. 是 is often kept in the full sentence (今天是六月三日) but can be dropped in speech (今天六月三日). Time words like 今天、昨天 sit at the front of the sentence, not after the verb.",
+          "contrast": "日 vs 號: they mean the same thing, but 日 is the written/formal form you see on forms, signs and in the news, while 號 is what people actually say out loud in Taiwan (今天幾月幾號?). Which one you pick depends on writing vs speaking, not on meaning. Also note dates always take 幾, never 多少.",
+          "common_error": "Learners copy the English order and say things like 三日六月 for 'the 3rd of June'. In Chinese the month must come first: 六月三日. A second common slip is using 多少 ('how many') to ask the date — 今天多少月? is wrong; it has to be 今天幾月幾日/號?",
+          "examples": [
+            {
+              "hanzi": "今天是六月三日，星期五。",
+              "pinyin": "Jīntiān shì liù yuè sān rì, xīngqíwǔ.",
+              "gloss": "Today is June 3rd, Friday."
+            },
+            {
+              "hanzi": "昨天是幾月幾日？",
+              "pinyin": "Zuótiān shì jǐ yuè jǐ rì?",
+              "gloss": "What date was yesterday?"
+            },
+            {
+              "hanzi": "我的生日是十二月二十五日。",
+              "pinyin": "Wǒ de shēngrì shì shí'èr yuè èrshíwǔ rì.",
+              "gloss": "My birthday is December 25th."
+            }
+          ],
+          "id": "g_hsk1_04_1_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk1_04_1_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "老闆，現在幾點了？",
+          "pinyin": "Lǎobǎn, xiànzài jǐ diǎn le?",
+          "gloss": "Boss, what time is it now?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "現在九點十分。",
+          "pinyin": "Xiànzài jiǔ diǎn shí fēn.",
+          "gloss": "It's nine ten."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "今天是幾月幾日？我的手機昨天沒電。",
+          "pinyin": "Jīntiān shì jǐ yuè jǐ rì? Wǒ de shǒujī zuótiān méi diàn.",
+          "gloss": "What's the date today? My phone died yesterday."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "六月三日，星期五。",
+          "pinyin": "Liù yuè sān rì, xīngqíwǔ.",
+          "gloss": "June 3rd, Friday."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "謝謝！我的早餐什麼時候好？",
+          "pinyin": "Xièxie! Wǒ de zǎocān shénme shíhòu hǎo?",
+          "gloss": "Thanks! When will my breakfast be ready?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "再五分鐘，你坐一下。",
+          "pinyin": "Zài wǔ fēnzhōng, nǐ zuò yíxià.",
+          "gloss": "Five more minutes — have a seat."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "現在",
+            "是",
+            "早上",
+            "九點",
+            "半",
+            "。"
+          ],
+          "pinyin": "Xiànzài shì zǎoshang jiǔ diǎn bàn.",
+          "gloss": "It's half past nine in the morning now.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "昨天",
+            "是",
+            "星期日",
+            "嗎",
+            "？"
+          ],
+          "pinyin": "Zuótiān shì xīngqírì ma?",
+          "gloss": "Was yesterday Sunday?",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "生日",
+            "是",
+            "八月",
+            "二十日",
+            "。"
+          ],
+          "pinyin": "Wǒ de shēngrì shì bā yuè èrshí rì.",
+          "gloss": "My birthday is August 20th.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "什麼",
+            "時候",
+            "下班",
+            "？"
+          ],
+          "pinyin": "Nǐ shénme shíhòu xiàbān?",
+          "gloss": "When do you get off work?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "老闆",
+            "說",
+            "再",
+            "十",
+            "分鐘",
+            "開店",
+            "。"
+          ],
+          "pinyin": "Lǎobǎn shuō zài shí fēnzhōng kāi diàn.",
+          "gloss": "The owner says the shop opens in ten more minutes.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "我的週末",
+        "hanzi": "昨天是十月九日，星期六。早上天氣很好，我騎腳踏車十分鐘，在學校附近的早餐店吃早餐。老闆認識我，他說：「今天是你的生日嗎？」我說：「不是，我的生日是十月十日。」下午我和朋友搭捷運逛書店，晚上在夜市吃臭豆腐。現在十一點半了，明天我們再一起逛逛。",
+        "gloss": "Yesterday was October 9th, a Saturday. The weather was lovely in the morning, so I rode my bike for ten minutes and had breakfast at the breakfast shop near my school. The owner knows me, and he asked, \"Is today your birthday?\" I said, \"No, my birthday is October 10th.\" In the afternoon my friend and I took the MRT and browsed a bookstore, and in the evening we ate stinky tofu at the night market. It's half past eleven now; tomorrow we'll go out walking around together again."
+      }
     },
     {
-      "id": "l_hsk1_04_3",
-      "title": "詞彙 4–3",
-      "sort_order": 3,
+      "id": "l_hsk1_04_2",
+      "title": "上午和中午",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_二",
-          "traditional": "二",
-          "pinyin": "èr",
-          "gloss": "two; 2; (Beijing dialect) stupid",
+          "id": "v_上午",
+          "traditional": "上午",
+          "pinyin": "shàng wǔ",
+          "gloss": "morning",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天上午我要去學校。",
+            "pinyin": "Jīntiān shàngwǔ wǒ yào qù xuéxiào.",
+            "gloss": "This morning I'm going to school."
+          }
         },
         {
-          "id": "v_兒子",
-          "traditional": "兒子",
-          "pinyin": "ér zi",
-          "gloss": "son",
+          "id": "v_中午",
+          "traditional": "中午",
+          "pinyin": "zhōng wǔ",
+          "gloss": "noon; midday",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "中午我們去吃便當,好不好?",
+            "pinyin": "Zhōngwǔ wǒmen qù chī biàndāng, hǎo bù hǎo?",
+            "gloss": "Let's go eat a lunchbox at noon, OK?"
+          }
         },
         {
-          "id": "v_中國",
-          "traditional": "中國",
-          "pinyin": "Zhōng guó",
-          "gloss": "China",
+          "id": "v_睡覺",
+          "traditional": "睡覺",
+          "pinyin": "shuì jiào",
+          "gloss": "to go to bed; to sleep",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天晚上十一點半睡覺。",
+            "pinyin": "Wǒ zuótiān wǎnshàng shíyī diǎn bàn shuìjiào.",
+            "gloss": "I went to bed at 11:30 last night."
+          }
         },
         {
-          "id": "v_電視",
-          "traditional": "電視",
-          "pinyin": "diàn shì",
-          "gloss": "television; TV",
+          "id": "v_做",
+          "traditional": "做",
+          "pinyin": "zuò",
+          "gloss": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你中午要做什麼?",
+            "pinyin": "Nǐ zhōngwǔ yào zuò shénme?",
+            "gloss": "What are you going to do at noon?"
+          }
         },
         {
-          "id": "v_學習",
-          "traditional": "學習",
-          "pinyin": "xué xí",
-          "gloss": "to learn; to study",
+          "id": "v_了",
+          "traditional": "了",
+          "pinyin": "le",
+          "gloss": "to finish; to achieve; variant of 了",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我吃飽了,謝謝!",
+            "pinyin": "Wǒ chī bǎo le, xièxie!",
+            "gloss": "I'm full, thanks!"
+          }
         },
         {
-          "id": "v_六",
-          "traditional": "六",
-          "pinyin": "liù",
-          "gloss": "six; 6",
+          "id": "v_回",
+          "traditional": "回",
+          "pinyin": "huí",
+          "gloss": "to circle; to go back; to turn around",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "中午太熱了,我回家吃飯。",
+            "pinyin": "Zhōngwǔ tài rè le, wǒ huí jiā chī fàn.",
+            "gloss": "It's too hot at noon, so I'm going home to eat."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "V + 了 for a completed action",
+          "pattern": "Subject + (time) + Verb + 了 (+ Object)",
+          "explanation": "Put 了 right after the verb to say the action is already finished. The time word (上午, 中午, 昨天晚上) goes before the verb, not after. If the object has a number, 了 stays between the verb and the object: 我吃了一個便當. With a simple object or no object, 了 can sit at the end: 他回家了。",
+          "contrast": "了 (already done) vs 要 (going to do). 今天上午我做了作業 = it's finished; 今天上午我要做作業 = it hasn't happened yet. The time word alone does not tell you — 了 or 要 does.",
+          "common_error": "Learners say 我沒吃了飯. When you negate with 沒, you must drop 了: 我沒吃飯。Also avoid putting the time word after the verb (吃了中午 is wrong; say 中午吃了).",
+          "examples": [
+            {
+              "hanzi": "我中午吃了一個便當。",
+              "pinyin": "Wǒ zhōngwǔ chī le yī ge biàndāng.",
+              "gloss": "I ate a lunchbox at noon."
+            },
+            {
+              "hanzi": "他上午回家了。",
+              "pinyin": "Tā shàngwǔ huí jiā le.",
+              "gloss": "He went home this morning."
+            },
+            {
+              "hanzi": "我昨天晚上十點就睡覺了。",
+              "pinyin": "Wǒ zuótiān wǎnshàng shí diǎn jiù shuìjiào le.",
+              "gloss": "I went to bed at ten o'clock last night."
+            }
+          ],
+          "id": "g_hsk1_04_2_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "小明,你上午做了什麼?",
+          "pinyin": "Xiǎo Míng, nǐ shàngwǔ zuò le shénme?",
+          "gloss": "Xiao Ming, what did you do this morning?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我上午去郵局寄了一個包裹。",
+          "pinyin": "Wǒ shàngwǔ qù yóujú jì le yī ge bāoguǒ.",
+          "gloss": "I went to the post office this morning and mailed a package."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "中午你要吃什麼?我們去吃便當吧!",
+          "pinyin": "Zhōngwǔ nǐ yào chī shénme? Wǒmen qù chī biàndāng ba!",
+          "gloss": "What are you eating at noon? Let's go get lunchboxes!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊,吃飽了我要回家睡覺,我昨天晚上睡得很少。",
+          "pinyin": "Hǎo a, chī bǎo le wǒ yào huí jiā shuìjiào, wǒ zuótiān wǎnshàng shuì de hěn shǎo.",
+          "gloss": "Sure. After I'm full I want to go home and sleep — I slept very little last night."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "太晚睡覺不好喔!",
+          "pinyin": "Tài wǎn shuìjiào bù hǎo ō!",
+          "gloss": "Going to bed too late isn't good, you know!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "謝謝你,我中午回家睡一下。",
+          "pinyin": "Xièxie nǐ, wǒ zhōngwǔ huí jiā shuì yīxià.",
+          "gloss": "Thanks — I'll go home and nap a bit at noon."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "上午",
+            "我",
+            "去",
+            "郵局",
+            "寄",
+            "信"
+          ],
+          "pinyin": "Jīntiān shàngwǔ wǒ qù yóujú jì xìn.",
+          "gloss": "This morning I went to the post office to mail a letter.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "中午",
+            "太",
+            "熱",
+            "了",
+            "我",
+            "就",
+            "回",
+            "家",
+            "睡覺"
+          ],
+          "pinyin": "Zhōngwǔ tài rè le, wǒ jiù huí jiā shuìjiào.",
+          "gloss": "It was too hot at noon, so I went home to sleep.",
+          "cloze_index": 8
+        },
+        {
+          "tokens": [
+            "你",
+            "上午",
+            "做",
+            "了",
+            "什麼"
+          ],
+          "pinyin": "Nǐ shàngwǔ zuò le shénme?",
+          "gloss": "What did you do this morning?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "中午",
+            "回",
+            "家",
+            "吃",
+            "飯"
+          ],
+          "pinyin": "Wǒ zhōngwǔ huí jiā chī fàn.",
+          "gloss": "I go home to eat at noon.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "昨天",
+            "晚上",
+            "很",
+            "早",
+            "就",
+            "睡覺",
+            "了"
+          ],
+          "pinyin": "Tā zuótiān wǎnshàng hěn zǎo jiù shuìjiào le.",
+          "gloss": "He went to bed very early last night.",
+          "cloze_index": 7
+        }
+      ],
+      "passage": {
+        "title": "我的週末上午",
+        "hanzi": "週末上午,我七點半就起來了,騎腳踏車去附近的早餐店,買了一個包子和一杯紅茶。回家我看了一本新書。中午太熱了,我沒去外面吃,在家做了麵。吃飽了,我就回房間睡覺。睡了一個鐘頭,下午我要搭捷運去逛書店,晚上十一點半睡覺。",
+        "gloss": "On weekend mornings I got up at 7:30, rode my bike to the breakfast shop nearby, and bought a steamed bun and a cup of black tea. Back home, I read a new book. At noon it was too hot, so I didn't go out to eat — I made noodles at home. After I was full, I went back to my room to sleep. I slept for an hour; in the afternoon I'm taking the MRT to browse a bookstore, and I'll go to bed at 11:30 at night."
+      }
     }
   ],
   "sort_order": 18,

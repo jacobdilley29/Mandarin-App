@@ -1,0 +1,475 @@
+{
+  "id": "u_hsk3_19",
+  "title": "出國旅行與四季風景",
+  "subtitle": "Packing for a trip and enjoying the seasons",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk3_19_1",
+      "title": "打包行李去旅行",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_護照",
+          "traditional": "護照",
+          "pinyin": "hù zhào",
+          "gloss": "passport",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的護照放在包包裡。",
+            "pinyin": "Wǒ de hùzhào fàng zài bāobāo lǐ.",
+            "gloss": "My passport is in my bag."
+          }
+        },
+        {
+          "id": "v_行李箱",
+          "traditional": "行李箱",
+          "pinyin": "xíng lǐ xiāng",
+          "gloss": "suitcase; baggage compartment; overhead bin",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個行李箱太重了，我拿不動。",
+            "pinyin": "Zhège xínglǐxiāng tài zhòng le, wǒ ná bú dòng.",
+            "gloss": "This suitcase is too heavy; I can't lift it."
+          }
+        },
+        {
+          "id": "v_旅館",
+          "traditional": "旅館",
+          "pinyin": "lǚguǎn",
+          "gloss": "guesthouse; lodge; hotel",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「旅館」或「飯店」。",
+          "prc_form": "賓館",
+          "example": {
+            "hanzi": "我們的旅館就在捷運站旁邊。",
+            "pinyin": "Wǒmen de lǚguǎn jiù zài jiéyùn zhàn pángbiān.",
+            "gloss": "Our hotel is right next to the MRT station."
+          }
+        },
+        {
+          "id": "v_北方",
+          "traditional": "北方",
+          "pinyin": "běi fāng",
+          "gloss": "north; the northern part a country; China north of the Yellow River",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "北方的天氣比較冷。",
+            "pinyin": "Běifāng de tiānqì bǐjiào lěng.",
+            "gloss": "The weather in the north is colder."
+          }
+        },
+        {
+          "id": "v_襯衫",
+          "traditional": "襯衫",
+          "pinyin": "chèn shān",
+          "gloss": "shirt; blouse",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他穿白色的襯衫去上班。",
+            "pinyin": "Tā chuān báisè de chènshān qù shàngbān.",
+            "gloss": "He wears a white shirt to work."
+          }
+        },
+        {
+          "id": "v_裙子",
+          "traditional": "裙子",
+          "pinyin": "qún zi",
+          "gloss": "skirt",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹買了一件藍色的裙子。",
+            "pinyin": "Wǒ mèimei mǎi le yí jiàn lánsè de qúnzi.",
+            "gloss": "My younger sister bought a blue skirt."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "把 + object + verb + result (moving things into place)",
+          "pattern": "主語 + 把 + (definite object) + 動詞 + 進/在/到 + 地方 (+了)",
+          "explanation": "When you move or handle a specific, already-known thing, Taiwan Mandarin puts that thing right after 把 and then says what happened to it. The verb cannot stand alone — it needs a result part such as 進、在、到 plus a place, or 好/了. This is the normal way to talk about packing: 我把襯衫放進行李箱了 (I put the shirt into the suitcase).",
+          "contrast": "Plain S + V + O (我放護照) just names an action. 把 is chosen when the object is definite (你的護照, 這件裙子) AND the sentence tells where it ends up or how it turns out. If the object is new or indefinite (買一個行李箱), use plain word order, not 把.",
+          "common_error": "Learners stop after the verb and say things like 我把護照放 or 我把裙子放行李箱. A 把 sentence must finish the thought: 我把護照放進包包裡了 / 我把裙子放進行李箱了. Another common slip is saying 我把一個行李箱買了 — 把 does not work with an indefinite object.",
+          "examples": [
+            {
+              "hanzi": "我把護照放進包包裡了。",
+              "pinyin": "Wǒ bǎ hùzhào fàng jìn bāobāo lǐ le.",
+              "gloss": "I put my passport into my bag."
+            },
+            {
+              "hanzi": "請把裙子和襯衫放進行李箱。",
+              "pinyin": "Qǐng bǎ qúnzi hé chènshān fàng jìn xínglǐxiāng.",
+              "gloss": "Please put the skirt and the shirt into the suitcase."
+            },
+            {
+              "hanzi": "她把行李箱帶到旅館了。",
+              "pinyin": "Tā bǎ xínglǐxiāng dài dào lǚguǎn le.",
+              "gloss": "She took the suitcase to the hotel."
+            }
+          ],
+          "id": "g_hsk3_19_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_19_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "明天要去旅行，你的行李箱打包好了嗎？",
+          "pinyin": "Míngtiān yào qù lǚxíng, nǐ de xínglǐxiāng dǎbāo hǎo le ma?",
+          "gloss": "We're travelling tomorrow — have you finished packing your suitcase?"
+        },
+        {
+          "speaker": "妹妹",
+          "hanzi": "快好了，我把兩件襯衫和一條裙子放進去了。",
+          "pinyin": "Kuài hǎo le, wǒ bǎ liǎng jiàn chènshān hé yì tiáo qúnzi fàng jìnqù le.",
+          "gloss": "Almost. I've put in two shirts and a skirt."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "護照呢？不要忘了帶護照。",
+          "pinyin": "Hùzhào ne? Búyào wàng le dài hùzhào.",
+          "gloss": "What about your passport? Don't forget to bring it."
+        },
+        {
+          "speaker": "妹妹",
+          "hanzi": "我把護照放在包包裡了。北方比較冷，我還要帶長褲。",
+          "pinyin": "Wǒ bǎ hùzhào fàng zài bāobāo lǐ le. Běifāng bǐjiào lěng, wǒ hái yào dài chángkù.",
+          "gloss": "I already put the passport in my bag. The north is colder, so I'm also bringing long pants."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "我們的旅館離捷運站近嗎？",
+          "pinyin": "Wǒmen de lǚguǎn lí jiéyùn zhàn jìn ma?",
+          "gloss": "Is our hotel close to the MRT station?"
+        },
+        {
+          "speaker": "妹妹",
+          "hanzi": "很近，走路五分鐘就到了。",
+          "pinyin": "Hěn jìn, zǒulù wǔ fēnzhōng jiù dào le.",
+          "gloss": "Very close — five minutes on foot and you're there."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "把",
+            "護照",
+            "放",
+            "在",
+            "行李箱",
+            "裡",
+            "了"
+          ],
+          "pinyin": "Wǒ bǎ hùzhào fàng zài xínglǐxiāng lǐ le.",
+          "gloss": "I put my passport in the suitcase.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這個",
+            "行李箱",
+            "裡",
+            "有",
+            "兩",
+            "件",
+            "襯衫"
+          ],
+          "pinyin": "Zhège xínglǐxiāng lǐ yǒu liǎng jiàn chènshān.",
+          "gloss": "There are two shirts in this suitcase.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "旅館",
+            "的",
+            "房間",
+            "很",
+            "乾淨"
+          ],
+          "pinyin": "Lǚguǎn de fángjiān hěn gānjìng.",
+          "gloss": "The hotel room is very clean.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "她",
+            "穿",
+            "了",
+            "一",
+            "件",
+            "紅色",
+            "的",
+            "裙子"
+          ],
+          "pinyin": "Tā chuān le yí jiàn hóngsè de qúnzi.",
+          "gloss": "She is wearing a red skirt.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "北方",
+            "的",
+            "天氣",
+            "比較",
+            "冷"
+          ],
+          "pinyin": "Běifāng de tiānqì bǐjiào lěng.",
+          "gloss": "The weather in the north is colder.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "打包行李",
+        "hanzi": "這個週末我要跟朋友去北方旅行。昨天晚上我把行李箱打開，放進兩件襯衫、一條裙子和一件長褲。北方的天氣比較冷，所以我也帶了帽子。我最重要的東西是護照，我把它放進包包裡，這樣就不會忘了。我們的旅館在捷運站旁邊，很方便。",
+        "gloss": "This weekend I'm going travelling in the north with a friend. Last night I opened my suitcase and put in two shirts, a skirt and a pair of long pants. The weather in the north is colder, so I also brought a hat. My most important thing is my passport; I put it in my bag so I won't forget it. Our hotel is next to the MRT station, which is very convenient."
+      }
+    },
+    {
+      "id": "l_hsk3_19_2",
+      "title": "季節、天空與動物園",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_季節",
+          "traditional": "季節",
+          "pinyin": "jì jié",
+          "gloss": "time; season; period",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台灣的四個季節裡，我最喜歡秋天。",
+            "pinyin": "Táiwān de sì ge jìjié lǐ, wǒ zuì xǐhuān qiūtiān.",
+            "gloss": "Of Taiwan's four seasons, I like autumn best."
+          }
+        },
+        {
+          "id": "v_秋",
+          "traditional": "秋",
+          "pinyin": "qiū",
+          "gloss": "autumn; fall; harvest time",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "秋天不冷也不熱，很舒服。",
+            "pinyin": "Qiūtiān bù lěng yě bú rè, hěn shūfú.",
+            "gloss": "Autumn is neither cold nor hot — very comfortable."
+          }
+        },
+        {
+          "id": "v_冬",
+          "traditional": "冬",
+          "pinyin": "dōng",
+          "gloss": "winter",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "冬天的早上很冷，我不想起床。",
+            "pinyin": "Dōngtiān de zǎoshang hěn lěng, wǒ bù xiǎng qǐchuáng.",
+            "gloss": "Winter mornings are cold; I don't want to get out of bed."
+          }
+        },
+        {
+          "id": "v_月亮",
+          "traditional": "月亮",
+          "pinyin": "yuè liàng",
+          "gloss": "the moon",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天晚上的月亮又大又亮。",
+            "pinyin": "Jīntiān wǎnshàng de yuèliàng yòu dà yòu liàng.",
+            "gloss": "Tonight's moon is big and bright."
+          }
+        },
+        {
+          "id": "v_傘",
+          "traditional": "傘",
+          "pinyin": "sǎn",
+          "gloss": "umbrella; parasol",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面下雨了，記得帶傘。",
+            "pinyin": "Wàimiàn xià yǔ le, jìde dài sǎn.",
+            "gloss": "It's raining outside — remember to bring an umbrella."
+          }
+        },
+        {
+          "id": "v_熊貓",
+          "traditional": "熊貓",
+          "pinyin": "xióng māo",
+          "gloss": "panda",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "動物園裡的熊貓正在吃東西。",
+            "pinyin": "Dòngwùyuán lǐ de xióngmāo zhèngzài chī dōngxi.",
+            "gloss": "The panda in the zoo is eating right now."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "快要……了 (something is about to happen)",
+          "pattern": "Subject + 快要 + Verb/Adjective + 了",
+          "explanation": "快要……了 says a change or event is coming very soon. 快要 goes before the verb or adjective, and the sentence must end with 了. It is very common with weather and seasons: 冬天快要到了 (winter is almost here), 快要下雨了 (it's about to rain). You can also drop 要 and just say 快……了.",
+          "contrast": "就要……了 also means 'about to', but only 就要 can follow a time expression: 明天就要下雨了 is fine, 明天快要下雨了 is not. Use 快要 for 'any moment now' with no stated time; use 就要 when you name the time.",
+          "common_error": "Learners leave off the final 了, saying 冬天快要到 instead of 冬天快要到了. The 了 is not optional here — the pattern is incomplete without it.",
+          "examples": [
+            {
+              "hanzi": "冬天快要到了，天氣會變冷。",
+              "pinyin": "Dōngtiān kuàiyào dào le, tiānqì huì biàn lěng.",
+              "gloss": "Winter is almost here; the weather will turn cold."
+            },
+            {
+              "hanzi": "快要下雨了，你帶傘了嗎？",
+              "pinyin": "Kuàiyào xià yǔ le, nǐ dài sǎn le ma?",
+              "gloss": "It's about to rain — did you bring an umbrella?"
+            },
+            {
+              "hanzi": "動物園快要關門了，我們快一點。",
+              "pinyin": "Dòngwùyuán kuàiyào guānmén le, wǒmen kuài yìdiǎn.",
+              "gloss": "The zoo is about to close; let's hurry."
+            }
+          ],
+          "id": "g_hsk3_19_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "這個週末我們搭捷運去動物園，好嗎？",
+          "pinyin": "Zhè ge zhōumò wǒmen dā jiéyùn qù dòngwùyuán, hǎo ma?",
+          "gloss": "Shall we take the MRT to the zoo this weekend?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啊！我最想看熊貓。",
+          "pinyin": "Hǎo a! Wǒ zuì xiǎng kàn xióngmāo.",
+          "gloss": "Sure! What I most want to see is the pandas."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "秋天不冷不熱，正好；冬天去就太冷了。",
+          "pinyin": "Qiūtiān bù lěng bú rè, zhènghǎo; dōngtiān qù jiù tài lěng le.",
+          "gloss": "Autumn is neither cold nor hot — just right. Going in winter would be too cold."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "可是他們說快要下雨了，你記得帶傘。",
+          "pinyin": "Kěshì tāmen shuō kuàiyào xià yǔ le, nǐ jìde dài sǎn.",
+          "gloss": "But they say it's about to rain — remember to bring an umbrella."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "好，我帶。晚上天空要是很清楚，還可以看月亮。",
+          "pinyin": "Hǎo, wǒ dài. Wǎnshàng tiānkōng yàoshi hěn qīngchǔ, hái kěyǐ kàn yuèliàng.",
+          "gloss": "OK, I'll bring one. If the sky is clear at night, we can also look at the moon."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "那我們早一點出門吧！",
+          "pinyin": "Nà wǒmen zǎo yìdiǎn chūmén ba!",
+          "gloss": "Then let's leave a bit earlier!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "秋天",
+            "的",
+            "天空",
+            "很",
+            "藍"
+          ],
+          "pinyin": "Qiūtiān de tiānkōng hěn lán.",
+          "gloss": "The autumn sky is very blue.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "今天",
+            "晚上",
+            "的",
+            "月亮",
+            "很",
+            "亮"
+          ],
+          "pinyin": "Jīntiān wǎnshàng de yuèliàng hěn liàng.",
+          "gloss": "Tonight's moon is very bright.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "下雨",
+            "了",
+            "，",
+            "你",
+            "要",
+            "帶",
+            "傘",
+            "嗎"
+          ],
+          "pinyin": "Xià yǔ le, nǐ yào dài sǎn ma?",
+          "gloss": "It's raining — are you going to take an umbrella?",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "我",
+            "最",
+            "喜歡",
+            "的",
+            "季節",
+            "是",
+            "冬天"
+          ],
+          "pinyin": "Wǒ zuì xǐhuān de jìjié shì dōngtiān.",
+          "gloss": "My favourite season is winter.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "動物園",
+            "裡",
+            "的",
+            "熊貓",
+            "在",
+            "睡覺"
+          ],
+          "pinyin": "Dòngwùyuán lǐ de xióngmāo zài shuìjiào.",
+          "gloss": "The panda in the zoo is sleeping.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "秋天的動物園",
+        "hanzi": "台灣的四個季節裡，我最喜歡秋天。上個週末，我和妹妹搭捷運去動物園。那天天空很藍，風也不大。我們看了很久的熊貓，它在樹下慢慢吃東西，真可愛。下午突然下雨，還好我們帶了傘。回家的路上，月亮已經出來了。冬天快要到了，天氣會變冷，我想在那以前再去一次。",
+        "gloss": "Of Taiwan's four seasons, I like autumn best. Last weekend my younger sister and I took the MRT to the zoo. That day the sky was very blue and there wasn't much wind. We watched the panda for a long time; it was slowly eating under a tree — so cute. In the afternoon it suddenly rained, but luckily we had brought umbrellas. On the way home the moon was already out. Winter is almost here and the weather will turn cold, so I want to go once more before then."
+      }
+    }
+  ],
+  "sort_order": 48,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

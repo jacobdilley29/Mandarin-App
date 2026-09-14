@@ -1,103 +1,53 @@
 {
   "id": "u_hsk4_27",
-  "title": "HSK 4 詞彙 27",
-  "subtitle": "HSK 4 vocabulary · set 27",
+  "title": "家具與打掃搬東西",
+  "subtitle": "Furniture, keys, cleaning and moving things around",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_27_1",
-      "title": "詞彙 27–1",
+      "title": "沙發、窗戶與鑰匙",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_缺少",
-          "traditional": "缺少",
-          "pinyin": "quē shǎo",
-          "gloss": "lack; shortage of; shortfall",
+          "id": "v_家具",
+          "traditional": "家具",
+          "pinyin": "jiā jù",
+          "gloss": "furniture",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_閱讀",
-          "traditional": "閱讀",
-          "pinyin": "yuè dú",
-          "gloss": "to read; reading",
+          "id": "v_沙發",
+          "traditional": "沙發",
+          "pinyin": "shā fā",
+          "gloss": "sofa (loanword); (Internet slang) the first reply or replier to a forum post",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_窮",
-          "traditional": "窮",
-          "pinyin": "qióng",
-          "gloss": "poor; destitute; to use up",
+          "id": "v_窗戶",
+          "traditional": "窗戶",
+          "pinyin": "chuāng hu",
+          "gloss": "window",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_打扮",
-          "traditional": "打扮",
-          "pinyin": "dǎ ban",
-          "gloss": "to decorate; to dress; to make up",
+          "id": "v_鑰匙",
+          "traditional": "鑰匙",
+          "pinyin": "yào shi",
+          "gloss": "key",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_座位",
-          "traditional": "座位",
-          "pinyin": "zuò wèi",
-          "gloss": "seat",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_首都",
-          "traditional": "首都",
-          "pinyin": "shǒu dū",
-          "gloss": "capital (city)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_27_2",
-      "title": "詞彙 27–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_吃驚",
-          "traditional": "吃驚",
-          "pinyin": "chī jīng",
-          "gloss": "to be startled; to be shocked; to be amazed",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_忽然",
-          "traditional": "忽然",
-          "pinyin": "hū rán",
-          "gloss": "suddenly; all of a sudden",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_羨慕",
-          "traditional": "羨慕",
-          "pinyin": "xiàn mù",
-          "gloss": "to envy; to admire",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_報名",
-          "traditional": "報名",
-          "pinyin": "bào míng",
-          "gloss": "to sign up; to enter one's name; to apply",
+          "id": "v_收拾",
+          "traditional": "收拾",
+          "pinyin": "shōu shi",
+          "gloss": "to put in order; to tidy up; to pack",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -108,14 +58,6 @@
           "gloss": "dirty; filthy; to get (sth) dirty",
           "hsk_level": 4,
           "taiwan_note": null
-        },
-        {
-          "id": "v_極其",
-          "traditional": "極其",
-          "pinyin": "jí qí",
-          "gloss": "extremely",
-          "hsk_level": 4,
-          "taiwan_note": null
         }
       ],
       "grammar": [],
@@ -123,55 +65,47 @@
       "sentences": []
     },
     {
-      "id": "l_hsk4_27_3",
-      "title": "詞彙 27–3",
-      "sort_order": 3,
+      "id": "l_hsk4_27_2",
+      "title": "敲門、抬東西與替換",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_日記",
-          "traditional": "日記",
-          "pinyin": "rì jì",
-          "gloss": "diary",
+          "id": "v_敲",
+          "traditional": "敲",
+          "pinyin": "qiāo",
+          "gloss": "to hit; to strike; to tap",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_同情",
-          "traditional": "同情",
-          "pinyin": "tóng qíng",
-          "gloss": "to sympathize with; sympathy",
+          "id": "v_抬",
+          "traditional": "抬",
+          "pinyin": "tái",
+          "gloss": "to lift; to raise; (of two or more persons) to carry",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_總結",
-          "traditional": "總結",
-          "pinyin": "zǒng jié",
-          "gloss": "to sum up; to conclude; summary",
+          "id": "v_寬",
+          "traditional": "寬",
+          "pinyin": "kuān",
+          "gloss": "wide; broad; loose",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_打擾",
-          "traditional": "打擾",
-          "pinyin": "dǎ rǎo",
-          "gloss": "to disturb; to bother; to trouble",
+          "id": "v_代替",
+          "traditional": "代替",
+          "pinyin": "dài tì",
+          "gloss": "to replace; to take the place of",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_幽默",
-          "traditional": "幽默",
-          "pinyin": "yōu mò",
-          "gloss": "(loanword) humor; humorous",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_誤會",
-          "traditional": "誤會",
-          "pinyin": "wù huì",
-          "gloss": "to misunderstand; to mistake; misunderstanding",
+          "id": "v_厚",
+          "traditional": "厚",
+          "pinyin": "hòu",
+          "gloss": "thick; deep or profound; kind",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +115,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 71,
+  "sort_order": 75,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

@@ -1,0 +1,458 @@
+{
+  "id": "u_hsk3_17",
+  "title": "超市與家裡的一天",
+  "subtitle": "Grocery shopping and keeping house in Taiwan",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk3_17_1",
+      "title": "去超市買水果",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_超市",
+          "traditional": "超市",
+          "pinyin": "chāo shì",
+          "gloss": "supermarket (abbr. for 超级市场)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想去超市買一點水果。",
+            "pinyin": "Wǒ xiǎng qù chāoshì mǎi yìdiǎn shuǐguǒ.",
+            "gloss": "I want to go to the supermarket to buy some fruit."
+          }
+        },
+        {
+          "id": "v_香蕉",
+          "traditional": "香蕉",
+          "pinyin": "xiāng jiāo",
+          "gloss": "banana",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這裡的香蕉很甜,也很便宜。",
+            "pinyin": "Zhèlǐ de xiāngjiāo hěn tián, yě hěn piányí.",
+            "gloss": "The bananas here are sweet and cheap."
+          }
+        },
+        {
+          "id": "v_葡萄",
+          "traditional": "葡萄",
+          "pinyin": "pú táo",
+          "gloss": "grape",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "阿姨買了兩斤葡萄回家。",
+            "pinyin": "Āyí mǎi le liǎng jīn pútáo huí jiā.",
+            "gloss": "My aunt bought two jin of grapes and took them home."
+          }
+        },
+        {
+          "id": "v_果汁",
+          "traditional": "果汁",
+          "pinyin": "guǒ zhī",
+          "gloss": "fruit juice",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我不喝啤酒,我要一杯果汁。",
+            "pinyin": "Wǒ bù hē píjiǔ, wǒ yào yì bēi guǒzhī.",
+            "gloss": "I don't drink beer; I'd like a glass of fruit juice."
+          }
+        },
+        {
+          "id": "v_渴",
+          "traditional": "渴",
+          "pinyin": "kě",
+          "gloss": "thirsty",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "走了那麼久,我有點渴了。",
+            "pinyin": "Zǒu le nàme jiǔ, wǒ yǒudiǎn kě le.",
+            "gloss": "After walking so long, I'm a bit thirsty."
+          }
+        },
+        {
+          "id": "v_阿姨",
+          "traditional": "阿姨",
+          "pinyin": "ā yí",
+          "gloss": "maternal aunt; step-mother; childcare worker",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "阿姨在超市旁邊的店裡工作。",
+            "pinyin": "Āyí zài chāoshì pángbiān de diàn lǐ gōngzuò.",
+            "gloss": "My aunt works in the shop next to the supermarket."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "有點 + adjective (a bit / slightly)",
+          "pattern": "主語 + 有點 + 形容詞",
+          "explanation": "有點 goes before an adjective to say something is \"a bit\" or \"slightly\" that way. In everyday Taiwan Mandarin it almost always describes something the speaker feels is not ideal: 有點渴 (a bit thirsty), 有點貴 (a bit pricey), 有點熱 (a bit hot). Nothing comes between 有點 and the adjective, and you do not add 很.",
+          "contrast": "形容詞 + 一點 (便宜一點、大一點) means \"a bit more ___\" and is used when comparing or asking for a change: 這個葡萄有點貴,有沒有便宜一點的? If you are describing how something is right now, 有點 comes first; if you are asking for something different, use 一點 after the adjective.",
+          "common_error": "Learners say 很有點渴 or put 有點 with a positive adjective (有點漂亮, 有點甜 meaning \"nicely sweet\"). Drop the 很, and remember 有點 carries a slightly negative feel — for something pleasant just say 很甜.",
+          "examples": [
+            {
+              "hanzi": "我有點渴,想喝一杯果汁。",
+              "pinyin": "Wǒ yǒudiǎn kě, xiǎng hē yì bēi guǒzhī.",
+              "gloss": "I'm a bit thirsty; I'd like a glass of juice."
+            },
+            {
+              "hanzi": "今天超市的葡萄有點貴。",
+              "pinyin": "Jīntiān chāoshì de pútáo yǒudiǎn guì.",
+              "gloss": "The grapes at the supermarket are a bit expensive today."
+            },
+            {
+              "hanzi": "這個香蕉有點小,我們買那個吧。",
+              "pinyin": "Zhège xiāngjiāo yǒudiǎn xiǎo, wǒmen mǎi nàge ba.",
+              "gloss": "This banana is a bit small; let's buy that one."
+            }
+          ],
+          "id": "g_hsk3_17_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_17_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "媽,我們今天去超市嗎?",
+          "pinyin": "Mā, wǒmen jīntiān qù chāoshì ma?",
+          "gloss": "Mom, are we going to the supermarket today?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "對啊,我要買水果。你想吃什麼?",
+          "pinyin": "Duì a, wǒ yào mǎi shuǐguǒ. Nǐ xiǎng chī shénme?",
+          "gloss": "Yes. I want to buy fruit. What do you feel like eating?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我想吃香蕉,還有葡萄。",
+          "pinyin": "Wǒ xiǎng chī xiāngjiāo, hái yǒu pútáo.",
+          "gloss": "I'd like bananas, and grapes too."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "好,那我們也買一瓶果汁吧。",
+          "pinyin": "Hǎo, nà wǒmen yě mǎi yì píng guǒzhī ba.",
+          "gloss": "OK, then let's also buy a bottle of juice."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "太好了!走了那麼久,我有點渴。",
+          "pinyin": "Tài hǎo le! Zǒu le nàme jiǔ, wǒ yǒudiǎn kě.",
+          "gloss": "Great! After walking so long I'm a bit thirsty."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "前面那位阿姨賣的葡萄最甜,我們去看看。",
+          "pinyin": "Qiánmiàn nà wèi āyí mài de pútáo zuì tián, wǒmen qù kànkan.",
+          "gloss": "The grapes that lady up front sells are the sweetest — let's go take a look."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "去",
+            "超市",
+            "買",
+            "香蕉"
+          ],
+          "pinyin": "Wǒ qù chāoshì mǎi xiāngjiāo.",
+          "gloss": "I'm going to the supermarket to buy bananas.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "有點",
+            "渴",
+            "了"
+          ],
+          "pinyin": "Wǒ yǒudiǎn kě le.",
+          "gloss": "I'm getting a bit thirsty.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "阿姨",
+            "給",
+            "我",
+            "一",
+            "杯",
+            "果汁"
+          ],
+          "pinyin": "Āyí gěi wǒ yì bēi guǒzhī.",
+          "gloss": "My aunt gave me a glass of juice.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這裡",
+            "的",
+            "葡萄",
+            "很",
+            "甜"
+          ],
+          "pinyin": "Zhèlǐ de pútáo hěn tián.",
+          "gloss": "The grapes here are very sweet.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "阿姨",
+            "在",
+            "超市",
+            "工作"
+          ],
+          "pinyin": "Āyí zài chāoshì gōngzuò.",
+          "gloss": "My aunt works at a supermarket.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "週末的超市",
+        "hanzi": "週末早上,阿姨帶我去附近的超市買水果。超市裡的香蕉很便宜,葡萄也很新鮮,我們買了兩斤。回家的路上,天氣很熱,我有點渴,阿姨就給我買了一瓶果汁。她說,自己帶水果和果汁去公園吃,比在外面吃飯還舒服。",
+        "gloss": "On Saturday morning my aunt took me to the supermarket nearby to buy fruit. The bananas there were cheap and the grapes were fresh, so we bought two jin. On the way home the weather was hot and I was a bit thirsty, so my aunt bought me a bottle of juice. She said bringing your own fruit and juice to the park is nicer than eating out."
+      }
+    },
+    {
+      "id": "l_hsk3_17_2",
+      "title": "餐桌、家事與打掃",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_麵條",
+          "traditional": "麵條",
+          "pinyin": "miàn tiáo",
+          "gloss": "noodles",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的麵條很好吃。",
+            "pinyin": "Zhè jiā diàn de miàn tiáo hěn hǎo chī.",
+            "gloss": "The noodles at this shop are really tasty."
+          }
+        },
+        {
+          "id": "v_盤子",
+          "traditional": "盤子",
+          "pinyin": "pán zi",
+          "gloss": "tray; plate; dish",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "桌上的盤子都洗乾淨了。",
+            "pinyin": "Zhuō shàng de pán zi dōu xǐ gān jìng le.",
+            "gloss": "The plates on the table have all been washed clean."
+          }
+        },
+        {
+          "id": "v_筷子",
+          "traditional": "筷子",
+          "pinyin": "kuài zi",
+          "gloss": "chopsticks",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽叫我拿一雙筷子給弟弟。",
+            "pinyin": "Mā ma jiào wǒ ná yī shuāng kuài zi gěi dì di.",
+            "gloss": "Mom told me to get a pair of chopsticks for my little brother."
+          }
+        },
+        {
+          "id": "v_打掃",
+          "traditional": "打掃",
+          "pinyin": "dǎ sǎo",
+          "gloss": "to clean; to sweep",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我要打掃房間。",
+            "pinyin": "Zhōu mò wǒ yào dǎ sǎo fáng jiān.",
+            "gloss": "I'm going to clean my room this weekend."
+          }
+        },
+        {
+          "id": "v_空調",
+          "traditional": "空調",
+          "pinyin": "kōng tiáo",
+          "gloss": "air conditioning; air conditioner (including units that have a heating mode)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣太熱了，請開空調。",
+            "pinyin": "Tiān qì tài rè le, qǐng kāi kōng tiáo.",
+            "gloss": "It's too hot — please turn on the air conditioning."
+          }
+        },
+        {
+          "id": "v_洗手間",
+          "traditional": "洗手間",
+          "pinyin": "xǐ shǒu jiān",
+          "gloss": "toilet; lavatory; washroom",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請問，洗手間在哪裡？",
+            "pinyin": "Qǐng wèn, xǐ shǒu jiān zài nǎ lǐ?",
+            "gloss": "Excuse me, where is the washroom?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "把 sentences: doing something to a specific thing",
+          "pattern": "主語 + 把 + (specific thing) + 動詞 + 結果／方向／了",
+          "explanation": "Use 把 when you move or change a specific, known thing and want to say what happened to it. The thing comes before the verb, and the verb must be followed by a result (乾淨), a direction (到…去), or 了. It is very common with housework verbs like 洗, 放, 拿, 打掃.",
+          "contrast": "Plain 主語+動詞+賓語 (我洗盤子) just names the activity and works for any/unspecified objects. 把 (我把盤子洗乾淨了) needs a specific object the listener already knows about, plus a result. If you can't say what happened to the thing, don't use 把.",
+          "common_error": "Learners leave the verb bare — saying 我把盤子洗 or 我把房間打掃. A 把 sentence must end with something after the verb: 洗乾淨了, 打掃好了, 放在桌子上.",
+          "examples": [
+            {
+              "hanzi": "請把筷子放在桌子上。",
+              "pinyin": "Qǐng bǎ kuài zi fàng zài zhuō zi shàng.",
+              "gloss": "Please put the chopsticks on the table."
+            },
+            {
+              "hanzi": "我把房間打掃乾淨了。",
+              "pinyin": "Wǒ bǎ fáng jiān dǎ sǎo gān jìng le.",
+              "gloss": "I've cleaned the room."
+            },
+            {
+              "hanzi": "你把這些盤子拿到廚房去。",
+              "pinyin": "Nǐ bǎ zhè xiē pán zi ná dào chú fáng qù.",
+              "gloss": "Take these plates to the kitchen."
+            }
+          ],
+          "id": "g_hsk3_17_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "快來吃飯，麵條好了！",
+          "pinyin": "Kuài lái chī fàn, miàn tiáo hǎo le!",
+          "gloss": "Come eat, the noodles are ready!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我先去洗手間洗手。",
+          "pinyin": "Hǎo, wǒ xiān qù xǐ shǒu jiān xǐ shǒu.",
+          "gloss": "OK, I'll go wash my hands in the bathroom first."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "回來的時候幫我拿筷子和兩個盤子。",
+          "pinyin": "Huí lái de shí hòu bāng wǒ ná kuài zi hàn liǎng ge pán zi.",
+          "gloss": "When you come back, bring me the chopsticks and two plates."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "沒問題。媽，家裡太熱了，可以開空調嗎？",
+          "pinyin": "Méi wèn tí. Mā, jiā lǐ tài rè le, kě yǐ kāi kōng tiáo ma?",
+          "gloss": "No problem. Mom, it's too hot in here — can we turn on the air conditioning?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "可以，不過吃完飯你要幫忙打掃廚房。",
+          "pinyin": "Kě yǐ, bú guò chī wán fàn nǐ yào bāng máng dǎ sǎo chú fáng.",
+          "gloss": "Sure, but after dinner you have to help clean the kitchen."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊，我把盤子也洗乾淨！",
+          "pinyin": "Hǎo a, wǒ bǎ pán zi yě xǐ gān jìng!",
+          "gloss": "Fine, I'll wash the plates clean too!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "把",
+            "盤子",
+            "洗",
+            "乾淨",
+            "了。"
+          ],
+          "pinyin": "Wǒ bǎ pán zi xǐ gān jìng le.",
+          "gloss": "I washed the plates clean.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "筷子",
+            "拿",
+            "過來。"
+          ],
+          "pinyin": "Qǐng bǎ kuài zi ná guò lái.",
+          "gloss": "Please bring the chopsticks over.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "週末",
+            "我",
+            "要",
+            "打掃",
+            "家裡。"
+          ],
+          "pinyin": "Zhōu mò wǒ yào dǎ sǎo jiā lǐ.",
+          "gloss": "I'm cleaning the house this weekend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "洗手間",
+            "在",
+            "二",
+            "樓。"
+          ],
+          "pinyin": "Xǐ shǒu jiān zài èr lóu.",
+          "gloss": "The washroom is on the second floor.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "這",
+            "碗",
+            "麵條",
+            "很",
+            "好吃。"
+          ],
+          "pinyin": "Zhè wǎn miàn tiáo hěn hǎo chī.",
+          "gloss": "This bowl of noodles is delicious.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我們家的週末",
+        "hanzi": "週末早上，媽媽在廚房做麵條，爸爸打掃客廳。我的工作是洗碗、洗盤子，還要把筷子放好。打掃完，家裡又乾淨又舒服。天氣太熱的時候，我們就開空調，坐在桌子旁邊一起吃飯。弟弟每次吃完就跑去洗手間洗手，然後回來再吃一碗。",
+        "gloss": "Weekend at our house. On weekend mornings, Mom makes noodles in the kitchen and Dad cleans the living room. My job is washing the bowls and plates, and putting the chopsticks away. Once the cleaning is done, the house is clean and comfortable. When it's too hot, we turn on the air conditioning and sit around the table to eat together. Every time my little brother finishes, he runs off to the bathroom to wash his hands, then comes back for another bowl."
+      }
+    }
+  ],
+  "sort_order": 46,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

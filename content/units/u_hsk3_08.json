@@ -1,155 +1,28 @@
 {
   "id": "u_hsk3_08",
-  "title": "HSK 3 詞彙 8",
-  "subtitle": "HSK 3 vocabulary · set 8",
+  "title": "大樓、方向與周邊環境",
+  "subtitle": "Floors, directions and the neighbourhood you live in",
   "hsk_level": 3,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_08_1",
-      "title": "詞彙 8–1",
+      "title": "樓層與方向",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_幾乎",
-          "traditional": "幾乎",
-          "pinyin": "jī hū",
-          "gloss": "almost; nearly; practically",
+          "id": "v_樓",
+          "traditional": "樓",
+          "pinyin": "lóu",
+          "gloss": "house with more than 1 story; storied building; floor",
           "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_認真",
-          "traditional": "認真",
-          "pinyin": "rèn zhēn",
-          "gloss": "conscientious; earnest; serious",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_腳",
-          "traditional": "腳",
-          "pinyin": "jiǎo",
-          "gloss": "foot; leg (of an animal or an object); base (of an object)",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_主要",
-          "traditional": "主要",
-          "pinyin": "zhǔ yào",
-          "gloss": "main; principal; major",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_遇到",
-          "traditional": "遇到",
-          "pinyin": "yù dào",
-          "gloss": "to meet; to run into; to come across",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_年輕",
-          "traditional": "年輕",
-          "pinyin": "nián qīng",
-          "gloss": "young",
-          "hsk_level": 3,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_08_2",
-      "title": "詞彙 8–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_久",
-          "traditional": "久",
-          "pinyin": "jiǔ",
-          "gloss": "(long) time; (long) duration of time",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_畫",
-          "traditional": "畫",
-          "pinyin": "huà",
-          "gloss": "to draw; to paint; picture; painting; to draw (a line) (variant of 划)",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_表演",
-          "traditional": "表演",
-          "pinyin": "biǎo yǎn",
-          "gloss": "play; show; performance",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_關",
-          "traditional": "關",
-          "pinyin": "guān",
-          "gloss": "mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_剛才",
-          "traditional": "剛才",
-          "pinyin": "gāng cái",
-          "gloss": "just now; a moment ago",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_辦公室",
-          "traditional": "辦公室",
-          "pinyin": "bàn gōng shì",
-          "gloss": "office; business premises; bureau",
-          "hsk_level": 3,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_08_3",
-      "title": "詞彙 8–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_環境",
-          "traditional": "環境",
-          "pinyin": "huán jìng",
-          "gloss": "environment; circumstances; surroundings",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_關心",
-          "traditional": "關心",
-          "pinyin": "guān xīn",
-          "gloss": "to be concerned about; to care about",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_祝",
-          "traditional": "祝",
-          "pinyin": "zhù",
-          "gloss": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我住在五樓，你呢？",
+            "pinyin": "Wǒ zhù zài wǔ lóu, nǐ ne?",
+            "gloss": "I live on the fifth floor — how about you?"
+          }
         },
         {
           "id": "v_層",
@@ -157,31 +30,457 @@
           "pinyin": "céng",
           "gloss": "to pile on top of one another; layer; stratum; floor (of a building); story",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家書店有三層，書很多。",
+            "pinyin": "Zhè jiā shūdiàn yǒu sān céng, shū hěn duō.",
+            "gloss": "This bookstore has three floors and lots of books."
+          }
         },
         {
-          "id": "v_腿",
-          "traditional": "腿",
-          "pinyin": "tuǐ",
-          "gloss": "leg",
+          "id": "v_關",
+          "traditional": "關",
+          "pinyin": "guān",
+          "gloss": "mountain pass; to close; to shut; to turn off; to confine; to lock (sb) up; to shut (sb in a room, a bird in a cage etc)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請把門關起來，外面很冷。",
+            "pinyin": "Qǐng bǎ mén guān qǐlái, wàimiàn hěn lěng.",
+            "gloss": "Please close the door, it's cold outside."
+          }
         },
         {
-          "id": "v_班",
-          "traditional": "班",
-          "pinyin": "bān",
-          "gloss": "team; class; grade; (military) squad; work shift",
+          "id": "v_東",
+          "traditional": "東",
+          "pinyin": "dōng",
+          "gloss": "east; host (i.e. sitting on east side of guest); landlord",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在東邊，走路五分鐘就到了。",
+            "pinyin": "Yóujú zài dōngbiān, zǒulù wǔ fēnzhōng jiù dào le.",
+            "gloss": "The post office is on the east side; it's a five-minute walk."
+          }
+        },
+        {
+          "id": "v_西",
+          "traditional": "西",
+          "pinyin": "xī",
+          "gloss": "west",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "捷運站在學校西邊。",
+            "pinyin": "Jiéyùn zhàn zài xuéxiào xībiān.",
+            "gloss": "The MRT station is on the west side of the school."
+          }
+        },
+        {
+          "id": "v_一邊",
+          "traditional": "一邊",
+          "pinyin": "yī biān",
+          "gloss": "one side; either side; on the one hand",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他一邊吃飯，一邊看電視。",
+            "pinyin": "Tā yìbiān chīfàn, yìbiān kàn diànshì.",
+            "gloss": "He eats while watching TV."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "一邊 A，一邊 B — doing two things at the same time",
+          "pattern": "Subject + 一邊 + Verb1 + 一邊 + Verb2",
+          "explanation": "Use 一邊…一邊… to say that one person does two actions at the same moment. Both slots must be verbs (or verb phrases), and 一邊 is repeated before each verb. The subject is said only once, at the front: 我一邊走路一邊聽音樂. In speech Taiwanese people often say it fast as yìbiān…yìbiān…, and the two actions must belong to the same person.",
+          "contrast": "又…又… also links two things, but it links qualities or states, not simultaneous actions: 這家店又大又漂亮 (the shop is big and pretty). If you can ask \"doing what at the same time?\", use 一邊…一邊…; if you are describing what something is like, use 又…又….",
+          "common_error": "Learners drop the second 一邊 and say 我一邊吃飯看電視. Both verbs need their own 一邊. Learners also put an adjective after 一邊 (一邊大一邊漂亮), which is wrong — 一邊 takes actions only.",
+          "examples": [
+            {
+              "hanzi": "我常常一邊喝咖啡，一邊寫報告。",
+              "pinyin": "Wǒ chángcháng yìbiān hē kāfēi, yìbiān xiě bàogào.",
+              "gloss": "I often write reports while drinking coffee."
+            },
+            {
+              "hanzi": "她一邊聽音樂，一邊做菜。",
+              "pinyin": "Tā yìbiān tīng yīnyuè, yìbiān zuò cài.",
+              "gloss": "She cooks while listening to music."
+            },
+            {
+              "hanzi": "你不要一邊走路，一邊看手機。",
+              "pinyin": "Nǐ búyào yìbiān zǒulù, yìbiān kàn shǒujī.",
+              "gloss": "Don't look at your phone while you walk."
+            }
+          ],
+          "id": "g_hsk3_08_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "請問，郵局在幾樓？",
+          "pinyin": "Qǐngwèn, yóujú zài jǐ lóu?",
+          "gloss": "Excuse me, which floor is the post office on?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "在二樓，上去以後右邊就是。",
+          "pinyin": "Zài èr lóu, shàngqù yǐhòu yòubiān jiùshì.",
+          "gloss": "On the second floor; after you go up, it's right there on the right."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "那我想喝咖啡，咖啡店在哪裡？",
+          "pinyin": "Nà wǒ xiǎng hē kāfēi, kāfēi diàn zài nǎlǐ?",
+          "gloss": "And I'd like some coffee — where's the coffee shop?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "三樓東邊有一家，旁邊還有書店。",
+          "pinyin": "Sān lóu dōngbiān yǒu yì jiā, pángbiān hái yǒu shūdiàn.",
+          "gloss": "There's one on the east side of the third floor, with a bookstore next to it."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "他們幾點關門？",
+          "pinyin": "Tāmen jǐ diǎn guān mén?",
+          "gloss": "What time do they close?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "晚上十點關門，你還有時間啊。",
+          "pinyin": "Wǎnshàng shí diǎn guān mén, nǐ hái yǒu shíjiān a.",
+          "gloss": "They close at ten at night — you still have time."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "家",
+            "在",
+            "六",
+            "樓"
+          ],
+          "pinyin": "Wǒ jiā zài liù lóu.",
+          "gloss": "My home is on the sixth floor.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "店",
+            "有",
+            "三",
+            "層"
+          ],
+          "pinyin": "Zhè jiā diàn yǒu sān céng.",
+          "gloss": "This shop has three floors.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "請",
+            "幫",
+            "我",
+            "關",
+            "門"
+          ],
+          "pinyin": "Qǐng bāng wǒ guān mén.",
+          "gloss": "Please close the door for me.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "銀行",
+            "在",
+            "捷運站",
+            "東邊"
+          ],
+          "pinyin": "Yínháng zài jiéyùn zhàn dōngbiān.",
+          "gloss": "The bank is on the east side of the MRT station.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "一邊",
+            "走路",
+            "一邊",
+            "講",
+            "電話"
+          ],
+          "pinyin": "Tā yìbiān zǒulù yìbiān jiǎng diànhuà.",
+          "gloss": "He talks on the phone while walking.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我住的地方",
+        "hanzi": "我住的地方是一個五層樓的房子，我家在三樓。樓下東邊有一家早餐店，老闆很客氣。西邊走五分鐘就到捷運站，非常方便。每天晚上回家以後，我會先關門，再一邊喝茶一邊看書，覺得很舒服。",
+        "gloss": "The place I live in is a five-storey building, and my home is on the third floor. Downstairs on the east side there's a breakfast shop whose owner is very friendly. To the west, it's a five-minute walk to the MRT station, which is really convenient. Every night after I get home, I close the door first, then drink tea while reading a book — it feels great."
+      }
+    },
+    {
+      "id": "l_hsk3_08_2",
+      "title": "附近的環境",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_環境",
+          "traditional": "環境",
+          "pinyin": "huán jìng",
+          "gloss": "environment; circumstances; surroundings",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家附近的環境很安靜。",
+            "pinyin": "Wǒ jiā fùjìn de huánjìng hěn ānjìng.",
+            "gloss": "The environment around my home is very quiet."
+          }
+        },
+        {
+          "id": "v_樹",
+          "traditional": "樹",
+          "pinyin": "shù",
+          "gloss": "tree; to cultivate; to set up",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "路邊有很多大樹，很漂亮。",
+            "pinyin": "Lù biān yǒu hěn duō dà shù, hěn piàoliàng.",
+            "gloss": "There are a lot of big trees along the road; it's really pretty."
+          }
+        },
+        {
+          "id": "v_動物",
+          "traditional": "動物",
+          "pinyin": "dòng wù",
+          "gloss": "animal",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最喜歡的動物是貓。",
+            "pinyin": "Wǒ zuì xǐhuān de dòngwù shì māo.",
+            "gloss": "My favorite animal is the cat."
+          }
+        },
+        {
+          "id": "v_借",
+          "traditional": "借",
+          "pinyin": "jiè",
+          "gloss": "to lend; to borrow; by means of",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我可以跟你借一把傘嗎？",
+            "pinyin": "Wǒ kěyǐ gēn nǐ jiè yì bǎ sǎn ma?",
+            "gloss": "Can I borrow an umbrella from you?"
+          }
+        },
+        {
+          "id": "v_可愛",
+          "traditional": "可愛",
+          "pinyin": "kě ài",
+          "gloss": "adorable; cute; lovely",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那個小孩真可愛！",
+            "pinyin": "Nàge xiǎohái zhēn kě'ài!",
+            "gloss": "That child is so cute!"
+          }
+        },
+        {
+          "id": "v_遇到",
+          "traditional": "遇到",
+          "pinyin": "yù dào",
+          "gloss": "to meet; to run into; to come across",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我昨天在捷運站遇到老師。",
+            "pinyin": "Wǒ zuótiān zài jiéyùn zhàn yùdào lǎoshī.",
+            "gloss": "I ran into my teacher at the MRT station yesterday."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "跟…借 (borrow from) and 借給 (lend to)",
+          "pattern": "A + 跟 + B + 借 + 東西　／　A + 借給 + B + 東西",
+          "explanation": "The verb 借 covers both borrowing and lending, so the little word next to it tells you which direction the thing moves. 跟 + person + 借 means you take something from that person (borrow from). 借給 + person means the thing goes out to that person (lend to). 了 can follow 借 to show it already happened: 我跟朋友借了一把傘。",
+          "contrast": "跟…借 vs 借給…: both use 借, so learners must listen for the preposition. 跟 marks the source (the owner), 借給 marks the receiver. If you only say 我借他的書, it is unclear — add 跟 or 給 to make the direction clear.",
+          "common_error": "Learners often say 我借他的腳踏車 when they mean 'I borrowed his bike'; say 我跟他借腳踏車. Another common mistake is using 從 instead of 跟 with a person — in Taiwan you say 跟他借, not 從他借.",
+          "examples": [
+            {
+              "hanzi": "我跟朋友借了一把傘。",
+              "pinyin": "Wǒ gēn péngyǒu jiè le yì bǎ sǎn.",
+              "gloss": "I borrowed an umbrella from a friend."
+            },
+            {
+              "hanzi": "他借給我兩百塊。",
+              "pinyin": "Tā jiè gěi wǒ liǎng bǎi kuài.",
+              "gloss": "He lent me two hundred dollars."
+            },
+            {
+              "hanzi": "這本書是我跟哥哥借的。",
+              "pinyin": "Zhè běn shū shì wǒ gēn gēge jiè de.",
+              "gloss": "I borrowed this book from my older brother."
+            }
+          ],
+          "id": "g_hsk3_08_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "遇到: running into someone by chance",
+          "pattern": "（時間）＋在＋地方＋遇到＋人／動物",
+          "explanation": "遇到 means to meet or run into someone without planning it. The place phrase with 在 comes before 遇到, and the time word comes near the front of the sentence: 我早上在路上遇到他。Use 遇到 for chance meetings, not for arranged appointments.",
+          "contrast": "遇到 vs 看到: 看到 only means your eyes found something (我看到一隻大狗 → 我看到一個小孩), while 遇到 means you two actually came across each other. For a planned meeting use 見 or 找, not 遇到.",
+          "common_error": "Learners put the place after the verb, saying 我遇到他在路上. In Chinese the place must come first: 我在路上遇到他。",
+          "examples": [
+            {
+              "hanzi": "我今天早上在店裡遇到我同學。",
+              "pinyin": "Wǒ jīntiān zǎoshang zài diàn lǐ yùdào wǒ tóngxué.",
+              "gloss": "I ran into my classmate at the shop this morning."
+            },
+            {
+              "hanzi": "我常常在樹下遇到那隻貓。",
+              "pinyin": "Wǒ chángcháng zài shù xià yùdào nà zhī māo.",
+              "gloss": "I often come across that cat under the tree."
+            },
+            {
+              "hanzi": "昨天晚上我在附近遇到一些小動物。",
+              "pinyin": "Zuótiān wǎnshang wǒ zài fùjìn yùdào yìxiē xiǎo dòngwù.",
+              "gloss": "Last night I came across some small animals nearby."
+            }
+          ],
+          "id": "g_hsk3_08_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "你家附近的環境怎麼樣？",
+          "pinyin": "Nǐ jiā fùjìn de huánjìng zěnmeyàng?",
+          "gloss": "What's the environment like near your place?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "很不錯，路邊有很多大樹，早上也很安靜。",
+          "pinyin": "Hěn bú cuò, lù biān yǒu hěn duō dà shù, zǎoshang yě hěn ānjìng.",
+          "gloss": "Pretty nice — lots of big trees along the road, and it's quiet in the morning."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那邊有動物嗎？",
+          "pinyin": "Nà biān yǒu dòngwù ma?",
+          "gloss": "Are there animals over there?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "有啊，我常常遇到貓和狗，都很可愛。",
+          "pinyin": "Yǒu a, wǒ chángcháng yùdào māo hé gǒu, dōu hěn kě'ài.",
+          "gloss": "Yes! I often run into cats and dogs; they're all really cute."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我可以跟你借腳踏車嗎？我想去你家那邊逛逛。",
+          "pinyin": "Wǒ kěyǐ gēn nǐ jiè jiǎotàchē ma? Wǒ xiǎng qù nǐ jiā nà biān guàng guàng.",
+          "gloss": "Can I borrow your bike? I want to go take a look around your neighborhood."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "沒問題，這個週末來吧！",
+          "pinyin": "Méi wèntí, zhège zhōumò lái ba!",
+          "gloss": "No problem — come this weekend!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "家",
+            "附近",
+            "的",
+            "環境",
+            "很",
+            "好"
+          ],
+          "pinyin": "Wǒ jiā fùjìn de huánjìng hěn hǎo.",
+          "gloss": "The environment near my home is very good.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "路邊",
+            "的",
+            "樹",
+            "都",
+            "很",
+            "高"
+          ],
+          "pinyin": "Lù biān de shù dōu hěn gāo.",
+          "gloss": "The trees along the road are all very tall.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "跟",
+            "你",
+            "借",
+            "一",
+            "本",
+            "書"
+          ],
+          "pinyin": "Wǒ xiǎng gēn nǐ jiè yì běn shū.",
+          "gloss": "I'd like to borrow a book from you.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "裡",
+            "的",
+            "動物",
+            "都",
+            "很",
+            "可愛"
+          ],
+          "pinyin": "Zhè lǐ de dòngwù dōu hěn kě'ài.",
+          "gloss": "The animals here are all very cute.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "在",
+            "路上",
+            "遇到",
+            "我",
+            "的",
+            "同學"
+          ],
+          "pinyin": "Wǒ zài lù shàng yùdào wǒ de tóngxué.",
+          "gloss": "I ran into my classmate on the road.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "附近的小動物",
+        "hanzi": "我家在台北，附近的環境很不錯。路邊有很多大樹，早上特別安靜。我喜歡騎腳踏車出去逛逛，常常遇到一些小動物。有的貓不怕人，會坐在樹下看你，真的很可愛。上個週末我跟弟弟借了他的球，我們在樹下打球，玩得很開心。",
+        "gloss": "My home is in Taipei, and the area around it is really nice. There are lots of big trees along the road, and it's especially quiet in the morning. I like to ride my bike out for a look around, and I often run into small animals. Some of the cats aren't afraid of people — they sit under the trees and watch you, which is really cute. Last weekend I borrowed my younger brother's ball, and we played under the trees and had a great time."
+      }
     }
   ],
-  "sort_order": 36,
+  "sort_order": 37,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

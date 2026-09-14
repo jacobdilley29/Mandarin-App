@@ -1,113 +1,28 @@
 {
   "id": "u_hsk3_12",
-  "title": "HSK 3 詞彙 12",
-  "subtitle": "HSK 3 vocabulary · set 12",
+  "title": "家人、鄰居與家裡",
+  "subtitle": "Family, neighbours and things around the house",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_12_1",
-      "title": "詞彙 12–1",
+      "title": "家裡的長輩",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_放心",
-          "traditional": "放心",
-          "pinyin": "fàng xīn",
-          "gloss": "to feel relieved; to feel reassured; to be at ease",
+          "id": "v_爺爺",
+          "traditional": "爺爺",
+          "pinyin": "yé ye",
+          "gloss": "(coll.) father's father; paternal grandfather",
           "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_草",
-          "traditional": "草",
-          "pinyin": "cǎo",
-          "gloss": "grass; straw; manuscript",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_甜",
-          "traditional": "甜",
-          "pinyin": "tián",
-          "gloss": "sweet",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_作業",
-          "traditional": "作業",
-          "pinyin": "zuò yè",
-          "gloss": "school assignment; homework; work",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_瘦",
-          "traditional": "瘦",
-          "pinyin": "shòu",
-          "gloss": "thin; to lose weight; (of clothing) tight",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_綠",
-          "traditional": "綠",
-          "pinyin": "lǜ",
-          "gloss": "green; (slang) (derived from 绿帽子) to cheat on (one's spouse or boyfriend or girlfriend)",
-          "hsk_level": 3,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk3_12_2",
-      "title": "詞彙 12–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_啤酒",
-          "traditional": "啤酒",
-          "pinyin": "pí jiǔ",
-          "gloss": "beer (loanword)",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_蛋糕",
-          "traditional": "蛋糕",
-          "pinyin": "dàn gāo",
-          "gloss": "cake",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_新鮮",
-          "traditional": "新鮮",
-          "pinyin": "xīn xiān",
-          "gloss": "fresh (experience, food etc); freshness; novel",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_難過",
-          "traditional": "難過",
-          "pinyin": "nán guò",
-          "gloss": "to feel sad; to feel unwell; (of life) to be difficult",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_客人",
-          "traditional": "客人",
-          "pinyin": "kè rén",
-          "gloss": "visitor; guest; customer",
-          "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我爺爺今年八十歲了,身體還很好。",
+            "pinyin": "Wǒ yéye jīnnián bāshí suì le, shēntǐ hái hěn hǎo.",
+            "gloss": "My grandpa is eighty this year, and he's still in good health."
+          }
         },
         {
           "id": "v_奶奶",
@@ -115,73 +30,673 @@
           "pinyin": "nǎi nai",
           "gloss": "(informal) grandma (paternal grandmother); (respectful) mistress of the house; (coll.) boobies",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "奶奶做的牛肉麵最好吃。",
+            "pinyin": "Nǎinai zuò de niúròumiàn zuì hǎochī.",
+            "gloss": "The beef noodles Grandma makes are the tastiest."
+          }
+        },
+        {
+          "id": "v_叔叔",
+          "traditional": "叔叔",
+          "pinyin": "shū shu",
+          "gloss": "father's younger brother; uncle; Taiwan pr. [shú shu]",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "叔叔開車送我去捷運站。",
+            "pinyin": "Shúshu kāichē sòng wǒ qù jiéyùn zhàn.",
+            "gloss": "My uncle drives me to the MRT station."
+          }
+        },
+        {
+          "id": "v_照顧",
+          "traditional": "照顧",
+          "pinyin": "zhào gu",
+          "gloss": "to take care of; to show consideration; to attend to",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽生病的時候,爸爸在家照顧她。",
+            "pinyin": "Māma shēngbìng de shíhòu, bàba zài jiā zhàogù tā.",
+            "gloss": "When Mom was sick, Dad stayed home and took care of her."
+          }
+        },
+        {
+          "id": "v_疼",
+          "traditional": "疼",
+          "pinyin": "téng",
+          "gloss": "(it) hurts; sore; to love dearly",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "爺爺奶奶都很疼我弟弟。",
+            "pinyin": "Yéye nǎinai dōu hěn téng wǒ dìdi.",
+            "gloss": "Grandpa and Grandma both dote on my little brother."
+          }
+        },
+        {
+          "id": "v_幫忙",
+          "traditional": "幫忙",
+          "pinyin": "bāng máng",
+          "gloss": "to help; to lend a hand; to do a favor",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "明天你可以來幫忙嗎?",
+            "pinyin": "Míngtiān nǐ kěyǐ lái bāngmáng ma?",
+            "gloss": "Can you come and help out tomorrow?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "幫忙 and 幫 + person + verb",
+          "pattern": "幫 + 人 + (一個忙 / 動詞短語) ; 幫忙 + 動詞",
+          "explanation": "幫忙 is a verb-object word (幫 + 忙), so it cannot take a person after it. If you want to say who you are helping, put that person right after 幫: 幫我、幫奶奶. You can then add what you do for them: 幫奶奶買菜. 幫忙 stands alone (你來幫忙) or comes before another verb (幫忙照顧爺爺).",
+          "contrast": "幫忙照顧 vs 幫我照顧: use 幫忙 + verb when nobody is named; the moment you name the person being helped, drop 忙 and say 幫 + 人 + verb.",
+          "common_error": "Learners say 幫忙我買菜 because 'help me' feels like one word. 忙 is already the object of 幫, so a person can't follow it — say 幫我買菜 or 幫我一個忙.",
+          "examples": [
+            {
+              "hanzi": "你可以幫我一個忙嗎?",
+              "pinyin": "Nǐ kěyǐ bāng wǒ yí ge máng ma?",
+              "gloss": "Can you do me a favor?"
+            },
+            {
+              "hanzi": "週末我幫奶奶買菜。",
+              "pinyin": "Zhōumò wǒ bāng nǎinai mǎi cài.",
+              "gloss": "On the weekend I buy groceries for Grandma."
+            },
+            {
+              "hanzi": "叔叔常常來幫忙照顧爺爺。",
+              "pinyin": "Shúshu chángcháng lái bāngmáng zhàogù yéye.",
+              "gloss": "My uncle often comes to help take care of Grandpa."
+            }
+          ],
+          "id": "g_hsk3_12_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "這個週末你要做什麼?",
+          "pinyin": "Zhège zhōumò nǐ yào zuò shénme?",
+          "gloss": "What are you doing this weekend?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "我要回台中看爺爺奶奶。",
+          "pinyin": "Wǒ yào huí Táizhōng kàn yéye nǎinai.",
+          "gloss": "I'm going back to Taichung to see my grandparents."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "真好!他們身體還好嗎?",
+          "pinyin": "Zhēn hǎo! Tāmen shēntǐ hái hǎo ma?",
+          "gloss": "That's nice! Are they in good health?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "爺爺的腳有點疼,叔叔在家照顧他。",
+          "pinyin": "Yéye de jiǎo yǒudiǎn téng, shúshu zài jiā zhàogù tā.",
+          "gloss": "Grandpa's leg hurts a bit; my uncle is at home taking care of him."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "那你回去也可以幫忙喔。",
+          "pinyin": "Nà nǐ huíqù yě kěyǐ bāngmáng ō.",
+          "gloss": "Then you can help out when you go back."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對啊,我想幫奶奶買菜、做飯。",
+          "pinyin": "Duì a, wǒ xiǎng bāng nǎinai mǎi cài, zuò fàn.",
+          "gloss": "Yeah, I want to buy groceries and cook for Grandma."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "爺爺",
+            "每天",
+            "早上",
+            "都",
+            "去",
+            "跑步"
+          ],
+          "pinyin": "Yéye měitiān zǎoshang dōu qù pǎobù.",
+          "gloss": "Grandpa goes running every morning.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "奶奶",
+            "很",
+            "疼",
+            "我",
+            "妹妹"
+          ],
+          "pinyin": "Nǎinai hěn téng wǒ mèimei.",
+          "gloss": "Grandma dotes on my little sister.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "叔叔",
+            "開車",
+            "送",
+            "我們",
+            "回家"
+          ],
+          "pinyin": "Shúshu kāichē sòng wǒmen huí jiā.",
+          "gloss": "Uncle drives us home.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "週末",
+            "幫忙",
+            "照顧",
+            "弟弟"
+          ],
+          "pinyin": "Wǒ zhōumò bāngmáng zhàogù dìdi.",
+          "gloss": "On weekends I help take care of my little brother.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "你",
+            "可以",
+            "幫",
+            "我",
+            "一個",
+            "忙",
+            "嗎"
+          ],
+          "pinyin": "Nǐ kěyǐ bāng wǒ yí ge máng ma?",
+          "gloss": "Can you do me a favor?",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "回台中看爺爺奶奶",
+        "hanzi": "我家住在台北,爺爺奶奶住在台中。每個月我都會搭火車回去看他們。爺爺最疼我,常常買我愛吃的水果。奶奶做的牛肉麵最好吃。上個月奶奶的腳很疼,叔叔就住在旁邊,每天幫忙照顧她。現在奶奶好多了,我週末回去的時候,也會幫她做點事。",
+        "gloss": "My family lives in Taipei, and my grandparents live in Taichung. Every month I take the train back to see them. Grandpa dotes on me the most and often buys the fruit I love. Grandma's beef noodles are the best. Last month Grandma's leg hurt a lot; my uncle lives right next door, so he helped take care of her every day. Now Grandma is much better, and when I go back on weekends I help her with a few things too."
+      }
+    },
+    {
+      "id": "l_hsk3_12_2",
+      "title": "搬家與新鄰居",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_搬",
+          "traditional": "搬",
+          "pinyin": "bān",
+          "gloss": "to move (i.e. relocate oneself); to move (sth relatively heavy or bulky); to shift",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們下個月要搬到台北。",
+            "pinyin": "Wǒmen xià ge yuè yào bān dào Táiběi.",
+            "gloss": "We're moving to Taipei next month."
+          }
+        },
+        {
+          "id": "v_舊",
+          "traditional": "舊",
+          "pinyin": "jiù",
+          "gloss": "old; opposite: new 新; former",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這張桌子很舊了，我想換新的。",
+            "pinyin": "Zhè zhāng zhuōzi hěn jiù le, wǒ xiǎng huàn xīn de.",
+            "gloss": "This table is really old; I want to change it for a new one."
+          }
+        },
+        {
+          "id": "v_乾淨",
+          "traditional": "乾淨",
+          "pinyin": "gān jìng",
+          "gloss": "clean; neat",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "新房子很乾淨，我很喜歡。",
+            "pinyin": "Xīn fángzi hěn gānjìng, wǒ hěn xǐhuān.",
+            "gloss": "The new place is very clean; I like it a lot."
+          }
+        },
+        {
+          "id": "v_燈",
+          "traditional": "燈",
+          "pinyin": "dēng",
+          "gloss": "lamp; light; lantern",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天黑了，請把燈打開。",
+            "pinyin": "Tiān hēi le, qǐng bǎ dēng dǎkāi.",
+            "gloss": "It's dark out — please turn on the light."
+          }
+        },
+        {
+          "id": "v_鄰居",
+          "traditional": "鄰居",
+          "pinyin": "lín jū",
+          "gloss": "neighbor; next door",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的新鄰居是一位老師。",
+            "pinyin": "Wǒ de xīn línjū shì yí wèi lǎoshī.",
+            "gloss": "My new neighbor is a teacher."
+          }
+        },
+        {
+          "id": "v_街道",
+          "traditional": "街道",
+          "pinyin": "jiē dào",
+          "gloss": "street; subdistrict; residential district",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條街道又安靜又乾淨。",
+            "pinyin": "Zhè tiáo jiēdào yòu ānjìng yòu gānjìng.",
+            "gloss": "This street is both quiet and clean."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "把 sentences: 把 + object + verb + result",
+          "pattern": "Subject + 把 + object + verb + (到/開/完/出去…)",
+          "explanation": "When you do something to a specific thing and change where it is or what state it's in, put the object right after 把, before the verb. The verb cannot stand alone — it needs a result: a destination (搬到樓上), a resultative word (打開、洗乾淨), or 了/完. The object must be something both speakers already know about (this table, the light), not just any table.",
+          "contrast": "Plain Subject + Verb + Object (我搬桌子) simply names the activity. Use 把 when you want to say what happened to that specific object — 我把桌子搬到樓上 tells the listener where it ended up. If there is no result or change, don't use 把.",
+          "common_error": "Learners stop after the verb and say 我把桌子搬 or 我把燈打, which sounds unfinished in Chinese. A 把 sentence must end with a result: 搬到樓上、搬出去、打開、洗乾淨、搬完了.",
+          "examples": [
+            {
+              "hanzi": "我把桌子搬到樓上了。",
+              "pinyin": "Wǒ bǎ zhuōzi bān dào lóushàng le.",
+              "gloss": "I moved the table upstairs."
+            },
+            {
+              "hanzi": "房間太黑了，請你把燈打開。",
+              "pinyin": "Fángjiān tài hēi le, qǐng nǐ bǎ dēng dǎkāi.",
+              "gloss": "The room is too dark; please turn on the light."
+            },
+            {
+              "hanzi": "鄰居幫我把舊的椅子搬出去了。",
+              "pinyin": "Línjū bāng wǒ bǎ jiù de yǐzi bān chūqù le.",
+              "gloss": "My neighbor helped me move the old chairs out."
+            }
+          ],
+          "id": "g_hsk3_12_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_12_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "林太太",
+          "hanzi": "你好，我們今天剛搬來，是你們的新鄰居。",
+          "pinyin": "Nǐ hǎo, wǒmen jīntiān gāng bān lái, shì nǐmen de xīn línjū.",
+          "gloss": "Hello, we just moved in today — we're your new neighbors."
+        },
+        {
+          "speaker": "王先生",
+          "hanzi": "歡迎歡迎！我住三樓。搬東西要幫忙嗎？",
+          "pinyin": "Huānyíng huānyíng! Wǒ zhù sān lóu. Bān dōngxi yào bāngmáng ma?",
+          "gloss": "Welcome! I live on the third floor. Do you need help moving things?"
+        },
+        {
+          "speaker": "林太太",
+          "hanzi": "謝謝，桌子和椅子都搬完了，房子也洗乾淨了。",
+          "pinyin": "Xièxie, zhuōzi hé yǐzi dōu bān wán le, fángzi yě xǐ gānjìng le.",
+          "gloss": "Thanks, the tables and chairs are all moved in, and we've cleaned the place too."
+        },
+        {
+          "speaker": "王先生",
+          "hanzi": "這條街道很安靜，晚上路燈也很亮，你們會住得很舒服。",
+          "pinyin": "Zhè tiáo jiēdào hěn ānjìng, wǎnshàng lùdēng yě hěn liàng, nǐmen huì zhù de hěn shūfú.",
+          "gloss": "This street is very quiet, and the streetlights are bright at night — you'll live comfortably here."
+        },
+        {
+          "speaker": "林太太",
+          "hanzi": "太好了！我們舊的地方車子太多。",
+          "pinyin": "Tài hǎo le! Wǒmen jiù de dìfāng chēzi tài duō.",
+          "gloss": "That's great! Our old place had way too much traffic."
+        },
+        {
+          "speaker": "王先生",
+          "hanzi": "有事情就叫我啊，我就住在旁邊。",
+          "pinyin": "Yǒu shìqíng jiù jiào wǒ a, wǒ jiù zhù zài pángbiān.",
+          "gloss": "Just call me if you need anything — I live right next door."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "週末",
+            "要",
+            "搬",
+            "新",
+            "家"
+          ],
+          "pinyin": "Wǒmen zhōumò yào bān xīn jiā.",
+          "gloss": "We're moving into the new place this weekend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "條",
+            "街道",
+            "很",
+            "安靜",
+            "也",
+            "很",
+            "乾淨"
+          ],
+          "pinyin": "Zhè tiáo jiēdào hěn ānjìng, yě hěn gānjìng.",
+          "gloss": "This street is quiet and clean.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "新",
+            "鄰居",
+            "是",
+            "一",
+            "位",
+            "醫生"
+          ],
+          "pinyin": "Xīn línjū shì yí wèi yīshēng.",
+          "gloss": "The new neighbor is a doctor.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "舊",
+            "腳踏車",
+            "賣",
+            "了"
+          ],
+          "pinyin": "Wǒ de jiù jiǎotàchē mài le.",
+          "gloss": "I sold my old bike.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "客廳",
+            "的",
+            "燈",
+            "打開"
+          ],
+          "pinyin": "Qǐng bǎ kètīng de dēng dǎkāi.",
+          "gloss": "Please turn on the living room light.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "新家與新鄰居",
+        "hanzi": "上個週末我們搬家了。新家在一條安靜的街道上，附近有郵局、書店和一家麵店。房子不新，可是很乾淨，客廳的燈也很亮。舊家離公司太遠，現在我騎腳踏車十分鐘就到了。鄰居很熱情，昨天還送我們一袋水果，跟我們說有事情就叫他們。",
+        "gloss": "We moved last weekend. Our new home is on a quiet street, and nearby there's a post office, a bookstore, and a noodle shop. The house isn't new, but it's very clean, and the living-room light is bright. Our old place was too far from the office; now I ride my bike and get there in ten minutes. The neighbors are warm — yesterday they even brought us a bag of fruit and told us to call them if we ever need anything."
+      }
     },
     {
       "id": "l_hsk3_12_3",
-      "title": "詞彙 12–3",
+      "title": "廚房與冰箱",
       "sort_order": 3,
       "vocab": [
-        {
-          "id": "v_碗",
-          "traditional": "碗",
-          "pinyin": "wǎn",
-          "gloss": "bowl; cup",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_數學",
-          "traditional": "數學",
-          "pinyin": "shù xué",
-          "gloss": "mathematics; mathematical",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_刷",
-          "traditional": "刷",
-          "pinyin": "shuā",
-          "gloss": "to brush; to paint; to daub",
-          "hsk_level": 3,
-          "taiwan_note": null
-        },
         {
           "id": "v_廚房",
           "traditional": "廚房",
           "pinyin": "chú fáng",
           "gloss": "kitchen",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我媽媽在廚房做菜。",
+            "pinyin": "Wǒ māma zài chúfáng zuò cài.",
+            "gloss": "My mom is cooking in the kitchen."
+          }
         },
         {
-          "id": "v_練習",
-          "traditional": "練習",
-          "pinyin": "liàn xí",
-          "gloss": "to practice; exercise; drill",
+          "id": "v_冰箱",
+          "traditional": "冰箱",
+          "pinyin": "bīng xiāng",
+          "gloss": "icebox; freezer cabinet; refrigerator",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "冰箱裡有很多水果。",
+            "pinyin": "Bīngxiāng lǐ yǒu hěn duō shuǐguǒ.",
+            "gloss": "There's a lot of fruit in the fridge."
+          }
         },
         {
-          "id": "v_爺爺",
-          "traditional": "爺爺",
-          "pinyin": "yé ye",
-          "gloss": "(coll.) father's father; paternal grandfather",
+          "id": "v_碗",
+          "traditional": "碗",
+          "pinyin": "wǎn",
+          "gloss": "bowl; cup",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請幫我拿兩個碗。",
+            "pinyin": "Qǐng bāng wǒ ná liǎng ge wǎn.",
+            "gloss": "Please get me two bowls."
+          }
+        },
+        {
+          "id": "v_新鮮",
+          "traditional": "新鮮",
+          "pinyin": "xīn xiān",
+          "gloss": "fresh (experience, food etc); freshness; novel",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "市場的魚很新鮮。",
+            "pinyin": "Shìchǎng de yú hěn xīnxiān.",
+            "gloss": "The fish at the market is very fresh."
+          }
+        },
+        {
+          "id": "v_糖",
+          "traditional": "糖",
+          "pinyin": "táng",
+          "gloss": "sugar; sweets; candy",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的咖啡不要加糖。",
+            "pinyin": "Wǒ de kāfēi bú yào jiā táng.",
+            "gloss": "I don't want sugar in my coffee."
+          }
+        },
+        {
+          "id": "v_甜",
+          "traditional": "甜",
+          "pinyin": "tián",
+          "gloss": "sweet",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個蘋果很甜。",
+            "pinyin": "Zhè ge píngguǒ hěn tián.",
+            "gloss": "This apple is very sweet."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "The 把 construction: moving or changing a known thing",
+          "pattern": "Subject + 把 + (definite) Object + Verb + result / place / 了",
+          "explanation": "把 pulls the object in front of the verb so you can say what happened to it. Use it when the object is something both speakers already know about (那條魚, 我的碗) and the verb does something to it — moves it, cleans it, eats it up. The verb almost never stands alone: it needs a result, a place, or at least 了 after it. This is the everyday way to give kitchen instructions in Taiwan.",
+          "contrast": "Plain S + V + O (我洗碗了) states the activity; 把 (我把碗洗乾淨了) focuses on one specific object and its new state. If the object is new or general (\"some bowls\", \"a fish\"), you cannot use 把 — say 我買了一條魚, not 我把一條魚買了.",
+          "common_error": "Learners leave the verb bare — saying 我把碗洗 or 請把水果放 — which sounds unfinished. A 把 sentence needs something after the verb: 洗乾淨了, 放進冰箱, 吃完了.",
+          "examples": [
+            {
+              "hanzi": "請把新鮮的魚放進冰箱。",
+              "pinyin": "Qǐng bǎ xīnxiān de yú fàng jìn bīngxiāng.",
+              "gloss": "Please put the fresh fish in the fridge."
+            },
+            {
+              "hanzi": "我把廚房的碗洗乾淨了。",
+              "pinyin": "Wǒ bǎ chúfáng de wǎn xǐ gānjìng le.",
+              "gloss": "I washed the kitchen bowls clean."
+            },
+            {
+              "hanzi": "他把糖加到茶裡，茶太甜了。",
+              "pinyin": "Tā bǎ táng jiā dào chá lǐ, chá tài tián le.",
+              "gloss": "He added the sugar into the tea, and the tea got too sweet."
+            }
+          ],
+          "id": "g_hsk3_12_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_12_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "你去廚房幫我拿三個碗，好嗎？",
+          "pinyin": "Nǐ qù chúfáng bāng wǒ ná sān ge wǎn, hǎo ma?",
+          "gloss": "Go to the kitchen and get me three bowls, OK?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好。媽，冰箱裡的魚還新鮮嗎？",
+          "pinyin": "Hǎo. Mā, bīngxiāng lǐ de yú hái xīnxiān ma?",
+          "gloss": "Sure. Mom, is the fish in the fridge still fresh?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "早上剛買的，很新鮮。",
+          "pinyin": "Zǎoshang gāng mǎi de, hěn xīnxiān.",
+          "gloss": "I just bought it this morning, it's very fresh."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我們晚餐吃魚。我的茶要加一點糖。",
+          "pinyin": "Nà wǒmen wǎncān chī yú. Wǒ de chá yào jiā yìdiǎn táng.",
+          "gloss": "Then let's have fish for dinner. I want a little sugar in my tea."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "加太多糖不好，會太甜。",
+          "pinyin": "Jiā tài duō táng bù hǎo, huì tài tián.",
+          "gloss": "Too much sugar isn't good, it'll be too sweet."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好吧，那我不加了。",
+          "pinyin": "Hǎo ba, nà wǒ bù jiā le.",
+          "gloss": "Fine, then I won't add any."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "媽媽",
+            "在",
+            "廚房",
+            "洗",
+            "碗"
+          ],
+          "pinyin": "Māma zài chúfáng xǐ wǎn.",
+          "gloss": "Mom is washing bowls in the kitchen.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "冰箱",
+            "裡",
+            "的",
+            "牛奶",
+            "很",
+            "新鮮"
+          ],
+          "pinyin": "Bīngxiāng lǐ de niúnǎi hěn xīnxiān.",
+          "gloss": "The milk in the fridge is very fresh.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "茶",
+            "不",
+            "加",
+            "糖"
+          ],
+          "pinyin": "Wǒ de chá bù jiā táng.",
+          "gloss": "I don't put sugar in my tea.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "杯",
+            "茶",
+            "太",
+            "甜",
+            "了"
+          ],
+          "pinyin": "Zhè bēi chá tài tián le.",
+          "gloss": "This cup of tea is too sweet.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "請",
+            "把",
+            "碗",
+            "放",
+            "在",
+            "桌子",
+            "上"
+          ],
+          "pinyin": "Qǐng bǎ wǎn fàng zài zhuōzi shàng.",
+          "gloss": "Please put the bowls on the table.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我家的廚房",
+        "hanzi": "我家的廚房不大，可是很乾淨。媽媽每天早上先去市場買菜，回家就把新鮮的魚和菜放進冰箱。晚上我們一起做飯，我幫媽媽洗碗。爸爸很愛喝茶，他的茶要加一點糖，他說這樣比較甜，也比較好喝。吃完飯，廚房又乾淨了。",
+        "gloss": "My family's kitchen isn't big, but it's very clean. Every morning Mom goes to the market to buy food first, and when she gets home she puts the fresh fish and vegetables into the fridge. In the evening we cook together, and I help Mom wash the bowls. Dad loves drinking tea; his tea needs a little sugar — he says it's sweeter that way, and tastes better. After we finish eating, the kitchen is clean again."
+      }
     }
   ],
-  "sort_order": 40,
+  "sort_order": 41,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

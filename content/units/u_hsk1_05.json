@@ -1,89 +1,42 @@
 {
   "id": "u_hsk1_05",
-  "title": "HSK 1 詞彙 5",
-  "subtitle": "HSK 1 vocabulary · set 5",
+  "title": "出門走走",
+  "subtitle": "Going places around town and位置 words",
   "hsk_level": 1,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk1_05_1",
-      "title": "詞彙 5–1",
+      "title": "搭車出門",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_十",
-          "traditional": "十",
-          "pinyin": "shí",
-          "gloss": "ten; 10",
+          "id": "v_計程車",
+          "traditional": "計程車",
+          "pinyin": "jìchéngchē",
+          "gloss": "taxi; (Tw) rental car",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": "台灣說「計程車」，口語也說「小黃」。",
+          "prc_form": "出租車",
+          "example": {
+            "hanzi": "我們搭計程車去火車站，好不好？",
+            "pinyin": "Wǒmen dā jìchéngchē qù huǒchēzhàn, hǎo bù hǎo?",
+            "gloss": "Shall we take a taxi to the train station?"
+          }
         },
         {
-          "id": "v_看見",
-          "traditional": "看見",
-          "pinyin": "kàn jiàn",
-          "gloss": "to see; to catch sight of",
+          "id": "v_火車站",
+          "traditional": "火車站",
+          "pinyin": "huǒ chē zhàn",
+          "gloss": "train station",
           "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_女兒",
-          "traditional": "女兒",
-          "pinyin": "nǚ ér",
-          "gloss": "daughter",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_說話",
-          "traditional": "說話",
-          "pinyin": "shuō huà",
-          "gloss": "to speak; to say; to talk",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_爸爸",
-          "traditional": "爸爸",
-          "pinyin": "bà ba",
-          "gloss": "(coll.) father; dad",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_字",
-          "traditional": "字",
-          "pinyin": "zì",
-          "gloss": "letter; symbol; character",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_05_2",
-      "title": "詞彙 5–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_睡覺",
-          "traditional": "睡覺",
-          "pinyin": "shuì jiào",
-          "gloss": "to go to bed; to sleep",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_讀",
-          "traditional": "讀",
-          "pinyin": "dú",
-          "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
-          "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "火車站在附近，走路十分鐘。",
+            "pinyin": "Huǒchēzhàn zài fùjìn, zǒulù shí fēnzhōng.",
+            "gloss": "The train station is nearby, ten minutes on foot."
+          }
         },
         {
           "id": "v_飛機",
@@ -91,73 +44,270 @@
           "pinyin": "fēi jī",
           "gloss": "airplane",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我明天早上八點的飛機。",
+            "pinyin": "Wǒ míngtiān zǎoshang bā diǎn de fēijī.",
+            "gloss": "My flight is at eight tomorrow morning."
+          }
         },
         {
-          "id": "v_後面",
-          "traditional": "後面",
-          "pinyin": "hòumiàn",
-          "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+          "id": "v_去",
+          "traditional": "去",
+          "pinyin": "qù",
+          "gloss": "to go; to go to (a place); (of a time etc) last",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天晚上我去朋友家吃飯。",
+            "pinyin": "Jīntiān wǎnshang wǒ qù péngyǒu jiā chīfàn.",
+            "gloss": "Tonight I'm going to a friend's house for dinner."
+          }
         },
         {
-          "id": "v_喂",
-          "traditional": "喂",
-          "pinyin": "wéi",
-          "gloss": "hey; to feed (an animal, baby, invalid etc)",
+          "id": "v_來",
+          "traditional": "來",
+          "pinyin": "lái",
+          "gloss": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你幾點來我家？",
+            "pinyin": "Nǐ jǐ diǎn lái wǒ jiā?",
+            "gloss": "What time are you coming to my place?"
+          }
         },
         {
-          "id": "v_八",
-          "traditional": "八",
-          "pinyin": "bā",
-          "gloss": "eight; 8",
+          "id": "v_在",
+          "traditional": "在",
+          "pinyin": "zài",
+          "gloss": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我現在在捷運站，你呢？",
+            "pinyin": "Wǒ xiànzài zài jiéyùn zhàn, nǐ ne?",
+            "gloss": "I'm at the MRT station now — and you?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "搭／坐／騎 + 車 + 去／來 + 地方",
+          "pattern": "主語 + 搭／坐／騎 + 交通工具 + 去／來 + 地方",
+          "explanation": "In Mandarin the means of transport is said BEFORE the motion verb. First say how you travel (搭捷運、坐飛機、騎腳踏車), then say 去 or 來 plus the place. 去 means moving away from where the speaker is; 來 means moving toward the speaker.",
+          "contrast": "去 vs 來: both follow the transport phrase, but the choice depends on where the speaker is standing. If you are at the café and your friend is coming to you, say 搭捷運來咖啡廳; if you are at home talking about going there, say 搭捷運去咖啡廳.",
+          "common_error": "Learners copy English word order ('go to the station by taxi') and say 我去火車站搭計程車, which actually means 'I go to the station to catch a taxi'. Put the transport first: 我搭計程車去火車站.",
+          "examples": [
+            {
+              "hanzi": "我搭捷運去火車站。",
+              "pinyin": "Wǒ dā jiéyùn qù huǒchēzhàn.",
+              "gloss": "I take the MRT to the train station."
+            },
+            {
+              "hanzi": "她騎腳踏車來我家。",
+              "pinyin": "Tā qí jiǎotàchē lái wǒ jiā.",
+              "gloss": "She comes to my place by bike."
+            },
+            {
+              "hanzi": "爸爸坐飛機去日本工作。",
+              "pinyin": "Bàba zuò fēijī qù Rìběn gōngzuò.",
+              "gloss": "Dad flies to Japan for work."
+            }
+          ],
+          "id": "g_hsk1_05_1_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "在 + 地方（人在哪裡）",
+          "pattern": "主語 + 在 + 地方",
+          "explanation": "在 before a place name says where someone or something is right now. No other verb is needed: 我在火車站 already means 'I am at the train station'.",
+          "contrast": "在 marks a static location; 去／來 mark movement. 我在火車站 = I'm there already; 我去火車站 = I'm heading there.",
+          "common_error": "Learners add an extra 'be' verb and say 我是在火車站. Drop 是 — 在 is the verb.",
+          "examples": [
+            {
+              "hanzi": "我現在在火車站附近。",
+              "pinyin": "Wǒ xiànzài zài huǒchēzhàn fùjìn.",
+              "gloss": "I'm near the train station right now."
+            },
+            {
+              "hanzi": "老闆不在店內。",
+              "pinyin": "Lǎobǎn bù zài diàn nèi.",
+              "gloss": "The boss isn't in the shop."
+            },
+            {
+              "hanzi": "你的悠遊卡在我這? ",
+              "pinyin": "",
+              "gloss": ""
+            }
+          ],
+          "id": "g_hsk1_05_1_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "喂，小明，你現在在家嗎？",
+          "pinyin": "Wéi, Xiǎomíng, nǐ xiànzài zài jiā ma?",
+          "gloss": "Hello, Xiaoming, are you at home now?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "沒有，我在火車站附近的咖啡廳。",
+          "pinyin": "Méiyǒu, wǒ zài huǒchēzhàn fùjìn de kāfēitīng.",
+          "gloss": "No, I'm at the café near the train station."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "我搭計程車去找你，好不好？",
+          "pinyin": "Wǒ dā jìchéngchē qù zhǎo nǐ, hǎo bù hǎo?",
+          "gloss": "I'll take a taxi over to meet you, okay?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "不用，搭捷運來，不用十分鐘。",
+          "pinyin": "Bùyòng, dā jiéyùn lái, bùyòng shí fēnzhōng.",
+          "gloss": "No need — come by MRT, it takes less than ten minutes."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好，我現在去捷運站。你明天幾點坐飛機？",
+          "pinyin": "Hǎo, wǒ xiànzài qù jiéyùn zhàn. Nǐ míngtiān jǐ diǎn zuò fēijī?",
+          "gloss": "Okay, I'm heading to the MRT station now. What time is your flight tomorrow?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "早上九點，今天晚上我早點回家。",
+          "pinyin": "Zǎoshang jiǔ diǎn, jīntiān wǎnshang wǒ zǎodiǎn huí jiā.",
+          "gloss": "Nine in the morning, so I'll go home early tonight."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "明天",
+            "坐",
+            "飛機",
+            "去",
+            "台中"
+          ],
+          "pinyin": "Wǒ míngtiān zuò fēijī qù Táizhōng.",
+          "gloss": "I'm flying to Taichung tomorrow.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "現在",
+            "在",
+            "火車站",
+            "附近"
+          ],
+          "pinyin": "Tā xiànzài zài huǒchēzhàn fùjìn.",
+          "gloss": "He is near the train station now.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我們",
+            "搭",
+            "計程車",
+            "去",
+            "餐廳"
+          ],
+          "pinyin": "Wǒmen dā jìchéngchē qù cāntīng.",
+          "gloss": "We take a taxi to the restaurant.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "幾點",
+            "來",
+            "我",
+            "家"
+          ],
+          "pinyin": "Nǐ jǐ diǎn lái wǒ jiā?",
+          "gloss": "What time are you coming to my place?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "在",
+            "家",
+            "看",
+            "書"
+          ],
+          "pinyin": "Māma zài jiā kàn shū.",
+          "gloss": "Mom is at home reading.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "週末的早上",
+        "hanzi": "週末早上天氣不錯，我騎腳踏車去火車站，和媽媽一起坐火車去台中。台中的朋友搭計程車來火車站找我們，我們一起去吃飯，飯後在附近逛了兩? ",
+        "gloss": ""
+      }
     },
     {
-      "id": "l_hsk1_05_3",
-      "title": "詞彙 5–3",
-      "sort_order": 3,
+      "id": "l_hsk1_05_2",
+      "title": "這裡、那裡",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_怎麼樣",
-          "traditional": "怎麼樣",
-          "pinyin": "zěn me yàng",
-          "gloss": "how?; how about?; how was it?",
+          "id": "v_這",
+          "traditional": "這",
+          "pinyin": "zhè",
+          "gloss": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這是我的腳踏車。",
+            "pinyin": "Zhè shì wǒ de jiǎotàchē.",
+            "gloss": "This is my bicycle."
+          }
         },
         {
-          "id": "v_七",
-          "traditional": "七",
-          "pinyin": "qī",
-          "gloss": "seven; 7",
+          "id": "v_那",
+          "traditional": "那",
+          "pinyin": "nà",
+          "gloss": "(archaic) many; beautiful; how",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那是誰的書?",
+            "pinyin": "Nà shì shéi de shū?",
+            "gloss": "Whose book is that?"
+          }
         },
         {
-          "id": "v_小姐",
-          "traditional": "小姐",
-          "pinyin": "xiǎojiě",
-          "gloss": "young lady; miss; (slang) prostitute",
+          "id": "v_哪",
+          "traditional": "哪",
+          "pinyin": "nǎ",
+          "gloss": "how; which",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你喜歡哪一個?",
+            "pinyin": "Nǐ xǐhuān nǎ yí ge?",
+            "gloss": "Which one do you like?"
+          }
         },
         {
-          "id": "v_對不起",
-          "traditional": "對不起",
-          "pinyin": "duì bu qǐ",
-          "gloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+          "id": "v_裡",
+          "traditional": "裡",
+          "pinyin": "lǐ",
+          "gloss": "lining; interior; inside",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的悠遊卡在包包裡。",
+            "pinyin": "Wǒ de yōuyóukǎ zài bāobāo lǐ.",
+            "gloss": "My EasyCard is in my bag."
+          }
         },
         {
           "id": "v_前面",
@@ -165,20 +315,381 @@
           "pinyin": "qián miàn",
           "gloss": "ahead; in front; preceding",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "捷運站在前面,走路三分鐘。",
+            "pinyin": "Jiéyùn zhàn zài qiánmiàn, zǒulù sān fēnzhōng.",
+            "gloss": "The MRT station is up ahead, a three-minute walk."
+          }
         },
         {
-          "id": "v_同學",
-          "traditional": "同學",
-          "pinyin": "tóng xué",
-          "gloss": "to study at the same school; fellow student; classmate",
+          "id": "v_後面",
+          "traditional": "後面",
+          "pinyin": "hòumiàn",
+          "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在便利商店後面。",
+            "pinyin": "Yóujú zài biànlì shāngdiàn hòumiàn.",
+            "gloss": "The post office is behind the convenience store."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Saying where something is: A 在 B 前面/後面",
+          "pattern": "A + 在 + B + 前面/後面 (also: A + 在 + 這裡/那裡/哪裡)",
+          "explanation": "To say where something is, put the thing first, then 在, then the reference place, and put the location word 前面 or 後面 AFTER that place. So 「書店」+「前面」= 在書店前面 (in front of the bookstore). 這裡 / 那裡 / 哪裡 are place words on their own, so they go straight after 在: 我在這裡、他在那裡、你在哪裡?",
+          "contrast": "這/那/哪 vs 這裡/那裡/哪裡: bare 這、那、哪 point at a thing and come before a noun or classifier (這本書、那家店、哪一個), while 這裡、那裡、哪裡 are places and come after 在 or 去. Ask yourself: am I naming a thing, or a spot?",
+          "common_error": "Learners copy English word order and say 在前面書店 (\"in front of the bookstore\"). In Chinese the place comes first and 前面/後面 comes last: 在書店前面. The other frequent slip is 你在哪? for a location — use 你在哪裡?, because 哪 alone cannot follow 在.",
+          "examples": [
+            {
+              "hanzi": "銀行在書店後面。",
+              "pinyin": "Yínháng zài shūdiàn hòumiàn.",
+              "gloss": "The bank is behind the bookstore."
+            },
+            {
+              "hanzi": "便利商店在捷運站前面。",
+              "pinyin": "Biànlì shāngdiàn zài jiéyùn zhàn qiánmiàn.",
+              "gloss": "The convenience store is in front of the MRT station."
+            },
+            {
+              "hanzi": "我的腳踏車在那裡。",
+              "pinyin": "Wǒ de jiǎotàchē zài nàlǐ.",
+              "gloss": "My bicycle is over there."
+            }
+          ],
+          "id": "g_hsk1_05_2_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你好,這裡附近有便利商店嗎?",
+          "pinyin": "Nǐ hǎo, zhèlǐ fùjìn yǒu biànlì shāngdiàn ma?",
+          "gloss": "Hi, is there a convenience store near here?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "有喔,在前面,走路三分鐘。",
+          "pinyin": "Yǒu ō, zài qiánmiàn, zǒulù sān fēnzhōng.",
+          "gloss": "Yes, it's up ahead, a three-minute walk."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "那郵局呢?在哪裡?",
+          "pinyin": "Nà yóujú ne? Zài nǎlǐ?",
+          "gloss": "And the post office? Where is it?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "郵局在便利商店後面,好近的。",
+          "pinyin": "Yóujú zài biànlì shāngdiàn hòumiàn, hǎo jìn de.",
+          "gloss": "The post office is behind the convenience store — really close."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "謝謝!我的腳踏車在那裡,我騎腳踏車去。",
+          "pinyin": "Xièxie! Wǒ de jiǎotàchē zài nàlǐ, wǒ qí jiǎotàchē qù.",
+          "gloss": "Thanks! My bike is over there, I'll ride over."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不客氣!",
+          "pinyin": "Bú kèqì!",
+          "gloss": "You're welcome!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這裡",
+            "有",
+            "一",
+            "家",
+            "咖啡廳"
+          ],
+          "pinyin": "Zhèlǐ yǒu yì jiā kāfēitīng.",
+          "gloss": "There's a café here.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "郵局",
+            "在",
+            "銀行",
+            "後面"
+          ],
+          "pinyin": "Yóujú zài yínháng hòumiàn.",
+          "gloss": "The post office is behind the bank.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "你",
+            "的",
+            "手機",
+            "在",
+            "哪裡"
+          ],
+          "pinyin": "Nǐ de shǒujī zài nǎlǐ?",
+          "gloss": "Where is your phone?",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "那裡",
+            "的",
+            "麵",
+            "好",
+            "好吃"
+          ],
+          "pinyin": "Nàlǐ de miàn hǎo hǎochī.",
+          "gloss": "The noodles there are so good.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "學校",
+            "前面",
+            "有",
+            "一",
+            "個",
+            "捷運站"
+          ],
+          "pinyin": "Xuéxiào qiánmiàn yǒu yí ge jiéyùn zhàn.",
+          "gloss": "There's an MRT station in front of the school.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我家附近",
+        "hanzi": "我家附近有好多店。前面有一家便利商店,後面有一個郵局和一家書店。我喜歡那裡的咖啡廳,晚上會在那裡看書、寫日記。朋友說這裡的捷運站太遠,我說不遠喔,在學校前面,走路十分鐘。",
+        "gloss": "There are lots of shops near my home. In front there's a convenience store, and behind there's a post office and a bookstore. I like the café over there; in the evening I read and write in my diary there. A friend says the MRT station here is too far, but I say it isn't far at all — it's in front of the school, a ten-minute walk."
+      }
+    },
+    {
+      "id": "l_hsk1_05_3",
+      "title": "附近的地方",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_醫院",
+          "traditional": "醫院",
+          "pinyin": "yī yuàn",
+          "gloss": "hospital",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家附近有一間醫院。",
+            "pinyin": "Wǒ jiā fùjìn yǒu yī jiān yīyuàn.",
+            "gloss": "There's a hospital near my house."
+          }
+        },
+        {
+          "id": "v_飯館",
+          "traditional": "飯館",
+          "pinyin": "fàn guǎn",
+          "gloss": "restaurant",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這間飯館的麵太好吃了！",
+            "pinyin": "Zhè jiān fànguǎn de miàn tài hǎochī le!",
+            "gloss": "The noodles at this restaurant are so good!"
+          }
+        },
+        {
+          "id": "v_住",
+          "traditional": "住",
+          "pinyin": "zhù",
+          "gloss": "to live; to dwell; to stay",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我住在捷運站附近。",
+            "pinyin": "Wǒ zhù zài jiéyùn zhàn fùjìn.",
+            "gloss": "I live near the MRT station."
+          }
+        },
+        {
+          "id": "v_上",
+          "traditional": "上",
+          "pinyin": "shàng",
+          "gloss": "(bound form) up; upper; above; previous; first (of multiple parts); to climb; to get onto; to go up",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我早上八點上班。",
+            "pinyin": "Wǒ zǎoshang bā diǎn shàngbān.",
+            "gloss": "I start work at eight in the morning."
+          }
+        },
+        {
+          "id": "v_下",
+          "traditional": "下",
+          "pinyin": "xià",
+          "gloss": "down; downwards; below",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下雨了，你帶傘了嗎？",
+            "pinyin": "Xià yǔ le, nǐ dài sǎn le ma?",
+            "gloss": "It's raining — did you bring an umbrella?"
+          }
+        },
+        {
+          "id": "v_看見",
+          "traditional": "看見",
+          "pinyin": "kàn jiàn",
+          "gloss": "to see; to catch sight of",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "昨天我在捷運站看見我的老師。",
+            "pinyin": "Zuótiān wǒ zài jiéyùn zhàn kànjiàn wǒ de lǎoshī.",
+            "gloss": "Yesterday I saw my teacher at the MRT station."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "上／下 for the previous and next time period",
+          "pattern": "上／下 + 星期／個月／年 ；上／下 + 車／班",
+          "explanation": "上 means 'the one before' and 下 means 'the one after'. Put them in front of a week, month or year word: 上星期 = last week, 下星期 = next week, 上個月 = last month, 下個月 = next month. The same 上／下 pair also works with vehicles and work: 上車 (get on), 下車 (get off), 上班 (go to work), 下班 (get off work). Note 上午 and 下午 (morning / afternoon) follow the same up-down feeling.",
+          "contrast": "With days, Mandarin does NOT use 上／下 — it uses 前／後: 前天 (the day before yesterday), 昨天, 明天, 後天 (the day after tomorrow). The unit decides: 天 takes 前／後, but 星期／個月／年 take 上／下.",
+          "common_error": "Learners say 上天 or 下天 for 'yesterday / tomorrow', and sometimes put the word after the noun (星期下). Keep 上／下 in front: 上星期, 下個月, and use 昨天／明天 for days.",
+          "examples": [
+            {
+              "hanzi": "下星期我去醫院看朋友。",
+              "pinyin": "Xià xīngqí wǒ qù yīyuàn kàn péngyǒu.",
+              "gloss": "Next week I'm going to the hospital to visit a friend."
+            },
+            {
+              "hanzi": "上個月他住在台中。",
+              "pinyin": "Shàng ge yuè tā zhù zài Táizhōng.",
+              "gloss": "Last month he lived in Taichung."
+            },
+            {
+              "hanzi": "我下班後去那間飯館吃飯。",
+              "pinyin": "Wǒ xiàbān hòu qù nà jiān fànguǎn chīfàn.",
+              "gloss": "After work I go eat at that restaurant."
+            }
+          ],
+          "id": "g_hsk1_05_3_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你住在這附近嗎？",
+          "pinyin": "Nǐ zhù zài zhè fùjìn ma?",
+          "gloss": "Do you live around here?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對，我住在捷運站後面。",
+          "pinyin": "Duì, wǒ zhù zài jiéyùn zhàn hòumiàn.",
+          "gloss": "Yes, I live behind the MRT station."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "這附近有醫院嗎？我頭痛。",
+          "pinyin": "Zhè fùjìn yǒu yīyuàn ma? Wǒ tóu tòng.",
+          "gloss": "Is there a hospital near here? I have a headache."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "有，醫院在郵局前面，走路十分鐘，不遠。",
+          "pinyin": "Yǒu, yīyuàn zài yóujú qiánmiàn, zǒu lù shí fēnzhōng, bù yuǎn.",
+          "gloss": "Yes, the hospital is in front of the post office, ten minutes on foot — not far."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "謝謝！我下午去醫院。晚上我們去附近的飯館吃麵，好嗎？",
+          "pinyin": "Xièxie! Wǒ xiàwǔ qù yīyuàn. Wǎnshang wǒmen qù fùjìn de fànguǎn chī miàn, hǎo ma?",
+          "gloss": "Thanks! I'll go to the hospital this afternoon. Shall we eat noodles at the restaurant nearby tonight?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好喔！六點在捷運站見！",
+          "pinyin": "Hǎo ō! Liù diǎn zài jiéyùn zhàn jiàn!",
+          "gloss": "Sure! See you at the MRT station at six!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "住",
+            "在",
+            "醫院",
+            "附近"
+          ],
+          "pinyin": "Wǒ zhù zài yīyuàn fùjìn.",
+          "gloss": "I live near the hospital.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "下",
+            "星期",
+            "我",
+            "去",
+            "飯館",
+            "吃飯"
+          ],
+          "pinyin": "Xià xīngqí wǒ qù fànguǎn chīfàn.",
+          "gloss": "Next week I'm going to a restaurant to eat.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "昨天",
+            "我",
+            "在",
+            "捷運站",
+            "看見",
+            "老闆"
+          ],
+          "pinyin": "Zuótiān wǒ zài jiéyùn zhàn kànjiàn lǎobǎn.",
+          "gloss": "Yesterday I saw the boss at the MRT station.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "醫院",
+            "在",
+            "郵局",
+            "後面",
+            "，",
+            "不",
+            "遠"
+          ],
+          "pinyin": "Yīyuàn zài yóujú hòumiàn, bù yuǎn.",
+          "gloss": "The hospital is behind the post office; it's not far.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "五",
+            "點",
+            "下班"
+          ],
+          "pinyin": "Wǒ wǔ diǎn xiàbān.",
+          "gloss": "I get off work at five.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我家附近",
+        "hanzi": "我住在台中，我家附近有一間小飯館。那間飯館的麵太好吃了，我下班後都去吃。飯館後面是郵局，郵局前面有一間醫院。上星期我頭痛，去醫院看了醫生。回家的路上，我在捷運站看見飯館的老闆，他請我吃麵。",
+        "gloss": "I live in Taichung, and there is a small restaurant near my home. The noodles at that restaurant are so good that I go there after work every day. Behind the restaurant is the post office, and in front of the post office there is a hospital. Last week I had a headache, so I went to the hospital to see a doctor. On the way home I saw the restaurant's boss at the MRT station, and he treated me to noodles."
+      }
     }
   ],
   "sort_order": 19,

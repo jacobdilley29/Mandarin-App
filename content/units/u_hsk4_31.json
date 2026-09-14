@@ -1,62 +1,61 @@
 {
   "id": "u_hsk4_31",
-  "title": "HSK 4 詞彙 31",
-  "subtitle": "HSK 4 vocabulary · set 31",
+  "title": "禮貌、個性與人際往來",
+  "subtitle": "Being polite, describing personalities and smoothing things over",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_31_1",
-      "title": "詞彙 31–1",
+      "title": "不好意思，打擾一下",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_暖和",
-          "traditional": "暖和",
-          "pinyin": "nuǎn huo",
-          "gloss": "warm; nice and warm",
+          "id": "v_打擾",
+          "traditional": "打擾",
+          "pinyin": "dǎ rǎo",
+          "gloss": "to disturb; to bother; to trouble",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_列印",
-          "traditional": "列印",
-          "pinyin": "lièyìn",
-          "gloss": "to affix a seal; to stamp; to print out (with a printer)",
-          "hsk_level": 4,
-          "taiwan_note": "台灣說「列印」；「打印」是大陸用法。",
-          "prc_form": "打印"
-        },
-        {
-          "id": "v_農村",
-          "traditional": "農村",
-          "pinyin": "nóng cūn",
-          "gloss": "rural area; village",
+          "id": "v_抱歉",
+          "traditional": "抱歉",
+          "pinyin": "bào qiàn",
+          "gloss": "to be sorry; to feel apologetic; sorry!",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_排列",
-          "traditional": "排列",
-          "pinyin": "pái liè",
-          "gloss": "to arrange in order; (math.) permutation",
+          "id": "v_誤會",
+          "traditional": "誤會",
+          "pinyin": "wù huì",
+          "gloss": "to misunderstand; to mistake; misunderstanding",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_窄",
-          "traditional": "窄",
-          "pinyin": "zhǎi",
-          "gloss": "narrow; narrow-minded; badly off",
+          "id": "v_禮貌",
+          "traditional": "禮貌",
+          "pinyin": "lǐ mào",
+          "gloss": "courtesy; politeness; manners; courteous; polite",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_積累",
-          "traditional": "積累",
-          "pinyin": "jī lěi",
-          "gloss": "to accumulate; accumulation; cumulative",
+          "id": "v_握手",
+          "traditional": "握手",
+          "pinyin": "wò shǒu",
+          "gloss": "to shake hands",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_同情",
+          "traditional": "同情",
+          "pinyin": "tóng qíng",
+          "gloss": "to sympathize with; sympathy",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -67,22 +66,80 @@
     },
     {
       "id": "l_hsk4_31_2",
-      "title": "詞彙 31–2",
+      "title": "這個人個性如何",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_整齊",
-          "traditional": "整齊",
-          "pinyin": "zhěng qí",
-          "gloss": "orderly; neat; even",
+          "id": "v_幽默",
+          "traditional": "幽默",
+          "pinyin": "yōu mò",
+          "gloss": "(loanword) humor; humorous",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_表格",
-          "traditional": "表格",
-          "pinyin": "biǎo gé",
-          "gloss": "form; table",
+          "id": "v_誠實",
+          "traditional": "誠實",
+          "pinyin": "chéng shí",
+          "gloss": "honest",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_活潑",
+          "traditional": "活潑",
+          "pinyin": "huó po",
+          "gloss": "lively; vivacious; brisk",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_害羞",
+          "traditional": "害羞",
+          "pinyin": "hài xiū",
+          "gloss": "shy; embarrassed; bashful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_懶",
+          "traditional": "懶",
+          "pinyin": "lǎn",
+          "gloss": "lazy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_得意",
+          "traditional": "得意",
+          "pinyin": "dé yì",
+          "gloss": "proud of oneself; pleased with oneself; complacent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_31_3",
+      "title": "稱讚、感動與寫日記",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_優點",
+          "traditional": "優點",
+          "pinyin": "yōu diǎn",
+          "gloss": "merit; benefit; strong point",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_缺點",
+          "traditional": "缺點",
+          "pinyin": "quē diǎn",
+          "gloss": "weak point; fault; shortcoming",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -95,84 +152,26 @@
           "taiwan_note": null
         },
         {
-          "id": "v_碩士",
-          "traditional": "碩士",
-          "pinyin": "shuò shì",
-          "gloss": "master's degree; person who has a master's degree; learned person",
+          "id": "v_鼓掌",
+          "traditional": "鼓掌",
+          "pinyin": "gǔ zhǎng",
+          "gloss": "to applaud; to clap",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_牙膏",
-          "traditional": "牙膏",
-          "pinyin": "yá gāo",
-          "gloss": "toothpaste",
+          "id": "v_流淚",
+          "traditional": "流淚",
+          "pinyin": "liú lèi",
+          "gloss": "to shed tears",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_長城",
-          "traditional": "長城",
-          "pinyin": "Cháng chéng",
-          "gloss": "the Great Wall",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_31_3",
-      "title": "詞彙 31–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_做生意",
-          "traditional": "做生意",
-          "pinyin": "zuò shēng yì",
-          "gloss": "to do business",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_請客",
-          "traditional": "請客",
-          "pinyin": "qǐng kè",
-          "gloss": "to give a dinner party; to entertain guests; to invite to dinner",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_請假",
-          "traditional": "請假",
-          "pinyin": "qǐng jià",
-          "gloss": "to request leave of absence",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_乒乓球",
-          "traditional": "乒乓球",
-          "pinyin": "pīng pāng qiú",
-          "gloss": "table tennis; ping-pong; table tennis ball",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_導遊",
-          "traditional": "導遊",
-          "pinyin": "dǎo yóu",
-          "gloss": "tour guide; guidebook; to conduct a tour",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_葉子",
-          "traditional": "葉子",
-          "pinyin": "yè zi",
-          "gloss": "leaf; (slang) marijuana",
+          "id": "v_日記",
+          "traditional": "日記",
+          "pinyin": "rì jì",
+          "gloss": "diary",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -182,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 75,
+  "sort_order": 79,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

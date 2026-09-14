@@ -1,61 +1,69 @@
 {
   "id": "u_hsk4_08",
-  "title": "HSK 4 詞彙 8",
-  "subtitle": "HSK 4 vocabulary · set 8",
+  "title": "時間先後與讓步",
+  "subtitle": "Talking about before and after, causes and concessions",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_08_1",
-      "title": "詞彙 8–1",
+      "title": "事情的先後",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_說明",
-          "traditional": "說明",
-          "pinyin": "shuō míng",
-          "gloss": "to explain; to illustrate; to indicate",
+          "id": "v_剛剛",
+          "traditional": "剛剛",
+          "pinyin": "gāng gang",
+          "gloss": "just recently; just a moment ago",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_許多",
-          "traditional": "許多",
-          "pinyin": "xǔ duō",
-          "gloss": "many; a lot of; much",
+          "id": "v_後來",
+          "traditional": "後來",
+          "pinyin": "hòu lái",
+          "gloss": "afterwards; later; newly arrived",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_壓力",
-          "traditional": "壓力",
-          "pinyin": "yā lì",
-          "gloss": "pressure",
+          "id": "v_本來",
+          "traditional": "本來",
+          "pinyin": "běn lái",
+          "gloss": "original; originally; at first",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_由於",
-          "traditional": "由於",
-          "pinyin": "yóu yú",
-          "gloss": "due to; as a result of; thanks to",
+          "id": "v_原來",
+          "traditional": "原來",
+          "pinyin": "yuán lái",
+          "gloss": "original; former; originally",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_母親",
-          "traditional": "母親",
-          "pinyin": "mǔ qīn",
-          "gloss": "mother; also pr. [mǔ qin]",
+          "id": "v_仍然",
+          "traditional": "仍然",
+          "pinyin": "réng rán",
+          "gloss": "still; as before; yet",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_放棄",
-          "traditional": "放棄",
-          "pinyin": "fàng qì",
-          "gloss": "to renounce; to abandon; to give up",
+          "id": "v_重新",
+          "traditional": "重新",
+          "pinyin": "chóng xīn",
+          "gloss": "again; once more; re-",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_底",
+          "traditional": "底",
+          "pinyin": "dǐ",
+          "gloss": "background; bottom; base",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,25 +74,9 @@
     },
     {
       "id": "l_hsk4_08_2",
-      "title": "詞彙 8–2",
+      "title": "就算…也：原因與讓步",
       "sort_order": 2,
       "vocab": [
-        {
-          "id": "v_意見",
-          "traditional": "意見",
-          "pinyin": "yì jiàn",
-          "gloss": "idea; opinion; suggestion",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_過程",
-          "traditional": "過程",
-          "pinyin": "guò chéng",
-          "gloss": "course of events; process",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
         {
           "id": "v_即使",
           "traditional": "即使",
@@ -102,76 +94,34 @@
           "taiwan_note": null
         },
         {
-          "id": "v_深",
-          "traditional": "深",
-          "pinyin": "shēn",
-          "gloss": "deep (lit. and fig.)",
+          "id": "v_不管",
+          "traditional": "不管",
+          "pinyin": "bù guǎn",
+          "gloss": "not to be concerned; regardless of; no matter",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_各",
-          "traditional": "各",
-          "pinyin": "gè",
-          "gloss": "each; every",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_08_3",
-      "title": "詞彙 8–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_仍然",
-          "traditional": "仍然",
-          "pinyin": "réng rán",
-          "gloss": "still; as before; yet",
+          "id": "v_無論",
+          "traditional": "無論",
+          "pinyin": "wú lùn",
+          "gloss": "no matter what or how; regardless of whether...",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_值得",
-          "traditional": "值得",
-          "pinyin": "zhí de",
-          "gloss": "to be worth; to deserve",
+          "id": "v_由於",
+          "traditional": "由於",
+          "pinyin": "yóu yú",
+          "gloss": "due to; as a result of; thanks to",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_經歷",
-          "traditional": "經歷",
-          "pinyin": "jīng lì",
-          "gloss": "experience; to experience; to go through",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_討論",
-          "traditional": "討論",
-          "pinyin": "tǎo lùn",
-          "gloss": "to discuss; to talk over",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_超過",
-          "traditional": "超過",
-          "pinyin": "chāo guò",
-          "gloss": "to surpass; to exceed; to outstrip",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_假",
-          "traditional": "假",
-          "pinyin": "jiǎ",
-          "gloss": "fake; false; artificial",
+          "id": "v_受到",
+          "traditional": "受到",
+          "pinyin": "shòu dào",
+          "gloss": "to receive (praise, an education, punishment etc); to be ...ed (praised, educated, punished etc)",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +131,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 52,
+  "sort_order": 56,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

@@ -1,0 +1,130 @@
+{
+  "id": "u_hsk4_36",
+  "title": "街上生活與居家瑣事",
+  "subtitle": "Shopping, cooking, weather and looking after yourself around town",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_36_1",
+      "title": "買菜、包餃子與聚餐",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_售貨員",
+          "traditional": "售貨員",
+          "pinyin": "shòu huò yuán",
+          "gloss": "salesperson",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_番茄",
+          "traditional": "番茄",
+          "pinyin": "fānqié",
+          "gloss": "tomato",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「番茄」；「西紅柿」是大陸用法。",
+          "prc_form": "西紅柿"
+        },
+        {
+          "id": "v_餃子",
+          "traditional": "餃子",
+          "pinyin": "jiǎo zi",
+          "gloss": "dumpling; pot-sticker",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_塑料袋",
+          "traditional": "塑料袋",
+          "pinyin": "sù liào dài",
+          "gloss": "plastic bag",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_垃圾桶",
+          "traditional": "垃圾桶",
+          "pinyin": "lè sè tǒng",
+          "gloss": "rubbish bin; trash can; garbage can",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾杯",
+          "traditional": "乾杯",
+          "pinyin": "gān bēi",
+          "gloss": "to drink a toast; Cheers! (proposing a toast); Here's to you!",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_36_2",
+      "title": "出門、天氣與身體保養",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_堵車",
+          "traditional": "堵車",
+          "pinyin": "dǔ chē",
+          "gloss": "traffic jam; (of traffic) to get congested",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_涼快",
+          "traditional": "涼快",
+          "pinyin": "liáng kuài",
+          "gloss": "nice and cold; pleasantly cool",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_濕潤",
+          "traditional": "濕潤",
+          "pinyin": "shī rùn",
+          "gloss": "moist",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_理髮",
+          "traditional": "理髮",
+          "pinyin": "lǐ fǎ",
+          "gloss": "to get a haircut; to have one's hair done; to cut (sb's) hair; to give (sb) a haircut",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打針",
+          "traditional": "打針",
+          "pinyin": "dǎ zhēn",
+          "gloss": "to give or have an injection",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_個子",
+          "traditional": "個子",
+          "pinyin": "gè zi",
+          "gloss": "height; stature; build",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 84,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

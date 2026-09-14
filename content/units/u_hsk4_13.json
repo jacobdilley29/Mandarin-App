@@ -1,79 +1,37 @@
 {
   "id": "u_hsk4_13",
-  "title": "HSK 4 詞彙 13",
-  "subtitle": "HSK 4 vocabulary · set 13",
+  "title": "看表演與看比賽",
+  "subtitle": "Shows, audiences and sports events",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_13_1",
-      "title": "詞彙 13–1",
+      "title": "看表演與展覽",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_倆",
-          "traditional": "倆",
-          "pinyin": "liǎ",
-          "gloss": "two (colloquial equivalent of 两个); both; some",
+          "id": "v_演出",
+          "traditional": "演出",
+          "pinyin": "yǎn chū",
+          "gloss": "to act (in a play); to perform; to put on (a performance)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_增加",
-          "traditional": "增加",
-          "pinyin": "zēng jiā",
-          "gloss": "to raise; to increase",
+          "id": "v_觀眾",
+          "traditional": "觀眾",
+          "pinyin": "guān zhòng",
+          "gloss": "spectators; audience; visitors (to an exhibition etc)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_著名",
-          "traditional": "著名",
-          "pinyin": "zhù míng",
-          "gloss": "famous; noted; well-known",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_拒絕",
-          "traditional": "拒絕",
-          "pinyin": "jù jué",
-          "gloss": "to refuse; to decline; to reject",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_帥",
-          "traditional": "帥",
-          "pinyin": "shuài",
-          "gloss": "(bound form) commander-in-chief; (bound form) to lead; to command; handsome; graceful; dashing; elegant",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_不僅",
-          "traditional": "不僅",
-          "pinyin": "bù jǐn",
-          "gloss": "not just; not limited to; (as a correlative conjunction) not only (..., but also ...)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_13_2",
-      "title": "詞彙 13–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_順利",
-          "traditional": "順利",
-          "pinyin": "shùn lì",
-          "gloss": "smoothly; without a hitch",
+          "id": "v_群",
+          "traditional": "群",
+          "pinyin": "qún",
+          "gloss": "group; crowd; flock, herd, pack etc",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -86,34 +44,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_麻煩",
-          "traditional": "麻煩",
-          "pinyin": "má fan",
-          "gloss": "trouble; inconvenience; inconvenient; troublesome; annoying; to bother sb; to put sb to trouble",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_申請",
-          "traditional": "申請",
-          "pinyin": "shēn qǐng",
-          "gloss": "to apply for sth; application form",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_演出",
-          "traditional": "演出",
-          "pinyin": "yǎn chū",
-          "gloss": "to act (in a play); to perform; to put on (a performance)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_豬",
-          "traditional": "豬",
-          "pinyin": "zhū",
-          "gloss": "hog; pig; swine",
+          "id": "v_著名",
+          "traditional": "著名",
+          "pinyin": "zhù míng",
+          "gloss": "famous; noted; well-known",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -123,55 +57,47 @@
       "sentences": []
     },
     {
-      "id": "l_hsk4_13_3",
-      "title": "詞彙 13–3",
-      "sort_order": 3,
+      "id": "l_hsk4_13_2",
+      "title": "運動比賽與勝負",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_競爭",
-          "traditional": "競爭",
-          "pinyin": "jìng zhēng",
-          "gloss": "to compete; competition",
+          "id": "v_輸",
+          "traditional": "輸",
+          "pinyin": "shū",
+          "gloss": "to lose; to be beaten; (bound form) to transport; (literary) to donate; to contribute",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_估計",
-          "traditional": "估計",
-          "pinyin": "gū jì",
-          "gloss": "to estimate; to reckon; (coll.) to suppose",
+          "id": "v_速度",
+          "traditional": "速度",
+          "pinyin": "sù dù",
+          "gloss": "speed; rate; velocity",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_失敗",
-          "traditional": "失敗",
-          "pinyin": "shī bài",
-          "gloss": "to be defeated; to lose; to fail (e.g. experiments)",
+          "id": "v_動作",
+          "traditional": "動作",
+          "pinyin": "dòng zuò",
+          "gloss": "movement; motion; action; to act; to move",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_世紀",
-          "traditional": "世紀",
-          "pinyin": "shì jì",
-          "gloss": "century",
+          "id": "v_倍",
+          "traditional": "倍",
+          "pinyin": "bèi",
+          "gloss": "(two, three etc) -fold; times (multiplier); double",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_製造",
-          "traditional": "製造",
-          "pinyin": "zhì zào",
-          "gloss": "to manufacture; to make",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_不得不",
-          "traditional": "不得不",
-          "pinyin": "bù dé bù",
-          "gloss": "have no choice or option but to; cannot but; have to",
+          "id": "v_精彩",
+          "traditional": "精彩",
+          "pinyin": "jīng cǎi",
+          "gloss": "wonderful; marvelous; brilliant",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +107,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 57,
+  "sort_order": 61,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

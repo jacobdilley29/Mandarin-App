@@ -1,0 +1,489 @@
+{
+  "id": "u_hsk3_18",
+  "title": "教室裡學中文",
+  "subtitle": "Classroom life and studying the language",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk3_18_1",
+      "title": "上課與文具",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_黑板",
+          "traditional": "黑板",
+          "pinyin": "hēi bǎn",
+          "gloss": "blackboard",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師把句子寫在黑板上。",
+            "pinyin": "Lǎoshī bǎ jùzi xiě zài hēibǎn shàng.",
+            "gloss": "The teacher writes the sentence on the blackboard."
+          }
+        },
+        {
+          "id": "v_鉛筆",
+          "traditional": "鉛筆",
+          "pinyin": "qiān bǐ",
+          "gloss": "(lead) pencil",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你可以借我鉛筆嗎？",
+            "pinyin": "Nǐ kěyǐ jiè wǒ qiānbǐ ma?",
+            "gloss": "Can you lend me a pencil?"
+          }
+        },
+        {
+          "id": "v_年級",
+          "traditional": "年級",
+          "pinyin": "nián jí",
+          "gloss": "grade; year (in school, college etc)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹今年三年級。",
+            "pinyin": "Wǒ mèimei jīnnián sān niánjí.",
+            "gloss": "My little sister is in third grade this year."
+          }
+        },
+        {
+          "id": "v_複習",
+          "traditional": "複習",
+          "pinyin": "fù xí",
+          "gloss": "variant of 复习",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天晚上都會複習新的詞語。",
+            "pinyin": "Wǒ měi tiān wǎnshàng dōu huì fùxí xīn de cíyǔ.",
+            "gloss": "I review the new words every evening."
+          }
+        },
+        {
+          "id": "v_句子",
+          "traditional": "句子",
+          "pinyin": "jù zi",
+          "gloss": "sentence",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個句子太長了，我看不懂。",
+            "pinyin": "Zhège jùzi tài cháng le, wǒ kàn bù dǒng.",
+            "gloss": "This sentence is too long; I can't understand it."
+          }
+        },
+        {
+          "id": "v_詞語",
+          "traditional": "詞語",
+          "pinyin": "cí yǔ",
+          "gloss": "word (general term including monosyllables through to short phrases); term (e.g. technical term); expression",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這些詞語我都記起來了。",
+            "pinyin": "Zhèxiē cíyǔ wǒ dōu jì qǐlái le.",
+            "gloss": "I've memorized all of these words."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "把-sentences: saying where something ends up",
+          "pattern": "Subject + 把 + (definite) Object + Verb + 在/到 + Place",
+          "explanation": "Use 把 to move the object in front of the verb when you want to say what you do to it and where it ends up. The object must be something both speakers already know about (你的鉛筆, 這些詞語, 課本), and the verb needs a result after it — usually 在/到 + a place, or 下來/起來. This is very common in the classroom: 把…寫在黑板上, 把…放在桌子上.",
+          "contrast": "Plain SVO (我寫句子) just reports the action; 把 (我把句子寫在黑板上) focuses on what happens to a specific, already-known object. If the object is new or indefinite (我要寫一個句子), you cannot use 把.",
+          "common_error": "Learners copy English word order and say 我寫句子在黑板上, or they leave the 把-sentence unfinished, like 我把鉛筆放 — a 把 sentence always needs a result after the verb (放在桌子上, 寫下來).",
+          "examples": [
+            {
+              "hanzi": "老師把新的詞語寫在黑板上。",
+              "pinyin": "Lǎoshī bǎ xīn de cíyǔ xiě zài hēibǎn shàng.",
+              "gloss": "The teacher writes the new words on the blackboard."
+            },
+            {
+              "hanzi": "請把你的鉛筆放在桌子上。",
+              "pinyin": "Qǐng bǎ nǐ de qiānbǐ fàng zài zhuōzi shàng.",
+              "gloss": "Please put your pencil on the desk."
+            },
+            {
+              "hanzi": "我把這些句子記下來，晚上再複習。",
+              "pinyin": "Wǒ bǎ zhèxiē jùzi jì xiàlái, wǎnshàng zài fùxí.",
+              "gloss": "I'll write these sentences down and review them tonight."
+            }
+          ],
+          "id": "g_hsk3_18_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_18_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "學生",
+          "hanzi": "老師，黑板上的句子我看不清楚。",
+          "pinyin": "Lǎoshī, hēibǎn shàng de jùzi wǒ kàn bù qīngchǔ.",
+          "gloss": "Teacher, I can't see the sentence on the blackboard clearly."
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "我再寫大一點。你們把這些詞語記下來喔。",
+          "pinyin": "Wǒ zài xiě dà yìdiǎn. Nǐmen bǎ zhèxiē cíyǔ jì xiàlái ō.",
+          "gloss": "I'll write it a bit bigger. Write these words down, okay."
+        },
+        {
+          "speaker": "學生",
+          "hanzi": "我的鉛筆壞了，可以跟同學借嗎？",
+          "pinyin": "Wǒ de qiānbǐ huài le, kěyǐ gēn tóngxué jiè ma?",
+          "gloss": "My pencil is broken — may I borrow one from a classmate?"
+        },
+        {
+          "speaker": "老師",
+          "hanzi": "可以。明天要考三年級的詞語，今天晚上記得複習。",
+          "pinyin": "Kěyǐ. Míngtiān yào kǎo sān niánjí de cíyǔ, jīntiān wǎnshàng jìde fùxí.",
+          "gloss": "Sure. Tomorrow there's a test on the third-grade words, so remember to review tonight."
+        },
+        {
+          "speaker": "學生",
+          "hanzi": "好，我回家就複習。謝謝老師！",
+          "pinyin": "Hǎo, wǒ huí jiā jiù fùxí. Xièxie lǎoshī!",
+          "gloss": "Okay, I'll review as soon as I get home. Thank you, teacher!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "老師",
+            "把",
+            "句子",
+            "寫",
+            "在",
+            "黑板",
+            "上"
+          ],
+          "pinyin": "Lǎoshī bǎ jùzi xiě zài hēibǎn shàng.",
+          "gloss": "The teacher writes the sentence on the blackboard.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "用",
+            "鉛筆",
+            "寫",
+            "字"
+          ],
+          "pinyin": "Wǒ yòng qiānbǐ xiě zì.",
+          "gloss": "I write characters with a pencil.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "是",
+            "三",
+            "年級",
+            "的",
+            "學生"
+          ],
+          "pinyin": "Tā shì sān niánjí de xuéshēng.",
+          "gloss": "He is a third-grade student.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我們",
+            "明天",
+            "要",
+            "複習",
+            "這些",
+            "詞語"
+          ],
+          "pinyin": "Wǒmen míngtiān yào fùxí zhèxiē cíyǔ.",
+          "gloss": "Tomorrow we're going to review these words.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這個",
+            "句子",
+            "很",
+            "簡單"
+          ],
+          "pinyin": "Zhège jùzi hěn jiǎndān.",
+          "gloss": "This sentence is very simple.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我的三年級",
+        "hanzi": "我是三年級的學生。我最喜歡上國語課。老師常常把新的詞語和句子寫在黑板上，我就用鉛筆把它們記在本子上。回家以後，我會先複習今天的課，再寫作業。媽媽說，每天複習一點，考試就不難了。",
+        "gloss": "I'm a third-grade student. My favourite class is Chinese. The teacher often writes new words and sentences on the blackboard, and I use my pencil to note them down in my notebook. After I get home, I review today's lesson first and then do my homework. Mum says if you review a little every day, tests won't be hard."
+      }
+    },
+    {
+      "id": "l_hsk3_18_2",
+      "title": "練中文與課餘愛好",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_普通話",
+          "traditional": "普通話",
+          "pinyin": "pǔ tōng huà",
+          "gloss": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的普通話說得很清楚，我都聽得懂。",
+            "pinyin": "Tā de pǔtōnghuà shuō de hěn qīngchu, wǒ dōu tīng de dǒng.",
+            "gloss": "He speaks Mandarin very clearly; I can understand all of it."
+          }
+        },
+        {
+          "id": "v_字典",
+          "traditional": "字典",
+          "pinyin": "zì diǎn",
+          "gloss": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個字我不懂，我去查字典。",
+            "pinyin": "Zhège zì wǒ bù dǒng, wǒ qù chá zìdiǎn.",
+            "gloss": "I don't know this character, so I'll go look it up in the dictionary."
+          }
+        },
+        {
+          "id": "v_愛好",
+          "traditional": "愛好",
+          "pinyin": "ài hào",
+          "gloss": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "爬山是我最大的愛好。",
+            "pinyin": "Pá shān shì wǒ zuì dà de àihào.",
+            "gloss": "Hiking is my biggest hobby."
+          }
+        },
+        {
+          "id": "v_爬山",
+          "traditional": "爬山",
+          "pinyin": "pá shān",
+          "gloss": "to climb a mountain; to mountaineer; hiking",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我們一起去爬山，好嗎？",
+            "pinyin": "Zhōumò wǒmen yìqǐ qù pá shān, hǎo ma?",
+            "gloss": "Let's go hiking together this weekend, OK?"
+          }
+        },
+        {
+          "id": "v_照相機",
+          "traditional": "照相機",
+          "pinyin": "zhào xiàng jī",
+          "gloss": "camera",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的新照相機很輕，帶去旅行很方便。",
+            "pinyin": "Wǒ de xīn zhàoxiàngjī hěn qīng, dài qù lǚxíng hěn fāngbiàn.",
+            "gloss": "My new camera is light; it's very convenient to take travelling."
+          }
+        },
+        {
+          "id": "v_著急",
+          "traditional": "著急",
+          "pinyin": "zháo jí",
+          "gloss": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhāo jí]",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "別著急，捷運五分鐘後就來了。",
+            "pinyin": "Bié zhāojí, jiéyùn wǔ fēnzhōng hòu jiù lái le.",
+            "gloss": "Don't worry, the MRT will come in five minutes."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Describing how an action is done: V + 得 + (很) + Adjective",
+          "pattern": "主語 + (賓語) + 動詞 + 得 + 很/太 + 形容詞",
+          "explanation": "To say how well or how fast someone does something, put 得 right after the verb and then an adjective. The adjective almost always needs a degree word like 很 or 太 in front of it. If there is an object, either move it to the front (他普通話說得很好) or repeat the verb (他說普通話說得很好).",
+          "contrast": "Easily confused with the modifier 的: 他說的話 (\"the words he said\" — 的 + noun) versus 他說得很好 (\"he speaks well\" — 得 + adjective). If an adjective describing the action follows, use 得; if a noun follows, use 的. Both are pronounced \"de\".",
+          "common_error": "Learners drop the 很 and say 他普通話說得好, which sounds unfinished or like a comparison, and they also put the adjective before the verb (他很好說普通話) instead of after 得.",
+          "examples": [
+            {
+              "hanzi": "他普通話說得很清楚。",
+              "pinyin": "Tā pǔtōnghuà shuō de hěn qīngchu.",
+              "gloss": "He speaks Mandarin very clearly."
+            },
+            {
+              "hanzi": "我爬山爬得很慢，可是我不著急。",
+              "pinyin": "Wǒ pá shān pá de hěn màn, kěshì wǒ bù zhāojí.",
+              "gloss": "I climb mountains very slowly, but I'm not in a hurry."
+            },
+            {
+              "hanzi": "她用字典查得很快。",
+              "pinyin": "Tā yòng zìdiǎn chá de hěn kuài.",
+              "gloss": "She looks things up in the dictionary very fast."
+            }
+          ],
+          "id": "g_hsk3_18_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "別 + Verb：telling someone not to do something",
+          "pattern": "別 + 動詞（+ 了）",
+          "explanation": "別 before a verb makes a soft negative command, very common in spoken Taiwan Mandarin: 別著急 \"don't worry\", 別哭 \"don't cry\". Adding 了 at the end asks the person to stop what they are already doing.",
+          "contrast": "不要 means the same but sounds stronger and more direct; 不 + verb is just a statement (我不著急 \"I'm not worried\"), not a command.",
+          "common_error": "Learners say 不著急 when they mean \"don't panic\" — that only states a fact about themselves; a command needs 別 or 不要.",
+          "examples": [
+            {
+              "hanzi": "別著急，我們還有時間。",
+              "pinyin": "Bié zhāojí, wǒmen hái yǒu shíjiān.",
+              "gloss": "Don't worry, we still have time."
+            },
+            {
+              "hanzi": "別忘了帶照相機喔。",
+              "pinyin": "Bié wàng le dài zhàoxiàngjī o.",
+              "gloss": "Don't forget to bring the camera."
+            },
+            {
+              "hanzi": "下雨了，今天別去爬山了。",
+              "pinyin": "Xià yǔ le, jīntiān bié qù pá shān le.",
+              "gloss": "It's raining; let's not go hiking today."
+            }
+          ],
+          "id": "g_hsk3_18_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "美美",
+          "hanzi": "阿明，這個週末你有空嗎？我們去爬山。",
+          "pinyin": "Ā-Míng, zhège zhōumò nǐ yǒu kòng ma? Wǒmen qù pá shān.",
+          "gloss": "A-Ming, are you free this weekend? Let's go hiking."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啊！爬山也是我的愛好耶。要帶照相機嗎？",
+          "pinyin": "Hǎo a! Pá shān yě shì wǒ de àihào ye. Yào dài zhàoxiàngjī ma?",
+          "gloss": "Sure! Hiking is my hobby too. Should we bring a camera?"
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "要，山上的花很漂亮。我朋友是外國人，他也想去，他的普通話說得很好。",
+          "pinyin": "Yào, shān shàng de huā hěn piàoliang. Wǒ péngyǒu shì wàiguó rén, tā yě xiǎng qù, tā de pǔtōnghuà shuō de hěn hǎo.",
+          "gloss": "Yes, the flowers on the mountain are beautiful. My friend is a foreigner and wants to come too; he speaks Mandarin very well."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "太好了！他不懂的字，我們可以幫他查字典。",
+          "pinyin": "Tài hǎo le! Tā bù dǒng de zì, wǒmen kěyǐ bāng tā chá zìdiǎn.",
+          "gloss": "Great! For characters he doesn't know, we can help him look them up in a dictionary."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "我們搭捷運去，八點在捷運站見。別著急，我會帶水。",
+          "pinyin": "Wǒmen dā jiéyùn qù, bā diǎn zài jiéyùn zhàn jiàn. Bié zhāojí, wǒ huì dài shuǐ.",
+          "gloss": "We'll take the MRT; see you at the MRT station at eight. Don't worry, I'll bring water."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好，明天見！",
+          "pinyin": "Hǎo, míngtiān jiàn!",
+          "gloss": "OK, see you tomorrow!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "週末",
+            "我",
+            "要",
+            "去",
+            "爬山"
+          ],
+          "pinyin": "Zhōumò wǒ yào qù pá shān.",
+          "gloss": "I'm going hiking this weekend.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我們",
+            "還",
+            "有",
+            "時間",
+            "，",
+            "你",
+            "不",
+            "用",
+            "著急"
+          ],
+          "pinyin": "Wǒmen hái yǒu shíjiān, nǐ bùyòng zhāojí.",
+          "gloss": "We still have time; you don't need to worry.",
+          "cloze_index": 8
+        },
+        {
+          "tokens": [
+            "爬山",
+            "是",
+            "他",
+            "的",
+            "愛好"
+          ],
+          "pinyin": "Pá shān shì tā de àihào.",
+          "gloss": "Hiking is his hobby.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這個",
+            "字",
+            "我",
+            "要",
+            "查",
+            "字典"
+          ],
+          "pinyin": "Zhège zì wǒ yào chá zìdiǎn.",
+          "gloss": "I need to look this character up in the dictionary.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "他",
+            "的",
+            "普通話",
+            "說",
+            "得",
+            "很",
+            "清楚"
+          ],
+          "pinyin": "Tā de pǔtōnghuà shuō de hěn qīngchu.",
+          "gloss": "He speaks Mandarin very clearly.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我的愛好",
+        "hanzi": "我的愛好是爬山。每個週末，我都會搭捷運到山下，慢慢爬上去。我的照相機很輕，我喜歡照山上的花和小鳥。上個月，我在山上遇到一個外國人，他的普通話說得很清楚。他問我路，我不懂他說的一個字，就拿出手機查字典。他笑著說：「別著急，我們慢慢講。」",
+        "gloss": "My hobby is hiking. Every weekend I take the MRT to the foot of the mountain and climb up slowly. My camera is very light, and I like to photograph the flowers and little birds on the mountain. Last month I ran into a foreigner up there; he spoke Mandarin very clearly. He asked me for directions, and when I didn't understand one word he said, I took out my phone to look it up in the dictionary. He smiled and said, \"Don't worry, let's talk slowly.\""
+      }
+    }
+  ],
+  "sort_order": 47,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}
