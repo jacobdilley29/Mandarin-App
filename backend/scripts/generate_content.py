@@ -334,11 +334,17 @@ def _select_units(data: dict, args) -> list[dict]:
     cannot see, and denying them the retry that would fix them.
     """
     units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
+    narrowed = bool(args.unit or args.level)
     if args.unit:
         units = [u for u in units if u["id"] in set(args.unit)]
     if args.level:
         units = [u for u in units if u.get("hsk_level") in set(args.level)]
-    if args.all:
+    # --refresh on a named unit or level means "do these again", so it reaches
+    # live units the way --all does. Without this it was unusable for the job it
+    # exists for: after a reorder the units needing regeneration are precisely
+    # the ones already marked live, so selection skipped every one of them and
+    # the run reported "every unit in scope is already complete".
+    if args.all or (args.refresh and narrowed):
         return units
     return [
         u for u in units

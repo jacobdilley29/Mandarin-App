@@ -227,3 +227,33 @@ def test_beginner_first_costs_less_than_full_level_order(tmp_path, monkeypatch, 
 
     assert broke_beginner == [], "nothing moves across a level boundary"
     assert broke_level, "the full reorder does break this one"
+
+
+def test_it_warns_when_the_baseline_is_already_a_broken_reorder(tmp_path, monkeypatch, capsys):
+    """Every cost is measured against what is on disk now.
+
+    Apply an ordering, skip the regeneration, and run this again: each strategy
+    honestly reports that nothing *new* would break, which reads as "free" and is
+    precisely backwards. Real sequence, real confusion — so it says so.
+    """
+    monkeypatch.setattr(cs, "CONTENT_DIR", tmp_path)
+    monkeypatch.setattr(cs, "MANIFEST_PATH", tmp_path / "curriculum.json")
+    monkeypatch.setattr(cs, "UNITS_DIR", tmp_path / "units")
+
+    # A unit whose every sentence is out of scope, many times over.
+    broken = _unit("u_hsk1_01", 1, 1, generated=True, sentences=[
+        {"tokens": ["嚇"], "pinyin": "p", "gloss": "g"} for _ in range(ru.DIRTY_BASELINE + 5)
+    ])
+    cs.split({"meta": {"function_words": []}, "units": [broken]})
+
+    ru.main([])
+
+    out = capsys.readouterr().out
+    assert "already been" in out
+    assert "git checkout -- content/units/" in out
+
+
+def test_a_clean_baseline_is_not_nagged_about(source, capsys):
+    ru.main([])
+
+    assert "git checkout" not in capsys.readouterr().out

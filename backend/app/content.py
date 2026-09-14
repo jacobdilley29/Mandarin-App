@@ -15,6 +15,7 @@ from pathlib import Path
 from . import levels as _levels
 from . import zhuyin as _zhuyin
 from .config import REPO_ROOT
+from .curriculum_source import STATUS_LIVE
 
 log = logging.getLogger(__name__)
 
@@ -171,6 +172,39 @@ def load_from_disk(conn: sqlite3.Connection) -> dict | None:
     return load_curriculum(conn, curriculum_source.load())
 
 
+def _stage_out_of_scope(conn: sqlite3.Connection) -> list[str]:
+    """Withhold live units whose sentences run past what has been taught.
+
+    The startup reload is a convenience; `make load-content` is the authoring
+    gate, and it refuses exactly this content. Without the same check here the
+    convenient path became the one that installs what the gate rejects — which
+    is how a reorder applied without its regeneration could put 407 out-of-scope
+    sentences in front of the learner.
+
+    Demotes rather than refuses: a broken unit is withheld and the rest of the
+    curriculum still loads, which is what the draft gate does everywhere else.
+    """
+    from . import curriculum_source
+    from .validation import placement_pool_chars, validate_curriculum
+
+    data = curriculum_source.load()
+    result = validate_curriculum(data, extra_known_chars=placement_pool_chars())
+    if not result.violations:
+        return []
+
+    bad_lessons = {v.where.split()[0] for v in result.violations}
+    staged = []
+    for unit in data.get("units", []):
+        if unit.get("status", STATUS_LIVE) != STATUS_LIVE:
+            continue
+        if any(l["id"] in bad_lessons for l in unit.get("lessons") or []):
+            conn.execute("UPDATE units SET status = 'draft' WHERE id = ?", (unit["id"],))
+            staged.append(unit["id"])
+    if staged:
+        conn.commit()
+    return staged
+
+
 def ensure_loaded(conn: sqlite3.Connection) -> None:
     """Bring the database in step with content/units/ on every startup.
 
@@ -196,12 +230,18 @@ def ensure_loaded(conn: sqlite3.Connection) -> None:
     """
     try:
         load_from_disk(conn)
+        staged = _stage_out_of_scope(conn)
     except Exception as exc:  # noqa: BLE001 — never fail to start over content
         log.warning(
             "could not reload curriculum from content/ (%s); "
             "serving the previously loaded version", exc
         )
     else:
+        if staged:
+            log.warning(
+                "%d unit(s) withheld from Learn — sentences use characters the "
+                "learner has not met yet: %s", len(staged), ", ".join(staged[:8])
+            )
         live = conn.execute(
             "SELECT COUNT(*) AS n FROM units WHERE status = 'live'"
         ).fetchone()["n"]

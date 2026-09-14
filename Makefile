@@ -56,6 +56,12 @@ pull-content:
 	docker compose cp app:/app/content/.generated "$$tmp/gen" >/dev/null 2>&1 \
 	  && mkdir -p content/.generated && cp -R "$$tmp/gen/." content/.generated/ \
 	  || true; \
+	: "curriculum.json is the manifest app/curriculum_source.load() iterates." \
+	"Leaving it behind meant seven newly built unit files came back to the host" \
+	"while the index naming them did not, so the app never loaded them."; \
+	docker compose cp app:/app/content/curriculum.json "$$tmp/curriculum.json" >/dev/null 2>&1 \
+	  && cp "$$tmp/curriculum.json" content/curriculum.json \
+	  || true; \
 	rm -rf "$$tmp"; \
 	echo "› results copied into content/ — run 'git status' to see what changed"
 

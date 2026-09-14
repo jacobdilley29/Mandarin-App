@@ -501,7 +501,7 @@ def test_a_blocked_draft_is_still_selected_for_work(sandbox):
     assert blocked["status"] == cs.STATUS_DRAFT
     assert completeness.evaluate_unit(blocked).complete, "it has all its content"
 
-    args = types.SimpleNamespace(unit=None, level=None, all=False)
+    args = types.SimpleNamespace(unit=None, level=None, all=False, refresh=False)
     selected = [u["id"] for u in gc._select_units(cs.load(), args)]
 
     assert "u_draft" in selected, "a blocked draft still needs work"
@@ -857,3 +857,30 @@ def test_refresh_says_that_is_why_it_is_paying(sandbox, capsys):
     gc.main(["--unit", "u_draft", "--all", "--refresh"], client=StubClient())
 
     assert "refresh requested" in capsys.readouterr().out
+
+
+def test_refresh_on_a_named_level_reaches_live_units(sandbox):
+    """--refresh was unusable for the job it exists for.
+
+    After a reorder, the units that need regenerating are exactly the ones
+    already promoted to live — so status-based selection skipped all of them and
+    the run said "every unit in scope is already complete" without making a
+    single call. Naming a unit or a level with --refresh means "do these again".
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    assert cs.load_unit("u_draft")["status"] == cs.STATUS_LIVE
+
+    client = StubClient()
+    gc.main(["--level", "1", "--refresh"], client=client)
+
+    assert client.calls == 1, "the live unit was selected and regenerated"
+
+
+def test_refresh_without_a_target_still_leaves_live_units_alone(sandbox):
+    """A bare --refresh must not quietly rewrite the whole curriculum."""
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    client = StubClient()
+    gc.main(["--refresh"], client=client)
+
+    assert client.calls == 0

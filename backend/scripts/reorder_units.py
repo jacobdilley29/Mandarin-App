@@ -73,6 +73,11 @@ def beginner_first(units: list[dict]) -> list[dict]:
 
 STRATEGIES = {"beginner-first": beginner_first, "level": level_order}
 
+# More out-of-scope sentences than a curriculum picks up in normal authoring.
+# Past this, the working tree has almost certainly had a reorder applied without
+# the regeneration that was supposed to follow it.
+DIRTY_BASELINE = 50
+
 
 def renumbered(units: list[dict], strategy: str = "beginner-first") -> list[dict]:
     out = []
@@ -114,6 +119,17 @@ def main(argv: list[str] | None = None) -> int:
     before = _violations(data)
 
     print(f"Out-of-scope sentences as things stand: {len(before)}\n")
+
+    # Every cost below is measured against what is on disk *now*. If a reorder
+    # has already been written and not yet regenerated, that baseline is the
+    # broken one, and each strategy truthfully reports "nothing new would break"
+    # — which reads as "this is free" and is the opposite of the truth.
+    if len(before) > DIRTY_BASELINE:
+        print(f"  ⚠ That is a lot. It usually means an ordering has already been")
+        print(f"    applied and its content not yet regenerated, in which case every")
+        print(f"    number below is measured against an already-broken curriculum.")
+        print(f"    Restore first, then measure:  git checkout -- content/units/\n")
+
     print("What each ordering would cost:")
     for name in sorted(STRATEGIES):
         broke, fixed = _cost(data, units, before, name)

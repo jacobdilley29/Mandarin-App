@@ -152,3 +152,44 @@ def test_the_load_is_reported(db, source, caplog):
         content.ensure_loaded(db)
 
     assert "1 live" in caplog.text
+
+
+# ---------------------------------------------------------------------------
+# The convenient path must not install what the gate refuses
+# ---------------------------------------------------------------------------
+def test_a_live_unit_with_out_of_scope_sentences_is_withheld(db, source):
+    """`make load-content` refuses this content; startup must not install it.
+
+    Reloading on every boot is a convenience. Without the same scope check, the
+    convenient path became the one that could put content in front of the
+    learner that the authoring gate had just rejected — 407 out-of-scope
+    sentences, in the real case that prompted this.
+    """
+    unit = _unit("u_one", "便利商店")
+    unit["lessons"][0]["sentences"] = [
+        {"tokens": ["嚇", "壞"], "pinyin": "p", "gloss": "g"}
+    ]
+    source(unit)
+
+    content.ensure_loaded(db)
+
+    row = db.execute("SELECT status FROM units WHERE id = 'u_one'").fetchone()
+    assert row["status"] == "draft", "taught content must stay inside what was taught"
+
+
+def test_a_clean_unit_is_still_taught(db, source):
+    content.ensure_loaded(db)
+
+    row = db.execute("SELECT status FROM units WHERE id = 'u_one'").fetchone()
+    assert row["status"] == "live"
+
+
+def test_withholding_is_reported(db, source, caplog):
+    unit = _unit("u_one", "便利商店")
+    unit["lessons"][0]["sentences"] = [{"tokens": ["嚇"], "pinyin": "p", "gloss": "g"}]
+    source(unit)
+
+    with caplog.at_level("WARNING"):
+        content.ensure_loaded(db)
+
+    assert "withheld from Learn" in caplog.text
