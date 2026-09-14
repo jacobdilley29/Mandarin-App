@@ -29,6 +29,7 @@ ifeq ($(DOCKER_RUNNING),)
   RUN_BACKEND := cd backend && ../$(VENV)/bin/python
   SYNC_IMAGE :=
   PULL_CONTENT := true   # a native run already writes into the repo
+  REFRESH_APP := true    # and reloads its own content on the next start
 else
   RUN_BACKEND := docker compose exec -T app python
   # `docker compose exec` runs whatever code is baked into the running image, so
@@ -43,6 +44,11 @@ else
   # Docker Desktop on macOS could not read through that mount at all (Errno 35,
   # "Resource deadlock avoided"), so results are copied back out instead.
   PULL_CONTENT := $(MAKE) --no-print-directory pull-content
+  # And the app is still serving what it had *before* that script ran: the
+  # image bakes content/ in at build time, and SYNC_IMAGE happens first. So an
+  # authoring run wrote new content, copied it to the host, and left the
+  # container a build behind — which looks exactly like "my changes did nothing".
+  REFRESH_APP := $(MAKE) --no-print-directory sync-image
 endif
 
 # Copy generated curriculum out of the container into the working tree.
@@ -283,19 +289,19 @@ import-tocfl:
 
 .PHONY: build-skeleton
 build-skeleton: $(SYNC_IMAGE)
-	@$(RUN_BACKEND) -m scripts.build_skeleton $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
+	@$(RUN_BACKEND) -m scripts.build_skeleton $(ARGS); status=$$?; $(PULL_CONTENT); $(REFRESH_APP); exit $$status
 	@echo ""
 	@echo "Drafts are staged, not taught. Next: make generate-content"
 
 .PHONY: generate-content
 generate-content: $(SYNC_IMAGE)
-	@$(RUN_BACKEND) -m scripts.generate_content $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
+	@$(RUN_BACKEND) -m scripts.generate_content $(ARGS); status=$$?; $(PULL_CONTENT); $(REFRESH_APP); exit $$status
 
 # Teaching order: level-first, authored units leading their own level.
 # Reports what the change would do to character scope; --apply to write it.
 .PHONY: reorder
 reorder: $(SYNC_IMAGE)
-	@$(RUN_BACKEND) -m scripts.reorder_units $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
+	@$(RUN_BACKEND) -m scripts.reorder_units $(ARGS); status=$$?; $(PULL_CONTENT); $(REFRESH_APP); exit $$status
 
 .PHONY: warm-audio
 warm-audio: $(SYNC_IMAGE)
