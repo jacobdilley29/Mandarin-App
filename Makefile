@@ -93,6 +93,7 @@ help:
 	@echo "  make build-skeleton  Rebuild HSK 1-4 draft units from the word lists"
 	@echo "  make import-tocfl FILE=x.csv LEVEL=novice   Import an official TOCFL word list"
 	@echo "  make generate-content  Fill in drafts via Claude (needs ANTHROPIC_API_KEY)"
+	@echo "  make reorder         Put units in level order (reports first, --apply to write)"
 	@echo "  make warm-audio      Pre-generate zh-TW audio for the live units"
 	@echo ""
 	@echo "Phone access:"
@@ -283,6 +284,12 @@ build-skeleton: $(SYNC_IMAGE)
 .PHONY: generate-content
 generate-content: $(SYNC_IMAGE)
 	@$(RUN_BACKEND) -m scripts.generate_content $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
+
+# Teaching order: level-first, authored units leading their own level.
+# Reports what the change would do to character scope; --apply to write it.
+.PHONY: reorder
+reorder: $(SYNC_IMAGE)
+	@$(RUN_BACKEND) -m scripts.reorder_units $(ARGS); status=$$?; $(PULL_CONTENT); exit $$status
 
 .PHONY: warm-audio
 warm-audio: $(SYNC_IMAGE)

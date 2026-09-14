@@ -448,15 +448,29 @@ def test_no_retry_leaves_the_lesson_rejected(sandbox):
     assert cs.load_unit("u_draft")["status"] == cs.STATUS_DRAFT
 
 
-def test_the_retry_is_capped_at_one_attempt(sandbox):
-    """A model that can't stay in scope when told exactly what to avoid won't
-    start on the third ask — it would just cost more."""
+def test_attempts_are_capped_and_the_cap_is_the_flag(sandbox):
+    """The cap used to be one attempt, on the reasoning that a model ignoring an
+    explicit ban would ignore it twice over.
+
+    A real run disproved that: of five failures, three came back clean of the
+    banned characters and tripped on a different word — converging, and stopped
+    one step short. So the cap is --retries, and a lesson that never comes good
+    costs exactly 1 + retries calls and not one more.
+    """
     client = StubClient(stray="嚇")
 
-    gc.main(["--unit", "u_draft"], client=client)
+    gc.main(["--unit", "u_draft", "--retries", "2"], client=client)
 
-    assert client.calls == 2
+    assert client.calls == 3, "one generation plus two attempts"
     assert cs.load_unit("u_draft")["status"] == cs.STATUS_DRAFT
+
+
+def test_no_retry_still_means_no_retry(sandbox):
+    client = StubClient(stray="嚇")
+
+    gc.main(["--unit", "u_draft", "--no-retry"], client=client)
+
+    assert client.calls == 1
 
 
 def test_a_successful_retry_replaces_the_cached_lesson(sandbox):
@@ -464,7 +478,9 @@ def test_a_successful_retry_replaces_the_cached_lesson(sandbox):
     gc.main(["--unit", "u_draft"], client=StraysOnce())
 
     cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
-    assert "嚇" not in json.dumps(cached, ensure_ascii=False)
+    assert "嚇" not in json.dumps(cached["_content"], ensure_ascii=False)
+    # The ban itself is kept deliberately — see the accumulation tests below.
+    assert cached["_rejected"] == ["嚇"]
 
 
 def test_a_blocked_draft_is_still_selected_for_work(sandbox):
@@ -703,3 +719,109 @@ def test_the_lesson_budget_has_room_for_the_current_prompt(sandbox):
 
     assert client.budgets, "the budget must actually reach the API call"
     assert all(b >= 16000 for b in client.budgets)
+
+
+# ---------------------------------------------------------------------------
+# The retry has to converge, not go in circles
+# ---------------------------------------------------------------------------
+class StraysDifferently(StubClient):
+    """Out of scope every time, on a different character each time.
+
+    This is the shape the real failures took: told to avoid 較, it came back
+    with 定; told to avoid 定, it came back with 較. Three of five failures in
+    one run were converging like this and simply ran out of attempts.
+    """
+
+    def __init__(self, strays=("駱", "嚇", "鎮")):
+        super().__init__()
+        self.strays = list(strays)
+        self.prompts: list[str] = []
+
+    def parse(self, *, messages, **kw):
+        self.prompts.append(messages[0]["content"])
+        self.stray = self.strays[min(self.calls, len(self.strays) - 1)]
+        return super().parse(messages=messages, **kw)
+
+
+def test_every_attempt_is_told_everything_refused_so_far(sandbox):
+    """The bug that let 南 and 隻 come back after being banned."""
+    client = StraysDifferently()
+
+    gc.main(["--unit", "u_draft", "--retries", "2"], client=client)
+
+    first_retry, second_retry = client.prompts[1], client.prompts[2]
+    assert "駱" in first_retry
+    assert "駱" in second_retry, "the first ban must still be in force"
+    assert "嚇" in second_retry, "and the second one added to it"
+
+
+def test_the_ban_list_survives_into_the_next_run(sandbox):
+    """Kept in the cache, so a lesson retried tomorrow starts from today."""
+    gc.main(["--unit", "u_draft", "--retries", "1"], client=StraysDifferently())
+
+    cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
+    assert "駱" in cached["_rejected"]
+
+    later = StraysDifferently(strays=("鎮",))
+    gc.main(["--unit", "u_draft", "--retries", "1"], client=later)
+    assert "駱" in later.prompts[-1], "yesterday's ban is still a ban"
+
+
+def test_attempts_stop_as_soon_as_the_lesson_is_clean(sandbox):
+    """A second attempt on a lesson that already passed is money for nothing."""
+    client = StraysOnce()
+
+    gc.main(["--unit", "u_draft", "--retries", "3"], client=client)
+
+    assert client.calls == 2, "one generation, one successful retry, then stop"
+    assert cs.load_unit("u_draft")["status"] == cs.STATUS_LIVE
+
+
+class WorseOnRetry(StubClient):
+    """First attempt breaks scope once; the retry breaks it in two places.
+
+    A retry is not automatically an improvement. One produced a sentence that
+    was not grammatical at all, and caching it unconditionally made that the
+    lesson's permanent version.
+    """
+
+    def parse(self, *, messages, **kw):
+        self.stray = "駱" if self.calls == 0 else "駱嚇鎮"
+        return super().parse(messages=messages, **kw)
+
+
+def test_a_worse_retry_does_not_replace_the_better_draft(sandbox):
+    gc.main(["--unit", "u_draft", "--retries", "1"], client=WorseOnRetry())
+
+    lesson = cs.load_unit("u_draft")["lessons"][0]
+    text = json.dumps(lesson, ensure_ascii=False)
+    assert "嚇" not in text and "鎮" not in text, "the worse attempt was kept"
+    cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
+    assert "嚇" not in json.dumps(cached["_content"], ensure_ascii=False)
+
+
+def test_a_worse_retry_still_records_what_it_was_refused_for(sandbox):
+    """Discarding the content does not mean discarding the lesson learned."""
+    gc.main(["--unit", "u_draft", "--retries", "1"], client=WorseOnRetry())
+
+    cached = json.loads((gc.GENERATED_DIR / "l_draft.json").read_text(encoding="utf-8"))
+    assert {"嚇", "鎮"} <= set(cached["_rejected"])
+
+
+def test_the_retry_note_bans_outright_and_asks_for_grammatical(sandbox):
+    """The failures showed the model contorting sentences to dodge characters."""
+    assert "BANNED" in gc.RETRY_NOTE
+    assert "grammatical" in gc.RETRY_NOTE
+
+
+def test_two_attempts_is_the_default(sandbox):
+    """The default is the decision, so it needs pinning.
+
+    One attempt was the old default and it lost units that were one step from
+    passing. Dropping it back to one would look like a harmless tidy-up.
+    """
+    client = StubClient(stray="嚇")
+
+    gc.main(["--unit", "u_draft"], client=client)
+
+    assert client.calls == 3, "one generation plus two attempts, with no flag given"

@@ -7,6 +7,7 @@ you run Vite separately (it proxies /api here), so a missing dist/ is fine.
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 
 from fastapi import FastAPI
@@ -58,6 +59,13 @@ app.add_middleware(
 
 @app.on_event("startup")
 def _startup() -> None:
+    # The app configured no logging at all, so anything it logged went nowhere:
+    # uvicorn sets up only its own loggers. basicConfig is a no-op once a
+    # handler exists, so this adds one when nothing else has and otherwise
+    # leaves the host's configuration alone.
+    logging.basicConfig(
+        level=logging.INFO, format="%(levelname)s:     %(name)s - %(message)s"
+    )
     settings.ensure_dirs()
     init_db()
     # Seed curriculum content on first run if the tables are empty.

@@ -386,3 +386,53 @@ def test_a_hand_authored_unit_without_a_status_stays_live():
 
     assert bs._stage_unfinished([unit]) == []
     assert "status" not in unit
+
+
+# ---------------------------------------------------------------------------
+# Titles the learner actually reads
+# ---------------------------------------------------------------------------
+def _titled(unit_title: str, *lesson_titles: str) -> dict:
+    return {
+        "id": "u_hsk2_01", "title": unit_title, "generated": True, "status": "draft",
+        "lessons": [{"id": f"l_{i}", "title": t}
+                    for i, t in enumerate(lesson_titles, start=1)],
+    }
+
+
+def test_english_leaking_into_a_chinese_title_is_reported():
+    """A real one from the first themed build, in a LESSON title.
+
+    The prompt rule covered unit titles and said nothing about lesson titles,
+    so "describe 一個人的樣子" shipped — and that is exactly the string the
+    learner sees in the app.
+    """
+    found = bs.latin_in_titles([_titled("逛街買東西", "describe 一個人的樣子")])
+
+    assert [t for _, t in found] == ["describe 一個人的樣子"]
+
+
+def test_a_clean_chinese_title_is_not_reported():
+    assert bs.latin_in_titles([_titled("逛街買東西", "買衣服、試穿", "顏色和比較")]) == []
+
+
+def test_taiwanese_terms_written_in_latin_are_fine():
+    """3C產品, MRT and KTV are how Taiwan actually writes these."""
+    assert bs.latin_in_titles([_titled("搭捷運", "MRT 路線", "去 KTV 唱歌")]) == []
+
+
+def test_a_unit_title_is_checked_too():
+    found = bs.latin_in_titles([_titled("shopping 逛街", "買衣服")])
+    assert [t for _, t in found] == ["shopping 逛街"]
+
+
+def test_hand_authored_titles_are_left_alone():
+    """The curated units are Jacob's own wording, not the model's."""
+    unit = _titled("describe 一個人", "x")
+    del unit["generated"]
+    assert bs.latin_in_titles([unit]) == []
+
+
+def test_the_theming_prompt_asks_for_chinese_lesson_titles():
+    """The rule that was missing. Asking is not getting — hence the report
+    above — but a prompt that never asked was the root of it."""
+    assert "lesson titles in Traditional Chinese" in bs.THEME_SYSTEM

@@ -466,6 +466,56 @@ Every sentence is checked so it only uses characters the learner has met by that
 point; `load_content` refuses to load violations, and generation refuses to
 promote a unit that has any.
 
+### Teaching order
+
+Units are taught in `sort_order`. The skeleton builder puts **every hand-authored
+unit first**, then the generated ones by level — which was a deliberate reaction
+to a real failure (generated units were once unthemed word bags with no
+sentences, and level-ordering put them at the front of Learn). Now that generated
+units are themed, complete and gated, that ordering has an obvious cost: the
+authored units are HSK 2-4, so a learner meets 銀行郵局 before any HSK 1 material.
+
+`make reorder` puts the curriculum in level order, with authored units still
+leading their own level — 便利商店 opens HSK 2 rather than the whole course.
+
+**It reports before it writes, because reordering is not cosmetic.** Character
+scope is cumulative in `sort_order`: a lesson may use anything taught before it.
+Moving a generated HSK 2 unit ahead of the authored HSK 3 units removes their
+vocabulary from what its sentences may use, so content that was correct — and
+paid for — when it was generated can fall out of scope and drop the unit back to
+draft. The report names every sentence that would, so the trade is a measurement
+rather than a guess.
+
+```bash
+make reorder                 # report only
+make reorder ARGS=--apply    # write the new sort_order
+```
+
+It rewrites `sort_order` and nothing else. **Do not use `make build-skeleton` to
+change ordering** — that rebuilds generated units from their theming plans and
+discards every generated lesson along with them.
+
+### How content reaches the app
+
+`content/units/*.json` is the source of truth; `content.db` is derived from it.
+**The app reloads that database from the source on every startup**, so authoring
+content and restarting is enough to see it — `make up`, `docker compose restart`,
+or just running the app again. Look for this line in `make logs`:
+
+```
+INFO:     app.content - curriculum loaded from content/: 42 live, 42 draft
+```
+
+This is safe because the reload is a pure upsert and progress lives in a separate
+database (see [Why two databases](#why-two-databases)). Content can be rebuilt
+from source at any time; what the learner has done cannot, and is never touched.
+
+`make load-content` is still worth running, but for a different reason: it is the
+authoring gate. It validates character scope, checks the teaching sequence, and
+refuses to install content that breaks either — none of which the startup reload
+judges. Run it when you have generated something; restart when you just want the
+app to catch up.
+
 ### The commands
 
 ```bash
@@ -664,6 +714,29 @@ A whole-level plan from before chunking (`skeleton-hsk{level}.json`) is still
 honoured as-is. Re-theming a level that is already planned costs money *and*
 regroups its words, which invalidates every lesson generated under it.
 
+### Taiwan register in generated text
+
+The scope validator answers "may this sentence use these characters". Nothing
+answered **"is this how Taiwan says it"** — and that is the app's entire premise.
+The first themed generation run produced a reading passage titled 「早上好」, a
+greeting no one in Taiwan uses, in a Taiwanese Mandarin course.
+
+`content/taiwan_overrides.json` already knew 自行車→腳踏車 and a dozen more, but
+that table was only ever applied to *imported vocabulary*. It now also carries
+`vocabulary.phrases` for forms that never appear as vocabulary entries at all
+(早上好→早安, 土豆→馬鈴薯, 視頻→影片), and `validation.register_slips` checks
+generated prose **and titles** against both. Titles matter: the real slip was in
+a passage title, and a checker that walked only the body would have called that
+passage clean.
+
+The generation prompt names the common ones outright, because a check that only
+reports is a check the next run repeats.
+
+It reports rather than blocks. Whether one Mainland word is worth another API
+call to regenerate a lesson is the author's judgement, not the loader's — so
+`make generate-content` and `make load-content` both name what they found and
+leave it.
+
 ### When a call fails, the error says why
 
 Both authoring scripts use structured outputs, where `parsed_output` comes back
@@ -687,6 +760,30 @@ peak tokens      : 3480 of 16000 (78% headroom)
 Every token budget in this pipeline that was estimated rather than measured
 turned out to be wrong. That line is the measurement — and under 20% headroom it
 warns, which is the notice before a truncation rather than after one.
+
+### When a lesson breaks scope
+
+A generated lesson may only use characters the learner has already met. When one
+strays, the generator re-asks it, naming what it may not use. Three rules make
+that converge instead of circling, each learned from a run where it didn't:
+
+* **Bans accumulate.** Every attempt is told every character the lesson has ever
+  been refused for, kept in the cache as `_rejected` so it survives the run.
+  Without this a lesson cycles — told to avoid 較 it returns 定, told to avoid 定
+  it returns 較 — and in one real run two retries re-used a character they had
+  just been banned from.
+* **Two attempts, not one.** The cap was one, reasoning that a model ignoring an
+  explicit ban would ignore it twice over. The evidence disagreed: of five
+  failures in that run, three came back clean of the banned characters and
+  tripped on a *different* word. They were converging and were being stopped one
+  step short. `--retries N` sets it; `--no-retry` is still nought.
+* **The best attempt wins, not the last.** Attempts are scored by how much of the
+  lesson is still out of scope, and only an improvement is cached. A retry once
+  produced 「我以前住在台南邊的小鎮嗎」 — not a sentence — and caching it
+  unconditionally would have made that the lesson's permanent version.
+
+A lesson that never comes good costs exactly 1 + `--retries` calls and stays a
+draft, naming the character it could not avoid.
 
 ### What invalidates the generation cache
 

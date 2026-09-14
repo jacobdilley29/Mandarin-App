@@ -96,6 +96,84 @@ def check_sentence(text: str, allowed: set[str]) -> set[str]:
     return han_chars(text) - allowed
 
 
+def iter_lesson_text(lesson: dict):
+    """Every learner-facing Chinese string in a lesson, as (where, text).
+
+    One place that knows where a lesson keeps its prose. `passage` had to be
+    added to the scope validator by hand when lessons gained one; anything else
+    walking a lesson would have missed it. test_validation pins the two walks
+    together so a new field cannot be added to one and forgotten in the other.
+    """
+    lid = lesson.get("id", "?")
+    for v in lesson.get("vocab", []):
+        ex = v.get("example") or {}
+        if ex.get("hanzi"):
+            yield f"{lid} example[{v.get('id')}]", ex["hanzi"]
+    for g in lesson.get("grammar", []):
+        for i, ex in enumerate(g.get("examples", [])):
+            if ex.get("hanzi"):
+                yield f"{lid} grammar[{g.get('id')}] ex{i}", ex["hanzi"]
+    for i, sent in enumerate(lesson.get("sentences", [])):
+        joined = "".join(sent.get("tokens", []))
+        if joined:
+            yield f"{lid} sentence {i}", joined
+    for i, line in enumerate(lesson.get("dialogue", [])):
+        if line.get("hanzi"):
+            yield f"{lid} dialogue {i}", line["hanzi"]
+    passage = lesson.get("passage") or {}
+    if passage.get("hanzi"):
+        yield f"{lid} passage", passage["hanzi"]
+
+
+def iter_lesson_titles(lesson: dict):
+    """Titles the learner reads, as (where, text) — separate from the prose.
+
+    Kept apart from iter_lesson_text because the scope validator deliberately
+    does not check titles against the character budget, while a register check
+    very much must: the first generated passage was titled 「早上好」, and a
+    title is the most-read string in a lesson.
+    """
+    lid = lesson.get("id", "?")
+    if lesson.get("title"):
+        yield f"{lid} title", lesson["title"]
+    passage = lesson.get("passage") or {}
+    if passage.get("title"):
+        yield f"{lid} passage title", passage["title"]
+
+
+@dataclass
+class RegisterSlip:
+    where: str
+    text: str
+    found: list[tuple[str, str]]  # (what was written, what Taiwan says)
+
+
+def register_slips(data: dict) -> list[RegisterSlip]:
+    """Mainland vocabulary in generated text — the thing this app exists to avoid.
+
+    The scope validator checks which *characters* a sentence may use. Nothing
+    checked whether the words were Taiwanese, so a generated passage opened with
+    「早上好」 — a greeting no one in Taiwan uses — inside an app whose entire
+    premise is Taiwan Mandarin. The substitution table already knew the answer;
+    it was only ever applied to imported vocabulary, never to generated prose.
+
+    Reported, not fatal: it is a judgement call whether to spend another call
+    regenerating a lesson over one word, and that call is the author's.
+    """
+    from . import taiwanize
+
+    forms = taiwanize.prc_forms()
+    slips: list[RegisterSlip] = []
+    for unit in data.get("units", []):
+        for lesson in unit.get("lessons", []):
+            walk = list(iter_lesson_text(lesson)) + list(iter_lesson_titles(lesson))
+            for where, text in walk:
+                found = [(prc, tw) for prc, tw in forms.items() if prc in text]
+                if found:
+                    slips.append(RegisterSlip(where, text, sorted(found)))
+    return slips
+
+
 def validate_curriculum(
     data: dict, extra_known_chars: set[str] | None = None
 ) -> ValidationResult:

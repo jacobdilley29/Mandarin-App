@@ -85,6 +85,69 @@
         "pinyin": "liánluò",
         "note": "台灣說「聯絡」（聯絡方式、保持聯絡）；「聯繫」是大陸用法。"
       }
+    ],
+    "phrases_note": "PRC phrase -> Taiwan phrase. Unlike `substitutions` these are not HSK vocabulary entries, so they never reach the vocab table — they turn up inside generated sentences, dialogue and passages. Checked by validation.register_slips.",
+    "phrases": [
+      {
+        "prc": "早上好",
+        "taiwan": "早安",
+        "note": "台灣說「早安」或「早」。"
+      },
+      {
+        "prc": "晚上好",
+        "taiwan": "晚安",
+        "note": "台灣打招呼說「晚安」。"
+      },
+      {
+        "prc": "中午好",
+        "taiwan": "午安",
+        "note": "台灣說「午安」。"
+      },
+      {
+        "prc": "土豆",
+        "taiwan": "馬鈴薯",
+        "note": "台灣的「土豆」是花生，不是馬鈴薯。"
+      },
+      {
+        "prc": "軟件",
+        "taiwan": "軟體",
+        "note": "台灣說「軟體」。"
+      },
+      {
+        "prc": "硬件",
+        "taiwan": "硬體",
+        "note": "台灣說「硬體」。"
+      },
+      {
+        "prc": "視頻",
+        "taiwan": "影片",
+        "note": "台灣說「影片」。"
+      },
+      {
+        "prc": "信息",
+        "taiwan": "訊息",
+        "note": "台灣說「訊息」。"
+      },
+      {
+        "prc": "空調",
+        "taiwan": "冷氣",
+        "note": "台灣說「冷氣」。"
+      },
+      {
+        "prc": "方便麵",
+        "taiwan": "泡麵",
+        "note": "台灣說「泡麵」。"
+      },
+      {
+        "prc": "質量",
+        "taiwan": "品質",
+        "note": "台灣說「品質」；「質量」是物理學的 mass。"
+      },
+      {
+        "prc": "打的",
+        "taiwan": "搭計程車",
+        "note": "台灣不說「打的」。"
+      }
     ]
   },
   "canonical_forms": {

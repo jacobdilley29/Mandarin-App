@@ -26,6 +26,7 @@ from app.validation import (  # noqa: E402
     allowed_chars,
     han_chars,
     placement_pool_chars,
+    register_slips,
     validate_curriculum,
     validate_grammar_prerequisites,
     validate_listen,
@@ -146,6 +147,15 @@ def main() -> int:
         if not args.force and not args.check:
             print("Refusing to load. Fix the content or pass --force.")
             return 1
+
+    slips = register_slips(data)
+    if slips:
+        print(f"• {len(slips)} Mainland word(s) in Taiwan content — loaded, but worth fixing:")
+        for slip in slips[:10]:
+            swaps = ", ".join(f"{prc}→{tw}" for prc, tw in slip.found)
+            print(f"    [{slip.where}] {swaps}")
+        if len(slips) > 10:
+            print(f"    … and {len(slips) - 10} more")
 
     # Grammar prerequisites: a lesson may not lean on a point taught later.
     gres = validate_grammar_prerequisites(data)

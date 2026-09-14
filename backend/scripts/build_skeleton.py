@@ -207,7 +207,10 @@ Hard rules:
   看醫生, 租房子, 辦手機…), not by part of speech or textbook category.
 - Every word you are given must appear in exactly one lesson. Never drop a word,
   never invent one, never repeat one.
-- Unit titles in Traditional Chinese; subtitles in plain English.
+- Unit AND lesson titles in Traditional Chinese; subtitles in plain English.
+  Never mix English words into a Chinese title ("describe 一個人的樣子" is wrong;
+  "描述一個人的樣子" is right). Established Taiwanese usage that happens to be
+  Latin — 3C, MRT, KTV — is fine.
 """
 
 
@@ -475,6 +478,43 @@ def apply_readings_to_authored(existing: dict, overrides: dict) -> list[str]:
     return changed
 
 
+# Latin letters in a title the learner reads as Chinese. Established Taiwanese
+# usage is Latin too — 3C產品, MRT, KTV — so this reports rather than refuses.
+_LATIN_RUN = re.compile(r"[A-Za-z]{3,}")
+
+# Taiwanese terms that really are written in Latin letters.
+_LATIN_OK = frozenset({"mrt", "ktv", "diy", "app", "line", "wifi", "ubike", "cd", "dvd"})
+
+
+def latin_in_titles(units: list[dict]) -> list[tuple[str, str]]:
+    """Titles mixing English into Chinese, as (where, title) pairs.
+
+    The theming prompt asks for Chinese titles, and asking is not the same as
+    getting: a run produced the lesson title "describe 一個人的樣子", which the
+    learner would read in the app exactly like that. The rule covered unit
+    titles and said nothing about lesson titles, which is where it leaked.
+
+    Reported, never fatal. Re-theming to fix a title would cost every theming
+    call again *and* regroup the words, throwing away the lesson content
+    generated under them — wildly out of proportion to a cosmetic defect that
+    can be corrected in the file by hand.
+    """
+    found = []
+    for unit in units:
+        if not unit.get("generated"):
+            continue
+        candidates = [(unit["id"], unit.get("title", ""))]
+        candidates += [
+            (l.get("id", unit["id"]), l.get("title", ""))
+            for l in unit.get("lessons") or []
+        ]
+        for where, title in candidates:
+            runs = [m.group(0) for m in _LATIN_RUN.finditer(title)]
+            if any(r.lower() not in _LATIN_OK for r in runs):
+                found.append((where, title))
+    return found
+
+
 def _stage_unfinished(units: list[dict]) -> list[str]:
     """Force any generated-but-unfinished unit to draft. Returns what it staged.
 
@@ -683,6 +723,16 @@ def main(argv: list[str] | None = None) -> int:
               f"{sum(len(u['lessons']) for u in units)} lessons")
 
     merged = assemble(existing, generated, tocfl)
+
+    mixed = latin_in_titles(merged["units"])
+    if mixed:
+        print(f"\n! {len(mixed)} title(s) mix English into Chinese:")
+        for where, title in mixed[:10]:
+            print(f"    {where}: {title}")
+        if len(mixed) > 10:
+            print(f"    … and {len(mixed) - 10} more")
+        print("  Edit them in content/units/ — re-theming to fix a title would")
+        print("  cost every theming call again and regroup the words.")
 
     # Belt and braces on the draft gate — see _stage_unfinished.
     forced = _stage_unfinished(merged["units"])
