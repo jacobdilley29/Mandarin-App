@@ -17,7 +17,12 @@
           "pinyin": "bàn fǎ",
           "gloss": "means; method; way (of doing sth)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "別擔心，我們一起想辦法。",
+            "pinyin": "Bié dānxīn, wǒmen yìqǐ xiǎng bànfǎ.",
+            "gloss": "Don't worry, let's think of a way together."
+          }
         },
         {
           "id": "v_解決",
@@ -25,7 +30,12 @@
           "pinyin": "jiě jué",
           "gloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個問題昨天就解決了。",
+            "pinyin": "Zhège wèntí zuótiān jiù jiějué le.",
+            "gloss": "This problem was already solved yesterday."
+          }
         },
         {
           "id": "v_難",
@@ -33,7 +43,12 @@
           "pinyin": "nán",
           "gloss": "difficult (to...); problem; difficulty",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個題目太難了，我不會寫。",
+            "pinyin": "Zhège tímù tài nán le, wǒ bú huì xiě.",
+            "gloss": "This question is too hard; I can't do it."
+          }
         },
         {
           "id": "v_擔心",
@@ -41,7 +56,12 @@
           "pinyin": "dān xīn",
           "gloss": "anxious; worried; uneasy",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你別擔心，時間還很多。",
+            "pinyin": "Nǐ bié dānxīn, shíjiān hái hěn duō.",
+            "gloss": "Don't worry, there's still plenty of time."
+          }
         },
         {
           "id": "v_注意",
@@ -49,7 +69,12 @@
           "pinyin": "zhù yì",
           "gloss": "to take note of; to pay attention to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下雨天騎車要注意安全喔。",
+            "pinyin": "Xiàyǔtiān qí chē yào zhùyì ānquán ō.",
+            "gloss": "On rainy days you have to watch out for safety when riding."
+          }
         },
         {
           "id": "v_重要",
@@ -57,12 +82,160 @@
           "pinyin": "zhòng yào",
           "gloss": "important; significant; major",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件事很重要，請你記得。",
+            "pinyin": "Zhè jiàn shì hěn zhòngyào, qǐng nǐ jìde.",
+            "gloss": "This matter is very important; please remember it."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "有／沒(有)辦法 + 動詞 (to have / not have a way to do something)",
+          "pattern": "主語 + 有／沒(有)辦法 + 動詞 + (賓語)",
+          "explanation": "辦法 means \"a way / a method\". Put 有 or 沒(有) in front of it to say whether you are able to do something because of the situation (time, money, weather, ability of the moment). 想辦法 means \"to think of a way\". Note that 辦法 always needs a verb like 有／沒有／想 in front of it.",
+          "contrast": "沒辦法 vs 不會／不能: 不會 means you lack the skill (我不會游泳), 不能 means you are not permitted, and 沒辦法 means the circumstances leave you no way out (今天太忙，我沒辦法去). If the blocker is the situation, use 沒辦法.",
+          "common_error": "Learners drop the verb in front of 辦法 and say 我辦法解決 or 我不辦法去. You must say 我沒辦法解決 / 我沒辦法去, or 我想辦法解決.",
+          "examples": [
+            {
+              "hanzi": "我今天有事，沒辦法跟你去看電影。",
+              "pinyin": "Wǒ jīntiān yǒu shì, méi bànfǎ gēn nǐ qù kàn diànyǐng.",
+              "gloss": "I'm busy today, so I can't go see a movie with you."
+            },
+            {
+              "hanzi": "這個問題太難了，我沒辦法解決。",
+              "pinyin": "Zhège wèntí tài nán le, wǒ méi bànfǎ jiějué.",
+              "gloss": "This problem is too hard; I have no way to solve it."
+            },
+            {
+              "hanzi": "你別擔心，老師一定有辦法幫你。",
+              "pinyin": "Nǐ bié dānxīn, lǎoshī yídìng yǒu bànfǎ bāng nǐ.",
+              "gloss": "Don't worry, the teacher will surely have a way to help you."
+            }
+          ],
+          "id": "g_hsk3_03_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_03_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你怎麼了？看起來很累。",
+          "pinyin": "Nǐ zěnme le? Kàn qǐlái hěn lèi.",
+          "gloss": "What's up with you? You look tired."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "明天有考試，那些課文太難了，我很擔心。",
+          "pinyin": "Míngtiān yǒu kǎoshì, nàxiē kèwén tài nán le, wǒ hěn dānxīn.",
+          "gloss": "I have a test tomorrow. Those texts are too hard, I'm worried."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "別擔心，我們一起想辦法。",
+          "pinyin": "Bié dānxīn, wǒmen yìqǐ xiǎng bànfǎ.",
+          "gloss": "Don't worry, let's think of a way together."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好啊，你能教我嗎？",
+          "pinyin": "Hǎo a, nǐ néng jiāo wǒ ma?",
+          "gloss": "Sure, can you teach me?"
+        },
+        {
+          "speaker": "A",
+          "hanzi": "可以，先讀重要的課文，其他的以後再說。",
+          "pinyin": "Kěyǐ, xiān dú zhòngyào de kèwén, qítā de yǐhòu zài shuō.",
+          "gloss": "Sure. Read the important texts first; we'll deal with the rest later."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "謝謝你，這樣問題就解決了！",
+          "pinyin": "Xièxie nǐ, zhèyàng wèntí jiù jiějué le!",
+          "gloss": "Thanks! That way the problem is solved."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "一起",
+            "想",
+            "辦法",
+            "吧"
+          ],
+          "pinyin": "Wǒmen yìqǐ xiǎng bànfǎ ba.",
+          "gloss": "Let's think of a way together.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這個",
+            "問題",
+            "已經",
+            "解決",
+            "了"
+          ],
+          "pinyin": "Zhège wèntí yǐjīng jiějué le.",
+          "gloss": "This problem has already been solved.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "字",
+            "很",
+            "難",
+            "寫"
+          ],
+          "pinyin": "Zhège zì hěn nán xiě.",
+          "gloss": "This character is hard to write.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "騎",
+            "腳踏車",
+            "要",
+            "注意",
+            "安全"
+          ],
+          "pinyin": "Qí jiǎotàchē yào zhùyì ānquán.",
+          "gloss": "When riding a bike you must pay attention to safety.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "事",
+            "對",
+            "我",
+            "很",
+            "重要"
+          ],
+          "pinyin": "Zhè jiàn shì duì wǒ hěn zhòngyào.",
+          "gloss": "This matter is very important to me.",
+          "cloze_index": 6
+        }
+      ],
+      "passage": {
+        "title": "悠遊卡不見了",
+        "hanzi": "上個星期，我的悠遊卡不見了。我很擔心，因為卡裡還有一些錢。我先問車站的人，他說我可以到捷運站的服務台辦。這件事看起來很難，其實很快就解決了。現在我出門都會注意，不再讓它不見。",
+        "gloss": "Last week my EasyCard went missing. I was worried, because there was still some money on the card. First I asked someone at the station, and he said I could take care of it at the service counter in the MRT station. The whole thing looked hard, but actually it was solved very quickly. Now I pay attention whenever I go out, so I won't lose it again."
+      }
     },
     {
       "id": "l_hsk3_03_2",
@@ -75,7 +248,12 @@
           "pinyin": "fā xiàn",
           "gloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我發現我的悠遊卡不見了。",
+            "pinyin": "Wǒ fāxiàn wǒ de Yōuyóukǎ bùjiàn le.",
+            "gloss": "I noticed that my EasyCard is gone."
+          }
         },
         {
           "id": "v_出現",
@@ -83,7 +261,12 @@
           "pinyin": "chū xiàn",
           "gloss": "to appear; to arise; to emerge",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他昨天沒出現，大家都很擔心。",
+            "pinyin": "Tā zuótiān méi chūxiàn, dàjiā dōu hěn dānxīn.",
+            "gloss": "He didn't show up yesterday, so everyone was worried."
+          }
         },
         {
           "id": "v_被",
@@ -91,7 +274,12 @@
           "pinyin": "bèi",
           "gloss": "quilt; to cover (with); (literary) to suffer (a misfortune)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的麵包被狗吃了。",
+            "pinyin": "Wǒ de miànbāo bèi gǒu chī le.",
+            "gloss": "My bread was eaten by the dog."
+          }
         },
         {
           "id": "v_使",
@@ -99,7 +287,12 @@
           "pinyin": "shǐ",
           "gloss": "to make; to cause; to enable",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個好訊息使大家都很快樂。",
+            "pinyin": "Zhè ge hǎo xùnxí shǐ dàjiā dōu hěn kuàilè.",
+            "gloss": "This good news made everyone happy."
+          }
         },
         {
           "id": "v_關係",
@@ -107,7 +300,12 @@
           "pinyin": "guān xi",
           "gloss": "relation; relationship; to concern",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件事跟我沒有關係。",
+            "pinyin": "Zhè jiàn shì gēn wǒ méiyǒu guānxi.",
+            "gloss": "This matter has nothing to do with me."
+          }
         },
         {
           "id": "v_影響",
@@ -115,12 +313,152 @@
           "pinyin": "yǐng xiǎng",
           "gloss": "influence; effect; to influence",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "颱風影響了今天的飛機。",
+            "pinyin": "Táifēng yǐngxiǎng le jīntiān de fēijī.",
+            "gloss": "The typhoon affected today's flights."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "被字句：說「誰被怎麼樣了」",
+          "pattern": "受事 + 被 (+ 做事的人) + 動詞 + 了／結果",
+          "explanation": "用「被」的時候，句子前面的人或東西是「事情發生在它身上」的那一個。做事的人可以說出來，也可以不說。動詞後面常常要加「了」或一個結果（走、完、到），不能只有一個光光的動詞。這個說法多半用在不好的、讓人擔心的事。",
+          "contrast": "最容易跟「使」弄錯。「被」：主語是受害的一方（我的腳踏車被人騎走了）。「使」：主語是原因，後面接一個人和他的感覺或改變（這件事使我很擔心）。問自己：前面那個是「被動了手腳的東西」還是「造成影響的原因」。",
+          "common_error": "Learners leave the verb bare — saying 我的手機被拿 instead of 我的手機被帶走了. In Chinese a 被 sentence almost always needs 了 or a result ending on the verb. Learners also overuse 被 for neutral or happy events (我被老師教中文); for those, just use a normal active sentence.",
+          "examples": [
+            {
+              "hanzi": "我的腳踏車被人騎走了。",
+              "pinyin": "Wǒ de jiǎotàchē bèi rén qí zǒu le.",
+              "gloss": "My bike was ridden off by someone."
+            },
+            {
+              "hanzi": "我的雨傘被朋友帶走了。",
+              "pinyin": "Wǒ de yǔsǎn bèi péngyǒu dài zǒu le.",
+              "gloss": "My umbrella was taken away by a friend."
+            },
+            {
+              "hanzi": "桌上的麵包被弟弟吃了。",
+              "pinyin": "Zhuō shàng de miànbāo bèi dìdi chī le.",
+              "gloss": "The bread on the table was eaten by my little brother."
+            }
+          ],
+          "id": "g_hsk3_03_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你怎麼了？發生什麼事了？",
+          "pinyin": "Nǐ zěnme le? Fāshēng shénme shì le?",
+          "gloss": "What's up with you? What happened?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我上捷運的時候發現悠遊卡不見了。",
+          "pinyin": "Wǒ shàng jiéyùn de shíhòu fāxiàn Yōuyóukǎ bùjiàn le.",
+          "gloss": "When I got on the MRT I found my EasyCard was gone."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "是不是被別人帶走了？",
+          "pinyin": "Shì bú shì bèi biérén dài zǒu le?",
+          "gloss": "Could someone have taken it?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我也不知道，這件事真的影響了我今天的心情。",
+          "pinyin": "Wǒ yě bù zhīdào, zhè jiàn shì zhēn de yǐngxiǎng le wǒ jīntiān de xīnqíng.",
+          "gloss": "I don't know either; this really affected my mood today."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "別擔心，跟錢沒關係，再買一張就好了。",
+          "pinyin": "Bié dānxīn, gēn qián méi guānxi, zài mǎi yì zhāng jiù hǎo le.",
+          "gloss": "Don't worry, it's not about money — just buy another one."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "也對，你這樣說使我舒服多了，謝謝你。",
+          "pinyin": "Yě duì, nǐ zhèyàng shuō shǐ wǒ shūfú duō le, xièxie nǐ.",
+          "gloss": "True — saying that makes me feel a lot better, thanks."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "發現",
+            "手機",
+            "不見",
+            "了"
+          ],
+          "pinyin": "Wǒ fāxiàn shǒujī bùjiàn le.",
+          "gloss": "I noticed my phone was gone.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "的",
+            "腳踏車",
+            "被",
+            "人",
+            "騎走",
+            "了"
+          ],
+          "pinyin": "Tā de jiǎotàchē bèi rén qí zǒu le.",
+          "gloss": "His bike was ridden off by someone.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "件",
+            "事",
+            "跟",
+            "你",
+            "沒有",
+            "關係"
+          ],
+          "pinyin": "Zhè jiàn shì gēn nǐ méiyǒu guānxi.",
+          "gloss": "This has nothing to do with you.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "颱風",
+            "影響",
+            "了",
+            "今天",
+            "的",
+            "飛機"
+          ],
+          "pinyin": "Táifēng yǐngxiǎng le jīntiān de fēijī.",
+          "gloss": "The typhoon affected today's flights.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "外面",
+            "出現",
+            "了",
+            "很多",
+            "人"
+          ],
+          "pinyin": "Wàimiàn chūxiàn le hěn duō rén.",
+          "gloss": "A lot of people appeared outside.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "夜市裡的小事",
+        "hanzi": "上個週末，我和朋友去台北的夜市逛。走到一半，我發現錢包不見了。朋友問我，是不是被人帶走了？我很擔心，因為裡面有悠遊卡和一千多塊錢。後來，那家店的老闆出現了，手上就是我的錢包。這件事使我很感動，也影響了我對台灣人的看法。",
+        "gloss": "Last weekend I went with a friend to walk around a night market in Taipei. Halfway through, I discovered my wallet was gone. My friend asked me whether someone had taken it. I was really worried, because inside were my EasyCard and over a thousand dollars. Later, the owner of that shop appeared, and in his hand was my wallet. This really moved me, and it also changed the way I see Taiwanese people."
+      }
     },
     {
       "id": "l_hsk3_03_3",
@@ -133,7 +471,12 @@
           "pinyin": "bǎ",
           "gloss": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請把書放在桌上。",
+            "pinyin": "Qǐng bǎ shū fàng zài zhuō shàng.",
+            "gloss": "Please put the book on the table."
+          }
         },
         {
           "id": "v_放",
@@ -141,7 +484,12 @@
           "pinyin": "fàng",
           "gloss": "to put; to place; to release",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我把腳踏車放在門口。",
+            "pinyin": "Wǒ bǎ jiǎotàchē fàng zài ménkǒu.",
+            "gloss": "I put my bike by the door."
+          }
         },
         {
           "id": "v_拿",
@@ -149,7 +497,12 @@
           "pinyin": "ná",
           "gloss": "to hold; to seize; to catch",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你可以幫我拿一下傘嗎？",
+            "pinyin": "Nǐ kěyǐ bāng wǒ ná yíxià sǎn ma?",
+            "gloss": "Can you hold the umbrella for me a second?"
+          }
         },
         {
           "id": "v_接",
@@ -157,7 +510,12 @@
           "pinyin": "jiē",
           "gloss": "to receive; to answer (the phone); to meet or welcome sb",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我六點去捷運站接你。",
+            "pinyin": "Wǒ liù diǎn qù jiéyùn zhàn jiē nǐ.",
+            "gloss": "I'll go to the MRT station at six to pick you up."
+          }
         },
         {
           "id": "v_用",
@@ -165,7 +523,12 @@
           "pinyin": "yòng",
           "gloss": "to use; to employ; to have to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我都用悠遊卡付錢。",
+            "pinyin": "Wǒ dōu yòng Yōuyóukǎ fù qián.",
+            "gloss": "I always pay with my EasyCard."
+          }
         },
         {
           "id": "v_地",
@@ -173,12 +536,183 @@
           "pinyin": "de",
           "gloss": "earth; ground; field",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "不要坐在地上，地上很冷。",
+            "pinyin": "Bú yào zuò zài dì shàng, dì shàng hěn lěng.",
+            "gloss": "Don't sit on the ground; the ground is cold."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "把-sentences: saying what you did to a thing",
+          "pattern": "主語 + 把 + (特定的)東西 + 動詞 + 在/給/走/好/了",
+          "explanation": "Use 把 when you move or change a specific, already-known thing. The thing goes right after 把, and the verb must be followed by a result: a place (放在桌上), a receiver (給我), or a resultative word like 走、好、了. 把 is very common with 放、拿、接、用 because these verbs naturally end in a result or a location.",
+          "contrast": "把 vs 被: both put the object before the verb, but 把 keeps the doer as the subject (我把傘拿走了 = I took it), while 被 makes the thing the subject (傘被他拿走了 = it was taken by him). Ask yourself who is doing the action — that decides which one you need.",
+          "common_error": "Learners stop the sentence too early, saying 我把書放 or 我把手機拿. A 把 sentence always needs something after the verb (在桌上, 給我, 走, 好, 了). Also, 把 cannot be used with verbs that don't change anything, so 我把這本書看 / 我把他喜歡 are wrong.",
+          "examples": [
+            {
+              "hanzi": "我已經把書放在桌上了。",
+              "pinyin": "Wǒ yǐjīng bǎ shū fàng zài zhuō shàng le.",
+              "gloss": "I've already put the book on the table."
+            },
+            {
+              "hanzi": "請把手機給我一下。",
+              "pinyin": "Qǐng bǎ shǒujī gěi wǒ yíxià.",
+              "gloss": "Please hand me the phone for a moment."
+            },
+            {
+              "hanzi": "他把我的傘拿走了。",
+              "pinyin": "Tā bǎ wǒ de sǎn ná zǒu le.",
+              "gloss": "He took my umbrella away."
+            }
+          ],
+          "id": "g_hsk3_03_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "用 + tool + verb: doing something with something",
+          "pattern": "主語 + 用 + 工具 + 動詞 + 賓語",
+          "explanation": "用 introduces the tool or means before the main verb: 我用悠遊卡搭捷運, 她用手機打電話. The 用-phrase always comes before the verb it helps, never after.",
+          "contrast": "用 vs 把: 用 marks the tool you use, 把 marks the thing you move or change. 我用手機接電話 (tool = phone) vs 我把手機放在桌上 (the phone is what gets moved).",
+          "common_error": "Learners put 用 after the verb, like 我搭捷運用悠遊卡. In Chinese the tool phrase must come first: 我用悠遊卡搭捷運。",
+          "examples": [
+            {
+              "hanzi": "我用悠遊卡搭捷運上班。",
+              "pinyin": "Wǒ yòng Yōuyóukǎ dā jiéyùn shàngbān.",
+              "gloss": "I take the MRT to work with my EasyCard."
+            },
+            {
+              "hanzi": "她用手機接了那通電話。",
+              "pinyin": "Tā yòng shǒujī jiē le nà tōng diànhuà.",
+              "gloss": "She answered that call on her phone."
+            },
+            {
+              "hanzi": "你可以用這張紙寫。",
+              "pinyin": "Nǐ kěyǐ yòng zhè zhāng zhǐ xiě.",
+              "gloss": "You can write on this piece of paper."
+            }
+          ],
+          "id": "g_hsk3_03_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "小明，你可以幫我拿一下那個袋子嗎？",
+          "pinyin": "Xiǎomíng, nǐ kěyǐ bāng wǒ ná yíxià nàge dàizi ma?",
+          "gloss": "Xiaoming, can you get that bag for me?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我拿了。要放在哪裡？",
+          "pinyin": "Hǎo, wǒ ná le. Yào fàng zài nǎlǐ?",
+          "gloss": "Sure, I've got it. Where should I put it?"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "放在桌上就好，不要放在地上。",
+          "pinyin": "Fàng zài zhuō shàng jiù hǎo, bú yào fàng zài dì shàng.",
+          "gloss": "Just put it on the table, don't put it on the floor."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "媽，電話響了！",
+          "pinyin": "Mā, diànhuà xiǎng le!",
+          "gloss": "Mom, the phone's ringing!"
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "我手上有東西，你幫我接一下。",
+          "pinyin": "Wǒ shǒu shàng yǒu dōngxi, nǐ bāng wǒ jiē yíxià.",
+          "gloss": "My hands are full — answer it for me."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我用你的手機接。",
+          "pinyin": "Hǎo, wǒ yòng nǐ de shǒujī jiē.",
+          "gloss": "OK, I'll answer on your phone."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "請",
+            "把",
+            "電話",
+            "給",
+            "我",
+            "。"
+          ],
+          "pinyin": "Qǐng bǎ diànhuà gěi wǒ.",
+          "gloss": "Please hand me the phone.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "用",
+            "悠遊卡",
+            "搭",
+            "捷運",
+            "。"
+          ],
+          "pinyin": "Wǒ yòng Yōuyóukǎ dā jiéyùn.",
+          "gloss": "I take the MRT with my EasyCard.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "把",
+            "書包",
+            "放",
+            "在",
+            "椅子",
+            "上",
+            "。"
+          ],
+          "pinyin": "Tā bǎ shūbāo fàng zài yǐzi shàng.",
+          "gloss": "He put his backpack on the chair.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "去",
+            "機場",
+            "接",
+            "朋友",
+            "。"
+          ],
+          "pinyin": "Wǒ qù jīchǎng jiē péngyǒu.",
+          "gloss": "I'm going to the airport to pick up a friend.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "你",
+            "可以",
+            "幫",
+            "我",
+            "拿",
+            "那個",
+            "袋子",
+            "嗎",
+            "？"
+          ],
+          "pinyin": "Nǐ kěyǐ bāng wǒ ná nàge dàizi ma?",
+          "gloss": "Can you get that bag for me?",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "週末接朋友",
+        "hanzi": "週末早上，我把家裡的東西都放好，就出門了。我用悠遊卡搭捷運，到台北車站接我的朋友。她帶了一個很大的袋子，很重，我幫她拿。我們把袋子放在椅子旁邊，坐下來喝茶。後來我們走路去附近的書店，她買了一本書，說要送給我。",
+        "gloss": "Weekend: Picking Up a Friend — On Saturday morning I put everything at home away and headed out. I used my EasyCard to take the MRT to Taipei Main Station to pick up my friend. She had brought a very big bag, and it was heavy, so I carried it for her. We set the bag down beside a chair and sat down for some tea. Later we walked to a nearby bookstore, where she bought a book and said she wanted to give it to me."
+      }
     }
   ],
   "sort_order": 32,

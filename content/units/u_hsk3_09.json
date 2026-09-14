@@ -4,7 +4,7 @@
   "subtitle": "Getting around town and planning what to do",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_09_1",
@@ -17,7 +17,12 @@
           "pinyin": "liàng",
           "gloss": "classifier for vehicles",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想買一輛新的腳踏車。",
+            "pinyin": "Wǒ xiǎng mǎi yí liàng xīn de jiǎotàchē.",
+            "gloss": "I want to buy a new bicycle."
+          }
         },
         {
           "id": "v_米",
@@ -25,7 +30,12 @@
           "pinyin": "mǐ",
           "gloss": "rice; meter (classifier)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家離捷運站只有兩百米。",
+            "pinyin": "Wǒ jiā lí jiéyùn zhàn zhǐyǒu liǎngbǎi mǐ.",
+            "gloss": "My home is only two hundred meters from the MRT station."
+          }
         },
         {
           "id": "v_段",
@@ -33,7 +43,12 @@
           "pinyin": "duàn",
           "gloss": "paragraph; section; segment",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這段路有點遠，走過去要十分鐘。",
+            "pinyin": "Zhè duàn lù yǒudiǎn yuǎn, zǒu guòqù yào shí fēnzhōng.",
+            "gloss": "This stretch of road is a bit far; it takes ten minutes to walk."
+          }
         },
         {
           "id": "v_經過",
@@ -41,7 +56,12 @@
           "pinyin": "jīng guò",
           "gloss": "to pass; to go through; process",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天上班都會經過那家咖啡店。",
+            "pinyin": "Wǒ měitiān shàngbān dōu huì jīngguò nà jiā kāfēi diàn.",
+            "gloss": "I pass by that coffee shop every day on my way to work."
+          }
         },
         {
           "id": "v_終於",
@@ -49,7 +69,12 @@
           "pinyin": "zhōng yú",
           "gloss": "at last; in the end; finally",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "等了很久，公車終於來了。",
+            "pinyin": "Děng le hěn jiǔ, gōngchē zhōngyú lái le.",
+            "gloss": "After waiting a long time, the bus finally came."
+          }
         },
         {
           "id": "v_久",
@@ -57,12 +82,159 @@
           "pinyin": "jiǔ",
           "gloss": "(long) time; (long) duration of time",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你在台灣住了多久了？",
+            "pinyin": "Nǐ zài Táiwān zhù le duō jiǔ le?",
+            "gloss": "How long have you lived in Taiwan?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「終於」說「總算等到了」",
+          "pattern": "主語 + 終於 + 動詞 + 了",
+          "explanation": "「終於」放在動詞前面，表示等了很久、花了很多力氣以後，想要的事情發生了。句尾常常加「了」，前面常先說明等待的過程，像「等了很久」「走了一段路」「經過三個站」。它帶有鬆一口氣、開心的感覺，所以後面接的多半是好事。",
+          "contrast": "「終於」和「最後」很容易搞錯。「最後」只是說順序上的最後一件事，沒有感情：「我先吃飯，最後喝茶。」「終於」一定要有「等很久／很難」的意思：「我等了一個鐘頭，終於吃到了。」如果只是講順序，用「最後」；如果想說「總算」，用「終於」。",
+          "common_error": "Learners copy English word order and put it at the end of the sentence ('The bus came finally') — 公車來了終於 is wrong; 終於 must come before the verb. They also use it for plain sequencing ('first... then... finally'), where Chinese needs 最後.",
+          "examples": [
+            {
+              "hanzi": "等了很久，那輛公車終於來了。",
+              "pinyin": "Děng le hěn jiǔ, nà liàng gōngchē zhōngyú lái le.",
+              "gloss": "After a long wait, that bus finally came."
+            },
+            {
+              "hanzi": "走了一段路，我們終於到了夜市。",
+              "pinyin": "Zǒu le yí duàn lù, wǒmen zhōngyú dào le yèshì.",
+              "gloss": "After walking a stretch of road, we finally got to the night market."
+            },
+            {
+              "hanzi": "經過兩家便利商店，我終於找到那家店了。",
+              "pinyin": "Jīngguò liǎng jiā biànlì shāngdiàn, wǒ zhōngyú zhǎodào nà jiā diàn le.",
+              "gloss": "After passing two convenience stores, I finally found that shop."
+            }
+          ],
+          "id": "g_hsk3_09_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_09_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "請問，捷運站離這裡遠不遠？",
+          "pinyin": "Qǐngwèn, jiéyùn zhàn lí zhèlǐ yuǎn bù yuǎn?",
+          "gloss": "Excuse me, is the MRT station far from here?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "不遠喔，只有三百米左右。",
+          "pinyin": "Bù yuǎn ō, zhǐyǒu sānbǎi mǐ zuǒyòu.",
+          "gloss": "Not far — only about three hundred meters."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "太好了，我等公車等很久了，還是走路吧。",
+          "pinyin": "Tài hǎo le, wǒ děng gōngchē děng hěn jiǔ le, háishì zǒulù ba.",
+          "gloss": "Great. I've been waiting for the bus a long time; I'll just walk."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "你直走，經過那家便利商店，再左轉就到了。",
+          "pinyin": "Nǐ zhí zǒu, jīngguò nà jiā biànlì shāngdiàn, zài zuǒ zhuǎn jiù dào le.",
+          "gloss": "Go straight, pass that convenience store, then turn left and you're there."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "耶，我看到一輛公車開過去了，早知道就搭車。",
+          "pinyin": "Yé, wǒ kàndào yí liàng gōngchē kāi guòqù le, zǎo zhīdào jiù dā chē.",
+          "gloss": "Hey, I just saw a bus drive by — I should have taken it."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "這段路很快啦，五分鐘就走到了！",
+          "pinyin": "Zhè duàn lù hěn kuài la, wǔ fēnzhōng jiù zǒudào le!",
+          "gloss": "This stretch is quick — you'll walk it in five minutes!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "段",
+            "路",
+            "很",
+            "長"
+          ],
+          "pinyin": "Zhè duàn lù hěn cháng.",
+          "gloss": "This stretch of road is very long.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我家",
+            "離",
+            "學校",
+            "只有",
+            "三百",
+            "米"
+          ],
+          "pinyin": "Wǒ jiā lí xuéxiào zhǐyǒu sānbǎi mǐ.",
+          "gloss": "My home is only three hundred meters from school.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我們",
+            "等",
+            "了",
+            "很",
+            "久"
+          ],
+          "pinyin": "Wǒmen děng le hěn jiǔ.",
+          "gloss": "We waited a long time.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "公車",
+            "會",
+            "經過",
+            "郵局"
+          ],
+          "pinyin": "Gōngchē huì jīngguò yóujú.",
+          "gloss": "The bus passes the post office.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "終於",
+            "買",
+            "了",
+            "一",
+            "輛",
+            "機車"
+          ],
+          "pinyin": "Tā zhōngyú mǎi le yí liàng jīchē.",
+          "gloss": "He finally bought a scooter.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "騎車去夜市",
+        "hanzi": "上個週末，我跟朋友騎腳踏車去夜市。那段路有點遠，也下了一點雨。我們經過一家便利商店，進去買了兩瓶水。休息了一下，又騎了三千米，終於到了。夜市裡的人真多，我們吃了臭豆腐和牛肉麵，也喝了珍珠奶茶。回家的時候太累了，我們搭了一輛計程車。",
+        "gloss": "Last weekend my friend and I rode our bikes to the night market. That stretch of road was a bit far, and it rained a little. We passed a convenience store and went in to buy two bottles of water. After resting a while, we rode another three thousand meters and finally arrived. There were so many people at the night market; we ate stinky tofu and beef noodles, and drank bubble tea too. On the way home we were too tired, so we took a taxi."
+      }
     },
     {
       "id": "l_hsk3_09_2",
@@ -75,7 +247,12 @@
           "pinyin": "dǎ suàn",
           "gloss": "to plan; to intend; to calculate",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我週末打算去台北看朋友。",
+            "pinyin": "Wǒ zhōumò dǎsuàn qù Táiběi kàn péngyǒu.",
+            "gloss": "I plan to go to Taipei to see friends this weekend."
+          }
         },
         {
           "id": "v_忘記",
@@ -83,7 +260,12 @@
           "pinyin": "wàng jì",
           "gloss": "to forget",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我又忘記帶悠遊卡了。",
+            "pinyin": "Wǒ yòu wàngjì dài Yōuyóukǎ le.",
+            "gloss": "I forgot to bring my EasyCard again."
+          }
         },
         {
           "id": "v_剛才",
@@ -91,7 +273,12 @@
           "pinyin": "gāng cái",
           "gloss": "just now; a moment ago",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "剛才我在樓下遇到老師。",
+            "pinyin": "Gāngcái wǒ zài lóuxià yùdào lǎoshī.",
+            "gloss": "Just now I ran into the teacher downstairs."
+          }
         },
         {
           "id": "v_敢",
@@ -99,7 +286,12 @@
           "pinyin": "gǎn",
           "gloss": "to dare; daring; (polite) may I venture",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我不敢吃臭豆腐。",
+            "pinyin": "Wǒ bù gǎn chī chòudòufu.",
+            "gloss": "I don't dare eat stinky tofu."
+          }
         },
         {
           "id": "v_願意",
@@ -107,7 +299,12 @@
           "pinyin": "yuàn yì",
           "gloss": "to wish; to want; ready",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你願意幫我一個忙嗎？",
+            "pinyin": "Nǐ yuànyì bāng wǒ yíge máng ma?",
+            "gloss": "Are you willing to do me a favour?"
+          }
         },
         {
           "id": "v_同意",
@@ -115,12 +312,176 @@
           "pinyin": "tóng yì",
           "gloss": "to agree; to consent; to approve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我媽不同意我買新的腳踏車。",
+            "pinyin": "Wǒ mā bù tóngyì wǒ mǎi xīn de jiǎotàchē.",
+            "gloss": "My mum doesn't agree to me buying a new bike."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "打算 + Verb Phrase: stating a plan",
+          "pattern": "Subject + (不) 打算 + Verb Phrase",
+          "explanation": "打算 is a verb meaning 'to plan to'. It goes right after the subject and is followed by another verb phrase, never by a noun alone. To say you don't plan to do something, put 不 in front: 不打算. Because 打算 talks about something not yet done, it does not take 了 or 過, and you can ask about someone's plan with 打算怎麼…? or 打算做什麼?",
+          "contrast": "想 vs 要 vs 打算: 想 is 'feel like / would like' (just a wish), 要 is 'want to / be going to' (a decision, often with a time or condition), and 打算 means you have actually worked the plan out in your head. 我想去台北 = I'd like to go; 我打算去台北 = I'm planning on it.",
+          "common_error": "Learners treat 打算 like an adjective or add 了: 我很打算去 or 我打算了去. 打算 is a verb, so no 很, and no 了 after it — just say 我打算去.",
+          "examples": [
+            {
+              "hanzi": "我明年打算去日本玩。",
+              "pinyin": "Wǒ míngnián dǎsuàn qù Rìběn wán.",
+              "gloss": "I plan to travel to Japan next year."
+            },
+            {
+              "hanzi": "你們打算怎麼去機場？",
+              "pinyin": "Nǐmen dǎsuàn zěnme qù jīchǎng?",
+              "gloss": "How do you plan to get to the airport?"
+            },
+            {
+              "hanzi": "他不打算換工作。",
+              "pinyin": "Tā bù dǎsuàn huàn gōngzuò.",
+              "gloss": "He doesn't plan to change jobs."
+            }
+          ],
+          "id": "g_hsk3_09_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "願意 / 敢 / 同意 before a verb",
+          "pattern": "Subject + 願意 / 敢 / 同意 + Verb Phrase",
+          "explanation": "These three verbs all take another verb after them. 願意 = be willing to; 敢 = dare to; 同意 = agree to (someone doing something). Negate them all with 不: 不願意、不敢、不同意。",
+          "contrast": "願意 vs 敢: 願意 is about willingness (you could, but do you want to?), 敢 is about courage (are you afraid?). 我不願意去 means I don't want to; 我不敢去 means I'm scared to.",
+          "common_error": "Saying 我很敢 or 我沒敢 — use 不敢 for the negative, and don't use 很 with 敢 in everyday speech.",
+          "examples": [
+            {
+              "hanzi": "她很願意教我們唱歌。",
+              "pinyin": "Tā hěn yuànyì jiāo wǒmen chànggē.",
+              "gloss": "She's very willing to teach us to sing."
+            },
+            {
+              "hanzi": "我不敢一個人走那條路。",
+              "pinyin": "Wǒ bù gǎn yíge rén zǒu nà tiáo lù.",
+              "gloss": "I don't dare walk down that road alone."
+            },
+            {
+              "hanzi": "老闆同意我今天早一點回家。",
+              "pinyin": "Lǎobǎn tóngyì wǒ jīntiān zǎo yìdiǎn huí jiā.",
+              "gloss": "The boss agreed to let me go home a bit earlier today."
+            }
+          ],
+          "id": "g_hsk3_09_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "剛才我打電話給你，你怎麼沒接？",
+          "pinyin": "Gāngcái wǒ dǎ diànhuà gěi nǐ, nǐ zěnme méi jiē?",
+          "gloss": "I called you a moment ago — how come you didn't pick up?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "對不起，我忘記把手機帶出來了。",
+          "pinyin": "Duìbùqǐ, wǒ wàngjì bǎ shǒujī dài chūlái le.",
+          "gloss": "Sorry, I forgot to bring my phone out with me."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "沒關係。你這個週末打算做什麼？",
+          "pinyin": "Méi guānxi. Nǐ zhège zhōumò dǎsuàn zuò shénme?",
+          "gloss": "Never mind. What are you planning to do this weekend?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "我想去看電影，你願意跟我一起去嗎？",
+          "pinyin": "Wǒ xiǎng qù kàn diànyǐng, nǐ yuànyì gēn wǒ yìqǐ qù ma?",
+          "gloss": "I want to see a movie — would you be willing to come with me?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊，不過我不敢太晚回家，我爸不同意。",
+          "pinyin": "Hǎo a, búguò wǒ bù gǎn tài wǎn huí jiā, wǒ bà bù tóngyì.",
+          "gloss": "Sure, but I don't dare get home too late — my dad doesn't allow it."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那我們看早一點的，六點就搭捷運回來。",
+          "pinyin": "Nà wǒmen kàn zǎo yìdiǎn de, liù diǎn jiù dā jiéyùn huílái.",
+          "gloss": "Then let's see an earlier one and take the MRT back at six."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "剛才",
+            "忘記",
+            "跟",
+            "你",
+            "說"
+          ],
+          "pinyin": "Wǒ gāngcái wàngjì gēn nǐ shuō.",
+          "gloss": "I forgot to tell you just now.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "打算",
+            "怎麼",
+            "回家"
+          ],
+          "pinyin": "Nǐ dǎsuàn zěnme huí jiā?",
+          "gloss": "How do you plan to get home?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "不",
+            "敢",
+            "一個人",
+            "坐",
+            "飛機"
+          ],
+          "pinyin": "Wǒ bù gǎn yíge rén zuò fēijī.",
+          "gloss": "I don't dare take a plane by myself.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "願意",
+            "教",
+            "我",
+            "中文"
+          ],
+          "pinyin": "Tā yuànyì jiāo wǒ Zhōngwén.",
+          "gloss": "He's willing to teach me Chinese.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "爸爸",
+            "同意",
+            "我",
+            "買",
+            "那",
+            "雙",
+            "鞋"
+          ],
+          "pinyin": "Bàba tóngyì wǒ mǎi nà shuāng xié.",
+          "gloss": "Dad agreed to let me buy that pair of shoes.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我的週末打算",
+        "hanzi": "剛才哥哥問我週末打算做什麼。我說我想一個人坐火車去台北，先去看朋友，晚上再去吃牛肉麵。哥哥不太同意，他說我常常忘記帶悠遊卡和錢，也不敢跟別人問路。最後他願意跟我一起去，我覺得這樣也不錯。",
+        "gloss": "Just now my older brother asked me what I was planning to do this weekend. I said I wanted to take the train to Taipei by myself — first visit a friend, then go eat beef noodles in the evening. My brother wasn't too happy about it; he said I often forget to bring my EasyCard and money, and I don't dare ask strangers for directions. In the end he was willing to go with me, and I think that's not bad either."
+      }
     }
   ],
   "sort_order": 38,

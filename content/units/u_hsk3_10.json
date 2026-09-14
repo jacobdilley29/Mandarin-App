@@ -4,7 +4,7 @@
   "subtitle": "Office life and explaining things clearly",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_10_1",
@@ -17,7 +17,12 @@
           "pinyin": "bàn gōng shì",
           "gloss": "office; business premises; bureau",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們的辦公室在捷運站旁邊的十二樓。",
+            "pinyin": "Wǒmen de bàngōngshì zài jiéyùn zhàn pángbiān de shí'èr lóu.",
+            "gloss": "Our office is on the 12th floor of the building next to the MRT station."
+          }
         },
         {
           "id": "v_會議",
@@ -25,7 +30,12 @@
           "pinyin": "huì yì",
           "gloss": "meeting; conference",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "明天早上九點有一個很重要的會議。",
+            "pinyin": "Míngtiān zǎoshang jiǔ diǎn yǒu yí ge hěn zhòngyào de huìyì.",
+            "gloss": "There's a very important meeting at nine tomorrow morning."
+          }
         },
         {
           "id": "v_班",
@@ -33,7 +43,12 @@
           "pinyin": "bān",
           "gloss": "team; class; grade; (military) squad; work shift",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天要加班,可能九點才能回家。",
+            "pinyin": "Wǒ jīntiān yào jiābān, kěnéng jiǔ diǎn cái néng huí jiā.",
+            "gloss": "I have to work overtime today; I might not get home until nine."
+          }
         },
         {
           "id": "v_認真",
@@ -41,7 +56,12 @@
           "pinyin": "rèn zhēn",
           "gloss": "conscientious; earnest; serious",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她工作很認真,老闆都說她很好。",
+            "pinyin": "Tā gōngzuò hěn rènzhēn, lǎobǎn dōu shuō tā hěn hǎo.",
+            "gloss": "She works very conscientiously; the boss says she's great."
+          }
         },
         {
           "id": "v_主要",
@@ -49,12 +69,183 @@
           "pinyin": "zhǔ yào",
           "gloss": "main; principal; major",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這次會議主要是說明新的工作。",
+            "pinyin": "Zhè cì huìyì zhǔyào shì shuōmíng xīn de gōngzuò.",
+            "gloss": "This meeting is mainly to explain the new work."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "主要 — mainly / the main one",
+          "pattern": "主要(的) + Noun　/　主要是 + Verb Phrase",
+          "explanation": "主要 picks out which thing is the chief or principal one. Put 主要的 before a noun (主要的工作 the main job), or 主要是 before a verb phrase to say what something mainly involves (今天主要是開會 today is mainly about meetings). 主要 is a modifier, not something you can say about a topic by itself.",
+          "contrast": "主要 vs 重要: 主要 = 'main, principal' (which one of several is the chief one); 重要 = 'important' (how much it matters). A meeting can be 很重要 but you cannot say 很主要. If you can put 很 in front, you want 重要.",
+          "common_error": "Learners say 這個會議很主要 to mean 'this meeting is very important'. Say 這個會議很重要, and keep 主要 in front of a noun or before 是: 主要的會議 / 主要是說新的工作.",
+          "examples": [
+            {
+              "hanzi": "我們公司主要賣茶。",
+              "pinyin": "Wǒmen gōngsī zhǔyào mài chá.",
+              "gloss": "Our company mainly sells tea."
+            },
+            {
+              "hanzi": "今天開會主要是要說下個月的工作。",
+              "pinyin": "Jīntiān kāihuì zhǔyào shì yào shuō xià ge yuè de gōngzuò.",
+              "gloss": "Today's meeting is mainly to talk about next month's work."
+            },
+            {
+              "hanzi": "他的主要工作是幫老闆寫信。",
+              "pinyin": "Tā de zhǔyào gōngzuò shì bāng lǎobǎn xiě xìn.",
+              "gloss": "His main job is writing letters for the boss."
+            }
+          ],
+          "id": "g_hsk3_10_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "加班 / 上班 / 下班 — separable verb-object words with 班",
+          "pattern": "上班　下班　加班　(+ 時間/地方 before the verb)",
+          "explanation": "班 works with a verb in front of it: 上班 go to work, 下班 get off work, 加班 work overtime. Time and place words go before the whole phrase: 我明天在辦公室加班.",
+          "contrast": "上班 vs 工作: 上班 is about being on shift (going in, being at work); 工作 is the job or the activity. 你在哪裡上班? asks where you report to work; 你做什麼工作? asks what your job is.",
+          "common_error": "Learners add an object after these words, e.g. 我上班公司 ✗. Say 我在公司上班 ✓ — the place goes before the verb with 在.",
+          "examples": [
+            {
+              "hanzi": "我五點下班,你要不要一起去吃飯?",
+              "pinyin": "Wǒ wǔ diǎn xiàbān, nǐ yào bú yào yìqǐ qù chī fàn?",
+              "gloss": "I get off work at five; do you want to go eat together?"
+            },
+            {
+              "hanzi": "她在銀行上班,每天都很忙。",
+              "pinyin": "Tā zài yínháng shàngbān, měi tiān dōu hěn máng.",
+              "gloss": "She works at a bank and is busy every day."
+            },
+            {
+              "hanzi": "這個週末我還要加班,真的太累了。",
+              "pinyin": "Zhè ge zhōumò wǒ hái yào jiābān, zhēn de tài lèi le.",
+              "gloss": "I have to work overtime this weekend too — I'm really too tired."
+            }
+          ],
+          "id": "g_hsk3_10_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "小明,早!老闆在辦公室嗎?",
+          "pinyin": "Xiǎo Míng, zǎo! Lǎobǎn zài bàngōngshì ma?",
+          "gloss": "Morning, Xiao Ming! Is the boss in the office?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "在啊,他九點還有一個會議喔。",
+          "pinyin": "Zài a, tā jiǔ diǎn hái yǒu yí ge huìyì o.",
+          "gloss": "Yes, he is — and he's got a meeting at nine, too."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那我下午再去找他。這次會議主要是說什麼?",
+          "pinyin": "Nà wǒ xiàwǔ zài qù zhǎo tā. Zhè cì huìyì zhǔyào shì shuō shénme?",
+          "gloss": "Then I'll go find him in the afternoon. What's this meeting mainly about?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "主要是說下個月的新工作。",
+          "pinyin": "Zhǔyào shì shuō xià ge yuè de xīn gōngzuò.",
+          "gloss": "It's mainly about next month's new work."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好,我先去買咖啡,你要不要?",
+          "pinyin": "Hǎo, wǒ xiān qù mǎi kāfēi, nǐ yào bú yào?",
+          "gloss": "OK. I'm going to buy coffee first — do you want some?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "要!謝謝你。我今天還要加班,真的需要咖啡。",
+          "pinyin": "Yào! Xièxie nǐ. Wǒ jīntiān hái yào jiābān, zhēn de xūyào kāfēi.",
+          "gloss": "Yes! Thanks. I have to work overtime today, so I really need coffee."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我們",
+            "的",
+            "辦公室",
+            "在",
+            "三",
+            "樓"
+          ],
+          "pinyin": "Wǒmen de bàngōngshì zài sān lóu.",
+          "gloss": "Our office is on the third floor.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "明天",
+            "早上",
+            "有",
+            "一",
+            "個",
+            "重要",
+            "的",
+            "會議"
+          ],
+          "pinyin": "Míngtiān zǎoshang yǒu yí ge zhòngyào de huìyì.",
+          "gloss": "There is an important meeting tomorrow morning.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "她",
+            "做事",
+            "很",
+            "認真"
+          ],
+          "pinyin": "Tā zuòshì hěn rènzhēn.",
+          "gloss": "She is very conscientious in how she does things.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "要",
+            "加班",
+            "不能",
+            "跟",
+            "你",
+            "去",
+            "夜市"
+          ],
+          "pinyin": "Wǒ jīntiān yào jiābān, bù néng gēn nǐ qù yèshì.",
+          "gloss": "I have to work overtime today, so I can't go to the night market with you.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這次",
+            "會議",
+            "主要",
+            "是",
+            "說",
+            "新",
+            "的",
+            "工作"
+          ],
+          "pinyin": "Zhè cì huìyì zhǔyào shì shuō xīn de gōngzuò.",
+          "gloss": "This meeting is mainly about the new work.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我的辦公室",
+        "hanzi": "我在台北一家小公司上班,辦公室在捷運站旁邊的七樓。每天早上九點,我們都要先開一個小會議,主要是說今天的工作。我的同事都很認真,中午常常一起去買便當,在辦公室裡邊吃邊講話。今天我要加班,可能八點才能回家。",
+        "gloss": "I work at a small company in Taipei; our office is on the seventh floor of the building next to the MRT station. Every morning at nine we first have a short meeting, mainly to go over the day's work. My co-workers are all very conscientious. At noon we often go buy lunchboxes together and eat and chat in the office. Today I have to work overtime, so I probably won't get home until eight."
+      }
     },
     {
       "id": "l_hsk3_10_2",
@@ -67,7 +258,12 @@
           "pinyin": "qīng chu",
           "gloss": "clear; distinct; to understand thoroughly",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師說得很清楚，我都聽懂了。",
+            "pinyin": "Lǎoshī shuō de hěn qīngchu, wǒ dōu tīng dǒng le.",
+            "gloss": "The teacher speaks very clearly; I understood it all."
+          }
         },
         {
           "id": "v_明白",
@@ -75,7 +271,12 @@
           "pinyin": "míng bai",
           "gloss": "clear; obvious; unequivocal",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你的意思我明白了。",
+            "pinyin": "Nǐ de yìsi wǒ míngbai le.",
+            "gloss": "I understand what you mean."
+          }
         },
         {
           "id": "v_簡單",
@@ -83,7 +284,12 @@
           "pinyin": "jiǎn dān",
           "gloss": "simple; not complicated",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個問題很簡單，別擔心。",
+            "pinyin": "Zhè ge wèntí hěn jiǎndān, bié dānxīn.",
+            "gloss": "This question is very simple, don't worry."
+          }
         },
         {
           "id": "v_表示",
@@ -91,7 +297,12 @@
           "pinyin": "biǎo shì",
           "gloss": "to express; to show; to say",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他點頭表示同意。",
+            "pinyin": "Tā diǎn tóu biǎoshì tóngyì.",
+            "gloss": "He nodded to show he agreed."
+          }
         },
         {
           "id": "v_除了",
@@ -99,12 +310,185 @@
           "pinyin": "chú le",
           "gloss": "besides; apart from (... also...); in addition to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "除了咖啡以外，我也喜歡喝茶。",
+            "pinyin": "Chúle kāfēi yǐwài, wǒ yě xǐhuān hē chá.",
+            "gloss": "Besides coffee, I also like drinking tea."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "V + 得 + 清楚／簡單：saying how an action is done",
+          "pattern": "(Object) + Verb + 得 + (很／太) + Adjective",
+          "explanation": "Put 得 right after the verb to describe how the action comes out. 他說得很清楚 = the way he speaks is clear. If the verb has an object, either move the object to the front (中文說得很清楚) or repeat the verb (說中文說得很清楚). Common adjectives here: 清楚, 簡單, 快, 慢, 好.",
+          "contrast": "說清楚 (verb + result, no 得) is about getting the result: 你要說清楚 = 'say it clearly / make it clear'. 說得很清楚 (with 得) just describes how someone speaks. Use 得 when you are commenting on the manner; drop 得 when you are asking for a result.",
+          "common_error": "Learners say 他說得中文很好, putting the object after 得. The object can never follow 得 — say 他中文說得很好 or 他說中文說得很好.",
+          "examples": [
+            {
+              "hanzi": "她中文說得很清楚。",
+              "pinyin": "Tā Zhōngwén shuō de hěn qīngchu.",
+              "gloss": "She speaks Chinese very clearly."
+            },
+            {
+              "hanzi": "你講得太快了，我沒聽清楚。",
+              "pinyin": "Nǐ jiǎng de tài kuài le, wǒ méi tīng qīngchu.",
+              "gloss": "You spoke too fast; I didn't catch it clearly."
+            },
+            {
+              "hanzi": "老師說得很簡單，大家都明白了。",
+              "pinyin": "Lǎoshī shuō de hěn jiǎndān, dàjiā dōu míngbai le.",
+              "gloss": "The teacher explained it very simply, so everyone understood."
+            }
+          ],
+          "id": "g_hsk3_10_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "除了……以外，還／也……",
+          "pattern": "除了 + A （以外），還／也 + B",
+          "explanation": "除了 A 以外，還 B means 'besides A, also B' — A is included and B is added. 以外 can be left out in speech: 除了捷運，你也可以坐公車。",
+          "contrast": "With 都 instead of 還／也, the meaning flips to exclusion: 除了我以外，大家都到了 = everyone except me. 還／也 adds; 都 excludes.",
+          "common_error": "Learners forget the second half. 除了 almost always needs 還, 也, or 都 later in the sentence.",
+          "examples": [
+            {
+              "hanzi": "除了中文以外，他還會說一點台語。",
+              "pinyin": "Chúle Zhōngwén yǐwài, tā hái huì shuō yìdiǎn Táiyǔ.",
+              "gloss": "Besides Chinese, he can also speak a little Taiwanese."
+            },
+            {
+              "hanzi": "除了週末，我每天都很忙。",
+              "pinyin": "Chúle zhōumò, wǒ měi tiān dōu hěn máng.",
+              "gloss": "Apart from the weekend, I'm busy every day."
+            },
+            {
+              "hanzi": "除了悠遊卡以外，我還帶了一點錢。",
+              "pinyin": "Chúle yōuyóukǎ yǐwài, wǒ hái dài le yìdiǎn qián.",
+              "gloss": "Besides my EasyCard, I also brought a little cash."
+            }
+          ],
+          "id": "g_hsk3_10_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "旅客",
+          "hanzi": "請問，這裡怎麼去台北車站？",
+          "pinyin": "Qǐngwèn, zhèlǐ zěnme qù Táiběi Chēzhàn?",
+          "gloss": "Excuse me, how do I get to Taipei Main Station from here?"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "很簡單，你搭捷運，兩站就到了。",
+          "pinyin": "Hěn jiǎndān, nǐ dā jiéyùn, liǎng zhàn jiù dào le.",
+          "gloss": "It's easy — take the MRT and you're there in two stops."
+        },
+        {
+          "speaker": "旅客",
+          "hanzi": "你說得太快了，我沒聽清楚，可以慢一點嗎？",
+          "pinyin": "Nǐ shuō de tài kuài le, wǒ méi tīng qīngchu, kěyǐ màn yìdiǎn ma?",
+          "gloss": "You spoke too fast, I didn't catch it. Could you go a bit slower?"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "好。除了捷運以外，你也可以坐公車喔。",
+          "pinyin": "Hǎo. Chúle jiéyùn yǐwài, nǐ yě kěyǐ zuò gōngchē ō.",
+          "gloss": "Sure. Besides the MRT, you can also take the bus."
+        },
+        {
+          "speaker": "旅客",
+          "hanzi": "我明白了，謝謝你！",
+          "pinyin": "Wǒ míngbai le, xièxie nǐ!",
+          "gloss": "I've got it, thank you!"
+        },
+        {
+          "speaker": "路人",
+          "hanzi": "你笑了，表示你真的聽懂了吧！",
+          "pinyin": "Nǐ xiào le, biǎoshì nǐ zhēn de tīng dǒng le ba!",
+          "gloss": "You're smiling — that means you really understood!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "說",
+            "中文",
+            "說",
+            "得",
+            "很",
+            "清楚"
+          ],
+          "pinyin": "Tā shuō Zhōngwén shuō de hěn qīngchu.",
+          "gloss": "He speaks Chinese very clearly.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "菜",
+            "做",
+            "起來",
+            "很",
+            "簡單"
+          ],
+          "pinyin": "Zhè ge cài zuò qǐlái hěn jiǎndān.",
+          "gloss": "This dish is very simple to make.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "除了",
+            "我",
+            "以外",
+            "，",
+            "大家",
+            "都",
+            "到",
+            "了"
+          ],
+          "pinyin": "Chúle wǒ yǐwài, dàjiā dōu dào le.",
+          "gloss": "Apart from me, everyone has arrived.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "他",
+            "這樣",
+            "說",
+            "，",
+            "表示",
+            "他",
+            "不",
+            "想",
+            "去"
+          ],
+          "pinyin": "Tā zhèyàng shuō, biǎoshì tā bù xiǎng qù.",
+          "gloss": "Saying it that way means he doesn't want to go.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "你",
+            "的",
+            "意思",
+            "我",
+            "明白",
+            "了"
+          ],
+          "pinyin": "Nǐ de yìsi wǒ míngbai le.",
+          "gloss": "I understand what you mean.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "我的中文老師",
+        "hanzi": "我的中文老師說話很慢，也很清楚，所以我都聽得懂。她說學中文其實沒那麼難，除了上課以外，還要多聽多說。上個週末我在捷運上跟一個台灣人講話，他笑著表示我說得很好。那時候我心裡很高興，也明白了一件簡單的事：只要每天多說，就會越來越好。",
+        "gloss": "My Chinese teacher speaks slowly and very clearly, so I can understand everything. She says learning Chinese isn't really that hard: besides going to class, you have to listen and speak a lot. Last weekend I talked with a Taiwanese person on the MRT, and he smiled and said I spoke well. At that moment I was very happy, and I understood one simple thing: as long as you speak a little more every day, you'll keep getting better."
+      }
     }
   ],
   "sort_order": 39,

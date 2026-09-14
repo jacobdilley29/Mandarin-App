@@ -4,7 +4,7 @@
   "subtitle": "Getting around town, the workplace and school life",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_16_1",
@@ -17,7 +17,12 @@
           "pinyin": "sī jī",
           "gloss": "chauffeur; driver",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我跟司機說，我要在捷運站下車。",
+            "pinyin": "Wǒ gēn sījī shuō, wǒ yào zài jiéyùn zhàn xià chē.",
+            "gloss": "I told the driver I want to get off at the MRT station."
+          }
         },
         {
           "id": "v_地圖",
@@ -25,7 +30,12 @@
           "pinyin": "dì tú",
           "gloss": "map",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我手機裡有地圖，不會走錯路。",
+            "pinyin": "Wǒ shǒujī lǐ yǒu dìtú, bú huì zǒu cuò lù.",
+            "gloss": "I have a map on my phone, so I won't take the wrong road."
+          }
         },
         {
           "id": "v_中間",
@@ -33,7 +43,12 @@
           "pinyin": "zhōng jiān",
           "gloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "銀行在郵局和藥局的中間。",
+            "pinyin": "Yínháng zài yóujú hàn yàojú de zhōngjiān.",
+            "gloss": "The bank is between the post office and the pharmacy."
+          }
         },
         {
           "id": "v_角",
@@ -41,7 +56,12 @@
           "pinyin": "jiǎo",
           "gloss": "angle; corner; horn",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "那家咖啡店就在街角，很好找。",
+            "pinyin": "Nà jiā kāfēi diàn jiù zài jiējiǎo, hěn hǎo zhǎo.",
+            "gloss": "That coffee shop is right on the street corner, easy to find."
+          }
         },
         {
           "id": "v_南",
@@ -49,7 +69,12 @@
           "pinyin": "nán",
           "gloss": "south",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "從這裡向南走五分鐘就到了。",
+            "pinyin": "Cóng zhèlǐ xiàng nán zǒu wǔ fēnzhōng jiù dào le.",
+            "gloss": "Walk south from here for five minutes and you're there."
+          }
         },
         {
           "id": "v_電梯",
@@ -57,12 +82,159 @@
           "pinyin": "diàn tī",
           "gloss": "elevator; escalator",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "電梯在一樓的右邊，我們搭電梯上去吧。",
+            "pinyin": "Diàntī zài yī lóu de yòubiān, wǒmen dā diàntī shàngqù ba.",
+            "gloss": "The elevator is on the right side of the first floor; let's take it up."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "A 在 B 和 C 的中間 (A is between B and C)",
+          "pattern": "A + 在 + B + 和 + C + (的) + 中間",
+          "explanation": "To say something sits between two things, name the two reference points first (B 和 C), then add 中間. 的 before 中間 is optional. 中間 belongs to the same family as 旁邊、右邊、上面: it always comes after the place words, never before them. With only one reference point, 中間 means \"the middle of\" that space: 房間的中間 (the middle of the room).",
+          "contrast": "中間 vs 裡面: 裡面 puts something inside one single space (電梯裡面有人 — someone is inside the elevator), while 中間 puts it between two things or in the center of an area (電梯在兩個門的中間). If you can point to two separate landmarks, use 中間.",
+          "common_error": "Learners copy English word order and say 「市場在中間銀行和郵局」. In Chinese the landmarks come first and 中間 comes last: 「市場在銀行和郵局的中間」. Another common slip is dropping 在 altogether.",
+          "examples": [
+            {
+              "hanzi": "我家在學校和捷運站的中間。",
+              "pinyin": "Wǒ jiā zài xuéxiào hàn jiéyùn zhàn de zhōngjiān.",
+              "gloss": "My home is between the school and the MRT station."
+            },
+            {
+              "hanzi": "電梯在兩個門的中間，你看得到嗎？",
+              "pinyin": "Diàntī zài liǎng ge mén de zhōngjiān, nǐ kàn de dào ma?",
+              "gloss": "The elevator is between the two doors — can you see it?"
+            },
+            {
+              "hanzi": "地圖上那家店在郵局和書店中間。",
+              "pinyin": "Dìtú shàng nà jiā diàn zài yóujú hàn shūdiàn zhōngjiān.",
+              "gloss": "On the map, that shop is between the post office and the bookstore."
+            }
+          ],
+          "id": "g_hsk3_16_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "司機先生，請問到南門市場要多久？",
+          "pinyin": "Sījī xiānsheng, qǐngwèn dào Nánmén shìchǎng yào duō jiǔ?",
+          "gloss": "Driver, may I ask how long it takes to get to Nanmen Market?"
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "十五分鐘就到了。你要在哪裡下車？",
+          "pinyin": "Shíwǔ fēnzhōng jiù dào le. Nǐ yào zài nǎlǐ xià chē?",
+          "gloss": "Fifteen minutes and we're there. Where do you want to get off?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我看地圖，市場在郵局和銀行的中間，就在那個街角下車好了。",
+          "pinyin": "Wǒ kàn dìtú, shìchǎng zài yóujú hàn yínháng de zhōngjiān, jiù zài nà ge jiējiǎo xià chē hǎo le.",
+          "gloss": "Looking at the map, the market is between the post office and the bank — I'll just get off at that corner."
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "好啊，那邊有電梯，可以上二樓的餐廳喔。",
+          "pinyin": "Hǎo a, nà biān yǒu diàntī, kěyǐ shàng èr lóu de cāntīng o.",
+          "gloss": "Sure. There's an elevator over there — you can go up to the restaurant on the second floor."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "謝謝你，錢我用悠遊卡付。",
+          "pinyin": "Xièxie nǐ, qián wǒ yòng Yōuyóukǎ fù.",
+          "gloss": "Thank you — I'll pay with my EasyCard."
+        },
+        {
+          "speaker": "司機",
+          "hanzi": "沒問題，小心車子，慢走喔！",
+          "pinyin": "Méi wèntí, xiǎoxīn chēzi, màn zǒu o!",
+          "gloss": "No problem. Watch out for cars — take care!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "司機",
+            "說",
+            "那",
+            "條",
+            "路",
+            "不",
+            "能",
+            "走"
+          ],
+          "pinyin": "Sījī shuō nà tiáo lù bù néng zǒu.",
+          "gloss": "The driver said that road can't be used.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "請",
+            "給",
+            "我",
+            "一",
+            "張",
+            "台北",
+            "的",
+            "地圖"
+          ],
+          "pinyin": "Qǐng gěi wǒ yī zhāng Táiběi de dìtú.",
+          "gloss": "Please give me a map of Taipei.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "學校",
+            "在",
+            "公園",
+            "和",
+            "醫院",
+            "的",
+            "中間"
+          ],
+          "pinyin": "Xuéxiào zài gōngyuán hàn yīyuàn de zhōngjiān.",
+          "gloss": "The school is between the park and the hospital.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "捷運",
+            "站",
+            "在",
+            "市場",
+            "的",
+            "南邊"
+          ],
+          "pinyin": "Jiéyùn zhàn zài shìchǎng de nánbiān.",
+          "gloss": "The MRT station is on the south side of the market.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我們",
+            "搭",
+            "電梯",
+            "到",
+            "九",
+            "樓",
+            "吃",
+            "飯"
+          ],
+          "pinyin": "Wǒmen dā diàntī dào jiǔ lóu chī fàn.",
+          "gloss": "Let's take the elevator up to the ninth floor to eat.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "去南門市場",
+        "hanzi": "上個週末，我跟朋友要去南門市場。我看手機上的地圖，市場就在銀行和郵局的中間。計程車司機很客氣，他叫我在那個街角下車，向南走兩分鐘就到了。市場裡有電梯，我們搭電梯上二樓，吃了一碗熱麵，真的很好吃。",
+        "gloss": "Last weekend my friend and I wanted to go to Nanmen Market. I looked at the map on my phone: the market is right between the bank and the post office. The taxi driver was very polite; he told me to get off at that street corner and walk south for two minutes to get there. There's an elevator in the market, so we took it up to the second floor and had a bowl of hot noodles — it was really delicious."
+      }
     },
     {
       "id": "l_hsk3_16_2",
@@ -75,7 +247,12 @@
           "pinyin": "jīng lǐ",
           "gloss": "manager; director",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們經理今天早上要開會。",
+            "pinyin": "Wǒmen jīnglǐ jīntiān zǎoshang yào kāihuì.",
+            "gloss": "Our manager has a meeting this morning."
+          }
         },
         {
           "id": "v_遲到",
@@ -83,7 +260,12 @@
           "pinyin": "chí dào",
           "gloss": "to arrive late",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "對不起,我今天上班遲到了十分鐘。",
+            "pinyin": "Duìbùqǐ, wǒ jīntiān shàngbān chídào le shí fēnzhōng.",
+            "gloss": "Sorry, I was ten minutes late for work today."
+          }
         },
         {
           "id": "v_刻",
@@ -91,7 +273,12 @@
           "pinyin": "kè",
           "gloss": "quarter (hour); moment; to carve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "三點一刻我們在公司門口見。",
+            "pinyin": "Sān diǎn yí kè wǒmen zài gōngsī ménkǒu jiàn.",
+            "gloss": "Let's meet at the company entrance at three fifteen."
+          }
         },
         {
           "id": "v_一下",
@@ -100,7 +287,12 @@
           "gloss": "a moment; a while; in a moment",
           "hsk_level": 3,
           "taiwan_note": "台灣少用兒化，說「一下」或「等一下」。",
-          "prc_form": "一會兒"
+          "prc_form": "一會兒",
+          "example": {
+            "hanzi": "你可以幫我看一下這個嗎?",
+            "pinyin": "Nǐ kěyǐ bāng wǒ kàn yíxià zhège ma?",
+            "gloss": "Could you take a quick look at this for me?"
+          }
         },
         {
           "id": "v_方便",
@@ -108,7 +300,12 @@
           "pinyin": "fāng biàn",
           "gloss": "convenient; suitable; to facilitate",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "明天下午你方便嗎?我想跟你開會。",
+            "pinyin": "Míngtiān xiàwǔ nǐ fāngbiàn ma? Wǒ xiǎng gēn nǐ kāihuì.",
+            "gloss": "Are you free tomorrow afternoon? I'd like to have a meeting with you."
+          }
         },
         {
           "id": "v_電子",
@@ -116,12 +313,151 @@
           "pinyin": "diàn zǐ",
           "gloss": "electronic; electron (particle physics)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我剛剛寄了電子郵件給經理。",
+            "pinyin": "Wǒ gānggāng jì le diànzǐ yóujiàn gěi jīnglǐ.",
+            "gloss": "I just sent an email to the manager."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Verb + 一下 (doing something briefly / softening a request)",
+          "pattern": "Subject + Verb + 一下 (+ Object)",
+          "explanation": "Put 一下 right after the verb to say the action takes only a short moment. In the office it is mostly used to make a request or a question sound softer and more polite: 看一下 (take a quick look), 問一下 (just ask), 坐一下 (sit for a bit). 一下 always follows the verb, and if there is an object, the object comes after 一下: 看一下電子郵件.",
+          "contrast": "一下 vs 一點: 一下 is a short amount of TIME after a verb (說一下 = say it briefly), while 一點 is a small amount or degree, used with quantities or after adjectives (說慢一點 = speak a bit slower). If you mean 'for a moment', use 一下; if you mean 'a bit more/less', use 一點.",
+          "common_error": "Learners put 一下 before the verb (一下看) or after the object (看電子郵件一下). It must come directly after the verb, before the object. Also, don't attach 一下 to adjectives — say 快一點, not 快一下.",
+          "examples": [
+            {
+              "hanzi": "你先坐一下,經理五分鐘後就到。",
+              "pinyin": "Nǐ xiān zuò yíxià, jīnglǐ wǔ fēnzhōng hòu jiù dào.",
+              "gloss": "Have a seat for a moment; the manager will be here in five minutes."
+            },
+            {
+              "hanzi": "我想問一下,開會是幾點?",
+              "pinyin": "Wǒ xiǎng wèn yíxià, kāihuì shì jǐ diǎn?",
+              "gloss": "I'd just like to ask, what time is the meeting?"
+            },
+            {
+              "hanzi": "請你幫我看一下這個電子郵件,好嗎?",
+              "pinyin": "Qǐng nǐ bāng wǒ kàn yíxià zhège diànzǐ yóujiàn, hǎo ma?",
+              "gloss": "Could you take a quick look at this email for me?"
+            }
+          ],
+          "id": "g_hsk3_16_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_16_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "經理,對不起,我遲到了十分鐘,捷運出了點事。",
+          "pinyin": "Jīnglǐ, duìbùqǐ, wǒ chídào le shí fēnzhōng, jiéyùn chū le diǎn shì.",
+          "gloss": "Manager, I'm sorry, I'm ten minutes late — something happened on the MRT."
+        },
+        {
+          "speaker": "經理",
+          "hanzi": "沒關係,會議還沒開始,你先坐一下。",
+          "pinyin": "Méi guānxì, huìyì hái méi kāishǐ, nǐ xiān zuò yíxià.",
+          "gloss": "It's fine, the meeting hasn't started yet. Have a seat for a moment."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "我剛剛寄了電子郵件給您,裡面有今天的報告。",
+          "pinyin": "Wǒ gānggāng jì le diànzǐ yóujiàn gěi nín, lǐmiàn yǒu jīntiān de bàogào.",
+          "gloss": "I just emailed you; today's report is in it."
+        },
+        {
+          "speaker": "經理",
+          "hanzi": "好,我看一下。三點一刻我們再開一次會,你方便嗎?",
+          "pinyin": "Hǎo, wǒ kàn yíxià. Sān diǎn yí kè wǒmen zài kāi yí cì huì, nǐ fāngbiàn ma?",
+          "gloss": "OK, let me take a look. We'll meet again at a quarter past three — does that work for you?"
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "方便!我一定不會再遲到了。",
+          "pinyin": "Fāngbiàn! Wǒ yídìng bú huì zài chídào le.",
+          "gloss": "That works! I definitely won't be late again."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "經理",
+            "開會",
+            "遲到",
+            "了"
+          ],
+          "pinyin": "Jīnglǐ kāihuì chídào le.",
+          "gloss": "The manager was late for the meeting.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "現在",
+            "是",
+            "三點",
+            "一刻"
+          ],
+          "pinyin": "Xiànzài shì sān diǎn yí kè.",
+          "gloss": "It's a quarter past three now.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "你",
+            "明天",
+            "下午",
+            "方便",
+            "嗎"
+          ],
+          "pinyin": "Nǐ míngtiān xiàwǔ fāngbiàn ma?",
+          "gloss": "Are you free tomorrow afternoon?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "問",
+            "一下",
+            "這",
+            "件",
+            "事"
+          ],
+          "pinyin": "Wǒ xiǎng wèn yíxià zhè jiàn shì.",
+          "gloss": "I'd just like to ask about this matter.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "寄",
+            "電子郵件",
+            "給",
+            "你"
+          ],
+          "pinyin": "Wǒ jì diànzǐ yóujiàn gěi nǐ.",
+          "gloss": "I'll send you an email.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "不要遲到",
+        "hanzi": "我在台北上班,公司離家有點遠,所以我每天早上七點半就搭捷運。經理常說,開會最重要的就是不能遲到。今天的會議九點一刻開始,我八點半就到了公司,先看一下電子郵件,再問經理什麼時候方便跟我說一下新工作的事。他說,十點以後都方便。",
+        "gloss": "I work in Taipei. The company is a bit far from my home, so every morning I take the MRT at seven thirty. My manager often says the most important thing about meetings is not being late. Today's meeting starts at a quarter past nine, and I got to the office at eight thirty. First I took a quick look at my email, then I asked the manager when it would be convenient to talk with me about the new job. He said any time after ten works for him."
+      }
     },
     {
       "id": "l_hsk3_16_3",
@@ -134,7 +470,12 @@
           "pinyin": "zuò yè",
           "gloss": "school assignment; homework; work",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天的數學作業還沒寫完。",
+            "pinyin": "Wǒ jīntiān de shùxué zuòyè hái méi xiě wán.",
+            "gloss": "I haven't finished today's math homework yet."
+          }
         },
         {
           "id": "v_數學",
@@ -142,7 +483,12 @@
           "pinyin": "shù xué",
           "gloss": "mathematics; mathematical",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我覺得數學很難，可是很有意思。",
+            "pinyin": "Wǒ juéde shùxué hěn nán, kěshì hěn yǒu yìsi.",
+            "gloss": "I think math is hard, but it's interesting."
+          }
         },
         {
           "id": "v_練習",
@@ -150,7 +496,12 @@
           "pinyin": "liàn xí",
           "gloss": "to practice; exercise; drill",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "每天練習一個小時，你的中文會更好。",
+            "pinyin": "Měi tiān liànxí yí ge xiǎoshí, nǐ de zhōngwén huì gèng hǎo.",
+            "gloss": "Practice one hour a day and your Chinese will get better."
+          }
         },
         {
           "id": "v_成績",
@@ -158,7 +509,12 @@
           "pinyin": "chéng jì",
           "gloss": "achievement; performance records; grades",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這次考試我的成績比上次好。",
+            "pinyin": "Zhè cì kǎoshì wǒ de chéngjì bǐ shàng cì hǎo.",
+            "gloss": "My grades on this test are better than last time."
+          }
         },
         {
           "id": "v_提高",
@@ -166,7 +522,12 @@
           "pinyin": "tí gāo",
           "gloss": "to raise; to increase; to improve",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "多寫作業可以提高你的數學成績。",
+            "pinyin": "Duō xiě zuòyè kěyǐ tígāo nǐ de shùxué chéngjì.",
+            "gloss": "Doing more homework can raise your math grades."
+          }
         },
         {
           "id": "v_校長",
@@ -174,7 +535,12 @@
           "pinyin": "xiào zhǎng",
           "gloss": "(college, university) president; headmaster",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們的校長很年輕，也很和氣。",
+            "pinyin": "Wǒmen de xiàozhǎng hěn niánqīng, yě hěn héqì.",
+            "gloss": "Our principal is young and very friendly."
+          }
         },
         {
           "id": "v_圖書館",
@@ -182,12 +548,160 @@
           "pinyin": "tú shū guǎn",
           "gloss": "library",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "週末我常常在圖書館看書。",
+            "pinyin": "Zhōumò wǒ chángcháng zài túshūguǎn kàn shū.",
+            "gloss": "On weekends I often read at the library."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "為了 + goal（purpose）",
+          "pattern": "為了 + 目的，+ 主語 + 動作",
+          "explanation": "為了 introduces the goal you are aiming at; the second part says what you do to reach it. The goal has not happened yet — it is the reason you take the action. It usually comes at the front of the sentence, before the subject or right after it.",
+          "contrast": "因為 vs 為了: 因為 gives a cause that already exists (因為作業太多，我沒去看電影), while 為了 gives a goal you want to reach (為了寫完作業，我沒去看電影). If you can answer 'why? — because of this fact', use 因為; if you answer 'what for? — in order to', use 為了.",
+          "common_error": "Learners put a plain reason after 為了, saying things like 為了我的成績不好，我每天練習. A goal must follow 為了 (為了提高成績…), not a statement of fact — that one needs 因為.",
+          "examples": [
+            {
+              "hanzi": "為了提高數學成績，他每天練習兩個小時。",
+              "pinyin": "Wèile tígāo shùxué chéngjì, tā měi tiān liànxí liǎng ge xiǎoshí.",
+              "gloss": "To raise his math grades, he practices two hours a day."
+            },
+            {
+              "hanzi": "為了寫完作業，我今天沒去看電影。",
+              "pinyin": "Wèile xiě wán zuòyè, wǒ jīntiān méi qù kàn diànyǐng.",
+              "gloss": "In order to finish my homework, I didn't go see a movie today."
+            },
+            {
+              "hanzi": "為了見校長，她早上七點就到學校了。",
+              "pinyin": "Wèile jiàn xiàozhǎng, tā zǎoshang qī diǎn jiù dào xuéxiào le.",
+              "gloss": "To meet the principal, she got to school at seven in the morning."
+            }
+          ],
+          "id": "g_hsk3_16_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_16_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小雲",
+          "hanzi": "這個週末你要做什麼？",
+          "pinyin": "Zhè ge zhōumò nǐ yào zuò shénme?",
+          "gloss": "What are you doing this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我要去圖書館寫數學作業，作業真的太多了。",
+          "pinyin": "Wǒ yào qù túshūguǎn xiě shùxué zuòyè, zuòyè zhēn de tài duō le.",
+          "gloss": "I'm going to the library to do my math homework — there's really too much of it."
+        },
+        {
+          "speaker": "小雲",
+          "hanzi": "我也想去。為了提高成績，我得多練習。",
+          "pinyin": "Wǒ yě xiǎng qù. Wèile tígāo chéngjì, wǒ děi duō liànxí.",
+          "gloss": "I want to go too. To raise my grades, I have to practice more."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊，我們一起去。聽說校長也常常在那裡看書。",
+          "pinyin": "Hǎo a, wǒmen yìqǐ qù. Tīngshuō xiàozhǎng yě chángcháng zài nàlǐ kàn shū.",
+          "gloss": "Sure, let's go together. I hear the principal often reads there too."
+        },
+        {
+          "speaker": "小雲",
+          "hanzi": "真的嗎？那我們早一點騎腳踏車過去吧。",
+          "pinyin": "Zhēn de ma? Nà wǒmen zǎo yìdiǎn qí jiǎotàchē guòqù ba.",
+          "gloss": "Really? Then let's bike over a bit earlier."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "的",
+            "數學",
+            "成績",
+            "提高",
+            "了"
+          ],
+          "pinyin": "Wǒ de shùxué chéngjì tígāo le.",
+          "gloss": "My math grades have gone up.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "週末",
+            "我",
+            "要",
+            "去",
+            "圖書館",
+            "寫",
+            "作業"
+          ],
+          "pinyin": "Zhōumò wǒ yào qù túshūguǎn xiě zuòyè.",
+          "gloss": "This weekend I'm going to the library to do homework.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "老師",
+            "要",
+            "我們",
+            "多",
+            "練習",
+            "說",
+            "中文"
+          ],
+          "pinyin": "Lǎoshī yào wǒmen duō liànxí shuō zhōngwén.",
+          "gloss": "The teacher wants us to practice speaking Chinese more.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "校長",
+            "今天",
+            "來",
+            "我們",
+            "班",
+            "上課"
+          ],
+          "pinyin": "Xiàozhǎng jīntiān lái wǒmen bān shàngkè.",
+          "gloss": "The principal is coming to teach our class today.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "他",
+            "每",
+            "天",
+            "練習",
+            "數學",
+            "一",
+            "個",
+            "小時"
+          ],
+          "pinyin": "Tā měi tiān liànxí shùxué yí ge xiǎoshí.",
+          "gloss": "He practices math for an hour every day.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "圖書館的下午",
+        "hanzi": "星期六下午，小明和小雲一起到學校旁邊的圖書館。他們的數學作業很多，兩個人坐在一張大桌子前面，安安靜靜地寫。小明說：「多練習才能提高成績。」寫完以後，他們在門口遇到校長。校長笑著說：「你們真認真！」",
+        "gloss": "Saturday afternoon, Xiao Ming and Xiao Yun went together to the library next to the school. They had a lot of math homework, so the two of them sat at a big table and wrote quietly. Xiao Ming said, \"Only by practicing more can you raise your grades.\" After they finished, they ran into the principal at the door. The principal smiled and said, \"You two are really hardworking!\""
+      }
     }
   ],
   "sort_order": 45,

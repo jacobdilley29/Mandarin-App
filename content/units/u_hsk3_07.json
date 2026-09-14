@@ -4,7 +4,7 @@
   "subtitle": "Buying clothes and shoes, and describing size and degree",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_07_1",
@@ -17,7 +17,12 @@
           "pinyin": "xié",
           "gloss": "shoe",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這雙鞋很漂亮，我想試穿。",
+            "pinyin": "Zhè shuāng xié hěn piàoliàng, wǒ xiǎng shì chuān.",
+            "gloss": "This pair of shoes is pretty; I'd like to try them on."
+          }
         },
         {
           "id": "v_雙",
@@ -25,7 +30,12 @@
           "pinyin": "shuāng",
           "gloss": "two; double; pair",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買了兩雙鞋，一雙黑的，一雙白的。",
+            "pinyin": "Wǒ mǎi le liǎng shuāng xié, yì shuāng hēi de, yì shuāng bái de.",
+            "gloss": "I bought two pairs of shoes, one black pair and one white pair."
+          }
         },
         {
           "id": "v_換",
@@ -33,7 +43,12 @@
           "pinyin": "huàn",
           "gloss": "to exchange; to change (clothes etc); to substitute",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這雙太小了，可以換大一點的嗎？",
+            "pinyin": "Zhè shuāng tài xiǎo le, kěyǐ huàn dà yìdiǎn de ma?",
+            "gloss": "This pair is too small — can I change to a slightly bigger one?"
+          }
         },
         {
           "id": "v_短",
@@ -41,7 +56,12 @@
           "pinyin": "duǎn",
           "gloss": "short; brief; to lack",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件衣服太短了，我不太喜歡。",
+            "pinyin": "Zhè jiàn yīfú tài duǎn le, wǒ bú tài xǐhuān.",
+            "gloss": "This piece of clothing is too short; I don't really like it."
+          }
         },
         {
           "id": "v_包",
@@ -49,7 +69,12 @@
           "pinyin": "bāo",
           "gloss": "to cover; to wrap; to hold",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆，請幫我把鞋包起來。",
+            "pinyin": "Lǎobǎn, qǐng bāng wǒ bǎ xié bāo qǐlái.",
+            "gloss": "Boss, please wrap the shoes up for me."
+          }
         },
         {
           "id": "v_壞",
@@ -57,12 +82,150 @@
           "pinyin": "huài",
           "gloss": "bad; spoiled; broken",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的鞋壞了，要買一雙新的。",
+            "pinyin": "Wǒ de xié huài le, yào mǎi yì shuāng xīn de.",
+            "gloss": "My shoes are broken; I need to buy a new pair."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "The measure word 雙 for things that come in pairs",
+          "pattern": "Number + 雙 + Noun（鞋／腳／手／眼睛）",
+          "explanation": "雙 is the measure word for things that naturally come in twos: shoes, feet, hands, eyes, chopsticks. Say 一雙鞋 (one pair of shoes), 兩雙鞋 (two pairs). You can also drop the noun when it is clear: 我要這雙 ('I want this pair'). With 這／那, no number is needed: 這雙鞋.",
+          "contrast": "件 vs 雙: 件 counts single garments (一件衣服), 雙 counts paired items (一雙鞋). Ask yourself whether the thing is normally used two-at-a-time; if yes, use 雙.",
+          "common_error": "Learners say 一個鞋 or 一件鞋. 個 is the all-purpose measure word, but for shoes Taiwanese speakers always say 一雙鞋. Also remember 雙 already means the pair, so 兩雙鞋 is four shoes, not two.",
+          "examples": [
+            {
+              "hanzi": "我要買一雙運動鞋。",
+              "pinyin": "Wǒ yào mǎi yì shuāng yùndòng xié.",
+              "gloss": "I want to buy a pair of sports shoes."
+            },
+            {
+              "hanzi": "這兩雙鞋都不錯，我很難選。",
+              "pinyin": "Zhè liǎng shuāng xié dōu búcuò, wǒ hěn nán xuǎn.",
+              "gloss": "Both pairs of shoes are nice; it's hard for me to choose."
+            },
+            {
+              "hanzi": "她有一雙很大的眼睛。",
+              "pinyin": "Tā yǒu yì shuāng hěn dà de yǎnjīng.",
+              "gloss": "She has a pair of big eyes."
+            }
+          ],
+          "id": "g_hsk3_07_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "老闆",
+          "hanzi": "這雙鞋現在很便宜喔，要不要試穿？",
+          "pinyin": "Zhè shuāng xié xiànzài hěn piányí ō, yào bú yào shì chuān?",
+          "gloss": "This pair is really cheap right now — want to try them on?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好啊，我穿三十七號的。我的鞋壞了，想買一雙新的。",
+          "pinyin": "Hǎo a, wǒ chuān sānshíqī hào de. Wǒ de xié huài le, xiǎng mǎi yì shuāng xīn de.",
+          "gloss": "Sure. I wear size 37. My shoes broke, so I want a new pair."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "這雙給您試試看。",
+          "pinyin": "Zhè shuāng gěi nín shìshi kàn.",
+          "gloss": "Try this pair."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "有一點短耶，可以換大一號的嗎？",
+          "pinyin": "Yǒu yìdiǎn duǎn yē, kěyǐ huàn dà yí hào de ma?",
+          "gloss": "They're a bit short. Can I change to one size bigger?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "沒問題，我幫您換一雙。",
+          "pinyin": "Méi wèntí, wǒ bāng nín huàn yì shuāng.",
+          "gloss": "No problem, I'll change them for you."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "這雙很舒服，我要這雙，請幫我包起來。",
+          "pinyin": "Zhè shuāng hěn shūfú, wǒ yào zhè shuāng, qǐng bāng wǒ bāo qǐlái.",
+          "gloss": "This pair is comfortable. I'll take it — please wrap it up for me."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "雙",
+            "鞋",
+            "太",
+            "短",
+            "了"
+          ],
+          "pinyin": "Zhè shuāng xié tài duǎn le.",
+          "gloss": "This pair of shoes is too short.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "換",
+            "一",
+            "雙",
+            "大",
+            "的"
+          ],
+          "pinyin": "Wǒ xiǎng huàn yì shuāng dà de.",
+          "gloss": "I'd like to change to a bigger pair.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "老闆",
+            "幫",
+            "我",
+            "包",
+            "起來"
+          ],
+          "pinyin": "Lǎobǎn bāng wǒ bāo qǐlái.",
+          "gloss": "The shop owner wrapped it up for me.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "鞋",
+            "壞",
+            "了"
+          ],
+          "pinyin": "Wǒ de xié huài le.",
+          "gloss": "My shoes are broken.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "雙",
+            "鞋",
+            "多少",
+            "錢"
+          ],
+          "pinyin": "Zhè shuāng xié duōshǎo qián?",
+          "gloss": "How much is this pair of shoes?",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "買鞋",
+        "hanzi": "週末我跟妹妹去買東西。我的鞋壞了，所以想買一雙新的。店裡的鞋很多，我試穿了一雙黑色的，可是有一點短，老闆就幫我換了大一號的。這雙很舒服，也不貴，我很喜歡。老闆把鞋包好，還說下次再來。",
+        "gloss": "On the weekend I went shopping with my younger sister. My shoes were broken, so I wanted to buy a new pair. The shop had lots of shoes. I tried on a black pair, but they were a bit short, so the owner changed them for a size bigger. This pair was comfortable and not expensive — I really liked them. The owner wrapped the shoes up and said to come again next time."
+      }
     },
     {
       "id": "l_hsk3_07_2",
@@ -75,7 +238,12 @@
           "pinyin": "jí",
           "gloss": "extremely; pole (geography, physics); utmost",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的中文極好,幾乎跟台灣人一樣。",
+            "pinyin": "Tā de Zhōngwén jí hǎo, jīhū gēn Táiwān rén yíyàng.",
+            "gloss": "His Chinese is extremely good, almost like a Taiwanese person's."
+          }
         },
         {
           "id": "v_幾乎",
@@ -83,7 +251,12 @@
           "pinyin": "jī hū",
           "gloss": "almost; nearly; practically",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我幾乎每天都騎腳踏車上班。",
+            "pinyin": "Wǒ jīhū měi tiān dōu qí jiǎotàchē shàngbān.",
+            "gloss": "I ride my bike to work almost every day."
+          }
         },
         {
           "id": "v_差",
@@ -91,7 +264,12 @@
           "pinyin": "chà",
           "gloss": "different; wrong; mistaken; to fall short; to lack",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的服務很差,我不想再來了。",
+            "pinyin": "Zhè jiā diàn de fúwù hěn chà, wǒ bù xiǎng zài lái le.",
+            "gloss": "The service at this shop is bad; I don't want to come again."
+          }
         },
         {
           "id": "v_低",
@@ -99,7 +277,12 @@
           "pinyin": "dī",
           "gloss": "low; beneath; to lower (one's head)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這裡的房租比較低,所以我住這邊。",
+            "pinyin": "Zhèlǐ de fángzū bǐjiào dī, suǒyǐ wǒ zhù zhè biān.",
+            "gloss": "The rent here is fairly low, so I live on this side of town."
+          }
         },
         {
           "id": "v_半",
@@ -107,7 +290,12 @@
           "pinyin": "bàn",
           "gloss": "half; semi-; incomplete",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們八點半在捷運站見,好嗎?",
+            "pinyin": "Wǒmen bā diǎn bàn zài jiéyùn zhàn jiàn, hǎo ma?",
+            "gloss": "Let's meet at the MRT station at eight thirty, OK?"
+          }
         },
         {
           "id": "v_水平",
@@ -115,12 +303,166 @@
           "pinyin": "shuǐ píng",
           "gloss": "level (of achievement etc); standard; horizontal",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的中文水平很高喔。",
+            "pinyin": "Tā de Zhōngwén shuǐpíng hěn gāo o.",
+            "gloss": "His Chinese level is really high."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "用「幾乎」說「差一點就…」",
+          "pattern": "Subject + 幾乎 + (都 / 沒) + Verb / Adjective",
+          "explanation": "「幾乎」means \"almost, nearly\" and always goes BEFORE the verb or adjective, never after it. With a positive verb it often takes 都 (幾乎都…) to mean \"almost all / almost every time\"; with a negative it means \"nearly didn't happen at all\" (幾乎沒…、幾乎不…). It describes how close something is to being complete, so it works well when you talk about level: 我的水平幾乎跟他一樣高。",
+          "contrast": "「差不多」also means \"about / almost\", but it is more relaxed and can stand alone as a whole answer (好了嗎?差不多了。). 「幾乎」cannot stand alone — it must sit in front of a verb or adjective. Use 差不多 for a rough estimate (差不多三點), and 幾乎 when you want to stress that only a tiny bit is missing (幾乎三點了 sounds wrong; 幾乎沒錢了 is right).",
+          "common_error": "Learners copy English word order and put 幾乎 at the end, e.g. saying 「我懂幾乎」or 「我的水平高幾乎」. It must come before what it modifies: 我幾乎都懂、我的水平幾乎一樣高。",
+          "examples": [
+            {
+              "hanzi": "我幾乎每天都喝一杯咖啡。",
+              "pinyin": "Wǒ jīhū měi tiān dōu hē yì bēi kāfēi.",
+              "gloss": "I drink a cup of coffee almost every day."
+            },
+            {
+              "hanzi": "他跑得太快,我幾乎跟不上。",
+              "pinyin": "Tā pǎo de tài kuài, wǒ jīhū gēn bú shàng.",
+              "gloss": "He runs too fast; I almost can't keep up."
+            },
+            {
+              "hanzi": "這兩件衣服的顏色差不多,不過這件比較貴。",
+              "pinyin": "Zhè liǎng jiàn yīfú de yánsè chàbùduō, búguò zhè jiàn bǐjiào guì.",
+              "gloss": "These two shirts are about the same colour, but this one is more expensive."
+            }
+          ],
+          "id": "g_hsk3_07_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_07_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你昨天的考試怎麼樣?",
+          "pinyin": "Nǐ zuótiān de kǎoshì zěnmeyàng?",
+          "gloss": "How was your test yesterday?"
+        },
+        {
+          "speaker": "大明",
+          "hanzi": "別問了啦,我考得很差。",
+          "pinyin": "Bié wèn le la, wǒ kǎo de hěn chà.",
+          "gloss": "Don't even ask — I did really badly."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "真的嗎?你的中文水平不低啊。",
+          "pinyin": "Zhēn de ma? Nǐ de Zhōngwén shuǐpíng bù dī a.",
+          "gloss": "Really? Your Chinese level isn't low at all."
+        },
+        {
+          "speaker": "大明",
+          "hanzi": "那個考試太難了,我幾乎都不懂。",
+          "pinyin": "Nàge kǎoshì tài nán le, wǒ jīhū dōu bù dǒng.",
+          "gloss": "That test was too hard; I almost didn't understand any of it."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "別擔心,下次一定會更好,你進步極快。",
+          "pinyin": "Bié dānxīn, xià cì yídìng huì gèng hǎo, nǐ jìnbù jí kuài.",
+          "gloss": "Don't worry, next time will definitely be better — you're improving extremely fast."
+        },
+        {
+          "speaker": "大明",
+          "hanzi": "希望啦!我三點半還要去上課。",
+          "pinyin": "Xīwàng la! Wǒ sān diǎn bàn hái yào qù shàngkè.",
+          "gloss": "I hope so! I still have class at three thirty."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "的",
+            "中文",
+            "水平",
+            "很",
+            "高"
+          ],
+          "pinyin": "Tā de Zhōngwén shuǐpíng hěn gāo.",
+          "gloss": "His Chinese level is very high.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這",
+            "家",
+            "店",
+            "的",
+            "服務",
+            "很",
+            "差"
+          ],
+          "pinyin": "Zhè jiā diàn de fúwù hěn chà.",
+          "gloss": "The service at this shop is very bad.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "我",
+            "幾乎",
+            "每天",
+            "都",
+            "搭",
+            "捷運",
+            "上班"
+          ],
+          "pinyin": "Wǒ jīhū měi tiān dōu dā jiéyùn shàngbān.",
+          "gloss": "I take the MRT to work almost every day.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "地方",
+            "的",
+            "房租",
+            "比較",
+            "低"
+          ],
+          "pinyin": "Zhège dìfāng de fángzū bǐjiào dī.",
+          "gloss": "The rent in this area is relatively low.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "我們",
+            "七",
+            "點",
+            "半",
+            "在",
+            "車站",
+            "見"
+          ],
+          "pinyin": "Wǒmen qī diǎn bàn zài chēzhàn jiàn.",
+          "gloss": "We'll meet at the station at seven thirty.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我的游泳水平",
+        "hanzi": "以前我的游泳水平很低,幾乎不會游。從去年開始,我每個週末都去學校附近的運動中心游泳。那裡的水溫比較低,一開始我真的很不習慣,學得也很差。老師常說:慢慢來就好。現在我一次能游半個小時,他說我的水平進步極快。",
+        "gloss": "My swimming used to be at a very low level — I could hardly swim at all. Starting last year, I went swimming every weekend at the sports centre near my school. The water there is fairly cold, and at first I really wasn't used to it and learned very poorly. My teacher often said: just take it slowly. Now I can swim for half an hour at a time, and he says my level has improved extremely fast."
+      }
     }
   ],
   "sort_order": 36,

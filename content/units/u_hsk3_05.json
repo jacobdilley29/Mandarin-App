@@ -4,7 +4,7 @@
   "subtitle": "Countries, cities and comparing one thing with another",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_05_1",
@@ -17,7 +17,12 @@
           "pinyin": "shì jiè",
           "gloss": "world",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想去看看這個世界。",
+            "pinyin": "Wǒ xiǎng qù kànkàn zhè ge shìjiè.",
+            "gloss": "I want to go and see this world."
+          }
         },
         {
           "id": "v_國家",
@@ -25,7 +30,12 @@
           "pinyin": "guó jiā",
           "gloss": "country; nation; state",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台灣是一個很漂亮的國家。",
+            "pinyin": "Táiwān shì yī ge hěn piàoliàng de guójiā.",
+            "gloss": "Taiwan is a very beautiful country."
+          }
         },
         {
           "id": "v_城市",
@@ -33,7 +43,12 @@
           "pinyin": "chéng shì",
           "gloss": "city; town",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台北是台灣最大的城市。",
+            "pinyin": "Táiběi shì Táiwān zuì dà de chéngshì.",
+            "gloss": "Taipei is Taiwan's biggest city."
+          }
         },
         {
           "id": "v_地方",
@@ -41,7 +56,12 @@
           "pinyin": "dì fāng",
           "gloss": "area; place; space",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個地方很安靜，我很喜歡。",
+            "pinyin": "Zhè ge dìfāng hěn ānjìng, wǒ hěn xǐhuān.",
+            "gloss": "This place is very quiet; I like it a lot."
+          }
         },
         {
           "id": "v_離開",
@@ -49,7 +69,12 @@
           "pinyin": "lí kāi",
           "gloss": "to depart; to leave",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他昨天早上離開台北了。",
+            "pinyin": "Tā zuótiān zǎoshàng líkāi Táiběi le.",
+            "gloss": "He left Taipei yesterday morning."
+          }
         },
         {
           "id": "v_過去",
@@ -57,12 +82,156 @@
           "pinyin": "guò qù",
           "gloss": "(in the) past; former; previous",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "過去這裡沒有捷運。",
+            "pinyin": "Guòqù zhèlǐ méiyǒu jiéyùn.",
+            "gloss": "In the past there was no MRT here."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "離開 + place: leaving somewhere",
+          "pattern": "主語 + 離開 + 地方（+ 了）",
+          "explanation": "離開 means 'to leave (a place)'. The place goes straight after 離開 with no preposition at all: 離開台北, 離開家, 離開這個城市. Add 了 for a completed departure (他離開台北了) or use 要…了 for one about to happen (我明天要離開了). If you do not say where, 離開 can stand alone: 她已經離開了。",
+          "contrast": "去 + 地方 names the destination you are heading to; 離開 + 地方 names the place you are getting away from. 我去台中 = I'm going to Taichung; 我離開台中 = I'm leaving Taichung. If the place is where you end up, use 去; if it is where you started, use 離開.",
+          "common_error": "Learners copy the English 'leave from' and say 他離開從台北 or 他從台北離開了. 離開 already contains the 'from', so the place follows it directly: 他離開台北了。",
+          "examples": [
+            {
+              "hanzi": "我明天要離開這個城市了。",
+              "pinyin": "Wǒ míngtiān yào líkāi zhè ge chéngshì le.",
+              "gloss": "I'm leaving this city tomorrow."
+            },
+            {
+              "hanzi": "她離開家以後就去上班了。",
+              "pinyin": "Tā líkāi jiā yǐhòu jiù qù shàngbān le.",
+              "gloss": "After she left home she went straight to work."
+            },
+            {
+              "hanzi": "你什麼時候要離開台灣？",
+              "pinyin": "Nǐ shénme shíhòu yào líkāi Táiwān?",
+              "gloss": "When are you leaving Taiwan?"
+            }
+          ],
+          "id": "g_hsk3_05_1_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "聽說你要離開台北了？",
+          "pinyin": "Tīngshuō nǐ yào líkāi Táiběi le?",
+          "gloss": "I heard you're leaving Taipei?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對啊，我下個月要去台中住。",
+          "pinyin": "Duì a, wǒ xià ge yuè yào qù Táizhōng zhù.",
+          "gloss": "Yeah, I'm going to live in Taichung next month."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "台中是個很好的地方耶！",
+          "pinyin": "Táizhōng shì ge hěn hǎo de dìfāng ye!",
+          "gloss": "Taichung is a really nice place!"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "是啊，過去我在那裡讀過書。",
+          "pinyin": "Shì a, guòqù wǒ zài nàlǐ dú guo shū.",
+          "gloss": "Right, I studied there in the past."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "那個城市不大，可是很舒服。",
+          "pinyin": "Nà ge chéngshì bú dà, kěshì hěn shūfú.",
+          "gloss": "That city isn't big, but it's very comfortable."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對！以後你來台中，我帶你去逛逛。",
+          "pinyin": "Duì! Yǐhòu nǐ lái Táizhōng, wǒ dài nǐ qù guàngguàng.",
+          "gloss": "Exactly! Come to Taichung sometime and I'll take you around."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "台北",
+            "是",
+            "一",
+            "個",
+            "很",
+            "大",
+            "的",
+            "城市"
+          ],
+          "pinyin": "Táiběi shì yī ge hěn dà de chéngshì.",
+          "gloss": "Taipei is a very big city.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "地方",
+            "的",
+            "人",
+            "都",
+            "很",
+            "好"
+          ],
+          "pinyin": "Zhè ge dìfāng de rén dōu hěn hǎo.",
+          "gloss": "The people in this place are all very nice.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "過去",
+            "住",
+            "在",
+            "台中"
+          ],
+          "pinyin": "Tā guòqù zhù zài Táizhōng.",
+          "gloss": "He used to live in Taichung.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "下",
+            "個",
+            "月",
+            "要",
+            "離開",
+            "台灣"
+          ],
+          "pinyin": "Wǒ xià ge yuè yào líkāi Táiwān.",
+          "gloss": "I'm leaving Taiwan next month.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "世界",
+            "上",
+            "有",
+            "很",
+            "多",
+            "國家"
+          ],
+          "pinyin": "Shìjiè shàng yǒu hěn duō guójiā.",
+          "gloss": "There are many countries in the world.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "離開台北",
+        "hanzi": "我叫小明，過去十年我都住在台北。台北是台灣最大的城市，這裡有捷運，有很多好吃的東西，也有很多好朋友。下個月我要離開台北，去別的國家讀書。朋友問我：「你會想台北嗎？」我說：「會啊，這個地方是我的家。可是我也想去看看世界。」",
+        "gloss": "My name is Xiaoming, and for the past ten years I have lived in Taipei. Taipei is Taiwan's biggest city — it has the MRT, lots of good food, and lots of good friends. Next month I'm leaving Taipei to study in another country. A friend asked me, \"Will you miss Taipei?\" I said, \"Of course. This place is my home. But I also want to go and see the world.\""
+      }
     },
     {
       "id": "l_hsk3_05_2",
@@ -75,7 +244,12 @@
           "pinyin": "gèng",
           "gloss": "more; even more; further",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家的咖啡更好喝。",
+            "pinyin": "Zhè jiā de kāfēi gèng hǎohē.",
+            "gloss": "This shop's coffee tastes even better."
+          }
         },
         {
           "id": "v_越",
@@ -83,7 +257,12 @@
           "pinyin": "yuè",
           "gloss": "to exceed; to climb over; to surpass",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣越來越熱了。",
+            "pinyin": "Tiānqì yuè lái yuè rè le.",
+            "gloss": "The weather is getting hotter and hotter."
+          }
         },
         {
           "id": "v_像",
@@ -91,7 +270,12 @@
           "pinyin": "xiàng",
           "gloss": "to resemble; to be like; to look as if",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "妹妹長得很像媽媽。",
+            "pinyin": "Mèimei zhǎng de hěn xiàng māma.",
+            "gloss": "My little sister looks a lot like Mom."
+          }
         },
         {
           "id": "v_特別",
@@ -99,7 +283,12 @@
           "pinyin": "tè bié",
           "gloss": "unusual; special; very; especially; particularly; expressly; for a specific purpose",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家夜市的臭豆腐特別好吃。",
+            "pinyin": "Zhè jiā yèshì de chòudòufu tèbié hǎochī.",
+            "gloss": "The stinky tofu at this night market is especially good."
+          }
         },
         {
           "id": "v_比較",
@@ -107,7 +296,12 @@
           "pinyin": "bǐ jiào",
           "gloss": "to compare; to contrast; comparatively",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我覺得搭捷運比較快。",
+            "pinyin": "Wǒ juéde dā jiéyùn bǐjiào kuài.",
+            "gloss": "I think taking the MRT is faster."
+          }
         },
         {
           "id": "v_一樣",
@@ -115,12 +309,176 @@
           "pinyin": "yī yàng",
           "gloss": "same; like; equal to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的腳踏車跟你的一樣。",
+            "pinyin": "Wǒ de jiǎotàchē gēn nǐ de yíyàng.",
+            "gloss": "My bike is the same as yours."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "A 跟 B 一樣 + Adjective (A is as … as B)",
+          "pattern": "A + 跟 + B + 一樣 + Adjective",
+          "explanation": "Use 跟…一樣 to say two things are equal in some way. The adjective comes straight after 一樣 with no 很 in front. To make it negative, put 不 before 一樣: A 跟 B 不一樣高. If you only want to say they are the same (no adjective), just stop after 一樣: 我的手機跟你的一樣。",
+          "contrast": "跟…一樣 says the two things are EQUAL; 比 / 比較 / 更 say they are NOT equal (A 比 B 快 = A is faster). Also don't mix up 一樣 with 像: 像 means 'resembles / looks like' (他像他爸爸), while 一樣 means 'the same to the same degree' (他跟他爸爸一樣高).",
+          "common_error": "Learners add 很 after 一樣 — ✗ 我跟他一樣很高 — or forget 跟 and say ✗ 我他一樣高. The correct form is 我跟他一樣高.",
+          "examples": [
+            {
+              "hanzi": "我的手機跟你的一樣新。",
+              "pinyin": "Wǒ de shǒujī gēn nǐ de yíyàng xīn.",
+              "gloss": "My phone is as new as yours."
+            },
+            {
+              "hanzi": "今天的天氣跟昨天一樣熱。",
+              "pinyin": "Jīntiān de tiānqì gēn zuótiān yíyàng rè.",
+              "gloss": "Today's weather is as hot as yesterday's."
+            },
+            {
+              "hanzi": "我跑得跟哥哥不一樣快。",
+              "pinyin": "Wǒ pǎo de gēn gēge bù yíyàng kuài.",
+              "gloss": "I don't run as fast as my older brother."
+            }
+          ],
+          "id": "g_hsk3_05_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "比較 vs 更 (comparatively … / even more …)",
+          "pattern": "A 比較 + Adj　／　A 比 B 更 + Adj",
+          "explanation": "比較 softens an adjective and does not need a second thing mentioned: 這家比較便宜 (this one is cheaper / relatively cheap). 更 means 'even more' and needs a baseline that is already high: 這家很好吃，那家更好吃。With 比, use 更, not 比較.",
+          "contrast": "比較 can stand alone with no comparison object; 更 always assumes the other side already has that quality. In a 比 sentence you must use 更 (or nothing at all): ✓ 今天比昨天更熱.",
+          "common_error": "Saying ✗ 今天比昨天比較熱. After 比, use 更: 今天比昨天更熱, or simply 今天比昨天熱.",
+          "examples": [
+            {
+              "hanzi": "我覺得這件衣服比較漂亮。",
+              "pinyin": "Wǒ juéde zhè jiàn yīfú bǐjiào piàoliàng.",
+              "gloss": "I think this piece of clothing is prettier."
+            },
+            {
+              "hanzi": "這杯奶茶很甜，那杯更甜。",
+              "pinyin": "Zhè bēi nǎichá hěn tián, nà bēi gèng tián.",
+              "gloss": "This milk tea is sweet; that one is even sweeter."
+            },
+            {
+              "hanzi": "騎腳踏車比走路更快。",
+              "pinyin": "Qí jiǎotàchē bǐ zǒulù gèng kuài.",
+              "gloss": "Riding a bike is even faster than walking."
+            }
+          ],
+          "id": "g_hsk3_05_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "這家的珍珠奶茶特別有名，你要不要試試看？",
+          "pinyin": "Zhè jiā de zhēnzhū nǎichá tèbié yǒumíng, nǐ yào bú yào shìshi kàn?",
+          "gloss": "This shop's bubble tea is really famous — do you want to try it?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "可是那家比較便宜，而且也一樣好喝啊。",
+          "pinyin": "Kěshì nà jiā bǐjiào piányí, érqiě yě yíyàng hǎohē a.",
+          "gloss": "But that one is cheaper, and it tastes just as good."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "我兩家都喝過，這家的比那家更甜一點。",
+          "pinyin": "Wǒ liǎng jiā dōu hē guò, zhè jiā de bǐ nà jiā gèng tián yìdiǎn.",
+          "gloss": "I've had both — this one is a bit sweeter than that one."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "你看，這裡的人越來越多了。",
+          "pinyin": "Nǐ kàn, zhèlǐ de rén yuè lái yuè duō le.",
+          "gloss": "Look, there are more and more people here."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "對啊，那個老闆長得很像我哥哥，很多人都認識他。",
+          "pinyin": "Duì a, nàge lǎobǎn zhǎng de hěn xiàng wǒ gēge, hěn duō rén dōu rènshì tā.",
+          "gloss": "Right — and that owner looks a lot like my brother; lots of people know him."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好吧，今天我請你，我們快一點！",
+          "pinyin": "Hǎo ba, jīntiān wǒ qǐng nǐ, wǒmen kuài yìdiǎn!",
+          "gloss": "OK, today's on me — let's hurry up!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "比",
+            "昨天",
+            "更",
+            "熱"
+          ],
+          "pinyin": "Jīntiān bǐ zuótiān gèng rè.",
+          "gloss": "Today is even hotter than yesterday.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "覺得",
+            "搭",
+            "捷運",
+            "比較",
+            "快"
+          ],
+          "pinyin": "Wǒ juéde dā jiéyùn bǐjiào kuài.",
+          "gloss": "I think taking the MRT is faster.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "天氣",
+            "越來越",
+            "冷",
+            "了"
+          ],
+          "pinyin": "Tiānqì yuè lái yuè lěng le.",
+          "gloss": "The weather is getting colder and colder.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "腳踏車",
+            "跟",
+            "他",
+            "的",
+            "一樣",
+            "新"
+          ],
+          "pinyin": "Wǒ de jiǎotàchē gēn tā de yíyàng xīn.",
+          "gloss": "My bike is as new as his.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "這家",
+            "的",
+            "臭豆腐",
+            "特別",
+            "好吃"
+          ],
+          "pinyin": "Zhè jiā de chòudòufu tèbié hǎochī.",
+          "gloss": "This shop's stinky tofu is especially tasty.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "兩家麵店",
+        "hanzi": "我家附近有兩家麵店。左邊那家比較便宜，右邊那家的牛肉麵特別好吃。兩家的老闆長得很像，聽說是哥哥和弟弟。週末的時候，右邊那家的人越來越多，常常沒有位子坐。可是我還是喜歡去，因為那裡的牛肉跟我媽媽做的一樣好吃。",
+        "gloss": "There are two noodle shops near my home. The one on the left is cheaper, but the beef noodles at the one on the right are especially delicious. The two owners look very much alike — people say they're brothers. On weekends, the shop on the right gets more and more crowded and there's often no seat. Still, I like going, because the beef there tastes just like the beef my mom cooks."
+      }
     }
   ],
   "sort_order": 34,

@@ -4,7 +4,7 @@
   "subtitle": "Parks, the seasons and getting outdoors",
   "hsk_level": 3,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk3_15_1",
@@ -17,7 +17,12 @@
           "pinyin": "gōng yuán",
           "gloss": "park (for public recreation)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們去公園走走吧。",
+            "pinyin": "Wǒmen qù gōngyuán zǒuzou ba.",
+            "gloss": "Let's go for a stroll in the park."
+          }
         },
         {
           "id": "v_花園",
@@ -25,7 +30,12 @@
           "pinyin": "huā yuán",
           "gloss": "garden",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她家後面有一個小花園。",
+            "pinyin": "Tā jiā hòumiàn yǒu yí ge xiǎo huāyuán.",
+            "gloss": "There's a small garden behind her house."
+          }
         },
         {
           "id": "v_草",
@@ -33,7 +43,12 @@
           "pinyin": "cǎo",
           "gloss": "grass; straw; manuscript",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "公園的草又高又綠。",
+            "pinyin": "Gōngyuán de cǎo yòu gāo yòu lǜ.",
+            "gloss": "The grass in the park is tall and green."
+          }
         },
         {
           "id": "v_鳥",
@@ -41,7 +56,12 @@
           "pinyin": "niǎo",
           "gloss": "bird; \"bird\" radical in Chinese characters (Kangxi radical 196); (dialect) to pay attention to",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "樹上有很多鳥在唱歌。",
+            "pinyin": "Shù shàng yǒu hěn duō niǎo zài chànggē.",
+            "gloss": "There are a lot of birds singing in the tree."
+          }
         },
         {
           "id": "v_河",
@@ -49,7 +69,12 @@
           "pinyin": "hé",
           "gloss": "river",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "河邊有人在騎腳踏車。",
+            "pinyin": "Hé biān yǒu rén zài qí jiǎotàchē.",
+            "gloss": "There are people riding bikes by the river."
+          }
         },
         {
           "id": "v_綠",
@@ -57,12 +82,157 @@
           "pinyin": "lǜ",
           "gloss": "green; (slang) (derived from 绿帽子) to cheat on (one's spouse or boyfriend or girlfriend)",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最喜歡綠色的鞋子。",
+            "pinyin": "Wǒ zuì xǐhuān lǜsè de xiézi.",
+            "gloss": "I like green shoes the best."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Verb reduplication: 走走、看看 (do a bit of something)",
+          "pattern": "單音節動詞 + 同一個動詞 → 走走 / 看看 / 坐坐 / 聽聽",
+          "explanation": "Repeating a one-syllable verb makes the action sound short, light and relaxed — 'go for a little walk', 'have a look'. It is very common in invitations and suggestions: 去公園走走、來我的花園看看。The reduplicated verb usually comes after 去/來/想/要, and it does not take 很 or a long time phrase.",
+          "contrast": "V + 一下 (看一下、坐一下) also softens the verb, but it points at one quick single action ('take one look'). Reduplication feels more leisurely and open-ended, so for strolling in a park or enjoying a garden Taiwanese speakers say 走走、逛逛、坐坐. Choose 一下 when the action happens once and fast; choose V+V when the point is spending a little relaxed time.",
+          "common_error": "Learners combine the two patterns and say things like 走走一下, or they add 了 right after the reduplication (走走了). Also avoid reduplicating the verb when you already state a length of time — say 我在公園走了一個鐘頭, not 我在公園走走一個鐘頭.",
+          "examples": [
+            {
+              "hanzi": "週末我想去公園走走。",
+              "pinyin": "Zhōumò wǒ xiǎng qù gōngyuán zǒuzou.",
+              "gloss": "I'd like to go for a stroll in the park this weekend."
+            },
+            {
+              "hanzi": "你可以來我家的花園看看。",
+              "pinyin": "Nǐ kěyǐ lái wǒ jiā de huāyuán kànkan.",
+              "gloss": "You can come take a look at my family's garden."
+            },
+            {
+              "hanzi": "我們在河邊坐坐,聽聽鳥的聲音。",
+              "pinyin": "Wǒmen zài hé biān zuòzuo, tīngting niǎo de shēngyīn.",
+              "gloss": "Let's sit by the river for a bit and listen to the birds."
+            }
+          ],
+          "id": "g_hsk3_15_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_15_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "美美",
+          "hanzi": "今天天氣很好,我們騎腳踏車去公園走走,好嗎?",
+          "pinyin": "Jīntiān tiānqì hěn hǎo, wǒmen qí jiǎotàchē qù gōngyuán zǒuzou, hǎo ma?",
+          "gloss": "The weather's great today — shall we bike over to the park for a stroll?"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啊!公園裡的樹和草都很綠,坐著很舒服。",
+          "pinyin": "Hǎo a! Gōngyuán lǐ de shù hé cǎo dōu hěn lǜ, zuò zhe hěn shūfú.",
+          "gloss": "Sure! The trees and grass in the park are so green, it's comfy just sitting there."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "我們可以在河邊坐坐,聽聽鳥的聲音。",
+          "pinyin": "Wǒmen kěyǐ zài hé biān zuòzuo, tīngting niǎo de shēngyīn.",
+          "gloss": "We can sit by the river for a bit and listen to the birds."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "那我帶兩瓶水,還有我媽做的蛋糕。",
+          "pinyin": "Nà wǒ dài liǎng píng shuǐ, hái yǒu wǒ mā zuò de dàngāo.",
+          "gloss": "Then I'll bring two bottles of water and the cake my mom made."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "太好了!公園旁邊還有一個小花園,我們也去看看。",
+          "pinyin": "Tài hǎo le! Gōngyuán pángbiān hái yǒu yí ge xiǎo huāyuán, wǒmen yě qù kànkan.",
+          "gloss": "Great! There's also a little garden next to the park — let's go have a look too."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好,那我們現在就出發喔!",
+          "pinyin": "Hǎo, nà wǒmen xiànzài jiù chūfā o!",
+          "gloss": "OK, then let's head out right now!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "公園",
+            "的",
+            "草",
+            "很",
+            "綠"
+          ],
+          "pinyin": "Gōngyuán de cǎo hěn lǜ.",
+          "gloss": "The grass in the park is very green.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "去",
+            "河邊",
+            "走走"
+          ],
+          "pinyin": "Wǒ xiǎng qù hé biān zǒuzou.",
+          "gloss": "I want to go for a walk by the river.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "樹",
+            "上",
+            "有",
+            "很多",
+            "鳥"
+          ],
+          "pinyin": "Shù shàng yǒu hěn duō niǎo.",
+          "gloss": "There are many birds in the tree.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這個",
+            "花園",
+            "真",
+            "漂亮"
+          ],
+          "pinyin": "Zhè ge huāyuán zhēn piàoliàng.",
+          "gloss": "This garden is really pretty.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "週末",
+            "我們",
+            "到",
+            "公園",
+            "坐坐",
+            "吧"
+          ],
+          "pinyin": "Zhōumò wǒmen dào gōngyuán zuòzuo ba.",
+          "gloss": "Let's go sit in the park for a while this weekend.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我家附近的公園",
+        "hanzi": "我家附近有一個公園,我常常在早上到那裡走走。公園裡的草很綠,樹上有很多鳥在唱歌。河邊有人跑步,也有人騎腳踏車。公園旁邊還有一個小花園,那裡的花朵真漂亮。走完以後,我會坐在椅子上聽音樂,心裡覺得很舒服。",
+        "gloss": "There's a park near my home, and I often go over there for a walk in the morning. The grass in the park is very green, and there are lots of birds singing in the trees. Some people run along the river, and others ride bikes. Next to the park there's also a small garden, and the flowers there are really pretty. After my walk, I sit on a bench and listen to music — it feels so nice."
+      }
     },
     {
       "id": "l_hsk3_15_2",
@@ -75,7 +245,12 @@
           "pinyin": "tài yang",
           "gloss": "sun; abbr. for 太阳穴",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天太陽很大，記得帶帽子喔。",
+            "pinyin": "Jīntiān tàiyáng hěn dà, jìde dài màozi ō.",
+            "gloss": "The sun is really strong today — remember to bring a hat."
+          }
         },
         {
           "id": "v_雲",
@@ -83,7 +258,12 @@
           "pinyin": "yún",
           "gloss": "cloud",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天上的雲很白，天氣真好。",
+            "pinyin": "Tiānshàng de yún hěn bái, tiānqì zhēn hǎo.",
+            "gloss": "The clouds in the sky are so white; the weather is really nice."
+          }
         },
         {
           "id": "v_春",
@@ -91,7 +271,12 @@
           "pinyin": "chūn",
           "gloss": "spring (season); gay; joyful",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "春天的天氣不冷不熱，很舒服。",
+            "pinyin": "Chūntiān de tiānqì bù lěng bú rè, hěn shūfú.",
+            "gloss": "Spring weather is neither cold nor hot — very comfortable."
+          }
         },
         {
           "id": "v_夏",
@@ -99,7 +284,12 @@
           "pinyin": "xià",
           "gloss": "summer",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "夏天太熱了，我常常去游泳。",
+            "pinyin": "Xiàtiān tài rè le, wǒ chángcháng qù yóuyǒng.",
+            "gloss": "Summer is too hot, so I often go swimming."
+          }
         },
         {
           "id": "v_鍛鍊",
@@ -107,7 +297,12 @@
           "pinyin": "duàn liàn",
           "gloss": "to toughen; to temper; to engage in physical exercise",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我每天早上跑步鍛鍊身體。",
+            "pinyin": "Wǒ měitiān zǎoshang pǎobù duànliàn shēntǐ.",
+            "gloss": "I run every morning to work out."
+          }
         },
         {
           "id": "v_體育",
@@ -115,12 +310,159 @@
           "pinyin": "tǐ yù",
           "gloss": "sports; physical education",
           "hsk_level": 3,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最喜歡的課是體育課。",
+            "pinyin": "Wǒ zuì xǐhuān de kè shì tǐyù kè.",
+            "gloss": "My favourite class is P.E."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "越來越 + adjective／verb (more and more)",
+          "pattern": "Subject + 越來越 + adjective/verb (+ 了)",
+          "explanation": "越來越 shows that a situation keeps changing over time: 'more and more…'. Put it right before an adjective (熱、好、多) or a feeling verb (喜歡、想). It already carries the idea of degree, so you never add 很 or 非常 after it. A final 了 is common when you want to stress the change.",
+          "contrast": "越來越 A (change over time) vs 越 A 越 B (the more A, the more B). Use 越來越熱 when time passes and it keeps getting hotter; use 越跑越熱 when one thing (running) causes the other (getting hot). If there is only one changing quality, it must be 越來越.",
+          "common_error": "Learners say 天氣越來越很熱 or 越來越非常熱. Drop the 很/非常 — 越來越熱 is already complete. Another common slip is writing only one 越 (天氣越熱) when they mean 'more and more'.",
+          "examples": [
+            {
+              "hanzi": "夏天越來越熱，我不太想出門。",
+              "pinyin": "Xiàtiān yuè lái yuè rè, wǒ bú tài xiǎng chūmén.",
+              "gloss": "Summer is getting hotter and hotter; I don't really want to go out."
+            },
+            {
+              "hanzi": "他每天鍛鍊，身體越來越好。",
+              "pinyin": "Tā měitiān duànliàn, shēntǐ yuè lái yuè hǎo.",
+              "gloss": "He works out every day, and his health is getting better and better."
+            },
+            {
+              "hanzi": "天上的雲越來越多，快要下雨了。",
+              "pinyin": "Tiānshàng de yún yuè lái yuè duō, kuài yào xiàyǔ le.",
+              "gloss": "There are more and more clouds in the sky; it's about to rain."
+            }
+          ],
+          "id": "g_hsk3_15_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_15_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小美",
+          "hanzi": "週末天氣很好，太陽出來了，我們去公園運動吧！",
+          "pinyin": "Zhōumò tiānqì hěn hǎo, tàiyáng chūlái le, wǒmen qù gōngyuán yùndòng ba!",
+          "gloss": "The weather's great this weekend and the sun's out — let's go exercise at the park!"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "好啊！我最近想鍛鍊身體，跑步可以嗎？",
+          "pinyin": "Hǎo a! Wǒ zuìjìn xiǎng duànliàn shēntǐ, pǎobù kěyǐ ma?",
+          "gloss": "Sure! I've been wanting to get in shape lately — how about running?"
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "可以啊，夏天太熱，我們早上去比較好。",
+          "pinyin": "Kěyǐ a, xiàtiān tài rè, wǒmen zǎoshang qù bǐjiào hǎo.",
+          "gloss": "Sure. Summer is too hot, so it's better to go in the morning."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對，早上雲比較多，不會太熱。",
+          "pinyin": "Duì, zǎoshang yún bǐjiào duō, bú huì tài rè.",
+          "gloss": "Right, there are more clouds in the morning, so it won't be too hot."
+        },
+        {
+          "speaker": "小美",
+          "hanzi": "那我騎腳踏車去，八點在門口見。",
+          "pinyin": "Nà wǒ qí jiǎotàchē qù, bā diǎn zài ménkǒu jiàn.",
+          "gloss": "Then I'll bike there — see you at the entrance at eight."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "沒問題，我帶水，運動完再去喝咖啡。",
+          "pinyin": "Méi wèntí, wǒ dài shuǐ, yùndòng wán zài qù hē kāfēi.",
+          "gloss": "No problem, I'll bring water. After working out we can go get coffee."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "夏天",
+            "的",
+            "太陽",
+            "很",
+            "大"
+          ],
+          "pinyin": "Xiàtiān de tàiyáng hěn dà.",
+          "gloss": "The summer sun is very strong.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "都",
+            "鍛鍊",
+            "身體"
+          ],
+          "pinyin": "Wǒ měitiān dōu duànliàn shēntǐ.",
+          "gloss": "I work out every day.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "天上",
+            "的",
+            "雲",
+            "很",
+            "漂亮"
+          ],
+          "pinyin": "Tiānshàng de yún hěn piàoliàng.",
+          "gloss": "The clouds in the sky are beautiful.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "春天",
+            "到",
+            "了",
+            "天氣",
+            "越來越",
+            "熱"
+          ],
+          "pinyin": "Chūntiān dào le, tiānqì yuè lái yuè rè.",
+          "gloss": "Spring is here and the weather is getting hotter and hotter.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "最",
+            "喜歡",
+            "上",
+            "體育",
+            "課"
+          ],
+          "pinyin": "Wǒ zuì xǐhuān shàng tǐyù kè.",
+          "gloss": "I like P.E. class the most.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "春天和夏天的運動",
+        "hanzi": "春天的台北，天氣不冷不熱，很多人到公園運動。早上太陽還不大，天上有白白的雲，我常常跟朋友騎腳踏車，或者跑步鍛鍊身體。夏天太熱了，我們就早一點出門，也可以晚上去河邊走走。我以前最喜歡上體育課，現在還是一樣，運動讓我一天都很有力氣。",
+        "gloss": "In Taipei in spring the weather is neither cold nor hot, and many people go to the park to exercise. In the morning the sun isn't strong yet and there are white clouds in the sky; I often ride bikes with friends, or run to work out. Summer is too hot, so we leave home a bit earlier, or we can go for a walk by the river in the evening. P.E. used to be my favourite class, and it's still the same now — exercise gives me energy all day."
+      }
     }
   ],
   "sort_order": 44,
