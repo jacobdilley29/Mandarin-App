@@ -4,7 +4,7 @@
   "subtitle": "Relaxing and eating at home",
   "hsk_level": 1,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk1_07_1",
@@ -17,7 +17,12 @@
           "pinyin": "diàn yǐng",
           "gloss": "movie; film",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們週末去看電影，好嗎？",
+            "pinyin": "Wǒmen zhōumò qù kàn diànyǐng, hǎo ma?",
+            "gloss": "Shall we go see a movie this weekend?"
+          }
         },
         {
           "id": "v_電視",
@@ -25,7 +30,12 @@
           "pinyin": "diàn shì",
           "gloss": "television; TV",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我爸爸晚上都在家裡看電視。",
+            "pinyin": "Wǒ bàba wǎnshàng dōu zài jiā lǐ kàn diànshì.",
+            "gloss": "My dad watches TV at home every evening."
+          }
         },
         {
           "id": "v_怎麼樣",
@@ -33,7 +43,12 @@
           "pinyin": "zěn me yàng",
           "gloss": "how?; how about?; how was it?",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "昨天的電影怎麼樣？",
+            "pinyin": "Zuótiān de diànyǐng zěnmeyàng?",
+            "gloss": "How was yesterday's movie?"
+          }
         },
         {
           "id": "v_想",
@@ -41,7 +56,12 @@
           "pinyin": "xiǎng",
           "gloss": "to think (about); to think of; to devise; to think (that); to believe (that)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天很忙，不想去看電影。",
+            "pinyin": "Wǒ jīntiān hěn máng, bù xiǎng qù kàn diànyǐng.",
+            "gloss": "I'm very busy today; I don't feel like going to see a movie."
+          }
         },
         {
           "id": "v_很",
@@ -49,7 +69,12 @@
           "pinyin": "hěn",
           "gloss": "(adverb of degree); quite; very",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個電影很好看喔！",
+            "pinyin": "Zhè ge diànyǐng hěn hǎokàn o!",
+            "gloss": "This movie is really good!"
+          }
         },
         {
           "id": "v_不",
@@ -57,12 +82,172 @@
           "pinyin": "bù",
           "gloss": "no; not so; (bound form) not; un-",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他不喜歡看電視。",
+            "pinyin": "Tā bù xǐhuān kàn diànshì.",
+            "gloss": "He doesn't like watching TV."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Adjective predicates with 很 / 不 (no 是)",
+          "pattern": "Subject + 很 / 不 + Adjective",
+          "explanation": "In Chinese an adjective can be the whole predicate, so you do not need a word for \"is\". A one-syllable-feeling adjective usually needs 很 in front of it to sound complete: 這個電影很好看 = \"This movie is good.\" Here 很 is often just a smoothing word, not a strong \"very\". To make it negative, drop 很 and put 不 before the adjective: 電視不好看. To ask about it, use 怎麼樣: 這個電影怎麼樣？",
+          "contrast": "是 + Noun. Use 是 only when the predicate is a noun (他是我的同學 \"He is my classmate\"). If what follows describes a quality (好看、忙、便宜), use 很 or 不 and leave 是 out.",
+          "common_error": "Learners translate \"is\" and say 這個電影是好看 or 我是很忙. Chinese adjectives already act as verbs, so 是 must be dropped: 這個電影很好看 / 我很忙.",
+          "examples": [
+            {
+              "hanzi": "這個電影很好看。",
+              "pinyin": "Zhè ge diànyǐng hěn hǎokàn.",
+              "gloss": "This movie is really good."
+            },
+            {
+              "hanzi": "我今天不忙，想在家看電視。",
+              "pinyin": "Wǒ jīntiān bù máng, xiǎng zài jiā kàn diànshì.",
+              "gloss": "I'm not busy today; I feel like watching TV at home."
+            },
+            {
+              "hanzi": "這家店的麵很便宜，你想吃嗎？",
+              "pinyin": "Zhè jiā diàn de miàn hěn piányí, nǐ xiǎng chī ma?",
+              "gloss": "The noodles at this shop are cheap — do you want some?"
+            }
+          ],
+          "id": "g_hsk1_07_1_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "想 + Verb: feel like / want to do",
+          "pattern": "Subject + (不) 想 + Verb + Object",
+          "explanation": "想 before a verb means \"want to / feel like\" doing something. Negate it with 不想. It is softer than a demand — it is about what you'd like: 我想看電影 \"I'd like to see a movie.\"",
+          "contrast": "想 + Noun means \"to miss / think of\" (我想我媽媽), while 想 + Verb means \"want to do\". What follows 想 decides the meaning.",
+          "common_error": "Putting 不 in the wrong place, e.g. 我想不去 instead of 我不想去. 不 always goes directly in front of 想.",
+          "examples": [
+            {
+              "hanzi": "我想看新的電影。",
+              "pinyin": "Wǒ xiǎng kàn xīn de diànyǐng.",
+              "gloss": "I want to see the new movie."
+            },
+            {
+              "hanzi": "她不想看電視，她想讀書。",
+              "pinyin": "Tā bù xiǎng kàn diànshì, tā xiǎng dúshū.",
+              "gloss": "She doesn't want to watch TV; she wants to read."
+            },
+            {
+              "hanzi": "你想搭捷運去嗎？",
+              "pinyin": "Nǐ xiǎng dā jiéyùn qù ma?",
+              "gloss": "Do you want to take the MRT there?"
+            }
+          ],
+          "id": "g_hsk1_07_1_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "你昨天晚上做什麼？",
+          "pinyin": "Nǐ zuótiān wǎnshàng zuò shénme?",
+          "gloss": "What did you do last night?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我在家看電視。",
+          "pinyin": "Wǒ zài jiā kàn diànshì.",
+          "gloss": "I watched TV at home."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "電視好看嗎？",
+          "pinyin": "Diànshì hǎokàn ma?",
+          "gloss": "Was it any good?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "不好看，我想看電影。",
+          "pinyin": "Bù hǎokàn, wǒ xiǎng kàn diànyǐng.",
+          "gloss": "Not really. I'd rather see a movie."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "這個週末我們搭捷運去看電影，怎麼樣？",
+          "pinyin": "Zhè ge zhōumò wǒmen dā jiéyùn qù kàn diànyǐng, zěnmeyàng?",
+          "gloss": "How about we take the MRT and go see a movie this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "太好了！我請你買電影票。",
+          "pinyin": "Tài hǎo le! Wǒ qǐng nǐ mǎi diànyǐng piào.",
+          "gloss": "Great! I'll treat you to the tickets."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "想",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Wǒ xiǎng kàn diànyǐng.",
+          "gloss": "I want to see a movie.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這個",
+            "電影",
+            "很",
+            "好看"
+          ],
+          "pinyin": "Zhè ge diànyǐng hěn hǎokàn.",
+          "gloss": "This movie is really good.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "昨天",
+            "的",
+            "晚餐",
+            "怎麼樣"
+          ],
+          "pinyin": "Nǐ zuótiān de wǎncān zěnmeyàng?",
+          "gloss": "How was your dinner yesterday?",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "他",
+            "不",
+            "想",
+            "看",
+            "電視"
+          ],
+          "pinyin": "Tā bù xiǎng kàn diànshì.",
+          "gloss": "He doesn't want to watch TV.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我們",
+            "週末",
+            "去",
+            "看",
+            "電影",
+            "好嗎"
+          ],
+          "pinyin": "Wǒmen zhōumò qù kàn diànyǐng hǎo ma?",
+          "gloss": "Shall we go see a movie this weekend?",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "週末不看電視",
+        "hanzi": "週末的時候，我不想在家看電視，我覺得電視都不好看。我和同學小明搭捷運去台北，我們想看一個新的電影。電影票很便宜，電影很好看，我們都很喜歡。後來我們去吃麵，買了一杯珍珠奶茶。小明說：「下個週末再去看電影，怎麼樣？」我說：「好！」",
+        "gloss": "On weekends I don't feel like staying home watching TV — I think what's on TV is all pretty bad. My classmate Xiao Ming and I took the MRT to Taipei, because we wanted to see a new movie. The tickets were cheap and the movie was great; we both really liked it. Afterwards we went for noodles and bought a bubble milk tea. Xiao Ming said, \"How about we go see a movie again next weekend?\" I said, \"Sure!\""
+      }
     },
     {
       "id": "l_hsk1_07_2",
@@ -76,7 +261,12 @@
           "gloss": "(cooked) rice",
           "hsk_level": 1,
           "taiwan_note": "台灣點餐時說「白飯」。",
-          "prc_form": "米飯"
+          "prc_form": "米飯",
+          "example": {
+            "hanzi": "我想吃一點白飯。",
+            "pinyin": "Wǒ xiǎng chī yìdiǎn báifàn.",
+            "gloss": "I want to eat a little rice."
+          }
         },
         {
           "id": "v_水果",
@@ -84,7 +274,12 @@
           "pinyin": "shuǐ guǒ",
           "gloss": "fruit",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽買了很多水果。",
+            "pinyin": "Māma mǎi le hěn duō shuǐguǒ.",
+            "gloss": "Mom bought a lot of fruit."
+          }
         },
         {
           "id": "v_喝",
@@ -92,7 +287,12 @@
           "pinyin": "hē",
           "gloss": "to drink; variant of 嗬",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣很熱，我想喝冰水。",
+            "pinyin": "Tiānqì hěn rè, wǒ xiǎng hē bīng shuǐ.",
+            "gloss": "It's hot, I want to drink some ice water."
+          }
         },
         {
           "id": "v_杯子",
@@ -100,7 +300,12 @@
           "pinyin": "bēi zi",
           "gloss": "cup; glass",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個大杯子是我的。",
+            "pinyin": "Zhè ge dà bēizi shì wǒ de.",
+            "gloss": "This big cup is mine."
+          }
         },
         {
           "id": "v_沒",
@@ -108,12 +313,172 @@
           "pinyin": "méi",
           "gloss": "drowned; to end; to die",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天沒吃早餐。",
+            "pinyin": "Wǒ jīntiān méi chī zǎocān.",
+            "gloss": "I didn't eat breakfast today."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "沒 for \"didn't\" and \"there isn't\"",
+          "pattern": "主語 + 沒(有) + 動詞 / 名詞",
+          "explanation": "沒 (or 沒有) says that something did not happen or does not exist. Use 沒 + verb to say an action did not happen: 我沒喝茶 (I didn't drink tea). Use 沒有 + noun to say something is not there: 杯子裡沒有水 (There's no water in the cup). 沒 is the only way to negate 有 — you can never say 不有.",
+          "contrast": "沒 vs 不: 不 negates what you generally do, don't want, or won't do (我不喝咖啡 = I don't drink coffee); 沒 negates what did not happen in the past (我今天沒喝咖啡 = I didn't drink coffee today). Ask yourself: is this a habit/wish (不) or a past fact (沒)?",
+          "common_error": "Learners add 了 after a 沒 verb, saying 我沒吃了. Since 沒 already tells you the action did not happen, drop 了: 我沒吃. The other frequent mistake is 不有 instead of 沒有.",
+          "examples": [
+            {
+              "hanzi": "我昨天沒喝咖啡。",
+              "pinyin": "Wǒ zuótiān méi hē kāfēi.",
+              "gloss": "I didn't drink coffee yesterday."
+            },
+            {
+              "hanzi": "他沒買水果，只買了白飯。",
+              "pinyin": "Tā méi mǎi shuǐguǒ, zhǐ mǎi le báifàn.",
+              "gloss": "He didn't buy fruit, he only bought rice."
+            },
+            {
+              "hanzi": "桌上沒有杯子。",
+              "pinyin": "Zhuō shàng méiyǒu bēizi.",
+              "gloss": "There aren't any cups on the table."
+            }
+          ],
+          "id": "g_hsk1_07_2_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "先……再…… (first… then…)",
+          "pattern": "先 + 動作一 + 再 + 動作二",
+          "explanation": "先 marks the first action and 再 the next one, showing the order you do things: 先喝水，再吃飯 (drink water first, then eat).",
+          "contrast": "先……再…… vs 先……就……: 再 gives a planned order of two actions by the same person; 就 suggests one thing happens right away as a result. For everyday \"first A, then B\", use 再.",
+          "common_error": "Learners put 再 before the first verb or leave it out entirely (先喝水，吃飯). Both 先 and 再 need to sit right before their own verbs.",
+          "examples": [
+            {
+              "hanzi": "你先喝一點水，再吃白飯。",
+              "pinyin": "Nǐ xiān hē yìdiǎn shuǐ, zài chī báifàn.",
+              "gloss": "Drink a little water first, then eat some rice."
+            },
+            {
+              "hanzi": "我們先吃飯，再吃水果。",
+              "pinyin": "Wǒmen xiān chī fàn, zài chī shuǐguǒ.",
+              "gloss": "Let's eat first, then have fruit."
+            },
+            {
+              "hanzi": "他先找杯子，再去買茶。",
+              "pinyin": "Tā xiān zhǎo bēizi, zài qù mǎi chá.",
+              "gloss": "He looks for a cup first, then goes to buy tea."
+            }
+          ],
+          "id": "g_hsk1_07_2_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "媽媽",
+          "hanzi": "飯好了！今天有白飯和菜。",
+          "pinyin": "Fàn hǎo le! Jīntiān yǒu báifàn hé cài.",
+          "gloss": "Dinner's ready! Today we have rice and vegetables."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "太好了，我今天沒吃早餐，很想吃飯。",
+          "pinyin": "Tài hǎo le, wǒ jīntiān méi chī zǎocān, hěn xiǎng chī fàn.",
+          "gloss": "Great, I didn't eat breakfast today, I really want to eat."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "桌上也有水果和茶喔。",
+          "pinyin": "Zhuō shàng yě yǒu shuǐguǒ hé chá o.",
+          "gloss": "There's fruit and tea on the table too."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "媽，我的杯子裡沒有水耶。",
+          "pinyin": "Mā, wǒ de bēizi lǐ méiyǒu shuǐ ye.",
+          "gloss": "Mom, there's no water in my cup."
+        },
+        {
+          "speaker": "媽媽",
+          "hanzi": "那個大杯子在那裡，裡面有冰水。",
+          "pinyin": "Nà ge dà bēizi zài nàlǐ, lǐmiàn yǒu bīng shuǐ.",
+          "gloss": "That big cup is over there, there's ice water in it."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "謝謝媽媽！我先喝一點水，再吃飯。",
+          "pinyin": "Xièxie māma! Wǒ xiān hē yìdiǎn shuǐ, zài chī fàn.",
+          "gloss": "Thanks, Mom! I'll drink a bit of water first, then eat."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "沒",
+            "吃",
+            "白飯"
+          ],
+          "pinyin": "Wǒ jīntiān méi chī báifàn.",
+          "gloss": "I didn't eat rice today.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "買",
+            "了",
+            "很多",
+            "水果"
+          ],
+          "pinyin": "Māma mǎi le hěn duō shuǐguǒ.",
+          "gloss": "Mom bought a lot of fruit.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這個",
+            "杯子",
+            "裡",
+            "沒有",
+            "水"
+          ],
+          "pinyin": "Zhè ge bēizi lǐ méiyǒu shuǐ.",
+          "gloss": "There's no water in this cup.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "你",
+            "想",
+            "喝",
+            "什麼"
+          ],
+          "pinyin": "Nǐ xiǎng hē shénme?",
+          "gloss": "What would you like to drink?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "昨天",
+            "沒",
+            "喝",
+            "茶"
+          ],
+          "pinyin": "Wǒ zuótiān méi hē chá.",
+          "gloss": "I didn't drink tea yesterday.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "在家吃飯",
+        "hanzi": "週末晚上，我們一家都在家吃飯。媽媽做了很多菜，桌上有白飯，也有水果。爸爸今天沒喝茶，他喝了一大杯冰水。我的杯子裡沒有水，媽媽說：「你先喝水，再吃飯。」我很喜歡在家吃飯，飯菜好吃，家裡也很舒服。",
+        "gloss": "On weekend evenings our whole family eats at home. Mom cooked a lot of dishes; there was rice on the table, and fruit too. Dad didn't drink tea today — he drank a big glass of ice water. There was no water in my cup, and Mom said, \"Drink some water first, then eat.\" I really like eating at home: the food is good, and home is comfortable."
+      }
     }
   ],
   "sort_order": 21,

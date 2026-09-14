@@ -4,7 +4,7 @@
   "subtitle": "Family members, pronouns and ages",
   "hsk_level": 1,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk1_02_1",
@@ -17,7 +17,12 @@
           "pinyin": "bà ba",
           "gloss": "(coll.) father; dad",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我爸爸騎腳踏車上班。",
+            "pinyin": "Wǒ bàba qí jiǎotàchē shàngbān.",
+            "gloss": "My dad rides a bike to work."
+          }
         },
         {
           "id": "v_媽媽",
@@ -25,7 +30,12 @@
           "pinyin": "mā ma",
           "gloss": "mama; mommy; mother",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽今天好忙。",
+            "pinyin": "Māma jīntiān hǎo máng.",
+            "gloss": "Mom is really busy today."
+          }
         },
         {
           "id": "v_兒子",
@@ -33,7 +43,12 @@
           "pinyin": "ér zi",
           "gloss": "son",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆的兒子是學生。",
+            "pinyin": "Lǎobǎn de érzi shì xuéshēng.",
+            "gloss": "The boss's son is a student."
+          }
         },
         {
           "id": "v_女兒",
@@ -41,7 +56,12 @@
           "pinyin": "nǚ ér",
           "gloss": "daughter",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我女兒好喜歡貓。",
+            "pinyin": "Wǒ nǚ'ér hǎo xǐhuān māo.",
+            "gloss": "My daughter really likes cats."
+          }
         },
         {
           "id": "v_人",
@@ -49,7 +69,12 @@
           "pinyin": "rén",
           "gloss": "person; people",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台灣人好客氣。",
+            "pinyin": "Táiwān rén hǎo kèqì.",
+            "gloss": "Taiwanese people are very polite."
+          }
         },
         {
           "id": "v_的",
@@ -57,12 +82,171 @@
           "pinyin": "de",
           "gloss": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "傘是誰的?",
+            "pinyin": "Sǎn shì shéi de?",
+            "gloss": "Whose umbrella is this?"
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Possessive 的 — and when Taiwanese speakers drop it",
+          "pattern": "X + 的 + 名詞;家人時 的 可以不說:我(的)媽媽",
+          "explanation": "的 links an owner to what is owned: 老闆的女兒 (the boss's daughter), 我的手機 (my phone). With family members and other very close relations, everyday Taiwan speech usually drops 的: 我爸爸, 我媽媽, 我兒子 sound more natural than 我的爸爸. When 的 ends the sentence, the noun is understood: 傘是誰的? = Whose umbrella is it?",
+          "contrast": "我媽媽 vs 我的手機. What decides it is the noun: family words (爸爸/媽媽/兒子/女兒) and things you belong to (我家, 我學校) let you drop 的; ordinary objects keep it. You can never drop 的 in 老闆的兒子 either — dropping works mainly after 我/你.",
+          "common_error": "Two habits: saying 我的爸爸 every single time, which sounds stiff and translated; and dropping the final 的 in questions or answers, e.g. saying 傘是誰? or 腳踏車是我 instead of 傘是誰的? / 腳踏車是我的.",
+          "examples": [
+            {
+              "hanzi": "我媽媽是醫生。",
+              "pinyin": "Wǒ māma shì yīshēng.",
+              "gloss": "My mom is a doctor."
+            },
+            {
+              "hanzi": "老闆的女兒好漂亮。",
+              "pinyin": "Lǎobǎn de nǚ'ér hǎo piàoliang.",
+              "gloss": "The boss's daughter is really pretty."
+            },
+            {
+              "hanzi": "腳踏車是我爸爸的。",
+              "pinyin": "Jiǎotàchē shì wǒ bàba de.",
+              "gloss": "The bike is my dad's."
+            }
+          ],
+          "id": "g_hsk1_02_1_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "家有誰?asking who is in someone's family",
+          "pattern": "你家有誰? / 我家有 + 家人",
+          "explanation": "To ask about family members, Taiwanese speakers say 你家有誰?The answer simply lists people with 有: 我家有爸爸、媽媽。誰 works as both question word and normal noun position, so the word order never changes.",
+          "contrast": "你家有誰? asks which people; 你家有什麼? asks about things. Use 誰 only for people.",
+          "common_error": "Learners move 誰 to the front like English 'who', saying 誰你家有?The question word stays in the object slot: 你家有誰?",
+          "examples": [
+            {
+              "hanzi": "你家有誰?",
+              "pinyin": "Nǐ jiā yǒu shéi?",
+              "gloss": "Who is in your family?"
+            },
+            {
+              "hanzi": "我家有爸爸、媽媽,我是家中的女兒。",
+              "pinyin": "Wǒ jiā yǒu bàba, māma, wǒ shì jiā zhōng de nǚ'ér.",
+              "gloss": "My family has my dad and mom; I'm the daughter."
+            },
+            {
+              "hanzi": "你家有兒子嗎?",
+              "pinyin": "Nǐ jiā yǒu érzi ma?",
+              "gloss": "Do you have a son?"
+            }
+          ],
+          "id": "g_hsk1_02_1_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "老闆",
+          "hanzi": "早!今天你女兒沒一起吃早餐喔?",
+          "pinyin": "Zǎo! Jīntiān nǐ nǚ'ér méi yìqǐ chī zǎocān o?",
+          "gloss": "Morning! Your daughter isn't having breakfast with you today?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "對啊,我女兒有點不舒服。",
+          "pinyin": "Duì a, wǒ nǚ'ér yǒudiǎn bù shūfú.",
+          "gloss": "Right, my daughter isn't feeling well."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "你兒子呢?",
+          "pinyin": "Nǐ érzi ne?",
+          "gloss": "And your son?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我兒子上學,我爸爸帶女兒看醫生。",
+          "pinyin": "Wǒ érzi shàngxué, wǒ bàba dài nǚ'ér kàn yīshēng.",
+          "gloss": "My son's at school; my dad is taking my daughter to see the doctor."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "你家人好忙喔!",
+          "pinyin": "Nǐ jiārén hǎo máng o!",
+          "gloss": "Your family is so busy!"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "對啊。老闆,我買一杯紅茶,謝謝!",
+          "pinyin": "Duì a. Lǎobǎn, wǒ mǎi yì bēi hóngchá, xièxie!",
+          "gloss": "Yeah. Boss, I'll take a cup of black tea, thanks!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "爸爸",
+            "騎",
+            "腳踏車",
+            "上班"
+          ],
+          "pinyin": "Wǒ bàba qí jiǎotàchē shàngbān.",
+          "gloss": "My dad rides a bike to work.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "是",
+            "台灣",
+            "人"
+          ],
+          "pinyin": "Māma shì Táiwān rén.",
+          "gloss": "Mom is Taiwanese.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "老闆",
+            "的",
+            "兒子",
+            "是",
+            "學生"
+          ],
+          "pinyin": "Lǎobǎn de érzi shì xuéshēng.",
+          "gloss": "The boss's son is a student.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "女兒",
+            "喜歡",
+            "吃",
+            "麵"
+          ],
+          "pinyin": "Wǒ nǚ'ér xǐhuān chī miàn.",
+          "gloss": "My daughter likes eating noodles.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "傘",
+            "是",
+            "誰",
+            "的"
+          ],
+          "pinyin": "Sǎn shì shéi de?",
+          "gloss": "Whose umbrella is it?",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我家的人",
+        "hanzi": "我家有爸爸、媽媽,我是家中的兒子。爸爸是老師,天天騎腳踏車上班。媽媽開一家早餐店,客人好喜歡媽媽的紅茶。週末爸爸、媽媽帶我搭捷運逛書店。晚上一家人一起吃飯,好高興。",
+        "gloss": "My family has my dad, my mom, and me — I'm the son of the house. My dad is a teacher and rides his bike to work every day. My mom runs a breakfast shop, and the customers really love her black tea. On weekends my parents take me on the MRT to browse bookstores. In the evening the whole family eats together, and it's wonderful."
+      }
     },
     {
       "id": "l_hsk1_02_2",
@@ -75,7 +259,12 @@
           "pinyin": "tā",
           "gloss": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他是我的同學，他叫小明。",
+            "pinyin": "Tā shì wǒ de tóngxué, tā jiào Xiǎomíng.",
+            "gloss": "He is my classmate; he's called Xiaoming."
+          }
         },
         {
           "id": "v_她",
@@ -83,7 +272,12 @@
           "pinyin": "tā",
           "gloss": "she",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她會騎腳踏車上學。",
+            "pinyin": "Tā huì qí jiǎotàchē shàngxué.",
+            "gloss": "She can ride a bike to school."
+          }
         },
         {
           "id": "v_我們",
@@ -91,7 +285,12 @@
           "pinyin": "wǒ men",
           "gloss": "we; us; ourselves",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們週末一起逛夜市。",
+            "pinyin": "Wǒmen zhōumò yìqǐ guàng yèshì.",
+            "gloss": "We go to the night market together on the weekend."
+          }
         },
         {
           "id": "v_和",
@@ -99,7 +298,12 @@
           "pinyin": "hé",
           "gloss": "(joining two nouns) and; together with; with (Taiwan pr. [hàn]); (math.) sum; to make peace",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我和她都喜歡珍珠奶茶。",
+            "pinyin": "Wǒ hàn tā dōu xǐhuān zhēnzhū nǎichá.",
+            "gloss": "She and I both like bubble tea."
+          }
         },
         {
           "id": "v_都",
@@ -107,7 +311,12 @@
           "pinyin": "dōu",
           "gloss": "all; both; entirely; (used for emphasis) even; already",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們都是台灣人。",
+            "pinyin": "Wǒmen dōu shì Táiwān rén.",
+            "gloss": "We are all Taiwanese."
+          }
         },
         {
           "id": "v_有",
@@ -115,12 +324,148 @@
           "pinyin": "yǒu",
           "gloss": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家附近有一家郵局。",
+            "pinyin": "Wǒ jiā fùjìn yǒu yì jiā yóujú.",
+            "gloss": "There's a post office near my house."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "A 和 B 都… (A and B both …)",
+          "pattern": "A + 和 + B + 都 + verb / adjective",
+          "explanation": "和 (Taiwan pronunciation hàn) joins two nouns or pronouns into one subject: 他和她, 我和朋友. When that joint subject does the same thing, add 都 right before the verb or adjective to say 'both / all'. 都 never goes at the front of the sentence and never goes after the verb: 我和他都有悠遊卡, not 都我和他有悠遊卡.",
+          "contrast": "和 vs. just listing two clauses: 和 links nouns only. For two actions you do NOT use 和 — you say them as two clauses: 我吃飯，看書 (I eat and read), never 我吃飯和看書. If the two people do different things, drop 都: 他吃麵，她吃飯。",
+          "common_error": "Learners copy English 'both … and' and put 都 before the subject, or leave 都 out completely. In Chinese the 'both' word 都 must sit after the subject and directly before the verb, and it is normally required once you say 'A 和 B'.",
+          "examples": [
+            {
+              "hanzi": "他和她都是學生。",
+              "pinyin": "Tā hàn tā dōu shì xuéshēng.",
+              "gloss": "He and she are both students."
+            },
+            {
+              "hanzi": "我和朋友都愛吃臭豆腐。",
+              "pinyin": "Wǒ hàn péngyǒu dōu ài chī chòudòufu.",
+              "gloss": "My friend and I both love eating stinky tofu."
+            },
+            {
+              "hanzi": "爸爸和媽媽都有悠遊卡。",
+              "pinyin": "Bàba hàn māma dōu yǒu Yōuyóukǎ.",
+              "gloss": "Dad and Mom both have an EasyCard."
+            }
+          ],
+          "id": "g_hsk1_02_2_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "小明，她是誰？",
+          "pinyin": "Xiǎomíng, tā shì shéi?",
+          "gloss": "Xiaoming, who is she?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "她是我的同學，她叫小文。",
+          "pinyin": "Tā shì wǒ de tóngxué, tā jiào Xiǎowén.",
+          "gloss": "She's my classmate; her name is Xiaowen."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "你們都是台中人嗎？",
+          "pinyin": "Nǐmen dōu shì Táizhōng rén ma?",
+          "gloss": "Are you both from Taichung?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對，我和她都是台中人。",
+          "pinyin": "Duì, wǒ hàn tā dōu shì Táizhōng rén.",
+          "gloss": "Right, she and I are both from Taichung."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我們週末一起逛夜市，好不好？",
+          "pinyin": "Wǒmen zhōumò yìqǐ guàng yèshì, hǎo bù hǎo?",
+          "gloss": "Shall we go to the night market together this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我們都有時間。",
+          "pinyin": "Hǎo, wǒmen dōu yǒu shíjiān.",
+          "gloss": "Sure, we both have time."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他",
+            "和",
+            "我",
+            "都",
+            "喜歡",
+            "咖啡"
+          ],
+          "pinyin": "Tā hàn wǒ dōu xǐhuān kāfēi.",
+          "gloss": "He and I both like coffee.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "她",
+            "有",
+            "一",
+            "台",
+            "腳踏車"
+          ],
+          "pinyin": "Tā yǒu yì tái jiǎotàchē.",
+          "gloss": "She has a bicycle.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我們",
+            "明天",
+            "搭",
+            "捷運",
+            "上班"
+          ],
+          "pinyin": "Wǒmen míngtiān dā jiéyùn shàngbān.",
+          "gloss": "We'll take the MRT to work tomorrow.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "他",
+            "是",
+            "我",
+            "的",
+            "老師"
+          ],
+          "pinyin": "Tā shì wǒ de lǎoshī.",
+          "gloss": "He is my teacher.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我們",
+            "都",
+            "沒",
+            "帶",
+            "雨傘"
+          ],
+          "pinyin": "Wǒmen dōu méi dài yǔsǎn.",
+          "gloss": "None of us brought an umbrella.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "我的同學小文",
+        "hanzi": "小文是我的同學。她家附近有一家早餐店，老闆和他的兒子都認識她。今天早上，我們一起騎腳踏車上學，天氣晴，風不大。中午我和她都吃便當，下午一起走路逛書店。她說明天她媽媽會帶我們搭捷運。",
+        "gloss": "Xiaowen is my classmate. There's a breakfast shop near her house, and both the owner and his son know her. This morning we rode our bikes to school together; the weather was clear and there wasn't much wind. At noon she and I both had bento boxes, and in the afternoon we walked around a bookstore together. She said that tomorrow her mom will take us on the MRT."
+      }
     },
     {
       "id": "l_hsk1_02_3",
@@ -133,7 +478,12 @@
           "pinyin": "suì",
           "gloss": "classifier for years (of age); year; year (of crop harvests)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家的狗今年一歲。",
+            "pinyin": "Wǒ jiā de gǒu jīnnián yí suì.",
+            "gloss": "My family's dog is one year old this year."
+          }
         },
         {
           "id": "v_幾",
@@ -141,7 +491,12 @@
           "pinyin": "jǐ",
           "gloss": "how much; how many; several",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你今天幾點下班？",
+            "pinyin": "Nǐ jīntiān jǐ diǎn xiàbān?",
+            "gloss": "What time do you get off work today?"
+          }
         },
         {
           "id": "v_多少",
@@ -149,7 +504,12 @@
           "pinyin": "duō shǎo",
           "gloss": "number; amount; somewhat",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆，這杯咖啡多少錢？",
+            "pinyin": "Lǎobǎn, zhè bēi kāfēi duōshǎo qián?",
+            "gloss": "Boss, how much is this cup of coffee?"
+          }
         },
         {
           "id": "v_多",
@@ -157,7 +517,12 @@
           "pinyin": "duō",
           "gloss": "many; much; too many; in excess; (after a numeral) ... odd",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這家店的菜很多。",
+            "pinyin": "Zhè jiā diàn de cài hěn duō.",
+            "gloss": "This restaurant has a lot of dishes."
+          }
         },
         {
           "id": "v_少",
@@ -165,7 +530,12 @@
           "pinyin": "shǎo",
           "gloss": "few; less; to lack",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他的朋友很少。",
+            "pinyin": "Tā de péngyǒu hěn shǎo.",
+            "gloss": "He has very few friends."
+          }
         },
         {
           "id": "v_太",
@@ -173,12 +543,180 @@
           "pinyin": "tài",
           "gloss": "highest; greatest; too (much)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天太熱了，我們去吃冰。",
+            "pinyin": "Jīntiān tài rè le, wǒmen qù chī bīng.",
+            "gloss": "It's too hot today; let's go eat shaved ice."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Asking amounts: 幾 vs 多少",
+          "pattern": "幾 + 量詞 + (名詞)？ ／ 多少 + (名詞)？",
+          "explanation": "幾 asks about a small, countable number (usually under ten) and must be followed by a measure word: 幾歲、幾點、幾號、幾塊錢. 多少 asks about any amount, big or small, and normally goes straight in front of the noun: 多少錢、多少學生. When you ask a child's age you say 你幾歲？; for prices, which can be any number, Taiwanese people say 多少錢？",
+          "contrast": "幾塊錢 vs 多少錢: both ask a price, but 幾塊錢 already assumes the answer is only a few dollars, while 多少錢 is neutral and is what you actually say in a shop. The size of the expected number is what decides.",
+          "common_error": "Learners drop the measure word after 幾 and say things like 幾錢 or 幾書. 幾 almost never touches the noun directly — put a measure word in between. The other frequent slip is asking an adult 你幾歲？, which sounds like you are talking to a small child.",
+          "examples": [
+            {
+              "hanzi": "你今年幾歲？",
+              "pinyin": "Nǐ jīnnián jǐ suì?",
+              "gloss": "How old are you this year?"
+            },
+            {
+              "hanzi": "這杯珍珠奶茶多少錢？",
+              "pinyin": "Zhè bēi zhēnzhū nǎichá duōshǎo qián?",
+              "gloss": "How much is this cup of bubble tea?"
+            },
+            {
+              "hanzi": "你們班有多少學生？",
+              "pinyin": "Nǐmen bān yǒu duōshǎo xuéshēng?",
+              "gloss": "How many students are there in your class?"
+            }
+          ],
+          "id": "g_hsk1_02_3_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "太……了",
+          "pattern": "太 + 形容詞 + 了",
+          "explanation": "太 means 'too / excessively' and almost always takes 了 at the end: 太多了、太少了、太熱了. It can also be a compliment in fixed phrases like 太好了 ('great!').",
+          "contrast": "很 + adjective is simply 'very' and is neutral; 太……了 says the amount has gone past what you want. 他吃很少 just reports a fact; 他吃太少了 complains about it.",
+          "common_error": "Saying 太多 or 太熱 with no 了 in a complete sentence. In everyday Taiwan speech the 了 is expected: 今天客人太多了。",
+          "examples": [
+            {
+              "hanzi": "今天客人太多了。",
+              "pinyin": "Jīntiān kèrén tài duō le.",
+              "gloss": "There are too many customers today."
+            },
+            {
+              "hanzi": "他今天吃得太少了。",
+              "pinyin": "Tā jīntiān chī de tài shǎo le.",
+              "gloss": "He ate far too little today."
+            },
+            {
+              "hanzi": "醫生說他沒事，太好了！",
+              "pinyin": "Yīshēng shuō tā méi shì, tài hǎo le!",
+              "gloss": "The doctor says he's fine — great!"
+            }
+          ],
+          "id": "g_hsk1_02_3_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "安安，你家的貓幾歲了？",
+          "pinyin": "Ānān, nǐ jiā de māo jǐ suì le?",
+          "gloss": "An-an, how old is your cat?"
+        },
+        {
+          "speaker": "安安",
+          "hanzi": "他一歲多，還很小喔。",
+          "pinyin": "Tā yí suì duō, hái hěn xiǎo ō.",
+          "gloss": "He's a bit over one year old — still really small."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "他吃得多嗎？",
+          "pinyin": "Tā chī de duō ma?",
+          "gloss": "Does he eat a lot?"
+        },
+        {
+          "speaker": "安安",
+          "hanzi": "不多，有時吃得太少，我就帶他去看醫生。",
+          "pinyin": "Bù duō, yǒu shí chī de tài shǎo, wǒ jiù dài tā qù kàn yīshēng.",
+          "gloss": "Not much. Sometimes he eats too little, so I take him to the vet."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "看醫生多少錢？",
+          "pinyin": "Kàn yīshēng duōshǎo qián?",
+          "gloss": "How much does the vet cost?"
+        },
+        {
+          "speaker": "安安",
+          "hanzi": "不多啦！醫生說他沒事，不用吃藥。",
+          "pinyin": "Bù duō la! Yīshēng shuō tā méi shì, búyòng chī yào.",
+          "gloss": "Not much! The doctor said he's fine and doesn't need medicine."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "你",
+            "今年",
+            "幾",
+            "歲",
+            "？"
+          ],
+          "pinyin": "Nǐ jīnnián jǐ suì?",
+          "gloss": "How old are you this year?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這",
+            "杯",
+            "珍珠奶茶",
+            "多少",
+            "錢",
+            "？"
+          ],
+          "pinyin": "Zhè bēi zhēnzhū nǎichá duōshǎo qián?",
+          "gloss": "How much is this cup of bubble tea?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "今天",
+            "的",
+            "客人",
+            "太",
+            "多",
+            "了",
+            "。"
+          ],
+          "pinyin": "Jīntiān de kèrén tài duō le.",
+          "gloss": "There are too many customers today.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "吃",
+            "得",
+            "很",
+            "少",
+            "。"
+          ],
+          "pinyin": "Tā chī de hěn shǎo.",
+          "gloss": "He eats very little.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "貓",
+            "一",
+            "歲",
+            "多",
+            "了",
+            "。"
+          ],
+          "pinyin": "Wǒ de māo yí suì duō le.",
+          "gloss": "My cat is a bit over one year old.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "我家的珍珠",
+        "hanzi": "我家的貓叫珍珠，今年一歲多。朋友看他都說：「珍珠太小了，他幾歲了？」我說他還是小朋友。珍珠吃得很少，有時一天沒吃多少東西，我就帶他去看醫生。醫生說他沒事，不用吃藥。現在珍珠很愛吃飯，也喜歡坐在桌子上看外面的雨。",
+        "gloss": "My cat is called Zhenzhu (Pearl); she's a bit over one year old this year. Friends who see her all say, \"Pearl is so tiny — how old is she?\" I tell them she's still a kid. Pearl eats very little, and some days she hardly eats anything, so I take her to the vet. The vet says she's fine and doesn't need medicine. These days Pearl loves her food, and she also likes to sit on the table and watch the rain outside."
+      }
     }
   ],
   "sort_order": 16,

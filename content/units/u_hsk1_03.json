@@ -4,7 +4,7 @@
   "subtitle": "Numbers, prices and shopping in a store",
   "hsk_level": 1,
   "generated": true,
-  "status": "draft",
+  "status": "live",
   "lessons": [
     {
       "id": "l_hsk1_03_1",
@@ -17,7 +17,12 @@
           "pinyin": "líng",
           "gloss": "zero; nought; zero sign",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "零下四度，好冷喔！",
+            "pinyin": "Líng xià sì dù, hǎo lěng ō!",
+            "gloss": "Four degrees below zero — so cold!"
+          }
         },
         {
           "id": "v_一",
@@ -25,7 +30,12 @@
           "pinyin": "yī",
           "gloss": "one; single; a (article)",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要一杯珍珠奶茶。",
+            "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.",
+            "gloss": "I'd like one cup of bubble milk tea."
+          }
         },
         {
           "id": "v_二",
@@ -33,7 +43,12 @@
           "pinyin": "èr",
           "gloss": "two; 2; (Beijing dialect) stupid",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "二號桌的客人要點菜。",
+            "pinyin": "Èr hào zhuō de kèrén yào diǎn cài.",
+            "gloss": "The customers at table two want to order."
+          }
         },
         {
           "id": "v_三",
@@ -41,7 +56,12 @@
           "pinyin": "sān",
           "gloss": "three; 3",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們三點在捷運站見。",
+            "pinyin": "Wǒmen sān diǎn zài jiéyùn zhàn jiàn.",
+            "gloss": "Let's meet at the MRT station at three."
+          }
         },
         {
           "id": "v_四",
@@ -49,12 +69,153 @@
           "pinyin": "sì",
           "gloss": "four; 4",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我家有四台腳踏車。",
+            "pinyin": "Wǒ jiā yǒu sì tái jiǎotàchē.",
+            "gloss": "My family has four bicycles."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Asking amounts with 幾 + measure word",
+          "pattern": "幾 + measure word (+ noun)？ → answer: 一/二/三/四 + measure word",
+          "explanation": "幾 (jǐ) asks 'how many' when the speaker expects a small number, and it must be followed by a measure word: 幾杯 (how many cups), 幾點 (what time), 幾台 (how many machines/vehicles). You answer by putting the number in exactly the same slot where 幾 was: 幾杯 → 三杯, 幾點 → 四點. The word order of the rest of the sentence never changes.",
+          "contrast": "多少 also means 'how much/how many', but it is used for open-ended or large amounts and normally takes no measure word — prices especially: 多少錢 (how much money). Rule of thumb: if you expect an answer under about ten and there is a measure word, use 幾; if it is money or an unknown big amount, use 多少.",
+          "common_error": "Two things. First, learners drop the measure word and say 'jǐ bēi' as just 'jǐ' — 幾 can almost never stand alone in front of a noun. Second, when the number is 2, learners say 'èr bēi'. Before a measure word Taiwanese Mandarin uses 'liǎng' instead; 二 is used for numbers you read out, like table numbers, dates, and phone digits (二號).",
+          "examples": [
+            {
+              "hanzi": "你要幾杯咖啡？我要三杯。",
+              "pinyin": "Nǐ yào jǐ bēi kāfēi? Wǒ yào sān bēi.",
+              "gloss": "How many cups of coffee do you want? I want three."
+            },
+            {
+              "hanzi": "現在幾點？現在四點。",
+              "pinyin": "Xiànzài jǐ diǎn? Xiànzài sì diǎn.",
+              "gloss": "What time is it now? It's four o'clock."
+            },
+            {
+              "hanzi": "老闆，這瓶水多少錢？",
+              "pinyin": "Lǎobǎn, zhè píng shuǐ duōshǎo qián?",
+              "gloss": "Boss, how much is this bottle of water?"
+            }
+          ],
+          "id": "g_hsk1_03_1_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "老闆，我要一杯紅茶，少糖。",
+          "pinyin": "Lǎobǎn, wǒ yào yì bēi hóngchá, shǎo táng.",
+          "gloss": "Boss, I'd like a black tea, less sugar."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "好喔，要冰的嗎？",
+          "pinyin": "Hǎo ō, yào bīng de ma?",
+          "gloss": "Sure. Do you want it iced?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "要冰的，謝謝。我朋友要三杯珍珠奶茶。",
+          "pinyin": "Yào bīng de, xièxie. Wǒ péngyǒu yào sān bēi zhēnzhū nǎichá.",
+          "gloss": "Iced, thanks. My friend wants three bubble milk teas."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "一共四杯，你們是二號。",
+          "pinyin": "Yígòng sì bēi, nǐmen shì èr hào.",
+          "gloss": "Four cups altogether; you're number two."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我用悠遊卡付，好嗎？",
+          "pinyin": "Wǒ yòng Yōuyóukǎ fù, hǎo ma?",
+          "gloss": "I'll pay with an EasyCard, okay?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "好，刷卡。三點半你的茶就會好。",
+          "pinyin": "Hǎo, shuā kǎ. Sān diǎn bàn nǐ de chá jiù huì hǎo.",
+          "gloss": "Sure, just tap the card. Your tea will be ready at three thirty."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "要",
+            "一",
+            "杯",
+            "珍珠奶茶"
+          ],
+          "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.",
+          "gloss": "I want one cup of bubble milk tea.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我們",
+            "三",
+            "點",
+            "在",
+            "捷運站",
+            "見"
+          ],
+          "pinyin": "Wǒmen sān diǎn zài jiéyùn zhàn jiàn.",
+          "gloss": "We'll meet at the MRT station at three.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "零下",
+            "四",
+            "度",
+            "好",
+            "冷",
+            "喔"
+          ],
+          "pinyin": "Líng xià sì dù hǎo lěng ō.",
+          "gloss": "Four below zero is so cold.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "二",
+            "號",
+            "桌",
+            "的",
+            "客人",
+            "要",
+            "點",
+            "菜"
+          ],
+          "pinyin": "Èr hào zhuō de kèrén yào diǎn cài.",
+          "gloss": "The customers at table two want to order.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "家",
+            "有",
+            "四",
+            "台",
+            "腳踏車"
+          ],
+          "pinyin": "Wǒ jiā yǒu sì tái jiǎotàchē.",
+          "gloss": "My family has four bicycles.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "早餐店的早上",
+        "hanzi": "早上三點半，早餐店的老闆就開了店。外面天沒亮，路上很安靜。四點，一個客人來了，他要一杯熱茶，糖少一點。四點半，人多了起來，老闆忙得沒時間坐下。他說：「開店三年了，我早上四點就起來，不用時鐘。」",
+        "gloss": "At three thirty in the morning the breakfast shop owner opens up. Outside it isn't light yet and the street is very quiet. At four o'clock a customer comes in; he wants a hot tea with just a little sugar. By four thirty more and more people arrive, and the owner is too busy to sit down. He says, \"I've had this shop for three years — I get up at four every morning without needing an alarm clock.\""
+      }
     },
     {
       "id": "l_hsk1_03_2",
@@ -67,7 +228,12 @@
           "pinyin": "wǔ",
           "gloss": "five; 5",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我五點下班。",
+            "pinyin": "Wǒ wǔ diǎn xiàbān.",
+            "gloss": "I get off work at five."
+          }
         },
         {
           "id": "v_六",
@@ -75,7 +241,12 @@
           "pinyin": "liù",
           "gloss": "six; 6",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們六點吃晚飯。",
+            "pinyin": "Wǒmen liù diǎn chī wǎnfàn.",
+            "gloss": "We eat dinner at six."
+          }
         },
         {
           "id": "v_七",
@@ -83,7 +254,12 @@
           "pinyin": "qī",
           "gloss": "seven; 7",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "七點半我吃早餐。",
+            "pinyin": "Qī diǎn bàn wǒ chī zǎocān.",
+            "gloss": "I eat breakfast at seven thirty."
+          }
         },
         {
           "id": "v_八",
@@ -91,7 +267,12 @@
           "pinyin": "bā",
           "gloss": "eight; 8",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我明天八點上班。",
+            "pinyin": "Wǒ míngtiān bā diǎn shàngbān.",
+            "gloss": "I start work at eight tomorrow."
+          }
         },
         {
           "id": "v_九",
@@ -99,7 +280,12 @@
           "pinyin": "jiǔ",
           "gloss": "nine; 9",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的狗九歲了。",
+            "pinyin": "Wǒ de gǒu jiǔ suì le.",
+            "gloss": "My dog is nine years old."
+          }
         },
         {
           "id": "v_十",
@@ -107,12 +293,147 @@
           "pinyin": "shí",
           "gloss": "ten; 10",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "十點半我們搭捷運。",
+            "pinyin": "Shí diǎn bàn wǒmen dā jiéyùn.",
+            "gloss": "At ten thirty we take the MRT."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Telling the time: Number + 點, asking with 幾點",
+          "pattern": "(Subject +) 幾點 + Verb? → (Subject +) Number + 點 (+ 半) + Verb",
+          "explanation": "To say a clock time, put the number straight in front of 點: 五點 (5:00), 六點半 (6:30), 十點 (10:00). The time word goes BEFORE the verb, not after it, so you say 我七點吃飯 (I eat at seven). To ask what time, replace the number with 幾: 你幾點下班? The answer keeps the same word order, just swapping 幾 for a number.",
+          "contrast": "點 vs 號: 五點 is a clock time (5 o'clock), 五號 is a calendar date (the 5th). If someone asks 幾點? answer with a time; if they ask 幾號? answer with a date. Same numbers, totally different question.",
+          "common_error": "Learners copy English word order and say 你下班幾點? — putting the time after the verb. In Chinese the time always comes before the verb: 你幾點下班? Another frequent slip is using 多少 to ask the time (✗多少點?); clock times use 幾, never 多少.",
+          "examples": [
+            {
+              "hanzi": "你幾點下班?",
+              "pinyin": "Nǐ jǐ diǎn xiàbān?",
+              "gloss": "What time do you get off work?"
+            },
+            {
+              "hanzi": "我六點半吃晚飯。",
+              "pinyin": "Wǒ liù diǎn bàn chī wǎnfàn.",
+              "gloss": "I eat dinner at six thirty."
+            },
+            {
+              "hanzi": "老闆八點半上班。",
+              "pinyin": "Lǎobǎn bā diǎn bàn shàngbān.",
+              "gloss": "The boss starts work at eight thirty."
+            }
+          ],
+          "id": "g_hsk1_03_2_1",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "小明,你明天幾點下班?",
+          "pinyin": "Xiǎo Míng, nǐ míngtiān jǐ diǎn xiàbān?",
+          "gloss": "Xiao Ming, what time do you get off work tomorrow?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我六點半下班,怎麼了?",
+          "pinyin": "Wǒ liù diǎn bàn xiàbān, zěnme le?",
+          "gloss": "I finish at six thirty. What's up?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "我們七點一起吃麵,好嗎?",
+          "pinyin": "Wǒmen qī diǎn yìqǐ chī miàn, hǎo ma?",
+          "gloss": "Let's have noodles together at seven, okay?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好啊!店八點半關,我們早一點。",
+          "pinyin": "Hǎo a! Diàn bā diǎn bàn guān, wǒmen zǎo yìdiǎn.",
+          "gloss": "Sure! The shop closes at eight thirty, so let's be a bit early."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "好,我騎腳踏車,很近。",
+          "pinyin": "Hǎo, wǒ qí jiǎotàchē, hěn jìn.",
+          "gloss": "Okay, I'll ride my bike, it's close."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "今天我請你!九點我們再吃冰。",
+          "pinyin": "Jīntiān wǒ qǐng nǐ! Jiǔ diǎn wǒmen zài chī bīng.",
+          "gloss": "Today's on me! At nine let's go have shaved ice too."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "五",
+            "點",
+            "下班"
+          ],
+          "pinyin": "Wǒ wǔ diǎn xiàbān.",
+          "gloss": "I get off work at five.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "七",
+            "點",
+            "吃",
+            "早餐"
+          ],
+          "pinyin": "Tā qī diǎn chī zǎocān.",
+          "gloss": "He eats breakfast at seven.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "晚上",
+            "八",
+            "點",
+            "我",
+            "看書"
+          ],
+          "pinyin": "Wǎnshàng bā diǎn wǒ kànshū.",
+          "gloss": "At eight in the evening I read.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "一",
+            "杯",
+            "咖啡",
+            "六",
+            "十",
+            "塊"
+          ],
+          "pinyin": "Yì bēi kāfēi liùshí kuài.",
+          "gloss": "A cup of coffee is sixty dollars.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "十",
+            "點半",
+            "我們",
+            "搭",
+            "捷運"
+          ],
+          "pinyin": "Shí diǎn bàn wǒmen dā jiéyùn.",
+          "gloss": "At ten thirty we take the MRT.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "我的一天",
+        "hanzi": "我早上七點吃早餐,八點騎腳踏車上班。中午和同事吃便當,一個八十塊,很便宜。下午五點下班,我搭捷運,六點半就在家了。晚上九點,我和朋友點一杯咖啡,十點半看書,很舒服。",
+        "gloss": "I eat breakfast at seven in the morning and ride my bike to work at eight. At noon I have a lunchbox with my colleagues; one costs eighty dollars, which is very cheap. I get off work at five in the afternoon, take the MRT, and I'm home by six thirty. At nine in the evening I order a cup of coffee with a friend, and at ten thirty I read — it's very relaxing."
+      }
     },
     {
       "id": "l_hsk1_03_3",
@@ -125,7 +446,12 @@
           "pinyin": "qián",
           "gloss": "coin; money; unit of weight, one tenth of a tael 两",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆，這本書多少錢？",
+            "pinyin": "Lǎobǎn, zhè běn shū duōshǎo qián?",
+            "gloss": "Boss, how much is this book?"
+          }
         },
         {
           "id": "v_塊",
@@ -133,7 +459,12 @@
           "pinyin": "kuài",
           "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "一杯紅茶三十五塊。",
+            "pinyin": "Yì bēi hóngchá sānshíwǔ kuài.",
+            "gloss": "A cup of black tea is thirty-five dollars."
+          }
         },
         {
           "id": "v_個",
@@ -141,7 +472,12 @@
           "pinyin": "gè",
           "gloss": "(classifier used before a noun that has no specific classifier); (bound form) individual",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我中午吃一個便當。",
+            "pinyin": "Wǒ zhōngwǔ chī yí ge biàndāng.",
+            "gloss": "I eat a lunchbox at noon."
+          }
         },
         {
           "id": "v_些",
@@ -149,7 +485,12 @@
           "pinyin": "xiē",
           "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買一些蘋果和麵包。",
+            "pinyin": "Wǒ mǎi yìxiē píngguǒ hé miànbāo.",
+            "gloss": "I'm buying some apples and bread."
+          }
         },
         {
           "id": "v_本",
@@ -157,7 +498,12 @@
           "pinyin": "běn",
           "gloss": "root; stem; origin",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這本書很新，也很便宜。",
+            "pinyin": "Zhè běn shū hěn xīn, yě hěn piányí.",
+            "gloss": "This book is new, and it's cheap too."
+          }
         },
         {
           "id": "v_商店",
@@ -165,12 +511,158 @@
           "pinyin": "shāng diàn",
           "gloss": "store; shop",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "學校附近有一家商店。",
+            "pinyin": "Xuéxiào fùjìn yǒu yì jiā shāngdiàn.",
+            "gloss": "There is a shop near the school."
+          }
         }
       ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
+      "grammar": [
+        {
+          "title": "Counting things: Number + 個/本/些 + Noun, and asking 多少錢",
+          "pattern": "Number + 個 / 本 / 些 + Noun　／　(這/那 + 個/本/些 +) Noun + 多少錢？",
+          "explanation": "In Chinese a number can never sit straight in front of a noun; a measure word goes in between. 個 is the general one (一個便當), 本 is for books (一本書), and 些 means 'some / a few' and only ever appears as 一些 or 這些/那些 — never with other numbers. To ask a price, put 多少錢 at the end of the sentence: 這本書多少錢？ The answer uses 塊 for dollars: 五十塊。",
+          "contrast": "個 vs 些: use 個/本 when you say an exact number (三個蘋果), use 些 when the amount is vague (一些蘋果). If you can count it out loud, don't use 些.",
+          "common_error": "Learners drop the measure word and say 我買一書 or 三便當, and they also try to say 三些蘋果. 些 can only follow 一, 這 or 那 — say 三個蘋果 instead.",
+          "examples": [
+            {
+              "hanzi": "我買一個便當和一本書。",
+              "pinyin": "Wǒ mǎi yí ge biàndāng hé yì běn shū.",
+              "gloss": "I'm buying a lunchbox and a book."
+            },
+            {
+              "hanzi": "這些蘋果多少錢？",
+              "pinyin": "Zhèxiē píngguǒ duōshǎo qián?",
+              "gloss": "How much are these apples?"
+            },
+            {
+              "hanzi": "三個五十塊，很便宜。",
+              "pinyin": "Sān ge wǔshí kuài, hěn piányí.",
+              "gloss": "Three for fifty dollars — that's cheap."
+            }
+          ],
+          "id": "g_hsk1_03_3_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk1_03_3_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "老闆，這本書多少錢？",
+          "pinyin": "Lǎobǎn, zhè běn shū duōshǎo qián?",
+          "gloss": "Boss, how much is this book?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "五十塊，這本很新喔。",
+          "pinyin": "Wǔshí kuài, zhè běn hěn xīn ō.",
+          "gloss": "Fifty dollars — this one is brand new."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "好，我買一本。這些蘋果呢？",
+          "pinyin": "Hǎo, wǒ mǎi yì běn. Zhèxiē píngguǒ ne?",
+          "gloss": "OK, I'll take one. And these apples?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "一個十五塊，三個四十塊。",
+          "pinyin": "Yí ge shíwǔ kuài, sān ge sìshí kuài.",
+          "gloss": "Fifteen dollars each, three for forty."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "那我買三個，一共多少錢？",
+          "pinyin": "Nà wǒ mǎi sān ge, yígòng duōshǎo qián?",
+          "gloss": "Then I'll take three. How much altogether?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "一共九十塊，你用悠遊卡嗎？",
+          "pinyin": "Yígòng jiǔshí kuài, nǐ yòng Yōuyóukǎ ma?",
+          "gloss": "Ninety dollars in total. Are you paying with an EasyCard?"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "本",
+            "書",
+            "多少",
+            "錢",
+            "？"
+          ],
+          "pinyin": "Zhè běn shū duōshǎo qián?",
+          "gloss": "How much is this book?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "買",
+            "一",
+            "個",
+            "便當"
+          ],
+          "pinyin": "Wǒ mǎi yí ge biàndāng.",
+          "gloss": "I'm buying a lunchbox.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "學校",
+            "附近",
+            "有",
+            "一",
+            "家",
+            "商店"
+          ],
+          "pinyin": "Xuéxiào fùjìn yǒu yì jiā shāngdiàn.",
+          "gloss": "There's a shop near the school.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "買",
+            "一些",
+            "水果"
+          ],
+          "pinyin": "Wǒ mǎi yìxiē shuǐguǒ.",
+          "gloss": "I'm buying some fruit.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "一",
+            "杯",
+            "紅茶",
+            "三十五",
+            "塊"
+          ],
+          "pinyin": "Yì bēi hóngchá sānshíwǔ kuài.",
+          "gloss": "A cup of black tea is thirty-five dollars.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "逛商店",
+        "hanzi": "週末早上，我和朋友一起逛學校附近的商店。商店不大，東西很多，也很便宜。我買了一本書，五十塊；朋友買了一些蘋果和一個便當，一共九十塊。我們用悠遊卡付錢，老闆說謝謝，也說下週再見。天氣很好，我們就騎腳踏車逛了一下，都很高興。",
+        "gloss": "On the weekend morning, my friend and I browsed the shop near our school. The shop isn't big, but there's a lot of stuff and it's cheap. I bought a book for fifty dollars; my friend bought some apples and a lunchbox, ninety dollars in all. We paid with an EasyCard, and the shop owner said thank you and see you next week. The weather was nice, so we rode our bikes around for a while. We were both very happy."
+      }
     }
   ],
   "sort_order": 17,
