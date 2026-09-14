@@ -81,11 +81,82 @@ def test_cloze_blanks_the_target_token():
         assert correct != "＿＿"
 
 
+def _only(stream, kind):
+    return [e["payload"] for e in stream if e["kind"] == kind]
+
+
 def test_tile_build_tiles_are_a_permutation_of_answer():
     stream = exercises.build_stream(LESSON, POOL)
-    for e in stream:
-        if e["kind"] == "tile_build":
-            assert sorted(e["payload"]["tiles"]) == sorted(e["payload"]["answer"])
+    for p in _only(stream, "tile_build"):
+        assert sorted(t["text"] for t in p["tiles"]) == sorted(p["answer"])
+
+
+def test_every_tile_carries_its_own_reading():
+    """A tile shows a word with pinyin or 注音 under it, per the Me-tab setting.
+    The reading has to be on the tile itself — the sentence-level pinyin cannot
+    be sliced up in the browser."""
+    stream = exercises.build_stream(LESSON, POOL)
+    tiles = [t for p in _only(stream, "tile_build") for t in p["tiles"]]
+    assert tiles
+    for t in tiles:
+        assert set(t) == {"text", "pinyin", "zhuyin"}
+        assert t["pinyin"], t
+        assert t["zhuyin"], t
+
+
+def test_a_tile_whose_reading_cannot_be_derived_still_renders():
+    """Unsplittable pinyin loses the readings, never the drill."""
+    lesson = {**LESSON, "sentences": [
+        {"tokens": ["我", "要", "水"], "pinyin": "???", "gloss": "g", "cloze_index": 2},
+    ]}
+    for p in _only(exercises.build_stream(lesson, POOL), "tile_build"):
+        assert [t["text"] for t in p["tiles"]]
+        assert all(t["pinyin"] is None and t["zhuyin"] is None for t in p["tiles"])
+
+
+# ---------------------------------------------------------------------------
+# Dictation by tiles (was: type what you hear)
+# ---------------------------------------------------------------------------
+def test_listen_type_offers_tiles_rather_than_a_text_box():
+    stream = exercises.build_stream(LESSON, POOL)
+    payloads = _only(stream, "listen_type")
+    assert payloads
+    for p in payloads:
+        assert p["tiles"], "dictation is built from tiles, not typed"
+        assert set(p["tiles"][0]) == {"text", "pinyin", "zhuyin"}
+        # The answer is still the sentence, token by token.
+        assert "".join(p["answer"]) == p["audio_text"]
+
+
+def test_dictation_tiles_include_decoys():
+    """Without decoys the drill is a word-order puzzle: every tile belongs in
+    the answer, so the learner never has to recognise a character."""
+    stream = exercises.build_stream(LESSON, POOL)
+    for p in _only(stream, "listen_type"):
+        texts = [t["text"] for t in p["tiles"]]
+        extra = sorted(_multiset_difference(texts, p["answer"]))
+        assert extra, "no decoy tiles"
+        assert not set(extra) & set(p["answer"])
+
+
+def test_dictation_answer_is_still_buildable_from_the_tiles():
+    """Every token of the answer must actually be on the rack, counting
+    repeats — 我要水/我要杯 share tokens, and a missing duplicate makes the
+    exercise unsolvable."""
+    stream = exercises.build_stream(LESSON, POOL)
+    for p in _only(stream, "listen_type"):
+        assert not _multiset_difference(p["answer"], [t["text"] for t in p["tiles"]])
+
+
+def _multiset_difference(a: list[str], b: list[str]) -> list[str]:
+    rest = list(b)
+    out = []
+    for x in a:
+        if x in rest:
+            rest.remove(x)
+        else:
+            out.append(x)
+    return out
 
 
 # ---------------------------------------------------------------------------

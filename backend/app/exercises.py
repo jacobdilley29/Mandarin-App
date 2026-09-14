@@ -11,11 +11,17 @@ each time it's opened, but distractors/orderings vary between items.
 Gradable drill kinds (used to compute the lesson score):
     match, audio_meaning, char_recognition, cloze, tile_build, listen_type, translate
 Non-gradable: vocab_intro, grammar, dialogue.
+
+`listen_type` is a historical name: the drill is built from tiles now, not
+typed. The string is kept because it is what `drill_results.kind` already
+holds, and renaming it would split that history for no gain.
 """
 
 from __future__ import annotations
 
 import random
+
+from . import zhuyin
 
 GRADABLE_KINDS = {
     "match", "audio_meaning", "char_recognition", "cloze", "particle_cloze",
@@ -109,6 +115,36 @@ def _confusable_words(pool: list[dict], correct: str, n: int, rng: random.Random
             if len(out) >= n:
                 return out
     return out
+
+
+# --- Tiles -----------------------------------------------------------------
+#
+# A tile is a word plus the reading printed under it, in pinyin or 注音 as the
+# Me tab asks. The reading is attached here, server-side, because it has to be
+# split out of the sentence's own pinyin — see zhuyin.for_tokens for why that
+# pinyin, and not the characters, is the source of truth.
+
+
+def _tiles(tokens: list[str], pinyin: str) -> list[dict]:
+    """The sentence's tokens as tiles, each carrying its own reading."""
+    return zhuyin.for_tokens(tokens, pinyin)
+
+
+def _loose_tiles(words: list[str], pool: list[dict]) -> list[dict]:
+    """Decoy tiles, read from the vocabulary rather than from a sentence."""
+    by_word = {v["traditional"]: v for v in pool}
+    out: list[dict] = []
+    for w in words:
+        v = by_word.get(w, {})
+        rows = zhuyin.for_tokens([w], v.get("pinyin") or "")
+        out.append(rows[0] if rows else {"text": w, "pinyin": None, "zhuyin": None})
+    return out
+
+
+# How many wrong words join the rack in a dictation drill. Without them every
+# tile belongs in the answer, so the exercise asks the learner to order words
+# they were handed rather than to recognise the ones they heard.
+DICTATION_DECOYS = 4
 
 
 def _mc(options_correct: str, distractors: list[str], rng: random.Random) -> list[dict]:
@@ -275,7 +311,7 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
                 "options": _mc(answer, _distractor_words(pool, answer, 3, rng), rng),
             })
         elif kind == "tile_build":
-            shuffled = list(tokens)
+            shuffled = _tiles(tokens, s.get("pinyin") or "")
             rng.shuffle(shuffled)
             add("tile_build", {
                 "tiles": shuffled,
@@ -296,9 +332,20 @@ def build_stream(lesson: dict, pool: list[dict]) -> list[dict]:
                 ),
             })
         elif kind == "listen_type":
+            # Dictation: hear it, then build it from tiles. The rack is the
+            # sentence's own words plus decoys, so hearing 水 and picking it
+            # out of 水/茶/咖啡 is the exercise — which is what typing used to
+            # ask for, minus the IME.
+            decoys = [
+                d for d in _distractor_words(pool, sent, DICTATION_DECOYS * 2, rng)
+                if d not in tokens
+            ][:DICTATION_DECOYS]
+            rack = _tiles(tokens, s.get("pinyin") or "") + _loose_tiles(decoys, pool)
+            rng.shuffle(rack)
             add("listen_type", {
                 "audio_text": sent,
-                "answer": sent,
+                "answer": tokens,
+                "tiles": rack,
                 "pinyin": s.get("pinyin"),
                 "gloss": s.get("gloss"),
             })

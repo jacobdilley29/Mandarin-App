@@ -1,7 +1,7 @@
 """Listen API (spec §3.3, §4).
 
-GET  /api/listen/dictation        a dictation sentence (audio + target)
-POST /api/listen/check            diff a dictation answer against the target
+GET  /api/listen/dictation        a dictation sentence (audio + tiles + answer)
+POST /api/listen/check            diff a free-text answer against the target
 GET  /api/listen/sets             list available comprehension sets
 GET  /api/listen/set              a comprehension set (dialogue + questions)
 GET  /api/listen/tones            a tone ear-training item (single | pair)
@@ -37,6 +37,14 @@ class DictationCheck(BaseModel):
 
 @router.post("/check")
 def check_dictation(body: DictationCheck) -> dict:
+    """Diff a typed answer against the target.
+
+    No longer called by the app: dictation is built from tiles, which the
+    client can check itself by comparing the tokens. Kept because it is the
+    only character/pinyin diff in the codebase and the tone-sensitive pinyin
+    comparison behind it (app/textdiff.py) is worth keeping alive for a typed
+    mode if one ever comes back.
+    """
     return textdiff.dictation_check(
         body.expected_hanzi, body.expected_pinyin, body.answer, body.tone_sensitive
     )

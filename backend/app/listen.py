@@ -12,6 +12,7 @@ import json
 import random
 import sqlite3
 
+from . import dictionary, zhuyin
 from .audio import VOICES
 from .config import REPO_ROOT
 from .tones import TONE_NAMES, han_syllable_count, tones_from_pinyin
@@ -34,16 +35,69 @@ def _load_sets() -> list[dict]:
 # Dictation
 # ---------------------------------------------------------------------------
 def _dictation_pool(conn: sqlite3.Connection) -> list[dict]:
+    """Dictation candidates, each carrying the tokens its tiles are built from.
+
+    The two sources have different shapes. A drill sentence is already a list of
+    words. A dialogue line is one string, so it has to be segmented — which
+    `dictionary.annotate` already does against the curriculum plus CC-CEDICT,
+    for tap-to-define.
+    """
     pool: list[dict] = []
     for lesson in conn.execute("SELECT id, sentences, dialogue FROM lessons").fetchall():
         for s in json.loads(lesson["sentences"] or "[]"):
-            hanzi = "".join(s.get("tokens", []))
-            if hanzi and s.get("pinyin"):
-                pool.append({"hanzi": hanzi, "pinyin": s["pinyin"], "gloss": s.get("gloss", "")})
+            tokens = [t for t in s.get("tokens", []) if t.strip()]
+            if tokens and s.get("pinyin"):
+                pool.append({
+                    "hanzi": "".join(tokens),
+                    "tokens": tokens,
+                    "pinyin": s["pinyin"],
+                    "gloss": s.get("gloss", ""),
+                })
         for line in json.loads(lesson["dialogue"] or "[]"):
             if line.get("hanzi") and line.get("pinyin"):
-                pool.append({"hanzi": line["hanzi"], "pinyin": line["pinyin"], "gloss": line.get("gloss", "")})
+                pool.append({
+                    "hanzi": line["hanzi"],
+                    "tokens": None,  # segmented on demand; see dictation_item
+                    "pinyin": line["pinyin"],
+                    "gloss": line.get("gloss", ""),
+                })
     return pool
+
+
+def _segment(conn: sqlite3.Connection, hanzi: str) -> list[str]:
+    """A line's Han words, punctuation dropped — punctuation is not a tile."""
+    return [
+        span["text"]
+        for span in dictionary.annotate(conn, hanzi)
+        if not span.get("plain") and span["text"].strip()
+    ]
+
+
+# Wrong words on the rack. Without them the drill is a word-order puzzle: every
+# tile belongs in the answer, so the learner never has to recognise one.
+DECOYS = 4
+
+
+def _decoy_tiles(conn: sqlite3.Connection, avoid: set[str], seed: str) -> list[dict]:
+    rows = conn.execute(
+        "SELECT traditional, pinyin FROM vocab ORDER BY id"
+    ).fetchall()
+    candidates = [r for r in rows if r["traditional"] not in avoid]
+    rng = random.Random(seed)
+    rng.shuffle(candidates)
+
+    out: list[dict] = []
+    seen: set[str] = set()
+    for r in candidates:
+        word = r["traditional"]
+        if word in seen:
+            continue
+        seen.add(word)
+        tile = zhuyin.for_tokens([word], r["pinyin"] or "")
+        out.append(tile[0] if tile else {"text": word, "pinyin": None, "zhuyin": None})
+        if len(out) >= DECOYS:
+            break
+    return out
 
 
 def dictation_item(conn: sqlite3.Connection) -> dict | None:
@@ -51,10 +105,21 @@ def dictation_item(conn: sqlite3.Connection) -> dict | None:
     if not pool:
         return None
     item = random.choice(pool)
+
+    tokens = item["tokens"] or _segment(conn, item["hanzi"])
+    if not tokens:
+        return None
+
+    tiles = zhuyin.for_tokens(tokens, item["pinyin"])
+    tiles += _decoy_tiles(conn, set(tokens), item["hanzi"])
+    random.Random(item["hanzi"]).shuffle(tiles)
+
     return {
         "hanzi": item["hanzi"],
         "pinyin": item["pinyin"],
         "gloss": item["gloss"],
+        "answer": tokens,
+        "tiles": tiles,
         "audio_text": item["hanzi"],
         "voice": _pick_voice(item["hanzi"]),
     }

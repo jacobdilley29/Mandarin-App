@@ -15,12 +15,14 @@ import { AskAbout } from "../../components/AskAbout";
 import { Glossable } from "../../components/Glossable";
 import { Phonetic } from "../../components/Phonetic";
 import { Speakable } from "../../components/Speakable";
+import {
+  gradeTiles,
+  type Tile,
+  TileRack,
+  TileTray,
+  tilesMatch,
+} from "../../components/Tiles";
 import { ToneMark } from "../../components/ToneMark";
-
-// Compare two Han strings ignoring spaces/punctuation (for listen-and-type).
-function normalize(s: string): string {
-  return s.replace(/[\s，。？！、,.?!]/g, "");
-}
 
 function PlayButton({ text, big }: { text: string; big?: boolean }) {
   const { play, state } = useSpeak();
@@ -426,75 +428,63 @@ function TranslateDrill({ ex, showPinyin, onDone }: DrillProps) {
   );
 }
 
-function TileBuild({ ex, showPinyin, onDone }: DrillProps) {
+// Build a sentence from tiles. Shared by the word-order drill and by dictation
+// below, which differ only in what the learner is given to start from: the
+// English gloss, or the audio.
+function TileDrill({
+  ex,
+  showPinyin,
+  onDone,
+  prompt,
+  header,
+}: DrillProps & { prompt: string; header?: React.ReactNode }) {
   const p = ex.payload;
   const answer: string[] = p.answer;
-  const [tiles, setTiles] = useState<string[]>(p.tiles);
-  const [built, setBuilt] = useState<string[]>([]);
+  const [rack, setRack] = useState<Tile[]>(p.tiles);
+  const [built, setBuilt] = useState<Tile[]>([]);
   const [checked, setChecked] = useState<null | boolean>(null);
 
   function place(i: number) {
     if (checked != null) return;
-    setBuilt([...built, tiles[i]]);
-    setTiles(tiles.filter((_, j) => j !== i));
+    setBuilt([...built, rack[i]]);
+    setRack(rack.filter((_, j) => j !== i));
   }
   function remove(i: number) {
     if (checked != null) return;
-    setTiles([...tiles, built[i]]);
+    setRack([...rack, built[i]]);
     setBuilt(built.filter((_, j) => j !== i));
-  }
-  function check() {
-    const ok = built.join("") === answer.join("");
-    setChecked(ok);
   }
 
   return (
     <div>
-      <div className="mb-3 text-sm text-ink-soft">Build the sentence: “{p.gloss}”.</div>
-      <div
-        className={[
-          "min-h-[3.5rem] rounded-md border-2 border-dashed p-3",
-          checked === true ? "border-good bg-good/10" : checked === false ? "border-bad bg-accent-soft" : "border-border",
-        ].join(" ")}
-      >
-        <div className="flex flex-wrap gap-2">
-          {built.map((t, i) => (
-            <button
-              key={i}
-              type="button"
-              onClick={() => remove(i)}
-              lang="zh-Hant"
-              className="tap rounded bg-primary px-3 py-2 font-han text-lg text-primary-ink"
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-      </div>
+      <div className="mb-3 text-sm text-ink-soft">{prompt}</div>
+      {header}
+      <TileTray
+        tiles={built}
+        states={checked == null ? undefined : gradeTiles(built, answer)}
+        showReading={showPinyin}
+        onRemove={checked == null ? remove : undefined}
+        frame={checked == null ? "neutral" : checked ? "correct" : "wrong"}
+      />
       {checked === false && (
-        <div lang="zh-Hant" className="mt-2 text-sm text-bad">
-          Correct: {answer.join(" ")}
+        <div lang="zh-Hant" className="mt-2 font-han text-sm text-bad">
+          {answer.join("")}
         </div>
       )}
-      <Pinyin text={showPinyin ? p.pinyin : undefined} show={showPinyin && checked != null} />
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tiles.map((t, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => place(i)}
-            lang="zh-Hant"
-            className="tap rounded border border-border bg-surface px-3 py-2 font-han text-lg text-ink hover:border-primary"
-          >
-            {t}
-          </button>
-        ))}
-      </div>
+      {checked != null && (
+        <>
+          <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+          {p.gloss && <div className="text-sm text-ink-soft">{p.gloss}</div>}
+        </>
+      )}
+      {checked == null && (
+        <TileRack tiles={rack} showReading={showPinyin} onPlace={place} />
+      )}
       {checked == null ? (
         <button
           type="button"
           disabled={built.length === 0}
-          onClick={check}
+          onClick={() => setChecked(tilesMatch(built, answer))}
           className="btn-continue mt-6 w-full rounded-md bg-primary py-3 font-medium text-primary-ink disabled:opacity-40"
         >
           Check
@@ -506,50 +496,25 @@ function TileBuild({ ex, showPinyin, onDone }: DrillProps) {
   );
 }
 
-function ListenType({ ex, showPinyin, onDone }: DrillProps) {
-  const p = ex.payload;
-  const [value, setValue] = useState("");
-  const [checked, setChecked] = useState<null | boolean>(null);
-  function check() {
-    setChecked(normalize(value) === normalize(p.answer));
-  }
+function TileBuild(props: DrillProps) {
+  return <TileDrill {...props} prompt={`Build the sentence: “${props.ex.payload.gloss}”.`} />;
+}
+
+// Dictation. Was a text box, which on a phone means fighting an IME before you
+// can answer at all; the tiles ask the same question — which words did you
+// hear — without one. Decoy tiles come from the server so the rack is not just
+// the answer shuffled.
+function ListenTiles(props: DrillProps) {
   return (
-    <div className="text-center">
-      <div className="mb-2 text-sm text-ink-soft">Type what you hear.</div>
-      <div className="flex justify-center">
-        <PlayButton text={p.audio_text} big />
-      </div>
-      <input
-        lang="zh-Hant"
-        value={value}
-        disabled={checked != null}
-        onChange={(e) => setValue(e.target.value)}
-        placeholder="輸入你聽到的…"
-        className="mt-5 w-full rounded-md border border-border bg-surface px-4 py-3 text-center font-han text-xl text-ink"
-      />
-      {checked != null && (
-        <div className="mt-3">
-          <div lang="zh-Hant" className={["font-han text-lg", checked ? "text-good" : "text-bad"].join(" ")}>
-            {checked ? "✓ " : ""}
-            {p.answer}
-          </div>
-          <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
-          <div className="text-sm text-ink-soft">{p.gloss}</div>
+    <TileDrill
+      {...props}
+      prompt="Listen, then build what you hear."
+      header={
+        <div className="mb-4 flex justify-center">
+          <PlayButton text={props.ex.payload.audio_text} big />
         </div>
-      )}
-      {checked == null ? (
-        <button
-          type="button"
-          disabled={!value}
-          onClick={check}
-          className="mt-6 w-full rounded-md bg-primary py-3 font-medium text-primary-ink disabled:opacity-40"
-        >
-          Check
-        </button>
-      ) : (
-        <ContinueButton onClick={() => onDone(checked)} />
-      )}
-    </div>
+      }
+    />
   );
 }
 
@@ -621,7 +586,7 @@ function renderDrill(ex: Exercise, showPinyin: boolean, onDone: (c: boolean) => 
     case "tile_build":
       return <TileBuild {...props} />;
     case "listen_type":
-      return <ListenType {...props} />;
+      return <ListenTiles {...props} />;
     case "dialogue":
       return <DialogueDrill {...props} />;
     default:

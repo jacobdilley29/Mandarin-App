@@ -75,17 +75,32 @@ def split_syllables(pinyin: str, expect: int | None = None) -> list[str]:
     if not pinyin:
         return []
 
+    return [s for s, _ in _split_marked(pinyin, expect)]
+
+
+def _split_marked(pinyin: str, expect: int | None = None) -> list[tuple[str, bool]]:
+    """split_syllables, each syllable flagged with whether it opened a chunk.
+
+    The flag is what lets a caller put the pinyin back together the way the
+    curriculum wrote it: 'biànlì shāngdiàn' has two chunks and four syllables,
+    and rejoining it as 'biàn lì shāng diàn' would be a different spelling of
+    the same word from the one the vocabulary card shows an inch away.
+    """
+    pinyin = (pinyin or "").strip()
+    if not pinyin:
+        return []
+
     # Each whitespace-separated chunk is tokenised on its own, so a space is
     # always honoured as a boundary and never has to be one. The curriculum
     # spaces pinyin by syllable ('lǐng qián'), by word ('biànlì shāngdiàn' —
     # two chunks, four syllables), and not at all ('yóujú'), sometimes within
     # the same unit.
-    out: list[str] = []
+    out: list[tuple[str, bool]] = []
     for chunk in pinyin.split():
         piece = _split_chunk(chunk)
         if piece is None:
             return []
-        out.extend(piece)
+        out.extend((syl, i == 0) for i, syl in enumerate(piece))
 
     if expect is not None and len(out) != expect:
         return []
@@ -93,19 +108,53 @@ def split_syllables(pinyin: str, expect: int | None = None) -> list[str]:
 
 
 def _split_chunk(chunk: str) -> list[str] | None:
-    """Greedy longest-match over one whitespace-free run, or None if it can't."""
+    """Longest-match over one whitespace-free run, or None if it can't.
+
+    Backtracking, not plain greedy, and it looks for the split with the fewest
+    syllables. Both of those are answers to the same awkward fact: several
+    syllables are prefixes of longer non-syllables, and pypinyin's inventory
+    includes bare interjections ('o', 'ng', 'hm'). So
+
+      * greedy dead-ends — 'nánguò' takes 'nang', is left holding 'uo', and
+        gives up on a word it can perfectly well split as nán + guò (likewise
+        'qùnián' → qun + ian, 'fànguǎn' → fang + uan); and
+      * the first split backtracking happens to find can be the wrong one —
+        'bàngōngshì' splits as bàng + ō + ng + shì, four syllables for three
+        characters, which is a legal reading of the letters and a nonsense
+        reading of the word.
+
+    Fewest-syllables settles both: bàn + gōng + shì wins on count, and ties
+    keep the longest-first candidate, so a chunk that genuinely is one syllable
+    is still read as one.
+    """
     plain = untone(chunk).lower()
     inventory = _syllables()
-    out: list[str] = []
-    i = 0
-    while i < len(plain):
+
+    @functools.lru_cache(maxsize=None)
+    def split_from(i: int) -> tuple[int, ...] | None:
+        """The shortest syllable split from i, as end-offsets, or None."""
+        if i == len(plain):
+            return ()
+        best: tuple[int, ...] | None = None
         for size in range(min(6, len(plain) - i), 0, -1):
-            if plain[i : i + size] in inventory:
-                out.append(chunk[i : i + size])
-                i += size
-                break
-        else:
-            return None
+            if plain[i : i + size] not in inventory:
+                continue
+            rest = split_from(i + size)
+            if rest is None:
+                continue
+            candidate = (i + size, *rest)
+            if best is None or len(candidate) < len(best):
+                best = candidate
+        return best
+
+    ends = split_from(0)
+    if ends is None:
+        return None
+    out: list[str] = []
+    start = 0
+    for end in ends:
+        out.append(chunk[start:end])
+        start = end
     return out
 
 
@@ -145,3 +194,58 @@ _HAN = re.compile(r"[㐀-䶿一-鿿]")
 def for_word(traditional: str, pinyin: str) -> str:
     """Zhuyin for a vocabulary entry, using its character count as the check."""
     return from_pinyin(pinyin, expect=len(_HAN.findall(traditional or "")) or None)
+
+
+# Sentence punctuation, Latin and Han alike. _split_chunk matches runs of
+# letters, so a single trailing '.' fails the whole sentence — and every
+# dialogue line ends in one.
+_PUNCT = re.compile(r"[，。、？！；：「」『』（）《》〈〉…—\-,.?!;:\"'()\[\]]")
+
+
+def for_tokens(tokens: list[str], pinyin: str) -> list[dict]:
+    """One reading per token, split out of the sentence's own pinyin.
+
+    A tile shows a word with its reading underneath, but the content stores the
+    reading for the whole sentence: ['我','要','一','個','便當'] alongside
+    'Wǒ yào yí ge biàndāng.'. This hands each token back the syllables that
+    belong to it — one syllable per Han character, which is what makes the
+    mapping decidable at all.
+
+    The reading comes from the sentence, never from the characters: see this
+    module's docstring for the 9.2% of the curriculum where those two disagree,
+    and why the disagreements are exactly the readings the app exists to fix.
+
+    Every token comes back, always, so the caller can render the tiles whether
+    or not the split worked. What is missing when it fails is the reading, and
+    it is missing for **all** tokens rather than some — a partial mapping slides
+    every later reading one tile to the left, which is worse than none, because
+    it looks right.
+    """
+    rows: list[dict] = [{"text": t, "pinyin": None, "zhuyin": None} for t in tokens]
+    if not rows:
+        return rows
+
+    counts = [len(_HAN.findall(t)) for t in tokens]
+    total = sum(counts)
+    if not total:
+        return rows
+
+    marked = _split_marked(_PUNCT.sub(" ", pinyin or ""), expect=total)
+    if not marked:
+        return rows
+
+    at = 0
+    for row, n in zip(rows, counts):
+        if not n:
+            continue  # punctuation token: no reading to give it
+        mine = marked[at : at + n]
+        at += n
+        # Rejoin the way it was written — spaces only where the source had
+        # them, so 便利商店 stays 'biànlì shāngdiàn' on the tile and on the
+        # vocabulary card alike. Zhuyin is always syllable-spaced: that is how
+        # Taiwan prints it, and it has no joined form to preserve.
+        row["pinyin"] = "".join(
+            (" " if starts and i else "") + syl for i, (syl, starts) in enumerate(mine)
+        )
+        row["zhuyin"] = " ".join(syllable(syl) for syl, _ in mine)
+    return rows

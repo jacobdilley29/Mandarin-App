@@ -1,45 +1,41 @@
 import { useCallback, useEffect, useState } from "react";
-import { api, type DictationItem, type DiffResult, type DiffSegment } from "../../api";
+import { api, type DictationItem, type Tile } from "../../api";
 import { useSpeak } from "../../audio";
 import { useSettings } from "../../SettingsContext";
 import { DEFAULT_LISTEN_SPEED, ListenSpeed } from "../../components/ListenSpeed";
+import { Phonetic } from "../../components/Phonetic";
+import { gradeTiles, TileRack, TileTray, tilesMatch } from "../../components/Tiles";
 
-function Segment({ seg }: { seg: DiffSegment }) {
-  switch (seg.type) {
-    case "equal":
-      return <span className="text-ink">{seg.text}</span>;
-    case "missing":
-      return (
-        <span className="rounded bg-accent-soft px-0.5 text-bad underline decoration-dotted">
-          {seg.text}
-        </span>
-      );
-    case "extra":
-      return <span className="text-ink-faint line-through">{seg.text}</span>;
-    case "wrong":
-      return (
-        <span>
-          <span className="text-ink-faint line-through">{seg.got}</span>
-          <span className="rounded bg-accent-soft px-0.5 text-bad">{seg.expected}</span>
-        </span>
-      );
-  }
-}
-
+// Dictation, built from tiles rather than typed.
+//
+// It used to be a text box that accepted characters or pinyin. On a phone that
+// means an IME standing between the learner and the answer, and in pinyin mode
+// it quietly asked a different question — spell the sound — than the one the
+// drill is for. Tiles ask only "which words did you hear", which is the whole
+// point, and the reading rides along on each tile per the Me-tab setting.
 export default function Dictation() {
   const { settings } = useSettings();
+  const showReading = settings?.show_pinyin ?? true;
   const { play } = useSpeak();
+
   const [item, setItem] = useState<DictationItem | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [rate, setRate] = useState(DEFAULT_LISTEN_SPEED);
-  const [answer, setAnswer] = useState("");
-  const [toneSensitive, setToneSensitive] = useState(true);
-  const [result, setResult] = useState<DiffResult | null>(null);
+  const [rack, setRack] = useState<Tile[]>([]);
+  const [built, setBuilt] = useState<Tile[]>([]);
+  const [checked, setChecked] = useState<null | boolean>(null);
 
   const load = useCallback(() => {
-    setResult(null);
-    setAnswer("");
-    api.listenDictation().then(setItem).catch((e) => setError(String(e)));
+    setChecked(null);
+    setBuilt([]);
+    setRack([]);
+    api
+      .listenDictation()
+      .then((next) => {
+        setItem(next);
+        setRack(next.tiles);
+      })
+      .catch((e) => setError(String(e)));
   }, []);
   useEffect(load, [load]);
 
@@ -47,19 +43,15 @@ export default function Dictation() {
     if (item) play(item.audio_text, { voice: item.voice, rate: r });
   }
 
-  async function check() {
-    if (!item || !answer.trim()) return;
-    try {
-      const r = await api.listenCheck({
-        expected_hanzi: item.hanzi,
-        expected_pinyin: item.pinyin,
-        answer,
-        tone_sensitive: toneSensitive,
-      });
-      setResult(r);
-    } catch (e) {
-      setError(String(e));
-    }
+  function place(i: number) {
+    if (checked != null) return;
+    setBuilt([...built, rack[i]]);
+    setRack(rack.filter((_, j) => j !== i));
+  }
+  function remove(i: number) {
+    if (checked != null) return;
+    setRack([...rack, built[i]]);
+    setBuilt(built.filter((_, j) => j !== i));
   }
 
   if (error) return <div className="text-bad">{error}</div>;
@@ -67,7 +59,7 @@ export default function Dictation() {
 
   return (
     <div className="card">
-      <p className="text-sm text-ink-soft">Listen and type what you hear — characters or pinyin.</p>
+      <p className="text-sm text-ink-soft">Listen, then build what you hear from the tiles.</p>
 
       <div className="mt-4 flex flex-col items-center gap-3">
         <button
@@ -89,42 +81,36 @@ export default function Dictation() {
         />
       </div>
 
-      <input
-        lang="zh-Hant"
-        value={answer}
-        disabled={!!result}
-        onChange={(e) => setAnswer(e.target.value)}
-        onKeyDown={(e) => e.key === "Enter" && check()}
-        placeholder="輸入 / type here…"
-        className="mt-5 w-full rounded-md border border-border bg-surface px-4 py-3 text-center font-han text-xl text-ink"
-      />
-
-      <label className="mt-2 flex items-center justify-end gap-2 text-xs text-ink-soft">
-        <input
-          type="checkbox"
-          checked={toneSensitive}
-          onChange={(e) => setToneSensitive(e.target.checked)}
-          className="accent-[color:var(--primary)]"
+      <div className="mt-5">
+        <TileTray
+          tiles={built}
+          states={checked == null ? undefined : gradeTiles(built, item.answer)}
+          showReading={showReading}
+          onRemove={checked == null ? remove : undefined}
+          frame={checked == null ? "neutral" : checked ? "correct" : "wrong"}
         />
-        match tones (pinyin)
-      </label>
+      </div>
 
-      {result ? (
-        <div className="mt-5">
-          <div
-            className={[
-              "rounded-md border p-4 text-center",
-              result.correct ? "border-good bg-good/10" : "border-border bg-surface-2",
-            ].join(" ")}
+      {checked == null ? (
+        <>
+          <TileRack tiles={rack} showReading={showReading} onPlace={place} />
+          <button
+            type="button"
+            disabled={built.length === 0}
+            onClick={() => setChecked(tilesMatch(built, item.answer))}
+            className="mt-6 w-full rounded-md bg-primary py-3 font-medium text-primary-ink disabled:opacity-40"
           >
-            <div lang="zh-Hant" className="font-han text-xl leading-relaxed">
-              {result.segments.map((s, i) => (
-                <Segment key={i} seg={s} />
-              ))}
-            </div>
-            <div className={["mt-1 text-sm font-medium", result.correct ? "text-good" : "text-warn"].join(" ")}>
-              {result.correct ? "✓ Correct" : "Not quite — corrected above"}
-            </div>
+            Check
+          </button>
+        </>
+      ) : (
+        <div className="mt-4">
+          <div
+            className={["text-center text-sm font-medium", checked ? "text-good" : "text-warn"].join(
+              " ",
+            )}
+          >
+            {checked ? "✓ Correct" : "Not quite — the sentence was:"}
           </div>
           <div className="mt-3 rounded-md bg-surface-2 p-3 text-center">
             <button
@@ -135,7 +121,12 @@ export default function Dictation() {
             >
               {item.hanzi}
             </button>
-            {settings?.show_pinyin && <div className="text-sm text-ink-soft">{item.pinyin}</div>}
+            {showReading && (
+              <Phonetic
+                pinyin={item.pinyin}
+                className="mt-0.5 block text-sm text-ink-soft"
+              />
+            )}
             <div className="text-sm text-ink-soft">{item.gloss}</div>
           </div>
           <button
@@ -146,15 +137,6 @@ export default function Dictation() {
             Next ▸
           </button>
         </div>
-      ) : (
-        <button
-          type="button"
-          disabled={!answer.trim()}
-          onClick={check}
-          className="mt-4 w-full rounded-md bg-primary py-3 font-medium text-primary-ink disabled:opacity-40"
-        >
-          Check
-        </button>
       )}
     </div>
   );

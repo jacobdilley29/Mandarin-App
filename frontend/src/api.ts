@@ -1,6 +1,10 @@
 // Thin API client. In dev, Vite proxies /api to the backend; in production the
 // backend serves this bundle so same-origin requests just work.
 
+import type { Tile } from "./components/Tiles";
+
+export type { Tile };
+
 export interface AppStatus {
   version: string;
   phase: number;
@@ -256,6 +260,11 @@ export interface DictationItem {
   hanzi: string;
   pinyin: string;
   gloss: string;
+  // The answer as tiles: the words to build, and the rack to build them from
+  // (those words plus decoys, shuffled). Readings are attached server-side —
+  // see backend/app/zhuyin.py `for_tokens`.
+  answer: string[];
+  tiles: Tile[];
   audio_text: string;
   voice: string;
 }
