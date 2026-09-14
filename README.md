@@ -466,6 +466,35 @@ Every sentence is checked so it only uses characters the learner has met by that
 point; `load_content` refuses to load violations, and generation refuses to
 promote a unit that has any.
 
+### Teaching order
+
+Units are taught in `sort_order`. The skeleton builder puts **every hand-authored
+unit first**, then the generated ones by level — which was a deliberate reaction
+to a real failure (generated units were once unthemed word bags with no
+sentences, and level-ordering put them at the front of Learn). Now that generated
+units are themed, complete and gated, that ordering has an obvious cost: the
+authored units are HSK 2-4, so a learner meets 銀行郵局 before any HSK 1 material.
+
+`make reorder` puts the curriculum in level order, with authored units still
+leading their own level — 便利商店 opens HSK 2 rather than the whole course.
+
+**It reports before it writes, because reordering is not cosmetic.** Character
+scope is cumulative in `sort_order`: a lesson may use anything taught before it.
+Moving a generated HSK 2 unit ahead of the authored HSK 3 units removes their
+vocabulary from what its sentences may use, so content that was correct — and
+paid for — when it was generated can fall out of scope and drop the unit back to
+draft. The report names every sentence that would, so the trade is a measurement
+rather than a guess.
+
+```bash
+make reorder                 # report only
+make reorder ARGS=--apply    # write the new sort_order
+```
+
+It rewrites `sort_order` and nothing else. **Do not use `make build-skeleton` to
+change ordering** — that rebuilds generated units from their theming plans and
+discards every generated lesson along with them.
+
 ### How content reaches the app
 
 `content/units/*.json` is the source of truth; `content.db` is derived from it.
