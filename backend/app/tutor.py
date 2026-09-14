@@ -74,8 +74,13 @@ def _current_position(conn: sqlite3.Connection) -> dict:
         "last_completed": (
             {"lesson": last["title"], "unit": last["unit"]} if last else None
         ),
+        # Joined to `lessons` deliberately: lesson_progress is keyed by id with
+        # no foreign key, and the 注音 course keeps its progress in the same
+        # table. Counting rows alone would report those as Mandarin lessons.
         "lessons_done": conn.execute(
-            "SELECT COUNT(*) AS n FROM lesson_progress WHERE completed = 1"
+            """SELECT COUNT(*) AS n FROM lesson_progress p
+               JOIN lessons l ON l.id = p.lesson_id
+               WHERE p.completed = 1"""
         ).fetchone()["n"],
     }
 

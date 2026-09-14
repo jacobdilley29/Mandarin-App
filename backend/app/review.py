@@ -10,7 +10,7 @@ from __future__ import annotations
 import random
 import sqlite3
 
-from . import content, srs
+from . import content, srs, zhuyin_course
 from .exercises import _distractor_glosses, _distractor_words, _mc, short_gloss
 
 # Review render kinds in rotation. cloze only applies when the item has an
@@ -232,6 +232,12 @@ def build_queue(conn: sqlite3.Connection, new_limit: int) -> list[dict]:
             if not g:
                 continue
             rendered = _render_grammar_rotating(card, g, patterns)
+            if rendered:
+                items.append({**base, **rendered})
+            continue
+
+        if card["item_type"] == zhuyin_course.ITEM_TYPE:
+            rendered = zhuyin_course.render_card(card)
             if rendered:
                 items.append({**base, **rendered})
 

@@ -56,6 +56,25 @@ export default function Learn() {
         </div>
       )}
 
+      {/* The alphabet the rest of the app prints. Pinned above the curriculum
+          rather than given its own tab: it is a course you finish once, and the
+          tab bar is already seven wide on a phone. */}
+      <Link
+        to="/learn/zhuyin"
+        className="mb-6 flex items-center gap-4 rounded-md border border-border bg-surface px-4 py-3 transition-colors hover:border-primary"
+      >
+        <span lang="zh-Hant" className="font-han text-2xl tracking-wide text-primary">
+          ㄅㄆㄇㄈ
+        </span>
+        <span className="flex-1">
+          <span className="block text-sm font-medium text-ink">Learn 注音</span>
+          <span className="block text-xs text-ink-soft">
+            Taiwan's own alphabet — 37 symbols, in order
+          </span>
+        </span>
+        <span className="text-ink-faint">›</span>
+      </Link>
+
       {!data ? (
         <div className="card text-sm text-ink-soft">Loading curriculum…</div>
       ) : (

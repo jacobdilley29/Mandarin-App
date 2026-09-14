@@ -214,7 +214,7 @@ export interface ReviewItem {
   item_id: string;
   reps: number;
   state: string;
-  item_type: "vocab" | "grammar";
+  item_type: "vocab" | "grammar" | "zhuyin";
   kind:
     | "recognition"
     | "recall"
@@ -223,7 +223,10 @@ export interface ReviewItem {
     // Grammar points get drills suited to a pattern rather than a word (§3.3).
     | "pattern_recall"
     | "particle_cloze"
-    | "pattern_build";
+    | "pattern_build"
+    // 注音 symbols share the queue with vocab and grammar, so a symbol that
+    // hasn't stuck comes back on its own.
+    | "zhuyin_recall";
   answer: string | string[];
   options?: Option[];
   char?: string;
@@ -237,6 +240,11 @@ export interface ReviewItem {
   pattern?: string;
   explanation?: string;
   tokens?: string[];
+  // 注音 fields.
+  symbol?: string;
+  group?: string;
+  note?: string;
+  example?: { traditional: string; pinyin: string; gloss: string };
 }
 export interface ReviewQueue {
   items: ReviewItem[];
@@ -253,6 +261,53 @@ export interface ReviewAnswerResult {
   state: string;
   due: string | null;
   stability: number | null;
+}
+
+// --- 注音 course types ---
+// The alphabet itself, taught rather than displayed. Hand-authored content, so
+// it comes from its own endpoints rather than the curriculum's.
+export interface ZhuyinLessonSummary {
+  id: string;
+  title: string;
+  subtitle: string;
+  note: string;
+  symbols: string[];
+  completed: boolean;
+  best_score: number | null;
+  unlocked: boolean;
+}
+export interface ZhuyinCourse {
+  lessons: ZhuyinLessonSummary[];
+  groups: Record<string, string>;
+  total_symbols: number;
+  learned_symbols: number;
+}
+export interface ZhuyinExercise {
+  id: string;
+  kind: string;
+  gradable: boolean;
+  // Payload shape varies by kind (see backend/app/zhuyin_course.py); consumers
+  // narrow on `kind`. `symbol` is the one field every payload carries, because
+  // it is what the SRS card is keyed on.
+  payload: Record<string, unknown> & { symbol: string };
+}
+export interface ZhuyinLesson {
+  id: string;
+  title: string;
+  subtitle: string;
+  note: string;
+  symbols: string[];
+  gradable_count: number;
+  exercises: ZhuyinExercise[];
+}
+export interface ZhuyinResult {
+  score: number;
+  correct: number;
+  total: number;
+  passed: boolean;
+  completed: boolean;
+  best_score: number;
+  new_srs_cards: number;
 }
 
 // --- Listen types ---
@@ -583,6 +638,14 @@ export const api = {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ lesson_id, rating }),
     }).then(json<PassageRated>),
+  zhuyinCourse: () => fetch("/api/zhuyin/course").then(json<ZhuyinCourse>),
+  zhuyinLesson: (id: string) => fetch(`/api/zhuyin/lesson/${id}`).then(json<ZhuyinLesson>),
+  zhuyinResult: (id: string, results: { symbol: string; correct: boolean }[]) =>
+    fetch(`/api/zhuyin/lesson/${id}/result`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ results }),
+    }).then(json<ZhuyinResult>),
   reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
   reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
   reviewAnswer: (card_id: number, rating: number) =>

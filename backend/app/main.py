@@ -34,6 +34,7 @@ from .routers import (
     talk,
     tutor,
     settings as settings_router,
+    zhuyin as zhuyin_router,
 )
 
 settings = get_settings()
@@ -84,6 +85,7 @@ app.include_router(dictionary_router.router)
 app.include_router(settings_router.router)
 app.include_router(learn.router)
 app.include_router(reading_router.router)
+app.include_router(zhuyin_router.router)
 app.include_router(review.router)
 app.include_router(listen.router)
 app.include_router(practice.router)

@@ -33,7 +33,13 @@ _MATURE_DIFFICULTY = 5.0
 # answered as flashcards: without this filter they would take slots in a queue
 # that cannot render them — shrinking it silently — and inflate a due badge that
 # reviewing could never clear.
-QUEUE_ITEM_TYPES = ("vocab", "grammar")
+#
+# 注音 symbols ('zhuyin') are in the queue rather than quarantined like
+# passages, because they are flashcards in the ordinary sense — hear it, pick
+# it — and a half-learned symbol is exactly the thing that should come back
+# without being sought out. Whatever is listed here, review.build_queue must
+# know how to render.
+QUEUE_ITEM_TYPES = ("vocab", "grammar", "zhuyin")
 _QUEUE_FILTER = "item_type IN ({})".format(", ".join("?" * len(QUEUE_ITEM_TYPES)))
 
 

@@ -34,6 +34,7 @@ EXPECTED_PREFIXES = [
     "/api/listen",
     "/api/practice",
     "/api/reading",
+    "/api/zhuyin",
     "/api/speak",
     "/api/talk",
     "/api/tutor",
@@ -97,3 +98,40 @@ def test_annotate_refuses_an_essay(client):
     """The body cap is a guard, not a suggestion."""
     r = client.post("/api/dictionary/annotate", json={"text": "我" * 2001})
     assert r.status_code == 422
+
+
+# --- The 注音 course, end to end over HTTP ---------------------------------
+
+
+def test_the_course_answers_over_http(client):
+    r = client.get("/api/zhuyin/course")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["total_symbols"] == 41
+    assert body["lessons"][0]["unlocked"] is True
+
+
+def test_a_course_lesson_answers_over_http(client):
+    lesson_id = client.get("/api/zhuyin/course").json()["lessons"][0]["id"]
+    r = client.get(f"/api/zhuyin/lesson/{lesson_id}")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["exercises"]
+    assert body["gradable_count"] > 0
+
+
+def test_an_unknown_course_lesson_is_a_404(client):
+    assert client.get("/api/zhuyin/lesson/nope").status_code == 404
+    assert client.post("/api/zhuyin/lesson/nope/result", json={"results": []}).status_code == 404
+
+
+def test_passing_a_course_lesson_puts_symbols_in_the_review_queue(client):
+    """The whole point of the item type: a symbol comes back on its own."""
+    lesson = client.get("/api/zhuyin/course").json()["lessons"][0]
+    body = {"results": [{"symbol": s, "correct": True} for s in lesson["symbols"]]}
+    r = client.post(f"/api/zhuyin/lesson/{lesson['id']}/result", json=body)
+    assert r.status_code == 200
+    assert r.json()["passed"] is True
+
+    queue = client.get("/api/review/queue").json()["items"]
+    assert [i for i in queue if i["item_type"] == "zhuyin"]

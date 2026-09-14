@@ -388,6 +388,7 @@ content/units/<unit>.json    one file per unit: lessons, vocab, grammar,
                              sentences, dialogue, and its status
 content/hsk1.json            HSK 1 pool for the placement check
 content/listen.json          listening comprehension sets
+content/zhuyin.json          the 注音 mini-course — 37 symbols + tone marks
 content/taiwan_overrides.json   editorial layer — PRC→Taiwan words, pinned readings
 content/wordlists/hsk{1..4}.json  vendored HSK lists (MIT; glosses CC BY-SA 4.0)
 ```

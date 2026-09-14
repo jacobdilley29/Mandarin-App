@@ -76,6 +76,19 @@ function Prompt({ item }: { item: ReviewItem }) {
           {item.gloss && <div className="mt-1 text-sm text-ink-soft">{item.gloss}</div>}
         </div>
       );
+
+    // --- 注音 (the mini-course's symbols, scheduled like anything else) ---
+    // The audio is a Han character carrying the symbol's teaching sound, not
+    // the symbol: text-to-speech cannot pronounce a bare ㄅ.
+    case "zhuyin_recall":
+      return (
+        <div className="py-4 text-center">
+          <div className="mb-3 text-sm text-ink-soft">Which symbol makes this sound?</div>
+          <div className="flex justify-center">
+            <PlayButton text={item.audio_text ?? ""} big />
+          </div>
+        </div>
+      );
   }
 }
 
@@ -277,11 +290,18 @@ export default function ReviewSession() {
         {answered && (
           <div className="mt-4">
             <AskAbout
-              focus={{
-                type: item.item_type === "grammar" ? "grammar" : "vocab",
-                id: item.item_id,
-                text: item.title ?? item.char ?? item.answer?.toString(),
-              }}
+              focus={
+                // A 注音 symbol has no vocab or grammar row to look up, so it
+                // goes as free text rather than as an id the tutor will fail
+                // to resolve and silently fall back from.
+                item.item_type === "zhuyin"
+                  ? { type: "sentence", text: item.symbol }
+                  : {
+                      type: item.item_type === "grammar" ? "grammar" : "vocab",
+                      id: item.item_id,
+                      text: item.title ?? item.char ?? item.answer?.toString(),
+                    }
+              }
               label="Why?"
             />
           </div>
@@ -293,7 +313,8 @@ export default function ReviewSession() {
             const isHan =
               item.kind === "recall" ||
               item.kind === "cloze" ||
-              item.kind === "particle_cloze";
+              item.kind === "particle_cloze" ||
+              item.kind === "zhuyin_recall";
             let cls = "border-border bg-surface hover:border-primary";
             if (answered) {
               if (o.correct) cls = "border-good bg-good/10 text-good";
