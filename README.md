@@ -397,10 +397,31 @@ against one unit, not against a 15,000-line blob.
 
 ### Live units and drafts
 
-Every unit is either **live** (taught) or **draft** (staged but withheld). The
-status is not a label anyone sets by hand — it is computed from completeness
-checks on every load, and a unit declared live that fails a required check is
-demoted automatically.
+Every unit is either **live** (taught) or **draft** (staged but withheld).
+Generated units are built as drafts and promote themselves only once
+`generate_content` has filled them in and they pass every required completeness
+check (`app/completeness.py`).
+
+**The status field is not trusted on its own.** `curriculum_source.status_of`
+defaults to *live*, so that the hand-authored units — written before statuses
+existed — stay taught without being touched. The cost of that default is that a
+**forgotten** status is not a missing status, it is the wrong one, and it fails
+silently. That happened: the themed skeleton builder omitted the field, and the
+first complete themed build produced 70 units whose lessons held vocabulary and
+nothing else — no grammar, no drill sentences, no dialogue — all marked live and
+ready to teach. It reported itself as `84 live · 0 draft`.
+
+So the invariant is enforced in two places rather than assumed at the one that
+happens to build the units:
+
+* `build_skeleton` stages any generated unit that is live but fails a required
+  check, before writing anything (`_stage_unfinished`);
+* `load_content` refuses to load one, naming the unit and its missing checks —
+  it is the last point before content reaches the learner, and it now re-derives
+  completeness instead of believing the file.
+
+Both are scoped to `generated: true` units. A hand-authored unit with no status
+is live by design; that is what the default is for.
 
 | Required to go live | Optional |
 |---|---|

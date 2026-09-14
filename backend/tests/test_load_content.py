@@ -61,3 +61,67 @@ def test_a_unit_with_no_explicit_status_counts_as_live():
     live, draft = lc.split_violations_by_status(data, [_v("l")])
 
     assert live and not draft
+
+
+# ---------------------------------------------------------------------------
+# The loader does not take a unit's status on trust
+# ---------------------------------------------------------------------------
+def _unit(unit_id: str, *, generated: bool, status: str | None, finished: bool) -> dict:
+    lesson = {
+        "id": f"l_{unit_id}",
+        "vocab": [{"traditional": "水", "pinyin": "shuǐ", "gloss": "water",
+                   "example": {"hanzi": "我喝水"} if finished else {}}],
+        "grammar": [{"id": "g1"}] if finished else [],
+        "sentences": [{"tokens": ["水"]}] if finished else [],
+        "dialogue": [{"hanzi": "水"}] if finished else [],
+    }
+    unit = {"id": unit_id, "title": "t", "lessons": [lesson]}
+    if generated:
+        unit["generated"] = True
+    if status is not None:
+        unit["status"] = status
+    return unit
+
+
+def test_a_generated_unit_marked_live_but_empty_is_caught():
+    """The loader is the last stop before content reaches the learner.
+
+    It used to take `status` on trust. That was wrong exactly once and it was
+    enough: the themed skeleton builder omitted the field, the default is live,
+    and 70 units with no grammar, sentences or dialogue were ready to teach.
+    """
+    data = {"units": [_unit("u_hsk2_01", generated=True, status="live", finished=False)]}
+
+    found = lc.unfinished_live_units(data)
+
+    assert [u for u, _ in found] == ["u_hsk2_01"]
+    missing = dict(found)["u_hsk2_01"]
+    assert "sentences_present" in missing and "grammar_seeded" in missing
+
+
+def test_a_generated_unit_with_no_status_at_all_is_caught():
+    """A forgotten status is not a missing status — it is the wrong one."""
+    data = {"units": [_unit("u_hsk2_01", generated=True, status=None, finished=False)]}
+
+    assert [u for u, _ in lc.unfinished_live_units(data)] == ["u_hsk2_01"]
+
+
+def test_a_finished_generated_unit_loads_normally():
+    data = {"units": [_unit("u_hsk2_01", generated=True, status="live", finished=True)]}
+
+    assert lc.unfinished_live_units(data) == []
+
+
+def test_a_generated_draft_is_not_flagged():
+    """Drafts are unfinished by definition; the gate already keeps them out."""
+    data = {"units": [_unit("u_hsk2_01", generated=True, status="draft", finished=False)]}
+
+    assert lc.unfinished_live_units(data) == []
+
+
+def test_hand_authored_units_are_left_alone():
+    """status_of defaults to live for the curated units, which predate these
+    checks. Applying the rule to them would refuse to load the curriculum."""
+    data = {"units": [_unit("u_conv", generated=False, status=None, finished=False)]}
+
+    assert lc.unfinished_live_units(data) == []

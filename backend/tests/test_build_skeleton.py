@@ -308,3 +308,81 @@ def test_the_budget_covers_what_a_chunk_actually_needs():
     per_word_that_failed = 16000 / 129
     assert bs.theme_budget(bs.CHUNK_WORDS) > bs.CHUNK_WORDS * per_word_that_failed * 1.5
     assert bs.theme_budget(10_000) <= 32000, "never ask for more than the API allows"
+
+
+# ---------------------------------------------------------------------------
+# The draft gate — a unit straight out of theming is not teachable
+# ---------------------------------------------------------------------------
+def test_a_themed_unit_comes_out_as_a_draft(monkeypatch, tmp_path):
+    """The test that was missing, and the bug it would have caught.
+
+    bin_offline sets status=draft with a comment explaining why. bin_claude
+    built its unit dict without a status at all, and `status_of` defaults to
+    **live** — so a forgotten field is not a missing status, it is the wrong
+    one. The first complete themed build reported "84 live · 0 draft" and had
+    70 units whose lessons held vocabulary and nothing else: no grammar, no
+    sentences, no dialogue, ready to be loaded and taught.
+
+    This is the failure app/completeness.py was written to prevent; its
+    docstring names the commit that had to be reverted over it.
+    """
+    _capture_calls(monkeypatch, tmp_path)
+
+    units, _ = bs.bin_claude(_words(3), 2, existing=[], per_lesson=6, refresh=False)
+
+    assert units, "the theming must actually produce units"
+    for u in units:
+        assert bs.curriculum_source.status_of(u) == bs.curriculum_source.STATUS_DRAFT
+        # The reason it must be a draft, stated as the test's own premise.
+        assert all(not l["sentences"] and not l["grammar"] for l in u["lessons"])
+
+
+def test_the_offline_path_is_still_a_draft_too(monkeypatch, tmp_path):
+    units = bs.bin_offline(_words(3), 2, per_lesson=6, lessons_per_unit=3)
+    assert all(
+        bs.curriculum_source.status_of(u) == bs.curriculum_source.STATUS_DRAFT
+        for u in units
+    )
+
+
+def test_an_unfinished_generated_unit_is_staged_before_writing():
+    """The invariant, checked once, rather than trusted to every binning path."""
+    unit = {
+        "id": "u_hsk2_01", "title": "夜市", "generated": True, "status": "live",
+        "lessons": [{"id": "l1", "vocab": [{"traditional": "水", "pinyin": "shuǐ",
+                                            "gloss": "water"}],
+                     "grammar": [], "sentences": [], "dialogue": []}],
+    }
+
+    staged = bs._stage_unfinished([unit])
+
+    assert staged == ["u_hsk2_01"]
+    assert unit["status"] == bs.curriculum_source.STATUS_DRAFT
+
+
+def test_a_finished_generated_unit_is_left_live():
+    """A stalled level reuses its existing units, which may be finished."""
+    unit = {
+        "id": "u_hsk2_01", "title": "夜市", "generated": True, "status": "live",
+        "lessons": [{
+            "id": "l1",
+            "vocab": [{"traditional": "水", "pinyin": "shuǐ", "gloss": "water",
+                       "example": {"hanzi": "我喝水"}}],
+            "grammar": [{"id": "g1"}],
+            "sentences": [{"tokens": ["水"]}],
+            "dialogue": [{"hanzi": "水"}],
+        }],
+    }
+
+    assert bs._stage_unfinished([unit]) == []
+    assert unit["status"] == "live"
+
+
+def test_a_hand_authored_unit_without_a_status_stays_live():
+    """status_of defaults to live for exactly this case — don't break it."""
+    unit = {"id": "u_conv", "title": "便利商店",
+            "lessons": [{"id": "l1", "vocab": [], "grammar": [],
+                         "sentences": [], "dialogue": []}]}
+
+    assert bs._stage_unfinished([unit]) == []
+    assert "status" not in unit

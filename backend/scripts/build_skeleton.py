@@ -46,7 +46,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app import curriculum_source, taiwanize  # noqa: E402
+from app import completeness, curriculum_source, taiwanize  # noqa: E402
 from app.config import REPO_ROOT
 from app import llm  # noqa: E402
 from app.llm import MODEL  # noqa: E402
@@ -428,6 +428,16 @@ def bin_claude(words: list[dict], level: int, existing: list[str],
                 "subtitle": u["subtitle"],
                 "hsk_level": level,
                 "generated": True,
+                # Staged, never taught — the same rule bin_offline follows, and
+                # for the same reason: a unit straight out of theming has its
+                # vocabulary and nothing else, so it fails the required
+                # completeness checks and must stay out of Learn until
+                # generate_content has filled it in.
+                #
+                # Omitting this shipped 70 units of empty lessons as live:
+                # status_of() defaults to live, so a missing field is not a
+                # missing status, it is the wrong one. See _stage_unfinished.
+                "status": curriculum_source.STATUS_DRAFT,
                 "lessons": lessons,
             })
 
@@ -463,6 +473,36 @@ def apply_readings_to_authored(existing: dict, overrides: dict) -> list[str]:
                     changed.append(f"{v['traditional']} {v['pinyin']} → {want}")
                     v["pinyin"] = want
     return changed
+
+
+def _stage_unfinished(units: list[dict]) -> list[str]:
+    """Force any generated-but-unfinished unit to draft. Returns what it staged.
+
+    The one-line fix is for bin_claude to set the status, which it now does.
+    This is the reason it cannot silently go wrong again: the invariant is "a
+    generated unit that fails required completeness is never taught", and it is
+    checked here, once, rather than trusted to every present and future binning
+    strategy remembering a field.
+
+    It has to be enforced rather than assumed because `status_of` defaults to
+    **live** — deliberately, so the hand-authored units that predate statuses
+    stay taught. Which means a forgotten status is not a missing status, it is
+    the wrong one, and the failure is invisible: 70 units of empty lessons
+    reported as "84 live · 0 draft" and loaded into Learn.
+
+    Scoped to generated units. A hand-authored unit without a status is live by
+    design, and that is the behaviour the default exists for.
+    """
+    staged = []
+    for unit in units:
+        if not unit.get("generated"):
+            continue
+        if curriculum_source.status_of(unit) != curriculum_source.STATUS_LIVE:
+            continue
+        if completeness.evaluate_unit(unit).missing:
+            unit["status"] = curriculum_source.STATUS_DRAFT
+            staged.append(unit["id"])
+    return staged
 
 
 def _report_stalled(stalled: list[int]) -> None:
@@ -643,6 +683,14 @@ def main(argv: list[str] | None = None) -> int:
               f"{sum(len(u['lessons']) for u in units)} lessons")
 
     merged = assemble(existing, generated, tocfl)
+
+    # Belt and braces on the draft gate — see _stage_unfinished.
+    forced = _stage_unfinished(merged["units"])
+    if forced:
+        print(f"\n! {len(forced)} generated unit(s) were marked live while still "
+              f"unfinished — staged as drafts: {', '.join(forced[:5])}"
+              + (" …" if len(forced) > 5 else ""))
+        print("  This is a bug in whatever built them; the gate caught it.")
 
     # Coverage assertion — the whole point of the script.
     placed: list[str] = []
