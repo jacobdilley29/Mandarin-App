@@ -8,12 +8,15 @@ startup if the curriculum tables are empty.
 from __future__ import annotations
 
 import json
+import logging
 import sqlite3
 from pathlib import Path
 
 from . import levels as _levels
 from . import zhuyin as _zhuyin
 from .config import REPO_ROOT
+
+log = logging.getLogger(__name__)
 
 CONTENT_PATH = REPO_ROOT / "content" / "curriculum.json"
 HSK1_PATH = REPO_ROOT / "content" / "hsk1.json"
@@ -169,10 +172,44 @@ def load_from_disk(conn: sqlite3.Connection) -> dict | None:
 
 
 def ensure_loaded(conn: sqlite3.Connection) -> None:
-    """Load content on startup if the curriculum is empty."""
-    row = conn.execute("SELECT COUNT(*) AS n FROM units").fetchone()
-    if row["n"] == 0:
+    """Bring the database in step with content/units/ on every startup.
+
+    This used to load only when the `units` table was empty, which meant the
+    database was seeded once and then never looked at the source again. The
+    effect was that authoring a whole curriculum — generating it, committing it,
+    rebuilding the image with the new files baked in — changed nothing the
+    learner could see, every time, with no error to explain why. The one command
+    that would have applied it, `make load-content`, scrolls past under a hundred
+    lines of Docker output.
+
+    Always reloading is safe here, and only because of two decisions already
+    made. `load_curriculum` is a pure upsert with no DELETE in it, so this is
+    idempotent. And progress lives in a *separate* database (see app/db.py) —
+    that split exists precisely so content can be replaced without touching what
+    the learner has done. content.db is derived data; content/units/ is the
+    source of truth.
+
+    A broken or half-written source file must not take the app down on boot, so
+    a failure here leaves the previously loaded content serving and says so.
+    `make load-content` is still the authoring gate: it validates scope and
+    sequence and refuses content this does not judge.
+    """
+    try:
         load_from_disk(conn)
+    except Exception as exc:  # noqa: BLE001 — never fail to start over content
+        log.warning(
+            "could not reload curriculum from content/ (%s); "
+            "serving the previously loaded version", exc
+        )
+    else:
+        live = conn.execute(
+            "SELECT COUNT(*) AS n FROM units WHERE status = 'live'"
+        ).fetchone()["n"]
+        draft = conn.execute(
+            "SELECT COUNT(*) AS n FROM units WHERE status != 'live'"
+        ).fetchone()["n"]
+        log.info("curriculum loaded from content/: %d live, %d draft", live, draft)
+
     # Load the HSK 1 placement pool if its foundation items aren't present yet.
     row = conn.execute("SELECT COUNT(*) AS n FROM vocab WHERE id LIKE 'h\\_%' ESCAPE '\\'").fetchone()
     if row["n"] == 0:

@@ -466,6 +466,27 @@ Every sentence is checked so it only uses characters the learner has met by that
 point; `load_content` refuses to load violations, and generation refuses to
 promote a unit that has any.
 
+### How content reaches the app
+
+`content/units/*.json` is the source of truth; `content.db` is derived from it.
+**The app reloads that database from the source on every startup**, so authoring
+content and restarting is enough to see it — `make up`, `docker compose restart`,
+or just running the app again. Look for this line in `make logs`:
+
+```
+INFO:     app.content - curriculum loaded from content/: 42 live, 42 draft
+```
+
+This is safe because the reload is a pure upsert and progress lives in a separate
+database (see [Why two databases](#why-two-databases)). Content can be rebuilt
+from source at any time; what the learner has done cannot, and is never touched.
+
+`make load-content` is still worth running, but for a different reason: it is the
+authoring gate. It validates character scope, checks the teaching sequence, and
+refuses to install content that breaks either — none of which the startup reload
+judges. Run it when you have generated something; restart when you just want the
+app to catch up.
+
 ### The commands
 
 ```bash
