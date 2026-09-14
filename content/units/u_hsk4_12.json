@@ -1,0 +1,179 @@
+{
+  "id": "u_hsk4_12",
+  "title": "感情、相處與語氣",
+  "subtitle": "Dating, getting along, and adding emphasis",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_12_1",
+      "title": "戀愛與喜歡的人",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_愛情",
+          "traditional": "愛情",
+          "pinyin": "ài qíng",
+          "gloss": "romance; love (romantic)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感情",
+          "traditional": "感情",
+          "pinyin": "gǎn qíng",
+          "gloss": "emotion; sentiment; affection",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_適合",
+          "traditional": "適合",
+          "pinyin": "shì hé",
+          "gloss": "to fit; to suit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_帥",
+          "traditional": "帥",
+          "pinyin": "shuài",
+          "gloss": "(bound form) commander-in-chief; (bound form) to lead; to command; handsome; graceful; dashing; elegant",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_美麗",
+          "traditional": "美麗",
+          "pinyin": "měi lì",
+          "gloss": "beautiful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吸引",
+          "traditional": "吸引",
+          "pinyin": "xī yǐn",
+          "gloss": "to attract; to appeal to; to fascinate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_12_2",
+      "title": "朋友相處與心情",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_心情",
+          "traditional": "心情",
+          "pinyin": "xīn qíng",
+          "gloss": "mood; frame of mind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_抱",
+          "traditional": "抱",
+          "pinyin": "bào",
+          "gloss": "to hold; to carry (in one's arms); to hug",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_討厭",
+          "traditional": "討厭",
+          "pinyin": "tǎo yàn",
+          "gloss": "to dislike; to loathe; disagreeable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_咱們",
+          "traditional": "咱們",
+          "pinyin": "zán men",
+          "gloss": "we or us (including both the speaker and the person(s) spoken to); (dialect) I or me; (dialect) (in a coaxing or familiar way) you",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_倆",
+          "traditional": "倆",
+          "pinyin": "liǎ",
+          "gloss": "two (colloquial equivalent of 两个); both; some",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_12_3",
+      "title": "加強語氣與意外的事",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_難道",
+          "traditional": "難道",
+          "pinyin": "nán dào",
+          "gloss": "don't tell me ...; could it be that...?",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_於是",
+          "traditional": "於是",
+          "pinyin": "yú shì",
+          "gloss": "thereupon; as a result; consequently; thus; hence",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_從來",
+          "traditional": "從來",
+          "pinyin": "cóng lái",
+          "gloss": "always; at all times; never (if used in negative sentence)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_實在",
+          "traditional": "實在",
+          "pinyin": "shí zài",
+          "gloss": "really; actually; indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_竟然",
+          "traditional": "竟然",
+          "pinyin": "jìng rán",
+          "gloss": "unexpectedly; to one's surprise; in spite of everything",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不僅",
+          "traditional": "不僅",
+          "pinyin": "bù jǐn",
+          "gloss": "not just; not limited to; (as a correlative conjunction) not only (..., but also ...)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 60,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

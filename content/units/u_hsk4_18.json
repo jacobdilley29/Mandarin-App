@@ -1,0 +1,229 @@
+{
+  "id": "u_hsk4_18",
+  "title": "出門上路與戶外",
+  "subtitle": "Hitting the road and being outdoors",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_18_1",
+      "title": "出發與距離",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_出發",
+          "traditional": "出發",
+          "pinyin": "chū fā",
+          "gloss": "to set off; to start (on a journey)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_交通",
+          "traditional": "交通",
+          "pinyin": "jiāo tōng",
+          "gloss": "to be connected; traffic; transportation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_距離",
+          "traditional": "距離",
+          "pinyin": "jù lí",
+          "gloss": "distance; to be apart from",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_橋",
+          "traditional": "橋",
+          "pinyin": "qiáo",
+          "gloss": "bridge",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_周圍",
+          "traditional": "周圍",
+          "pinyin": "zhōu wéi",
+          "gloss": "environs; surroundings; periphery",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_到處",
+          "traditional": "到處",
+          "pinyin": "dào chù",
+          "gloss": "everywhere",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_18_2",
+      "title": "小意外與修東西",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_撞",
+          "traditional": "撞",
+          "pinyin": "zhuàng",
+          "gloss": "to knock against; to bump into; to run into",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_斷",
+          "traditional": "斷",
+          "pinyin": "duàn",
+          "gloss": "to break; to snap; to cut off",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_丟",
+          "traditional": "丟",
+          "pinyin": "diū",
+          "gloss": "to lose; to put aside; to throw",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_困",
+          "traditional": "困",
+          "pinyin": "kùn",
+          "gloss": "to trap; to surround; hard-pressed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_修",
+          "traditional": "修",
+          "pinyin": "xiū",
+          "gloss": "to decorate; to embellish; to repair",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_牆",
+          "traditional": "牆",
+          "pinyin": "qiáng",
+          "gloss": "wall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_18_3",
+      "title": "陽光、空氣與地球",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_陽光",
+          "traditional": "陽光",
+          "pinyin": "yáng guāng",
+          "gloss": "sunshine; (of personality) upbeat; energetic; transparent (open to public scrutiny)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_空氣",
+          "traditional": "空氣",
+          "pinyin": "kōng qì",
+          "gloss": "air; atmosphere",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地球",
+          "traditional": "地球",
+          "pinyin": "dì qiú",
+          "gloss": "the earth",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_亮",
+          "traditional": "亮",
+          "pinyin": "liàng",
+          "gloss": "bright; clear; resonant",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_香",
+          "traditional": "香",
+          "pinyin": "xiāng",
+          "gloss": "fragrant; sweet smelling; aromatic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_18_4",
+      "title": "曬太陽與身體保養",
+      "sort_order": 4,
+      "vocab": [
+        {
+          "id": "v_皮膚",
+          "traditional": "皮膚",
+          "pinyin": "pí fū",
+          "gloss": "skin",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_擦",
+          "traditional": "擦",
+          "pinyin": "cā",
+          "gloss": "to rub; to scratch; to towel; to wipe with a towel; to apply (lipstick, lotion etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_戴",
+          "traditional": "戴",
+          "pinyin": "dài",
+          "gloss": "to put on or wear (glasses, hat, gloves etc); to respect; to bear",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_躺",
+          "traditional": "躺",
+          "pinyin": "tǎng",
+          "gloss": "to recline; to lie down",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_輕",
+          "traditional": "輕",
+          "pinyin": "qīng",
+          "gloss": "light; easy; gentle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 66,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_06",
+  "title": "表達意見與說明",
+  "subtitle": "Giving opinions, explaining and emphasising",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_06_1",
+      "title": "討論與交換意見",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_討論",
+          "traditional": "討論",
+          "pinyin": "tǎo lùn",
+          "gloss": "to discuss; to talk over",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_意見",
+          "traditional": "意見",
+          "pinyin": "yì jiàn",
+          "gloss": "idea; opinion; suggestion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_解釋",
+          "traditional": "解釋",
+          "pinyin": "jiě shì",
+          "gloss": "explanation; to explain; to interpret",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_說明",
+          "traditional": "說明",
+          "pinyin": "shuō míng",
+          "gloss": "to explain; to illustrate; to indicate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_談",
+          "traditional": "談",
+          "pinyin": "tán",
+          "gloss": "to speak; to talk; to converse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_理解",
+          "traditional": "理解",
+          "pinyin": "lǐ jiě",
+          "gloss": "to comprehend; to understand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_06_2",
+      "title": "把事情說清楚",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_首先",
+          "traditional": "首先",
+          "pinyin": "shǒu xiān",
+          "gloss": "first (of all); in the first place",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_另外",
+          "traditional": "另外",
+          "pinyin": "lìng wài",
+          "gloss": "additional; in addition; besides",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_並且",
+          "traditional": "並且",
+          "pinyin": "bìng qiě",
+          "gloss": "and; besides; moreover",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_至少",
+          "traditional": "至少",
+          "pinyin": "zhì shǎo",
+          "gloss": "at least; (to say the) least",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_全部",
+          "traditional": "全部",
+          "pinyin": "quán bù",
+          "gloss": "whole; all",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_許多",
+          "traditional": "許多",
+          "pinyin": "xǔ duō",
+          "gloss": "many; a lot of; much",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_06_3",
+      "title": "加強語氣",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_到底",
+          "traditional": "到底",
+          "pinyin": "dào dǐ",
+          "gloss": "finally; in the end; when all is said and done",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_確實",
+          "traditional": "確實",
+          "pinyin": "què shí",
+          "gloss": "indeed; really; reliable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_十分",
+          "traditional": "十分",
+          "pinyin": "shí fēn",
+          "gloss": "very; completely; utterly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_光",
+          "traditional": "光",
+          "pinyin": "guāng",
+          "gloss": "light; ray; bright; shiny; only; merely",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_各",
+          "traditional": "各",
+          "pinyin": "gè",
+          "gloss": "each; every",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_挺",
+          "traditional": "挺",
+          "pinyin": "tǐng",
+          "gloss": "straight; erect; to stick out (a part of the body)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 54,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

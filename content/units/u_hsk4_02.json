@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_02",
+  "title": "社區活動與志工",
+  "subtitle": "Signing up for events and helping out in your neighborhood",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_02_1",
+      "title": "報名參加活動",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_活動",
+          "traditional": "活動",
+          "pinyin": "huó dòng",
+          "gloss": "to exercise; to move about; to operate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_場",
+          "traditional": "場",
+          "pinyin": "chǎng",
+          "gloss": "large place used for a specific purpose; stage; scene (of a play)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_份",
+          "traditional": "份",
+          "pinyin": "fèn",
+          "gloss": "classifier for gifts, newspaper, magazine, papers, reports, contracts etc; variant of 分",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_提供",
+          "traditional": "提供",
+          "pinyin": "tí gōng",
+          "gloss": "to offer; to supply; to provide",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_交",
+          "traditional": "交",
+          "pinyin": "jiāo",
+          "gloss": "to hand over; to deliver; to pay (money)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_留",
+          "traditional": "留",
+          "pinyin": "liú",
+          "gloss": "to leave (a message etc); to retain; to stay",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_02_2",
+      "title": "從計劃到結束",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_計劃",
+          "traditional": "計劃",
+          "pinyin": "jì huà",
+          "gloss": "plan; project; program",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_進行",
+          "traditional": "進行",
+          "pinyin": "jìn xíng",
+          "gloss": "to advance; to conduct; underway",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_繼續",
+          "traditional": "繼續",
+          "pinyin": "jì xù",
+          "gloss": "to continue; to proceed with; to go on with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_最後",
+          "traditional": "最後",
+          "pinyin": "zuì hòu",
+          "gloss": "final; last; finally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_結果",
+          "traditional": "結果",
+          "pinyin": "jié guǒ",
+          "gloss": "outcome; result; conclusion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成功",
+          "traditional": "成功",
+          "pinyin": "chéng gōng",
+          "gloss": "success; to succeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_02_3",
+      "title": "支持與團隊",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_支持",
+          "traditional": "支持",
+          "pinyin": "zhī chí",
+          "gloss": "to be in favor of; to support; to back",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_保護",
+          "traditional": "保護",
+          "pinyin": "bǎo hù",
+          "gloss": "to protect; to defend; to safeguard",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_組織",
+          "traditional": "組織",
+          "pinyin": "zǔ zhī",
+          "gloss": "to organize; organization; (biology) tissue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_代表",
+          "traditional": "代表",
+          "pinyin": "dài biǎo",
+          "gloss": "representative; delegate; to represent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_能力",
+          "traditional": "能力",
+          "pinyin": "néng lì",
+          "gloss": "capability; ability",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_精神",
+          "traditional": "精神",
+          "pinyin": "jīng shén",
+          "gloss": "spirit; mind; consciousness",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 50,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

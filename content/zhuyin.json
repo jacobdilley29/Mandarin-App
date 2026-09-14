@@ -1,0 +1,517 @@
+{
+  "_comment": [
+    "The 注音符號 alphabet, as Taiwan teaches it. Hand-authored; no model wrote",
+    "any of this. It sits outside content/units/ on purpose: it is not",
+    "curriculum, and a unit of bare bopomofo would be refused by the scope",
+    "validator, which quite rightly insists every character be one the learner",
+    "has met.",
+    "",
+    "`voice` is a Han character, not the symbol, because text-to-speech cannot",
+    "pronounce a bare ㄅ. Each one carries that symbol's conventional teaching",
+    "sound: consonants get the ㄅㄛ/ㄆㄛ/ㄇㄛ reading Taiwanese children recite,",
+    "vowels are simply themselves.",
+    "",
+    "`order` is the recitation order, which is the thing to learn: a Taiwanese",
+    "dictionary, a phone keyboard and a class register are all sorted by it."
+  ],
+
+  "groups": {
+    "initial": "聲母 · consonants",
+    "medial": "介母 · glides",
+    "final": "韻母 · vowels and endings",
+    "tone": "聲調 · tones"
+  },
+
+  "lessons": [
+    {
+      "id": "zl_1",
+      "title": "ㄅㄆㄇㄈ",
+      "subtitle": "The four everyone starts with",
+      "note": "These four are what 注音 is named after in conversation — Taiwanese people call the whole system ㄅㄆㄇㄈ, the way English speakers say 'the ABCs'. All four are made at the lips.",
+      "symbols": ["ㄅ", "ㄆ", "ㄇ", "ㄈ"]
+    },
+    {
+      "id": "zl_2",
+      "title": "ㄉㄊㄋㄌ",
+      "subtitle": "Tongue against the teeth",
+      "note": "The tongue tip touches just behind the upper teeth for all four. ㄉ and ㄊ differ only in the puff of air — hold a hand in front of your mouth and you will feel ㄊ but not ㄉ.",
+      "symbols": ["ㄉ", "ㄊ", "ㄋ", "ㄌ"]
+    },
+    {
+      "id": "zl_3",
+      "title": "ㄍㄎㄏ",
+      "subtitle": "Back of the throat",
+      "note": "Made at the soft palate, right at the back. ㄏ is softer than English 'h' — closer to the sound in Scottish 'loch' than to 'hat'.",
+      "symbols": ["ㄍ", "ㄎ", "ㄏ"]
+    },
+    {
+      "id": "zl_4",
+      "title": "ㄐㄑㄒ",
+      "subtitle": "The smiling three",
+      "note": "Say these with your lips spread as if smiling. They only ever appear before ㄧ or ㄩ, which is why you will never see ㄐㄨ or ㄒㄚ.",
+      "symbols": ["ㄐ", "ㄑ", "ㄒ"]
+    },
+    {
+      "id": "zl_5",
+      "title": "ㄓㄔㄕㄖ",
+      "subtitle": "Tongue curled back",
+      "note": "Curl the tongue tip up towards the roof of the mouth. In Taiwan these are commonly softened towards ㄗㄘㄙ in casual speech — 知道 often comes out closer to zīdào — but the written form never changes.",
+      "symbols": ["ㄓ", "ㄔ", "ㄕ", "ㄖ"]
+    },
+    {
+      "id": "zl_6",
+      "title": "ㄗㄘㄙ",
+      "subtitle": "Flat tongue",
+      "note": "The flat-tongue counterparts to ㄓㄔㄕ. Telling the two sets apart is the single hardest listening distinction in Mandarin, and Taiwan blurs it more than the Mainland does.",
+      "symbols": ["ㄗ", "ㄘ", "ㄙ"]
+    },
+    {
+      "id": "zl_7",
+      "title": "ㄧㄨㄩ",
+      "subtitle": "The three glides",
+      "note": "These sit in the middle of a syllable, between the consonant and the vowel — ㄐㄧㄚ, ㄍㄨㄚ, ㄌㄩㄝ. They can also stand alone as a whole syllable. ㄩ is the one with no English equivalent: say ㄧ and then round your lips without moving your tongue.",
+      "symbols": ["ㄧ", "ㄨ", "ㄩ"]
+    },
+    {
+      "id": "zl_8",
+      "title": "ㄚㄛㄜㄝ",
+      "subtitle": "Single vowels",
+      "note": "The four simple vowels. ㄜ is the one to watch: it is not 'eh' but a mid-back unrounded vowel, the sound in 喝 hē.",
+      "symbols": ["ㄚ", "ㄛ", "ㄜ", "ㄝ"]
+    },
+    {
+      "id": "zl_9",
+      "title": "ㄞㄟㄠㄡ",
+      "subtitle": "Two vowels sliding together",
+      "note": "Each is one vowel gliding into another, written with a single symbol. ㄞ is 'eye', ㄟ is 'ay', ㄠ is 'ow', ㄡ is 'oh'.",
+      "symbols": ["ㄞ", "ㄟ", "ㄠ", "ㄡ"]
+    },
+    {
+      "id": "zl_10",
+      "title": "ㄢㄣㄤㄥㄦ",
+      "subtitle": "Nasal endings, and ㄦ",
+      "note": "The first four end a syllable with a nasal: ㄢ/ㄤ and ㄣ/ㄥ differ only in where the nasal is made, front or back. ㄦ is the odd one out — a whole syllable by itself, and the ending that turns 一會 into 一會兒.",
+      "symbols": ["ㄢ", "ㄣ", "ㄤ", "ㄥ", "ㄦ"]
+    },
+    {
+      "id": "zl_11",
+      "title": "聲調",
+      "subtitle": "The four tones and the neutral",
+      "note": "Tone marks go after the syllable, except the neutral tone, which Taiwan's Ministry of Education writes *before* it: ˙ㄉㄜ, not ㄉㄜ˙. The first tone is unmarked — no symbol at all.",
+      "symbols": ["ˊ", "ˇ", "ˋ", "˙"]
+    }
+  ],
+
+  "symbols": [
+    {
+      "symbol": "ㄅ",
+      "order": 1,
+      "group": "initial",
+      "pinyin": "b",
+      "voice": "波",
+      "voice_pinyin": "bō",
+      "example": { "traditional": "爸爸", "pinyin": "bàba", "gloss": "dad" },
+      "note": "Unaspirated: no puff of air, unlike English 'b' in 'boy'."
+    },
+    {
+      "symbol": "ㄆ",
+      "order": 2,
+      "group": "initial",
+      "pinyin": "p",
+      "voice": "坡",
+      "voice_pinyin": "pō",
+      "example": { "traditional": "朋友", "pinyin": "péngyǒu", "gloss": "friend" },
+      "note": "ㄅ with a puff of air. That puff is the only difference between them."
+    },
+    {
+      "symbol": "ㄇ",
+      "order": 3,
+      "group": "initial",
+      "pinyin": "m",
+      "voice": "摸",
+      "voice_pinyin": "mō",
+      "example": { "traditional": "媽媽", "pinyin": "māma", "gloss": "mum" },
+      "note": "The shape is the top half of 冡, an old character for 'cover'."
+    },
+    {
+      "symbol": "ㄈ",
+      "order": 4,
+      "group": "initial",
+      "pinyin": "f",
+      "voice": "佛",
+      "voice_pinyin": "fó",
+      "example": { "traditional": "飯", "pinyin": "fàn", "gloss": "rice, a meal" },
+      "note": "As in English 'food'."
+    },
+    {
+      "symbol": "ㄉ",
+      "order": 5,
+      "group": "initial",
+      "pinyin": "d",
+      "voice": "得",
+      "voice_pinyin": "dé",
+      "example": { "traditional": "電話", "pinyin": "diànhuà", "gloss": "telephone" },
+      "note": "Unaspirated, closer to English 't' in 'stop' than 'd' in 'dog'."
+    },
+    {
+      "symbol": "ㄊ",
+      "order": 6,
+      "group": "initial",
+      "pinyin": "t",
+      "voice": "特",
+      "voice_pinyin": "tè",
+      "example": { "traditional": "太", "pinyin": "tài", "gloss": "too, excessively" },
+      "note": "ㄉ with a puff of air."
+    },
+    {
+      "symbol": "ㄋ",
+      "order": 7,
+      "group": "initial",
+      "pinyin": "n",
+      "voice": "訥",
+      "voice_pinyin": "nè",
+      "example": { "traditional": "你", "pinyin": "nǐ", "gloss": "you" },
+      "note": "The shape comes from 乃."
+    },
+    {
+      "symbol": "ㄌ",
+      "order": 8,
+      "group": "initial",
+      "pinyin": "l",
+      "voice": "勒",
+      "voice_pinyin": "lè",
+      "example": { "traditional": "來", "pinyin": "lái", "gloss": "to come" },
+      "note": "As in English 'let'."
+    },
+    {
+      "symbol": "ㄍ",
+      "order": 9,
+      "group": "initial",
+      "pinyin": "g",
+      "voice": "哥",
+      "voice_pinyin": "gē",
+      "example": { "traditional": "貴", "pinyin": "guì", "gloss": "expensive" },
+      "note": "Unaspirated, closer to 'k' in 'sky' than 'g' in 'go'."
+    },
+    {
+      "symbol": "ㄎ",
+      "order": 10,
+      "group": "initial",
+      "pinyin": "k",
+      "voice": "科",
+      "voice_pinyin": "kē",
+      "example": { "traditional": "看", "pinyin": "kàn", "gloss": "to look" },
+      "note": "ㄍ with a puff of air."
+    },
+    {
+      "symbol": "ㄏ",
+      "order": 11,
+      "group": "initial",
+      "pinyin": "h",
+      "voice": "喝",
+      "voice_pinyin": "hē",
+      "example": { "traditional": "好", "pinyin": "hǎo", "gloss": "good" },
+      "note": "Made further back than English 'h' — a little friction at the throat."
+    },
+    {
+      "symbol": "ㄐ",
+      "order": 12,
+      "group": "initial",
+      "pinyin": "j",
+      "voice": "基",
+      "voice_pinyin": "jī",
+      "example": { "traditional": "叫", "pinyin": "jiào", "gloss": "to be called" },
+      "note": "Only ever before ㄧ or ㄩ."
+    },
+    {
+      "symbol": "ㄑ",
+      "order": 13,
+      "group": "initial",
+      "pinyin": "q",
+      "voice": "欺",
+      "voice_pinyin": "qī",
+      "example": { "traditional": "請", "pinyin": "qǐng", "gloss": "please" },
+      "note": "ㄐ with a puff of air. Nothing like English 'q'."
+    },
+    {
+      "symbol": "ㄒ",
+      "order": 14,
+      "group": "initial",
+      "pinyin": "x",
+      "voice": "希",
+      "voice_pinyin": "xī",
+      "example": { "traditional": "謝謝", "pinyin": "xièxie", "gloss": "thank you" },
+      "note": "Between English 'sh' and 's', with the lips spread."
+    },
+    {
+      "symbol": "ㄓ",
+      "order": 15,
+      "group": "initial",
+      "pinyin": "zh",
+      "voice": "知",
+      "voice_pinyin": "zhī",
+      "example": { "traditional": "這", "pinyin": "zhè", "gloss": "this" },
+      "note": "Tongue curled back. Often softened towards ㄗ in Taiwan."
+    },
+    {
+      "symbol": "ㄔ",
+      "order": 16,
+      "group": "initial",
+      "pinyin": "ch",
+      "voice": "吃",
+      "voice_pinyin": "chī",
+      "example": { "traditional": "吃", "pinyin": "chī", "gloss": "to eat" },
+      "note": "ㄓ with a puff of air."
+    },
+    {
+      "symbol": "ㄕ",
+      "order": 17,
+      "group": "initial",
+      "pinyin": "sh",
+      "voice": "詩",
+      "voice_pinyin": "shī",
+      "example": { "traditional": "是", "pinyin": "shì", "gloss": "to be" },
+      "note": "Tongue curled back, as in a drawn-out 'sure'."
+    },
+    {
+      "symbol": "ㄖ",
+      "order": 18,
+      "group": "initial",
+      "pinyin": "r",
+      "voice": "日",
+      "voice_pinyin": "rì",
+      "example": { "traditional": "人", "pinyin": "rén", "gloss": "person" },
+      "note": "Between English 'r' and the 's' in 'measure'. No lip rounding."
+    },
+    {
+      "symbol": "ㄗ",
+      "order": 19,
+      "group": "initial",
+      "pinyin": "z",
+      "voice": "資",
+      "voice_pinyin": "zī",
+      "example": { "traditional": "在", "pinyin": "zài", "gloss": "at, in" },
+      "note": "Flat tongue, like the 'ds' in 'kids'."
+    },
+    {
+      "symbol": "ㄘ",
+      "order": 20,
+      "group": "initial",
+      "pinyin": "c",
+      "voice": "雌",
+      "voice_pinyin": "cī",
+      "example": { "traditional": "菜", "pinyin": "cài", "gloss": "dish, vegetable" },
+      "note": "ㄗ with a puff of air, like the 'ts' in 'cats'."
+    },
+    {
+      "symbol": "ㄙ",
+      "order": 21,
+      "group": "initial",
+      "pinyin": "s",
+      "voice": "思",
+      "voice_pinyin": "sī",
+      "example": { "traditional": "三", "pinyin": "sān", "gloss": "three" },
+      "note": "As in English 'see'."
+    },
+    {
+      "symbol": "ㄧ",
+      "order": 22,
+      "group": "medial",
+      "pinyin": "i / yi",
+      "voice": "衣",
+      "voice_pinyin": "yī",
+      "example": { "traditional": "一", "pinyin": "yī", "gloss": "one" },
+      "note": "Written 'yi' when it starts a syllable, 'i' when it follows a consonant."
+    },
+    {
+      "symbol": "ㄨ",
+      "order": 23,
+      "group": "medial",
+      "pinyin": "u / wu",
+      "voice": "烏",
+      "voice_pinyin": "wū",
+      "example": { "traditional": "五", "pinyin": "wǔ", "gloss": "five" },
+      "note": "Written 'wu' when it starts a syllable, 'u' when it follows a consonant."
+    },
+    {
+      "symbol": "ㄩ",
+      "order": 24,
+      "group": "medial",
+      "pinyin": "ü / yu",
+      "voice": "迂",
+      "voice_pinyin": "yū",
+      "example": { "traditional": "綠", "pinyin": "lǜ", "gloss": "green" },
+      "note": "Say ㄧ, then round your lips without moving your tongue. No English equivalent."
+    },
+    {
+      "symbol": "ㄚ",
+      "order": 25,
+      "group": "final",
+      "pinyin": "a",
+      "voice": "啊",
+      "voice_pinyin": "ā",
+      "example": { "traditional": "大", "pinyin": "dà", "gloss": "big" },
+      "note": "Open, as in 'father'."
+    },
+    {
+      "symbol": "ㄛ",
+      "order": 26,
+      "group": "final",
+      "pinyin": "o",
+      "voice": "喔",
+      "voice_pinyin": "ō",
+      "example": { "traditional": "我", "pinyin": "wǒ", "gloss": "I, me" },
+      "note": "Rounded, as in 'more'."
+    },
+    {
+      "symbol": "ㄜ",
+      "order": 27,
+      "group": "final",
+      "pinyin": "e",
+      "voice": "鵝",
+      "voice_pinyin": "é",
+      "example": { "traditional": "喝", "pinyin": "hē", "gloss": "to drink" },
+      "note": "Not 'eh'. Mid-back and unrounded, with the tongue pulled back."
+    },
+    {
+      "symbol": "ㄝ",
+      "order": 28,
+      "group": "final",
+      "pinyin": "ê",
+      "voice": "耶",
+      "voice_pinyin": "yē",
+      "example": { "traditional": "謝", "pinyin": "xiè", "gloss": "to thank" },
+      "note": "The 'e' in 'bed'. Almost always follows ㄧ or ㄩ."
+    },
+    {
+      "symbol": "ㄞ",
+      "order": 29,
+      "group": "final",
+      "pinyin": "ai",
+      "voice": "哀",
+      "voice_pinyin": "āi",
+      "example": { "traditional": "愛", "pinyin": "ài", "gloss": "to love" },
+      "note": "As in English 'eye'."
+    },
+    {
+      "symbol": "ㄟ",
+      "order": 30,
+      "group": "final",
+      "pinyin": "ei",
+      "voice": "欸",
+      "voice_pinyin": "ēi",
+      "example": { "traditional": "給", "pinyin": "gěi", "gloss": "to give" },
+      "note": "As in English 'day'."
+    },
+    {
+      "symbol": "ㄠ",
+      "order": 31,
+      "group": "final",
+      "pinyin": "ao",
+      "voice": "熬",
+      "voice_pinyin": "áo",
+      "example": { "traditional": "好", "pinyin": "hǎo", "gloss": "good" },
+      "note": "As in English 'now'."
+    },
+    {
+      "symbol": "ㄡ",
+      "order": 32,
+      "group": "final",
+      "pinyin": "ou",
+      "voice": "歐",
+      "voice_pinyin": "ōu",
+      "example": { "traditional": "走", "pinyin": "zǒu", "gloss": "to walk" },
+      "note": "As in English 'go'."
+    },
+    {
+      "symbol": "ㄢ",
+      "order": 33,
+      "group": "final",
+      "pinyin": "an",
+      "voice": "安",
+      "voice_pinyin": "ān",
+      "example": { "traditional": "看", "pinyin": "kàn", "gloss": "to look" },
+      "note": "Front nasal — the tongue tip touches behind the teeth."
+    },
+    {
+      "symbol": "ㄣ",
+      "order": 34,
+      "group": "final",
+      "pinyin": "en",
+      "voice": "恩",
+      "voice_pinyin": "ēn",
+      "example": { "traditional": "很", "pinyin": "hěn", "gloss": "very" },
+      "note": "Front nasal, with the ㄜ vowel."
+    },
+    {
+      "symbol": "ㄤ",
+      "order": 35,
+      "group": "final",
+      "pinyin": "ang",
+      "voice": "昂",
+      "voice_pinyin": "áng",
+      "example": { "traditional": "上", "pinyin": "shàng", "gloss": "above, to go up" },
+      "note": "Back nasal — the sound is made at the soft palate, as in 'song'."
+    },
+    {
+      "symbol": "ㄥ",
+      "order": 36,
+      "group": "final",
+      "pinyin": "eng",
+      "voice": "鞥",
+      "voice_pinyin": "ēng",
+      "example": { "traditional": "朋友", "pinyin": "péngyǒu", "gloss": "friend" },
+      "note": "Back nasal, with the ㄜ vowel. Taiwan often blurs ㄣ and ㄥ."
+    },
+    {
+      "symbol": "ㄦ",
+      "order": 37,
+      "group": "final",
+      "pinyin": "er",
+      "voice": "兒",
+      "voice_pinyin": "ér",
+      "example": { "traditional": "二", "pinyin": "èr", "gloss": "two" },
+      "note": "A whole syllable on its own, and the ending in 一會兒."
+    },
+    {
+      "symbol": "ˊ",
+      "order": 38,
+      "group": "tone",
+      "pinyin": "2nd tone",
+      "voice": "魚",
+      "voice_pinyin": "yú",
+      "example": { "traditional": "魚", "pinyin": "yú", "gloss": "fish" },
+      "note": "Rising. Written after the syllable: ㄩˊ."
+    },
+    {
+      "symbol": "ˇ",
+      "order": 39,
+      "group": "tone",
+      "pinyin": "3rd tone",
+      "voice": "雨",
+      "voice_pinyin": "yǔ",
+      "example": { "traditional": "雨", "pinyin": "yǔ", "gloss": "rain" },
+      "note": "Dipping. Written after the syllable: ㄩˇ."
+    },
+    {
+      "symbol": "ˋ",
+      "order": 40,
+      "group": "tone",
+      "pinyin": "4th tone",
+      "voice": "玉",
+      "voice_pinyin": "yù",
+      "example": { "traditional": "玉", "pinyin": "yù", "gloss": "jade" },
+      "note": "Falling. Written after the syllable: ㄩˋ. The first tone has no mark at all."
+    },
+    {
+      "symbol": "˙",
+      "order": 41,
+      "group": "tone",
+      "pinyin": "neutral",
+      "voice": "的",
+      "voice_pinyin": "de",
+      "example": { "traditional": "東西", "pinyin": "dōngxi", "gloss": "thing" },
+      "note": "Light and short. Taiwan's MOE writes it BEFORE the syllable — ˙ㄉㄜ — where Mainland sources put it after."
+    }
+  ]
+}

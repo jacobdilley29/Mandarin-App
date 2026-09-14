@@ -1,0 +1,203 @@
+{
+  "id": "u_hsk4_34",
+  "title": "出國、景點與週末戶外",
+  "subtitle": "Flying abroad, sightseeing tours and weekend activities outdoors",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_34_1",
+      "title": "機場、簽證與搭車",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_起飛",
+          "traditional": "起飛",
+          "pinyin": "qǐ fēi",
+          "gloss": "(of an aircraft) to take off",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_簽證",
+          "traditional": "簽證",
+          "pinyin": "qiān zhèng",
+          "gloss": "visa; to issue a visa",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乘坐",
+          "traditional": "乘坐",
+          "pinyin": "chéng zuò",
+          "gloss": "to ride (in a vehicle)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_入口",
+          "traditional": "入口",
+          "pinyin": "rù kǒu",
+          "gloss": "entrance; to import",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_加油站",
+          "traditional": "加油站",
+          "pinyin": "jiā yóu zhàn",
+          "gloss": "gas station",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_集合",
+          "traditional": "集合",
+          "pinyin": "jí hé",
+          "gloss": "to gather; to assemble; (math.) set",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_導遊",
+          "traditional": "導遊",
+          "pinyin": "dǎo yóu",
+          "gloss": "tour guide; guidebook; to conduct a tour",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_34_2",
+      "title": "名勝、動物園與農村",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_長城",
+          "traditional": "長城",
+          "pinyin": "Cháng chéng",
+          "gloss": "the Great Wall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_老虎",
+          "traditional": "老虎",
+          "pinyin": "lǎo hǔ",
+          "gloss": "tiger",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_猴子",
+          "traditional": "猴子",
+          "pinyin": "hóu zi",
+          "gloss": "monkey",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_農村",
+          "traditional": "農村",
+          "pinyin": "nóng cūn",
+          "gloss": "rural area; village",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_葉子",
+          "traditional": "葉子",
+          "pinyin": "yè zi",
+          "gloss": "leaf; (slang) marijuana",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_朵",
+          "traditional": "朵",
+          "pinyin": "duǒ",
+          "gloss": "flower; earlobe; fig. item on both sides",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_34_3",
+      "title": "散步、打球與野餐",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_散步",
+          "traditional": "散步",
+          "pinyin": "sàn bù",
+          "gloss": "to take a walk; to go for a walk",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_氣候",
+          "traditional": "氣候",
+          "pinyin": "qì hòu",
+          "gloss": "(meteorology) climate; (fig.) climate; prevailing conditions (in human affairs)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾燥",
+          "traditional": "乾燥",
+          "pinyin": "gān zào",
+          "gloss": "to dry (of weather, paint, cement etc); desiccation; dull",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_暖和",
+          "traditional": "暖和",
+          "pinyin": "nuǎn huo",
+          "gloss": "warm; nice and warm",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_網球",
+          "traditional": "網球",
+          "pinyin": "wǎng qiú",
+          "gloss": "tennis; tennis ball",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乒乓球",
+          "traditional": "乒乓球",
+          "pinyin": "pīng pāng qiú",
+          "gloss": "table tennis; ping-pong; table tennis ball",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_餅乾",
+          "traditional": "餅乾",
+          "pinyin": "bǐng gān",
+          "gloss": "biscuit; cracker; cookie",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 82,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

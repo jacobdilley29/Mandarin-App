@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "schema": 1,
+    "note": "Listening comprehension sets (spec §3.3): short Taiwan-scene dialogues with questions. Kept within curriculum + HSK 1 vocabulary. Audio is synthesised at request time (edge-tts), alternating the two zh-TW voices."
+  },
+  "sets": [
+    {
+      "id": "ls_conv",
+      "title": "便利商店",
+      "hsk_level": 2,
+      "dialogue": [
+        {"speaker": "客人", "hanzi": "不好意思，請問有沒有便當？", "pinyin": "Bùhǎoyìsi, qǐngwèn yǒu méiyǒu biàndāng?", "gloss": "Excuse me, do you have boxed meals?"},
+        {"speaker": "店員", "hanzi": "有，便當在那邊。", "pinyin": "Yǒu, biàndāng zài nà biān.", "gloss": "Yes, the boxed meals are over there."},
+        {"speaker": "客人", "hanzi": "我要一個便當和一瓶水。", "pinyin": "Wǒ yào yí ge biàndāng hàn yì píng shuǐ.", "gloss": "I'll have one boxed meal and a bottle of water."},
+        {"speaker": "店員", "hanzi": "一共八十五元。", "pinyin": "Yígòng bāshíwǔ yuán.", "gloss": "Eighty-five NT dollars total."},
+        {"speaker": "客人", "hanzi": "我用悠遊卡付。", "pinyin": "Wǒ yòng yōuyóukǎ fù.", "gloss": "I'll pay with my EasyCard."}
+      ],
+      "questions": [
+        {"prompt": "What does the customer buy?", "options": [
+          {"text": "A boxed meal and a bottle of water", "correct": true},
+          {"text": "Two bottles of water", "correct": false},
+          {"text": "A bubble tea", "correct": false}
+        ]},
+        {"prompt": "How much is it altogether?", "options": [
+          {"text": "NT$85", "correct": true},
+          {"text": "NT$58", "correct": false},
+          {"text": "NT$95", "correct": false}
+        ]},
+        {"prompt": "How does the customer pay?", "options": [
+          {"text": "With an EasyCard", "correct": true},
+          {"text": "With cash", "correct": false},
+          {"text": "With a phone", "correct": false}
+        ]}
+      ]
+    },
+    {
+      "id": "ls_drinks",
+      "title": "手搖飲料",
+      "hsk_level": 3,
+      "dialogue": [
+        {"speaker": "店員", "hanzi": "歡迎光臨，要喝什麼？", "pinyin": "Huānyíng guānglín, yào hē shénme?", "gloss": "Welcome, what would you like to drink?"},
+        {"speaker": "客人", "hanzi": "我要一杯珍珠奶茶。", "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.", "gloss": "I'd like a bubble milk tea."},
+        {"speaker": "店員", "hanzi": "甜度冰塊呢？", "pinyin": "Tiándù bīngkuài ne?", "gloss": "Sweetness and ice?"},
+        {"speaker": "客人", "hanzi": "半糖、去冰。外帶。", "pinyin": "Bàntáng, qù bīng. Wàidài.", "gloss": "Half sugar, no ice. To go."}
+      ],
+      "questions": [
+        {"prompt": "What does the customer order?", "options": [
+          {"text": "Bubble milk tea", "correct": true},
+          {"text": "Black tea", "correct": false},
+          {"text": "Water", "correct": false}
+        ]},
+        {"prompt": "What sweetness and ice do they want?", "options": [
+          {"text": "Half sugar, no ice", "correct": true},
+          {"text": "Full sugar, normal ice", "correct": false},
+          {"text": "No sugar, less ice", "correct": false}
+        ]},
+        {"prompt": "For here or to go?", "options": [
+          {"text": "To go", "correct": true},
+          {"text": "Dine in", "correct": false}
+        ]}
+      ]
+    },
+    {
+      "id": "ls_weather",
+      "title": "今天天氣",
+      "hsk_level": 1,
+      "dialogue": [
+        {"speaker": "朋友", "hanzi": "今天天氣很好。", "pinyin": "Jīntiān tiānqì hěn hǎo.", "gloss": "The weather is nice today."},
+        {"speaker": "我", "hanzi": "對，不冷也不熱。", "pinyin": "Duì, bù lěng yě bú rè.", "gloss": "Right, not cold and not hot."},
+        {"speaker": "朋友", "hanzi": "我們去喝茶，好嗎？", "pinyin": "Wǒmen qù hē chá, hǎo ma?", "gloss": "Let's go have some tea, okay?"},
+        {"speaker": "我", "hanzi": "好，我很喜歡喝茶。", "pinyin": "Hǎo, wǒ hěn xǐhuān hē chá.", "gloss": "Sure, I really like drinking tea."}
+      ],
+      "questions": [
+        {"prompt": "What is today's weather like?", "options": [
+          {"text": "Nice — not cold and not hot", "correct": true},
+          {"text": "Very cold", "correct": false},
+          {"text": "Very hot", "correct": false}
+        ]},
+        {"prompt": "What do they decide to do?", "options": [
+          {"text": "Go drink tea", "correct": true},
+          {"text": "Go home", "correct": false},
+          {"text": "Buy a boxed meal", "correct": false}
+        ]}
+      ]
+    }
+  ]
+}

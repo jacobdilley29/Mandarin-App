@@ -1,0 +1,121 @@
+{
+  "id": "u_hsk4_27",
+  "title": "家具與打掃搬東西",
+  "subtitle": "Furniture, keys, cleaning and moving things around",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_27_1",
+      "title": "沙發、窗戶與鑰匙",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_家具",
+          "traditional": "家具",
+          "pinyin": "jiā jù",
+          "gloss": "furniture",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_沙發",
+          "traditional": "沙發",
+          "pinyin": "shā fā",
+          "gloss": "sofa (loanword); (Internet slang) the first reply or replier to a forum post",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_窗戶",
+          "traditional": "窗戶",
+          "pinyin": "chuāng hu",
+          "gloss": "window",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鑰匙",
+          "traditional": "鑰匙",
+          "pinyin": "yào shi",
+          "gloss": "key",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_收拾",
+          "traditional": "收拾",
+          "pinyin": "shōu shi",
+          "gloss": "to put in order; to tidy up; to pack",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_髒",
+          "traditional": "髒",
+          "pinyin": "zāng",
+          "gloss": "dirty; filthy; to get (sth) dirty",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_27_2",
+      "title": "敲門、抬東西與替換",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_敲",
+          "traditional": "敲",
+          "pinyin": "qiāo",
+          "gloss": "to hit; to strike; to tap",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_抬",
+          "traditional": "抬",
+          "pinyin": "tái",
+          "gloss": "to lift; to raise; (of two or more persons) to carry",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_寬",
+          "traditional": "寬",
+          "pinyin": "kuān",
+          "gloss": "wide; broad; loose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_代替",
+          "traditional": "代替",
+          "pinyin": "dài tì",
+          "gloss": "to replace; to take the place of",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_厚",
+          "traditional": "厚",
+          "pinyin": "hòu",
+          "gloss": "thick; deep or profound; kind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 75,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

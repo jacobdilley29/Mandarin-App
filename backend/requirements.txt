@@ -1,0 +1,41 @@
+# --- Core (Phase 0+) — required to run the app ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+python-multipart==0.0.20
+
+# --- Phase 1 (content + Learn) ---
+edge-tts>=7.0.0          # zh-TW TTS for the /api/audio cache
+
+# --- Phase 2 (content pipeline, spec §5) ---
+# s2twp (not plain s2t) for phrase-level Taiwan vocabulary conversion. The
+# pure-Python reimplementation deliberately: the C-backed `OpenCC` package needs
+# a compiler, which the slim runtime image doesn't carry.
+opencc-python-reimplemented>=0.1.7
+pypinyin>=0.53           # tone-diacritic pinyin (Style.TONE)
+
+# --- Phase 2 (review / SRS) ---
+fsrs>=5.0.0              # FSRS scheduling
+
+# --- Speak: pronunciation + tone scoring (spec §3.5) ---
+numpy>=1.26             # audio handling + the fallback pitch tracker
+
+# Praat's pitch tracker lives in requirements-accel.txt, NOT here: it publishes
+# no Linux arm64 wheel, so on an Apple Silicon machine a hard requirement makes
+# the Docker image impossible to build (it falls back to compiling Praat from
+# source, and the slim base has no compiler). pitch.py treats it as optional and
+# falls back to the numpy tracker, so it must be optional to install too.
+
+# Local speech recognition for SEGMENTAL accuracy — "did you say the right
+# sounds", as opposed to the right tones. Spec §3.5 needs both halves.
+# The model (~480MB for `small`) downloads on FIRST USE, not at build time, so
+# the image stays lean and the app still starts with no network. Tone scoring
+# degrades gracefully to equal-time segmentation if it is ever unavailable.
+faster-whisper>=1.1.0
+
+# --- Phase 5 (Talk conversation) ---
+# Enables the Talk tab AND the optional content generator. The app degrades
+# gracefully without it / without ANTHROPIC_API_KEY (Talk disabled).
+anthropic>=0.42.0

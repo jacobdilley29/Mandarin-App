@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_35",
+  "title": "出國留學與中文課",
+  "subtitle": "Studying abroad, paperwork and language class",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_35_1",
+      "title": "申請留學與辦文件",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_留學",
+          "traditional": "留學",
+          "pinyin": "liú xué",
+          "gloss": "to study abroad",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大使館",
+          "traditional": "大使館",
+          "pinyin": "dà shǐ guǎn",
+          "gloss": "embassy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_複印",
+          "traditional": "複印",
+          "pinyin": "fù yìn",
+          "gloss": "to photocopy; to duplicate a document",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_填空",
+          "traditional": "填空",
+          "pinyin": "tián kòng",
+          "gloss": "to fill a job vacancy; to fill in a blank (e.g. on questionnaire or exam paper)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_人民幣",
+          "traditional": "人民幣",
+          "pinyin": "rén mín bì",
+          "gloss": "Renminbi (RMB); Chinese Yuan (CNY)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_流利",
+          "traditional": "流利",
+          "pinyin": "liú lì",
+          "gloss": "fluent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_35_2",
+      "title": "上中文課與寫作業",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_語法",
+          "traditional": "語法",
+          "pinyin": "yǔ fǎ",
+          "gloss": "grammar",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_詞典",
+          "traditional": "詞典",
+          "pinyin": "cí diǎn",
+          "gloss": "dictionary; also written 辞典",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_預習",
+          "traditional": "預習",
+          "pinyin": "yù xí",
+          "gloss": "to prepare a lesson",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_分之",
+          "traditional": "分之",
+          "pinyin": "fēn zhī",
+          "gloss": "(indicating a fraction)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_粗心",
+          "traditional": "粗心",
+          "pinyin": "cū xīn",
+          "gloss": "careless; thoughtless",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_馬虎",
+          "traditional": "馬虎",
+          "pinyin": "mǎ hǔ",
+          "gloss": "careless; sloppy; negligent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_35_3",
+      "title": "寒暑假、旅遊與看戲",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_寒假",
+          "traditional": "寒假",
+          "pinyin": "hán jià",
+          "gloss": "winter vacation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_放暑假",
+          "traditional": "放暑假",
+          "pinyin": "fàng shǔ jià",
+          "gloss": "to be on summer vacation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_長江",
+          "traditional": "長江",
+          "pinyin": "Cháng Jiāng",
+          "gloss": "Yangtze River, or Chang Jiang",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_京劇",
+          "traditional": "京劇",
+          "pinyin": "Jīng jù",
+          "gloss": "Beijing opera",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_羽毛球",
+          "traditional": "羽毛球",
+          "pinyin": "yǔ máo qiú",
+          "gloss": "shuttlecock; badminton",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_養成",
+          "traditional": "養成",
+          "pinyin": "yǎng chéng",
+          "gloss": "to cultivate; to raise; to form (a habit)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 83,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

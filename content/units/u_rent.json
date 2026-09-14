@@ -1,0 +1,224 @@
+{
+  "id": "u_rent",
+  "title": "租房子",
+  "subtitle": "Renting a place",
+  "hsk_level": 3,
+  "sort_order": 9,
+  "lessons": [
+    {
+      "id": "l_rent_1",
+      "title": "看房子",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_zu",
+          "traditional": "租",
+          "pinyin": "zū",
+          "gloss": "to rent",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想租一間房間。",
+            "pinyin": "Wǒ xiǎng zū yì jiān fángjiān.",
+            "gloss": "I want to rent a room."
+          }
+        },
+        {
+          "id": "v_fangzi",
+          "traditional": "房子",
+          "pinyin": "fángzi",
+          "gloss": "house; place (to live)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個房子很大。",
+            "pinyin": "Zhè ge fángzi hěn dà.",
+            "gloss": "This place is big."
+          }
+        },
+        {
+          "id": "v_fangjian",
+          "traditional": "房間",
+          "pinyin": "fángjiān",
+          "gloss": "room",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "房間裡有桌子。",
+            "pinyin": "Fángjiān lǐ yǒu zhuōzi.",
+            "gloss": "There's a table in the room."
+          }
+        },
+        {
+          "id": "v_fangzu",
+          "traditional": "房租",
+          "pinyin": "fángzū",
+          "gloss": "rent (money)",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "一個月房租多少錢？",
+            "pinyin": "Yí ge yuè fángzū duōshǎo qián?",
+            "gloss": "How much is the rent per month?"
+          }
+        },
+        {
+          "id": "v_dfang",
+          "traditional": "大",
+          "pinyin": "dà",
+          "gloss": "big; large",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個房間很大。",
+            "pinyin": "Zhè ge fángjiān hěn dà.",
+            "gloss": "This room is big."
+          }
+        },
+        {
+          "id": "v_anjing",
+          "traditional": "安靜",
+          "pinyin": "ānjìng",
+          "gloss": "quiet",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這裡很安靜。",
+            "pinyin": "Zhèlǐ hěn ānjìng.",
+            "gloss": "It's quiet here."
+          }
+        },
+        {
+          "id": "v_fangdong",
+          "traditional": "房東",
+          "pinyin": "fángdōng",
+          "gloss": "landlord",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "房東人很好。",
+            "pinyin": "Fángdōng rén hěn hǎo.",
+            "gloss": "The landlord is nice."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_bi",
+          "title": "比 — comparisons",
+          "pattern": "A 比 B + Adjective",
+          "explanation": "比 compares two things: A 比 B 大 = A is bigger than B. The adjective comes at the end, with no 很.",
+          "examples": [
+            {
+              "hanzi": "這個房間比那個大。",
+              "pinyin": "Zhè ge fángjiān bǐ nà ge dà.",
+              "gloss": "This room is bigger than that one."
+            },
+            {
+              "hanzi": "這裡比夜市安靜。",
+              "pinyin": "Zhèlǐ bǐ yèshì ānjìng.",
+              "gloss": "It's quieter here than the night market."
+            },
+            {
+              "hanzi": "捷運比公車快。",
+              "pinyin": "Jiéyùn bǐ gōngchē kuài.",
+              "gloss": "The MRT is faster than the bus."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "房東",
+          "hanzi": "你好，這間房間就是要租的。",
+          "pinyin": "Nǐ hǎo, zhè jiān fángjiān jiùshì yào zū de.",
+          "gloss": "Hi, this is the room that's for rent."
+        },
+        {
+          "speaker": "我",
+          "hanzi": "房間很大，也很安靜。",
+          "pinyin": "Fángjiān hěn dà, yě hěn ānjìng.",
+          "gloss": "The room is big and quiet."
+        },
+        {
+          "speaker": "我",
+          "hanzi": "一個月房租多少錢？",
+          "pinyin": "Yí ge yuè fángzū duōshǎo qián?",
+          "gloss": "How much is the monthly rent?"
+        },
+        {
+          "speaker": "房東",
+          "hanzi": "一個月一萬元。",
+          "pinyin": "Yí ge yuè yí wàn yuán.",
+          "gloss": "Ten thousand NT a month."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "想",
+            "租",
+            "一",
+            "間",
+            "房間"
+          ],
+          "pinyin": "Wǒ xiǎng zū yì jiān fángjiān.",
+          "gloss": "I want to rent a room.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這個",
+            "房間",
+            "比",
+            "那個",
+            "大"
+          ],
+          "pinyin": "Zhè ge fángjiān bǐ nà ge dà.",
+          "gloss": "This room is bigger than that one.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這裡",
+            "很",
+            "安靜"
+          ],
+          "pinyin": "Zhèlǐ hěn ānjìng.",
+          "gloss": "It's quiet here.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "一",
+            "個",
+            "月",
+            "房租",
+            "多少錢"
+          ],
+          "pinyin": "Yí ge yuè fángzū duōshǎo qián?",
+          "gloss": "How much is the rent per month?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "房東",
+            "人",
+            "很",
+            "好"
+          ],
+          "pinyin": "Fángdōng rén hěn hǎo.",
+          "gloss": "The landlord is nice.",
+          "cloze_index": 0
+        }
+      ],
+      "requires_grammar": [
+        "g_de_attributive"
+      ]
+    }
+  ],
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

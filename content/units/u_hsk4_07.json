@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_07",
+  "title": "社會、媒體與公家機關",
+  "subtitle": "Police, paperwork, news and getting things organised",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_07_1",
+      "title": "警察與法律問題",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_警察",
+          "traditional": "警察",
+          "pinyin": "jǐng chá",
+          "gloss": "police; police officer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_法律",
+          "traditional": "法律",
+          "pinyin": "fǎ lǜ",
+          "gloss": "law",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_證明",
+          "traditional": "證明",
+          "pinyin": "zhèng míng",
+          "gloss": "proof; certificate; identification",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地址",
+          "traditional": "地址",
+          "pinyin": "dì zhǐ",
+          "gloss": "address",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_責任",
+          "traditional": "責任",
+          "pinyin": "zé rèn",
+          "gloss": "responsibility; blame; duty",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_負責",
+          "traditional": "負責",
+          "pinyin": "fù zé",
+          "gloss": "to be in charge of; to take responsibility for; to be to blame",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_07_2",
+      "title": "新聞、廣告與社會",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_記者",
+          "traditional": "記者",
+          "pinyin": "jì zhě",
+          "gloss": "reporter; journalist",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_報道",
+          "traditional": "報道",
+          "pinyin": "bào dǎo",
+          "gloss": "to report (news); report",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_廣告",
+          "traditional": "廣告",
+          "pinyin": "guǎng gào",
+          "gloss": "to advertise; a commercial; advertisement",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_社會",
+          "traditional": "社會",
+          "pinyin": "shè huì",
+          "gloss": "society",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_發展",
+          "traditional": "發展",
+          "pinyin": "fā zhǎn",
+          "gloss": "development; growth; to develop",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_技術",
+          "traditional": "技術",
+          "pinyin": "jì shù",
+          "gloss": "technology; technique; skill",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_07_3",
+      "title": "安排與條件",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_條件",
+          "traditional": "條件",
+          "pinyin": "tiáo jiàn",
+          "gloss": "condition; circumstance; term; factor; requirement; prerequisite; qualification; situation; state; condition",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_安排",
+          "traditional": "安排",
+          "pinyin": "ān pái",
+          "gloss": "to arrange; to plan; to set up",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_過程",
+          "traditional": "過程",
+          "pinyin": "guò chéng",
+          "gloss": "course of events; process",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_關鍵",
+          "traditional": "關鍵",
+          "pinyin": "guān jiàn",
+          "gloss": "crucial point; crux; key",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_包括",
+          "traditional": "包括",
+          "pinyin": "bāoguā",
+          "gloss": "to comprise; to include; to involve",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_超過",
+          "traditional": "超過",
+          "pinyin": "chāo guò",
+          "gloss": "to surpass; to exceed; to outstrip",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 55,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_31",
+  "title": "禮貌、個性與人際往來",
+  "subtitle": "Being polite, describing personalities and smoothing things over",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_31_1",
+      "title": "不好意思，打擾一下",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_打擾",
+          "traditional": "打擾",
+          "pinyin": "dǎ rǎo",
+          "gloss": "to disturb; to bother; to trouble",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_抱歉",
+          "traditional": "抱歉",
+          "pinyin": "bào qiàn",
+          "gloss": "to be sorry; to feel apologetic; sorry!",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_誤會",
+          "traditional": "誤會",
+          "pinyin": "wù huì",
+          "gloss": "to misunderstand; to mistake; misunderstanding",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_禮貌",
+          "traditional": "禮貌",
+          "pinyin": "lǐ mào",
+          "gloss": "courtesy; politeness; manners; courteous; polite",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_握手",
+          "traditional": "握手",
+          "pinyin": "wò shǒu",
+          "gloss": "to shake hands",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_同情",
+          "traditional": "同情",
+          "pinyin": "tóng qíng",
+          "gloss": "to sympathize with; sympathy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_31_2",
+      "title": "這個人個性如何",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_幽默",
+          "traditional": "幽默",
+          "pinyin": "yōu mò",
+          "gloss": "(loanword) humor; humorous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_誠實",
+          "traditional": "誠實",
+          "pinyin": "chéng shí",
+          "gloss": "honest",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_活潑",
+          "traditional": "活潑",
+          "pinyin": "huó po",
+          "gloss": "lively; vivacious; brisk",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_害羞",
+          "traditional": "害羞",
+          "pinyin": "hài xiū",
+          "gloss": "shy; embarrassed; bashful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_懶",
+          "traditional": "懶",
+          "pinyin": "lǎn",
+          "gloss": "lazy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_得意",
+          "traditional": "得意",
+          "pinyin": "dé yì",
+          "gloss": "proud of oneself; pleased with oneself; complacent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_31_3",
+      "title": "稱讚、感動與寫日記",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_優點",
+          "traditional": "優點",
+          "pinyin": "yōu diǎn",
+          "gloss": "merit; benefit; strong point",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_缺點",
+          "traditional": "缺點",
+          "pinyin": "quē diǎn",
+          "gloss": "weak point; fault; shortcoming",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_表揚",
+          "traditional": "表揚",
+          "pinyin": "biǎo yáng",
+          "gloss": "to praise; to commend",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鼓掌",
+          "traditional": "鼓掌",
+          "pinyin": "gǔ zhǎng",
+          "gloss": "to applaud; to clap",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_流淚",
+          "traditional": "流淚",
+          "pinyin": "liú lèi",
+          "gloss": "to shed tears",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_日記",
+          "traditional": "日記",
+          "pinyin": "rì jì",
+          "gloss": "diary",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 79,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

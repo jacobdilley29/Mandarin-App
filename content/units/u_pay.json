@@ -1,0 +1,239 @@
+{
+  "id": "u_pay",
+  "title": "結帳付款",
+  "subtitle": "Paying and checking out",
+  "hsk_level": 3,
+  "sort_order": 5,
+  "lessons": [
+    {
+      "id": "l_pay_1",
+      "title": "結帳",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_jiezhang",
+          "traditional": "結帳",
+          "pinyin": "jiézhàng",
+          "gloss": "to check out; pay the bill",
+          "hsk_level": 3,
+          "taiwan_note": "在超商、餐廳都說「結帳」。",
+          "example": {
+            "hanzi": "我要結帳。",
+            "pinyin": "Wǒ yào jiézhàng.",
+            "gloss": "I'd like to check out."
+          }
+        },
+        {
+          "id": "v_yigong",
+          "traditional": "一共",
+          "pinyin": "yígòng",
+          "gloss": "in total; altogether",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "一共三個便當。",
+            "pinyin": "Yígòng sān ge biàndāng.",
+            "gloss": "Three boxed meals in total."
+          }
+        },
+        {
+          "id": "v_easycard",
+          "traditional": "悠遊卡",
+          "pinyin": "yōuyóukǎ",
+          "gloss": "EasyCard (stored-value card)",
+          "hsk_level": 3,
+          "taiwan_note": "台灣捷運、超商通用的儲值卡。",
+          "example": {
+            "hanzi": "可以用悠遊卡付嗎？",
+            "pinyin": "Kěyǐ yòng yōuyóukǎ fù ma?",
+            "gloss": "Can I pay with an EasyCard?"
+          }
+        },
+        {
+          "id": "v_fuqian",
+          "traditional": "付",
+          "pinyin": "fù",
+          "gloss": "to pay",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我用現金付。",
+            "pinyin": "Wǒ yòng xiànjīn fù.",
+            "gloss": "I'll pay with cash."
+          }
+        },
+        {
+          "id": "v_xianjin",
+          "traditional": "現金",
+          "pinyin": "xiànjīn",
+          "gloss": "cash",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要用現金付。",
+            "pinyin": "Wǒ yào yòng xiànjīn fù.",
+            "gloss": "I'd like to pay with cash."
+          }
+        },
+        {
+          "id": "v_shua",
+          "traditional": "刷卡",
+          "pinyin": "shuākǎ",
+          "gloss": "to pay by (swiping a) card",
+          "hsk_level": 4,
+          "taiwan_note": "信用卡付款口語說「刷卡」。",
+          "example": {
+            "hanzi": "可以刷卡嗎？",
+            "pinyin": "Kěyǐ shuākǎ ma?",
+            "gloss": "Can I pay by card?"
+          }
+        },
+        {
+          "id": "v_fapiao",
+          "traditional": "發票",
+          "pinyin": "fāpiào",
+          "gloss": "receipt (with lottery number)",
+          "hsk_level": 4,
+          "taiwan_note": "統一發票有對獎功能，別隨手丟！",
+          "example": {
+            "hanzi": "發票要嗎？",
+            "pinyin": "Fāpiào yào ma?",
+            "gloss": "Do you want the receipt?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_yong",
+          "title": "用 — the means / instrument",
+          "pattern": "Subject + 用 + Instrument + Verb",
+          "explanation": "用 (\"to use\") marks the tool or method you do something with. Put 用 + the means before the verb: 用現金付 = pay with cash.",
+          "examples": [
+            {
+              "hanzi": "我用悠遊卡付。",
+              "pinyin": "Wǒ yòng yōuyóukǎ fù.",
+              "gloss": "I'll pay with an EasyCard."
+            },
+            {
+              "hanzi": "可以用現金付嗎？",
+              "pinyin": "Kěyǐ yòng xiànjīn fù ma?",
+              "gloss": "Can I pay with cash?"
+            },
+            {
+              "hanzi": "你用什麼付？",
+              "pinyin": "Nǐ yòng shénme fù?",
+              "gloss": "What do you pay with?"
+            }
+          ],
+          "hsk_level": 3
+        },
+        {
+          "id": "g_zhi",
+          "title": "只 — only",
+          "pattern": "Subject + 只 + Verb",
+          "explanation": "只 (\"only\") goes right before the verb to limit it: 只收現金 = only accept cash.",
+          "examples": [
+            {
+              "hanzi": "他只買便當。",
+              "pinyin": "Tā zhǐ mǎi biàndāng.",
+              "gloss": "He only buys boxed meals."
+            },
+            {
+              "hanzi": "我只要一個。",
+              "pinyin": "Wǒ zhǐ yào yí ge.",
+              "gloss": "I only want one."
+            },
+            {
+              "hanzi": "我只喝水。",
+              "pinyin": "Wǒ zhǐ hē shuǐ.",
+              "gloss": "I only drink water."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "店員",
+          "hanzi": "您好，要結帳嗎？",
+          "pinyin": "Nín hǎo, yào jiézhàng ma?",
+          "gloss": "Hello, ready to check out?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "對，一共多少錢？",
+          "pinyin": "Duì, yígòng duōshǎo qián?",
+          "gloss": "Yes, how much altogether?"
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "一共八十五元。發票要嗎？",
+          "pinyin": "Yígòng bāshíwǔ yuán. Fāpiào yào ma?",
+          "gloss": "Eighty-five NT dollars total. Do you want the receipt?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "要，我用悠遊卡付。",
+          "pinyin": "Yào, wǒ yòng yōuyóukǎ fù.",
+          "gloss": "Yes, I'll pay with my EasyCard."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "要",
+            "結帳"
+          ],
+          "pinyin": "Wǒ yào jiézhàng.",
+          "gloss": "I'd like to check out.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "一共",
+            "多少錢"
+          ],
+          "pinyin": "Yígòng duōshǎo qián?",
+          "gloss": "How much altogether?",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "用",
+            "悠遊卡",
+            "付"
+          ],
+          "pinyin": "Wǒ yòng yōuyóukǎ fù.",
+          "gloss": "I'll pay with an EasyCard.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這裡",
+            "只",
+            "用",
+            "現金",
+            "嗎"
+          ],
+          "pinyin": "Zhèlǐ zhǐ yòng xiànjīn ma?",
+          "gloss": "Do you only take cash here?",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "發票",
+            "要",
+            "嗎"
+          ],
+          "pinyin": "Fāpiào yào ma?",
+          "gloss": "Do you want the receipt?",
+          "cloze_index": 0
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

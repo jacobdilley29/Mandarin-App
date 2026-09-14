@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_16",
+  "title": "認識人與相信人",
+  "subtitle": "Getting to know people and deciding who to trust",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_16_1",
+      "title": "第一印象",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_印象",
+          "traditional": "印象",
+          "pinyin": "yìn xiàng",
+          "gloss": "impression (sth that stays in one's mind); a memory",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_態度",
+          "traditional": "態度",
+          "pinyin": "tài du",
+          "gloss": "manner; bearing; attitude",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_優秀",
+          "traditional": "優秀",
+          "pinyin": "yōu xiù",
+          "gloss": "outstanding; excellent",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_厲害",
+          "traditional": "厲害",
+          "pinyin": "lì hai",
+          "gloss": "(used to describe sb or sth that makes a very strong impression, whether favorable or unfavorable) terrible; intense; severe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成熟",
+          "traditional": "成熟",
+          "pinyin": "chéng shóu",
+          "gloss": "mature; ripe; to mature; to ripen; Taiwan pr. [chéng shóu]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_互相",
+          "traditional": "互相",
+          "pinyin": "hù xiāng",
+          "gloss": "each other; mutually; mutual",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_16_2",
+      "title": "年齡與成長",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_出生",
+          "traditional": "出生",
+          "pinyin": "chū shēng",
+          "gloss": "to be born",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_兒童",
+          "traditional": "兒童",
+          "pinyin": "ér tóng",
+          "gloss": "child",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_年齡",
+          "traditional": "年齡",
+          "pinyin": "nián líng",
+          "gloss": "(a person's) age",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_畢業",
+          "traditional": "畢業",
+          "pinyin": "bì yè",
+          "gloss": "graduation; to graduate; to finish school",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_回憶",
+          "traditional": "回憶",
+          "pinyin": "huí yì",
+          "gloss": "to recall; memories",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_共同",
+          "traditional": "共同",
+          "pinyin": "gòng tóng",
+          "gloss": "common; joint; jointly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_16_3",
+      "title": "信任與被騙",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_信任",
+          "traditional": "信任",
+          "pinyin": "xìn rèn",
+          "gloss": "to trust; to have confidence in",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_懷疑",
+          "traditional": "懷疑",
+          "pinyin": "huái yí",
+          "gloss": "to doubt (sth); to be skeptical of; to have one's doubts",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_騙",
+          "traditional": "騙",
+          "pinyin": "piàn",
+          "gloss": "to cheat; to swindle; to deceive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_尊重",
+          "traditional": "尊重",
+          "pinyin": "zūn zhòng",
+          "gloss": "to esteem; to respect; to honor",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可憐",
+          "traditional": "可憐",
+          "pinyin": "kě lián",
+          "gloss": "pitiful; pathetic; to have pity on",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_隨便",
+          "traditional": "隨便",
+          "pinyin": "suí biàn",
+          "gloss": "as one wishes; as one pleases; at random",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 64,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

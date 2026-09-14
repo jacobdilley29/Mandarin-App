@@ -1,0 +1,179 @@
+{
+  "id": "u_hsk4_14",
+  "title": "廚房、安全與出遊",
+  "subtitle": "Cooking at home, staying safe, and day trips",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_14_1",
+      "title": "在家煮一頓飯",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_火",
+          "traditional": "火",
+          "pinyin": "huǒ",
+          "gloss": "fire; urgent; ammunition",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_刀",
+          "traditional": "刀",
+          "pinyin": "dāo",
+          "gloss": "knife; blade; single-edged sword",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_豬",
+          "traditional": "豬",
+          "pinyin": "zhū",
+          "gloss": "hog; pig; swine",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_頓",
+          "traditional": "頓",
+          "pinyin": "dùn",
+          "gloss": "to stop; to pause; to arrange",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_夠",
+          "traditional": "夠",
+          "pinyin": "gòu",
+          "gloss": "enough (sufficient); enough (too much); (coll.) (before adj.) really",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_破",
+          "traditional": "破",
+          "pinyin": "pò",
+          "gloss": "broken; damaged; worn out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_14_2",
+      "title": "注意安全與突發狀況",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_危險",
+          "traditional": "危險",
+          "pinyin": "wéixiǎn",
+          "gloss": "danger; dangerous",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_引起",
+          "traditional": "引起",
+          "pinyin": "yǐn qǐ",
+          "gloss": "to give rise to; to lead to; to cause; to arouse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_亂",
+          "traditional": "亂",
+          "pinyin": "luàn",
+          "gloss": "in confusion or disorder; in a confused state of mind; disorder",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_推",
+          "traditional": "推",
+          "pinyin": "tuī",
+          "gloss": "to push; to cut; to refuse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方向",
+          "traditional": "方向",
+          "pinyin": "fāng xiàng",
+          "gloss": "direction; orientation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_14_3",
+      "title": "出門旅行與參觀景點",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_當地",
+          "traditional": "當地",
+          "pinyin": "dāng dì",
+          "gloss": "local",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_世紀",
+          "traditional": "世紀",
+          "pinyin": "shì jì",
+          "gloss": "century",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_取",
+          "traditional": "取",
+          "pinyin": "qǔ",
+          "gloss": "to take; to get; to choose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_醒",
+          "traditional": "醒",
+          "pinyin": "xǐng",
+          "gloss": "to wake up; to be awake; to become aware",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_免費",
+          "traditional": "免費",
+          "pinyin": "miǎn fèi",
+          "gloss": "free (of charge)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大概",
+          "traditional": "大概",
+          "pinyin": "dà gài",
+          "gloss": "roughly; probably; rough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 62,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

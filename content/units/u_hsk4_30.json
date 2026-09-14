@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_30",
+  "title": "語言、舉例與獎金",
+  "subtitle": "Language classes, explaining your points and money at work",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_30_1",
+      "title": "報名語言課與翻譯",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_民族",
+          "traditional": "民族",
+          "pinyin": "mín zú",
+          "gloss": "nationality; ethnic group",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_翻譯",
+          "traditional": "翻譯",
+          "pinyin": "fān yì",
+          "gloss": "to translate; to interpret; translator",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_閱讀",
+          "traditional": "閱讀",
+          "pinyin": "yuè dú",
+          "gloss": "to read; reading",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_筆記本",
+          "traditional": "筆記本",
+          "pinyin": "bǐ jì běn",
+          "gloss": "notebook (stationery); notebook (computing)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_報名",
+          "traditional": "報名",
+          "pinyin": "bào míng",
+          "gloss": "to sign up; to enter one's name; to apply",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_廣播",
+          "traditional": "廣播",
+          "pinyin": "guǎng bō",
+          "gloss": "broadcast; broadcasting; to broadcast",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_30_2",
+      "title": "舉例、排順序與相反",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_例如",
+          "traditional": "例如",
+          "pinyin": "lì rú",
+          "gloss": "for example; for instance; such as",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_其次",
+          "traditional": "其次",
+          "pinyin": "qí cì",
+          "gloss": "next; secondly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不但",
+          "traditional": "不但",
+          "pinyin": "bù dàn",
+          "gloss": "not only (... but also ...)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_往往",
+          "traditional": "往往",
+          "pinyin": "wǎng wǎng",
+          "gloss": "usually; in many cases; more often than not",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_相反",
+          "traditional": "相反",
+          "pinyin": "xiāng fǎn",
+          "gloss": "opposite; contrary",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_特點",
+          "traditional": "特點",
+          "pinyin": "tè diǎn",
+          "gloss": "characteristic (feature); trait; feature",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_30_3",
+      "title": "獎金、信用卡與反映意見",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_獎金",
+          "traditional": "獎金",
+          "pinyin": "jiǎng jīn",
+          "gloss": "premium; award money; bonus",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_信用卡",
+          "traditional": "信用卡",
+          "pinyin": "xìn yòng kǎ",
+          "gloss": "credit card",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_窮",
+          "traditional": "窮",
+          "pinyin": "qióng",
+          "gloss": "poor; destitute; to use up",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_祝賀",
+          "traditional": "祝賀",
+          "pinyin": "zhù hè",
+          "gloss": "to congratulate; congratulations",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重視",
+          "traditional": "重視",
+          "pinyin": "zhòng shì",
+          "gloss": "to attach importance to sth; to value",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_反映",
+          "traditional": "反映",
+          "pinyin": "fǎn yìng",
+          "gloss": "to mirror; to reflect; mirror image",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 78,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

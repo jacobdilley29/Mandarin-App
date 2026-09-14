@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_03",
+  "title": "新聞與意外",
+  "subtitle": "Following the news, talking about accidents and staying safe",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_03_1",
+      "title": "看新聞聽消息",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_消息",
+          "traditional": "消息",
+          "pinyin": "xiāo xi",
+          "gloss": "news; information",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_調查",
+          "traditional": "調查",
+          "pinyin": "diào chá",
+          "gloss": "investigation; inquiry; to investigate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_發生",
+          "traditional": "發生",
+          "pinyin": "fā shēng",
+          "gloss": "to happen; to occur; to take place; to break out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_當時",
+          "traditional": "當時",
+          "pinyin": "dāng shí",
+          "gloss": "then; at that time; while",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_通過",
+          "traditional": "通過",
+          "pinyin": "tōng guò",
+          "gloss": "to pass through; to get through; to adopt (a resolution); to pass (legislation); to pass (a test)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_無",
+          "traditional": "無",
+          "pinyin": "wú",
+          "gloss": "not to have; no; none",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_03_2",
+      "title": "安全與意外",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_安全",
+          "traditional": "安全",
+          "pinyin": "ān quán",
+          "gloss": "safe; secure; safety; security",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_死",
+          "traditional": "死",
+          "pinyin": "sǐ",
+          "gloss": "to die; impassable; uncrossable",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生命",
+          "traditional": "生命",
+          "pinyin": "shēng mìng",
+          "gloss": "life (as the characteristic of living beings); living being; creature",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_保證",
+          "traditional": "保證",
+          "pinyin": "bǎo zhèng",
+          "gloss": "guarantee; to guarantee; to ensure",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_直接",
+          "traditional": "直接",
+          "pinyin": "zhí jiē",
+          "gloss": "direct (opposite: indirect 间接); immediate; straightforward",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_掉",
+          "traditional": "掉",
+          "pinyin": "diào",
+          "gloss": "to fall; to drop; to lag behind",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_03_3",
+      "title": "生活的轉變",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_生活",
+          "traditional": "生活",
+          "pinyin": "shēng huó",
+          "gloss": "to live; life; livelihood",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_改變",
+          "traditional": "改變",
+          "pinyin": "gǎi biàn",
+          "gloss": "to change; to alter; to transform",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_成為",
+          "traditional": "成為",
+          "pinyin": "chéng wéi",
+          "gloss": "to become; to turn into",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_永遠",
+          "traditional": "永遠",
+          "pinyin": "yǒng yuǎn",
+          "gloss": "forever; eternal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_獲得",
+          "traditional": "獲得",
+          "pinyin": "huò dé",
+          "gloss": "to obtain; to receive; to get",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_接受",
+          "traditional": "接受",
+          "pinyin": "jiē shòu",
+          "gloss": "to accept; to receive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 51,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "schema": 1,
+    "note": "Editorial layer applied on top of the vendored HSK word lists (content/wordlists/). Those lists are mainland-standard: they carry traditional characters but PRC vocabulary and PRC readings. Spec §6 requires Taiwan usage throughout, so build_skeleton.py applies this file after loading a list and before binning words into lessons. Kept separate from the vendored lists so refreshing a list never clobbers these decisions.",
+    "sources": "Readings follow the Taiwan MOE 教育部重編國語辭典. Vocabulary substitutions follow everyday Taiwan usage per spec §6."
+  },
+  "vocabulary": {
+    "note": "PRC word -> Taiwan word. The HSK list entry is replaced wholesale: the Taiwan form becomes the taught word, and the PRC form is recorded in taiwan_note so the learner can still recognise it.",
+    "substitutions": [
+      {
+        "hsk": "自行車",
+        "taiwan": "腳踏車",
+        "pinyin": "jiǎotàchē",
+        "note": "台灣說「腳踏車」；「自行車」是大陸用法。"
+      },
+      {
+        "hsk": "出租車",
+        "taiwan": "計程車",
+        "pinyin": "jìchéngchē",
+        "note": "台灣說「計程車」，口語也說「小黃」。"
+      },
+      {
+        "hsk": "地鐵",
+        "taiwan": "捷運",
+        "pinyin": "jiéyùn",
+        "note": "台北、高雄等地的地鐵系統叫「捷運」。"
+      },
+      {
+        "hsk": "公共汽車",
+        "taiwan": "公車",
+        "pinyin": "gōngchē",
+        "note": "台灣簡稱「公車」。"
+      },
+      {
+        "hsk": "服務員",
+        "taiwan": "服務生",
+        "pinyin": "fúwùshēng",
+        "note": "台灣餐廳多說「服務生」。"
+      },
+      {
+        "hsk": "西紅柿",
+        "taiwan": "番茄",
+        "pinyin": "fānqié",
+        "note": "台灣說「番茄」；「西紅柿」是大陸用法。"
+      },
+      {
+        "hsk": "賓館",
+        "taiwan": "旅館",
+        "pinyin": "lǚguǎn",
+        "note": "台灣說「旅館」或「飯店」。"
+      },
+      {
+        "hsk": "米飯",
+        "taiwan": "白飯",
+        "pinyin": "báifàn",
+        "note": "台灣點餐時說「白飯」。"
+      },
+      {
+        "hsk": "打印",
+        "taiwan": "列印",
+        "pinyin": "lièyìn",
+        "note": "台灣說「列印」；「打印」是大陸用法。"
+      },
+      {
+        "hsk": "質量",
+        "taiwan": "品質",
+        "pinyin": "pǐnzhí",
+        "note": "台灣說「品質」；「質量」在台灣指物理的 mass。"
+      },
+      {
+        "hsk": "幼兒園",
+        "taiwan": "幼稚園",
+        "pinyin": "yòuzhìyuán",
+        "note": "台灣說「幼稚園」。"
+      },
+      {
+        "hsk": "一會兒",
+        "taiwan": "一下",
+        "pinyin": "yíxià",
+        "note": "台灣少用兒化，說「一下」或「等一下」。"
+      },
+      {
+        "hsk": "聯繫",
+        "taiwan": "聯絡",
+        "pinyin": "liánluò",
+        "note": "台灣說「聯絡」（聯絡方式、保持聯絡）；「聯繫」是大陸用法。"
+      }
+    ],
+    "phrases_note": "PRC phrase -> Taiwan phrase. Unlike `substitutions` these are not HSK vocabulary entries, so they never reach the vocab table — they turn up inside generated sentences, dialogue and passages. Checked by validation.register_slips.",
+    "phrases": [
+      {
+        "prc": "早上好",
+        "taiwan": "早安",
+        "note": "台灣說「早安」或「早」。"
+      },
+      {
+        "prc": "晚上好",
+        "taiwan": "晚安",
+        "note": "台灣打招呼說「晚安」。"
+      },
+      {
+        "prc": "中午好",
+        "taiwan": "午安",
+        "note": "台灣說「午安」。"
+      },
+      {
+        "prc": "土豆",
+        "taiwan": "馬鈴薯",
+        "note": "台灣的「土豆」是花生，不是馬鈴薯。"
+      },
+      {
+        "prc": "軟件",
+        "taiwan": "軟體",
+        "note": "台灣說「軟體」。"
+      },
+      {
+        "prc": "硬件",
+        "taiwan": "硬體",
+        "note": "台灣說「硬體」。"
+      },
+      {
+        "prc": "視頻",
+        "taiwan": "影片",
+        "note": "台灣說「影片」。"
+      },
+      {
+        "prc": "信息",
+        "taiwan": "訊息",
+        "note": "台灣說「訊息」。"
+      },
+      {
+        "prc": "空調",
+        "taiwan": "冷氣",
+        "note": "台灣說「冷氣」。"
+      },
+      {
+        "prc": "方便麵",
+        "taiwan": "泡麵",
+        "note": "台灣說「泡麵」。"
+      },
+      {
+        "prc": "質量",
+        "taiwan": "品質",
+        "note": "台灣說「品質」；「質量」是物理學的 mass。"
+      },
+      {
+        "prc": "打的",
+        "taiwan": "搭計程車",
+        "note": "台灣不說「打的」。"
+      }
+    ]
+  },
+  "canonical_forms": {
+    "note": "The vendored lists carry every spelling of a word in `forms`, and the first one is frequently not the standard Taiwan form. Three failure classes were found across the 79 multi-spelling entries: (A) forms[0] is an archaic variant — 咊 for 和, 㼝 for 碗, 嵗 for 歲; (B) forms[0] is the SIMPLIFIED form, which must never reach a traditional-only app — 听 for 聽, 几 for 幾, 从 for 從; (C) forms[0] is correct and the alternates are archaic or a different word — 吃/喫, 了/瞭, 你/妳. No heuristic separates these reliably, so the A and B cases are pinned here by simplified form. Anything absent keeps forms[0].",
+    "by_simplified": {
+      "和": "和",
+      "家": "家",
+      "里": "裡",
+      "岁": "歲",
+      "听": "聽",
+      "几": "幾",
+      "从": "從",
+      "离": "離",
+      "万": "萬",
+      "云": "雲",
+      "船": "船",
+      "笑": "笑",
+      "药": "藥",
+      "最": "最",
+      "草": "草",
+      "春": "春",
+      "裤子": "褲子",
+      "拿": "拿",
+      "碗": "碗",
+      "暗": "暗",
+      "遍": "遍",
+      "干": "乾",
+      "辣": "辣",
+      "懒": "懶",
+      "留": "留",
+      "墙": "牆",
+      "却": "卻",
+      "群": "群",
+      "深": "深",
+      "趟": "趟",
+      "以": "以",
+      "当": "當",
+      "联系": "聯繫",
+      "复习": "複習",
+      "脏": "髒"
+    },
+    "why_selected": {
+      "里": "Taiwan writes 裡 (not 裏) for the locative suffix.",
+      "干": "HSK 干 is 'dry' — 乾 in traditional. 干 alone is a different word (to offend).",
+      "当": "HSK 当 is dāng 'when / to serve as' — 當. 噹 is the onomatopoeia.",
+      "脏": "HSK 脏 is zāng 'dirty' — 髒. 臟 is zàng, an internal organ.",
+      "复习": "Taiwan MOE writes 複習 for 'to revise'.",
+      "联系": "Taiwan writes 聯繫 (not 聯係)."
+    }
+  },
+  "readings": {
+    "note": "Taiwan readings that differ from the PRC standard in the vendored lists. Two kinds: (a) outright different readings named in spec §6, and (b) the systematic case where the mainland standard neutralises a second syllable that Taiwan keeps fully toned (朋友 péngyǒu, not péngyou). Only words verified against Taiwan MOE are pinned here; the rest are listed under `needs_review`.",
+    "core": {
+      "note": "High-frequency words where the grammatical reading carries few dictionary senses but dominates real usage, so no sense-count heuristic finds it. 了 resolved to liǎo ('to finish') over le (the aspect marker); 那 to the archaic nuó; 沒 to mò ('drowned'); 嗎 to má. These are the most common words in the language and must be pinned.",
+      "了": "le",
+      "那": "nà",
+      "沒": "méi",
+      "嗎": "ma",
+      "著": "zhe",
+      "吧": "ba",
+      "得": "de",
+      "為": "wèi",
+      "長": "cháng",
+      "喂": "wéi"
+    },
+    "spec_6": {
+      "垃圾": "lèsè",
+      "星期": "xīngqí",
+      "法國": "fàguó",
+      "和": "hàn",
+      "企業": "qìyè",
+      "危險": "wéixiǎn",
+      "包括": "bāoguā"
+    },
+    "full_tone": {
+      "喜歡": "xǐhuān",
+      "朋友": "péngyǒu",
+      "學生": "xuéshēng",
+      "衣服": "yīfú",
+      "認識": "rènshì",
+      "先生": "xiānshēng",
+      "小姐": "xiǎojiě",
+      "漂亮": "piàoliàng",
+      "事情": "shìqíng",
+      "晚上": "wǎnshàng",
+      "早上": "zǎoshàng",
+      "眼睛": "yǎnjīng",
+      "休息": "xiūxí",
+      "便宜": "piányí",
+      "舒服": "shūfú",
+      "記得": "jìdé",
+      "時候": "shíhòu",
+      "後面": "hòumiàn",
+      "丈夫": "zhàngfū",
+      "沒關係": "méiguānxì",
+      "不客氣": "búkèqì"
+    },
+    "corrections": {
+      "note": "Errors found in the hand-authored content, fixed here so the fix survives a re-import.",
+      "好吃": {
+        "was": "hào chī",
+        "is": "hǎochī",
+        "why": "好吃 meaning 'tasty/delicious' is hǎochī. hào chī (4th tone) means 'fond of eating'. The curated entry was glossed 'tasty; delicious' with the example 這個菜很好吃, so the reading was wrong — it was also feeding the wrong audio to TTS and the wrong target to tone training."
+      }
+    }
+  },
+  "needs_review": {
+    "note": "Polyphonic words and mainland-neutralised readings that build_skeleton.py could not resolve with confidence. The Claude theming pass (--theme claude) resolves these per word in context; until then the vendored list reading is used. Run `python -m scripts.build_skeleton --report-readings` to regenerate this list.",
+    "words": []
+  }
+}

@@ -1,0 +1,43 @@
+# --- Secrets / config ---
+.env
+
+# --- User data (SQLite databases, audio cache, backups) ---
+data/
+
+# Progress exports are learner data, not source. Keep them out of git —
+# store them somewhere off this machine instead (see README "Backups & restore").
+progress-export.json
+*-progress-*.json
+mandarin-progress-*.json
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/dev-dist/
+*.tsbuildinfo
+*.local
+
+# --- Editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Stray npm files (backend is Python-only)
+backend/package.json
+backend/package-lock.json
+backend/node_modules/
+
+# Per-lesson generation cache — a cache, not source. Safe to delete;
+# generate_content re-fetches anything missing.
+content/.generated/

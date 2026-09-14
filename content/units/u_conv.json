@@ -1,0 +1,431 @@
+{
+  "id": "u_conv",
+  "title": "便利商店",
+  "subtitle": "Convenience stores",
+  "hsk_level": 2,
+  "sort_order": 1,
+  "lessons": [
+    {
+      "id": "l_conv_1",
+      "title": "找東西",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_bianli",
+          "traditional": "便利商店",
+          "pinyin": "biànlì shāngdiàn",
+          "gloss": "convenience store",
+          "hsk_level": 3,
+          "taiwan_note": "口語常說「小七」(7-Eleven) 或「超商」。",
+          "example": {
+            "hanzi": "那是便利商店。",
+            "pinyin": "Nà shì biànlì shāngdiàn.",
+            "gloss": "That's a convenience store."
+          }
+        },
+        {
+          "id": "v_dongxi",
+          "traditional": "東西",
+          "pinyin": "dōngxi",
+          "gloss": "thing; stuff",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想買一點東西。",
+            "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.",
+            "gloss": "I want to buy a few things."
+          }
+        },
+        {
+          "id": "v_mai",
+          "traditional": "買",
+          "pinyin": "mǎi",
+          "gloss": "to buy",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你要買什麼？",
+            "pinyin": "Nǐ yào mǎi shénme?",
+            "gloss": "What do you want to buy?"
+          }
+        },
+        {
+          "id": "v_shui",
+          "traditional": "水",
+          "pinyin": "shuǐ",
+          "gloss": "water",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請給我一瓶水。",
+            "pinyin": "Qǐng gěi wǒ yì píng shuǐ.",
+            "gloss": "Please give me a bottle of water."
+          }
+        },
+        {
+          "id": "v_ping",
+          "traditional": "瓶",
+          "pinyin": "píng",
+          "gloss": "bottle (measure word)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要兩瓶水。",
+            "pinyin": "Wǒ yào liǎng píng shuǐ.",
+            "gloss": "I want two bottles of water."
+          }
+        },
+        {
+          "id": "v_biandang",
+          "traditional": "便當",
+          "pinyin": "biàndāng",
+          "gloss": "boxed meal; bento",
+          "hsk_level": 2,
+          "taiwan_note": "台灣用「便當」，不用「盒飯」。",
+          "example": {
+            "hanzi": "這個便當多少錢？",
+            "pinyin": "Zhè ge biàndāng duōshǎo qián?",
+            "gloss": "How much is this boxed meal?"
+          }
+        },
+        {
+          "id": "v_zhao",
+          "traditional": "找",
+          "pinyin": "zhǎo",
+          "gloss": "to look for",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我在找便當。",
+            "pinyin": "Wǒ zài zhǎo biàndāng.",
+            "gloss": "I'm looking for a boxed meal."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_youmeiyou",
+          "title": "有沒有 — asking if something exists",
+          "pattern": "Subject + 有沒有 + Noun？",
+          "explanation": "To ask whether something exists or is available, put 有沒有 (\"have-not-have\") before the noun. It's a quick yes/no question that doesn't need 嗎.",
+          "examples": [
+            {
+              "hanzi": "你們有沒有便當？",
+              "pinyin": "Nǐmen yǒu méiyǒu biàndāng?",
+              "gloss": "Do you have boxed meals?"
+            },
+            {
+              "hanzi": "這裡有沒有水？",
+              "pinyin": "Zhèlǐ yǒu méiyǒu shuǐ?",
+              "gloss": "Is there water here?"
+            },
+            {
+              "hanzi": "他有沒有便當？",
+              "pinyin": "Tā yǒu méiyǒu biàndāng?",
+              "gloss": "Does he have a boxed meal?"
+            }
+          ],
+          "hsk_level": 2,
+          "taiwan_note": "台灣口語常用「有沒有 + 動詞」問過去的事：「你有沒有去？」「你有沒有吃？」大陸多說「你去了沒有？」「你吃過嗎？」。這個「有」的用法是台灣華語最明顯的特徵之一，受台語影響。"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "不好意思，請問有沒有便當？",
+          "pinyin": "Bùhǎoyìsi, qǐngwèn yǒu méiyǒu biàndāng?",
+          "gloss": "Excuse me, do you have boxed meals?"
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "有，便當在那邊。",
+          "pinyin": "Yǒu, biàndāng zài nà biān.",
+          "gloss": "Yes, the boxed meals are over there."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我在找水。",
+          "pinyin": "Wǒ zài zhǎo shuǐ.",
+          "gloss": "I'm looking for water."
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "水在那邊，這邊請。",
+          "pinyin": "Shuǐ zài nà biān, zhè biān qǐng.",
+          "gloss": "The water's over there, this way please."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "要",
+            "一",
+            "個",
+            "便當"
+          ],
+          "pinyin": "Wǒ yào yí ge biàndāng.",
+          "gloss": "I want one boxed meal.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "請",
+            "給",
+            "我",
+            "兩",
+            "瓶",
+            "水"
+          ],
+          "pinyin": "Qǐng gěi wǒ liǎng píng shuǐ.",
+          "gloss": "Please give me two bottles of water.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "便當",
+            "在",
+            "哪裡"
+          ],
+          "pinyin": "Biàndāng zài nǎlǐ?",
+          "gloss": "Where are the boxed meals?",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "你們",
+            "有沒有",
+            "水"
+          ],
+          "pinyin": "Nǐmen yǒu méiyǒu shuǐ?",
+          "gloss": "Do you have water?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "買",
+            "一點",
+            "東西"
+          ],
+          "pinyin": "Wǒ xiǎng mǎi yìdiǎn dōngxi.",
+          "gloss": "I want to buy a few things.",
+          "cloze_index": 4
+        }
+      ]
+    },
+    {
+      "id": "l_conv_2",
+      "title": "買飲料和點心",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_yinliao",
+          "traditional": "飲料",
+          "pinyin": "yǐnliào",
+          "gloss": "drink; beverage",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要買一個飲料。",
+            "pinyin": "Wǒ yào mǎi yí ge yǐnliào.",
+            "gloss": "I want to buy a drink."
+          }
+        },
+        {
+          "id": "v_niunai",
+          "traditional": "牛奶",
+          "pinyin": "niúnǎi",
+          "gloss": "milk",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我喜歡喝牛奶。",
+            "pinyin": "Wǒ xǐhuān hē niúnǎi.",
+            "gloss": "I like drinking milk."
+          }
+        },
+        {
+          "id": "v_kafei",
+          "traditional": "咖啡",
+          "pinyin": "kāfēi",
+          "gloss": "coffee",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要一杯咖啡。",
+            "pinyin": "Wǒ yào yì bēi kāfēi.",
+            "gloss": "I'd like a coffee."
+          }
+        },
+        {
+          "id": "v_mianbao",
+          "traditional": "麵包",
+          "pinyin": "miànbāo",
+          "gloss": "bread",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個麵包很好吃。",
+            "pinyin": "Zhè ge miànbāo hěn hào chī.",
+            "gloss": "This bread is delicious."
+          }
+        },
+        {
+          "id": "v_bei",
+          "traditional": "杯",
+          "pinyin": "bēi",
+          "gloss": "cup / glass (measure word)",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要一杯咖啡。",
+            "pinyin": "Wǒ yào yì bēi kāfēi.",
+            "gloss": "I'd like a cup of coffee."
+          }
+        },
+        {
+          "id": "v_lingshi",
+          "traditional": "零食",
+          "pinyin": "língshí",
+          "gloss": "snacks",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我買了一些零食。",
+            "pinyin": "Wǒ mǎi le yìxiē língshí.",
+            "gloss": "I bought some snacks."
+          }
+        },
+        {
+          "id": "v_daizi",
+          "traditional": "袋子",
+          "pinyin": "dàizi",
+          "gloss": "bag",
+          "hsk_level": 3,
+          "taiwan_note": "超商會問「要不要袋子？」，塑膠袋通常要錢。",
+          "example": {
+            "hanzi": "請問要袋子嗎？",
+            "pinyin": "Qǐngwèn yào dàizi ma?",
+            "gloss": "Would you like a bag?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_le_change",
+          "title": "了 — a completed action",
+          "pattern": "Subject + Verb + 了 + Object",
+          "explanation": "了 after the verb marks that the action happened / is done: 買了 = bought. It's one of the most common uses of 了 in everyday Taiwan speech.",
+          "examples": [
+            {
+              "hanzi": "我買了一個便當。",
+              "pinyin": "Wǒ mǎi le yí ge biàndāng.",
+              "gloss": "I bought a boxed meal."
+            },
+            {
+              "hanzi": "他喝了一杯咖啡。",
+              "pinyin": "Tā hē le yì bēi kāfēi.",
+              "gloss": "He drank a coffee."
+            },
+            {
+              "hanzi": "我買了一些東西。",
+              "pinyin": "Wǒ mǎi le yìxiē dōngxi.",
+              "gloss": "I bought a few things."
+            }
+          ],
+          "hsk_level": 2,
+          "taiwan_note": "台灣口語常用「有 + 動詞」表示做過了：「我有吃」「我有去」，大陸幾乎只說「我吃了」「我去了」。兩種在台灣都通，但「有」更口語。否定同樣用「沒有 + 動詞」。"
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "店員",
+          "hanzi": "您好！",
+          "pinyin": "Nín hǎo!",
+          "gloss": "Hello!"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "我要一杯咖啡和一個麵包。",
+          "pinyin": "Wǒ yào yì bēi kāfēi hàn yí ge miànbāo.",
+          "gloss": "I'd like a coffee and a piece of bread."
+        },
+        {
+          "speaker": "店員",
+          "hanzi": "好，要不要袋子？",
+          "pinyin": "Hǎo, yào bú yào dàizi?",
+          "gloss": "Sure, would you like a bag?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "不用，謝謝。",
+          "pinyin": "Búyòng, xièxie.",
+          "gloss": "No need, thanks."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "要",
+            "一",
+            "杯",
+            "咖啡"
+          ],
+          "pinyin": "Wǒ yào yì bēi kāfēi.",
+          "gloss": "I'd like a coffee.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "買",
+            "了",
+            "一些",
+            "零食"
+          ],
+          "pinyin": "Wǒ mǎi le yìxiē língshí.",
+          "gloss": "I bought some snacks.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這個",
+            "麵包",
+            "很",
+            "好吃"
+          ],
+          "pinyin": "Zhè ge miànbāo hěn hào chī.",
+          "gloss": "This bread is delicious.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "請問",
+            "要",
+            "袋子",
+            "嗎"
+          ],
+          "pinyin": "Qǐngwèn yào dàizi ma?",
+          "gloss": "Would you like a bag?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "喜歡",
+            "喝",
+            "牛奶"
+          ],
+          "pinyin": "Wǒ xǐhuān hē niúnǎi.",
+          "gloss": "I like drinking milk.",
+          "cloze_index": 3
+        }
+      ]
+    }
+  ],
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,668 @@
+{
+  "id": "u_hsk3_11",
+  "title": "娛樂、新聞與人生大事",
+  "subtitle": "Shows, news and celebrating with people",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk3_11_1",
+      "title": "表演與節目",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_音樂",
+          "traditional": "音樂",
+          "pinyin": "yīn yuè",
+          "gloss": "music",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我很喜歡聽這種音樂。",
+            "pinyin": "Wǒ hěn xǐhuān tīng zhè zhǒng yīnyuè.",
+            "gloss": "I really like listening to this kind of music."
+          }
+        },
+        {
+          "id": "v_表演",
+          "traditional": "表演",
+          "pinyin": "biǎo yǎn",
+          "gloss": "play; show; performance",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他們的表演七點半開始。",
+            "pinyin": "Tāmen de biǎoyǎn qī diǎn bàn kāishǐ.",
+            "gloss": "Their performance starts at seven thirty."
+          }
+        },
+        {
+          "id": "v_節目",
+          "traditional": "節目",
+          "pinyin": "jié mù",
+          "gloss": "program; item (on a program)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個電視節目很有意思。",
+            "pinyin": "Zhè ge diànshì jiémù hěn yǒu yìsi.",
+            "gloss": "This TV program is very interesting."
+          }
+        },
+        {
+          "id": "v_畫",
+          "traditional": "畫",
+          "pinyin": "huà",
+          "gloss": "to draw; to paint; picture; painting; to draw (a line) (variant of 划)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "妹妹在房間裡畫她的貓。",
+            "pinyin": "Mèimei zài fángjiān lǐ huà tā de māo.",
+            "gloss": "My little sister is drawing her cat in her room."
+          }
+        },
+        {
+          "id": "v_照片",
+          "traditional": "照片",
+          "pinyin": "zhào piàn",
+          "gloss": "photograph; picture",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這張照片裡的人是我媽媽。",
+            "pinyin": "Zhè zhāng zhàopiàn lǐ de rén shì wǒ māma.",
+            "gloss": "The person in this photo is my mom."
+          }
+        },
+        {
+          "id": "v_教",
+          "traditional": "教",
+          "pinyin": "jiāo",
+          "gloss": "religion; teaching; to make",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老師教我們唱這歌。",
+            "pinyin": "Lǎoshī jiāo wǒmen chàng zhè gē.",
+            "gloss": "The teacher teaches us to sing this song."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "教 + somebody + (doing something)",
+          "pattern": "Subject + 教 + person + Verb Phrase",
+          "explanation": "教 takes two objects: first the person being taught, then what they are taught. The thing taught is usually a whole verb phrase (唱歌, 畫畫, 做菜). The subject is the one who knows and gives the knowledge, so 教 always looks at things from the teacher's side.",
+          "contrast": "跟 + person + 學 + Verb Phrase means the opposite direction: 老師教我畫畫 (teacher teaches me) vs 我跟老師學畫畫 (I learn from the teacher). Ask who has the knowledge — that person is the subject of 教, but comes after 跟 with 學.",
+          "common_error": "Learners add 給 or reverse the order, saying 他教給我畫畫 or 他教畫畫我. 教 needs no 給, and the person must come right after 教: 他教我畫畫.",
+          "examples": [
+            {
+              "hanzi": "老師教我們畫畫。",
+              "pinyin": "Lǎoshī jiāo wǒmen huà huà.",
+              "gloss": "The teacher teaches us to draw."
+            },
+            {
+              "hanzi": "姐姐教我跳舞，晚上我們要去表演。",
+              "pinyin": "Jiějie jiāo wǒ tiàowǔ, wǎnshàng wǒmen yào qù biǎoyǎn.",
+              "gloss": "My older sister is teaching me to dance; tonight we're going to perform."
+            },
+            {
+              "hanzi": "誰教你們唱這個節目的歌？",
+              "pinyin": "Shéi jiāo nǐmen chàng zhè ge jiémù de gē?",
+              "gloss": "Who taught you to sing the song from this program?"
+            }
+          ],
+          "id": "g_hsk3_11_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_11_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "這週末學校有表演，你要不要一起去看？",
+          "pinyin": "Zhè zhōumò xuéxiào yǒu biǎoyǎn, nǐ yào bú yào yìqǐ qù kàn?",
+          "gloss": "There's a performance at school this weekend — want to come along?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "好啊！有什麼節目？",
+          "pinyin": "Hǎo a! Yǒu shénme jiémù?",
+          "gloss": "Sure! What's on the program?"
+        },
+        {
+          "speaker": "A",
+          "hanzi": "有唱歌、跳舞，還有音樂表演喔。",
+          "pinyin": "Yǒu chàng gē, tiàowǔ, hái yǒu yīnyuè biǎoyǎn ō.",
+          "gloss": "There's singing, dancing, and also a music performance."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "我想照幾張照片，可以嗎？",
+          "pinyin": "Wǒ xiǎng zhào jǐ zhāng zhàopiàn, kěyǐ ma?",
+          "gloss": "I'd like to take a few photos — is that okay?"
+        },
+        {
+          "speaker": "A",
+          "hanzi": "可以喔！我姐姐在那裡教小朋友畫畫，你也可以看看。",
+          "pinyin": "Kěyǐ ō! Wǒ jiějie zài nàlǐ jiāo xiǎopéngyǒu huà huà, nǐ yě kěyǐ kànkan.",
+          "gloss": "Sure! My sister teaches kids painting there, you can take a look too."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "太好了，那我們六點在捷運站見。",
+          "pinyin": "Tài hǎo le, nà wǒmen liù diǎn zài jiéyùn zhàn jiàn.",
+          "gloss": "Great, then let's meet at the MRT station at six."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這個",
+            "節目",
+            "很",
+            "好看"
+          ],
+          "pinyin": "Zhè ge jiémù hěn hǎokàn.",
+          "gloss": "This program is really good.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "喜歡",
+            "一邊",
+            "走路",
+            "一邊",
+            "聽",
+            "音樂"
+          ],
+          "pinyin": "Wǒ xǐhuān yìbiān zǒulù yìbiān tīng yīnyuè.",
+          "gloss": "I like listening to music while I walk.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "他們",
+            "的",
+            "表演",
+            "八",
+            "點",
+            "開始"
+          ],
+          "pinyin": "Tāmen de biǎoyǎn bā diǎn kāishǐ.",
+          "gloss": "Their show starts at eight.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "看",
+            "你",
+            "的",
+            "照片"
+          ],
+          "pinyin": "Wǒ xiǎng kàn nǐ de zhàopiàn.",
+          "gloss": "I'd like to see your photos.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "老師",
+            "教",
+            "我們",
+            "畫畫"
+          ],
+          "pinyin": "Lǎoshī jiāo wǒmen huà huà.",
+          "gloss": "The teacher teaches us to draw.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "學校的表演",
+        "hanzi": "週末晚上，我跟朋友去學校看表演。第一個節目是唱歌，第二個是跳舞，最後是音樂表演，真的很好聽。我姐姐在學校教小朋友畫畫，她也帶學生來看。我照了很多照片，回家給爸爸媽媽看。他們說下次也要跟我們一起去。",
+        "gloss": "On the weekend evening, I went with a friend to school to watch a performance. The first item on the program was singing, the second was dancing, and the last was a music performance — it really sounded great. My older sister teaches children painting at the school, and she brought her students to watch too. I took a lot of photos and showed them to my parents when I got home. They said that next time they want to come with us too."
+      }
+    },
+    {
+      "id": "l_hsk3_11_2",
+      "title": "新聞與歷史",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_新聞",
+          "traditional": "新聞",
+          "pinyin": "xīn wén",
+          "gloss": "news",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天的新聞你看了嗎?",
+            "pinyin": "Jīntiān de xīnwén nǐ kàn le ma?",
+            "gloss": "Have you seen today's news?"
+          }
+        },
+        {
+          "id": "v_歷史",
+          "traditional": "歷史",
+          "pinyin": "lì shǐ",
+          "gloss": "history",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最喜歡的課是歷史。",
+            "pinyin": "Wǒ zuì xǐhuān de kè shì lìshǐ.",
+            "gloss": "My favorite class is history."
+          }
+        },
+        {
+          "id": "v_故事",
+          "traditional": "故事",
+          "pinyin": "gù shì",
+          "gloss": "old practice",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "奶奶常常跟我說老台北的故事。",
+            "pinyin": "Nǎinai chángcháng gēn wǒ shuō lǎo Táiběi de gùshì.",
+            "gloss": "Grandma often tells me stories about old Taipei."
+          }
+        },
+        {
+          "id": "v_變化",
+          "traditional": "變化",
+          "pinyin": "biàn huà",
+          "gloss": "(intransitive) to change; to vary; change; variation",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台灣的天氣變化很快。",
+            "pinyin": "Táiwān de tiānqì biànhuà hěn kuài.",
+            "gloss": "Taiwan's weather changes very fast."
+          }
+        },
+        {
+          "id": "v_根據",
+          "traditional": "根據",
+          "pinyin": "gēn jù",
+          "gloss": "according to; based on; basis",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "根據新聞,明天會下大雨。",
+            "pinyin": "Gēnjù xīnwén, míngtiān huì xià dà yǔ.",
+            "gloss": "According to the news, it will rain hard tomorrow."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "根據 + source,+ statement (according to …)",
+          "pattern": "根據 + 來源(新聞/歷史書/老師說的),+ 句子",
+          "explanation": "根據 introduces where your information comes from. It goes at the front of the sentence, is followed by a noun or a noun-like phrase (新聞、歷史書、他說的話), and then a comma and the main statement. It is neutral and slightly formal, so it is very common in news, reports and school work.",
+          "contrast": "聽說 (\"I hear that…\") also starts a sentence, but 聽說 is hearsay with no named source and is followed directly by a clause: 聽說明天有颱風。With 根據 you must name the source: 根據新聞,明天有颱風。If you can point at the source, use 根據; if you only heard it somewhere, use 聽說.",
+          "common_error": "Learners use 根據 to mean \"in my opinion\" and say 根據我,這個很難. 根據 needs an information source, not a person's feelings — say 我覺得這個很難 instead. Also don't put a full clause right after 根據 (not 根據明天下雨…).",
+          "examples": [
+            {
+              "hanzi": "根據新聞,今天晚上有颱風。",
+              "pinyin": "Gēnjù xīnwén, jīntiān wǎnshàng yǒu táifēng.",
+              "gloss": "According to the news, there's a typhoon tonight."
+            },
+            {
+              "hanzi": "根據歷史課本,這個城市很老了。",
+              "pinyin": "Gēnjù lìshǐ kèběn, zhège chéngshì hěn lǎo le.",
+              "gloss": "According to the history textbook, this city is very old."
+            },
+            {
+              "hanzi": "根據她說的,那家店的牛肉麵最好吃。",
+              "pinyin": "Gēnjù tā shuō de, nà jiā diàn de niúròumiàn zuì hǎochī.",
+              "gloss": "According to what she said, that shop's beef noodles are the best."
+            }
+          ],
+          "id": "g_hsk3_11_2_1",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "美美",
+          "hanzi": "你在看什麼?這麼認真。",
+          "pinyin": "Nǐ zài kàn shénme? Zhème rènzhēn.",
+          "gloss": "What are you reading? So focused."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "我在看新聞。根據新聞,這個週末有颱風喔。",
+          "pinyin": "Wǒ zài kàn xīnwén. Gēnjù xīnwén, zhège zhōumò yǒu táifēng ō.",
+          "gloss": "I'm reading the news. According to the news, there's a typhoon this weekend."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "真的嗎?天氣變化太快了!",
+          "pinyin": "Zhēn de ma? Tiānqì biànhuà tài kuài le!",
+          "gloss": "Really? The weather changes way too fast!"
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對啊。我媽說,她小時候的颱風更大,她常常跟我說那些故事。",
+          "pinyin": "Duì a. Wǒ mā shuō, tā xiǎo shíhòu de táifēng gèng dà, tā chángcháng gēn wǒ shuō nàxiē gùshì.",
+          "gloss": "Yeah. My mom says the typhoons when she was little were even bigger; she often tells me those stories."
+        },
+        {
+          "speaker": "美美",
+          "hanzi": "聽起來像歷史課耶。",
+          "pinyin": "Tīng qǐlái xiàng lìshǐ kè yē.",
+          "gloss": "That sounds like a history class."
+        },
+        {
+          "speaker": "阿明",
+          "hanzi": "對,不過真的很有意思。",
+          "pinyin": "Duì, búguò zhēn de hěn yǒu yìsi.",
+          "gloss": "Right, but it's genuinely interesting."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "每天",
+            "早上",
+            "看",
+            "新聞"
+          ],
+          "pinyin": "Wǒ měitiān zǎoshang kàn xīnwén.",
+          "gloss": "I watch the news every morning.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這",
+            "本",
+            "書",
+            "說",
+            "的",
+            "是",
+            "台灣",
+            "歷史"
+          ],
+          "pinyin": "Zhè běn shū shuō de shì Táiwān lìshǐ.",
+          "gloss": "What this book talks about is Taiwanese history.",
+          "cloze_index": 7
+        },
+        {
+          "tokens": [
+            "爸爸",
+            "很",
+            "會",
+            "說",
+            "故事"
+          ],
+          "pinyin": "Bàba hěn huì shuō gùshì.",
+          "gloss": "Dad is really good at telling stories.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "台北",
+            "的",
+            "天氣",
+            "變化",
+            "很",
+            "大"
+          ],
+          "pinyin": "Táiběi de tiānqì biànhuà hěn dà.",
+          "gloss": "Taipei's weather changes a lot.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "根據",
+            "新聞",
+            ",",
+            "週末",
+            "有",
+            "颱風"
+          ],
+          "pinyin": "Gēnjù xīnwén, zhōumò yǒu táifēng.",
+          "gloss": "According to the news, there's a typhoon this weekend.",
+          "cloze_index": 0
+        }
+      ],
+      "passage": {
+        "title": "老房子的故事",
+        "hanzi": "上個週末,我跟爸爸去了台中。那裡有很多老房子,每一間都有自己的故事。爸爸說,根據歷史書,這些房子有一百多年了。這幾十年,城市的變化很大,可是老房子還在。回家以後,我又在新聞上看到那個地方,心裡很高興。",
+        "gloss": "Last weekend I went to Taichung with my dad. There are many old houses there, and every one of them has its own story. Dad said that according to the history books, these houses are over a hundred years old. Over the past few decades the city has changed a lot, but the old houses are still there. After I got home, I saw that place in the news again, and it made me happy."
+      }
+    },
+    {
+      "id": "l_hsk3_11_3",
+      "title": "婚禮與祝福",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_結婚",
+          "traditional": "結婚",
+          "pinyin": "jié hūn",
+          "gloss": "to marry; to get married",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他們下個月要結婚了。",
+            "pinyin": "Tāmen xià ge yuè yào jiéhūn le.",
+            "gloss": "They're getting married next month."
+          }
+        },
+        {
+          "id": "v_祝",
+          "traditional": "祝",
+          "pinyin": "zhù",
+          "gloss": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "祝你生日快樂！",
+            "pinyin": "Zhù nǐ shēngrì kuàilè!",
+            "gloss": "Happy birthday to you!"
+          }
+        },
+        {
+          "id": "v_年輕",
+          "traditional": "年輕",
+          "pinyin": "nián qīng",
+          "gloss": "young",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我媽媽年輕的時候很喜歡跳舞。",
+            "pinyin": "Wǒ māma niánqīng de shíhòu hěn xǐhuān tiàowǔ.",
+            "gloss": "When my mom was young she loved to dance."
+          }
+        },
+        {
+          "id": "v_關心",
+          "traditional": "關心",
+          "pinyin": "guān xīn",
+          "gloss": "to be concerned about; to care about",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "謝謝你這麼關心我。",
+            "pinyin": "Xièxie nǐ zhème guānxīn wǒ.",
+            "gloss": "Thank you for caring about me so much."
+          }
+        },
+        {
+          "id": "v_舉行",
+          "traditional": "舉行",
+          "pinyin": "jǔ xíng",
+          "gloss": "to hold (a meeting, ceremony etc)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個舞會在學校舉行。",
+            "pinyin": "Zhège wǔhuì zài xuéxiào jǔxíng.",
+            "gloss": "This dance is being held at the school."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Giving good wishes with 祝",
+          "pattern": "祝 + 人 + 好事（快樂／平安／身體健康）",
+          "explanation": "祝 introduces a blessing you are giving someone. Put the person right after 祝, then a short fixed phrase for the good thing you wish them: 祝你生日快樂, 祝你們天天快樂, 祝你一路平安. 祝 is used in speech at weddings and birthdays, and in cards and messages. You do not need 很 or 是 inside the wish, and you never need 了 — 祝 is about the future, not a finished action.",
+          "contrast": "希望 also expresses a wish, but 希望 takes a full clause and can be about yourself: 我希望明天不下雨 / 我希望我能去. 祝 must be aimed at another person plus a set blessing phrase — you cannot say 我祝我考試好. If the wish is your own hope, use 希望; if you are congratulating or blessing someone, use 祝.",
+          "common_error": "Learners add 很 or 是 into the blessing (✗祝你很快樂) or attach a whole clause (✗祝你可以結婚). The wish after 祝 stays a short fixed phrase: 祝你快樂, 祝你們結婚快樂.",
+          "examples": [
+            {
+              "hanzi": "祝你生日快樂！",
+              "pinyin": "Zhù nǐ shēngrì kuàilè!",
+              "gloss": "Happy birthday!"
+            },
+            {
+              "hanzi": "他們結婚了，我們祝他們天天快樂。",
+              "pinyin": "Tāmen jiéhūn le, wǒmen zhù tāmen tiāntiān kuàilè.",
+              "gloss": "They got married; we wish them happiness every day."
+            },
+            {
+              "hanzi": "你明天要坐飛機，祝你一路平安。",
+              "pinyin": "Nǐ míngtiān yào zuò fēijī, zhù nǐ yílù píng'ān.",
+              "gloss": "You're flying tomorrow — have a safe trip."
+            }
+          ],
+          "id": "g_hsk3_11_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "Placeholder",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_11_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "小雪，你知道嗎？張老師下個月要結婚了。",
+          "pinyin": "Xiǎoxuě, nǐ zhīdào ma? Zhāng lǎoshī xià ge yuè yào jiéhūn le.",
+          "gloss": "Xiaoxue, did you know? Teacher Zhang is getting married next month."
+        },
+        {
+          "speaker": "小雪",
+          "hanzi": "真的嗎？在哪裡舉行？",
+          "pinyin": "Zhēn de ma? Zài nǎlǐ jǔxíng?",
+          "gloss": "Really? Where is it being held?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "在台北的一家飯店，晚上六點開始。",
+          "pinyin": "Zài Táiběi de yì jiā fàndiàn, wǎnshàng liù diǎn kāishǐ.",
+          "gloss": "At a hotel in Taipei, starting at six in the evening."
+        },
+        {
+          "speaker": "小雪",
+          "hanzi": "他們兩個都還很年輕。我們要送什麼？",
+          "pinyin": "Tāmen liǎng ge dōu hái hěn niánqīng. Wǒmen yào sòng shénme?",
+          "gloss": "They're both still so young. What should we give them?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "送一個紅包吧，再跟他們說祝你們天天快樂。",
+          "pinyin": "Sòng yí ge hóngbāo ba, zài gēn tāmen shuō zhù nǐmen tiāntiān kuàilè.",
+          "gloss": "Let's give a red envelope, and tell them we wish them happiness every day."
+        },
+        {
+          "speaker": "小雪",
+          "hanzi": "好啊！張老師平常這麼關心我們，這次我們也要關心他。",
+          "pinyin": "Hǎo a! Zhāng lǎoshī píngcháng zhème guānxīn wǒmen, zhè cì wǒmen yě yào guānxīn tā.",
+          "gloss": "Sounds good! Teacher Zhang always cares so much about us — this time it's our turn to care about him."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "他們",
+            "明年",
+            "要",
+            "結婚",
+            "了"
+          ],
+          "pinyin": "Tāmen míngnián yào jiéhūn le.",
+          "gloss": "They are getting married next year.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "祝",
+            "你",
+            "生日",
+            "快樂"
+          ],
+          "pinyin": "Zhù nǐ shēngrì kuàilè.",
+          "gloss": "Happy birthday to you.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "姐姐",
+            "還",
+            "很",
+            "年輕"
+          ],
+          "pinyin": "Wǒ jiějie hái hěn niánqīng.",
+          "gloss": "My older sister is still very young.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "很",
+            "關心",
+            "我",
+            "的",
+            "身體"
+          ],
+          "pinyin": "Māma hěn guānxīn wǒ de shēntǐ.",
+          "gloss": "Mom cares a lot about my health.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "這個",
+            "舞會",
+            "在",
+            "飯店",
+            "舉行"
+          ],
+          "pinyin": "Zhège wǔhuì zài fàndiàn jǔxíng.",
+          "gloss": "This dance is held at the hotel.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "張老師結婚了",
+        "hanzi": "上個週末，張老師在台北的一家飯店舉行結婚餐會。他和他的妻子都還很年輕，兩個人是在大學的舞會上認識的。那天，我們班的同學都去了，還一起送了一個大紅包。我們跟他們說：祝你們天天快樂，身體健康。張老師笑著說，謝謝大家這麼關心他。",
+        "gloss": "Last weekend Teacher Zhang held his wedding banquet at a hotel in Taipei. He and his wife are both still quite young; the two of them met at a university dance. That day, all the classmates in our class went, and together we gave them a big red envelope. We said to them: we wish you happiness every day and good health. Teacher Zhang smiled and said thank you all for caring about him so much."
+      }
+    }
+  ],
+  "sort_order": 40,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

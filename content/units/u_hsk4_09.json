@@ -1,0 +1,137 @@
+{
+  "id": "u_hsk4_09",
+  "title": "日常動作與身體狀況",
+  "subtitle": "Everyday actions and describing how things (and you) are",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_09_1",
+      "title": "出門與家裡的小動作",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_往",
+          "traditional": "往",
+          "pinyin": "wǎng",
+          "gloss": "to go (in a direction); to; towards",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_座",
+          "traditional": "座",
+          "pinyin": "zuò",
+          "gloss": "seat; base; stand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_滿",
+          "traditional": "滿",
+          "pinyin": "mǎn",
+          "gloss": "to fill; full; filled",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_收",
+          "traditional": "收",
+          "pinyin": "shōu",
+          "gloss": "to receive; to accept; to collect",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_省",
+          "traditional": "省",
+          "pinyin": "shěng",
+          "gloss": "to save; to economize; to be frugal; to omit; to delete; to leave out; province",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_掛",
+          "traditional": "掛",
+          "pinyin": "guà",
+          "gloss": "to hang or suspend (from a hook etc); to hang up (the phone); (of a line) to be dead",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_弄",
+          "traditional": "弄",
+          "pinyin": "nòng",
+          "gloss": "to do; to manage; to handle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_09_2",
+      "title": "身體、傷口與真假",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_血",
+          "traditional": "血",
+          "pinyin": "xiě",
+          "gloss": "blood; colloquial pr. [xiě]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_嘴",
+          "traditional": "嘴",
+          "pinyin": "zuǐ",
+          "gloss": "mouth; beak; nozzle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_嚴重",
+          "traditional": "嚴重",
+          "pinyin": "yán zhòng",
+          "gloss": "grave; serious; severe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_深",
+          "traditional": "深",
+          "pinyin": "shēn",
+          "gloss": "deep (lit. and fig.)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_自然",
+          "traditional": "自然",
+          "pinyin": "zì rán",
+          "gloss": "nature; natural; naturally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_假",
+          "traditional": "假",
+          "pinyin": "jiǎ",
+          "gloss": "fake; false; artificial",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 57,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

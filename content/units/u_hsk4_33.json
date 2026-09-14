@@ -1,0 +1,246 @@
+{
+  "id": "u_hsk4_33",
+  "title": "求職、辦公室與做生意",
+  "subtitle": "Job hunting, office paperwork, schedules and running a small business",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_33_1",
+      "title": "應徵工作與學歷",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_招聘",
+          "traditional": "招聘",
+          "pinyin": "zhāo pìn",
+          "gloss": "to invite applications for a job; to recruit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_合格",
+          "traditional": "合格",
+          "pinyin": "hé gé",
+          "gloss": "to meet the standard required; qualified; eligible (voter etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_研究生",
+          "traditional": "研究生",
+          "pinyin": "yán jiū shēng",
+          "gloss": "graduate student; postgraduate student; research student",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_碩士",
+          "traditional": "碩士",
+          "pinyin": "shuò shì",
+          "gloss": "master's degree; person who has a master's degree; learned person",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_傳真",
+          "traditional": "傳真",
+          "pinyin": "chuán zhēn",
+          "gloss": "fax; facsimile",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_請假",
+          "traditional": "請假",
+          "pinyin": "qǐng jià",
+          "gloss": "to request leave of absence",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_33_2",
+      "title": "寫報告與印文件",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_總結",
+          "traditional": "總結",
+          "pinyin": "zǒng jié",
+          "gloss": "to sum up; to conclude; summary",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_列印",
+          "traditional": "列印",
+          "pinyin": "lièyìn",
+          "gloss": "to affix a seal; to stamp; to print out (with a printer)",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「列印」；「打印」是大陸用法。",
+          "prc_form": "打印"
+        },
+        {
+          "id": "v_表格",
+          "traditional": "表格",
+          "pinyin": "biǎo gé",
+          "gloss": "form; table",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_積累",
+          "traditional": "積累",
+          "pinyin": "jī lěi",
+          "gloss": "to accumulate; accumulation; cumulative",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_普遍",
+          "traditional": "普遍",
+          "pinyin": "pǔ biàn",
+          "gloss": "universal; general; widespread",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_咸",
+          "traditional": "咸",
+          "pinyin": "xián",
+          "gloss": "all; everyone; each",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_33_3",
+      "title": "出差與時間安排",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_出差",
+          "traditional": "出差",
+          "pinyin": "chū chāi",
+          "gloss": "to go on an official or business trip",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_準時",
+          "traditional": "準時",
+          "pinyin": "zhǔn shí",
+          "gloss": "on time; punctual; on schedule",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_按時",
+          "traditional": "按時",
+          "pinyin": "àn shí",
+          "gloss": "on time; before deadline; on schedule",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_推遲",
+          "traditional": "推遲",
+          "pinyin": "tuī chí",
+          "gloss": "to postpone; to put off; to defer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_來得及",
+          "traditional": "來得及",
+          "pinyin": "lái de jí",
+          "gloss": "to have enough time; can do it in time; can still make it",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_來不及",
+          "traditional": "來不及",
+          "pinyin": "lái bu jí",
+          "gloss": "there's not enough time (to do sth); it's too late (to do sth)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_33_4",
+      "title": "開店做生意",
+      "sort_order": 4,
+      "vocab": [
+        {
+          "id": "v_做生意",
+          "traditional": "做生意",
+          "pinyin": "zuò shēng yì",
+          "gloss": "to do business",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打折",
+          "traditional": "打折",
+          "pinyin": "dǎ zhé",
+          "gloss": "to give a discount",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_請客",
+          "traditional": "請客",
+          "pinyin": "qǐng kè",
+          "gloss": "to give a dinner party; to entertain guests; to invite to dinner",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_節約",
+          "traditional": "節約",
+          "pinyin": "jié yuē",
+          "gloss": "to economize; to conserve (resources); economy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_熱鬧",
+          "traditional": "熱鬧",
+          "pinyin": "rè nao",
+          "gloss": "bustling with noise and excitement; lively",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_師傅",
+          "traditional": "師傅",
+          "pinyin": "shī fu",
+          "gloss": "master; qualified worker; respectful form of address for older men",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 81,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

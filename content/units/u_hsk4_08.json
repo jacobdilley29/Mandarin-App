@@ -1,0 +1,137 @@
+{
+  "id": "u_hsk4_08",
+  "title": "時間先後與讓步",
+  "subtitle": "Talking about before and after, causes and concessions",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_08_1",
+      "title": "事情的先後",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_剛剛",
+          "traditional": "剛剛",
+          "pinyin": "gāng gang",
+          "gloss": "just recently; just a moment ago",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_後來",
+          "traditional": "後來",
+          "pinyin": "hòu lái",
+          "gloss": "afterwards; later; newly arrived",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_本來",
+          "traditional": "本來",
+          "pinyin": "běn lái",
+          "gloss": "original; originally; at first",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原來",
+          "traditional": "原來",
+          "pinyin": "yuán lái",
+          "gloss": "original; former; originally",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_仍然",
+          "traditional": "仍然",
+          "pinyin": "réng rán",
+          "gloss": "still; as before; yet",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重新",
+          "traditional": "重新",
+          "pinyin": "chóng xīn",
+          "gloss": "again; once more; re-",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_底",
+          "traditional": "底",
+          "pinyin": "dǐ",
+          "gloss": "background; bottom; base",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_08_2",
+      "title": "就算…也：原因與讓步",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_即使",
+          "traditional": "即使",
+          "pinyin": "jí shǐ",
+          "gloss": "even if; even though",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_儘管",
+          "traditional": "儘管",
+          "pinyin": "jǐn guǎn",
+          "gloss": "despite; although; even though",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不管",
+          "traditional": "不管",
+          "pinyin": "bù guǎn",
+          "gloss": "not to be concerned; regardless of; no matter",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_無論",
+          "traditional": "無論",
+          "pinyin": "wú lùn",
+          "gloss": "no matter what or how; regardless of whether...",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_由於",
+          "traditional": "由於",
+          "pinyin": "yóu yú",
+          "gloss": "due to; as a result of; thanks to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_受到",
+          "traditional": "受到",
+          "pinyin": "shòu dào",
+          "gloss": "to receive (praise, an education, punishment etc); to be ...ed (praised, educated, punished etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 56,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

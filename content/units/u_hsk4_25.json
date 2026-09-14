@@ -1,0 +1,121 @@
+{
+  "id": "u_hsk4_25",
+  "title": "出國旅行與參觀",
+  "subtitle": "Flights, seats and sightseeing trips abroad",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_25_1",
+      "title": "訂航班、找座位",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_航班",
+          "traditional": "航班",
+          "pinyin": "háng bān",
+          "gloss": "(scheduled) flight; (scheduled) sailing",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_座位",
+          "traditional": "座位",
+          "pinyin": "zuò wèi",
+          "gloss": "seat",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_趟",
+          "traditional": "趟",
+          "pinyin": "tàng",
+          "gloss": "to wade; to trample; to turn the soil",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_順便",
+          "traditional": "順便",
+          "pinyin": "shùn biàn",
+          "gloss": "conveniently; in passing; without much extra effort",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_首都",
+          "traditional": "首都",
+          "pinyin": "shǒu dū",
+          "gloss": "capital (city)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_亞洲",
+          "traditional": "亞洲",
+          "pinyin": "Yà zhōu",
+          "gloss": "Asia (abbr. for 亚细亚洲)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_25_2",
+      "title": "參觀景點看風景",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_參觀",
+          "traditional": "參觀",
+          "pinyin": "cān guān",
+          "gloss": "to look around; to tour; to visit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_風景",
+          "traditional": "風景",
+          "pinyin": "fēng jǐng",
+          "gloss": "scenery; landscape",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_訪問",
+          "traditional": "訪問",
+          "pinyin": "fǎng wèn",
+          "gloss": "to visit; to call on; to interview",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打扮",
+          "traditional": "打扮",
+          "pinyin": "dǎ ban",
+          "gloss": "to decorate; to dress; to make up",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_偶爾",
+          "traditional": "偶爾",
+          "pinyin": "ǒu ěr",
+          "gloss": "occasionally; once in a while; sometimes",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 73,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

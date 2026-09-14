@@ -1,0 +1,129 @@
+{
+  "id": "u_hsk4_21",
+  "title": "住處整理與規矩",
+  "subtitle": "Keeping your place in order and following the rules",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_21_1",
+      "title": "打掃、整理與丟東西",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_整理",
+          "traditional": "整理",
+          "pinyin": "zhěng lǐ",
+          "gloss": "to arrange; to tidy up; to sort out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_扔",
+          "traditional": "扔",
+          "pinyin": "rēng",
+          "gloss": "to throw; to throw away",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_工具",
+          "traditional": "工具",
+          "pinyin": "gōng jù",
+          "gloss": "tool; instrument; utensil",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_脫",
+          "traditional": "脫",
+          "pinyin": "tuō",
+          "gloss": "to shed; to take off; to escape",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_暗",
+          "traditional": "暗",
+          "pinyin": "àn",
+          "gloss": "dark; to turn dark; secret; hidden",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_響",
+          "traditional": "響",
+          "pinyin": "xiǎng",
+          "gloss": "echo; sound; noise",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_21_2",
+      "title": "規定、禁止與注意",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_禁止",
+          "traditional": "禁止",
+          "pinyin": "jìn zhǐ",
+          "gloss": "to prohibit; to forbid; to ban",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_限制",
+          "traditional": "限制",
+          "pinyin": "xiàn zhì",
+          "gloss": "to restrict; to limit; to confine",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_嚴格",
+          "traditional": "嚴格",
+          "pinyin": "yán gé",
+          "gloss": "strict; stringent; tight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_仔細",
+          "traditional": "仔細",
+          "pinyin": "zǐ xì",
+          "gloss": "careful; attentive; cautious; to be careful; to look out",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_故意",
+          "traditional": "故意",
+          "pinyin": "gù yì",
+          "gloss": "deliberately; on purpose",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吵",
+          "traditional": "吵",
+          "pinyin": "chǎo",
+          "gloss": "to quarrel; to make a noise; noisy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 69,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

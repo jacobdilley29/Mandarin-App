@@ -1,0 +1,196 @@
+{
+  "id": "u_hsk4_20",
+  "title": "吃喝、買東西與荷包",
+  "subtitle": "Tastes, online shopping and what things cost",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_20_1",
+      "title": "味道、口感與肚子",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_湯",
+          "traditional": "湯",
+          "pinyin": "tāng",
+          "gloss": "soup; hot or boiling water; decoction of medicinal herbs",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辣",
+          "traditional": "辣",
+          "pinyin": "là",
+          "gloss": "hot (spicy); pungent; (of chili pepper, raw onions etc) to sting",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_苦",
+          "traditional": "苦",
+          "pinyin": "kǔ",
+          "gloss": "bitter; hardship; pain",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_硬",
+          "traditional": "硬",
+          "pinyin": "yìng",
+          "gloss": "hard; stiff; solid; (fig.) strong; firm; resolutely; uncompromisingly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_剩",
+          "traditional": "剩",
+          "pinyin": "shèng",
+          "gloss": "to remain; to be left; to have as remainder",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_肚子",
+          "traditional": "肚子",
+          "pinyin": "dù zi",
+          "gloss": "belly; abdomen; stomach",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_巧克力",
+          "traditional": "巧克力",
+          "pinyin": "qiǎo kè lì",
+          "gloss": "chocolate (loanword)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_20_2",
+      "title": "網路購物與商品品質",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_購物",
+          "traditional": "購物",
+          "pinyin": "gòu wù",
+          "gloss": "shopping",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_顧客",
+          "traditional": "顧客",
+          "pinyin": "gù kè",
+          "gloss": "customer; client",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_密碼",
+          "traditional": "密碼",
+          "pinyin": "mì mǎ",
+          "gloss": "cipher; secret code; password; PIN",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_品質",
+          "traditional": "品質",
+          "pinyin": "pǐnzhí",
+          "gloss": "quality; (physics) mass",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「品質」；「質量」在台灣指物理的 mass。",
+          "prc_form": "質量"
+        },
+        {
+          "id": "v_高級",
+          "traditional": "高級",
+          "pinyin": "gāo jí",
+          "gloss": "high level; high grade; advanced",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_數量",
+          "traditional": "數量",
+          "pinyin": "shù liàng",
+          "gloss": "amount; quantity; quantitative",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_20_3",
+      "title": "收入、工資與物價",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_收入",
+          "traditional": "收入",
+          "pinyin": "shōu rù",
+          "gloss": "to take in; income; revenue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_工資",
+          "traditional": "工資",
+          "pinyin": "gōng zī",
+          "gloss": "wages; pay",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_富",
+          "traditional": "富",
+          "pinyin": "fù",
+          "gloss": "rich; abundant; wealthy",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_豐富",
+          "traditional": "豐富",
+          "pinyin": "fēng fù",
+          "gloss": "to enrich; rich; plentiful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_降低",
+          "traditional": "降低",
+          "pinyin": "jiàng dī",
+          "gloss": "to reduce; to lower; to bring down",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_減少",
+          "traditional": "減少",
+          "pinyin": "jiǎn shǎo",
+          "gloss": "to lessen; to decrease; to reduce; to lower",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 68,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

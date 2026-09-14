@@ -1,0 +1,734 @@
+{
+  "id": "u_hsk2_08",
+  "title": "出門旅行",
+  "subtitle": "Buying tickets, dealing with the weather on the road, and staying at a hotel",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk2_08_1",
+      "title": "訂票與出發",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_票",
+          "traditional": "票",
+          "pinyin": "piào",
+          "gloss": "ticket; ballot; banknote",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我上網買了兩張電影票。",
+            "pinyin": "wǒ shàng wǎng mǎi le liǎng zhāng diànyǐng piào.",
+            "gloss": "I bought two movie tickets online."
+          }
+        },
+        {
+          "id": "v_機場",
+          "traditional": "機場",
+          "pinyin": "jī chǎng",
+          "gloss": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們搭捷運去機場。",
+            "pinyin": "wǒmen dā jiéyùn qù jīchǎng.",
+            "gloss": "We take the MRT to the airport."
+          }
+        },
+        {
+          "id": "v_船",
+          "traditional": "船",
+          "pinyin": "chuán",
+          "gloss": "boat; vessel; ship",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "坐船比坐飛機慢，可是很好玩。",
+            "pinyin": "zuò chuán bǐ zuò fēijī màn, kěshì hěn hǎowán.",
+            "gloss": "Going by boat is slower than flying, but it's fun."
+          }
+        },
+        {
+          "id": "v_旅遊",
+          "traditional": "旅遊",
+          "pinyin": "lǚ yóu",
+          "gloss": "trip; journey; tourism",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "下個月我要去台中旅遊。",
+            "pinyin": "xià ge yuè wǒ yào qù Táizhōng lǚyóu.",
+            "gloss": "Next month I'm going to Taichung to travel."
+          }
+        },
+        {
+          "id": "v_百",
+          "traditional": "百",
+          "pinyin": "bǎi",
+          "gloss": "hundred; numerous; all kinds of",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件衣服三百五十塊。",
+            "pinyin": "zhè jiàn yīfú sān bǎi wǔshí kuài.",
+            "gloss": "This piece of clothing is 350 dollars."
+          }
+        },
+        {
+          "id": "v_千",
+          "traditional": "千",
+          "pinyin": "qiān",
+          "gloss": "thousand",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這張飛機票要五千塊。",
+            "pinyin": "zhè zhāng fēijī piào yào wǔ qiān kuài.",
+            "gloss": "This plane ticket costs five thousand dollars."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Saying prices in the hundreds and thousands (百 / 千)",
+          "pattern": "Number + 千 + Number + 百 (+ Number + 十) + 塊",
+          "explanation": "To say big prices you build the number from the biggest unit down: 兩千八百塊 (2,800), 一百二十塊 (120). 百 and 千 always need a number in front of them — you must say 一百, 一千, never just 百 or 千. For 2, Taiwan Mandarin uses 兩 before 百 and 千: 兩百, 兩千. Add 多 after the unit for a rough amount: 三千多塊 (three thousand-something).",
+          "contrast": "兩 vs 二: use 兩 when counting an amount (兩千塊, 兩張票); use 二 only inside a number's tens/ones position (十二, 二十五) or when reading digits out one by one, like a phone number.",
+          "common_error": "Learners say 二百塊 or drop the 一 and say 千塊. Say 兩百塊 and 一千塊 instead.",
+          "examples": [
+            {
+              "hanzi": "這張飛機票兩千八百塊。",
+              "pinyin": "zhè zhāng fēijī piào liǎng qiān bā bǎi kuài.",
+              "gloss": "This plane ticket is 2,800 dollars."
+            },
+            {
+              "hanzi": "去機場的車票一百二十塊。",
+              "pinyin": "qù jīchǎng de chēpiào yì bǎi èrshí kuài.",
+              "gloss": "The ticket to the airport is 120 dollars."
+            },
+            {
+              "hanzi": "坐船一個人要八百五十塊，飛機要三千多塊。",
+              "pinyin": "zuò chuán yí ge rén yào bā bǎi wǔshí kuài, fēijī yào sān qiān duō kuài.",
+              "gloss": "The boat is 850 dollars per person; the plane is three thousand-something."
+            }
+          ],
+          "id": "g_hsk2_08_1_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "我們週末去台中旅遊，好不好？",
+          "pinyin": "wǒmen zhōumò qù Táizhōng lǚyóu, hǎo bù hǎo?",
+          "gloss": "Shall we go to Taichung for a trip this weekend?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好！我們搭火車還是坐飛機？",
+          "pinyin": "hǎo! wǒmen dā huǒchē háishì zuò fēijī?",
+          "gloss": "Sure! Do we take the train or fly?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "飛機票要三千多塊，太貴了。火車很便宜。",
+          "pinyin": "fēijī piào yào sān qiān duō kuài, tài guì le. huǒchē hěn piányí.",
+          "gloss": "Plane tickets are three thousand-something, too expensive. The train is cheap."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "那我上網買兩張火車票。",
+          "pinyin": "nà wǒ shàng wǎng mǎi liǎng zhāng huǒchē piào.",
+          "gloss": "Then I'll buy two train tickets online."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "謝謝你！早上八點在車站見。",
+          "pinyin": "xièxie nǐ! zǎoshang bā diǎn zài chēzhàn jiàn.",
+          "gloss": "Thanks! See you at the station at eight in the morning."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，記得帶悠遊卡喔。",
+          "pinyin": "hǎo, jìde dài yōuyóukǎ ō.",
+          "gloss": "OK, remember to bring your EasyCard."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "買",
+            "了",
+            "兩",
+            "張",
+            "飛機",
+            "票"
+          ],
+          "pinyin": "wǒ mǎi le liǎng zhāng fēijī piào.",
+          "gloss": "I bought two plane tickets.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "我們",
+            "搭",
+            "捷運",
+            "去",
+            "機場"
+          ],
+          "pinyin": "wǒmen dā jiéyùn qù jīchǎng.",
+          "gloss": "We take the MRT to the airport.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "坐",
+            "船",
+            "比",
+            "坐",
+            "飛機",
+            "慢"
+          ],
+          "pinyin": "zuò chuán bǐ zuò fēijī màn.",
+          "gloss": "Going by boat is slower than flying.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "這",
+            "張",
+            "票",
+            "要",
+            "兩",
+            "千",
+            "五",
+            "百",
+            "塊"
+          ],
+          "pinyin": "zhè zhāng piào yào liǎng qiān wǔ bǎi kuài.",
+          "gloss": "This ticket costs 2,500 dollars.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "下個月",
+            "我",
+            "和",
+            "哥哥",
+            "去",
+            "台中",
+            "旅遊"
+          ],
+          "pinyin": "xià ge yuè wǒ hé gēge qù Táizhōng lǚyóu.",
+          "gloss": "Next month my older brother and I are traveling to Taichung.",
+          "cloze_index": 6
+        }
+      ],
+      "passage": {
+        "title": "我們的旅遊",
+        "hanzi": "上個月我和哥哥去旅遊。我們先上網買飛機票，一張要兩千八百塊。那天早上我們搭捷運到機場，飛機很快就飛到台東。第二天我們坐船去看魚，風很大，可是那裡真的很漂亮。我們一共用了五千多塊，可是都玩得很快樂。",
+        "gloss": "Last month my older brother and I went on a trip. First we bought plane tickets online — 2,800 dollars each. That morning we took the MRT to the airport, and the plane got us to Taitung very quickly. On the second day we took a boat out to see the fish. The wind was strong, but the place was really beautiful. We spent five thousand-something dollars altogether, but we both had a great time."
+      }
+    },
+    {
+      "id": "l_hsk2_08_2",
+      "title": "旅途的天氣與身體",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_晴",
+          "traditional": "晴",
+          "pinyin": "qíng",
+          "gloss": "clear; fine (weather)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天是晴天，我們去騎腳踏車吧。",
+            "pinyin": "Jīntiān shì qíngtiān, wǒmen qù qí jiǎotàchē ba.",
+            "gloss": "Today is a clear day — let's go ride bikes."
+          }
+        },
+        {
+          "id": "v_陰",
+          "traditional": "陰",
+          "pinyin": "yīn",
+          "gloss": "overcast (weather); cloudy; shady",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天天氣很陰，可能會下雨。",
+            "pinyin": "Jīntiān tiānqì hěn yīn, kěnéng huì xià yǔ.",
+            "gloss": "It's very overcast today; it might rain."
+          }
+        },
+        {
+          "id": "v_雪",
+          "traditional": "雪",
+          "pinyin": "xuě",
+          "gloss": "snow; (literary) to wipe away (a humiliation etc)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "台灣很少下雪，所以大家都想去日本看雪。",
+            "pinyin": "Táiwān hěn shǎo xià xuě, suǒyǐ dàjiā dōu xiǎng qù Rìběn kàn xuě.",
+            "gloss": "It rarely snows in Taiwan, so everyone wants to go to Japan to see snow."
+          }
+        },
+        {
+          "id": "v_累",
+          "traditional": "累",
+          "pinyin": "lèi",
+          "gloss": "tired; weary; to strain",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我今天走了很多路，真的很累。",
+            "pinyin": "Wǒ jīntiān zǒu le hěn duō lù, zhēn de hěn lèi.",
+            "gloss": "I walked a lot today; I'm really tired."
+          }
+        },
+        {
+          "id": "v_休息",
+          "traditional": "休息",
+          "pinyin": "xiūxí",
+          "gloss": "rest; to rest",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你看起來很累，先休息一下吧。",
+            "pinyin": "Nǐ kàn qǐlái hěn lèi, xiān xiūxí yíxià ba.",
+            "gloss": "You look tired — rest for a bit first."
+          }
+        },
+        {
+          "id": "v_生病",
+          "traditional": "生病",
+          "pinyin": "shēng bìng",
+          "gloss": "to fall ill",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹生病了，今天沒去學校。",
+            "pinyin": "Wǒ mèimei shēng bìng le, jīntiān méi qù xuéxiào.",
+            "gloss": "My little sister got sick, so she didn't go to school today."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "一……就…… (as soon as / whenever A, then B)",
+          "pattern": "Subject + 一 + V/Adj + 就 + V/Adj",
+          "explanation": "一……就…… links two things that happen right after each other, or a habitual reaction. The subject comes first, before 一. Use it for body and weather reactions: 我一累就想睡覺 (whenever I'm tired, I want to sleep). Both clauses share the same subject here; if the subjects differ, put the second subject after 就: 天氣一陰，我就不想出門。",
+          "contrast": "因為……所以…… also links cause and result, but it explains one single situation ('because it rained, I didn't go'). 一……就…… says the second thing follows the first immediately or every time. If you mean 'every time / the moment', use 一……就……; if you are giving a reason for one past event, use 因為……所以……。",
+          "common_error": "Learners put the subject after 一 (X 一我累就想睡覺) — the subject must come before 一. They also add 了 inside the pattern for habits (X 我一累了就想睡覺); keep it plain when talking about what always happens.",
+          "examples": [
+            {
+              "hanzi": "我一累就想睡覺。",
+              "pinyin": "Wǒ yí lèi jiù xiǎng shuìjiào.",
+              "gloss": "As soon as I get tired, I want to sleep."
+            },
+            {
+              "hanzi": "他一生病就不想吃飯。",
+              "pinyin": "Tā yì shēng bìng jiù bù xiǎng chīfàn.",
+              "gloss": "Whenever he gets sick, he doesn't want to eat."
+            },
+            {
+              "hanzi": "天氣一陰，我就不想出門。",
+              "pinyin": "Tiānqì yì yīn, wǒ jiù bù xiǎng chūmén.",
+              "gloss": "The moment the weather turns overcast, I don't feel like going out."
+            }
+          ],
+          "id": "g_hsk2_08_2_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "V + 一下 (do something a bit)",
+          "pattern": "Verb + 一下",
+          "explanation": "一下 after a verb makes the action short and casual, and softens requests: 休息一下 (rest a while), 看一下 (take a look). It is very common in spoken Taiwan Mandarin.",
+          "contrast": "一點 also means 'a little', but it goes with adjectives or nouns (累一點、喝一點水), while 一下 goes after a verb to shorten the action.",
+          "common_error": "Saying 我很休息一下 or putting 一下 before the verb (X 一下休息). 一下 always follows the verb, and you don't add 很.",
+          "examples": [
+            {
+              "hanzi": "我們在這裡休息一下。",
+              "pinyin": "Wǒmen zài zhèlǐ xiūxí yíxià.",
+              "gloss": "Let's rest here for a bit."
+            },
+            {
+              "hanzi": "你看一下今天的天氣。",
+              "pinyin": "Nǐ kàn yíxià jīntiān de tiānqì.",
+              "gloss": "Take a look at today's weather."
+            },
+            {
+              "hanzi": "太累了，我想坐一下。",
+              "pinyin": "Tài lèi le, wǒ xiǎng zuò yíxià.",
+              "gloss": "I'm too tired; I want to sit for a moment."
+            }
+          ],
+          "id": "g_hsk2_08_2_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你今天怎麼了？看起來很累。",
+          "pinyin": "Nǐ jīntiān zěnme le? Kàn qǐlái hěn lèi.",
+          "gloss": "What's up with you today? You look really tired."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我昨天騎腳踏車騎了一天，今天有點累。",
+          "pinyin": "Wǒ zuótiān qí jiǎotàchē qí le yì tiān, jīntiān yǒudiǎn lèi.",
+          "gloss": "I rode my bike all day yesterday, so I'm a bit tired today."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "今天天氣很陰，可能會下雨，你在家休息吧。",
+          "pinyin": "Jīntiān tiānqì hěn yīn, kěnéng huì xià yǔ, nǐ zài jiā xiūxí ba.",
+          "gloss": "It's overcast today and it might rain — just rest at home."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "可是我下個星期要去日本看雪。",
+          "pinyin": "Kěshì wǒ xià ge xīngqí yào qù Rìběn kàn xuě.",
+          "gloss": "But next week I'm going to Japan to see snow."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "那你先休息，不要生病了。",
+          "pinyin": "Nà nǐ xiān xiūxí, búyào shēng bìng le.",
+          "gloss": "Then rest up first — don't get sick."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "好，我聽你的，先睡一下。",
+          "pinyin": "Hǎo, wǒ tīng nǐ de, xiān shuì yíxià.",
+          "gloss": "OK, I'll listen to you and take a nap first."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "天氣",
+            "很",
+            "晴"
+          ],
+          "pinyin": "Jīntiān tiānqì hěn qíng.",
+          "gloss": "The weather is clear today.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "昨天",
+            "是",
+            "陰天"
+          ],
+          "pinyin": "Zuótiān shì yīntiān.",
+          "gloss": "Yesterday was overcast.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "他",
+            "想",
+            "去",
+            "日本",
+            "看",
+            "雪"
+          ],
+          "pinyin": "Tā xiǎng qù Rìběn kàn xuě.",
+          "gloss": "He wants to go to Japan to see snow.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "我",
+            "很",
+            "累",
+            "，",
+            "想",
+            "休息",
+            "一下"
+          ],
+          "pinyin": "Wǒ hěn lèi, xiǎng xiūxí yíxià.",
+          "gloss": "I'm tired; I want to rest a bit.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "妹妹",
+            "生病",
+            "了",
+            "，",
+            "沒",
+            "去",
+            "上課"
+          ],
+          "pinyin": "Mèimei shēng bìng le, méi qù shàngkè.",
+          "gloss": "My sister got sick and didn't go to class.",
+          "cloze_index": 1
+        }
+      ],
+      "passage": {
+        "title": "週末的天氣",
+        "hanzi": "上個週末，我和家人去台北玩。第一天是晴天，我們騎腳踏車，也去了夜市吃東西。第二天天氣很陰，還下了雨，走了很多路以後，媽媽很累，就在旅館休息。台灣不下雪，可是媽媽說，下次想去日本看雪。",
+        "gloss": "Last weekend my family and I went to Taipei for fun. The first day was clear and sunny; we rode bikes and also went to the night market to eat. The second day was very overcast and it even rained. After walking a lot, Mom was very tired and rested at the hotel. It doesn't snow in Taiwan, but Mom said that next time she wants to go to Japan to see snow."
+      }
+    },
+    {
+      "id": "l_hsk2_08_3",
+      "title": "住飯店問方向",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_服務生",
+          "traditional": "服務生",
+          "pinyin": "fúwùshēng",
+          "gloss": "waiter; waitress; attendant",
+          "hsk_level": 2,
+          "taiwan_note": "台灣餐廳多說「服務生」。",
+          "prc_form": "服務員",
+          "example": {
+            "hanzi": "服務生，請給我一杯熱茶。",
+            "pinyin": "Fúwùshēng, qǐng gěi wǒ yì bēi rè chá.",
+            "gloss": "Waiter, please give me a cup of hot tea."
+          }
+        },
+        {
+          "id": "v_左邊",
+          "traditional": "左邊",
+          "pinyin": "zuǒ bian",
+          "gloss": "left; the left side; to the left of",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "郵局在銀行的左邊。",
+            "pinyin": "Yóujú zài yínháng de zuǒbiān.",
+            "gloss": "The post office is to the left of the bank."
+          }
+        },
+        {
+          "id": "v_右邊",
+          "traditional": "右邊",
+          "pinyin": "yòu bian",
+          "gloss": "right side; right, to the right",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你從這裡一直走，餐廳就在右邊。",
+            "pinyin": "Nǐ cóng zhèlǐ yìzhí zǒu, cāntīng jiù zài yòubiān.",
+            "gloss": "Walk straight from here, and the restaurant is on the right."
+          }
+        },
+        {
+          "id": "v_旁邊",
+          "traditional": "旁邊",
+          "pinyin": "páng biān",
+          "gloss": "side; adjacent place",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "捷運站旁邊有一家早餐店。",
+            "pinyin": "Jiéyùn zhàn pángbiān yǒu yì jiā zǎocān diàn.",
+            "gloss": "There's a breakfast shop next to the MRT station."
+          }
+        },
+        {
+          "id": "v_洗",
+          "traditional": "洗",
+          "pinyin": "xǐ",
+          "gloss": "to wash; to bathe; to develop (photographs); to shuffle (cards etc)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我要先洗手再吃飯。",
+            "pinyin": "Wǒ yào xiān xǐ shǒu zài chīfàn.",
+            "gloss": "I want to wash my hands before eating."
+          }
+        },
+        {
+          "id": "v_報紙",
+          "traditional": "報紙",
+          "pinyin": "bào zhǐ",
+          "gloss": "newspaper; newsprint",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "爸爸每天早上都看報紙。",
+            "pinyin": "Bàba měi tiān zǎoshang dōu kàn bàozhǐ.",
+            "gloss": "Dad reads the newspaper every morning."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Saying where something is: A 在 B 的 左邊／右邊／旁邊",
+          "pattern": "A + 在 + B + 的 + 左邊／右邊／旁邊",
+          "explanation": "To locate one thing in relation to another, name the thing you are talking about first (A), then 在, then the reference place (B), and put the direction word 左邊 / 右邊 / 旁邊 at the very end. 的 is often kept after a noun but is usually dropped after a short place word like 捷運站旁邊. 左邊 is 'to the left of', 右邊 'to the right of', and 旁邊 just means 'next to' without saying which side.",
+          "contrast": "Compare with B + 旁邊 + 有 + A (「捷運站旁邊有一家書店」). Use 在 when the listener already knows what A is and you are telling them where it is; use 有 when you are introducing something new that exists there. So: 飯店在捷運站旁邊 (Where is the hotel?) vs. 捷運站旁邊有一家飯店 (What's around here?).",
+          "common_error": "Learners reverse the order and say things like 「在左邊的銀行」 when they mean 「銀行的左邊」. In Chinese the reference point comes first and the direction word comes last: 銀行的左邊 = the left side OF the bank, while 左邊的銀行 = the bank ON the left.",
+          "examples": [
+            {
+              "hanzi": "飯店就在捷運站的旁邊。",
+              "pinyin": "Fàndiàn jiù zài jiéyùn zhàn de pángbiān.",
+              "gloss": "The hotel is right next to the MRT station."
+            },
+            {
+              "hanzi": "洗手間在餐廳的左邊。",
+              "pinyin": "Xǐshǒujiān zài cāntīng de zuǒbiān.",
+              "gloss": "The restroom is to the left of the restaurant."
+            },
+            {
+              "hanzi": "那家咖啡店在郵局的右邊。",
+              "pinyin": "Nà jiā kāfēi diàn zài yóujú de yòubiān.",
+              "gloss": "That coffee shop is to the right of the post office."
+            }
+          ],
+          "id": "g_hsk2_08_3_1",
+          "hsk_level": 2
+        },
+        {
+          "title": "先…再… (first … then …)",
+          "pattern": "S + 先 + V1 + 再 + V2",
+          "explanation": "先 marks the first action and 再 the one that follows it, so 先洗手再吃飯 means 'wash your hands first, then eat'. Both 先 and 再 go before the verb, never after it.",
+          "contrast": "再 here means 'then, afterwards' for a planned sequence, not 'again'. 又 means 'again' about something already finished: 他又看報紙了 = he read the paper again.",
+          "common_error": "Learners put the time word after the verb, like 「我洗手先」, or replace 再 with 後. Keep both adverbs in front of their verbs: 我先洗手，再吃早餐。",
+          "examples": [
+            {
+              "hanzi": "我先洗手，再吃早餐。",
+              "pinyin": "Wǒ xiān xǐ shǒu, zài chī zǎocān.",
+              "gloss": "I'll wash my hands first, then eat breakfast."
+            },
+            {
+              "hanzi": "你先看報紙，我再問服務生。",
+              "pinyin": "Nǐ xiān kàn bàozhǐ, wǒ zài wèn fúwùshēng.",
+              "gloss": "You read the paper first, then I'll ask the attendant."
+            },
+            {
+              "hanzi": "我們先去郵局，再去右邊那家店。",
+              "pinyin": "Wǒmen xiān qù yóujú, zài qù yòubiān nà jiā diàn.",
+              "gloss": "Let's go to the post office first, then to that shop on the right."
+            }
+          ],
+          "id": "g_hsk2_08_3_2",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "服務生，請問洗手間在哪裡？",
+          "pinyin": "Fúwùshēng, qǐngwèn xǐshǒujiān zài nǎlǐ?",
+          "gloss": "Excuse me, where is the restroom?"
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "就在餐廳的左邊，很近。",
+          "pinyin": "Jiù zài cāntīng de zuǒbiān, hěn jìn.",
+          "gloss": "It's right to the left of the restaurant, very close."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "謝謝。飯店附近有郵局嗎？我想寄信。",
+          "pinyin": "Xièxie. Fàndiàn fùjìn yǒu yóujú ma? Wǒ xiǎng jì xìn.",
+          "gloss": "Thanks. Is there a post office near the hotel? I want to mail a letter."
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "有，郵局在銀行的右邊，走路五分鐘就到了。",
+          "pinyin": "Yǒu, yóujú zài yínháng de yòubiān, zǒulù wǔ fēnzhōng jiù dào le.",
+          "gloss": "Yes, the post office is to the right of the bank, a five-minute walk."
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "對了，我房間裡沒有報紙。",
+          "pinyin": "Duì le, wǒ fángjiān lǐ méiyǒu bàozhǐ.",
+          "gloss": "By the way, there's no newspaper in my room."
+        },
+        {
+          "speaker": "服務生",
+          "hanzi": "沒問題，我現在就送報紙到您的房間。",
+          "pinyin": "Méi wèntí, wǒ xiànzài jiù sòng bàozhǐ dào nín de fángjiān.",
+          "gloss": "No problem, I'll bring a newspaper to your room right now."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "郵局",
+            "在",
+            "飯店",
+            "的",
+            "右邊"
+          ],
+          "pinyin": "Yóujú zài fàndiàn de yòubiān.",
+          "gloss": "The post office is to the right of the hotel.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "服務生",
+            "給",
+            "我",
+            "一",
+            "張",
+            "報紙"
+          ],
+          "pinyin": "Fúwùshēng gěi wǒ yì zhāng bàozhǐ.",
+          "gloss": "The attendant gave me a newspaper.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "要",
+            "先",
+            "洗手",
+            "再",
+            "吃飯"
+          ],
+          "pinyin": "Wǒ yào xiān xǐ shǒu zài chīfàn.",
+          "gloss": "I'll wash my hands first, then eat.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "捷運站",
+            "旁邊",
+            "有",
+            "一",
+            "家",
+            "書店"
+          ],
+          "pinyin": "Jiéyùn zhàn pángbiān yǒu yì jiā shūdiàn.",
+          "gloss": "There's a bookshop next to the MRT station.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "請問",
+            "洗手間",
+            "在",
+            "左邊",
+            "嗎"
+          ],
+          "pinyin": "Qǐngwèn, xǐshǒujiān zài zuǒbiān ma?",
+          "gloss": "Excuse me, is the restroom on the left?",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "飯店的早上",
+        "hanzi": "昨天晚上我們住進台北的一家小飯店。今天早上我洗好手，就下去吃早餐。餐廳在飯店的右邊，旁邊有一張大桌子，上面有很多報紙。我問服務生：附近有郵局嗎？他說郵局在銀行的左邊，走路十分鐘就到了。",
+        "gloss": "Last night we checked into a small hotel in Taipei. This morning, after washing my hands, I went down for breakfast. The restaurant is to the right of the hotel, and next to it there is a big table with lots of newspapers on it. I asked the attendant: is there a post office nearby? He said the post office is to the left of the bank, just a ten-minute walk away."
+      }
+    }
+  ],
+  "sort_order": 29,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

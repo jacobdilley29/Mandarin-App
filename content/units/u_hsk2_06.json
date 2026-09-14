@@ -1,0 +1,680 @@
+{
+  "id": "u_hsk2_06",
+  "title": "家人與家裡的事",
+  "subtitle": "Talking about your family, celebrating birthdays, and shopping at the traditional market",
+  "hsk_level": 2,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk2_06_1",
+      "title": "家人怎麼稱呼",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_哥哥",
+          "traditional": "哥哥",
+          "pinyin": "gē ge",
+          "gloss": "older brother",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我哥哥今年二十五歲，他在台北工作。",
+            "pinyin": "Wǒ gēge jīnnián èrshíwǔ suì, tā zài Táiběi gōngzuò.",
+            "gloss": "My older brother is twenty-five this year; he works in Taipei."
+          }
+        },
+        {
+          "id": "v_姐姐",
+          "traditional": "姐姐",
+          "pinyin": "jiě jie",
+          "gloss": "older sister",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我姐姐很喜歡喝珍珠奶茶。",
+            "pinyin": "Wǒ jiějie hěn xǐhuān hē zhēnzhū nǎichá.",
+            "gloss": "My older sister really likes drinking bubble tea."
+          }
+        },
+        {
+          "id": "v_弟弟",
+          "traditional": "弟弟",
+          "pinyin": "dì di",
+          "gloss": "younger brother",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "弟弟每天騎腳踏車去學校。",
+            "pinyin": "Dìdi měi tiān qí jiǎotàchē qù xuéxiào.",
+            "gloss": "My younger brother rides his bike to school every day."
+          }
+        },
+        {
+          "id": "v_妹妹",
+          "traditional": "妹妹",
+          "pinyin": "mèi mei",
+          "gloss": "younger sister; young woman",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹比我小三歲。",
+            "pinyin": "Wǒ mèimei bǐ wǒ xiǎo sān suì.",
+            "gloss": "My younger sister is three years younger than me."
+          }
+        },
+        {
+          "id": "v_丈夫",
+          "traditional": "丈夫",
+          "pinyin": "zhàngfū",
+          "gloss": "husband",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她丈夫是醫生，工作很忙。",
+            "pinyin": "Tā zhàngfū shì yīshēng, gōngzuò hěn máng.",
+            "gloss": "Her husband is a doctor and is very busy with work."
+          }
+        },
+        {
+          "id": "v_妻子",
+          "traditional": "妻子",
+          "pinyin": "qī zǐ",
+          "gloss": "wife and children",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆的妻子在附近開了一家店。",
+            "pinyin": "Lǎobǎn de qīzi zài fùjìn kāi le yì jiā diàn.",
+            "gloss": "The boss's wife opened a shop nearby."
+          }
+        },
+        {
+          "id": "v_姓",
+          "traditional": "姓",
+          "pinyin": "xìng",
+          "gloss": "family name; surname; to be surnamed",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "請問你姓什麼？我姓張。",
+            "pinyin": "Qǐngwèn nǐ xìng shénme? Wǒ xìng Zhāng.",
+            "gloss": "May I ask your surname? My surname is Zhang."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "姓 (surname) as a verb",
+          "pattern": "Subject + 姓 + surname／Subject + 叫 + name",
+          "explanation": "In Chinese, 姓 is a verb, not a noun: it means \"to be surnamed\". You say 我姓張 (I am surnamed Zhang) with no 是. Use 姓 with the family name only; use 叫 with the given name or the full name. To ask, say 你姓什麼？or the more polite 請問你姓什麼？The same works for family members: 我哥哥也姓張。",
+          "contrast": "姓 vs 叫: 姓 takes only the family name (我姓高), 叫 takes the given name or full name (我叫高小雨). If what follows is one syllable that is a family name, use 姓; if it is the whole name, use 叫.",
+          "common_error": "Learners add 是 and say 我是姓張, or they put the full name after 姓 (我姓張小雨). Say 我姓張 or 我叫張小雨.",
+          "examples": [
+            {
+              "hanzi": "我姓張，我哥哥也姓張。",
+              "pinyin": "Wǒ xìng Zhāng, wǒ gēge yě xìng Zhāng.",
+              "gloss": "My surname is Zhang; my older brother's surname is Zhang too."
+            },
+            {
+              "hanzi": "請問你姐姐姓什麼？",
+              "pinyin": "Qǐngwèn nǐ jiějie xìng shénme?",
+              "gloss": "May I ask what your older sister's surname is?"
+            },
+            {
+              "hanzi": "她姓高，她丈夫姓白。",
+              "pinyin": "Tā xìng Gāo, tā zhàngfū xìng Bái.",
+              "gloss": "Her surname is Gao, and her husband's surname is Bai."
+            }
+          ],
+          "id": "g_hsk2_06_1_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小高",
+          "hanzi": "這張是你的家人嗎？",
+          "pinyin": "Zhè zhāng shì nǐ de jiārén ma?",
+          "gloss": "Is this a photo of your family?"
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "對啊，這是我哥哥，那是我妹妹。",
+          "pinyin": "Duì a, zhè shì wǒ gēge, nà shì wǒ mèimei.",
+          "gloss": "Yes. This is my older brother, and that's my younger sister."
+        },
+        {
+          "speaker": "小高",
+          "hanzi": "你妹妹也姓張嗎？",
+          "pinyin": "Nǐ mèimei yě xìng Zhāng ma?",
+          "gloss": "Is your sister's surname Zhang too?"
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "對，我們都姓張，她叫張小雨。",
+          "pinyin": "Duì, wǒmen dōu xìng Zhāng, tā jiào Zhāng Xiǎoyǔ.",
+          "gloss": "Yes, we're all surnamed Zhang. She's called Zhang Xiaoyu."
+        },
+        {
+          "speaker": "小高",
+          "hanzi": "那這個人是誰？",
+          "pinyin": "Nà zhège rén shì shéi?",
+          "gloss": "Then who is this person?"
+        },
+        {
+          "speaker": "小張",
+          "hanzi": "他是我姐姐的丈夫，在醫院工作。",
+          "pinyin": "Tā shì wǒ jiějie de zhàngfū, zài yīyuàn gōngzuò.",
+          "gloss": "He's my older sister's husband; he works at a hospital."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "哥哥",
+            "週末",
+            "想",
+            "去",
+            "看",
+            "電影"
+          ],
+          "pinyin": "Wǒ gēge zhōumò xiǎng qù kàn diànyǐng.",
+          "gloss": "My older brother wants to go see a movie this weekend.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "我",
+            "姐姐",
+            "比",
+            "我",
+            "大",
+            "三",
+            "歲"
+          ],
+          "pinyin": "Wǒ jiějie bǐ wǒ dà sān suì.",
+          "gloss": "My older sister is three years older than me.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "每天",
+            "搭",
+            "捷運",
+            "上學"
+          ],
+          "pinyin": "Dìdi měi tiān dā jiéyùn shàngxué.",
+          "gloss": "My younger brother takes the MRT to school every day.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "請問",
+            "你",
+            "姓",
+            "什麼"
+          ],
+          "pinyin": "Qǐngwèn nǐ xìng shénme?",
+          "gloss": "May I ask what your surname is?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "老闆",
+            "的",
+            "妻子",
+            "也",
+            "在",
+            "店裡",
+            "幫忙"
+          ],
+          "pinyin": "Lǎobǎn de qīzi yě zài diàn lǐ bāngmáng.",
+          "gloss": "The boss's wife also helps out in the shop.",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我家的人",
+        "hanzi": "我姓張，我家人不少。哥哥在台北上班，每天搭捷運去公司，他的妻子在銀行工作。姐姐的丈夫是老師，他們就住在附近。妹妹還在讀書，常常騎腳踏車去學校。弟弟最愛喝珍珠奶茶。週末我們都回家吃飯，爸爸媽媽很高興。",
+        "gloss": "My surname is Zhang, and I have quite a few family members. My older brother works in Taipei and takes the MRT to the office every day; his wife works at a bank. My older sister's husband is a teacher, and they live right nearby. My younger sister is still studying and often rides her bike to school. My younger brother loves bubble tea most of all. On weekends we all come home for dinner, and Mom and Dad are very happy."
+      }
+    },
+    {
+      "id": "l_hsk2_06_2",
+      "title": "生日與慶祝",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_生日",
+          "traditional": "生日",
+          "pinyin": "shēng rì",
+          "gloss": "birthday",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天是我媽媽的生日，我們去餐廳吃飯。",
+            "pinyin": "Jīntiān shì wǒ māma de shēngrì, wǒmen qù cāntīng chīfàn.",
+            "gloss": "Today is my mom's birthday; we're going to a restaurant to eat."
+          }
+        },
+        {
+          "id": "v_唱歌",
+          "traditional": "唱歌",
+          "pinyin": "chàng gē",
+          "gloss": "to sing a song",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "朋友生日的時候，我們都會唱歌給他聽。",
+            "pinyin": "Péngyǒu shēngrì de shíhòu, wǒmen dōu huì chànggē gěi tā tīng.",
+            "gloss": "When a friend has a birthday, we all sing a song for him."
+          }
+        },
+        {
+          "id": "v_跳舞",
+          "traditional": "跳舞",
+          "pinyin": "tiào wǔ",
+          "gloss": "to dance",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我妹妹跳舞跳得很漂亮。",
+            "pinyin": "Wǒ mèimei tiàowǔ tiào de hěn piàoliang.",
+            "gloss": "My younger sister dances beautifully."
+          }
+        },
+        {
+          "id": "v_顏色",
+          "traditional": "顏色",
+          "pinyin": "yán sè",
+          "gloss": "color; countenance; appearance",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你最喜歡什麼顏色？我最喜歡白色。",
+            "pinyin": "Nǐ zuì xǐhuān shénme yánsè? Wǒ zuì xǐhuān báisè.",
+            "gloss": "What color do you like best? I like white best."
+          }
+        },
+        {
+          "id": "v_手錶",
+          "traditional": "手錶",
+          "pinyin": "shǒu biǎo",
+          "gloss": "wristwatch",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個手錶是我爸爸送我的。",
+            "pinyin": "Zhè ge shǒubiǎo shì wǒ bàba sòng wǒ de.",
+            "gloss": "This wristwatch was given to me by my dad."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "會 for learned skills（會／不會／很會）",
+          "pattern": "Subject + (不)會 + Verb Phrase　/　Subject + 很會 + Verb Phrase",
+          "explanation": "會 says you have learned how to do something: 我會唱歌 \"I can sing (I know how).\" The negative is 不會, never 沒會. Put 很 in front (很會) and it means \"is really good at\": 她很會跳舞 \"She's a great dancer.\" To ask, use 會不會 or add 嗎.",
+          "contrast": "會 vs 能: 會 is a skill you learned (我會跳舞), while 能 is about physical ability or the situation allowing it (我今天腳很痛，不能跳舞 — I know how, but not today). If you can replace it with \"know how to,\" use 會; if it is \"am able to right now,\" use 能.",
+          "common_error": "Learners say 我能唱歌 when they mean \"I know how to sing\" — that sounds like \"I'm permitted / physically able to sing.\" Also, don't say 我會跳舞得很好; the degree complement repeats the verb: 我跳舞跳得很好, or just say 我很會跳舞.",
+          "examples": [
+            {
+              "hanzi": "我會唱歌，可是我不會跳舞。",
+              "pinyin": "Wǒ huì chànggē, kěshì wǒ bú huì tiàowǔ.",
+              "gloss": "I can sing, but I can't dance."
+            },
+            {
+              "hanzi": "我姐姐很會跳舞，大家都喜歡看。",
+              "pinyin": "Wǒ jiějie hěn huì tiàowǔ, dàjiā dōu xǐhuān kàn.",
+              "gloss": "My older sister is really good at dancing; everyone likes watching."
+            },
+            {
+              "hanzi": "你會不會唱台灣的歌？",
+              "pinyin": "Nǐ huì bú huì chàng Táiwān de gē?",
+              "gloss": "Do you know how to sing Taiwanese songs?"
+            }
+          ],
+          "id": "g_hsk2_06_2_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "小明，下週六是你姐姐的生日吧？",
+          "pinyin": "Xiǎomíng, xià zhōuliù shì nǐ jiějie de shēngrì ba?",
+          "gloss": "Xiaoming, this coming Saturday is your sister's birthday, right?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對，我想買一個手錶送給她。",
+          "pinyin": "Duì, wǒ xiǎng mǎi yí ge shǒubiǎo sòng gěi tā.",
+          "gloss": "Right, I want to buy a watch to give her."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "她喜歡什麼顏色的？",
+          "pinyin": "Tā xǐhuān shénme yánsè de?",
+          "gloss": "What color does she like?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "她最喜歡白色的。晚上我們還要去唱歌。",
+          "pinyin": "Tā zuì xǐhuān báisè de. Wǎnshàng wǒmen hái yào qù chànggē.",
+          "gloss": "She likes white best. In the evening we're also going to sing (karaoke)."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "真好！你會跳舞嗎？",
+          "pinyin": "Zhēn hǎo! Nǐ huì tiàowǔ ma?",
+          "gloss": "How nice! Can you dance?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我不會跳舞，可是我很會唱歌！",
+          "pinyin": "Wǒ bú huì tiàowǔ, kěshì wǒ hěn huì chànggē!",
+          "gloss": "I can't dance, but I'm really good at singing!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "今天",
+            "是",
+            "你",
+            "的",
+            "生日",
+            "嗎"
+          ],
+          "pinyin": "Jīntiān shì nǐ de shēngrì ma?",
+          "gloss": "Is today your birthday?",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "不",
+            "會",
+            "跳舞"
+          ],
+          "pinyin": "Wǒ bú huì tiàowǔ.",
+          "gloss": "I don't know how to dance.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "妹妹",
+            "在",
+            "房",
+            "間",
+            "裡",
+            "唱歌"
+          ],
+          "pinyin": "Mèimei zài fángjiān lǐ chànggē.",
+          "gloss": "My little sister is singing in the room.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這",
+            "個",
+            "手錶",
+            "的",
+            "顏色",
+            "很",
+            "好看"
+          ],
+          "pinyin": "Zhè ge shǒubiǎo de yánsè hěn hǎokàn.",
+          "gloss": "The color of this watch is nice.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "買",
+            "紅色",
+            "的",
+            "手錶"
+          ],
+          "pinyin": "Wǒ xiǎng mǎi hóngsè de shǒubiǎo.",
+          "gloss": "I want to buy a red watch.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "姐姐的生日",
+        "hanzi": "上個週末是我姐姐的生日。我和哥哥先搭捷運去買一個手錶送她，她最喜歡的顏色是紅色，我們就買了一個紅色的。晚上全家人在家裡吃飯，飯後我們一起唱歌，媽媽還跳舞給我們看，大家都很高興。",
+        "gloss": "Last weekend was my older sister's birthday. My brother and I first took the MRT to buy a watch for her; her favorite color is red, so we bought a red one. In the evening the whole family ate at home, and after dinner we sang together. Mom even danced for us, and everyone was very happy."
+      }
+    },
+    {
+      "id": "l_hsk2_06_3",
+      "title": "傳統市場買菜",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_魚",
+          "traditional": "魚",
+          "pinyin": "yú",
+          "gloss": "fish",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "媽媽今天在早市買了魚和菜。",
+            "pinyin": "Māma jīntiān zài zǎoshì mǎi le yú hé cài.",
+            "gloss": "Mom bought fish and vegetables at the morning market today."
+          }
+        },
+        {
+          "id": "v_雞蛋",
+          "traditional": "雞蛋",
+          "pinyin": "jī dàn",
+          "gloss": "(chicken) egg; hen's egg",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆，雞蛋一斤多少錢？",
+            "pinyin": "Lǎobǎn, jīdàn yì jīn duōshǎo qián?",
+            "gloss": "Boss, how much is a catty of eggs?"
+          }
+        },
+        {
+          "id": "v_西瓜",
+          "traditional": "西瓜",
+          "pinyin": "xī guā",
+          "gloss": "watermelon",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個西瓜很甜，也不貴。",
+            "pinyin": "Zhège xīguā hěn tián, yě bú guì.",
+            "gloss": "This watermelon is very sweet, and it's not expensive either."
+          }
+        },
+        {
+          "id": "v_羊肉",
+          "traditional": "羊肉",
+          "pinyin": "yáng ròu",
+          "gloss": "mutton; goat meat",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "天氣冷的時候，我喜歡吃羊肉。",
+            "pinyin": "Tiānqì lěng de shíhòu, wǒ xǐhuān chī yángròu.",
+            "gloss": "When the weather is cold, I like to eat mutton."
+          }
+        },
+        {
+          "id": "v_公斤",
+          "traditional": "公斤",
+          "pinyin": "gōng jīn",
+          "gloss": "kilogram (kg)",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這些魚一共兩公斤。",
+            "pinyin": "Zhèxiē yú yígòng liǎng gōngjīn.",
+            "gloss": "These fish are two kilograms altogether."
+          }
+        },
+        {
+          "id": "v_貴",
+          "traditional": "貴",
+          "pinyin": "guì",
+          "gloss": "expensive; noble; precious",
+          "hsk_level": 2,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這裡的水果太貴了，我們去別家看看。",
+            "pinyin": "Zhèlǐ de shuǐguǒ tài guì le, wǒmen qù bié jiā kànkan.",
+            "gloss": "The fruit here is too expensive; let's go look at another shop."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "問價錢：一公斤多少錢？",
+          "pattern": "N + 一公斤／一斤 + 多少錢？（也可以說：一公斤 + N + 多少錢？）",
+          "explanation": "In a Taiwanese market you ask the price by putting the amount (一公斤、一斤、一個) right before 多少錢. 多少 goes directly in front of 錢 with no 的 and no measure word. The noun can come first (西瓜一公斤多少錢？) or after the amount (一公斤西瓜多少錢？) — both are natural. To answer, just say the amount and the price: 一公斤八十塊。",
+          "contrast": "多少錢 vs. 幾塊錢：幾 must be followed by a measure word (幾塊錢、幾個), and it expects a small number you can guess; 多少 stands alone before 錢 and is the safe, neutral way to ask any price. So 雞蛋幾塊錢？ is fine for cheap eggs, but for a big bill you say 一共多少錢？",
+          "common_error": "Learners say 「多少的錢」 or 「幾錢」. Never put 的 between 多少 and 錢, and never use 幾 without a measure word — 幾錢 is wrong, it must be 幾塊錢.",
+          "examples": [
+            {
+              "hanzi": "老闆，西瓜一公斤多少錢？",
+              "pinyin": "Lǎobǎn, xīguā yì gōngjīn duōshǎo qián?",
+              "gloss": "Boss, how much is a kilo of watermelon?"
+            },
+            {
+              "hanzi": "羊肉一公斤九十塊，有點貴。",
+              "pinyin": "Yángròu yì gōngjīn jiǔshí kuài, yǒudiǎn guì.",
+              "gloss": "Mutton is ninety NT a kilo — a bit expensive."
+            },
+            {
+              "hanzi": "這些魚和雞蛋一共多少錢？",
+              "pinyin": "Zhèxiē yú hé jīdàn yígòng duōshǎo qián?",
+              "gloss": "How much are these fish and eggs altogether?"
+            }
+          ],
+          "id": "g_hsk2_06_3_1",
+          "hsk_level": 2
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "客人",
+          "hanzi": "老闆，這魚怎麼賣？",
+          "pinyin": "Lǎobǎn, zhè yú zěnme mài?",
+          "gloss": "Boss, how are you selling this fish?"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "一公斤八十塊，今天的很好吃！",
+          "pinyin": "Yì gōngjīn bāshí kuài, jīntiān de hěn hǎochī!",
+          "gloss": "Eighty NT a kilo — today's is really tasty!"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "有點貴，便宜一點吧！",
+          "pinyin": "Yǒudiǎn guì, piányí yìdiǎn ba!",
+          "gloss": "That's a bit pricey — give me a better price!"
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "好，七十五塊給你。西瓜也很甜，要不要？",
+          "pinyin": "Hǎo, qīshíwǔ kuài gěi nǐ. Xīguā yě hěn tián, yào bú yào?",
+          "gloss": "OK, seventy-five for you. The watermelon is sweet too — want some?"
+        },
+        {
+          "speaker": "客人",
+          "hanzi": "那我要一個西瓜，還有十個雞蛋。",
+          "pinyin": "Nà wǒ yào yí ge xīguā, háiyǒu shí ge jīdàn.",
+          "gloss": "Then I'll take one watermelon and ten eggs."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "好，一共九十塊，謝謝！",
+          "pinyin": "Hǎo, yígòng jiǔshí kuài, xièxie!",
+          "gloss": "Alright, ninety NT altogether, thank you!"
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "西瓜",
+            "一",
+            "公斤",
+            "五十",
+            "塊",
+            "錢"
+          ],
+          "pinyin": "Xīguā yì gōngjīn wǔshí kuài qián.",
+          "gloss": "Watermelon is fifty NT dollars a kilo.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "想",
+            "買",
+            "兩",
+            "公斤",
+            "羊肉"
+          ],
+          "pinyin": "Wǒ xiǎng mǎi liǎng gōngjīn yángròu.",
+          "gloss": "I want to buy two kilos of mutton.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這裡",
+            "的",
+            "魚",
+            "很",
+            "貴"
+          ],
+          "pinyin": "Zhèlǐ de yú hěn guì.",
+          "gloss": "The fish here is very expensive.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "媽媽",
+            "早上",
+            "買",
+            "了",
+            "一",
+            "斤",
+            "雞蛋"
+          ],
+          "pinyin": "Māma zǎoshàng mǎi le yì jīn jīdàn.",
+          "gloss": "Mom bought a catty of eggs in the morning.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "這些",
+            "西瓜",
+            "一共",
+            "三",
+            "公斤"
+          ],
+          "pinyin": "Zhèxiē xīguā yígòng sān gōngjīn.",
+          "gloss": "These watermelons are three kilos altogether.",
+          "cloze_index": 4
+        }
+      ],
+      "passage": {
+        "title": "早市買菜",
+        "hanzi": "週末早上，我和媽媽一起走路去附近的早市。早市裡有很多人，賣魚、賣菜的老闆都在叫：「來看看！」媽媽買了兩公斤羊肉、一斤雞蛋，還買了一個大西瓜。我說西瓜太貴了，媽媽笑著說：「這個很甜，一點都不貴。」回家以後，我們一起吃西瓜，真的很甜。",
+        "gloss": "On the weekend morning, Mom and I walked to the nearby morning market together. There were lots of people in the market, and the fish sellers and vegetable sellers were all calling out, \"Come take a look!\" Mom bought two kilos of mutton and a catty of eggs, and she also bought a big watermelon. I said the watermelon was too expensive, but Mom said with a smile, \"This one is really sweet — it's not expensive at all.\" After we got home, we ate the watermelon together, and it really was sweet."
+      }
+    }
+  ],
+  "sort_order": 27,
+  "tocfl_level": "Level 1",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,245 @@
+{
+  "id": "u_hsk4_01",
+  "title": "聊天與轉折",
+  "subtitle": "Everyday chat: linking ideas, softening opinions, reacting naturally",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_01_1",
+      "title": "接話與語氣",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_呀",
+          "traditional": "呀",
+          "pinyin": "ya",
+          "gloss": "(particle equivalent to 啊 after a vowel, expressing surprise or doubt)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_對",
+          "traditional": "對",
+          "pinyin": "duì",
+          "gloss": "right; correct; towards; at; for; concerning; regarding",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可是",
+          "traditional": "可是",
+          "pinyin": "kě shì",
+          "gloss": "but; however; (used for emphasis) indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不過",
+          "traditional": "不過",
+          "pinyin": "bù guò",
+          "gloss": "only; merely; no more than",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_卻",
+          "traditional": "卻",
+          "pinyin": "què",
+          "gloss": "but; yet; however",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_而",
+          "traditional": "而",
+          "pinyin": "ér",
+          "gloss": "and; as well as; and so",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_01_2",
+      "title": "說明原因",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_因此",
+          "traditional": "因此",
+          "pinyin": "yīn cǐ",
+          "gloss": "thus; consequently; as a result",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_由",
+          "traditional": "由",
+          "pinyin": "yóu",
+          "gloss": "to follow; from; because of; due to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原因",
+          "traditional": "原因",
+          "pinyin": "yuán yīn",
+          "gloss": "cause; origin; root cause",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_只要",
+          "traditional": "只要",
+          "pinyin": "zhǐ yào",
+          "gloss": "if only; so long as",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_以",
+          "traditional": "以",
+          "pinyin": "yǐ",
+          "gloss": "to use; by means of; according to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_之",
+          "traditional": "之",
+          "pinyin": "zhī",
+          "gloss": "(possessive particle, literary equivalent of 的); him; her",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_01_3",
+      "title": "說感覺與猜測",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_情況",
+          "traditional": "情況",
+          "pinyin": "qíng kuàng",
+          "gloss": "circumstances; state of affairs; situation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感覺",
+          "traditional": "感覺",
+          "pinyin": "gǎn jué",
+          "gloss": "feeling; impression; sensation; to feel; to perceive",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_甚至",
+          "traditional": "甚至",
+          "pinyin": "shèn zhì",
+          "gloss": "even; so much so that",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_也許",
+          "traditional": "也許",
+          "pinyin": "yě xǔ",
+          "gloss": "perhaps; maybe",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_肯定",
+          "traditional": "肯定",
+          "pinyin": "kěn dìng",
+          "gloss": "to be certain; to be positive; assuredly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_真正",
+          "traditional": "真正",
+          "pinyin": "zhēn zhèng",
+          "gloss": "genuine; real; true; really; indeed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_01_4",
+      "title": "多少與範圍",
+      "sort_order": 4,
+      "vocab": [
+        {
+          "id": "v_所有",
+          "traditional": "所有",
+          "pinyin": "suǒ yǒu",
+          "gloss": "all; to have; to possess; to own",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一切",
+          "traditional": "一切",
+          "pinyin": "yī qiè",
+          "gloss": "everything; every; all",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_任何",
+          "traditional": "任何",
+          "pinyin": "rèn hé",
+          "gloss": "any; whatever; whichever",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_完全",
+          "traditional": "完全",
+          "pinyin": "wán quán",
+          "gloss": "complete; whole; totally; entirely",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_其中",
+          "traditional": "其中",
+          "pinyin": "qí zhōng",
+          "gloss": "among; in; included among these",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_部分",
+          "traditional": "部分",
+          "pinyin": "bù fen",
+          "gloss": "part; share; section",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 49,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

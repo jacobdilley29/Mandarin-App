@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_05",
+  "title": "家人、心情與不放棄",
+  "subtitle": "Family, feelings, and sticking with it",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_05_1",
+      "title": "家人與陪伴",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_父親",
+          "traditional": "父親",
+          "pinyin": "fù qīn",
+          "gloss": "father; also pr. [fù qin]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_母親",
+          "traditional": "母親",
+          "pinyin": "mǔ qīn",
+          "gloss": "mother; also pr. [mǔ qin]",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_陪",
+          "traditional": "陪",
+          "pinyin": "péi",
+          "gloss": "to accompany; to keep sb company; to assist",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_幸福",
+          "traditional": "幸福",
+          "pinyin": "xìng fú",
+          "gloss": "happiness; happy; blessed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_經歷",
+          "traditional": "經歷",
+          "pinyin": "jīng lì",
+          "gloss": "experience; to experience; to go through",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感謝",
+          "traditional": "感謝",
+          "pinyin": "gǎn xiè",
+          "gloss": "(express) thanks; gratitude; grateful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_05_2",
+      "title": "壓力與心情",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_壓力",
+          "traditional": "壓力",
+          "pinyin": "yā lì",
+          "gloss": "pressure",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_緊張",
+          "traditional": "緊張",
+          "pinyin": "jǐn zhāng",
+          "gloss": "nervous; keyed up; intense",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_正常",
+          "traditional": "正常",
+          "pinyin": "zhèng cháng",
+          "gloss": "regular; normal; ordinary",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_好像",
+          "traditional": "好像",
+          "pinyin": "hǎo xiàng",
+          "gloss": "as if; to seem like",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_樣子",
+          "traditional": "樣子",
+          "pinyin": "yàng zi",
+          "gloss": "appearance; manner; pattern",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_夢",
+          "traditional": "夢",
+          "pinyin": "mèng",
+          "gloss": "dream; (bound form) to dream",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_05_3",
+      "title": "遇到困難不放棄",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_堅持",
+          "traditional": "堅持",
+          "pinyin": "jiān chí",
+          "gloss": "to persevere with; to persist in; to insist on",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_放棄",
+          "traditional": "放棄",
+          "pinyin": "fàng qì",
+          "gloss": "to renounce; to abandon; to give up",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_困難",
+          "traditional": "困難",
+          "pinyin": "kùn nan",
+          "gloss": "difficult; challenging; straitened circumstances",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_值得",
+          "traditional": "值得",
+          "pinyin": "zhí de",
+          "gloss": "to be worth; to deserve",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_贏",
+          "traditional": "贏",
+          "pinyin": "yíng",
+          "gloss": "to beat; to win; to profit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_試",
+          "traditional": "試",
+          "pinyin": "shì",
+          "gloss": "to test; to try; experiment",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 53,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

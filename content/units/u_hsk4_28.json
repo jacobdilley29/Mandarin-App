@@ -1,0 +1,121 @@
+{
+  "id": "u_hsk4_28",
+  "title": "味道與身體不舒服",
+  "subtitle": "Tasting food, dieting and feeling unwell",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_28_1",
+      "title": "加鹽、嘗味道",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_鹽",
+          "traditional": "鹽",
+          "pinyin": "yán",
+          "gloss": "salt",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_酸",
+          "traditional": "酸",
+          "pinyin": "suān",
+          "gloss": "sour; tart; sick at heart",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_嘗",
+          "traditional": "嘗",
+          "pinyin": "cháng",
+          "gloss": "to taste; to try (food); to experience; (literary) ever; once",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_軟",
+          "traditional": "軟",
+          "pinyin": "ruǎn",
+          "gloss": "soft; flexible",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_稍微",
+          "traditional": "稍微",
+          "pinyin": "shāo wēi",
+          "gloss": "a little bit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_28_2",
+      "title": "不舒服、流汗與護士",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_難受",
+          "traditional": "難受",
+          "pinyin": "nán shòu",
+          "gloss": "to feel unwell; to suffer pain; to be difficult to bear",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_受不了",
+          "traditional": "受不了",
+          "pinyin": "shòu bù liǎo",
+          "gloss": "unbearable; unable to endure; can't stand",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_護士",
+          "traditional": "護士",
+          "pinyin": "hù shi",
+          "gloss": "nurse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_汗",
+          "traditional": "汗",
+          "pinyin": "hàn",
+          "gloss": "perspiration; sweat; to be speechless (out of helplessness, embarrassment etc) (Internet slang used as an interjection)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_減肥",
+          "traditional": "減肥",
+          "pinyin": "jiǎn féi",
+          "gloss": "to lose weight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_忽然",
+          "traditional": "忽然",
+          "pinyin": "hū rán",
+          "gloss": "suddenly; all of a sudden",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 76,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

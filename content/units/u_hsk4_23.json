@@ -1,0 +1,137 @@
+{
+  "id": "u_hsk4_23",
+  "title": "讀書、興趣與活動",
+  "subtitle": "Studying, reading and things people do for fun",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_23_1",
+      "title": "念書、學位與看書",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_知識",
+          "traditional": "知識",
+          "pinyin": "zhī shi",
+          "gloss": "knowledge; intellectual",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_博士",
+          "traditional": "博士",
+          "pinyin": "bó shì",
+          "gloss": "doctor; court academician (in feudal China); Ph.D.",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_專門",
+          "traditional": "專門",
+          "pinyin": "zhuān mén",
+          "gloss": "specialist; specialized; customized",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_小說",
+          "traditional": "小說",
+          "pinyin": "xiǎo shuō",
+          "gloss": "novel; fiction",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_作者",
+          "traditional": "作者",
+          "pinyin": "zuò zhě",
+          "gloss": "author; writer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_頁",
+          "traditional": "頁",
+          "pinyin": "yè",
+          "gloss": "page; leaf",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_23_2",
+      "title": "辦活動、才藝與流行",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_舉辦",
+          "traditional": "舉辦",
+          "pinyin": "jǔ bàn",
+          "gloss": "to conduct; to hold",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_流行",
+          "traditional": "流行",
+          "pinyin": "liú xíng",
+          "gloss": "(of a contagious disease etc) to spread; to propagate; (of a style of clothing, song etc) popular",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_現代",
+          "traditional": "現代",
+          "pinyin": "xiàn dài",
+          "gloss": "modern times; modern age; modern era",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_有趣",
+          "traditional": "有趣",
+          "pinyin": "yǒu qù",
+          "gloss": "interesting; fascinating; amusing",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_彈",
+          "traditional": "彈",
+          "pinyin": "tán",
+          "gloss": "to pluck (a string); to play (a string instrument); to spring or leap",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_組成",
+          "traditional": "組成",
+          "pinyin": "zǔ chéng",
+          "gloss": "to form; to make up; to constitute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_聊天",
+          "traditional": "聊天",
+          "pinyin": "liáo tiān",
+          "gloss": "to chat; to gossip",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 71,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

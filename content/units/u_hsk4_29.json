@@ -1,0 +1,179 @@
+{
+  "id": "u_hsk4_29",
+  "title": "朋友、吵架與心情",
+  "subtitle": "Friendship, apologies, arguments and how you feel",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_29_1",
+      "title": "交朋友與開玩笑",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_友好",
+          "traditional": "友好",
+          "pinyin": "yǒu hǎo",
+          "gloss": "friendly; amicable; close friend",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_友誼",
+          "traditional": "友誼",
+          "pinyin": "yǒu yì",
+          "gloss": "companionship; fellowship; friendship",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_約會",
+          "traditional": "約會",
+          "pinyin": "yuē huì",
+          "gloss": "appointment; engagement; date",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_對話",
+          "traditional": "對話",
+          "pinyin": "duì huà",
+          "gloss": "to talk (with sb); dialogue; conversation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_開玩笑",
+          "traditional": "開玩笑",
+          "pinyin": "kāi wán xiào",
+          "gloss": "to play a joke; to make fun of; to joke",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_笑話",
+          "traditional": "笑話",
+          "pinyin": "xiào hua",
+          "gloss": "joke; jest; to laugh at; to mock",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_29_2",
+      "title": "道歉、脾氣與商量",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_道歉",
+          "traditional": "道歉",
+          "pinyin": "dào qiàn",
+          "gloss": "to apologize",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_批評",
+          "traditional": "批評",
+          "pinyin": "pī píng",
+          "gloss": "to criticize; criticism",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_脾氣",
+          "traditional": "脾氣",
+          "pinyin": "pí qi",
+          "gloss": "character; temperament; disposition",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_商量",
+          "traditional": "商量",
+          "pinyin": "shāng liang",
+          "gloss": "to consult; to talk over; to discuss",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_主意",
+          "traditional": "主意",
+          "pinyin": "zhǔ yi",
+          "gloss": "plan; idea; decision",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_耐心",
+          "traditional": "耐心",
+          "pinyin": "nài xīn",
+          "gloss": "to be patient; patience",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_29_3",
+      "title": "孤單、煩惱與羨慕",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_孤單",
+          "traditional": "孤單",
+          "pinyin": "gū dān",
+          "gloss": "lone; lonely; loneliness",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_煩惱",
+          "traditional": "煩惱",
+          "pinyin": "fán nǎo",
+          "gloss": "to be worried; to be distressed; worries",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_羨慕",
+          "traditional": "羨慕",
+          "pinyin": "xiàn mù",
+          "gloss": "to envy; to admire",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_笨",
+          "traditional": "笨",
+          "pinyin": "bèn",
+          "gloss": "stupid; foolish; silly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_吃驚",
+          "traditional": "吃驚",
+          "pinyin": "chī jīng",
+          "gloss": "to be startled; to be shocked; to be amazed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 77,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

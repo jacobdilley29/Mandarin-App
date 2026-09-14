@@ -1,0 +1,129 @@
+{
+  "id": "u_hsk4_26",
+  "title": "大自然與數字變化",
+  "subtitle": "Forests, oceans, pollution and describing growth",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_26_1",
+      "title": "森林、海洋與動植物",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_森林",
+          "traditional": "森林",
+          "pinyin": "sēn lín",
+          "gloss": "forest",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_海洋",
+          "traditional": "海洋",
+          "pinyin": "hǎi yáng",
+          "gloss": "ocean",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_植物",
+          "traditional": "植物",
+          "pinyin": "zhí wù",
+          "gloss": "plant; vegetation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_棵",
+          "traditional": "棵",
+          "pinyin": "kē",
+          "gloss": "classifier for trees, cabbages, plants etc",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_獅子",
+          "traditional": "獅子",
+          "pinyin": "shī zi",
+          "gloss": "lion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_污染",
+          "traditional": "污染",
+          "pinyin": "wū rǎn",
+          "gloss": "to pollute; to contaminate (lit. and fig.)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_26_2",
+      "title": "數字、增加與不足",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_億",
+          "traditional": "億",
+          "pinyin": "yì",
+          "gloss": "100 million",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_增長",
+          "traditional": "增長",
+          "pinyin": "zēng zhǎng",
+          "gloss": "to grow; to increase",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_擴大",
+          "traditional": "擴大",
+          "pinyin": "kuò dà",
+          "gloss": "to expand; to enlarge; to broaden one's scope",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_逐漸",
+          "traditional": "逐漸",
+          "pinyin": "zhú jiàn",
+          "gloss": "gradually",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_缺少",
+          "traditional": "缺少",
+          "pinyin": "quē shǎo",
+          "gloss": "lack; shortage of; shortfall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_極其",
+          "traditional": "極其",
+          "pinyin": "jí qí",
+          "gloss": "extremely",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 74,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

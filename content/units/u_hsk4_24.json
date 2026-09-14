@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_24",
+  "title": "安排、說明與估算",
+  "subtitle": "Scheduling, explaining your judgment and estimating",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_24_1",
+      "title": "提前、暫時與剛剛好",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_提前",
+          "traditional": "提前",
+          "pinyin": "tí qián",
+          "gloss": "to shift to an earlier date; to do sth ahead of time; in advance",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_暫時",
+          "traditional": "暫時",
+          "pinyin": "zàn shí",
+          "gloss": "temporary; provisional; for the time being",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_及時",
+          "traditional": "及時",
+          "pinyin": "jí shí",
+          "gloss": "timely; at the right time; promptly; without delay",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_平時",
+          "traditional": "平時",
+          "pinyin": "píng shí",
+          "gloss": "ordinarily; in normal times; in peacetime",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_隨著",
+          "traditional": "隨著",
+          "pinyin": "suí zhe",
+          "gloss": "along with; in the wake of; following",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_正好",
+          "traditional": "正好",
+          "pinyin": "zhèng hǎo",
+          "gloss": "just (in time); just right; just enough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_24_2",
+      "title": "判斷、看法與說清楚",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_判斷",
+          "traditional": "判斷",
+          "pinyin": "pàn duàn",
+          "gloss": "to judge; to determine; judgment",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_看法",
+          "traditional": "看法",
+          "pinyin": "kàn fǎ",
+          "gloss": "way of looking at a thing; view; opinion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_區別",
+          "traditional": "區別",
+          "pinyin": "qū bié",
+          "gloss": "difference; to distinguish; to discriminate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_準確",
+          "traditional": "準確",
+          "pinyin": "zhǔn què",
+          "gloss": "accurate; exact; precise",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_詳細",
+          "traditional": "詳細",
+          "pinyin": "xiáng xì",
+          "gloss": "detailed; in detail; minute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_果然",
+          "traditional": "果然",
+          "pinyin": "guǒ rán",
+          "gloss": "really; sure enough; as expected",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_24_3",
+      "title": "大概多少、只好這樣",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_大約",
+          "traditional": "大約",
+          "pinyin": "dà yuē",
+          "gloss": "approximately; probably",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_公里",
+          "traditional": "公里",
+          "pinyin": "gōng lǐ",
+          "gloss": "kilometer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_圓",
+          "traditional": "圓",
+          "pinyin": "yuán",
+          "gloss": "circle; round; circular",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_恐怕",
+          "traditional": "恐怕",
+          "pinyin": "kǒng pà",
+          "gloss": "fear; to dread; I'm afraid that...",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_只好",
+          "traditional": "只好",
+          "pinyin": "zhǐ hǎo",
+          "gloss": "to have no other option but to ...; to have to; to be forced to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_尤其",
+          "traditional": "尤其",
+          "pinyin": "yóu qí",
+          "gloss": "especially; particularly",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 72,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

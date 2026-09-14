@@ -1,0 +1,187 @@
+{
+  "id": "u_hsk4_32",
+  "title": "家中用品與親戚長輩",
+  "subtitle": "Household goods, tidying up and family health habits",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_32_1",
+      "title": "浴室與洗衣間",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_毛巾",
+          "traditional": "毛巾",
+          "pinyin": "máo jīn",
+          "gloss": "towel",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_牙膏",
+          "traditional": "牙膏",
+          "pinyin": "yá gāo",
+          "gloss": "toothpaste",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鏡子",
+          "traditional": "鏡子",
+          "pinyin": "jìng zi",
+          "gloss": "mirror",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_襪子",
+          "traditional": "襪子",
+          "pinyin": "wà zi",
+          "gloss": "socks; stockings",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗衣機",
+          "traditional": "洗衣機",
+          "pinyin": "xǐ yī jī",
+          "gloss": "washing machine; washer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_瓶子",
+          "traditional": "瓶子",
+          "pinyin": "píng zi",
+          "gloss": "bottle",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_32_2",
+      "title": "收納與整理房間",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_盒子",
+          "traditional": "盒子",
+          "pinyin": "hé zi",
+          "gloss": "box; case",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_整齊",
+          "traditional": "整齊",
+          "pinyin": "zhěng qí",
+          "gloss": "orderly; neat; even",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_排列",
+          "traditional": "排列",
+          "pinyin": "pái liè",
+          "gloss": "to arrange in order; (math.) permutation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_順序",
+          "traditional": "順序",
+          "pinyin": "shùn xù",
+          "gloss": "sequence; order",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_窄",
+          "traditional": "窄",
+          "pinyin": "zhǎi",
+          "gloss": "narrow; narrow-minded; badly off",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_力氣",
+          "traditional": "力氣",
+          "pinyin": "lì qi",
+          "gloss": "strength",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_32_3",
+      "title": "親戚、長輩與壞習慣",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_親戚",
+          "traditional": "親戚",
+          "pinyin": "qīn qi",
+          "gloss": "a relative (i.e. family relation)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_孫子",
+          "traditional": "孫子",
+          "pinyin": "sūn zi",
+          "gloss": "grandson; son's son",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_性別",
+          "traditional": "性別",
+          "pinyin": "xìng bié",
+          "gloss": "gender; sex",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_大夫",
+          "traditional": "大夫",
+          "pinyin": "dài fu",
+          "gloss": "doctor; physician",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_咳嗽",
+          "traditional": "咳嗽",
+          "pinyin": "ké sou",
+          "gloss": "to cough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_抽煙",
+          "traditional": "抽煙",
+          "pinyin": "chōu yān",
+          "gloss": "to smoke (a cigarette, tobacco)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 80,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

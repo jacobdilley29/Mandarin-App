@@ -1,0 +1,756 @@
+import { useEffect, useMemo, useState } from "react";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import {
+  api,
+  type DrillResult,
+  type Exercise,
+  type GrammarRef,
+  type Lesson,
+  type LessonResult,
+  type Option,
+} from "../../api";
+import { useSettings } from "../../SettingsContext";
+import { useSpeak } from "../../audio";
+import { AskAbout } from "../../components/AskAbout";
+import { Glossable } from "../../components/Glossable";
+import { Phonetic } from "../../components/Phonetic";
+import { Speakable } from "../../components/Speakable";
+import {
+  gradeTiles,
+  type Tile,
+  TileRack,
+  TileTray,
+  tilesMatch,
+} from "../../components/Tiles";
+import { ToneMark } from "../../components/ToneMark";
+
+function PlayButton({ text, big }: { text: string; big?: boolean }) {
+  const { play, state } = useSpeak();
+  const { settings } = useSettings();
+  return (
+    <button
+      type="button"
+      onClick={() => play(text, { voice: settings?.tts_voice, rate: settings?.playback_rate })}
+      className={[
+        "tap flex items-center justify-center rounded-full bg-primary text-primary-ink shadow-card transition-transform active:scale-95",
+        big ? "h-16 w-16" : "h-12 w-12",
+      ].join(" ")}
+      aria-label="Play audio"
+    >
+      {state === "loading" ? (
+        <span className="h-4 w-4 animate-spin rounded-full border-2 border-primary-ink border-t-transparent" />
+      ) : (
+        <svg viewBox="0 0 24 24" className={big ? "h-7 w-7" : "h-6 w-6"} fill="currentColor">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      )}
+    </button>
+  );
+}
+
+// The reading under a word — pinyin, zhuyin, or both, per the Me-tab setting.
+// Zhuyin is Taiwan's own phonetic system; it is transcribed server-side from
+// the very pinyin shown here, so the two can never contradict each other.
+// Falls back to pinyin whenever an item carries no zhuyin.
+function Pinyin({
+  text,
+  zhuyin,
+  show,
+}: {
+  text?: string;
+  zhuyin?: string | null;
+  show: boolean;
+}) {
+  if (!show) return null;
+  return (
+    <div className="font-sans text-sm text-ink-soft">
+      <Phonetic pinyin={text} zhuyin={zhuyin} />
+    </div>
+  );
+}
+
+// --- Multiple-choice drill (shared by audio_meaning / cloze / translate) ---
+function ChoiceGrid({
+  options,
+  chosen,
+  onChoose,
+}: {
+  options: Option[];
+  chosen: string | null;
+  onChoose: (o: Option) => void;
+}) {
+  return (
+    <div className="mt-5 grid gap-2">
+      {options.map((o) => {
+        const isChosen = chosen === o.text;
+        let cls = "border-border bg-surface hover:border-primary";
+        if (chosen != null) {
+          if (o.correct) cls = "border-good bg-good/10 text-good";
+          else if (isChosen) cls = "border-bad bg-accent-soft text-bad";
+          else cls = "border-border bg-surface opacity-60";
+        }
+        return (
+          <button
+            key={o.text}
+            type="button"
+            disabled={chosen != null}
+            onClick={() => onChoose(o)}
+            className={["tap rounded-md border px-4 py-3 text-left text-base transition-colors", cls].join(" ")}
+          >
+            {o.text}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+interface DrillProps {
+  ex: Exercise;
+  showPinyin: boolean;
+  onDone: (correct: boolean) => void;
+}
+
+function VocabIntro({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  return (
+    <div className="text-center">
+      <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+      <Speakable text={p.traditional} showIcon={false} className="mx-auto mt-1 justify-center">
+        <span lang="zh-Hant" className="font-serifhan text-hero-lg text-ink">
+          {p.traditional}
+        </span>
+      </Speakable>
+      <div className="mt-3">
+        <PlayButtonInline text={p.traditional} />
+      </div>
+      <p className="mt-4 text-lg text-ink">{p.gloss}</p>
+      {p.taiwan_note && (
+        <p lang="zh-Hant" className="mx-auto mt-2 max-w-sm rounded-md bg-accent-soft px-3 py-2 text-sm text-ink-soft">
+          🇹🇼 {p.taiwan_note}
+        </p>
+      )}
+      <div className="mt-4">
+        <AskAbout focus={{ type: "vocab", id: p.vocab_id, text: p.traditional }} />
+      </div>
+      {p.example && (
+        <div className="mx-auto mt-5 max-w-sm rounded-md border border-border bg-surface-2 p-3 text-left">
+          <Speakable text={p.example.hanzi} className="font-han text-base text-ink">
+            {p.example.hanzi}
+          </Speakable>
+          <Pinyin text={p.example.pinyin} show={showPinyin} />
+          <div className="mt-1 text-sm text-ink-soft">{p.example.gloss}</div>
+        </div>
+      )}
+      <ContinueButton onClick={() => onDone(true)} />
+    </div>
+  );
+}
+
+function PlayButtonInline({ text }: { text: string }) {
+  return (
+    <div className="flex justify-center">
+      <PlayButton text={text} />
+    </div>
+  );
+}
+
+function GrammarCard({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  return (
+    <div>
+      <div className="mb-1 text-xs font-medium uppercase tracking-wide text-primary">Grammar</div>
+      <h3 lang="zh-Hant" className="font-han text-xl text-ink">
+        {p.title}
+      </h3>
+      <div className="mt-3 rounded-md bg-surface-2 px-3 py-2 font-mono text-sm text-ink">{p.pattern}</div>
+      <p className="mt-3 text-sm leading-relaxed text-ink-soft">{p.explanation}</p>
+      {p.taiwan_note && (
+        <p
+          lang="zh-Hant"
+          className="mt-3 rounded-md border border-primary/30 bg-primary-soft/30 px-3 py-2 font-han text-sm leading-relaxed text-ink"
+        >
+          🇹🇼 {p.taiwan_note}
+        </p>
+      )}
+      <div className="mt-3">
+        <AskAbout focus={{ type: "grammar", id: p.grammar_id, text: p.title }} />
+      </div>
+      <div className="mt-4 space-y-2">
+        {p.examples.map((ex2: { hanzi: string; pinyin: string; gloss: string }, i: number) => (
+          <div key={i} className="rounded-md border border-border p-3">
+            <Speakable text={ex2.hanzi} className="font-han text-base text-ink">
+              {ex2.hanzi}
+            </Speakable>
+            <Pinyin text={ex2.pinyin} show={showPinyin} />
+            <div className="mt-1 text-sm text-ink-soft">{ex2.gloss}</div>
+          </div>
+        ))}
+      </div>
+      <ContinueButton onClick={() => onDone(true)} />
+    </div>
+  );
+}
+
+function MatchDrill({ ex, onDone }: DrillProps) {
+  const p = ex.payload;
+  type Pair = { vocab_id: string; traditional: string; gloss: string };
+  const pairs: Pair[] = p.pairs;
+  const glosses = useMemo(() => [...pairs].sort(() => Math.random() - 0.5), [pairs]);
+  const [pickedChar, setPickedChar] = useState<string | null>(null);
+  const [matched, setMatched] = useState<Set<string>>(new Set());
+  const [mistakes, setMistakes] = useState(0);
+  const [wrongFlash, setWrongFlash] = useState<string | null>(null);
+
+  function tryMatch(gloss: Pair) {
+    if (!pickedChar) return;
+    const pair = pairs.find((x) => x.traditional === pickedChar)!;
+    if (pair.gloss === gloss.gloss) {
+      const next = new Set(matched).add(pair.traditional);
+      setMatched(next);
+      setPickedChar(null);
+      if (next.size === pairs.length) {
+        setTimeout(() => onDone(mistakes === 0), 350);
+      }
+    } else {
+      setMistakes((m) => m + 1);
+      setWrongFlash(gloss.gloss);
+      setTimeout(() => setWrongFlash(null), 350);
+      setPickedChar(null);
+    }
+  }
+
+  return (
+    <div>
+      <div className="mb-4 text-sm text-ink-soft">Match each word to its meaning.</div>
+      <div className="grid grid-cols-2 gap-3">
+        <div className="space-y-2">
+          {pairs.map((pr) => (
+            <button
+              key={pr.traditional}
+              type="button"
+              disabled={matched.has(pr.traditional)}
+              onClick={() => setPickedChar(pr.traditional)}
+              lang="zh-Hant"
+              className={[
+                "tap w-full rounded-md border px-3 py-3 font-han text-lg transition-colors",
+                matched.has(pr.traditional)
+                  ? "border-good bg-good/10 text-good"
+                  : pickedChar === pr.traditional
+                    ? "border-primary bg-primary-soft"
+                    : "border-border bg-surface hover:border-primary",
+              ].join(" ")}
+            >
+              {pr.traditional}
+            </button>
+          ))}
+        </div>
+        <div className="space-y-2">
+          {glosses.map((pr) => {
+            const done = matched.has(pr.traditional);
+            return (
+              <button
+                key={pr.gloss}
+                type="button"
+                disabled={done}
+                onClick={() => tryMatch(pr)}
+                className={[
+                  "tap w-full rounded-md border px-3 py-3 text-sm transition-colors",
+                  done
+                    ? "border-good bg-good/10 text-good"
+                    : wrongFlash === pr.gloss
+                      ? "border-bad bg-accent-soft text-bad"
+                      : "border-border bg-surface hover:border-primary",
+                ].join(" ")}
+              >
+                {pr.gloss}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function AudioMeaning({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div className="text-center">
+      <div className="mb-2 text-sm text-ink-soft">What does this mean?</div>
+      <div className="flex justify-center">
+        <PlayButton text={p.audio_text} big />
+      </div>
+      <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
+      <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
+      {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
+    </div>
+  );
+}
+
+/**
+ * Character recognition (spec §3.2).
+ *
+ * Meaning and sound are given; pick the characters. Every other drill shows the
+ * learner the characters and asks something about them, so this is the only one
+ * that tests whether he can pick the right glyph out of a line-up — which is
+ * exactly the skill reading actually needs. The options are chosen to be
+ * confusable (see _confusable_words in app/exercises.py), so they are rendered
+ * large and in a row: the whole point is comparing shapes.
+ */
+function CharRecognition({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div className="text-center">
+      <div className="mb-2 text-sm text-ink-soft">Which one is this?</div>
+      <div className="text-xl font-medium text-ink">{p.gloss}</div>
+      <Pinyin text={showPinyin ? p.pinyin : undefined} zhuyin={p.zhuyin} show={showPinyin} />
+      <div className="mt-3 flex justify-center">
+        <PlayButton text={p.audio_text} />
+      </div>
+
+      <div className="mt-6 grid grid-cols-2 gap-2">
+        {p.options.map((o: Option) => {
+          const isChosen = chosen === o.text;
+          let cls = "border-border bg-surface hover:border-primary";
+          if (chosen != null) {
+            if (o.correct) cls = "border-good bg-good/10 text-good";
+            else if (isChosen) cls = "border-bad bg-accent-soft text-bad";
+            else cls = "border-border bg-surface opacity-60";
+          }
+          return (
+            <button
+              key={o.text}
+              type="button"
+              lang="zh-Hant"
+              disabled={chosen != null}
+              onClick={() => setChosen(o.text)}
+              className={[
+                "tap rounded-md border px-3 py-5 font-serifhan text-3xl transition-colors",
+                cls,
+              ].join(" ")}
+            >
+              {o.text}
+            </button>
+          );
+        })}
+      </div>
+
+      {chosen != null && (
+        <ContinueButton
+          onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)}
+        />
+      )}
+    </div>
+  );
+}
+
+function ClozeDrill({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div>
+      <div className="mb-3 text-sm text-ink-soft">Fill in the blank.</div>
+      <div className="rounded-md border border-border bg-surface-2 p-4 text-center">
+        <Speakable text={p.audio_text} showIcon lang="zh-Hant" className="justify-center font-han text-2xl text-ink">
+          <span lang="zh-Hant" className="font-han text-2xl text-ink">
+            {p.tokens.join(" ")}
+          </span>
+        </Speakable>
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+        {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
+      </div>
+      <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
+      {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
+    </div>
+  );
+}
+
+/**
+ * Particle fill-in-the-blank (spec §3.3).
+ *
+ * The vocab cloze blanks a content word out of the same sentence and tests
+ * whether the word is known; this blanks 了/的/比 and tests whether the pattern
+ * is. The grammar point's title is shown so it's clear which one is being asked
+ * about — guessing a particle with no idea which pattern it belongs to teaches
+ * nothing.
+ */
+function ParticleCloze({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div>
+      <div className="mb-3 flex items-baseline gap-2">
+        <span className="rounded-full bg-primary-soft/40 px-2 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-primary">
+          Grammar
+        </span>
+        <span lang="zh-Hant" className="font-han text-sm text-ink-soft">
+          {p.title}
+        </span>
+      </div>
+      <div className="mb-3 text-sm text-ink-soft">Which word belongs here?</div>
+      <div className="rounded-md border border-border bg-surface-2 p-4 text-center">
+        <Speakable text={p.audio_text} showIcon lang="zh-Hant" className="justify-center font-han text-2xl text-ink">
+          <span lang="zh-Hant" className="font-han text-2xl text-ink">
+            {p.masked}
+          </span>
+        </Speakable>
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+        {p.gloss && <div className="mt-1 text-sm text-ink-soft">{p.gloss}</div>}
+      </div>
+      <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
+      {chosen != null && (
+        <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />
+      )}
+    </div>
+  );
+}
+
+function TranslateDrill({ ex, showPinyin, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [chosen, setChosen] = useState<string | null>(null);
+  return (
+    <div>
+      <div className="mb-3 text-sm text-ink-soft">Choose the translation.</div>
+      <div className="rounded-md border border-border bg-surface-2 p-4 text-center">
+        <Speakable text={p.audio_text} lang="zh-Hant" className="justify-center font-han text-2xl text-ink">
+          <span lang="zh-Hant" className="font-han text-2xl text-ink">
+            {p.prompt_hanzi}
+          </span>
+        </Speakable>
+        <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+      </div>
+      <ChoiceGrid options={p.options} chosen={chosen} onChoose={(o) => setChosen(o.text)} />
+      {chosen != null && <ContinueButton onClick={() => onDone(p.options.find((o: Option) => o.text === chosen)!.correct)} />}
+    </div>
+  );
+}
+
+// Build a sentence from tiles. Shared by the word-order drill and by dictation
+// below, which differ only in what the learner is given to start from: the
+// English gloss, or the audio.
+function TileDrill({
+  ex,
+  showPinyin,
+  onDone,
+  prompt,
+  header,
+}: DrillProps & { prompt: string; header?: React.ReactNode }) {
+  const p = ex.payload;
+  const answer: string[] = p.answer;
+  const [rack, setRack] = useState<Tile[]>(p.tiles);
+  const [built, setBuilt] = useState<Tile[]>([]);
+  const [checked, setChecked] = useState<null | boolean>(null);
+
+  function place(i: number) {
+    if (checked != null) return;
+    setBuilt([...built, rack[i]]);
+    setRack(rack.filter((_, j) => j !== i));
+  }
+  function remove(i: number) {
+    if (checked != null) return;
+    setRack([...rack, built[i]]);
+    setBuilt(built.filter((_, j) => j !== i));
+  }
+
+  return (
+    <div>
+      <div className="mb-3 text-sm text-ink-soft">{prompt}</div>
+      {header}
+      <TileTray
+        tiles={built}
+        states={checked == null ? undefined : gradeTiles(built, answer)}
+        showReading={showPinyin}
+        onRemove={checked == null ? remove : undefined}
+        frame={checked == null ? "neutral" : checked ? "correct" : "wrong"}
+      />
+      {checked === false && (
+        <div lang="zh-Hant" className="mt-2 font-han text-sm text-bad">
+          {answer.join("")}
+        </div>
+      )}
+      {checked != null && (
+        <>
+          <Pinyin text={p.pinyin} zhuyin={p.zhuyin} show={showPinyin} />
+          {p.gloss && <div className="text-sm text-ink-soft">{p.gloss}</div>}
+        </>
+      )}
+      {checked == null && (
+        <TileRack tiles={rack} showReading={showPinyin} onPlace={place} />
+      )}
+      {checked == null ? (
+        <button
+          type="button"
+          disabled={built.length === 0}
+          onClick={() => setChecked(tilesMatch(built, answer))}
+          className="btn-continue mt-6 w-full rounded-md bg-primary py-3 font-medium text-primary-ink disabled:opacity-40"
+        >
+          Check
+        </button>
+      ) : (
+        <ContinueButton onClick={() => onDone(checked)} />
+      )}
+    </div>
+  );
+}
+
+function TileBuild(props: DrillProps) {
+  return <TileDrill {...props} prompt={`Build the sentence: “${props.ex.payload.gloss}”.`} />;
+}
+
+// Dictation. Was a text box, which on a phone means fighting an IME before you
+// can answer at all; the tiles ask the same question — which words did you
+// hear — without one. Decoy tiles come from the server so the rack is not just
+// the answer shuffled.
+function ListenTiles(props: DrillProps) {
+  return (
+    <TileDrill
+      {...props}
+      prompt="Listen, then build what you hear."
+      header={
+        <div className="mb-4 flex justify-center">
+          <PlayButton text={props.ex.payload.audio_text} big />
+        </div>
+      }
+    />
+  );
+}
+
+function DialogueDrill({ ex, showPinyin: initialShow, onDone }: DrillProps) {
+  const p = ex.payload;
+  const [showEn, setShowEn] = useState(false);
+  return (
+    <div>
+      <div className="mb-3 flex items-center justify-between">
+        <div className="text-sm text-ink-soft">Dialogue · tap a line to hear it</div>
+        <button
+          type="button"
+          onClick={() => setShowEn((v) => !v)}
+          className="rounded-full border border-border px-3 py-1 text-xs text-ink-soft"
+        >
+          {showEn ? "Hide English" : "Show English"}
+        </button>
+      </div>
+      <div className="space-y-3">
+        {p.lines.map((line: { speaker: string; hanzi: string; pinyin: string; gloss: string }, i: number) => (
+          <div key={i} className="rounded-md border border-border p-3">
+            <div className="text-xs font-medium text-primary">{line.speaker}</div>
+            {/* Tap any word for its reading and meaning without leaving the
+                dialogue — the place a learner most often gets stuck. */}
+            <Speakable text={line.hanzi} className="mt-0.5 block font-han text-lg text-ink">
+              <Glossable text={line.hanzi} />
+            </Speakable>
+            <Pinyin text={line.pinyin} show={initialShow} />
+            {showEn && <div className="mt-0.5 text-sm text-ink-soft">{line.gloss}</div>}
+          </div>
+        ))}
+      </div>
+      <ContinueButton onClick={() => onDone(true)} />
+    </div>
+  );
+}
+
+function ContinueButton({ onClick }: { onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="mt-6 w-full rounded-md bg-primary py-3 font-medium text-primary-ink transition-transform active:scale-[0.99]"
+    >
+      Continue
+    </button>
+  );
+}
+
+function renderDrill(ex: Exercise, showPinyin: boolean, onDone: (c: boolean) => void) {
+  const props = { ex, showPinyin, onDone };
+  switch (ex.kind) {
+    case "vocab_intro":
+      return <VocabIntro {...props} />;
+    case "grammar":
+      return <GrammarCard {...props} />;
+    case "match":
+      return <MatchDrill {...props} />;
+    case "audio_meaning":
+      return <AudioMeaning {...props} />;
+    case "char_recognition":
+      return <CharRecognition {...props} />;
+    case "cloze":
+      return <ClozeDrill {...props} />;
+    case "particle_cloze":
+      return <ParticleCloze {...props} />;
+    case "translate":
+      return <TranslateDrill {...props} />;
+    case "tile_build":
+      return <TileBuild {...props} />;
+    case "listen_type":
+      return <ListenTiles {...props} />;
+    case "dialogue":
+      return <DialogueDrill {...props} />;
+    default:
+      return null;
+  }
+}
+
+export default function LessonPlayer() {
+  const { lessonId } = useParams();
+  const navigate = useNavigate();
+  const { settings } = useSettings();
+  const showPinyin = settings?.show_pinyin ?? true;
+
+  const [lesson, setLesson] = useState<Lesson | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [index, setIndex] = useState(0);
+  const [results, setResults] = useState<DrillResult[]>([]);
+  const [outcome, setOutcome] = useState<LessonResult | null>(null);
+
+  useEffect(() => {
+    if (!lessonId) return;
+    api.lesson(lessonId).then(setLesson).catch((e) => setError(String(e)));
+  }, [lessonId]);
+
+  async function handleDone(correct: boolean) {
+    if (!lesson) return;
+    const ex = lesson.exercises[index];
+    const nextResults = ex.gradable
+      ? [
+          ...results,
+          {
+            id: ex.id,
+            kind: ex.kind,
+            correct,
+            vocab_id: ex.payload.vocab_id ?? null,
+            grammar_id: ex.payload.grammar_id ?? null,
+          },
+        ]
+      : results;
+    setResults(nextResults);
+
+    if (index + 1 < lesson.exercises.length) {
+      setIndex(index + 1);
+    } else if (lessonId) {
+      try {
+        const res = await api.lessonResult(lessonId, nextResults);
+        setOutcome(res);
+      } catch (e) {
+        setError(String(e));
+      }
+    }
+  }
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-xl px-4 py-10 text-center">
+        <p className="text-bad">{error}</p>
+        <Link to="/learn" className="mt-4 inline-block text-primary underline">
+          Back to Learn
+        </Link>
+      </div>
+    );
+  }
+  if (!lesson) {
+    return <div className="mx-auto max-w-xl px-4 py-10 text-center text-ink-soft">Loading lesson…</div>;
+  }
+
+  if (outcome) {
+    return <LessonComplete lesson={lesson} outcome={outcome} onExit={() => navigate("/learn")} />;
+  }
+
+  const ex = lesson.exercises[index];
+  const progress = Math.round((index / lesson.exercises.length) * 100);
+
+  return (
+    <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-xl flex-col px-4 py-4">
+      <div className="mb-4 flex items-center gap-3">
+        <button
+          type="button"
+          onClick={() => navigate("/learn")}
+          className="tap text-ink-faint hover:text-ink"
+          aria-label="Exit lesson"
+        >
+          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div className="h-2 flex-1 overflow-hidden rounded-full bg-surface-2">
+          <div className="h-full rounded-full bg-primary transition-all" style={{ width: `${progress}%` }} />
+        </div>
+      </div>
+      <div className="flex-1">
+        {index === 0 && <BuildsOn items={lesson.requires_grammar ?? []} />}
+        <div key={ex.id} className="card">
+          {renderDrill(ex, showPinyin, handleDone)}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * What this lesson builds on (spec §3.3).
+ *
+ * Shown once, on the first card: grammar the lesson leans on but does not
+ * re-teach. Deliberately not a lock — the content loader already refuses a
+ * lesson that reaches forward to a point taught later, so by the time it is on
+ * screen the prerequisite is guaranteed to be something already met. This is a
+ * reminder of what it rests on, not a gate.
+ */
+function BuildsOn({ items }: { items: GrammarRef[] }) {
+  if (!items.length) return null;
+  return (
+    <div className="mb-3 rounded-md border border-border bg-surface-2 px-3 py-2">
+      <div className="text-xs font-medium uppercase tracking-wide text-ink-faint">Builds on</div>
+      <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+        {items.map((g) => (
+          <span key={g.id} lang="zh-Hant" className="font-han text-sm text-ink-soft">
+            {g.title}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function LessonComplete({
+  lesson,
+  outcome,
+  onExit,
+}: {
+  lesson: Lesson;
+  outcome: LessonResult;
+  onExit: () => void;
+}) {
+  const pct = Math.round(outcome.score * 100);
+  const tone = outcome.passed ? 2 : 3;
+  return (
+    <div className="mx-auto flex min-h-[70vh] max-w-xl flex-col items-center justify-center px-6 text-center">
+      <div className={outcome.passed ? "text-good" : "text-warn"}>
+        <ToneMark tone={tone} size={56} strokeWidth={7} />
+      </div>
+      <h1 lang="zh-Hant" className="mt-4 font-serifhan text-4xl text-ink">
+        {outcome.passed ? "過關！" : "再試一次"}
+      </h1>
+      <p className="mt-2 text-lg text-ink">
+        {outcome.correct} / {outcome.total} correct · {pct}%
+      </p>
+      {outcome.passed ? (
+        <p className="mt-2 text-sm text-ink-soft">
+          {lesson.title} complete.
+          {outcome.new_srs_cards > 0 && ` ${outcome.new_srs_cards} words added to your review deck.`}
+          {outcome.unlocked_next && " Next lesson unlocked."}
+        </p>
+      ) : (
+        <p className="mt-2 text-sm text-ink-soft">Score ≥ 80% to complete the lesson. Give it another go.</p>
+      )}
+      <button
+        type="button"
+        onClick={onExit}
+        className="mt-8 w-full max-w-xs rounded-md bg-primary py-3 font-medium text-primary-ink"
+      >
+        Back to Learn
+      </button>
+    </div>
+  );
+}

@@ -1,0 +1,738 @@
+{
+  "id": "u_hsk3_14",
+  "title": "穿著、外表與心情",
+  "subtitle": "What people wear, what they look like, and how they feel",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk3_14_1",
+      "title": "今天穿什麼",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_眼鏡",
+          "traditional": "眼鏡",
+          "pinyin": "yǎn jìng",
+          "gloss": "spectacles; eyeglasses",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的眼鏡不見了，你看到了嗎？",
+            "pinyin": "Wǒ de yǎnjìng bú jiàn le, nǐ kàndào le ma?",
+            "gloss": "My glasses are gone — have you seen them?"
+          }
+        },
+        {
+          "id": "v_帽子",
+          "traditional": "帽子",
+          "pinyin": "mào zi",
+          "gloss": "hat; cap; (fig.) label",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "外面很熱，你要帶帽子啊！",
+            "pinyin": "Wàimiàn hěn rè, nǐ yào dài màozi a!",
+            "gloss": "It's hot outside — you should take a hat!"
+          }
+        },
+        {
+          "id": "v_褲子",
+          "traditional": "褲子",
+          "pinyin": "kù zi",
+          "gloss": "trousers; pants",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這條褲子有一點短。",
+            "pinyin": "Zhè tiáo kùzi yǒu yìdiǎn duǎn.",
+            "gloss": "These trousers are a bit short."
+          }
+        },
+        {
+          "id": "v_藍",
+          "traditional": "藍",
+          "pinyin": "lán",
+          "gloss": "blue; indigo plant",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我想買那件藍色的衣服。",
+            "pinyin": "Wǒ xiǎng mǎi nà jiàn lánsè de yīfú.",
+            "gloss": "I want to buy that blue top."
+          }
+        },
+        {
+          "id": "v_黃",
+          "traditional": "黃",
+          "pinyin": "huáng",
+          "gloss": "yellow; pornographic; to fall through",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "她今天穿黃色的鞋子。",
+            "pinyin": "Tā jīntiān chuān huángsè de xiézi.",
+            "gloss": "She's wearing yellow shoes today."
+          }
+        },
+        {
+          "id": "v_相同",
+          "traditional": "相同",
+          "pinyin": "xiāng tóng",
+          "gloss": "identical; same",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我們兩個人的帽子顏色相同。",
+            "pinyin": "Wǒmen liǎng ge rén de màozi yánsè xiāngtóng.",
+            "gloss": "The two of us have hats of the same colour."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "A 跟 B 相同 — A is the same as B",
+          "pattern": "A 跟/和 B（完全）相同 ／ 相同的 + 名詞",
+          "explanation": "相同 means 'identical/the same'. Put it at the end of the sentence after 跟/和 (A 跟 B 相同), or use it before a noun with 的 (相同的顏色). It is a slightly more formal, written-sounding word than 一樣, and it is very common when talking about colours, sizes and prices. Negative: A 跟 B 不相同.",
+          "contrast": "跟…一樣: 一樣 is the everyday spoken choice and can be followed by an adjective (我的褲子跟你的一樣長), and can take 很/不太 (很不一樣). 相同 can never be followed by an adjective and sounds odd with 很. If you want to compare a quality (tall, long, expensive), use 一樣; if you just say two things are identical, either works, and 相同 sounds a bit more formal or written.",
+          "common_error": "Learners copy the 一樣 pattern and say things like 「我跟你相同高」or「這兩件很相同」. 相同 cannot carry an adjective after it, and it does not normally take 很 — say 「跟你一樣高」and 「完全相同」instead.",
+          "examples": [
+            {
+              "hanzi": "我的褲子跟你的相同。",
+              "pinyin": "Wǒ de kùzi gēn nǐ de xiāngtóng.",
+              "gloss": "My trousers are the same as yours."
+            },
+            {
+              "hanzi": "這兩件衣服的顏色不相同。",
+              "pinyin": "Zhè liǎng jiàn yīfú de yánsè bù xiāngtóng.",
+              "gloss": "These two pieces of clothing are not the same colour."
+            },
+            {
+              "hanzi": "我跟妹妹選了相同的眼鏡。",
+              "pinyin": "Wǒ gēn mèimei xuǎn le xiāngtóng de yǎnjìng.",
+              "gloss": "My sister and I chose the same glasses."
+            }
+          ],
+          "id": "g_hsk3_14_1_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "顏色 + 的 + 衣物",
+          "pattern": "藍色／黃色 + 的 + 名詞",
+          "explanation": "To describe what someone is wearing, put the colour word plus 色 before 的 and then the item: 藍色的褲子、黃色的帽子. With 穿 use clothes, trousers and shoes; with 帶 you talk about bringing a hat, glasses or an umbrella along.",
+          "contrast": "You can also drop 色 before 的 when the colour is a single character (藍的褲子), but adding 色 is safer and more natural in Taiwan speech.",
+          "common_error": "Saying 「我穿藍褲子色的」or putting 的 in the wrong place. Keep the order: colour + 色 + 的 + item.",
+          "examples": [
+            {
+              "hanzi": "我今天想穿藍色的褲子。",
+              "pinyin": "Wǒ jīntiān xiǎng chuān lánsè de kùzi.",
+              "gloss": "I want to wear blue trousers today."
+            },
+            {
+              "hanzi": "那個黃色的帽子是誰的？",
+              "pinyin": "Nàge huángsè de màozi shì shéi de?",
+              "gloss": "Whose is that yellow hat?"
+            },
+            {
+              "hanzi": "她的眼鏡是藍色的，很漂亮。",
+              "pinyin": "Tā de yǎnjìng shì lánsè de, hěn piàoliàng.",
+              "gloss": "Her glasses are blue and very pretty."
+            }
+          ],
+          "id": "g_hsk3_14_1_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "妹妹",
+          "hanzi": "姐姐，今天要去逛街，我穿什麼好？",
+          "pinyin": "Jiějie, jīntiān yào qù guàng jiē, wǒ chuān shénme hǎo?",
+          "gloss": "Sis, we're going shopping today — what should I wear?"
+        },
+        {
+          "speaker": "姐姐",
+          "hanzi": "穿這件藍色的衣服吧，很漂亮啊！",
+          "pinyin": "Chuān zhè jiàn lánsè de yīfú ba, hěn piàoliàng a!",
+          "gloss": "Wear this blue top — it's really pretty!"
+        },
+        {
+          "speaker": "妹妹",
+          "hanzi": "那褲子呢？黃色的可以嗎？",
+          "pinyin": "Nà kùzi ne? Huángsè de kěyǐ ma?",
+          "gloss": "What about trousers? Are the yellow ones OK?"
+        },
+        {
+          "speaker": "姐姐",
+          "hanzi": "黃色跟藍色不太好看，穿黑色的比較好。",
+          "pinyin": "Huángsè gēn lánsè bú tài hǎokàn, chuān hēisè de bǐjiào hǎo.",
+          "gloss": "Yellow with blue doesn't look great; black is better."
+        },
+        {
+          "speaker": "妹妹",
+          "hanzi": "好，那我的眼鏡在哪裡？",
+          "pinyin": "Hǎo, nà wǒ de yǎnjìng zài nǎlǐ?",
+          "gloss": "OK. So where are my glasses?"
+        },
+        {
+          "speaker": "姐姐",
+          "hanzi": "在桌上。外面很熱，帽子也帶著吧。",
+          "pinyin": "Zài zhuō shàng. Wàimiàn hěn rè, màozi yě dài zhe ba.",
+          "gloss": "On the table. It's hot outside — take your hat too."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這",
+            "條",
+            "褲子",
+            "是",
+            "藍色",
+            "的"
+          ],
+          "pinyin": "Zhè tiáo kùzi shì lánsè de.",
+          "gloss": "These trousers are blue.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "眼鏡",
+            "跟",
+            "他",
+            "的",
+            "相同"
+          ],
+          "pinyin": "Wǒ de yǎnjìng gēn tā de xiāngtóng.",
+          "gloss": "My glasses are the same as his.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "你",
+            "要",
+            "不要",
+            "帶",
+            "帽子"
+          ],
+          "pinyin": "Nǐ yào bú yào dài màozi?",
+          "gloss": "Do you want to bring a hat?",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "她",
+            "喜歡",
+            "黃色",
+            "的",
+            "衣服"
+          ],
+          "pinyin": "Tā xǐhuān huángsè de yīfú.",
+          "gloss": "She likes yellow clothes.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "穿",
+            "藍色",
+            "的",
+            "鞋子"
+          ],
+          "pinyin": "Wǒ jīntiān chuān lánsè de xiézi.",
+          "gloss": "I'm wearing blue shoes today.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "跟妹妹去逛街",
+        "hanzi": "週末我跟妹妹搭捷運去逛街。她想買一條藍色的褲子，我想買一個黃色的帽子。在店裡，我們選到相同的衣服，老闆笑著說我們真像姐妹。最後妹妹還幫我換了新眼鏡，她說我這樣看起來比較年輕。",
+        "gloss": "At the weekend my younger sister and I took the MRT to go shopping. She wanted to buy a pair of blue trousers, and I wanted a yellow hat. In the shop we ended up picking identical clothes, and the shop owner laughed and said we really did look like sisters. In the end my sister even helped me get new glasses — she said I look younger this way."
+      }
+    },
+    {
+      "id": "l_hsk3_14_2",
+      "title": "這個人長什麼樣",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_胖",
+          "traditional": "胖",
+          "pinyin": "pàng",
+          "gloss": "healthy; at ease",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我最近有點胖了,想去運動。",
+            "pinyin": "Wǒ zuìjìn yǒudiǎn pàng le, xiǎng qù yùndòng.",
+            "gloss": "I've gotten a bit chubby lately; I want to go exercise."
+          }
+        },
+        {
+          "id": "v_瘦",
+          "traditional": "瘦",
+          "pinyin": "shòu",
+          "gloss": "thin; to lose weight; (of clothing) tight",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他很瘦,可是很會吃。",
+            "pinyin": "Tā hěn shòu, kěshì hěn huì chī.",
+            "gloss": "He's very thin, but he can really eat."
+          }
+        },
+        {
+          "id": "v_矮",
+          "traditional": "矮",
+          "pinyin": "ǎi",
+          "gloss": "low; short (in length)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我弟弟比我矮一點。",
+            "pinyin": "Wǒ dìdi bǐ wǒ ǎi yìdiǎn.",
+            "gloss": "My younger brother is a little shorter than me."
+          }
+        },
+        {
+          "id": "v_聰明",
+          "traditional": "聰明",
+          "pinyin": "cōng ming",
+          "gloss": "intelligent; clever; bright",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個孩子真聰明,什麼都學得很快。",
+            "pinyin": "Zhè ge háizi zhēn cōngmíng, shénme dōu xué de hěn kuài.",
+            "gloss": "This kid is really smart; he learns everything fast."
+          }
+        },
+        {
+          "id": "v_興趣",
+          "traditional": "興趣",
+          "pinyin": "xìng qù",
+          "gloss": "interest (desire to know about sth); interest (thing in which one is interested); hobby",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我對畫畫很有興趣。",
+            "pinyin": "Wǒ duì huàhuà hěn yǒu xìngqù.",
+            "gloss": "I'm very interested in drawing."
+          }
+        },
+        {
+          "id": "v_多麼",
+          "traditional": "多麼",
+          "pinyin": "duō me",
+          "gloss": "how (wonderful etc); what (a great idea etc); however (difficult it may be etc)",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你看,今天的天氣多麼好啊!",
+            "pinyin": "Nǐ kàn, jīntiān de tiānqì duōme hǎo a!",
+            "gloss": "Look, what lovely weather today!"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "多麼 + adjective + 啊! (How …!)",
+          "pattern": "Subject + 多麼 + Adjective + 啊!",
+          "explanation": "多麼 turns a statement into an exclamation: 'how/what a …!' It goes right before an adjective (or an adjective phrase like 有意思), and the sentence usually ends with 啊. Use it when you are moved or impressed, not when you are simply reporting a fact. In everyday Taiwan speech people often shorten it to 多 (這裡多安靜啊!), but 多麼 sounds a bit stronger and more written.",
+          "contrast": "太…了 vs 多麼…啊:太…了 says the degree is (too) high and works as a plain comment or complaint (這件衣服太瘦了 = these clothes are too tight). 多麼…啊 is purely an exclamation of feeling and cannot answer a question about degree. If someone asks 他高不高?you answer 他很高/他太高了,never 他多麼高啊.",
+          "common_error": "Learners use 多麼 as an ordinary degree word meaning 'very', saying things like 他多麼聰明 as a flat statement. 多麼 needs the exclamation frame (usually with 啊) and an exclamatory intent; for a plain 'he is very smart' you must say 他很聰明.",
+          "examples": [
+            {
+              "hanzi": "他多麼聰明啊!",
+              "pinyin": "Tā duōme cōngmíng a!",
+              "gloss": "How smart he is!"
+            },
+            {
+              "hanzi": "這條路多麼長啊!",
+              "pinyin": "Zhè tiáo lù duōme cháng a!",
+              "gloss": "What a long road this is!"
+            },
+            {
+              "hanzi": "這個地方多麼安靜啊!",
+              "pinyin": "Zhè ge dìfāng duōme ānjìng a!",
+              "gloss": "How quiet this place is!"
+            }
+          ],
+          "id": "g_hsk3_14_2_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "對…很有興趣 (to be interested in)",
+          "pattern": "Subject + 對 + Topic + 很有興趣",
+          "explanation": "To say what you are interested in, put the thing after 對 and end with 有興趣. The topic can be a noun (音樂) or a verb phrase (打籃球). Add 很 or 沒 before 有興趣 to say how strong the interest is.",
+          "contrast": "喜歡 + Object simply says you like something; 對…有興趣 says you are curious about it and want to know more. 我喜歡貓 (I like cats) vs 我對貓很有興趣 (I'm interested in cats, I want to learn about them).",
+          "common_error": "Learners drop 對 and say 我很有興趣音樂. 興趣 is a noun, so the topic must come before it with 對: 我對音樂很有興趣。",
+          "examples": [
+            {
+              "hanzi": "我對台灣的歷史很有興趣。",
+              "pinyin": "Wǒ duì Táiwān de lìshǐ hěn yǒu xìngqù.",
+              "gloss": "I'm very interested in Taiwan's history."
+            },
+            {
+              "hanzi": "他對做菜沒有興趣。",
+              "pinyin": "Tā duì zuò cài méiyǒu xìngqù.",
+              "gloss": "He isn't interested in cooking."
+            },
+            {
+              "hanzi": "你對這本書有興趣嗎?",
+              "pinyin": "Nǐ duì zhè běn shū yǒu xìngqù ma?",
+              "gloss": "Are you interested in this book?"
+            }
+          ],
+          "id": "g_hsk3_14_2_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "A",
+          "hanzi": "你朋友長什麼樣?我幫你找。",
+          "pinyin": "Nǐ péngyǒu zhǎng shénme yàng? Wǒ bāng nǐ zhǎo.",
+          "gloss": "What does your friend look like? I'll help you find him."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "他不高也不矮,人有點瘦,頭髮很短。",
+          "pinyin": "Tā bù gāo yě bù ǎi, rén yǒudiǎn shòu, tóufǎ hěn duǎn.",
+          "gloss": "He's not tall, not short either, kind of thin, with short hair."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "是那個穿藍色衣服的男生嗎?",
+          "pinyin": "Shì nà ge chuān lánsè yīfú de nánshēng ma?",
+          "gloss": "Is it that guy in the blue clothes?"
+        },
+        {
+          "speaker": "B",
+          "hanzi": "對!就是他啦!他很聰明,對電腦特別有興趣。",
+          "pinyin": "Duì! Jiùshì tā la! Tā hěn cōngmíng, duì diànnǎo tèbié yǒu xìngqù.",
+          "gloss": "Yes! That's him! He's really smart and especially interested in computers."
+        },
+        {
+          "speaker": "A",
+          "hanzi": "他今天多麼開心啊,一直在笑。",
+          "pinyin": "Tā jīntiān duōme kāixīn a, yìzhí zài xiào.",
+          "gloss": "How happy he is today — he keeps smiling."
+        },
+        {
+          "speaker": "B",
+          "hanzi": "走,我們過去跟他說話。",
+          "pinyin": "Zǒu, wǒmen guòqù gēn tā shuōhuà.",
+          "gloss": "Come on, let's go over and talk to him."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "哥哥",
+            "很",
+            "瘦"
+          ],
+          "pinyin": "Wǒ gēge hěn shòu.",
+          "gloss": "My older brother is very thin.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "的",
+            "貓",
+            "有點",
+            "胖"
+          ],
+          "pinyin": "Wǒ de māo yǒudiǎn pàng.",
+          "gloss": "My cat is a bit chubby.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "這個",
+            "孩子",
+            "真",
+            "聰明"
+          ],
+          "pinyin": "Zhè ge háizi zhēn cōngmíng.",
+          "gloss": "This child is really clever.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "他",
+            "對",
+            "運動",
+            "很",
+            "有",
+            "興趣"
+          ],
+          "pinyin": "Tā duì yùndòng hěn yǒu xìngqù.",
+          "gloss": "He is very interested in sports.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "這個",
+            "地方",
+            "多麼",
+            "安靜",
+            "啊"
+          ],
+          "pinyin": "Zhè ge dìfāng duōme ānjìng a!",
+          "gloss": "How quiet this place is!",
+          "cloze_index": 2
+        }
+      ],
+      "passage": {
+        "title": "我們班的新同學",
+        "hanzi": "我們班上來了一個新同學,他叫小明。他不高也不矮,人有點瘦,很愛笑。小明很聰明,老師問的問題,他都答得出來。他對畫畫和打籃球很有興趣,週末常常跟我們一起去運動。有這樣的朋友,多麼好啊!",
+        "gloss": "A new classmate has joined our class; his name is Xiaoming. He's neither tall nor short, a bit thin, and he loves to smile. Xiaoming is very clever — he can answer every question the teacher asks. He's very interested in drawing and playing basketball, and on weekends he often goes exercising with us. How nice it is to have a friend like this!"
+      }
+    },
+    {
+      "id": "l_hsk3_14_3",
+      "title": "心情好不好",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_生氣",
+          "traditional": "生氣",
+          "pinyin": "shēng qì",
+          "gloss": "to get angry; to take offense; angry",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆今天很生氣,因為我來太晚了。",
+            "pinyin": "Lǎobǎn jīntiān hěn shēngqì, yīnwèi wǒ lái tài wǎn le.",
+            "gloss": "The boss is very angry today because I arrived too late."
+          }
+        },
+        {
+          "id": "v_難過",
+          "traditional": "難過",
+          "pinyin": "nán guò",
+          "gloss": "to feel sad; to feel unwell; (of life) to be difficult",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我的狗生病了,我心裡很難過。",
+            "pinyin": "Wǒ de gǒu shēngbìng le, wǒ xīnlǐ hěn nánguò.",
+            "gloss": "My dog got sick; I feel really sad."
+          }
+        },
+        {
+          "id": "v_害怕",
+          "traditional": "害怕",
+          "pinyin": "hài pà",
+          "gloss": "to be afraid; to be scared",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "妹妹晚上一個人在家會害怕。",
+            "pinyin": "Mèimei wǎnshàng yí ge rén zài jiā huì hàipà.",
+            "gloss": "My little sister gets scared at home alone at night."
+          }
+        },
+        {
+          "id": "v_放心",
+          "traditional": "放心",
+          "pinyin": "fàng xīn",
+          "gloss": "to feel relieved; to feel reassured; to be at ease",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你放心,我會早一點回家。",
+            "pinyin": "Nǐ fàngxīn, wǒ huì zǎo yìdiǎn huí jiā.",
+            "gloss": "Don't worry, I'll come home a bit earlier."
+          }
+        },
+        {
+          "id": "v_滿意",
+          "traditional": "滿意",
+          "pinyin": "mǎn yì",
+          "gloss": "satisfied; pleased; to one's satisfaction",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "老闆對我的報告很滿意。",
+            "pinyin": "Lǎobǎn duì wǒ de bàogào hěn mǎnyì.",
+            "gloss": "The boss is very pleased with my report."
+          }
+        },
+        {
+          "id": "v_奇怪",
+          "traditional": "奇怪",
+          "pinyin": "qí guài",
+          "gloss": "strange; odd; to marvel",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這件事真奇怪,他怎麼沒來?",
+            "pinyin": "Zhè jiàn shì zhēn qíguài, tā zěnme méi lái?",
+            "gloss": "This is really strange — how come he didn't come?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "讓 + somebody + feeling (to make someone feel …)",
+          "pattern": "Cause + 讓 + Person + (很) + Feeling word",
+          "explanation": "To say what makes someone feel a certain way, put the cause first, then 讓, then the person, then the feeling word (生氣, 難過, 害怕, 放心, 滿意). 讓 here means \"to make/cause\", and the person who feels it can never be left out. 很 or 太 is often added before the feeling word.",
+          "contrast": "Compare with plain 覺得 / Subject + 很 + feeling: 我很難過 or 我覺得很難過 just reports your own feeling. Use 讓 only when you name the thing (an event, a word, a person) that caused the feeling: 他的話讓我很難過。If there is no cause mentioned, 讓 cannot be used.",
+          "common_error": "Learners drop the person after 讓 and say 這件事讓很生氣, or they say 我讓很生氣 when they only mean \"I'm angry\" (我很生氣). Remember: 讓 always needs someone in the middle — the cause comes before 讓, the feeler comes right after it.",
+          "examples": [
+            {
+              "hanzi": "這件事讓我很生氣。",
+              "pinyin": "Zhè jiàn shì ràng wǒ hěn shēngqì.",
+              "gloss": "This matter makes me really angry."
+            },
+            {
+              "hanzi": "他的話讓妹妹很難過。",
+              "pinyin": "Tā de huà ràng mèimei hěn nánguò.",
+              "gloss": "What he said made my sister very sad."
+            },
+            {
+              "hanzi": "你的電話讓媽媽放心了。",
+              "pinyin": "Nǐ de diànhuà ràng māma fàngxīn le.",
+              "gloss": "Your phone call put Mom's mind at ease."
+            }
+          ],
+          "id": "g_hsk3_14_3_1",
+          "hsk_level": 3
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk3_14_3_2",
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小安",
+          "hanzi": "你今天怎麼了?看起來很難過。",
+          "pinyin": "Nǐ jīntiān zěnme le? Kàn qǐlái hěn nánguò.",
+          "gloss": "What's up with you today? You look really down."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我的腳踏車不見了,就放在學校旁邊。",
+          "pinyin": "Wǒ de jiǎotàchē bú jiàn le, jiù fàng zài xuéxiào pángbiān.",
+          "gloss": "My bike is gone — I left it right next to the school."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "真的嗎?好奇怪喔,那裡人很多。",
+          "pinyin": "Zhēn de ma? Hǎo qíguài ō, nàlǐ rén hěn duō.",
+          "gloss": "Really? That's so odd — there are lots of people there."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "我有點害怕,我媽媽一定會生氣。",
+          "pinyin": "Wǒ yǒudiǎn hàipà, wǒ māma yídìng huì shēngqì.",
+          "gloss": "I'm a bit scared; my mom is definitely going to be mad."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "你放心,我跟你去找,先問問旁邊的店。",
+          "pinyin": "Nǐ fàngxīn, wǒ gēn nǐ qù zhǎo, xiān wènwèn pángbiān de diàn.",
+          "gloss": "Relax, I'll go look with you — let's ask the shops nearby first."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "謝謝你,你這樣說我就放心多了。",
+          "pinyin": "Xièxie nǐ, nǐ zhèyàng shuō wǒ jiù fàngxīn duō le.",
+          "gloss": "Thanks — hearing you say that makes me feel much better."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這件",
+            "事",
+            "讓",
+            "我",
+            "很",
+            "生氣"
+          ],
+          "pinyin": "Zhè jiàn shì ràng wǒ hěn shēngqì.",
+          "gloss": "This matter makes me very angry.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "她",
+            "很",
+            "難過",
+            "所以",
+            "哭",
+            "了"
+          ],
+          "pinyin": "Tā hěn nánguò suǒyǐ kū le.",
+          "gloss": "She was so sad that she cried.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "弟弟",
+            "晚上",
+            "一個人",
+            "睡覺",
+            "會",
+            "害怕"
+          ],
+          "pinyin": "Dìdi wǎnshàng yí ge rén shuìjiào huì hàipà.",
+          "gloss": "My little brother is scared sleeping alone at night.",
+          "cloze_index": 5
+        },
+        {
+          "tokens": [
+            "老師",
+            "對",
+            "我",
+            "的",
+            "中文",
+            "很",
+            "滿意"
+          ],
+          "pinyin": "Lǎoshī duì wǒ de Zhōngwén hěn mǎnyì.",
+          "gloss": "The teacher is very satisfied with my Chinese.",
+          "cloze_index": 6
+        },
+        {
+          "tokens": [
+            "他",
+            "今天",
+            "的",
+            "樣子",
+            "有點",
+            "奇怪"
+          ],
+          "pinyin": "Tā jīntiān de yàngzi yǒudiǎn qíguài.",
+          "gloss": "He looks a bit strange today.",
+          "cloze_index": 5
+        }
+      ],
+      "passage": {
+        "title": "週末的心情",
+        "hanzi": "上個週末我心情很不好。考試考得不好,媽媽有一點生氣,我也很難過,有點害怕跟她說話。後來我搭捷運去台北,在一家小店喝冰咖啡。旁邊有人唱歌,聲音很好聽。奇怪的是,我的心情慢慢變好了。晚上媽媽說:「下次努力一點就好。」我聽了就放心了。",
+        "gloss": "Last weekend I was in a bad mood. I did badly on my exam, Mom was a little angry, and I felt sad too — I was even a bit afraid to talk to her. Later I took the MRT to Taipei and drank iced coffee in a small shop. Someone next to me was singing, and their voice was lovely. Strangely, my mood slowly got better. In the evening Mom said, \"Just try a bit harder next time.\" After hearing that, I felt relieved."
+      }
+    }
+  ],
+  "sort_order": 43,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

@@ -1,0 +1,713 @@
+// Thin API client. In dev, Vite proxies /api to the backend; in production the
+// backend serves this bundle so same-origin requests just work.
+
+import type { Tile } from "./components/Tiles";
+
+export type { Tile };
+
+export interface AppStatus {
+  version: string;
+  phase: number;
+  features: {
+    conversation: boolean;
+    learn: boolean;
+    review: boolean;
+    listen: boolean;
+    speak: boolean;
+    progress: boolean;
+  };
+  whisper_model: string;
+}
+
+export interface Settings {
+  show_pinyin: boolean;
+  // WHICH phonetic system to show when show_pinyin is on. Zhuyin is Taiwan's
+  // own; pinyin stays the default because plenty of learners arrive reading it.
+  script: "pinyin" | "zhuyin" | "both";
+  playback_rate: number;
+  tts_voice: string;
+  theme: "system" | "light" | "dark";
+  daily_new_limit: number;
+  reduced_motion: boolean;
+  placement_done: boolean;
+  // Read-only: whether the Talk tab has a usable Anthropic key, and whether it
+  // came from .env (in which case it can't be cleared from the app).
+  conversation_configured: boolean;
+  conversation_key_from_env: boolean;
+  // Write-only: send to set the in-app key, or "" to clear it. Never returned.
+  anthropic_api_key?: string;
+}
+
+// --- Learn / curriculum types (mirror backend shapes) ---
+export interface CurriculumLesson {
+  id: string;
+  title: string;
+  vocab_count: number;
+  completed: boolean;
+  best_score: number | null;
+  unlocked: boolean;
+}
+export interface CurriculumUnit {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  hsk_level: number | null;
+  level: LevelBand;
+  lessons: CurriculumLesson[];
+}
+export interface Curriculum {
+  units: CurriculumUnit[];
+}
+
+export interface Example {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface DictEntry {
+  text: string;
+  pinyin: string;
+  zhuyin: string | null;
+  gloss: string;
+  source: "curriculum" | "cedict";
+}
+export interface GlossSpan {
+  text: string;
+  entry: DictEntry | null;
+  plain: boolean;
+}
+
+export interface Option {
+  text: string;
+  correct: boolean;
+}
+// Payload shapes vary by kind; consumers narrow on `kind`.
+export interface Exercise {
+  id: string;
+  kind:
+    | "vocab_intro"
+    | "grammar"
+    | "match"
+    | "audio_meaning"
+    | "char_recognition"
+    | "cloze"
+    | "particle_cloze"
+    | "tile_build"
+    | "translate"
+    | "listen_type"
+    | "dialogue";
+  gradable: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  payload: any;
+}
+export interface GrammarRef {
+  id: string;
+  title: string;
+  pattern: string;
+}
+export interface Lesson {
+  id: string;
+  title: string;
+  unit_id: string;
+  unlocked: boolean;
+  gradable_count: number;
+  requires_grammar: GrammarRef[];
+  exercises: Exercise[];
+}
+
+export interface DrillResult {
+  id: string;
+  kind: string;
+  correct: boolean;
+  vocab_id?: string | null;
+  grammar_id?: string | null;
+}
+export interface LessonResult {
+  score: number;
+  correct: number;
+  total: number;
+  passed: boolean;
+  completed: boolean;
+  best_score: number;
+  unlocked_next: string | null;
+  new_srs_cards: number;
+}
+
+// --- Review / placement types ---
+
+/** A level as the app labels it: TOCFL first, HSK as the secondary line. */
+export interface LevelBand {
+  hsk_level: number | null;
+  tocfl_level: string | null;
+  tocfl_level_zh: string | null;
+  tocfl_band: string | null;
+  cefr: string | null;
+  label: string;      // "Level 2"
+  label_zh: string;   // "基礎級"
+  sublabel: string;   // "HSK 3"
+}
+
+export type PlacementKind = "recognition" | "listening" | "sentence_build";
+
+export interface PlacementItem {
+  kind: PlacementKind;
+  vocab_id: string | null;
+  char?: string;
+  pinyin?: string;
+  audio_text?: string;
+  options?: Option[];
+  tokens?: string[];   // sentence_build: shuffled
+  answer?: string[];   // sentence_build: correct order
+  gloss?: string;
+}
+
+export interface PlacementRound {
+  band: number;
+  level: LevelBand;
+  items: PlacementItem[];
+  round_size: number;
+}
+
+export interface BandState extends LevelBand {
+  status: "known" | "partial" | "to_learn" | null;
+  score: number | null;
+  sampled: number;
+  assessed: boolean;
+}
+
+export interface PlacementSummary {
+  bands: BandState[];
+  start_at: LevelBand | null;
+  known_cards: number;
+  new_cards: number;
+  caveat: string;
+}
+
+export interface Placement {
+  done: boolean;
+  start_band: number;
+  bands: BandState[];
+  round: PlacementRound;
+}
+
+export interface PlacementRoundOutcome {
+  band: number;
+  status: "known" | "partial" | "to_learn";
+  score: number;
+  correct: number;
+  total: number;
+  seeded_known: number;
+  seeded_new: number;
+}
+
+export interface PlacementRoundResponse {
+  outcome: PlacementRoundOutcome;
+  done: boolean;
+  round?: PlacementRound;
+  visited?: number[];
+  summary?: PlacementSummary;
+}
+
+// One review item; fields present depend on `kind`.
+export interface ReviewItem {
+  card_id: number;
+  item_id: string;
+  reps: number;
+  state: string;
+  item_type: "vocab" | "grammar" | "zhuyin";
+  kind:
+    | "recognition"
+    | "recall"
+    | "audio_meaning"
+    | "cloze"
+    // Grammar points get drills suited to a pattern rather than a word (§3.3).
+    | "pattern_recall"
+    | "particle_cloze"
+    | "pattern_build"
+    // 注音 symbols share the queue with vocab and grammar, so a symbol that
+    // hasn't stuck comes back on its own.
+    | "zhuyin_recall";
+  answer: string | string[];
+  options?: Option[];
+  char?: string;
+  pinyin?: string | null;
+  audio_text?: string;
+  prompt_gloss?: string;
+  masked?: string;
+  gloss?: string | null;
+  // Grammar fields.
+  title?: string;
+  pattern?: string;
+  explanation?: string;
+  tokens?: string[];
+  // 注音 fields.
+  symbol?: string;
+  group?: string;
+  note?: string;
+  example?: { traditional: string; pinyin: string; gloss: string };
+}
+export interface ReviewQueue {
+  items: ReviewItem[];
+  count: number;
+}
+export interface ReviewStats {
+  due: number;
+  new: number;
+  total: number;
+  mature: number;
+}
+export interface ReviewAnswerResult {
+  card_id: number;
+  state: string;
+  due: string | null;
+  stability: number | null;
+}
+
+// --- 注音 course types ---
+// The alphabet itself, taught rather than displayed. Hand-authored content, so
+// it comes from its own endpoints rather than the curriculum's.
+export interface ZhuyinLessonSummary {
+  id: string;
+  title: string;
+  subtitle: string;
+  note: string;
+  symbols: string[];
+  completed: boolean;
+  best_score: number | null;
+  unlocked: boolean;
+}
+export interface ZhuyinCourse {
+  lessons: ZhuyinLessonSummary[];
+  groups: Record<string, string>;
+  total_symbols: number;
+  learned_symbols: number;
+}
+export interface ZhuyinExercise {
+  id: string;
+  kind: string;
+  gradable: boolean;
+  // Payload shape varies by kind (see backend/app/zhuyin_course.py); consumers
+  // narrow on `kind`. `symbol` is the one field every payload carries, because
+  // it is what the SRS card is keyed on.
+  payload: Record<string, unknown> & { symbol: string };
+}
+export interface ZhuyinLesson {
+  id: string;
+  title: string;
+  subtitle: string;
+  note: string;
+  symbols: string[];
+  gradable_count: number;
+  exercises: ZhuyinExercise[];
+}
+export interface ZhuyinResult {
+  score: number;
+  correct: number;
+  total: number;
+  passed: boolean;
+  completed: boolean;
+  best_score: number;
+  new_srs_cards: number;
+}
+
+// --- Listen types ---
+export interface DictationItem {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+  // The answer as tiles: the words to build, and the rack to build them from
+  // (those words plus decoys, shuffled). Readings are attached server-side —
+  // see backend/app/zhuyin.py `for_tokens`.
+  answer: string[];
+  tiles: Tile[];
+  audio_text: string;
+  voice: string;
+}
+export interface DiffSegment {
+  type: "equal" | "wrong" | "missing" | "extra";
+  text?: string;
+  expected?: string;
+  got?: string;
+}
+export interface DiffResult {
+  mode: "han" | "pinyin";
+  correct: boolean;
+  tone_sensitive?: boolean;
+  segments: DiffSegment[];
+}
+export interface DialogueLine {
+  speaker: string;
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+  audio_text: string;
+  voice: string;
+}
+export interface Question {
+  prompt: string;
+  options: Option[];
+}
+export interface ComprehensionSet {
+  id: string;
+  title: string;
+  hsk_level: number | null;
+  dialogue: DialogueLine[];
+  questions: Question[];
+}
+export interface ToneOption {
+  tone?: number;
+  tones?: number[];
+  correct: boolean;
+  name?: string;
+}
+export interface ToneItem {
+  mode: "single" | "pair";
+  audio_text: string;
+  traditional: string;
+  pinyin: string;
+  tones: number[];
+  voice: string;
+  options: ToneOption[];
+}
+
+// --- Speak types ---
+export interface SpeakItem {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface SyllableVerdict {
+  index: number;
+  char: string | null;
+  expected: number;
+  detected: number;
+  ok: boolean;
+  confidence: number;
+  heard?: string | null;
+  char_ok?: boolean | null;
+}
+export interface ContourPoint {
+  x: number;
+  y: number;
+}
+export interface SpeakScore {
+  target: { hanzi: string; pinyin: string };
+  approximate: boolean;
+  whisper_available: boolean;
+  transcription: string | null;
+  syllables: SyllableVerdict[];
+  tone_correct: number;
+  tone_total: number;
+  // Segmental accuracy — "did you say the right sounds", as opposed to the
+  // right tones (spec §3.5). null when transcription didn't run: the question
+  // wasn't asked, which is different from scoring zero.
+  segmental_correct: number | null;
+  segmental_total: number | null;
+  contour: { points: ContourPoint[]; syllable_bounds: number[] };
+  expected_contour: ContourPoint[];
+  median_hz: number | null;
+}
+
+// --- Progress types ---
+export interface DayActivity {
+  day: string;
+  reviews: number;
+  lessons: number;
+  minutes: number;
+}
+export interface HskBand {
+  level: LevelBand;
+  hsk_level: number;
+  learning: number;
+  young: number;
+  mature: number;
+}
+export interface WeakGrammar {
+  id: string;
+  title: string;
+  errors: number;
+}
+export interface Progress {
+  streak: number;
+  activity: DayActivity[];
+  words_by_hsk: HskBand[];
+  total_known: number;
+  total_mature: number;
+  tone_accuracy: number | null;
+  tone_trend: number[];
+  retention: number | null;
+  weakest_grammar: WeakGrammar[];
+}
+
+// --- Talk types ---
+export interface Scenario {
+  id: string;
+  emoji: string;
+  title: string;
+  en: string;
+  opening: { hanzi: string; pinyin: string; gloss: string };
+}
+export interface TeacherNote {
+  corrections: string[];
+  better: string | null;
+}
+export interface NewWord {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+export interface TalkTurn {
+  reply: string;
+  reply_pinyin: string;
+  teacher_note: TeacherNote;
+  new_words: NewWord[];
+}
+export interface RecapWord extends NewWord {
+  in_deck: boolean;
+}
+
+export interface BackupStatus {
+  backup_dir: string;
+  snapshot_count: number;
+  export_count: number;
+  retention_days: number;
+  scheduled_at: string;
+  last_backup_at: string | null;
+  last_backup_file: string | null;
+  last_backup_bytes: number | null;
+  total_bytes: number;
+}
+
+// --- Tutor (spec §3.7) ---
+export interface TutorExample {
+  hanzi: string;
+  pinyin: string;
+  gloss: string;
+}
+/** What the learner was looking at when the question came up. */
+export interface TutorFocus {
+  type?: "vocab" | "grammar" | "sentence";
+  id?: string;
+  text?: string;
+}
+export interface TutorAnswer {
+  thread_id: string;
+  answer: string;
+  examples: TutorExample[];
+  taiwan_note: string | null;
+  related: string[];
+}
+export interface TutorThread {
+  id: string;
+  created_at: string;
+  opening: string | null;
+}
+export interface TutorStatus {
+  available: boolean;
+  threads: TutorThread[];
+}
+
+// --- Practice (spec §3.6, §3.1) ---
+export interface PracticeItem extends ReviewItem {
+  /** Why this item is in a needs-practice session. */
+  why?: string | null;
+}
+export interface PracticeSet {
+  mode: "needs_practice" | "known_material";
+  items: PracticeItem[];
+  count: number;
+  empty_reason: string | null;
+}
+
+// --- Reading (spec §3.2, §3.6) ---
+// Each lesson carries a passage written to its own level, and each passage is
+// FSRS-scheduled in its own right: one that came out hard comes back sooner.
+export interface PassageSummary {
+  lesson_id: string;
+  lesson_title: string;
+  unit_id: string;
+  unit_title: string;
+  hsk_level: number | null;
+  level: LevelBand | null;
+  title: string;
+  chars: number;
+  /** A passage opens when its lesson is finished, not before. */
+  unlocked: boolean;
+  read: boolean;
+  due: boolean;
+  due_at: string | null;
+  reps: number;
+}
+export interface ReadingLibrary {
+  passages: PassageSummary[];
+  total: number;
+  unlocked: number;
+  due: number;
+  unread: number;
+}
+export interface Passage extends PassageSummary {
+  hanzi: string;
+  gloss: string;
+  vocab: {
+    id: string;
+    traditional: string;
+    pinyin: string | null;
+    zhuyin: string | null;
+    gloss: string;
+  }[];
+  card_id: number | null;
+}
+export interface PassageRated extends ReviewAnswerResult {
+  lesson_id: string;
+}
+
+async function json<T>(res: Response): Promise<T> {
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`${res.status} ${res.statusText}: ${body}`);
+  }
+  return res.json() as Promise<T>;
+}
+
+export const api = {
+  status: () => fetch("/api/status").then(json<AppStatus>),
+  health: () => fetch("/api/health").then(json<{ status: string; version: string }>),
+  getSettings: () => fetch("/api/settings").then(json<Settings>),
+  updateSettings: (patch: Partial<Settings>) =>
+    fetch("/api/settings", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(patch),
+    }).then(json<Settings>),
+  backupStatus: () => fetch("/api/admin/backup-status").then(json<BackupStatus>),
+  runBackup: () =>
+    fetch("/api/admin/backup", { method: "POST" }).then(
+      json<{ snapshot: string; export: string; pruned: string[] }>,
+    ),
+  curriculum: () => fetch("/api/curriculum").then(json<Curriculum>),
+  lesson: (id: string) => fetch(`/api/lesson/${id}`).then(json<Lesson>),
+  lessonResult: (id: string, results: DrillResult[]) =>
+    fetch(`/api/lesson/${id}/result`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ results }),
+    }).then(json<LessonResult>),
+  placement: () => fetch("/api/placement").then(json<Placement>),
+  placementRound: (body: {
+    band: number;
+    results: { vocab_id: string | null; correct: boolean }[];
+    visited: number[];
+    seen: string[];
+  }) =>
+    fetch("/api/placement/round", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then(json<PlacementRoundResponse>),
+  placementSummary: () => fetch("/api/placement/summary").then(json<PlacementSummary>),
+  placementReset: () =>
+    fetch("/api/placement/reset", { method: "POST" }).then(json<{ done: boolean }>),
+  tutorStatus: () => fetch("/api/tutor/status").then(json<TutorStatus>),
+  tutorAsk: (body: { question: string; focus?: TutorFocus; thread_id?: string }) =>
+    fetch("/api/tutor/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then(json<TutorAnswer>),
+  annotate: (text: string) =>
+    fetch("/api/dictionary/annotate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text }),
+    }).then(json<{ spans: GlossSpan[] }>),
+  practiceNeeds: () => fetch("/api/practice/needs").then(json<PracticeSet>),
+  practiceKnown: () => fetch("/api/practice/known").then(json<PracticeSet>),
+  practiceResult: (answered: number, correct: number) =>
+    fetch("/api/practice/result", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ answered, correct }),
+    }).then(json<{ answered: number; correct: number; srs_unchanged: boolean }>),
+  reading: () => fetch("/api/reading").then(json<ReadingLibrary>),
+  readingDue: () =>
+    fetch("/api/reading/due").then(json<{ passages: PassageSummary[]; count: number }>),
+  passage: (lessonId: string) => fetch(`/api/reading/${lessonId}`).then(json<Passage>),
+  readingAnswer: (lesson_id: string, rating: number) =>
+    fetch("/api/reading/answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lesson_id, rating }),
+    }).then(json<PassageRated>),
+  zhuyinCourse: () => fetch("/api/zhuyin/course").then(json<ZhuyinCourse>),
+  zhuyinLesson: (id: string) => fetch(`/api/zhuyin/lesson/${id}`).then(json<ZhuyinLesson>),
+  zhuyinResult: (id: string, results: { symbol: string; correct: boolean }[]) =>
+    fetch(`/api/zhuyin/lesson/${id}/result`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ results }),
+    }).then(json<ZhuyinResult>),
+  reviewQueue: () => fetch("/api/review/queue").then(json<ReviewQueue>),
+  reviewStats: () => fetch("/api/review/stats").then(json<ReviewStats>),
+  reviewAnswer: (card_id: number, rating: number) =>
+    fetch("/api/review/answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ card_id, rating }),
+    }).then(json<ReviewAnswerResult>),
+  listenDictation: () => fetch("/api/listen/dictation").then(json<DictationItem>),
+  listenCheck: (body: {
+    expected_hanzi: string;
+    expected_pinyin: string;
+    answer: string;
+    tone_sensitive: boolean;
+  }) =>
+    fetch("/api/listen/check", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    }).then(json<DiffResult>),
+  listenSet: (id?: string) =>
+    fetch(`/api/listen/set${id ? `?id=${encodeURIComponent(id)}` : ""}`).then(json<ComprehensionSet>),
+  listenTones: (mode: "single" | "pair") =>
+    fetch(`/api/listen/tones?mode=${mode}`).then(json<ToneItem>),
+  speakStatus: () => fetch("/api/speak/status").then(json<{ transcription_available: boolean }>),
+  speakItem: (mode: "word" | "sentence") =>
+    fetch(`/api/speak/item?mode=${mode}`).then(json<SpeakItem>),
+  speakScore: (wav: Blob, hanzi: string, pinyin: string) => {
+    const form = new FormData();
+    form.append("audio", wav, "rec.wav");
+    form.append("hanzi", hanzi);
+    form.append("pinyin", pinyin);
+    return fetch("/api/speak/score", { method: "POST", body: form }).then(json<SpeakScore>);
+  },
+  progress: () => fetch("/api/progress").then(json<Progress>),
+  talkScenarios: () =>
+    fetch("/api/talk/scenarios").then(json<{ available: boolean; scenarios: Scenario[] }>),
+  talkStart: (scenario: string) =>
+    fetch("/api/talk/start", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ scenario }),
+    }).then(json<{ session_id: string; scenario: Scenario; opening: NewWord & { gloss: string } }>),
+  talkMessage: (session_id: string, text: string) =>
+    fetch("/api/talk/message", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session_id, text }),
+    }).then(json<TalkTurn>),
+  talkRecap: (session_id: string) =>
+    fetch(`/api/talk/recap/${session_id}`).then(json<{ words: RecapWord[] }>),
+  talkRecapAdd: (words: NewWord[]) =>
+    fetch("/api/talk/recap/add", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ words }),
+    }).then(json<{ added: number }>),
+};
+
+/** URL for a cached TTS clip. */
+export function audioUrl(text: string, voice?: string): string {
+  const params = new URLSearchParams({ text });
+  if (voice) params.set("voice", voice);
+  return `/api/audio?${params.toString()}`;
+}

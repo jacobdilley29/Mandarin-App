@@ -1,0 +1,305 @@
+"""Sentence ↔ vocab validation (spec §5).
+
+Every sentence used in a lesson must be expressible from the vocabulary the
+learner has met by that point in the curriculum, plus a small allowlist of
+function words. This guards hand-authored and Claude-generated content alike:
+the content pipeline flags any sentence that introduces an unknown character so
+it can be regenerated.
+
+The check is at the *character* level (the unit a learner actually decodes),
+ignoring punctuation and latin/digits.
+"""
+
+from __future__ import annotations
+
+import json
+import re
+from dataclasses import dataclass, field
+
+from .config import REPO_ROOT
+
+# Foundation vocabulary the learner starts with: seeded into the SRS deck as
+# already-mastered by the first-run placement check (spec §3.2), never taught in
+# a lesson. It is therefore in scope for lesson sentences from the very first
+# lesson — see placement_pool_chars().
+HSK1_POOL_PATH = REPO_ROOT / "content" / "hsk1.json"
+
+# CJK Unified Ideographs (incl. common extension A). Good enough for HSK-range
+# Traditional text.
+_HAN_RE = re.compile(r"[㐀-䶿一-鿿]")
+
+
+def han_chars(text: str) -> set[str]:
+    """The set of Han characters in a string (drops punctuation/latin/digits)."""
+    return set(_HAN_RE.findall(text))
+
+
+def placement_pool_words() -> list[str]:
+    """The words the learner already knows before lesson one, if the file exists."""
+    if not HSK1_POOL_PATH.is_file():
+        return []
+    data = json.loads(HSK1_POOL_PATH.read_text(encoding="utf-8"))
+    return [v["traditional"] for v in data.get("vocab", []) if v.get("traditional")]
+
+
+def placement_pool_chars() -> set[str]:
+    """Characters of the placement pool, for `extra_known_chars`.
+
+    Every caller that decides what counts as "in scope" must use this. The
+    content loader and the generator each had their own answer, and the
+    generator's omitted the pool — so it rejected sentences using 老師, 學校,
+    朋友 and 中文 as out of scope, while the loader accepted the same content
+    happily. One source of truth, so the two cannot disagree again.
+    """
+    chars: set[str] = set()
+    for word in placement_pool_words():
+        chars |= han_chars(word)
+    return chars
+
+
+@dataclass
+class Violation:
+    where: str  # human-readable location, e.g. "l_conv_1 sentence 3"
+    text: str  # the offending sentence
+    unknown: list[str]  # characters not in the allowed set
+
+
+@dataclass
+class ValidationResult:
+    violations: list[Violation] = field(default_factory=list)
+
+    @property
+    def ok(self) -> bool:
+        return not self.violations
+
+    def add(self, where: str, text: str, unknown: set[str]) -> None:
+        if unknown:
+            self.violations.append(
+                Violation(where=where, text=text, unknown=sorted(unknown))
+            )
+
+
+def allowed_chars(
+    vocab_traditional: list[str], function_words: list[str]
+) -> set[str]:
+    """Build the allowed character set from known words + function words."""
+    allowed: set[str] = set()
+    for w in vocab_traditional:
+        allowed |= han_chars(w)
+    for w in function_words:
+        allowed |= han_chars(w)
+    return allowed
+
+
+def check_sentence(text: str, allowed: set[str]) -> set[str]:
+    """Return the set of Han characters in `text` not present in `allowed`."""
+    return han_chars(text) - allowed
+
+
+def iter_lesson_text(lesson: dict):
+    """Every learner-facing Chinese string in a lesson, as (where, text).
+
+    One place that knows where a lesson keeps its prose. `passage` had to be
+    added to the scope validator by hand when lessons gained one; anything else
+    walking a lesson would have missed it. test_validation pins the two walks
+    together so a new field cannot be added to one and forgotten in the other.
+    """
+    lid = lesson.get("id", "?")
+    for v in lesson.get("vocab", []):
+        ex = v.get("example") or {}
+        if ex.get("hanzi"):
+            yield f"{lid} example[{v.get('id')}]", ex["hanzi"]
+    for g in lesson.get("grammar", []):
+        for i, ex in enumerate(g.get("examples", [])):
+            if ex.get("hanzi"):
+                yield f"{lid} grammar[{g.get('id')}] ex{i}", ex["hanzi"]
+    for i, sent in enumerate(lesson.get("sentences", [])):
+        joined = "".join(sent.get("tokens", []))
+        if joined:
+            yield f"{lid} sentence {i}", joined
+    for i, line in enumerate(lesson.get("dialogue", [])):
+        if line.get("hanzi"):
+            yield f"{lid} dialogue {i}", line["hanzi"]
+    passage = lesson.get("passage") or {}
+    if passage.get("hanzi"):
+        yield f"{lid} passage", passage["hanzi"]
+
+
+def iter_lesson_titles(lesson: dict):
+    """Titles the learner reads, as (where, text) — separate from the prose.
+
+    Kept apart from iter_lesson_text because the scope validator deliberately
+    does not check titles against the character budget, while a register check
+    very much must: the first generated passage was titled 「早上好」, and a
+    title is the most-read string in a lesson.
+    """
+    lid = lesson.get("id", "?")
+    if lesson.get("title"):
+        yield f"{lid} title", lesson["title"]
+    passage = lesson.get("passage") or {}
+    if passage.get("title"):
+        yield f"{lid} passage title", passage["title"]
+
+
+@dataclass
+class RegisterSlip:
+    where: str
+    text: str
+    found: list[tuple[str, str]]  # (what was written, what Taiwan says)
+
+
+def register_slips(data: dict) -> list[RegisterSlip]:
+    """Mainland vocabulary in generated text — the thing this app exists to avoid.
+
+    The scope validator checks which *characters* a sentence may use. Nothing
+    checked whether the words were Taiwanese, so a generated passage opened with
+    「早上好」 — a greeting no one in Taiwan uses — inside an app whose entire
+    premise is Taiwan Mandarin. The substitution table already knew the answer;
+    it was only ever applied to imported vocabulary, never to generated prose.
+
+    Reported, not fatal: it is a judgement call whether to spend another call
+    regenerating a lesson over one word, and that call is the author's.
+    """
+    from . import taiwanize
+
+    forms = taiwanize.prc_forms()
+    slips: list[RegisterSlip] = []
+    for unit in data.get("units", []):
+        for lesson in unit.get("lessons", []):
+            walk = list(iter_lesson_text(lesson)) + list(iter_lesson_titles(lesson))
+            for where, text in walk:
+                found = [(prc, tw) for prc, tw in forms.items() if prc in text]
+                if found:
+                    slips.append(RegisterSlip(where, text, sorted(found)))
+    return slips
+
+
+def validate_curriculum(
+    data: dict, extra_known_chars: set[str] | None = None
+) -> ValidationResult:
+    """Validate a curriculum JSON payload (the shape of content/curriculum.json).
+
+    Characters accumulate lesson-by-lesson: a sentence in lesson N may use any
+    vocab from lessons 1..N (plus the global function-word allowlist), matching
+    how the learner progresses.
+
+    `extra_known_chars` is a set of characters treated as known from the very
+    start — the HSK 1 placement pool, which the learner meets before any lesson
+    (seeded into the deck on the first-run placement check). Passing it lets
+    lesson sentences draw on foundational HSK 1 vocabulary without re-teaching it.
+    """
+    result = ValidationResult()
+    function_words = data.get("meta", {}).get("function_words", [])
+    base_allowed = allowed_chars([], function_words)
+    if extra_known_chars:
+        base_allowed |= extra_known_chars
+
+    cumulative = set(base_allowed)
+
+    # Flatten units/lessons in curriculum order.
+    units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
+    for unit in units:
+        lessons = sorted(unit.get("lessons", []), key=lambda l: l.get("sort_order", 0))
+        for lesson in lessons:
+            lid = lesson.get("id", "?")
+
+            # This lesson's new vocab becomes known for its own drills.
+            for v in lesson.get("vocab", []):
+                cumulative |= han_chars(v["traditional"])
+
+            # A grammar point introduces its own pattern characters (e.g. 只, 用,
+            # 還是), so those count as known for this lesson's sentences too.
+            for g in lesson.get("grammar", []):
+                cumulative |= han_chars(g.get("pattern", ""))
+                cumulative |= han_chars(g.get("title", ""))
+
+            # Validate example sentences on the new vocab.
+            for v in lesson.get("vocab", []):
+                ex = v.get("example") or {}
+                if ex.get("hanzi"):
+                    unknown = check_sentence(ex["hanzi"], cumulative)
+                    result.add(f"{lid} example[{v['id']}]", ex["hanzi"], unknown)
+
+            # Validate grammar examples.
+            for g in lesson.get("grammar", []):
+                for i, ex in enumerate(g.get("examples", [])):
+                    if ex.get("hanzi"):
+                        unknown = check_sentence(ex["hanzi"], cumulative)
+                        result.add(f"{lid} grammar[{g['id']}] ex{i}", ex["hanzi"], unknown)
+
+            # Validate drill sentences.
+            for i, s in enumerate(lesson.get("sentences", [])):
+                sent = "".join(s.get("tokens", []))
+                unknown = check_sentence(sent, cumulative)
+                result.add(f"{lid} sentence {i}", sent, unknown)
+
+            # Dialogue lines are naturally a bit richer (they set the scene);
+            # validate them but they share the same cumulative budget.
+            for i, line in enumerate(lesson.get("dialogue", [])):
+                if line.get("hanzi"):
+                    unknown = check_sentence(line["hanzi"], cumulative)
+                    result.add(f"{lid} dialogue {i}", line["hanzi"], unknown)
+
+            # The reading passage is the longest thing in a lesson and the
+            # easiest place for an unknown character to hide. Same budget.
+            passage = lesson.get("passage") or {}
+            if passage.get("hanzi"):
+                unknown = check_sentence(passage["hanzi"], cumulative)
+                result.add(f"{lid} passage", passage["hanzi"], unknown)
+
+    return result
+
+
+def validate_grammar_prerequisites(data: dict) -> ValidationResult:
+    """A lesson may only require grammar introduced at or before it (spec §3.3).
+
+    The vocabulary side of this is already enforced by the character check above:
+    a sentence cannot use a word the learner has not met. Grammar prerequisites
+    get the same treatment rather than a runtime lock, so a curriculum that
+    reaches forward is caught when it is written — when it is cheap to fix — and
+    a gap in the graph can never leave the learner with nothing to open.
+
+    Also flags a lesson requiring a grammar point it introduces itself, which is
+    always an authoring slip rather than a real prerequisite.
+    """
+    result = ValidationResult()
+    introduced: set[str] = set()
+
+    units = sorted(data.get("units", []), key=lambda u: u.get("sort_order", 0))
+    for unit in units:
+        for lesson in sorted(unit.get("lessons", []), key=lambda l: l.get("sort_order", 0)):
+            lid = lesson.get("id", "?")
+            own = {g["id"] for g in lesson.get("grammar", [])}
+
+            for gid in lesson.get("requires_grammar", []):
+                if gid in own:
+                    result.violations.append(Violation(
+                        where=f"{lid} requires_grammar",
+                        text=gid,
+                        unknown=["(introduced by this same lesson)"],
+                    ))
+                elif gid not in introduced:
+                    result.violations.append(Violation(
+                        where=f"{lid} requires_grammar",
+                        text=gid,
+                        unknown=["(not introduced yet)"],
+                    ))
+
+            introduced |= own
+
+    return result
+
+
+def validate_listen(data: dict, allowed: set[str]) -> ValidationResult:
+    """Validate comprehension-set dialogue lines against a known-character set.
+
+    Unlike the curriculum (which accumulates lesson by lesson), listening sets
+    are validated against the full pool of known vocabulary + function words.
+    """
+    result = ValidationResult()
+    for s in data.get("sets", []):
+        sid = s.get("id", "?")
+        for i, line in enumerate(s.get("dialogue", [])):
+            if line.get("hanzi"):
+                result.add(f"{sid} line {i}", line["hanzi"], check_sentence(line["hanzi"], allowed))
+    return result

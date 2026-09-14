@@ -1,0 +1,487 @@
+{
+  "id": "u_hsk1_06",
+  "title": "學中文與同學",
+  "subtitle": "Studying Chinese and school life",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "live",
+  "lessons": [
+    {
+      "id": "l_hsk1_06_1",
+      "title": "我學漢語",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_中國",
+          "traditional": "中國",
+          "pinyin": "Zhōng guó",
+          "gloss": "China",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我朋友的媽媽是中國人。",
+            "pinyin": "Wǒ péngyǒu de māma shì Zhōngguó rén.",
+            "gloss": "My friend's mom is Chinese."
+          }
+        },
+        {
+          "id": "v_北京",
+          "traditional": "北京",
+          "pinyin": "Běi jīng",
+          "gloss": "Beijing, capital of the People's Republic of China",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我下個月去北京看朋友。",
+            "pinyin": "Wǒ xià ge yuè qù Běijīng kàn péngyǒu.",
+            "gloss": "I'm going to Beijing next month to see a friend."
+          }
+        },
+        {
+          "id": "v_漢語",
+          "traditional": "漢語",
+          "pinyin": "Hàn yǔ",
+          "gloss": "Chinese language",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我學習漢語三年了。",
+            "pinyin": "Wǒ xuéxí Hànyǔ sān nián le.",
+            "gloss": "I've been studying Chinese for three years."
+          }
+        },
+        {
+          "id": "v_學習",
+          "traditional": "學習",
+          "pinyin": "xué xí",
+          "gloss": "to learn; to study",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他星期六都在家學習。",
+            "pinyin": "Tā xīngqíliù dōu zài jiā xuéxí.",
+            "gloss": "He studies at home every Saturday."
+          }
+        },
+        {
+          "id": "v_讀",
+          "traditional": "讀",
+          "pinyin": "dú",
+          "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我喜歡在咖啡店讀書。",
+            "pinyin": "Wǒ xǐhuān zài kāfēi diàn dú shū.",
+            "gloss": "I like reading in coffee shops."
+          }
+        },
+        {
+          "id": "v_字",
+          "traditional": "字",
+          "pinyin": "zì",
+          "gloss": "letter; symbol; character",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "這個字怎麼讀?",
+            "pinyin": "Zhège zì zěnme dú?",
+            "gloss": "How do you read this character?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "Saying where an action happens: 在 + place + verb",
+          "pattern": "Subject + 在 + place + verb + object",
+          "explanation": "In Chinese the place of an action comes BEFORE the verb, inside a 在-phrase. So 'I study Chinese in Taiwan' is 我在台灣學習漢語 — first who, then where, then what they do. English word order (verb first, place last) does not work here.",
+          "contrast": "在 can also be the main verb, meaning 'to be at' (我在學校 = I'm at school). What decides it: if another verb follows 在 + place, 在 marks the location of that action; if nothing follows, 在 itself is the verb.",
+          "common_error": "Learners copy English order and put the place after the verb, saying 我學習漢語在台灣. The 在-phrase must come before 學習.",
+          "examples": [
+            {
+              "hanzi": "我在台灣學習漢語。",
+              "pinyin": "Wǒ zài Táiwān xuéxí Hànyǔ.",
+              "gloss": "I study Chinese in Taiwan."
+            },
+            {
+              "hanzi": "他在北京讀書。",
+              "pinyin": "Tā zài Běijīng dú shū.",
+              "gloss": "He goes to school in Beijing."
+            },
+            {
+              "hanzi": "我們週末在家讀中文書。",
+              "pinyin": "Wǒmen zhōumò zài jiā dú Zhōngwén shū.",
+              "gloss": "On the weekend we read Chinese books at home."
+            }
+          ],
+          "id": "g_hsk1_06_1_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "",
+          "pattern": "",
+          "explanation": "",
+          "contrast": null,
+          "common_error": null,
+          "examples": [],
+          "id": "g_hsk1_06_1_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小文",
+          "hanzi": "你在讀什麼書?",
+          "pinyin": "Nǐ zài dú shénme shū?",
+          "gloss": "What book are you reading?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "漢語書。我在學習漢語。",
+          "pinyin": "Hànyǔ shū. Wǒ zài xuéxí Hànyǔ.",
+          "gloss": "A Chinese book. I'm studying Chinese."
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "你學習漢語幾年了?",
+          "pinyin": "Nǐ xuéxí Hànyǔ jǐ nián le?",
+          "gloss": "How many years have you been studying Chinese?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "一年半了。這個字你認識嗎?",
+          "pinyin": "Yī nián bàn le. Zhège zì nǐ rènshì ma?",
+          "gloss": "A year and a half. Do you know this character?"
+        },
+        {
+          "speaker": "小文",
+          "hanzi": "不認識。你們老師是中國人嗎?",
+          "pinyin": "Bù rènshì. Nǐmen lǎoshī shì Zhōngguó rén ma?",
+          "gloss": "No, I don't. Is your teacher Chinese?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "對,她是北京人,她說得很好聽。",
+          "pinyin": "Duì, tā shì Běijīng rén, tā shuō de hěn hǎotīng.",
+          "gloss": "Yes, she's from Beijing; she speaks beautifully."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "在",
+            "學校",
+            "學習",
+            "漢語"
+          ],
+          "pinyin": "Wǒ zài xuéxiào xuéxí Hànyǔ.",
+          "gloss": "I study Chinese at school.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "這個",
+            "字",
+            "我",
+            "不",
+            "認識"
+          ],
+          "pinyin": "Zhège zì wǒ bù rènshì.",
+          "gloss": "I don't know this character.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "他",
+            "是",
+            "中國",
+            "人",
+            "嗎"
+          ],
+          "pinyin": "Tā shì Zhōngguó rén ma?",
+          "gloss": "Is he Chinese?",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "我",
+            "週末",
+            "在",
+            "家",
+            "讀",
+            "漢語",
+            "書"
+          ],
+          "pinyin": "Wǒ zhōumò zài jiā dú Hànyǔ shū.",
+          "gloss": "On the weekend I read Chinese books at home.",
+          "cloze_index": 4
+        },
+        {
+          "tokens": [
+            "老師",
+            "明天",
+            "去",
+            "北京"
+          ],
+          "pinyin": "Lǎoshī míngtiān qù Běijīng.",
+          "gloss": "The teacher is going to Beijing tomorrow.",
+          "cloze_index": 3
+        }
+      ],
+      "passage": {
+        "title": "我學漢語",
+        "hanzi": "我叫小文,住在台北,現在在大學讀書。我的同學小明是中國人,他家在北京。我們都喜歡學習漢語。週末我們坐捷運去學校附近的咖啡店,點一杯珍珠奶茶,一起讀書、寫字。他認識的字多,我不認識的字,他都會讀。老師說,天天讀漢語,明年我們都會說得不錯。",
+        "gloss": "My name is Xiaowen. I live in Taipei and I'm at university now. My classmate Xiaoming is Chinese; his home is in Beijing. We both like studying Chinese. On weekends we take the MRT to a coffee shop near school, order a bubble milk tea, and read and write characters together. He knows a lot of characters — the ones I don't know, he can read. Our teacher says that if we read Chinese every day, next year we'll both speak quite well."
+      }
+    },
+    {
+      "id": "l_hsk1_06_2",
+      "title": "同學與稱呼",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_同學",
+          "traditional": "同學",
+          "pinyin": "tóng xué",
+          "gloss": "to study at the same school; fellow student; classmate",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他是我的高中同學，現在住台北。",
+            "pinyin": "Tā shì wǒ de gāozhōng tóngxué, xiànzài zhù Táiběi.",
+            "gloss": "He's my high school classmate; he lives in Taipei now."
+          }
+        },
+        {
+          "id": "v_小姐",
+          "traditional": "小姐",
+          "pinyin": "xiǎojiě",
+          "gloss": "young lady; miss; (slang) prostitute",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "小姐，這個包裹多少錢？",
+            "pinyin": "Xiǎojiě, zhège bāoguǒ duōshǎo qián?",
+            "gloss": "Miss, how much is it for this parcel?"
+          }
+        },
+        {
+          "id": "v_先生",
+          "traditional": "先生",
+          "pinyin": "xiānshēng",
+          "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "先生，你的悠遊卡在桌上。",
+            "pinyin": "Xiānshēng, nǐ de yōuyóukǎ zài zhuō shàng.",
+            "gloss": "Sir, your EasyCard is on the table."
+          }
+        },
+        {
+          "id": "v_會",
+          "traditional": "會",
+          "pinyin": "huì",
+          "gloss": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我會騎腳踏車，不會開車。",
+            "pinyin": "Wǒ huì qí jiǎotàchē, bú huì kāichē.",
+            "gloss": "I can ride a bike, but I can't drive."
+          }
+        },
+        {
+          "id": "v_能",
+          "traditional": "能",
+          "pinyin": "néng",
+          "gloss": "can; to be able to; might possibly",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "今天下大雨，我不能騎腳踏車去學校。",
+            "pinyin": "Jīntiān xià dàyǔ, wǒ bù néng qí jiǎotàchē qù xuéxiào.",
+            "gloss": "It's raining hard today, so I can't ride my bike to school."
+          }
+        },
+        {
+          "id": "v_怎麼",
+          "traditional": "怎麼",
+          "pinyin": "zěn me",
+          "gloss": "how?; what?; why?",
+          "hsk_level": 1,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "捷運站怎麼走？",
+            "pinyin": "Jiéyùn zhàn zěnme zǒu?",
+            "gloss": "How do I get to the MRT station?"
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "title": "會 and 能: two kinds of \"can\"",
+          "pattern": "主語 + 會／能 + 動詞（＋賓語）",
+          "explanation": "會 marks a skill you have learned (speaking a language, riding a bike, cooking) and it is also used for what is likely to happen: 明天會下雨. 能 marks whether the situation lets you do it right now — your body, your time, the weather, or permission. Negate both with 不: 不會 / 不能.",
+          "contrast": "會 vs 能: ask yourself whether the sentence is about a learned skill / a prediction (會) or about circumstances allowing it this time (能). 我不會騎腳踏車 = I never learned. 我今天不能騎腳踏車 = I know how, but today something stops me.",
+          "common_error": "Learners say 我今天不會去 when they mean \"I can't go today (I'm busy)\" — that should be 我今天不能去. The reverse also happens: 我能說中文 for a learned skill, where Taiwanese speakers say 我會說中文.",
+          "examples": [
+            {
+              "hanzi": "我會說中文，不會說日語。",
+              "pinyin": "Wǒ huì shuō Zhōngwén, bú huì shuō Rìyǔ.",
+              "gloss": "I can speak Chinese, but I can't speak Japanese."
+            },
+            {
+              "hanzi": "我腳痛，今天不能騎車。",
+              "pinyin": "Wǒ jiǎo tòng, jīntiān bù néng qí chē.",
+              "gloss": "My foot hurts, so I can't ride today."
+            },
+            {
+              "hanzi": "明天有颱風，飛機不能飛。",
+              "pinyin": "Míngtiān yǒu táifēng, fēijī bù néng fēi.",
+              "gloss": "There's a typhoon tomorrow, so the planes can't fly."
+            }
+          ],
+          "id": "g_hsk1_06_2_1",
+          "hsk_level": 1
+        },
+        {
+          "title": "怎麼 for asking how",
+          "pattern": "（主語＋）怎麼 + 動詞？",
+          "explanation": "怎麼 goes right before the verb to ask how something is done: 怎麼走 (how to get there), 怎麼寫 (how to write it), 怎麼買 (how to buy it). It can also open a question about a surprising situation: 你怎麼在這裡？",
+          "contrast": "怎麼 + verb asks \"how do you do it\"; 什麼 asks \"what\" and takes a noun slot: 你點什麼？ (what are you ordering) vs 這個怎麼點？ (how do you order this).",
+          "common_error": "Putting 怎麼 after the verb, like 走怎麼. 怎麼 must come before the verb: 捷運站怎麼走？",
+          "examples": [
+            {
+              "hanzi": "這個字怎麼寫？",
+              "pinyin": "Zhège zì zěnme xiě?",
+              "gloss": "How do you write this character?"
+            },
+            {
+              "hanzi": "同學，郵局怎麼走？",
+              "pinyin": "Tóngxué, yóujú zěnme zǒu?",
+              "gloss": "Hey (fellow student), how do I get to the post office?"
+            },
+            {
+              "hanzi": "你怎麼這麼晚回家？",
+              "pinyin": "Nǐ zěnme zhème wǎn huí jiā?",
+              "gloss": "How come you're coming home so late?"
+            }
+          ],
+          "id": "g_hsk1_06_2_2",
+          "hsk_level": 1
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "小明",
+          "hanzi": "小安，你怎麼在這裡？",
+          "pinyin": "Xiǎo Ān, nǐ zěnme zài zhèlǐ?",
+          "gloss": "Xiao An, how come you're here?"
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "我和同學來這家咖啡店。她叫小文。",
+          "pinyin": "Wǒ hé tóngxué lái zhè jiā kāfēi diàn. Tā jiào Xiǎo Wén.",
+          "gloss": "I came to this café with a classmate. Her name is Xiao Wen."
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "小姐你好，我是小安的高中同學。",
+          "pinyin": "Xiǎojiě nǐ hǎo, wǒ shì Xiǎo Ān de gāozhōng tóngxué.",
+          "gloss": "Hello, miss. I'm Xiao An's high school classmate."
+        },
+        {
+          "speaker": "小安",
+          "hanzi": "小文會說台語，你不會，你們能一起學。",
+          "pinyin": "Xiǎo Wén huì shuō Táiyǔ, nǐ bú huì, nǐmen néng yìqǐ xué.",
+          "gloss": "Xiao Wen can speak Taiwanese and you can't — you two can learn together."
+        },
+        {
+          "speaker": "老闆",
+          "hanzi": "先生小姐，你們點什麼？",
+          "pinyin": "Xiānshēng xiǎojiě, nǐmen diǎn shénme?",
+          "gloss": "Sir, miss, what would you like to order?"
+        },
+        {
+          "speaker": "小明",
+          "hanzi": "三杯珍珠奶茶，謝謝。",
+          "pinyin": "Sān bēi zhēnzhū nǎichá, xièxie.",
+          "gloss": "Three bubble teas, thank you."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "這個",
+            "同學",
+            "會",
+            "說",
+            "日語"
+          ],
+          "pinyin": "Zhège tóngxué huì shuō Rìyǔ.",
+          "gloss": "This classmate can speak Japanese.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "小姐",
+            "請",
+            "坐",
+            "這裡"
+          ],
+          "pinyin": "Xiǎojiě, qǐng zuò zhèlǐ.",
+          "gloss": "Miss, please sit here.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "捷運站",
+            "怎麼",
+            "走"
+          ],
+          "pinyin": "Jiéyùn zhàn zěnme zǒu?",
+          "gloss": "How do I get to the MRT station?",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "先生",
+            "的",
+            "傘",
+            "在",
+            "車",
+            "上"
+          ],
+          "pinyin": "Xiānshēng de sǎn zài chē shàng.",
+          "gloss": "The gentleman's umbrella is in the car.",
+          "cloze_index": 0
+        },
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "太",
+            "忙",
+            "了",
+            "不",
+            "能",
+            "去"
+          ],
+          "pinyin": "Wǒ jīntiān tài máng le, bù néng qù.",
+          "gloss": "I'm too busy today; I can't go.",
+          "cloze_index": 6
+        }
+      ],
+      "passage": {
+        "title": "我的同學小安",
+        "hanzi": "小安是我的同學，我們同班一年了。她會說中文和台語，我不會台語。上個週末，我們騎腳踏車去附近的咖啡店。店裡的小姐認識小安。我不能點咖啡，晚上會睡不好。小安說：「你怎麼不點珍珠奶茶？」",
+        "gloss": "Xiao An is my classmate; we've been in the same class for a year. She can speak Mandarin and Taiwanese; I can't speak Taiwanese. Last weekend we rode our bikes to a café nearby. The young woman working there knows Xiao An. I can't order coffee — I don't sleep well at night. Xiao An said, \"Why don't you order bubble tea?\""
+      }
+    }
+  ],
+  "sort_order": 20,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}

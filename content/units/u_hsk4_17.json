@@ -1,0 +1,129 @@
+{
+  "id": "u_hsk4_17",
+  "title": "心情與勸告",
+  "subtitle": "Moods and giving someone advice",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_17_1",
+      "title": "心情起伏",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_興奮",
+          "traditional": "興奮",
+          "pinyin": "xīng fèn",
+          "gloss": "excited; excitement; (physiology) excitation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_激動",
+          "traditional": "激動",
+          "pinyin": "jī dòng",
+          "gloss": "to move emotionally; to stir up (emotions); to excite",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_失望",
+          "traditional": "失望",
+          "pinyin": "shī wàng",
+          "gloss": "disappointed; to lose hope; to despair",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_可惜",
+          "traditional": "可惜",
+          "pinyin": "kě xī",
+          "gloss": "it is a pity; what a pity; unfortunately",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_無聊",
+          "traditional": "無聊",
+          "pinyin": "wú liáo",
+          "gloss": "bored; boring; senseless",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_輕鬆",
+          "traditional": "輕鬆",
+          "pinyin": "qīng sōng",
+          "gloss": "light; gentle; relaxed",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_17_2",
+      "title": "提醒與建議",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_提醒",
+          "traditional": "提醒",
+          "pinyin": "tí xǐng",
+          "gloss": "to remind; to call attention to; to warn of",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_最好",
+          "traditional": "最好",
+          "pinyin": "zuì hǎo",
+          "gloss": "best; (you) had better (do what we suggest)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_千萬",
+          "traditional": "千萬",
+          "pinyin": "qiān wàn",
+          "gloss": "ten million; countless; many",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_既然",
+          "traditional": "既然",
+          "pinyin": "jì rán",
+          "gloss": "since; as; this being the case",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_然而",
+          "traditional": "然而",
+          "pinyin": "rán ér",
+          "gloss": "however; yet; but",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_停止",
+          "traditional": "停止",
+          "pinyin": "tíng zhǐ",
+          "gloss": "to stop; to halt; to cease",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 65,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

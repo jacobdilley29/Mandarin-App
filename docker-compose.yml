@@ -1,0 +1,71 @@
+# 台灣華語老師 — app + backup cron, sharing one named volume.
+#
+# The named volume is the whole point (spec §7): `docker compose build`,
+# `docker compose down`, and replacing the image all leave `mandarin-data`
+# untouched, so learner progress survives every code update.
+#
+#   docker compose up -d --build     start (or update) the app
+#   docker compose down              stop — DATA IS KEPT
+#   docker compose down -v           stop AND DELETE ALL PROGRESS. Don't.
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mandarin-teacher:latest
+    container_name: mandarin-app
+    restart: unless-stopped
+    # Bound to loopback on purpose: the only intended remote path in is
+    # Tailscale Serve (make tailscale-up), never the LAN or the internet.
+    ports:
+      - "127.0.0.1:${PORT:-3002}:3002"
+    environment:
+      DATA_DIR: /data
+      HOST: 0.0.0.0
+      PORT: 3002
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - mandarin-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:3002/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+  backup:
+    # Same image as the app — one build, two roles.
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mandarin-teacher:latest
+    container_name: mandarin-backup
+    restart: unless-stopped
+    command: ["/usr/local/bin/entrypoint-backup.sh"]
+    environment:
+      DATA_DIR: /data
+      BACKUP_TIME: ${BACKUP_TIME:-03:30}
+      BACKUP_RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-30}
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - mandarin-data:/data
+    depends_on:
+      - app
+
+# NOTE: content/ is deliberately NOT bind-mounted here. Mounting it looked like
+# the obvious way to keep generated curriculum out of the container's ephemeral
+# filesystem, but Docker Desktop on macOS failed to read through the mount at
+# all ("OSError: [Errno 35] Resource deadlock avoided"), which broke the
+# generator and /api/content/coverage alike. The authoring targets copy results
+# out of the container with `docker compose cp` instead — see `make pull-content`.
+
+volumes:
+  # Named, not anonymous, and not a bind mount: Docker keeps it across image
+  # rebuilds and only `docker compose down -v` ever removes it.
+  mandarin-data:
+    name: mandarin-data

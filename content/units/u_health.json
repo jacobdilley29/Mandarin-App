@@ -1,0 +1,220 @@
+{
+  "id": "u_health",
+  "title": "看醫生",
+  "subtitle": "Doctor and pharmacy",
+  "hsk_level": 3,
+  "sort_order": 11,
+  "lessons": [
+    {
+      "id": "l_health_1",
+      "title": "不舒服",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_shufu",
+          "traditional": "舒服",
+          "pinyin": "shūfú",
+          "gloss": "comfortable; well",
+          "hsk_level": 3,
+          "taiwan_note": "「不舒服」= feeling unwell。",
+          "example": {
+            "hanzi": "我今天不舒服。",
+            "pinyin": "Wǒ jīntiān bù shūfú.",
+            "gloss": "I don't feel well today."
+          }
+        },
+        {
+          "id": "v_tou_teng",
+          "traditional": "頭痛",
+          "pinyin": "tóutòng",
+          "gloss": "headache",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我頭痛。",
+            "pinyin": "Wǒ tóutòng.",
+            "gloss": "I have a headache."
+          }
+        },
+        {
+          "id": "v_ganmao",
+          "traditional": "感冒",
+          "pinyin": "gǎnmào",
+          "gloss": "to catch a cold",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "我好像感冒了。",
+            "pinyin": "Wǒ hǎoxiàng gǎnmào le.",
+            "gloss": "I think I've caught a cold."
+          }
+        },
+        {
+          "id": "v_fashao",
+          "traditional": "發燒",
+          "pinyin": "fāshāo",
+          "gloss": "to have a fever",
+          "hsk_level": 4,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "他發燒了。",
+            "pinyin": "Tā fāshāo le.",
+            "gloss": "He has a fever."
+          }
+        },
+        {
+          "id": "v_yao",
+          "traditional": "藥",
+          "pinyin": "yào",
+          "gloss": "medicine",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "記得吃藥。",
+            "pinyin": "Jìdé chī yào.",
+            "gloss": "Remember to take your medicine."
+          }
+        },
+        {
+          "id": "v_yaoju",
+          "traditional": "藥局",
+          "pinyin": "yàojú",
+          "gloss": "pharmacy",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「藥局」或「藥房」。",
+          "example": {
+            "hanzi": "藥局在對面。",
+            "pinyin": "Yàojú zài duìmiàn.",
+            "gloss": "The pharmacy is across the street."
+          }
+        },
+        {
+          "id": "v_kanyisheng",
+          "traditional": "看醫生",
+          "pinyin": "kàn yīshēng",
+          "gloss": "to see a doctor",
+          "hsk_level": 3,
+          "taiwan_note": null,
+          "example": {
+            "hanzi": "你應該去看醫生。",
+            "pinyin": "Nǐ yīnggāi qù kàn yīshēng.",
+            "gloss": "You should go see a doctor."
+          }
+        }
+      ],
+      "grammar": [
+        {
+          "id": "g_yinggai",
+          "title": "應該 — should",
+          "pattern": "Subject + 應該 + Verb",
+          "explanation": "應該 (yīnggāi) expresses what one should do: 你應該休息 = you should rest. It comes before the verb.",
+          "examples": [
+            {
+              "hanzi": "你應該去看醫生。",
+              "pinyin": "Nǐ yīnggāi qù kàn yīshēng.",
+              "gloss": "You should go see a doctor."
+            },
+            {
+              "hanzi": "感冒了應該多喝水。",
+              "pinyin": "Gǎnmào le yīnggāi duō hē shuǐ.",
+              "gloss": "When you have a cold you should drink lots of water."
+            },
+            {
+              "hanzi": "你應該早點回家。",
+              "pinyin": "Nǐ yīnggāi zǎo diǎn huí jiā.",
+              "gloss": "You should go home earlier."
+            }
+          ],
+          "hsk_level": 3
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "醫生",
+          "hanzi": "你哪裡不舒服？",
+          "pinyin": "Nǐ nǎlǐ bù shūfú?",
+          "gloss": "What's bothering you?"
+        },
+        {
+          "speaker": "我",
+          "hanzi": "我頭痛，好像感冒了。",
+          "pinyin": "Wǒ tóutòng, hǎoxiàng gǎnmào le.",
+          "gloss": "I have a headache; I think I've caught a cold."
+        },
+        {
+          "speaker": "醫生",
+          "hanzi": "有沒有發燒？",
+          "pinyin": "Yǒu méiyǒu fāshāo?",
+          "gloss": "Do you have a fever?"
+        },
+        {
+          "speaker": "醫生",
+          "hanzi": "多喝水，記得吃藥。",
+          "pinyin": "Duō hē shuǐ, jìdé chī yào.",
+          "gloss": "Drink lots of water and remember to take your medicine."
+        }
+      ],
+      "sentences": [
+        {
+          "tokens": [
+            "我",
+            "今天",
+            "不",
+            "舒服"
+          ],
+          "pinyin": "Wǒ jīntiān bù shūfú.",
+          "gloss": "I don't feel well today.",
+          "cloze_index": 3
+        },
+        {
+          "tokens": [
+            "我",
+            "好像",
+            "感冒",
+            "了"
+          ],
+          "pinyin": "Wǒ hǎoxiàng gǎnmào le.",
+          "gloss": "I think I've caught a cold.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "你",
+            "應該",
+            "去",
+            "看醫生"
+          ],
+          "pinyin": "Nǐ yīnggāi qù kàn yīshēng.",
+          "gloss": "You should go see a doctor.",
+          "cloze_index": 1
+        },
+        {
+          "tokens": [
+            "記得",
+            "吃",
+            "藥"
+          ],
+          "pinyin": "Jìdé chī yào.",
+          "gloss": "Remember to take your medicine.",
+          "cloze_index": 2
+        },
+        {
+          "tokens": [
+            "藥局",
+            "在",
+            "對面"
+          ],
+          "pinyin": "Yàojú zài duìmiàn.",
+          "gloss": "The pharmacy is across the street.",
+          "cloze_index": 0
+        }
+      ],
+      "requires_grammar": [
+        "g_youmeiyou",
+        "g_le_change"
+      ]
+    }
+  ],
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

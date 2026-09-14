@@ -1,0 +1,113 @@
+{
+  "id": "u_hsk4_13",
+  "title": "看表演與看比賽",
+  "subtitle": "Shows, audiences and sports events",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_13_1",
+      "title": "看表演與展覽",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_演出",
+          "traditional": "演出",
+          "pinyin": "yǎn chū",
+          "gloss": "to act (in a play); to perform; to put on (a performance)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_觀眾",
+          "traditional": "觀眾",
+          "pinyin": "guān zhòng",
+          "gloss": "spectators; audience; visitors (to an exhibition etc)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_群",
+          "traditional": "群",
+          "pinyin": "qún",
+          "gloss": "group; crowd; flock, herd, pack etc",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_藝術",
+          "traditional": "藝術",
+          "pinyin": "yì shù",
+          "gloss": "art",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_著名",
+          "traditional": "著名",
+          "pinyin": "zhù míng",
+          "gloss": "famous; noted; well-known",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_13_2",
+      "title": "運動比賽與勝負",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_輸",
+          "traditional": "輸",
+          "pinyin": "shū",
+          "gloss": "to lose; to be beaten; (bound form) to transport; (literary) to donate; to contribute",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_速度",
+          "traditional": "速度",
+          "pinyin": "sù dù",
+          "gloss": "speed; rate; velocity",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_動作",
+          "traditional": "動作",
+          "pinyin": "dòng zuò",
+          "gloss": "movement; motion; action; to act; to move",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_倍",
+          "traditional": "倍",
+          "pinyin": "bèi",
+          "gloss": "(two, three etc) -fold; times (multiplier); double",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_精彩",
+          "traditional": "精彩",
+          "pinyin": "jīng cǎi",
+          "gloss": "wonderful; marvelous; brilliant",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 61,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

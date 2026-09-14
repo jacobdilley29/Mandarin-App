@@ -1,0 +1,214 @@
+{
+  "id": "u_hsk4_04",
+  "title": "辦事與解決問題",
+  "subtitle": "Getting tasks done, filling in forms and everyday hands-on actions",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_04_1",
+      "title": "想辦法解決",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_方法",
+          "traditional": "方法",
+          "pinyin": "fāng fǎ",
+          "gloss": "method; way; means",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_方面",
+          "traditional": "方面",
+          "pinyin": "fāng miàn",
+          "gloss": "respect; aspect; field",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_考慮",
+          "traditional": "考慮",
+          "pinyin": "kǎo lǜ",
+          "gloss": "to think over; to consider; consideration",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_使用",
+          "traditional": "使用",
+          "pinyin": "shǐ yòng",
+          "gloss": "to use; to employ; to apply",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_算",
+          "traditional": "算",
+          "pinyin": "suàn",
+          "gloss": "to regard as; to figure; to calculate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_04_2",
+      "title": "交辦與聯絡",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_任務",
+          "traditional": "任務",
+          "pinyin": "rèn wu",
+          "gloss": "mission; assignment; task; duty; role",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_當",
+          "traditional": "當",
+          "pinyin": "dāng",
+          "gloss": "to be; to act as; manage",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_行",
+          "traditional": "行",
+          "pinyin": "xíng",
+          "gloss": "to walk; to go; to travel",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_起來",
+          "traditional": "起來",
+          "pinyin": "qǐ lai",
+          "gloss": "(after a verb) indicating the beginning and continuation of an action or a state; indicating an upward movement (e.g. after 站); indicating completion",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_聯絡",
+          "traditional": "聯絡",
+          "pinyin": "liánluò",
+          "gloss": "connection; contact; relation",
+          "hsk_level": 4,
+          "taiwan_note": "台灣說「聯絡」（聯絡方式、保持聯絡）；「聯繫」是大陸用法。",
+          "prc_form": "聯繫"
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_04_3",
+      "title": "填表與書面用語",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_與",
+          "traditional": "與",
+          "pinyin": "yǔ",
+          "gloss": "and; to give; together with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_等",
+          "traditional": "等",
+          "pinyin": "děng",
+          "gloss": "class; rank; grade",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_內",
+          "traditional": "內",
+          "pinyin": "nèi",
+          "gloss": "inside; inner; internal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_指",
+          "traditional": "指",
+          "pinyin": "zhǐ",
+          "gloss": "finger; to point at or to; to indicate or refer to",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_台",
+          "traditional": "台",
+          "pinyin": "tái",
+          "gloss": "(classical) you (in letters); variant of 台",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_04_4",
+      "title": "日常小動作",
+      "sort_order": 4,
+      "vocab": [
+        {
+          "id": "v_拉",
+          "traditional": "拉",
+          "pinyin": "lā",
+          "gloss": "to pull; to play (a bowed instrument); to drag",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_連",
+          "traditional": "連",
+          "pinyin": "lián",
+          "gloss": "to link; to join; to connect",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_乾",
+          "traditional": "乾",
+          "pinyin": "gān",
+          "gloss": "dry; dried food; empty; hollow",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_發",
+          "traditional": "發",
+          "pinyin": "fā",
+          "gloss": "to send out; to show (one's feeling); to issue",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_過",
+          "traditional": "過",
+          "pinyin": "guò",
+          "gloss": "to cross; to go over; to pass (time)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 52,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}

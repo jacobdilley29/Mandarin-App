@@ -1,0 +1,113 @@
+{
+  "id": "u_hsk4_19",
+  "title": "花錢與請客",
+  "subtitle": "Spending money and having people over",
+  "hsk_level": 4,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk4_19_1",
+      "title": "價格與賺錢",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_價格",
+          "traditional": "價格",
+          "pinyin": "jià gé",
+          "gloss": "price",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_賺",
+          "traditional": "賺",
+          "pinyin": "zhuàn",
+          "gloss": "to earn; to make a profit",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_浪費",
+          "traditional": "浪費",
+          "pinyin": "làng fèi",
+          "gloss": "to waste; to squander",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_實際",
+          "traditional": "實際",
+          "pinyin": "shí jì",
+          "gloss": "reality; practice; practical",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_符合",
+          "traditional": "符合",
+          "pinyin": "fú hé",
+          "gloss": "in keeping with; in accordance with; tallying with",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_19_2",
+      "title": "邀朋友來家裡吃飯",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_食品",
+          "traditional": "食品",
+          "pinyin": "shí pǐn",
+          "gloss": "foodstuff; food; provisions",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_材料",
+          "traditional": "材料",
+          "pinyin": "cái liào",
+          "gloss": "(raw) material; data; (fig.) person who has the potential to do the job",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_味道",
+          "traditional": "味道",
+          "pinyin": "wèi dao",
+          "gloss": "flavor; taste; (fig.) feeling (of ...); sense (of ...); hint (of ...); (fig.) interest; delight",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_邀請",
+          "traditional": "邀請",
+          "pinyin": "yāo qǐng",
+          "gloss": "to invite; invitation",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_合適",
+          "traditional": "合適",
+          "pinyin": "hé shì",
+          "gloss": "suitable; fitting; appropriate",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 67,
+  "tocfl_level": "Level 3",
+  "tocfl_band": "B"
+}
