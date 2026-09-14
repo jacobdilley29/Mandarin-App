@@ -1,234 +1,196 @@
 {
   "id": "u_hsk3_16",
-  "title": "HSK 3 詞彙 16",
-  "subtitle": "HSK 3 vocabulary · set 16",
+  "title": "出門、上班與上學",
+  "subtitle": "Getting around town, the workplace and school life",
   "hsk_level": 3,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_16_1",
-      "title": "詞彙 16–1",
+      "title": "搭車找地方",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_筷子",
-          "traditional": "筷子",
-          "pinyin": "kuài zi",
-          "gloss": "chopsticks",
+          "id": "v_司機",
+          "traditional": "司機",
+          "pinyin": "sī jī",
+          "gloss": "chauffeur; driver",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "請給我一雙筷子，謝謝。",
-            "pinyin": "Qǐng gěi wǒ yì shuāng kuàizi, xièxie.",
-            "gloss": "Please give me a pair of chopsticks, thanks."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_字典",
-          "traditional": "字典",
-          "pinyin": "zì diǎn",
-          "gloss": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
+          "id": "v_地圖",
+          "traditional": "地圖",
+          "pinyin": "dì tú",
+          "gloss": "map",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這本字典是老師給我的。",
-            "pinyin": "Zhè běn zìdiǎn shì lǎoshī gěi wǒ de.",
-            "gloss": "This dictionary was given to me by my teacher."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_普通話",
-          "traditional": "普通話",
-          "pinyin": "pǔ tōng huà",
-          "gloss": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
+          "id": "v_中間",
+          "traditional": "中間",
+          "pinyin": "zhōng jiān",
+          "gloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他的普通話說得很好。",
-            "pinyin": "Tā de pǔtōnghuà shuō de hěn hǎo.",
-            "gloss": "He speaks Mandarin very well."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_爬山",
-          "traditional": "爬山",
-          "pinyin": "pá shān",
-          "gloss": "to climb a mountain; to mountaineer; hiking",
+          "id": "v_角",
+          "traditional": "角",
+          "pinyin": "jiǎo",
+          "gloss": "angle; corner; horn",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個週末我想去爬山。",
-            "pinyin": "Zhège zhōumò wǒ xiǎng qù páshān.",
-            "gloss": "I want to go hiking this weekend."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_黑板",
-          "traditional": "黑板",
-          "pinyin": "hēi bǎn",
-          "gloss": "blackboard",
+          "id": "v_南",
+          "traditional": "南",
+          "pinyin": "nán",
+          "gloss": "south",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "老師在黑板上畫了一張圖。",
-            "pinyin": "Lǎoshī zài hēibǎn shàng huà le yì zhāng tú.",
-            "gloss": "The teacher drew a picture on the blackboard."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_行李箱",
-          "traditional": "行李箱",
-          "pinyin": "xíng li xiāng",
-          "gloss": "suitcase; baggage compartment; overhead bin",
+          "id": "v_電梯",
+          "traditional": "電梯",
+          "pinyin": "diàn tī",
+          "gloss": "elevator; escalator",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我的行李箱太重了。",
-            "pinyin": "Wǒ de xínglǐxiāng tài zhòng le.",
-            "gloss": "My suitcase is too heavy."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_16_2",
+      "title": "上班、開會與守時",
+      "sort_order": 2,
+      "vocab": [
         {
-          "title": "用 + 工具 + 動作 (using something to do something)",
-          "pattern": "主語 + 用 + 工具 + 動詞 + 賓語",
-          "explanation": "To say what tool or language you use to do something, put 用 plus the tool before the verb. 用 always comes before the main verb, not after it. The negative is 不用 or 沒用.",
-          "examples": [
-            {
-              "hanzi": "我們用筷子吃麵。",
-              "pinyin": "Wǒmen yòng kuàizi chī miàn.",
-              "gloss": "We eat noodles with chopsticks."
-            },
-            {
-              "hanzi": "你可以用字典查這個字。",
-              "pinyin": "Nǐ kěyǐ yòng zìdiǎn chá zhège zì.",
-              "gloss": "You can look up this character in a dictionary."
-            },
-            {
-              "hanzi": "老師用普通話跟我們說話。",
-              "pinyin": "Lǎoshī yòng pǔtōnghuà gēn wǒmen shuōhuà.",
-              "gloss": "The teacher speaks with us in Mandarin."
-            }
-          ],
-          "id": "g_hsk3_16_1_1",
-          "hsk_level": 3
+          "id": "v_經理",
+          "traditional": "經理",
+          "pinyin": "jīng lǐ",
+          "gloss": "manager; director",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_16_1_2",
-          "hsk_level": 3
+          "id": "v_遲到",
+          "traditional": "遲到",
+          "pinyin": "chí dào",
+          "gloss": "to arrive late",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_刻",
+          "traditional": "刻",
+          "pinyin": "kè",
+          "gloss": "quarter (hour); moment; to carve",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_一下",
+          "traditional": "一下",
+          "pinyin": "yíxià",
+          "gloss": "a moment; a while; in a moment",
+          "hsk_level": 3,
+          "taiwan_note": "台灣少用兒化，說「一下」或「等一下」。",
+          "prc_form": "一會兒"
+        },
+        {
+          "id": "v_方便",
+          "traditional": "方便",
+          "pinyin": "fāng biàn",
+          "gloss": "convenient; suitable; to facilitate",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_電子",
+          "traditional": "電子",
+          "pinyin": "diàn zǐ",
+          "gloss": "electronic; electron (particle physics)",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_16_3",
+      "title": "學校、功課與圖書館",
+      "sort_order": 3,
+      "vocab": [
         {
-          "speaker": "阿明",
-          "hanzi": "這個週末我們去爬山，好嗎？",
-          "pinyin": "Zhège zhōumò wǒmen qù páshān, hǎo ma?",
-          "gloss": "Shall we go hiking this weekend?"
+          "id": "v_作業",
+          "traditional": "作業",
+          "pinyin": "zuò yè",
+          "gloss": "school assignment; homework; work",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小李",
-          "hanzi": "好啊！可是我的行李箱太大了，不好帶。",
-          "pinyin": "Hǎo a! Kěshì wǒ de xínglǐxiāng tài dà le, bù hǎo dài.",
-          "gloss": "Sure! But my suitcase is too big, it's hard to carry."
+          "id": "v_數學",
+          "traditional": "數學",
+          "pinyin": "shù xué",
+          "gloss": "mathematics; mathematical",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "阿明",
-          "hanzi": "爬山不用帶行李箱，帶一個袋子就好。",
-          "pinyin": "Páshān búyòng dài xínglǐxiāng, dài yí ge dàizi jiù hǎo.",
-          "gloss": "You don't need a suitcase for hiking, just bring a bag."
+          "id": "v_練習",
+          "traditional": "練習",
+          "pinyin": "liàn xí",
+          "gloss": "to practice; exercise; drill",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小李",
-          "hanzi": "那我要帶筷子嗎？山上有麵店嗎？",
-          "pinyin": "Nà wǒ yào dài kuàizi ma? Shān shàng yǒu miàndiàn ma?",
-          "gloss": "Then should I bring chopsticks? Is there a noodle shop on the mountain?"
+          "id": "v_成績",
+          "traditional": "成績",
+          "pinyin": "chéng jì",
+          "gloss": "achievement; performance records; grades",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "阿明",
-          "hanzi": "有啊，山上有一家小店，也賣便當。",
-          "pinyin": "Yǒu a, shān shàng yǒu yì jiā xiǎo diàn, yě mài biàndāng.",
-          "gloss": "Yes, there's a small shop on the mountain, it also sells lunch boxes."
+          "id": "v_提高",
+          "traditional": "提高",
+          "pinyin": "tí gāo",
+          "gloss": "to raise; to increase; to improve",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小李",
-          "hanzi": "太好了！那我也不帶字典了，太重了。",
-          "pinyin": "Tài hǎo le! Nà wǒ yě bú dài zìdiǎn le, tài zhòng le.",
-          "gloss": "Great! Then I won't bring my dictionary either, it's too heavy."
+          "id": "v_校長",
+          "traditional": "校長",
+          "pinyin": "xiào zhǎng",
+          "gloss": "(college, university) president; headmaster",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_圖書館",
+          "traditional": "圖書館",
+          "pinyin": "tú shū guǎn",
+          "gloss": "library",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "用",
-            "筷子",
-            "吃",
-            "飯"
-          ],
-          "pinyin": "Wǒ yòng kuàizi chī fàn.",
-          "gloss": "I eat with chopsticks.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "這",
-            "本",
-            "字典",
-            "很",
-            "貴"
-          ],
-          "pinyin": "Zhè běn zìdiǎn hěn guì.",
-          "gloss": "This dictionary is very expensive.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "週末",
-            "我們",
-            "去",
-            "爬山",
-            "吧"
-          ],
-          "pinyin": "Zhōumò wǒmen qù páshān ba.",
-          "gloss": "Let's go hiking on the weekend.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "老師",
-            "在",
-            "黑板",
-            "上",
-            "畫",
-            "圖"
-          ],
-          "pinyin": "Lǎoshī zài hēibǎn shàng huà tú.",
-          "gloss": "The teacher draws pictures on the blackboard.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "我",
-            "的",
-            "行李箱",
-            "太",
-            "重",
-            "了"
-          ],
-          "pinyin": "Wǒ de xínglǐxiāng tài zhòng le.",
-          "gloss": "My suitcase is too heavy.",
-          "cloze_index": 2
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 44,
+  "sort_order": 45,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

@@ -1,21 +1,21 @@
 {
   "id": "u_hsk4_11",
-  "title": "HSK 4 詞彙 11",
-  "subtitle": "HSK 4 vocabulary · set 11",
+  "title": "職場、公司與市場",
+  "subtitle": "Professions, companies and the economy",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_11_1",
-      "title": "詞彙 11–1",
+      "title": "職業與專業人士",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_抱",
-          "traditional": "抱",
-          "pinyin": "bào",
-          "gloss": "to hold; to carry (in one's arms); to hug",
+          "id": "v_職業",
+          "traditional": "職業",
+          "pinyin": "zhí yè",
+          "gloss": "occupation; profession; vocation; professional",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -28,10 +28,18 @@
           "taiwan_note": null
         },
         {
-          "id": "v_內容",
-          "traditional": "內容",
-          "pinyin": "nèi róng",
-          "gloss": "content; substance; details",
+          "id": "v_管理",
+          "traditional": "管理",
+          "pinyin": "guǎn lǐ",
+          "gloss": "to supervise; to manage; to administer",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_正式",
+          "traditional": "正式",
+          "pinyin": "zhèng shì",
+          "gloss": "formal; official",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -44,18 +52,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_感情",
-          "traditional": "感情",
-          "pinyin": "gǎn qíng",
-          "gloss": "emotion; sentiment; affection",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_觀眾",
-          "traditional": "觀眾",
-          "pinyin": "guān zhòng",
-          "gloss": "spectators; audience; visitors (to an exhibition etc)",
+          "id": "v_目的",
+          "traditional": "目的",
+          "pinyin": "mù dì",
+          "gloss": "purpose; aim; goal; target; objective",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,14 +66,30 @@
     },
     {
       "id": "l_hsk4_11_2",
-      "title": "詞彙 11–2",
+      "title": "公司、市場與競爭",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_目的",
-          "traditional": "目的",
-          "pinyin": "mù dì",
-          "gloss": "purpose; aim; goal; target; objective",
+          "id": "v_市場",
+          "traditional": "市場",
+          "pinyin": "shì chǎng",
+          "gloss": "marketplace; market (also in abstract)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_經濟",
+          "traditional": "經濟",
+          "pinyin": "jīng jì",
+          "gloss": "economy; economic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_競爭",
+          "traditional": "競爭",
+          "pinyin": "jìng zhēng",
+          "gloss": "to compete; competition",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -86,34 +102,18 @@
           "taiwan_note": null
         },
         {
-          "id": "v_美麗",
-          "traditional": "美麗",
-          "pinyin": "měi lì",
-          "gloss": "beautiful",
+          "id": "v_製造",
+          "traditional": "製造",
+          "pinyin": "zhì zào",
+          "gloss": "to manufacture; to make",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_經驗",
-          "traditional": "經驗",
-          "pinyin": "jīng yàn",
-          "gloss": "experience; to experience",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_破",
-          "traditional": "破",
-          "pinyin": "pò",
-          "gloss": "broken; damaged; worn out",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_推",
-          "traditional": "推",
-          "pinyin": "tuī",
-          "gloss": "to push; to cut; to refuse",
+          "id": "v_增加",
+          "traditional": "增加",
+          "pinyin": "zēng jiā",
+          "gloss": "to raise; to increase",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -124,54 +124,54 @@
     },
     {
       "id": "l_hsk4_11_3",
-      "title": "詞彙 11–3",
+      "title": "開會、拒絕與照規矩辦",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_刀",
-          "traditional": "刀",
-          "pinyin": "dāo",
-          "gloss": "knife; blade; single-edged sword",
+          "id": "v_按照",
+          "traditional": "按照",
+          "pinyin": "àn zhào",
+          "gloss": "according to; in accordance with; in the light of",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_科學",
-          "traditional": "科學",
-          "pinyin": "kē xué",
-          "gloss": "science; scientific knowledge; scientific",
+          "id": "v_反對",
+          "traditional": "反對",
+          "pinyin": "fǎn duì",
+          "gloss": "to oppose; to be against; to object to",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_心情",
-          "traditional": "心情",
-          "pinyin": "xīn qíng",
-          "gloss": "mood; frame of mind",
+          "id": "v_拒絕",
+          "traditional": "拒絕",
+          "pinyin": "jù jué",
+          "gloss": "to refuse; to decline; to reject",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_標準",
-          "traditional": "標準",
-          "pinyin": "biāo zhǔn",
-          "gloss": "standard; norm; criterion; (adjective) standard; good; correct; conforming to a standard",
+          "id": "v_麻煩",
+          "traditional": "麻煩",
+          "pinyin": "má fan",
+          "gloss": "trouble; inconvenience; inconvenient; troublesome; annoying; to bother sb; to put sb to trouble",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_職業",
-          "traditional": "職業",
-          "pinyin": "zhí yè",
-          "gloss": "occupation; profession; vocation; professional",
+          "id": "v_不得不",
+          "traditional": "不得不",
+          "pinyin": "bù dé bù",
+          "gloss": "have no choice or option but to; cannot but; have to",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_精彩",
-          "traditional": "精彩",
-          "pinyin": "jīng cǎi",
-          "gloss": "wonderful; marvelous; brilliant",
+          "id": "v_否則",
+          "traditional": "否則",
+          "pinyin": "fǒu zé",
+          "gloss": "otherwise; if not; or (else)",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 55,
+  "sort_order": 59,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

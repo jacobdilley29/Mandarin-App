@@ -1,61 +1,61 @@
 {
   "id": "u_hsk4_30",
-  "title": "HSK 4 詞彙 30",
-  "subtitle": "HSK 4 vocabulary · set 30",
+  "title": "語言、舉例與獎金",
+  "subtitle": "Language classes, explaining your points and money at work",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_30_1",
-      "title": "詞彙 30–1",
+      "title": "報名語言課與翻譯",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_鼓掌",
-          "traditional": "鼓掌",
-          "pinyin": "gǔ zhǎng",
-          "gloss": "to applaud; to clap",
+          "id": "v_民族",
+          "traditional": "民族",
+          "pinyin": "mín zú",
+          "gloss": "nationality; ethnic group",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_瓶子",
-          "traditional": "瓶子",
-          "pinyin": "píng zi",
-          "gloss": "bottle",
+          "id": "v_翻譯",
+          "traditional": "翻譯",
+          "pinyin": "fān yì",
+          "gloss": "to translate; to interpret; translator",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_傳真",
-          "traditional": "傳真",
-          "pinyin": "chuán zhēn",
-          "gloss": "fax; facsimile",
+          "id": "v_閱讀",
+          "traditional": "閱讀",
+          "pinyin": "yuè dú",
+          "gloss": "to read; reading",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_害羞",
-          "traditional": "害羞",
-          "pinyin": "hài xiū",
-          "gloss": "shy; embarrassed; bashful",
+          "id": "v_筆記本",
+          "traditional": "筆記本",
+          "pinyin": "bǐ jì běn",
+          "gloss": "notebook (stationery); notebook (computing)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_握手",
-          "traditional": "握手",
-          "pinyin": "wò shǒu",
-          "gloss": "to shake hands",
+          "id": "v_報名",
+          "traditional": "報名",
+          "pinyin": "bào míng",
+          "gloss": "to sign up; to enter one's name; to apply",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_來得及",
-          "traditional": "來得及",
-          "pinyin": "lái de jí",
-          "gloss": "to have enough time; can do it in time; can still make it",
+          "id": "v_廣播",
+          "traditional": "廣播",
+          "pinyin": "guǎng bō",
+          "gloss": "broadcast; broadcasting; to broadcast",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,54 +66,54 @@
     },
     {
       "id": "l_hsk4_30_2",
-      "title": "詞彙 30–2",
+      "title": "舉例、排順序與相反",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_咳嗽",
-          "traditional": "咳嗽",
-          "pinyin": "ké sou",
-          "gloss": "to cough",
+          "id": "v_例如",
+          "traditional": "例如",
+          "pinyin": "lì rú",
+          "gloss": "for example; for instance; such as",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_研究生",
-          "traditional": "研究生",
-          "pinyin": "yán jiū shēng",
-          "gloss": "graduate student; postgraduate student; research student",
+          "id": "v_其次",
+          "traditional": "其次",
+          "pinyin": "qí cì",
+          "gloss": "next; secondly",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_出差",
-          "traditional": "出差",
-          "pinyin": "chū chāi",
-          "gloss": "to go on an official or business trip",
+          "id": "v_不但",
+          "traditional": "不但",
+          "pinyin": "bù dàn",
+          "gloss": "not only (... but also ...)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_按時",
-          "traditional": "按時",
-          "pinyin": "àn shí",
-          "gloss": "on time; before deadline; on schedule",
+          "id": "v_往往",
+          "traditional": "往往",
+          "pinyin": "wǎng wǎng",
+          "gloss": "usually; in many cases; more often than not",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_流淚",
-          "traditional": "流淚",
-          "pinyin": "liú lèi",
-          "gloss": "to shed tears",
+          "id": "v_相反",
+          "traditional": "相反",
+          "pinyin": "xiāng fǎn",
+          "gloss": "opposite; contrary",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_咸",
-          "traditional": "咸",
-          "pinyin": "xián",
-          "gloss": "all; everyone; each",
+          "id": "v_特點",
+          "traditional": "特點",
+          "pinyin": "tè diǎn",
+          "gloss": "characteristic (feature); trait; feature",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -124,54 +124,54 @@
     },
     {
       "id": "l_hsk4_30_3",
-      "title": "詞彙 30–3",
+      "title": "獎金、信用卡與反映意見",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_加油站",
-          "traditional": "加油站",
-          "pinyin": "jiā yóu zhàn",
-          "gloss": "gas station",
+          "id": "v_獎金",
+          "traditional": "獎金",
+          "pinyin": "jiǎng jīn",
+          "gloss": "premium; award money; bonus",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_節約",
-          "traditional": "節約",
-          "pinyin": "jié yuē",
-          "gloss": "to economize; to conserve (resources); economy",
+          "id": "v_信用卡",
+          "traditional": "信用卡",
+          "pinyin": "xìn yòng kǎ",
+          "gloss": "credit card",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_招聘",
-          "traditional": "招聘",
-          "pinyin": "zhāo pìn",
-          "gloss": "to invite applications for a job; to recruit",
+          "id": "v_窮",
+          "traditional": "窮",
+          "pinyin": "qióng",
+          "gloss": "poor; destitute; to use up",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_活潑",
-          "traditional": "活潑",
-          "pinyin": "huó po",
-          "gloss": "lively; vivacious; brisk",
+          "id": "v_祝賀",
+          "traditional": "祝賀",
+          "pinyin": "zhù hè",
+          "gloss": "to congratulate; congratulations",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_乾燥",
-          "traditional": "乾燥",
-          "pinyin": "gān zào",
-          "gloss": "to dry (of weather, paint, cement etc); desiccation; dull",
+          "id": "v_重視",
+          "traditional": "重視",
+          "pinyin": "zhòng shì",
+          "gloss": "to attach importance to sth; to value",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_簽證",
-          "traditional": "簽證",
-          "pinyin": "qiān zhèng",
-          "gloss": "visa; to issue a visa",
+          "id": "v_反映",
+          "traditional": "反映",
+          "pinyin": "fǎn yìng",
+          "gloss": "to mirror; to reflect; mirror image",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 74,
+  "sort_order": 78,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

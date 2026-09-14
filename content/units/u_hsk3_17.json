@@ -1,0 +1,129 @@
+{
+  "id": "u_hsk3_17",
+  "title": "超市與家裡的一天",
+  "subtitle": "Grocery shopping and keeping house in Taiwan",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_17_1",
+      "title": "去超市買水果",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_超市",
+          "traditional": "超市",
+          "pinyin": "chāo shì",
+          "gloss": "supermarket (abbr. for 超级市场)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_香蕉",
+          "traditional": "香蕉",
+          "pinyin": "xiāng jiāo",
+          "gloss": "banana",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_葡萄",
+          "traditional": "葡萄",
+          "pinyin": "pú táo",
+          "gloss": "grape",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_果汁",
+          "traditional": "果汁",
+          "pinyin": "guǒ zhī",
+          "gloss": "fruit juice",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_渴",
+          "traditional": "渴",
+          "pinyin": "kě",
+          "gloss": "thirsty",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_阿姨",
+          "traditional": "阿姨",
+          "pinyin": "ā yí",
+          "gloss": "maternal aunt; step-mother; childcare worker",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_17_2",
+      "title": "餐桌、家事與打掃",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_麵條",
+          "traditional": "麵條",
+          "pinyin": "miàn tiáo",
+          "gloss": "noodles",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_盤子",
+          "traditional": "盤子",
+          "pinyin": "pán zi",
+          "gloss": "tray; plate; dish",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_筷子",
+          "traditional": "筷子",
+          "pinyin": "kuài zi",
+          "gloss": "chopsticks",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_打掃",
+          "traditional": "打掃",
+          "pinyin": "dǎ sǎo",
+          "gloss": "to clean; to sweep",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_空調",
+          "traditional": "空調",
+          "pinyin": "kōng tiáo",
+          "gloss": "air conditioning; air conditioner (including units that have a heating mode)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗手間",
+          "traditional": "洗手間",
+          "pinyin": "xǐ shǒu jiān",
+          "gloss": "toilet; lavatory; washroom",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 46,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

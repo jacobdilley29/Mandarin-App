@@ -1,45 +1,79 @@
 {
   "id": "u_hsk1_02",
-  "title": "HSK 1 詞彙 2",
-  "subtitle": "HSK 1 vocabulary · set 2",
+  "title": "我的家人",
+  "subtitle": "Family members, pronouns and ages",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_02_1",
-      "title": "詞彙 2–1",
+      "title": "家裡有誰",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_上",
-          "traditional": "上",
-          "pinyin": "shàng",
-          "gloss": "(bound form) up; upper; above; previous; first (of multiple parts); to climb; to get onto; to go up",
+          "id": "v_爸爸",
+          "traditional": "爸爸",
+          "pinyin": "bà ba",
+          "gloss": "(coll.) father; dad",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_來",
-          "traditional": "來",
-          "pinyin": "lái",
-          "gloss": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来)",
+          "id": "v_媽媽",
+          "traditional": "媽媽",
+          "pinyin": "mā ma",
+          "gloss": "mama; mommy; mother",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_很",
-          "traditional": "很",
-          "pinyin": "hěn",
-          "gloss": "(adverb of degree); quite; very",
+          "id": "v_兒子",
+          "traditional": "兒子",
+          "pinyin": "ér zi",
+          "gloss": "son",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_去",
-          "traditional": "去",
-          "pinyin": "qù",
-          "gloss": "to go; to go to (a place); (of a time etc) last",
+          "id": "v_女兒",
+          "traditional": "女兒",
+          "pinyin": "nǚ ér",
+          "gloss": "daughter",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_人",
+          "traditional": "人",
+          "pinyin": "rén",
+          "gloss": "person; people",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_的",
+          "traditional": "的",
+          "pinyin": "de",
+          "gloss": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_02_2",
+      "title": "他和她",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_他",
+          "traditional": "他",
+          "pinyin": "tā",
+          "gloss": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -52,68 +86,34 @@
           "taiwan_note": null
         },
         {
-          "id": "v_想",
-          "traditional": "想",
-          "pinyin": "xiǎng",
-          "gloss": "to think (about); to think of; to devise; to think (that); to believe (that)",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_02_2",
-      "title": "詞彙 2–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_能",
-          "traditional": "能",
-          "pinyin": "néng",
-          "gloss": "can; to be able to; might possibly",
+          "id": "v_我們",
+          "traditional": "我們",
+          "pinyin": "wǒ men",
+          "gloss": "we; us; ourselves",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_那",
-          "traditional": "那",
-          "pinyin": "nà",
-          "gloss": "(archaic) many; beautiful; how",
+          "id": "v_和",
+          "traditional": "和",
+          "pinyin": "hé",
+          "gloss": "(joining two nouns) and; together with; with (Taiwan pr. [hàn]); (math.) sum; to make peace",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_做",
-          "traditional": "做",
-          "pinyin": "zuò",
-          "gloss": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc)",
+          "id": "v_都",
+          "traditional": "都",
+          "pinyin": "dōu",
+          "gloss": "all; both; entirely; (used for emphasis) even; already",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_什麼",
-          "traditional": "什麼",
-          "pinyin": "shén me",
-          "gloss": "what?; something; anything",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_沒",
-          "traditional": "沒",
-          "pinyin": "méi",
-          "gloss": "drowned; to end; to die",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_下",
-          "traditional": "下",
-          "pinyin": "xià",
-          "gloss": "down; downwards; below",
+          "id": "v_有",
+          "traditional": "有",
+          "pinyin": "yǒu",
+          "gloss": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -124,22 +124,30 @@
     },
     {
       "id": "l_hsk1_02_3",
-      "title": "詞彙 2–3",
+      "title": "你幾歲？",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_裡",
-          "traditional": "裡",
-          "pinyin": "lǐ",
-          "gloss": "lining; interior; inside",
+          "id": "v_歲",
+          "traditional": "歲",
+          "pinyin": "suì",
+          "gloss": "classifier for years (of age); year; year (of crop harvests)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_現在",
-          "traditional": "現在",
-          "pinyin": "xiàn zài",
-          "gloss": "now; at present; at the moment",
+          "id": "v_幾",
+          "traditional": "幾",
+          "pinyin": "jǐ",
+          "gloss": "how much; how many; several",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_多少",
+          "traditional": "多少",
+          "pinyin": "duō shǎo",
+          "gloss": "number; amount; somewhat",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -152,10 +160,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_嗎",
-          "traditional": "嗎",
-          "pinyin": "ma",
-          "gloss": "(coll.) what?",
+          "id": "v_少",
+          "traditional": "少",
+          "pinyin": "shǎo",
+          "gloss": "few; less; to lack",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -164,14 +172,6 @@
           "traditional": "太",
           "pinyin": "tài",
           "gloss": "highest; greatest; too (much)",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_呢",
-          "traditional": "呢",
-          "pinyin": "ne",
-          "gloss": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\"); particle for inquiring about location (\"Where is ...?\"); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
           "hsk_level": 1,
           "taiwan_note": null
         }

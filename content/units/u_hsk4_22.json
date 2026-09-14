@@ -1,154 +1,37 @@
 {
   "id": "u_hsk4_22",
-  "title": "HSK 4 詞彙 22",
-  "subtitle": "HSK 4 vocabulary · set 22",
+  "title": "個性、心情與打氣",
+  "subtitle": "Personality, feelings and encouraging each other",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_22_1",
-      "title": "詞彙 22–1",
+      "title": "這個人的個性",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_平時",
-          "traditional": "平時",
-          "pinyin": "píng shí",
-          "gloss": "ordinarily; in normal times; in peacetime",
+          "id": "v_性格",
+          "traditional": "性格",
+          "pinyin": "xìng gé",
+          "gloss": "nature; disposition; temperament",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_辣",
-          "traditional": "辣",
-          "pinyin": "là",
-          "gloss": "hot (spicy); pungent; (of chili pepper, raw onions etc) to sting",
+          "id": "v_積極",
+          "traditional": "積極",
+          "pinyin": "jī jí",
+          "gloss": "active; energetic; vigorous",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_作者",
-          "traditional": "作者",
-          "pinyin": "zuò zhě",
-          "gloss": "author; writer",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_品質",
-          "traditional": "品質",
-          "pinyin": "pǐnzhí",
-          "gloss": "quality; (physics) mass",
-          "hsk_level": 4,
-          "taiwan_note": "台灣說「品質」；「質量」在台灣指物理的 mass。",
-          "prc_form": "質量"
-        },
-        {
-          "id": "v_愉快",
-          "traditional": "愉快",
-          "pinyin": "yú kuài",
-          "gloss": "cheerful; cheerily; delightful",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_準確",
-          "traditional": "準確",
-          "pinyin": "zhǔn què",
-          "gloss": "accurate; exact; precise",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_22_2",
-      "title": "詞彙 22–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_詳細",
-          "traditional": "詳細",
-          "pinyin": "xiáng xì",
-          "gloss": "detailed; in detail; minute",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_禁止",
-          "traditional": "禁止",
-          "pinyin": "jìn zhǐ",
-          "gloss": "to prohibit; to forbid; to ban",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_圓",
-          "traditional": "圓",
-          "pinyin": "yuán",
-          "gloss": "circle; round; circular",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_冷靜",
-          "traditional": "冷靜",
-          "pinyin": "lěng jìng",
-          "gloss": "calm; cool-headed; dispassionate; (of a place) deserted; quiet",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_購物",
-          "traditional": "購物",
-          "pinyin": "gòu wù",
-          "gloss": "shopping",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_數量",
-          "traditional": "數量",
-          "pinyin": "shù liàng",
-          "gloss": "amount; quantity; quantitative",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_22_3",
-      "title": "詞彙 22–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_勇敢",
-          "traditional": "勇敢",
-          "pinyin": "yǒng gǎn",
-          "gloss": "brave; courageous",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_巧克力",
-          "traditional": "巧克力",
-          "pinyin": "qiǎo kè lì",
-          "gloss": "chocolate (loanword)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_富",
-          "traditional": "富",
-          "pinyin": "fù",
-          "gloss": "rich; abundant; wealthy",
+          "id": "v_主動",
+          "traditional": "主動",
+          "pinyin": "zhǔ dòng",
+          "gloss": "to take the initiative; to do sth of one's own accord; spontaneous",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -161,18 +44,134 @@
           "taiwan_note": null
         },
         {
-          "id": "v_性格",
-          "traditional": "性格",
-          "pinyin": "xìng gé",
-          "gloss": "nature; disposition; temperament",
+          "id": "v_勇敢",
+          "traditional": "勇敢",
+          "pinyin": "yǒng gǎn",
+          "gloss": "brave; courageous",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_降低",
-          "traditional": "降低",
-          "pinyin": "jiàng dī",
-          "gloss": "to reduce; to lower; to bring down",
+          "id": "v_浪漫",
+          "traditional": "浪漫",
+          "pinyin": "làng màn",
+          "gloss": "romantic",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_22_2",
+      "title": "難過、感動與原諒",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_傷心",
+          "traditional": "傷心",
+          "pinyin": "shāng xīn",
+          "gloss": "to grieve; to be broken-hearted; to feel deeply hurt",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_感動",
+          "traditional": "感動",
+          "pinyin": "gǎn dòng",
+          "gloss": "to move (sb); to touch (sb emotionally); moving",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_後悔",
+          "traditional": "後悔",
+          "pinyin": "hòu huǐ",
+          "gloss": "to regret; to feel remorse",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_愉快",
+          "traditional": "愉快",
+          "pinyin": "yú kuài",
+          "gloss": "cheerful; cheerily; delightful",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_辛苦",
+          "traditional": "辛苦",
+          "pinyin": "xīn kǔ",
+          "gloss": "exhausting; hard; tough",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_原諒",
+          "traditional": "原諒",
+          "pinyin": "yuán liàng",
+          "gloss": "to excuse; to forgive; to pardon",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_22_3",
+      "title": "信心、理想與將來",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_鼓勵",
+          "traditional": "鼓勵",
+          "pinyin": "gǔ lì",
+          "gloss": "to encourage",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_信心",
+          "traditional": "信心",
+          "pinyin": "xìn xīn",
+          "gloss": "confidence; faith (in sb or sth)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_理想",
+          "traditional": "理想",
+          "pinyin": "lǐ xiǎng",
+          "gloss": "an ideal; a dream; ideal",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_冷靜",
+          "traditional": "冷靜",
+          "pinyin": "lěng jìng",
+          "gloss": "calm; cool-headed; dispassionate; (of a place) deserted; quiet",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_將來",
+          "traditional": "將來",
+          "pinyin": "jiāng lái",
+          "gloss": "in the future; future; the future",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_好處",
+          "traditional": "好處",
+          "pinyin": "hǎo chù",
+          "gloss": "benefit; advantage; merit; gain; profit; also pr. [hǎo chù]",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -182,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 66,
+  "sort_order": 70,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

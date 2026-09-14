@@ -1,87 +1,21 @@
 {
   "id": "u_hsk4_26",
-  "title": "HSK 4 詞彙 26",
-  "subtitle": "HSK 4 vocabulary · set 26",
+  "title": "大自然與數字變化",
+  "subtitle": "Forests, oceans, pollution and describing growth",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_26_1",
-      "title": "詞彙 26–1",
+      "title": "森林、海洋與動植物",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_敲",
-          "traditional": "敲",
-          "pinyin": "qiāo",
-          "gloss": "to hit; to strike; to tap",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_脾氣",
-          "traditional": "脾氣",
-          "pinyin": "pí qi",
-          "gloss": "character; temperament; disposition",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_翻譯",
-          "traditional": "翻譯",
-          "pinyin": "fān yì",
-          "gloss": "to translate; to interpret; translator",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_煩惱",
-          "traditional": "煩惱",
-          "pinyin": "fán nǎo",
-          "gloss": "to be worried; to be distressed; worries",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_特點",
-          "traditional": "特點",
-          "pinyin": "tè diǎn",
-          "gloss": "characteristic (feature); trait; feature",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_往往",
-          "traditional": "往往",
-          "pinyin": "wǎng wǎng",
-          "gloss": "usually; in many cases; more often than not",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_26_2",
-      "title": "詞彙 26–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_風景",
-          "traditional": "風景",
-          "pinyin": "fēng jǐng",
-          "gloss": "scenery; landscape",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_笑話",
-          "traditional": "笑話",
-          "pinyin": "xiào hua",
-          "gloss": "joke; jest; to laugh at; to mock",
+          "id": "v_森林",
+          "traditional": "森林",
+          "pinyin": "sēn lín",
+          "gloss": "forest",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -94,44 +28,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_窗戶",
-          "traditional": "窗戶",
-          "pinyin": "chuāng hu",
-          "gloss": "window",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_不但",
-          "traditional": "不但",
-          "pinyin": "bù dàn",
-          "gloss": "not only (... but also ...)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_代替",
-          "traditional": "代替",
-          "pinyin": "dài tì",
-          "gloss": "to replace; to take the place of",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_26_3",
-      "title": "詞彙 26–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_家具",
-          "traditional": "家具",
-          "pinyin": "jiā jù",
-          "gloss": "furniture",
+          "id": "v_植物",
+          "traditional": "植物",
+          "pinyin": "zhí wù",
+          "gloss": "plant; vegetation",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -144,14 +44,6 @@
           "taiwan_note": null
         },
         {
-          "id": "v_商量",
-          "traditional": "商量",
-          "pinyin": "shāng liang",
-          "gloss": "to consult; to talk over; to discuss",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
           "id": "v_獅子",
           "traditional": "獅子",
           "pinyin": "shī zi",
@@ -160,18 +52,68 @@
           "taiwan_note": null
         },
         {
-          "id": "v_稍微",
-          "traditional": "稍微",
-          "pinyin": "shāo wēi",
-          "gloss": "a little bit",
+          "id": "v_污染",
+          "traditional": "污染",
+          "pinyin": "wū rǎn",
+          "gloss": "to pollute; to contaminate (lit. and fig.)",
+          "hsk_level": 4,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk4_26_2",
+      "title": "數字、增加與不足",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_億",
+          "traditional": "億",
+          "pinyin": "yì",
+          "gloss": "100 million",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_汗",
-          "traditional": "汗",
-          "pinyin": "hàn",
-          "gloss": "perspiration; sweat; to be speechless (out of helplessness, embarrassment etc) (Internet slang used as an interjection)",
+          "id": "v_增長",
+          "traditional": "增長",
+          "pinyin": "zēng zhǎng",
+          "gloss": "to grow; to increase",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_擴大",
+          "traditional": "擴大",
+          "pinyin": "kuò dà",
+          "gloss": "to expand; to enlarge; to broaden one's scope",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_逐漸",
+          "traditional": "逐漸",
+          "pinyin": "zhú jiàn",
+          "gloss": "gradually",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_缺少",
+          "traditional": "缺少",
+          "pinyin": "quē shǎo",
+          "gloss": "lack; shortage of; shortfall",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_極其",
+          "traditional": "極其",
+          "pinyin": "jí qí",
+          "gloss": "extremely",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +123,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 70,
+  "sort_order": 74,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

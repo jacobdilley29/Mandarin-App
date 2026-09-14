@@ -1,53 +1,45 @@
 {
   "id": "u_hsk4_09",
-  "title": "HSK 4 詞彙 9",
-  "subtitle": "HSK 4 vocabulary · set 9",
+  "title": "日常動作與身體狀況",
+  "subtitle": "Everyday actions and describing how things (and you) are",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_09_1",
-      "title": "詞彙 9–1",
+      "title": "出門與家裡的小動作",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_後來",
-          "traditional": "後來",
-          "pinyin": "hòu lái",
-          "gloss": "afterwards; later; newly arrived",
+          "id": "v_往",
+          "traditional": "往",
+          "pinyin": "wǎng",
+          "gloss": "to go (in a direction); to; towards",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_嘴",
-          "traditional": "嘴",
-          "pinyin": "zuǐ",
-          "gloss": "mouth; beak; nozzle",
+          "id": "v_座",
+          "traditional": "座",
+          "pinyin": "zuò",
+          "gloss": "seat; base; stand",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_地址",
-          "traditional": "地址",
-          "pinyin": "dì zhǐ",
-          "gloss": "address",
+          "id": "v_滿",
+          "traditional": "滿",
+          "pinyin": "mǎn",
+          "gloss": "to fill; full; filled",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_無論",
-          "traditional": "無論",
-          "pinyin": "wú lùn",
-          "gloss": "no matter what or how; regardless of whether...",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_緊張",
-          "traditional": "緊張",
-          "pinyin": "jǐn zhāng",
-          "gloss": "nervous; keyed up; intense",
+          "id": "v_收",
+          "traditional": "收",
+          "pinyin": "shōu",
+          "gloss": "to receive; to accept; to collect",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -56,32 +48,6 @@
           "traditional": "省",
           "pinyin": "shěng",
           "gloss": "to save; to economize; to be frugal; to omit; to delete; to leave out; province",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_09_2",
-      "title": "詞彙 9–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_十分",
-          "traditional": "十分",
-          "pinyin": "shí fēn",
-          "gloss": "very; completely; utterly",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_陪",
-          "traditional": "陪",
-          "pinyin": "péi",
-          "gloss": "to accompany; to keep sb company; to assist",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -94,26 +60,10 @@
           "taiwan_note": null
         },
         {
-          "id": "v_本來",
-          "traditional": "本來",
-          "pinyin": "běn lái",
-          "gloss": "original; originally; at first",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_條件",
-          "traditional": "條件",
-          "pinyin": "tiáo jiàn",
-          "gloss": "condition; circumstance; term; factor; requirement; prerequisite; qualification; situation; state; condition",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_廣告",
-          "traditional": "廣告",
-          "pinyin": "guǎng gào",
-          "gloss": "to advertise; a commercial; advertisement",
+          "id": "v_弄",
+          "traditional": "弄",
+          "pinyin": "nòng",
+          "gloss": "to do; to manage; to handle",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -123,55 +73,55 @@
       "sentences": []
     },
     {
-      "id": "l_hsk4_09_3",
-      "title": "詞彙 9–3",
-      "sort_order": 3,
+      "id": "l_hsk4_09_2",
+      "title": "身體、傷口與真假",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_警察",
-          "traditional": "警察",
-          "pinyin": "jǐng chá",
-          "gloss": "police; police officer",
+          "id": "v_血",
+          "traditional": "血",
+          "pinyin": "xiě",
+          "gloss": "blood; colloquial pr. [xiě]",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_關鍵",
-          "traditional": "關鍵",
-          "pinyin": "guān jiàn",
-          "gloss": "crucial point; crux; key",
+          "id": "v_嘴",
+          "traditional": "嘴",
+          "pinyin": "zuǐ",
+          "gloss": "mouth; beak; nozzle",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_樣子",
-          "traditional": "樣子",
-          "pinyin": "yàng zi",
-          "gloss": "appearance; manner; pattern",
+          "id": "v_嚴重",
+          "traditional": "嚴重",
+          "pinyin": "yán zhòng",
+          "gloss": "grave; serious; severe",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_困難",
-          "traditional": "困難",
-          "pinyin": "kùn nan",
-          "gloss": "difficult; challenging; straitened circumstances",
+          "id": "v_深",
+          "traditional": "深",
+          "pinyin": "shēn",
+          "gloss": "deep (lit. and fig.)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_專業",
-          "traditional": "專業",
-          "pinyin": "zhuān yè",
-          "gloss": "specialty; specialized field; main field of study (at university)",
+          "id": "v_自然",
+          "traditional": "自然",
+          "pinyin": "zì rán",
+          "gloss": "nature; natural; naturally",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_難道",
-          "traditional": "難道",
-          "pinyin": "nán dào",
-          "gloss": "don't tell me ...; could it be that...?",
+          "id": "v_假",
+          "traditional": "假",
+          "pinyin": "jiǎ",
+          "gloss": "fake; false; artificial",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +131,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 53,
+  "sort_order": 57,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

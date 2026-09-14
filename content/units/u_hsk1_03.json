@@ -1,103 +1,37 @@
 {
   "id": "u_hsk1_03",
-  "title": "HSK 1 詞彙 3",
-  "subtitle": "HSK 1 vocabulary · set 3",
+  "title": "數字與買東西",
+  "subtitle": "Numbers, prices and shopping in a store",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_03_1",
-      "title": "詞彙 3–1",
+      "title": "零到四",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_時候",
-          "traditional": "時候",
-          "pinyin": "shíhòu",
-          "gloss": "time; length of time; moment",
+          "id": "v_零",
+          "traditional": "零",
+          "pinyin": "líng",
+          "gloss": "zero; nought; zero sign",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_怎麼",
-          "traditional": "怎麼",
-          "pinyin": "zěn me",
-          "gloss": "how?; what?; why?",
+          "id": "v_一",
+          "traditional": "一",
+          "pinyin": "yī",
+          "gloss": "one; single; a (article)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_誰",
-          "traditional": "誰",
-          "pinyin": "shéi",
-          "gloss": "who; also pr. [shuí]",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_月",
-          "traditional": "月",
-          "pinyin": "yuè",
-          "gloss": "moon; month; monthly",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_幾",
-          "traditional": "幾",
-          "pinyin": "jǐ",
-          "gloss": "how much; how many; several",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_叫",
-          "traditional": "叫",
-          "pinyin": "jiào",
-          "gloss": "to shout; to call; to order",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_03_2",
-      "title": "詞彙 3–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_請",
-          "traditional": "請",
-          "pinyin": "qǐng",
-          "gloss": "to ask; to invite; please (do sth)",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_錢",
-          "traditional": "錢",
-          "pinyin": "qián",
-          "gloss": "coin; money; unit of weight, one tenth of a tael 两",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_本",
-          "traditional": "本",
-          "pinyin": "běn",
-          "gloss": "root; stem; origin",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_回",
-          "traditional": "回",
-          "pinyin": "huí",
-          "gloss": "to circle; to go back; to turn around",
+          "id": "v_二",
+          "traditional": "二",
+          "pinyin": "èr",
+          "gloss": "two; 2; (Beijing dialect) stupid",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -110,10 +44,68 @@
           "taiwan_note": null
         },
         {
-          "id": "v_歲",
-          "traditional": "歲",
-          "pinyin": "suì",
-          "gloss": "classifier for years (of age); year; year (of crop harvests)",
+          "id": "v_四",
+          "traditional": "四",
+          "pinyin": "sì",
+          "gloss": "four; 4",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_03_2",
+      "title": "五到十",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_五",
+          "traditional": "五",
+          "pinyin": "wǔ",
+          "gloss": "five; 5",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_六",
+          "traditional": "六",
+          "pinyin": "liù",
+          "gloss": "six; 6",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_七",
+          "traditional": "七",
+          "pinyin": "qī",
+          "gloss": "seven; 7",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_八",
+          "traditional": "八",
+          "pinyin": "bā",
+          "gloss": "eight; 8",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_九",
+          "traditional": "九",
+          "pinyin": "jiǔ",
+          "gloss": "nine; 9",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_十",
+          "traditional": "十",
+          "pinyin": "shí",
+          "gloss": "ten; 10",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -124,54 +116,54 @@
     },
     {
       "id": "l_hsk1_03_3",
-      "title": "詞彙 3–3",
+      "title": "多少錢？",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_住",
-          "traditional": "住",
-          "pinyin": "zhù",
-          "gloss": "to live; to dwell; to stay",
+          "id": "v_錢",
+          "traditional": "錢",
+          "pinyin": "qián",
+          "gloss": "coin; money; unit of weight, one tenth of a tael 两",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_日",
-          "traditional": "日",
-          "pinyin": "rì",
-          "gloss": "sun; day; date, day of the month",
+          "id": "v_塊",
+          "traditional": "塊",
+          "pinyin": "kuài",
+          "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_喝",
-          "traditional": "喝",
-          "pinyin": "hē",
-          "gloss": "to drink; variant of 嗬",
+          "id": "v_個",
+          "traditional": "個",
+          "pinyin": "gè",
+          "gloss": "(classifier used before a noun that has no specific classifier); (bound form) individual",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_認識",
-          "traditional": "認識",
-          "pinyin": "rènshì",
-          "gloss": "to know; to recognize; to be familiar with",
+          "id": "v_些",
+          "traditional": "些",
+          "pinyin": "xiē",
+          "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_分鐘",
-          "traditional": "分鐘",
-          "pinyin": "fēn zhōng",
-          "gloss": "minute",
+          "id": "v_本",
+          "traditional": "本",
+          "pinyin": "běn",
+          "gloss": "root; stem; origin",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_四",
-          "traditional": "四",
-          "pinyin": "sì",
-          "gloss": "four; 4",
+          "id": "v_商店",
+          "traditional": "商店",
+          "pinyin": "shāng diàn",
+          "gloss": "store; shop",
           "hsk_level": 1,
           "taiwan_note": null
         }

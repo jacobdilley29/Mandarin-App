@@ -1,87 +1,30 @@
 {
   "id": "u_hsk1_05",
-  "title": "HSK 1 詞彙 5",
-  "subtitle": "HSK 1 vocabulary · set 5",
+  "title": "出門走走",
+  "subtitle": "Going places around town and位置 words",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_05_1",
-      "title": "詞彙 5–1",
+      "title": "搭車出門",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_十",
-          "traditional": "十",
-          "pinyin": "shí",
-          "gloss": "ten; 10",
+          "id": "v_計程車",
+          "traditional": "計程車",
+          "pinyin": "jìchéngchē",
+          "gloss": "taxi; (Tw) rental car",
           "hsk_level": 1,
-          "taiwan_note": null
+          "taiwan_note": "台灣說「計程車」，口語也說「小黃」。",
+          "prc_form": "出租車"
         },
         {
-          "id": "v_看見",
-          "traditional": "看見",
-          "pinyin": "kàn jiàn",
-          "gloss": "to see; to catch sight of",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_女兒",
-          "traditional": "女兒",
-          "pinyin": "nǚ ér",
-          "gloss": "daughter",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_說話",
-          "traditional": "說話",
-          "pinyin": "shuō huà",
-          "gloss": "to speak; to say; to talk",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_爸爸",
-          "traditional": "爸爸",
-          "pinyin": "bà ba",
-          "gloss": "(coll.) father; dad",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_字",
-          "traditional": "字",
-          "pinyin": "zì",
-          "gloss": "letter; symbol; character",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_05_2",
-      "title": "詞彙 5–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_睡覺",
-          "traditional": "睡覺",
-          "pinyin": "shuì jiào",
-          "gloss": "to go to bed; to sleep",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_讀",
-          "traditional": "讀",
-          "pinyin": "dú",
-          "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
+          "id": "v_火車站",
+          "traditional": "火車站",
+          "pinyin": "huǒ chē zhàn",
+          "gloss": "train station",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -94,26 +37,26 @@
           "taiwan_note": null
         },
         {
-          "id": "v_後面",
-          "traditional": "後面",
-          "pinyin": "hòumiàn",
-          "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+          "id": "v_去",
+          "traditional": "去",
+          "pinyin": "qù",
+          "gloss": "to go; to go to (a place); (of a time etc) last",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_喂",
-          "traditional": "喂",
-          "pinyin": "wéi",
-          "gloss": "hey; to feed (an animal, baby, invalid etc)",
+          "id": "v_來",
+          "traditional": "來",
+          "pinyin": "lái",
+          "gloss": "to come; (used as a substitute for a more specific verb); hither (directional complement for motion toward the speaker, as in 回来)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_八",
-          "traditional": "八",
-          "pinyin": "bā",
-          "gloss": "eight; 8",
+          "id": "v_在",
+          "traditional": "在",
+          "pinyin": "zài",
+          "gloss": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -123,39 +66,39 @@
       "sentences": []
     },
     {
-      "id": "l_hsk1_05_3",
-      "title": "詞彙 5–3",
-      "sort_order": 3,
+      "id": "l_hsk1_05_2",
+      "title": "這裡、那裡",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_怎麼樣",
-          "traditional": "怎麼樣",
-          "pinyin": "zěn me yàng",
-          "gloss": "how?; how about?; how was it?",
+          "id": "v_這",
+          "traditional": "這",
+          "pinyin": "zhè",
+          "gloss": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_七",
-          "traditional": "七",
-          "pinyin": "qī",
-          "gloss": "seven; 7",
+          "id": "v_那",
+          "traditional": "那",
+          "pinyin": "nà",
+          "gloss": "(archaic) many; beautiful; how",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_小姐",
-          "traditional": "小姐",
-          "pinyin": "xiǎojiě",
-          "gloss": "young lady; miss; (slang) prostitute",
+          "id": "v_哪",
+          "traditional": "哪",
+          "pinyin": "nǎ",
+          "gloss": "how; which",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_對不起",
-          "traditional": "對不起",
-          "pinyin": "duì bu qǐ",
-          "gloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
+          "id": "v_裡",
+          "traditional": "裡",
+          "pinyin": "lǐ",
+          "gloss": "lining; interior; inside",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -168,10 +111,68 @@
           "taiwan_note": null
         },
         {
-          "id": "v_同學",
-          "traditional": "同學",
-          "pinyin": "tóng xué",
-          "gloss": "to study at the same school; fellow student; classmate",
+          "id": "v_後面",
+          "traditional": "後面",
+          "pinyin": "hòumiàn",
+          "gloss": "the back; the rear; the last bit; behind; near the end; at the back; later; afterwards",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_05_3",
+      "title": "附近的地方",
+      "sort_order": 3,
+      "vocab": [
+        {
+          "id": "v_醫院",
+          "traditional": "醫院",
+          "pinyin": "yī yuàn",
+          "gloss": "hospital",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_飯館",
+          "traditional": "飯館",
+          "pinyin": "fàn guǎn",
+          "gloss": "restaurant",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_住",
+          "traditional": "住",
+          "pinyin": "zhù",
+          "gloss": "to live; to dwell; to stay",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_上",
+          "traditional": "上",
+          "pinyin": "shàng",
+          "gloss": "(bound form) up; upper; above; previous; first (of multiple parts); to climb; to get onto; to go up",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_下",
+          "traditional": "下",
+          "pinyin": "xià",
+          "gloss": "down; downwards; below",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_看見",
+          "traditional": "看見",
+          "pinyin": "kàn jiàn",
+          "gloss": "to see; to catch sight of",
           "hsk_level": 1,
           "taiwan_note": null
         }

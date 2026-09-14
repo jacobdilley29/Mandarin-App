@@ -1,15 +1,73 @@
 {
   "id": "u_hsk2_08",
-  "title": "HSK 2 詞彙 8",
-  "subtitle": "HSK 2 vocabulary · set 8",
+  "title": "出門旅行",
+  "subtitle": "Buying tickets, dealing with the weather on the road, and staying at a hotel",
   "hsk_level": 2,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk2_08_1",
-      "title": "詞彙 8–1",
+      "title": "訂票與出發",
       "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_票",
+          "traditional": "票",
+          "pinyin": "piào",
+          "gloss": "ticket; ballot; banknote",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_機場",
+          "traditional": "機場",
+          "pinyin": "jī chǎng",
+          "gloss": "airport; airfield; (slang) service provider for Shadowsocks or similar software for circumventing Internet censorship",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_船",
+          "traditional": "船",
+          "pinyin": "chuán",
+          "gloss": "boat; vessel; ship",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_旅遊",
+          "traditional": "旅遊",
+          "pinyin": "lǚ yóu",
+          "gloss": "trip; journey; tourism",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_百",
+          "traditional": "百",
+          "pinyin": "bǎi",
+          "gloss": "hundred; numerous; all kinds of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_千",
+          "traditional": "千",
+          "pinyin": "qiān",
+          "gloss": "thousand",
+          "hsk_level": 2,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_08_2",
+      "title": "旅途的天氣與身體",
+      "sort_order": 2,
       "vocab": [
         {
           "id": "v_晴",
@@ -17,177 +75,114 @@
           "pinyin": "qíng",
           "gloss": "clear; fine (weather)",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "昨天是晴天，我和哥哥去打籃球。",
-            "pinyin": "Zuótiān shì qíngtiān, wǒ hé gēge qù dǎ lánqiú.",
-            "gloss": "Yesterday was a clear day; my older brother and I went to play basketball."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_羊肉",
-          "traditional": "羊肉",
-          "pinyin": "yáng ròu",
-          "gloss": "mutton; goat meat",
+          "id": "v_陰",
+          "traditional": "陰",
+          "pinyin": "yīn",
+          "gloss": "overcast (weather); cloudy; shady",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的羊肉麵很好吃。",
-            "pinyin": "Zhè jiā diàn de yángròu miàn hěn hǎochī.",
-            "gloss": "The mutton noodles at this shop are delicious."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_打籃球",
-          "traditional": "打籃球",
-          "pinyin": "dǎ lán qiú",
-          "gloss": "to play basketball",
+          "id": "v_雪",
+          "traditional": "雪",
+          "pinyin": "xuě",
+          "gloss": "snow; (literary) to wipe away (a humiliation etc)",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "週末我常和同學打籃球。",
-            "pinyin": "Zhōumò wǒ cháng hé tóngxué dǎ lánqiú.",
-            "gloss": "On weekends I often play basketball with my classmates."
-          }
+          "taiwan_note": null
+        },
+        {
+          "id": "v_累",
+          "traditional": "累",
+          "pinyin": "lèi",
+          "gloss": "tired; weary; to strain",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_休息",
+          "traditional": "休息",
+          "pinyin": "xiūxí",
+          "gloss": "rest; to rest",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_生病",
+          "traditional": "生病",
+          "pinyin": "shēng bìng",
+          "gloss": "to fall ill",
+          "hsk_level": 2,
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_08_3",
+      "title": "住飯店問方向",
+      "sort_order": 3,
+      "vocab": [
         {
-          "title": "因為…，所以… (because…, therefore…)",
-          "pattern": "因為 + 原因，所以 + 結果",
-          "explanation": "In Chinese, 因為 introduces the reason and 所以 introduces the result. Unlike English, both words can appear in the same sentence. The 因為 clause comes first, and the subject can go before or after 因為.",
-          "examples": [
-            {
-              "hanzi": "因為昨天是晴天，所以我們去打籃球。",
-              "pinyin": "Yīnwèi zuótiān shì qíngtiān, suǒyǐ wǒmen qù dǎ lánqiú.",
-              "gloss": "Because yesterday was a clear day, we went to play basketball."
-            },
-            {
-              "hanzi": "因為我身體不舒服，所以沒去打籃球。",
-              "pinyin": "Yīnwèi wǒ shēntǐ bù shūfú, suǒyǐ méi qù dǎ lánqiú.",
-              "gloss": "Because I wasn't feeling well, I didn't go play basketball."
-            },
-            {
-              "hanzi": "因為他不吃羊肉，所以我們吃牛肉麵。",
-              "pinyin": "Yīnwèi tā bù chī yángròu, suǒyǐ wǒmen chī niúròu miàn.",
-              "gloss": "Because he doesn't eat mutton, we're having beef noodles."
-            }
-          ],
-          "id": "g_hsk2_08_1_1",
-          "hsk_level": 2
+          "id": "v_服務生",
+          "traditional": "服務生",
+          "pinyin": "fúwùshēng",
+          "gloss": "waiter; waitress; attendant",
+          "hsk_level": 2,
+          "taiwan_note": "台灣餐廳多說「服務生」。",
+          "prc_form": "服務員"
         },
         {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk2_08_1_2",
-          "hsk_level": 2
+          "id": "v_左邊",
+          "traditional": "左邊",
+          "pinyin": "zuǒ bian",
+          "gloss": "left; the left side; to the left of",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_右邊",
+          "traditional": "右邊",
+          "pinyin": "yòu bian",
+          "gloss": "right side; right, to the right",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_旁邊",
+          "traditional": "旁邊",
+          "pinyin": "páng biān",
+          "gloss": "side; adjacent place",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_洗",
+          "traditional": "洗",
+          "pinyin": "xǐ",
+          "gloss": "to wash; to bathe; to develop (photographs); to shuffle (cards etc)",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_報紙",
+          "traditional": "報紙",
+          "pinyin": "bào zhǐ",
+          "gloss": "newspaper; newsprint",
+          "hsk_level": 2,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
-        {
-          "speaker": "A",
-          "hanzi": "喂，週末天氣好嗎？",
-          "pinyin": "Wéi, zhōumò tiānqì hǎo ma?",
-          "gloss": "Hey, is the weather good this weekend?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "電視說週末是晴天。",
-          "pinyin": "Diànshì shuō zhōumò shì qíngtiān.",
-          "gloss": "The TV says this weekend will be clear."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "太好了！我們去打籃球，好不好？",
-          "pinyin": "Tài hǎo le! Wǒmen qù dǎ lánqiú, hǎo bù hǎo?",
-          "gloss": "Great! Let's go play basketball, okay?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "好，打完籃球去吃羊肉麵吧。",
-          "pinyin": "Hǎo, dǎ wán lánqiú qù chī yángròu miàn ba.",
-          "gloss": "Sure, after basketball let's go eat mutton noodles."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "那家店就在捷運站旁邊，很近。",
-          "pinyin": "Nà jiā diàn jiù zài jiéyùn zhàn pángbiān, hěn jìn.",
-          "gloss": "That shop is right next to the MRT station, very close."
-        },
-        {
-          "speaker": "B",
-          "hanzi": "我們早一點去，人不會太多。",
-          "pinyin": "Wǒmen zǎo yìdiǎn qù, rén bú huì tài duō.",
-          "gloss": "Let's go a bit early, then there won't be too many people."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "昨天",
-            "是",
-            "晴天"
-          ],
-          "pinyin": "Zuótiān shì qíngtiān.",
-          "gloss": "Yesterday was a clear day.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "我",
-            "最",
-            "常",
-            "吃",
-            "羊肉",
-            "麵"
-          ],
-          "pinyin": "Wǒ zuì cháng chī yángròu miàn.",
-          "gloss": "I eat mutton noodles the most often.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "他們",
-            "在",
-            "外面",
-            "打籃球"
-          ],
-          "pinyin": "Tāmen zài wàimiàn dǎ lánqiú.",
-          "gloss": "They are playing basketball outside.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "這",
-            "家",
-            "餐廳",
-            "的",
-            "羊肉",
-            "很",
-            "好吃"
-          ],
-          "pinyin": "Zhè jiā cāntīng de yángròu hěn hǎochī.",
-          "gloss": "The mutton at this restaurant is delicious.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "週末",
-            "我",
-            "想",
-            "去",
-            "打籃球"
-          ],
-          "pinyin": "Zhōumò wǒ xiǎng qù dǎ lánqiú.",
-          "gloss": "I want to go play basketball this weekend.",
-          "cloze_index": 4
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 28,
+  "sort_order": 29,
   "tocfl_level": "Level 1",
   "tocfl_band": "A"
 }

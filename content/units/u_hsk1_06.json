@@ -1,96 +1,21 @@
 {
   "id": "u_hsk1_06",
-  "title": "HSK 1 詞彙 6",
-  "subtitle": "HSK 1 vocabulary · set 6",
+  "title": "學中文與同學",
+  "subtitle": "Studying Chinese and school life",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_06_1",
-      "title": "詞彙 6–1",
+      "title": "我學漢語",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_九",
-          "traditional": "九",
-          "pinyin": "jiǔ",
-          "gloss": "nine; 9",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_上午",
-          "traditional": "上午",
-          "pinyin": "shàng wǔ",
-          "gloss": "morning",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_再見",
-          "traditional": "再見",
-          "pinyin": "zài jiàn",
-          "gloss": "goodbye; see you again later",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_中午",
-          "traditional": "中午",
-          "pinyin": "zhōng wǔ",
-          "gloss": "noon; midday",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_計程車",
-          "traditional": "計程車",
-          "pinyin": "jìchéngchē",
-          "gloss": "taxi; (Tw) rental car",
-          "hsk_level": 1,
-          "taiwan_note": "台灣說「計程車」，口語也說「小黃」。",
-          "prc_form": "出租車"
-        },
-        {
-          "id": "v_水果",
-          "traditional": "水果",
-          "pinyin": "shuǐ guǒ",
-          "gloss": "fruit",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_06_2",
-      "title": "詞彙 6–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_商店",
-          "traditional": "商店",
-          "pinyin": "shāng diàn",
-          "gloss": "store; shop",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_沒關係",
-          "traditional": "沒關係",
-          "pinyin": "méiguānxì",
-          "gloss": "it doesn't matter",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_零",
-          "traditional": "零",
-          "pinyin": "líng",
-          "gloss": "zero; nought; zero sign",
+          "id": "v_中國",
+          "traditional": "中國",
+          "pinyin": "Zhōng guó",
+          "gloss": "China",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -103,18 +28,34 @@
           "taiwan_note": null
         },
         {
-          "id": "v_杯子",
-          "traditional": "杯子",
-          "pinyin": "bēi zi",
-          "gloss": "cup; glass",
+          "id": "v_漢語",
+          "traditional": "漢語",
+          "pinyin": "Hàn yǔ",
+          "gloss": "Chinese language",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_火車站",
-          "traditional": "火車站",
-          "pinyin": "huǒ chē zhàn",
-          "gloss": "train station",
+          "id": "v_學習",
+          "traditional": "學習",
+          "pinyin": "xué xí",
+          "gloss": "to learn; to study",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_讀",
+          "traditional": "讀",
+          "pinyin": "dú",
+          "gloss": "to read out; to read aloud; to read; to attend (school); to study (a subject in school)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_字",
+          "traditional": "字",
+          "pinyin": "zì",
+          "gloss": "letter; symbol; character",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -124,40 +65,55 @@
       "sentences": []
     },
     {
-      "id": "l_hsk1_06_3",
-      "title": "詞彙 6–3",
-      "sort_order": 3,
+      "id": "l_hsk1_06_2",
+      "title": "同學與稱呼",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_白飯",
-          "traditional": "白飯",
-          "pinyin": "báifàn",
-          "gloss": "(cooked) rice",
-          "hsk_level": 1,
-          "taiwan_note": "台灣點餐時說「白飯」。",
-          "prc_form": "米飯"
-        },
-        {
-          "id": "v_漢語",
-          "traditional": "漢語",
-          "pinyin": "Hàn yǔ",
-          "gloss": "Chinese language",
+          "id": "v_同學",
+          "traditional": "同學",
+          "pinyin": "tóng xué",
+          "gloss": "to study at the same school; fellow student; classmate",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_飯館",
-          "traditional": "飯館",
-          "pinyin": "fàn guǎn",
-          "gloss": "restaurant",
+          "id": "v_小姐",
+          "traditional": "小姐",
+          "pinyin": "xiǎojiě",
+          "gloss": "young lady; miss; (slang) prostitute",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_不客氣",
-          "traditional": "不客氣",
-          "pinyin": "búkèqì",
-          "gloss": "you're welcome; don't mention it; impolite",
+          "id": "v_先生",
+          "traditional": "先生",
+          "pinyin": "xiānshēng",
+          "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_會",
+          "traditional": "會",
+          "pinyin": "huì",
+          "gloss": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_能",
+          "traditional": "能",
+          "pinyin": "néng",
+          "gloss": "can; to be able to; might possibly",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_怎麼",
+          "traditional": "怎麼",
+          "pinyin": "zěn me",
+          "gloss": "how?; what?; why?",
           "hsk_level": 1,
           "taiwan_note": null
         }

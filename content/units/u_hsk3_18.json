@@ -1,0 +1,129 @@
+{
+  "id": "u_hsk3_18",
+  "title": "教室裡學中文",
+  "subtitle": "Classroom life and studying the language",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_18_1",
+      "title": "上課與文具",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_黑板",
+          "traditional": "黑板",
+          "pinyin": "hēi bǎn",
+          "gloss": "blackboard",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_鉛筆",
+          "traditional": "鉛筆",
+          "pinyin": "qiān bǐ",
+          "gloss": "(lead) pencil",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_年級",
+          "traditional": "年級",
+          "pinyin": "nián jí",
+          "gloss": "grade; year (in school, college etc)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_複習",
+          "traditional": "複習",
+          "pinyin": "fù xí",
+          "gloss": "variant of 复习",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_句子",
+          "traditional": "句子",
+          "pinyin": "jù zi",
+          "gloss": "sentence",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_詞語",
+          "traditional": "詞語",
+          "pinyin": "cí yǔ",
+          "gloss": "word (general term including monosyllables through to short phrases); term (e.g. technical term); expression",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_18_2",
+      "title": "練中文與課餘愛好",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_普通話",
+          "traditional": "普通話",
+          "pinyin": "pǔ tōng huà",
+          "gloss": "Mandarin (common language); Putonghua (common speech of the Chinese language); ordinary speech",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_字典",
+          "traditional": "字典",
+          "pinyin": "zì diǎn",
+          "gloss": "Chinese character dictionary (containing entries for single characters, contrasted with a 词典, which has entries for words of one or more characters); (coll.) dictionary",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_愛好",
+          "traditional": "愛好",
+          "pinyin": "ài hào",
+          "gloss": "to like; to be fond of; to take pleasure in; to be keen on; interest; hobby",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_爬山",
+          "traditional": "爬山",
+          "pinyin": "pá shān",
+          "gloss": "to climb a mountain; to mountaineer; hiking",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_照相機",
+          "traditional": "照相機",
+          "pinyin": "zhào xiàng jī",
+          "gloss": "camera",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_著急",
+          "traditional": "著急",
+          "pinyin": "zháo jí",
+          "gloss": "to worry; to feel anxious; to feel a sense of urgency; to be in a hurry; Taiwan pr. [zhāo jí]",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 47,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

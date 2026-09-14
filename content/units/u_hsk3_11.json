@@ -1,700 +1,171 @@
 {
   "id": "u_hsk3_11",
-  "title": "HSK 3 詞彙 11",
-  "subtitle": "HSK 3 vocabulary · set 11",
+  "title": "娛樂、新聞與人生大事",
+  "subtitle": "Shows, news and celebrating with people",
   "hsk_level": 3,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_11_1",
-      "title": "詞彙 11–1",
+      "title": "表演與節目",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_中間",
-          "traditional": "中間",
-          "pinyin": "zhōng jiān",
-          "gloss": "the middle; the inside; in the middle; within; between; among; during; in the meantime",
+          "id": "v_音樂",
+          "traditional": "音樂",
+          "pinyin": "yīn yuè",
+          "gloss": "music",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我坐在他們兩個人的中間。",
-            "pinyin": "Wǒ zuò zài tāmen liǎng ge rén de zhōngjiān.",
-            "gloss": "I'm sitting between the two of them."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_聰明",
-          "traditional": "聰明",
-          "pinyin": "cōng ming",
-          "gloss": "intelligent; clever; bright",
+          "id": "v_表演",
+          "traditional": "表演",
+          "pinyin": "biǎo yǎn",
+          "gloss": "play; show; performance",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你妹妹真聰明,一下就懂了。",
-            "pinyin": "Nǐ mèimei zhēn cōngmíng, yíxià jiù dǒng le.",
-            "gloss": "Your little sister is really smart; she got it right away."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_多麼",
-          "traditional": "多麼",
-          "pinyin": "duō me",
-          "gloss": "how (wonderful etc); what (a great idea etc); however (difficult it may be etc)",
+          "id": "v_節目",
+          "traditional": "節目",
+          "pinyin": "jié mù",
+          "gloss": "program; item (on a program)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你看,這裡多麼安靜!",
-            "pinyin": "Nǐ kàn, zhèlǐ duōme ānjìng!",
-            "gloss": "Look, how quiet it is here!"
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_燈",
-          "traditional": "燈",
-          "pinyin": "dēng",
-          "gloss": "lamp; light; lantern",
+          "id": "v_畫",
+          "traditional": "畫",
+          "pinyin": "huà",
+          "gloss": "to draw; to paint; picture; painting; to draw (a line) (variant of 划)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "太黑了,請你把燈開一下。",
-            "pinyin": "Tài hēi le, qǐng nǐ bǎ dēng kāi yíxià.",
-            "gloss": "It's too dark; please turn on the light."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_太陽",
-          "traditional": "太陽",
-          "pinyin": "tài yang",
-          "gloss": "sun; abbr. for 太阳穴",
+          "id": "v_照片",
+          "traditional": "照片",
+          "pinyin": "zhào piàn",
+          "gloss": "photograph; picture",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "外面太陽很大,記得帶傘。",
-            "pinyin": "Wàimiàn tàiyáng hěn dà, jìde dài sǎn.",
-            "gloss": "The sun is strong outside; remember to bring an umbrella."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_方便",
-          "traditional": "方便",
-          "pinyin": "fāng biàn",
-          "gloss": "convenient; suitable; to facilitate",
+          "id": "v_教",
+          "traditional": "教",
+          "pinyin": "jiāo",
+          "gloss": "religion; teaching; to make",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "搭捷運去那裡很方便。",
-            "pinyin": "Dā jiéyùn qù nàlǐ hěn fāngbiàn.",
-            "gloss": "It's very convenient to go there by MRT."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
-        {
-          "title": "多麼 + adjective (+ 啊) — how ...!",
-          "pattern": "主語 + 多麼 + 形容詞 + 啊!",
-          "explanation": "多麼 is used before an adjective to express a strong feeling, like English \"how ...!\". It often ends with 啊. In everyday Taiwan speech people also say 多 without 麼, but 多麼 sounds fuller and a bit more emotional.",
-          "examples": [
-            {
-              "hanzi": "這個孩子多麼聰明啊!",
-              "pinyin": "Zhège háizi duōme cōngmíng a!",
-              "gloss": "How clever this child is!"
-            },
-            {
-              "hanzi": "住在捷運站旁邊多麼方便啊!",
-              "pinyin": "Zhù zài jiéyùn zhàn pángbiān duōme fāngbiàn a!",
-              "gloss": "How convenient it is to live next to an MRT station!"
-            },
-            {
-              "hanzi": "你看,外面的太陽多麼大啊!",
-              "pinyin": "Nǐ kàn, wàimiàn de tàiyáng duōme dà a!",
-              "gloss": "Look, how strong the sun is outside!"
-            }
-          ],
-          "id": "g_hsk3_11_1_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_11_1_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小明",
-          "hanzi": "外面太陽好大,你要帶傘嗎?",
-          "pinyin": "Wàimiàn tàiyáng hǎo dà, nǐ yào dài sǎn ma?",
-          "gloss": "The sun is really strong outside. Are you taking an umbrella?"
-        },
-        {
-          "speaker": "小文",
-          "hanzi": "不用,我搭捷運去,很方便。",
-          "pinyin": "Búyòng, wǒ dā jiéyùn qù, hěn fāngbiàn.",
-          "gloss": "No need, I'm taking the MRT; it's very convenient."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "捷運站在哪裡?遠不遠?",
-          "pinyin": "Jiéyùn zhàn zài nǎlǐ? Yuǎn bù yuǎn?",
-          "gloss": "Where's the MRT station? Is it far?"
-        },
-        {
-          "speaker": "小文",
-          "hanzi": "就在銀行和郵局的中間,走路五分鐘。",
-          "pinyin": "Jiù zài yínháng hé yóujú de zhōngjiān, zǒulù wǔ fēnzhōng.",
-          "gloss": "Right between the bank and the post office, five minutes on foot."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "那多麼方便啊!你真聰明。",
-          "pinyin": "Nà duōme fāngbiàn a! Nǐ zhēn cōngmíng.",
-          "gloss": "How convenient that is! You're really smart."
-        },
-        {
-          "speaker": "小文",
-          "hanzi": "我晚上才回來,你先幫我開燈,好嗎?",
-          "pinyin": "Wǒ wǎnshàng cái huílái, nǐ xiān bāng wǒ kāi dēng, hǎo ma?",
-          "gloss": "I won't be back until evening — turn on the light for me first, okay?"
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "銀行",
-            "就",
-            "在",
-            "郵局",
-            "和",
-            "咖啡店",
-            "中間"
-          ],
-          "pinyin": "Yínháng jiù zài yóujú hé kāfēi diàn zhōngjiān.",
-          "gloss": "The bank is right between the post office and the coffee shop.",
-          "cloze_index": 6
-        },
-        {
-          "tokens": [
-            "他",
-            "很",
-            "聰明",
-            "也",
-            "很",
-            "努力"
-          ],
-          "pinyin": "Tā hěn cōngmíng yě hěn nǔlì.",
-          "gloss": "He is smart and also hardworking.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "晚上",
-            "太",
-            "黑",
-            "了",
-            "請",
-            "開",
-            "燈"
-          ],
-          "pinyin": "Wǎnshàng tài hēi le, qǐng kāi dēng.",
-          "gloss": "It's too dark at night; please turn on the light.",
-          "cloze_index": 6
-        },
-        {
-          "tokens": [
-            "外面",
-            "的",
-            "太陽",
-            "多麼",
-            "大",
-            "啊"
-          ],
-          "pinyin": "Wàimiàn de tàiyáng duōme dà a!",
-          "gloss": "How strong the sun outside is!",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "騎",
-            "腳踏車",
-            "上班",
-            "很",
-            "方便"
-          ],
-          "pinyin": "Qí jiǎotàchē shàngbān hěn fāngbiàn.",
-          "gloss": "Riding a bike to work is very convenient.",
-          "cloze_index": 4
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     },
     {
       "id": "l_hsk3_11_2",
-      "title": "詞彙 11–2",
+      "title": "新聞與歷史",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_糖",
-          "traditional": "糖",
-          "pinyin": "táng",
-          "gloss": "sugar; sweets; candy",
+          "id": "v_新聞",
+          "traditional": "新聞",
+          "pinyin": "xīn wén",
+          "gloss": "news",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我的咖啡不要加糖，謝謝。",
-            "pinyin": "wǒ de kāfēi bú yào jiā táng, xièxie.",
-            "gloss": "I don't want sugar in my coffee, thanks."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_相同",
-          "traditional": "相同",
-          "pinyin": "xiāng tóng",
-          "gloss": "identical; same",
+          "id": "v_歷史",
+          "traditional": "歷史",
+          "pinyin": "lì shǐ",
+          "gloss": "history",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我跟你的想法相同。",
-            "pinyin": "wǒ gēn nǐ de xiǎngfǎ xiāngtóng.",
-            "gloss": "My idea is the same as yours."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_生氣",
-          "traditional": "生氣",
-          "pinyin": "shēng qì",
-          "gloss": "to get angry; to take offense; angry",
+          "id": "v_故事",
+          "traditional": "故事",
+          "pinyin": "gù shì",
+          "gloss": "old practice",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你別生氣，我下次不會忘了。",
-            "pinyin": "nǐ bié shēngqì, wǒ xià cì bú huì wàng le.",
-            "gloss": "Don't be angry, I won't forget next time."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_公園",
-          "traditional": "公園",
-          "pinyin": "gōng yuán",
-          "gloss": "park (for public recreation)",
+          "id": "v_變化",
+          "traditional": "變化",
+          "pinyin": "biàn huà",
+          "gloss": "(intransitive) to change; to vary; change; variation",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "週末我常去公園跑步。",
-            "pinyin": "zhōumò wǒ cháng qù gōngyuán pǎobù.",
-            "gloss": "On weekends I often go running in the park."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_熱情",
-          "traditional": "熱情",
-          "pinyin": "rè qíng",
-          "gloss": "cordial; enthusiastic; passion",
+          "id": "v_根據",
+          "traditional": "根據",
+          "pinyin": "gēn jù",
+          "gloss": "according to; based on; basis",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的老闆很熱情喔。",
-            "pinyin": "zhè jiā diàn de lǎobǎn hěn rèqíng ō.",
-            "gloss": "The owner of this shop is really warm and friendly."
-          }
-        },
-        {
-          "id": "v_一下",
-          "traditional": "一下",
-          "pinyin": "yíxià",
-          "gloss": "a moment; a while; in a moment",
-          "hsk_level": 3,
-          "taiwan_note": "台灣少用兒化，說「一下」或「等一下」。",
-          "prc_form": "一會兒",
-          "example": {
-            "hanzi": "你可以幫我看一下嗎？",
-            "pinyin": "nǐ kěyǐ bāng wǒ kàn yíxià ma?",
-            "gloss": "Could you take a look for me for a second?"
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
-        {
-          "title": "動詞 + 一下 (doing something briefly)",
-          "pattern": "Subject + Verb + 一下 (+ Object)",
-          "explanation": "Adding 一下 after a verb makes the action short, light and more polite. It is very common in everyday Taiwanese Mandarin, especially when you ask someone for a small favour: 幫我看一下、問一下、休息一下.",
-          "examples": [
-            {
-              "hanzi": "我想休息一下。",
-              "pinyin": "wǒ xiǎng xiūxí yíxià.",
-              "gloss": "I'd like to rest for a moment."
-            },
-            {
-              "hanzi": "你幫我拿一下那個袋子，好嗎？",
-              "pinyin": "nǐ bāng wǒ ná yíxià nàge dàizi, hǎo ma?",
-              "gloss": "Could you hold that bag for me a second?"
-            },
-            {
-              "hanzi": "我們去公園走一下吧。",
-              "pinyin": "wǒmen qù gōngyuán zǒu yíxià ba.",
-              "gloss": "Let's go walk in the park for a bit."
-            }
-          ],
-          "id": "g_hsk3_11_2_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "A 跟 B 相同 (A and B are the same)",
-          "pattern": "A 跟 B 相同",
-          "explanation": "相同 means 'identical / the same'. Use it after 跟 to compare two things: 我的手機跟你的相同。It can also modify a noun: 相同的問題.",
-          "examples": [
-            {
-              "hanzi": "我的鞋子跟她的相同。",
-              "pinyin": "wǒ de xiézi gēn tā de xiāngtóng.",
-              "gloss": "My shoes are the same as hers."
-            },
-            {
-              "hanzi": "我們喝的茶相同。",
-              "pinyin": "wǒmen hē de chá xiāngtóng.",
-              "gloss": "We drink the same tea."
-            },
-            {
-              "hanzi": "他問了一個相同的問題。",
-              "pinyin": "tā wèn le yí ge xiāngtóng de wèntí.",
-              "gloss": "He asked an identical question."
-            }
-          ],
-          "id": "g_hsk3_11_2_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "A",
-          "hanzi": "週末我們去公園走走，好不好？",
-          "pinyin": "zhōumò wǒmen qù gōngyuán zǒuzou, hǎo bù hǎo?",
-          "gloss": "Let's go for a walk in the park this weekend, OK?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "好啊！我想先去買一杯咖啡。",
-          "pinyin": "hǎo a! wǒ xiǎng xiān qù mǎi yì bēi kāfēi.",
-          "gloss": "Sure! I want to buy a coffee first."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "你的咖啡要加糖嗎？",
-          "pinyin": "nǐ de kāfēi yào jiā táng ma?",
-          "gloss": "Do you want sugar in your coffee?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "不用，我跟你相同，都不加糖。",
-          "pinyin": "bú yòng, wǒ gēn nǐ xiāngtóng, dōu bù jiā táng.",
-          "gloss": "No need, I'm the same as you — no sugar."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "那你快一點，我在門口。",
-          "pinyin": "nà nǐ kuài yìdiǎn, wǒ zài ménkǒu.",
-          "gloss": "Then hurry up, I'm at the door."
-        },
-        {
-          "speaker": "B",
-          "hanzi": "你別生氣，我洗一下手就來！公園裡的人都很熱情耶。",
-          "pinyin": "nǐ bié shēngqì, wǒ xǐ yíxià shǒu jiù lái! gōngyuán lǐ de rén dōu hěn rèqíng ye.",
-          "gloss": "Don't be mad, I'll wash my hands and come right away! People in the park are so friendly."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "想",
-            "去",
-            "公園",
-            "走走"
-          ],
-          "pinyin": "wǒ xiǎng qù gōngyuán zǒuzou.",
-          "gloss": "I want to go for a walk in the park.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "他",
-            "喝",
-            "咖啡",
-            "不",
-            "加",
-            "糖"
-          ],
-          "pinyin": "tā hē kāfēi bù jiā táng.",
-          "gloss": "He drinks coffee without sugar.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "我們",
-            "兩個",
-            "人",
-            "的",
-            "想法",
-            "相同"
-          ],
-          "pinyin": "wǒmen liǎng ge rén de xiǎngfǎ xiāngtóng.",
-          "gloss": "The two of us have the same idea.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "媽媽",
-            "真的",
-            "生氣",
-            "了"
-          ],
-          "pinyin": "māma zhēnde shēngqì le.",
-          "gloss": "Mom is really angry.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "請",
-            "你",
-            "幫",
-            "我",
-            "看",
-            "一下"
-          ],
-          "pinyin": "qǐng nǐ bāng wǒ kàn yíxià.",
-          "gloss": "Please take a look for me.",
-          "cloze_index": 5
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     },
     {
       "id": "l_hsk3_11_3",
-      "title": "詞彙 11–3",
+      "title": "婚禮與祝福",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_河",
-          "traditional": "河",
-          "pinyin": "hé",
-          "gloss": "river",
+          "id": "v_結婚",
+          "traditional": "結婚",
+          "pinyin": "jié hūn",
+          "gloss": "to marry; to get married",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我家附近有一條小河。",
-            "pinyin": "Wǒ jiā fùjìn yǒu yī tiáo xiǎo hé.",
-            "gloss": "There's a small river near my house."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_搬",
-          "traditional": "搬",
-          "pinyin": "bān",
-          "gloss": "to move (i.e. relocate oneself); to move (sth relatively heavy or bulky); to shift",
+          "id": "v_祝",
+          "traditional": "祝",
+          "pinyin": "zhù",
+          "gloss": "to pray for; to wish (sb bon voyage, happy birthday etc); person who invokes the spirits during sacrificial ceremonies",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個週末我要搬家。",
-            "pinyin": "Zhè ge zhōumò wǒ yào bān jiā.",
-            "gloss": "I'm moving house this weekend."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_體育",
-          "traditional": "體育",
-          "pinyin": "tǐ yù",
-          "gloss": "sports; physical education",
+          "id": "v_年輕",
+          "traditional": "年輕",
+          "pinyin": "nián qīng",
+          "gloss": "young",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我最愛上體育課。",
-            "pinyin": "Wǒ zuì ài shàng tǐyù kè.",
-            "gloss": "I love P.E. class the most."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_角",
-          "traditional": "角",
-          "pinyin": "jiǎo",
-          "gloss": "angle; corner; horn",
+          "id": "v_關心",
+          "traditional": "關心",
+          "pinyin": "guān xīn",
+          "gloss": "to be concerned about; to care about",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "那個角放了一張床。",
-            "pinyin": "Nà ge jiǎo fàng le yī zhāng chuáng.",
-            "gloss": "There's a bed put in that corner."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_胖",
-          "traditional": "胖",
-          "pinyin": "pán",
-          "gloss": "healthy; at ease",
+          "id": "v_舉行",
+          "traditional": "舉行",
+          "pinyin": "jǔ xíng",
+          "gloss": "to hold (a meeting, ceremony etc)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我最近吃太多，有點胖了。",
-            "pinyin": "Wǒ zuìjìn chī tài duō, yǒudiǎn pàng le.",
-            "gloss": "I've eaten too much lately and got a bit fat."
-          }
-        },
-        {
-          "id": "v_乾淨",
-          "traditional": "乾淨",
-          "pinyin": "gān jìng",
-          "gloss": "clean; neat",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家餐廳又便宜又乾淨。",
-            "pinyin": "Zhè jiā cāntīng yòu piányí yòu gānjìng.",
-            "gloss": "This restaurant is both cheap and clean."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
-        {
-          "title": "把字句：把 + 東西 + 動詞 + 結果",
-          "pattern": "主語 + 把 + 東西 + 動詞 + 結果（乾淨／到…／進…）",
-          "explanation": "用「把」時，先說要處理的東西，再說動作和動作的結果。常用在「搬」、「洗」這種會讓東西改變位置或樣子的動作上。例如「把床搬到那邊」、「把杯子洗乾淨」。",
-          "examples": [
-            {
-              "hanzi": "請你把那張床搬到角那邊。",
-              "pinyin": "Qǐng nǐ bǎ nà zhāng chuáng bān dào jiǎo nà biān.",
-              "gloss": "Please move that bed to the corner over there."
-            },
-            {
-              "hanzi": "我已經把杯子洗乾淨了。",
-              "pinyin": "Wǒ yǐjīng bǎ bēizi xǐ gānjìng le.",
-              "gloss": "I've already washed the cups clean."
-            },
-            {
-              "hanzi": "他把腳踏車搬進房間了。",
-              "pinyin": "Tā bǎ jiǎotàchē bān jìn fángjiān le.",
-              "gloss": "He moved the bicycle into the room."
-            }
-          ],
-          "id": "g_hsk3_11_3_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_11_3_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小美",
-          "hanzi": "小明，你什麼時候搬家？",
-          "pinyin": "Xiǎo Míng, nǐ shénme shíhòu bān jiā?",
-          "gloss": "Xiao Ming, when are you moving?"
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "這個週末。新房間在河邊，又大又乾淨喔。",
-          "pinyin": "Zhè ge zhōumò. Xīn fángjiān zài hé biān, yòu dà yòu gānjìng ō.",
-          "gloss": "This weekend. The new room is by the river, big and clean."
-        },
-        {
-          "speaker": "小美",
-          "hanzi": "太好了！我可以幫你搬東西。",
-          "pinyin": "Tài hǎo le! Wǒ kěyǐ bāng nǐ bān dōngxi.",
-          "gloss": "Great! I can help you move things."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "謝謝你！請你把那個角的雨傘拿給我。",
-          "pinyin": "Xièxie nǐ! Qǐng nǐ bǎ nà ge jiǎo de yǔsǎn ná gěi wǒ.",
-          "gloss": "Thanks! Please pass me the umbrella in that corner."
-        },
-        {
-          "speaker": "小美",
-          "hanzi": "好。你最近有運動嗎？我覺得你有點胖耶。",
-          "pinyin": "Hǎo. Nǐ zuìjìn yǒu yùndòng ma? Wǒ juéde nǐ yǒudiǎn pàng yē.",
-          "gloss": "OK. Have you been exercising lately? I think you're a bit fat."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "有啦！我每天上體育課，還去河邊跑步。",
-          "pinyin": "Yǒu la! Wǒ měi tiān shàng tǐyù kè, hái qù hé biān pǎobù.",
-          "gloss": "I have! I have P.E. every day and also run by the river."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "這",
-            "條",
-            "河",
-            "很",
-            "乾淨"
-          ],
-          "pinyin": "Zhè tiáo hé hěn gānjìng.",
-          "gloss": "This river is very clean.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "我",
-            "下",
-            "個",
-            "月",
-            "要",
-            "搬家"
-          ],
-          "pinyin": "Wǒ xià ge yuè yào bān jiā.",
-          "gloss": "I'm moving house next month.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "他",
-            "最",
-            "愛",
-            "上",
-            "體育",
-            "課"
-          ],
-          "pinyin": "Tā zuì ài shàng tǐyù kè.",
-          "gloss": "He likes P.E. class the most.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "弟弟",
-            "最近",
-            "胖",
-            "了",
-            "一",
-            "點"
-          ],
-          "pinyin": "Dìdi zuìjìn pàng le yī diǎn.",
-          "gloss": "My younger brother has gotten a bit fatter lately.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "房間",
-            "的",
-            "角",
-            "有",
-            "一",
-            "把",
-            "雨傘"
-          ],
-          "pinyin": "Fángjiān de jiǎo yǒu yī bǎ yǔsǎn.",
-          "gloss": "There's an umbrella in the corner of the room.",
-          "cloze_index": 2
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 39,
+  "sort_order": 40,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

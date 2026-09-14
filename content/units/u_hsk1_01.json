@@ -1,29 +1,29 @@
 {
   "id": "u_hsk1_01",
-  "title": "HSK 1 詞彙 1",
-  "subtitle": "HSK 1 vocabulary · set 1",
+  "title": "打招呼與認識新朋友",
+  "subtitle": "Greetings, polite phrases and introducing yourself",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_01_1",
-      "title": "詞彙 1–1",
+      "title": "你好嗎？",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_的",
-          "traditional": "的",
-          "pinyin": "de",
-          "gloss": "of; ~'s (possessive particle); (used after an attribute); (used to form a nominal expression)",
+          "id": "v_你",
+          "traditional": "你",
+          "pinyin": "nǐ",
+          "gloss": "you (informal, as opposed to courteous 您)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_了",
-          "traditional": "了",
-          "pinyin": "le",
-          "gloss": "to finish; to achieve; variant of 了",
+          "id": "v_好",
+          "traditional": "好",
+          "pinyin": "hǎo",
+          "gloss": "good; appropriate; proper; all right!",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -44,18 +44,18 @@
           "taiwan_note": null
         },
         {
-          "id": "v_你",
-          "traditional": "你",
-          "pinyin": "nǐ",
-          "gloss": "you (informal, as opposed to courteous 您)",
+          "id": "v_嗎",
+          "traditional": "嗎",
+          "pinyin": "ma",
+          "gloss": "(coll.) what?",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_在",
-          "traditional": "在",
-          "pinyin": "zài",
-          "gloss": "to exist; to be alive; (of sb or sth) to be (located) at; (used before a verb to indicate an action in progress)",
+          "id": "v_呢",
+          "traditional": "呢",
+          "pinyin": "ne",
+          "gloss": "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\"); particle for inquiring about location (\"Where is ...?\"); particle signaling a pause, to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -66,54 +66,54 @@
     },
     {
       "id": "l_hsk1_01_2",
-      "title": "詞彙 1–2",
+      "title": "請、謝謝、對不起",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_不",
-          "traditional": "不",
-          "pinyin": "bù",
-          "gloss": "no; not so; (bound form) not; un-",
+          "id": "v_請",
+          "traditional": "請",
+          "pinyin": "qǐng",
+          "gloss": "to ask; to invite; please (do sth)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_有",
-          "traditional": "有",
-          "pinyin": "yǒu",
-          "gloss": "to have; there is; (bound form) having; with; -ful; -ed; -al (as in 意 intentional)",
+          "id": "v_謝謝",
+          "traditional": "謝謝",
+          "pinyin": "xiè xie",
+          "gloss": "to thank; thanks; thank you",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_他",
-          "traditional": "他",
-          "pinyin": "tā",
-          "gloss": "he; him (used for either sex when the sex is unknown or unimportant); (used before sb's name for emphasis); (used as a meaningless mock object)",
+          "id": "v_不客氣",
+          "traditional": "不客氣",
+          "pinyin": "búkèqì",
+          "gloss": "you're welcome; don't mention it; impolite",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_這",
-          "traditional": "這",
-          "pinyin": "zhè",
-          "gloss": "(pronoun) this; these; (bound form) this; the (followed by a noun); (bound form) this; these (followed by a classifier) (in this sense, commonly pr. [zhèi], esp. in Beijing)",
+          "id": "v_對不起",
+          "traditional": "對不起",
+          "pinyin": "duì bu qǐ",
+          "gloss": "I'm sorry; excuse me; I beg your pardon; to let (sb) down; to disappoint",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_個",
-          "traditional": "個",
-          "pinyin": "gè",
-          "gloss": "(classifier used before a noun that has no specific classifier); (bound form) individual",
+          "id": "v_沒關係",
+          "traditional": "沒關係",
+          "pinyin": "méiguānxì",
+          "gloss": "it doesn't matter",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_和",
-          "traditional": "和",
-          "pinyin": "hàn",
-          "gloss": "(joining two nouns) and; together with; with (Taiwan pr. [hàn]); (math.) sum; to make peace",
+          "id": "v_再見",
+          "traditional": "再見",
+          "pinyin": "zài jiàn",
+          "gloss": "goodbye; see you again later",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -124,54 +124,54 @@
     },
     {
       "id": "l_hsk1_01_3",
-      "title": "詞彙 1–3",
+      "title": "你叫什麼？",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_人",
-          "traditional": "人",
-          "pinyin": "rén",
-          "gloss": "person; people",
+          "id": "v_叫",
+          "traditional": "叫",
+          "pinyin": "jiào",
+          "gloss": "to shout; to call; to order",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_我們",
-          "traditional": "我們",
-          "pinyin": "wǒ men",
-          "gloss": "we; us; ourselves",
+          "id": "v_什麼",
+          "traditional": "什麼",
+          "pinyin": "shén me",
+          "gloss": "what?; something; anything",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_好",
-          "traditional": "好",
-          "pinyin": "hǎo",
-          "gloss": "good; appropriate; proper; all right!",
+          "id": "v_認識",
+          "traditional": "認識",
+          "pinyin": "rènshì",
+          "gloss": "to know; to recognize; to be familiar with",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_一",
-          "traditional": "一",
-          "pinyin": "yī",
-          "gloss": "one; single; a (article)",
+          "id": "v_說話",
+          "traditional": "說話",
+          "pinyin": "shuō huà",
+          "gloss": "to speak; to say; to talk",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_會",
-          "traditional": "會",
-          "pinyin": "huì",
-          "gloss": "can; to have the skill; to know how to; to be likely to; to be sure to; to meet; to get together",
+          "id": "v_喂",
+          "traditional": "喂",
+          "pinyin": "wéi",
+          "gloss": "hey; to feed (an animal, baby, invalid etc)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_都",
-          "traditional": "都",
-          "pinyin": "dōu",
-          "gloss": "all; both; entirely; (used for emphasis) even; already",
+          "id": "v_誰",
+          "traditional": "誰",
+          "pinyin": "shéi",
+          "gloss": "who; also pr. [shuí]",
           "hsk_level": 1,
           "taiwan_note": null
         }

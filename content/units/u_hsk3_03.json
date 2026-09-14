@@ -1,54 +1,81 @@
 {
   "id": "u_hsk3_03",
-  "title": "HSK 3 詞彙 3",
-  "subtitle": "HSK 3 vocabulary · set 3",
+  "title": "遇到問題怎麼辦",
+  "subtitle": "When something goes wrong and you need to sort it out",
   "hsk_level": 3,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_03_1",
-      "title": "詞彙 3–1",
+      "title": "想辦法解決",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_為什麼",
-          "traditional": "為什麼",
-          "pinyin": "wèi shén me",
-          "gloss": "why?; for what reason?",
+          "id": "v_辦法",
+          "traditional": "辦法",
+          "pinyin": "bàn fǎ",
+          "gloss": "means; method; way (of doing sth)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你昨天為什麼沒來上課？",
-            "pinyin": "Nǐ zuótiān wèishénme méi lái shàngkè?",
-            "gloss": "Why didn't you come to class yesterday?"
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_先",
-          "traditional": "先",
-          "pinyin": "xiān",
-          "gloss": "early; prior; former",
+          "id": "v_解決",
+          "traditional": "解決",
+          "pinyin": "jiě jué",
+          "gloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我先去買飲料，你在這裡坐一下。",
-            "pinyin": "Wǒ xiān qù mǎi yǐnliào, nǐ zài zhèlǐ zuò yíxià.",
-            "gloss": "I'll go buy drinks first; you sit here a moment."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_關係",
-          "traditional": "關係",
-          "pinyin": "guān xi",
-          "gloss": "relation; relationship; to concern",
+          "id": "v_難",
+          "traditional": "難",
+          "pinyin": "nán",
+          "gloss": "difficult (to...); problem; difficulty",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "沒關係，我們慢慢說。",
-            "pinyin": "Méi guānxi, wǒmen mànman shuō.",
-            "gloss": "It's OK, let's talk slowly."
-          }
+          "taiwan_note": null
+        },
+        {
+          "id": "v_擔心",
+          "traditional": "擔心",
+          "pinyin": "dān xīn",
+          "gloss": "anxious; worried; uneasy",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_注意",
+          "traditional": "注意",
+          "pinyin": "zhù yì",
+          "gloss": "to take note of; to pay attention to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_重要",
+          "traditional": "重要",
+          "pinyin": "zhòng yào",
+          "gloss": "important; significant; major",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_03_2",
+      "title": "發生什麼事了？",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_發現",
+          "traditional": "發現",
+          "pinyin": "fā xiàn",
+          "gloss": "to notice; to become aware of; to discover; to find; to detect; a discovery",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
           "id": "v_出現",
@@ -56,451 +83,15 @@
           "pinyin": "chū xiàn",
           "gloss": "to appear; to arise; to emerge",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "那個人又出現了。",
-            "pinyin": "Nàge rén yòu chūxiàn le.",
-            "gloss": "That person showed up again."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_了解",
-          "traditional": "了解",
-          "pinyin": "liǎo jiě",
-          "gloss": "to understand; to realize; to find out",
+          "id": "v_被",
+          "traditional": "被",
+          "pinyin": "bèi",
+          "gloss": "quilt; to cover (with); (literary) to suffer (a misfortune)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我不太了解你的意思。",
-            "pinyin": "Wǒ bú tài liǎojiě nǐ de yìsi.",
-            "gloss": "I don't quite understand what you mean."
-          }
-        },
-        {
-          "id": "v_過去",
-          "traditional": "過去",
-          "pinyin": "guò qù",
-          "gloss": "(in the) past; former; previous",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "過去我常常騎腳踏車上班。",
-            "pinyin": "Guòqù wǒ chángcháng qí jiǎotàchē shàngbān.",
-            "gloss": "In the past I often rode a bike to work."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "先……再…… (first… then…)",
-          "pattern": "Subject + 先 + V1，(再/才) + V2",
-          "explanation": "用「先」說第一件事，用「再」說下一件事。「先」放在動詞前面，不放在句子最前面的主語前。也可以說「我們先……，等一下再……」。",
-          "examples": [
-            {
-              "hanzi": "我們先吃飯，再去看電影。",
-              "pinyin": "Wǒmen xiān chīfàn, zài qù kàn diànyǐng.",
-              "gloss": "Let's eat first, then go see a movie."
-            },
-            {
-              "hanzi": "你先洗手，再吃東西。",
-              "pinyin": "Nǐ xiān xǐshǒu, zài chī dōngxi.",
-              "gloss": "Wash your hands first, then eat."
-            },
-            {
-              "hanzi": "我先去郵局，再去銀行。",
-              "pinyin": "Wǒ xiān qù yóujú, zài qù yínháng.",
-              "gloss": "I'll go to the post office first, then the bank."
-            }
-          ],
-          "id": "g_hsk3_03_1_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "為什麼 (why)",
-          "pattern": "Subject + 為什麼 + V/Adj？",
-          "explanation": "「為什麼」問原因，放在動詞前面。回答時常用「因為……」。",
-          "examples": [
-            {
-              "hanzi": "你為什麼不吃早餐？",
-              "pinyin": "Nǐ wèishénme bù chī zǎocān?",
-              "gloss": "Why don't you eat breakfast?"
-            },
-            {
-              "hanzi": "他為什麼還沒出現？",
-              "pinyin": "Tā wèishénme hái méi chūxiàn?",
-              "gloss": "Why hasn't he shown up yet?"
-            },
-            {
-              "hanzi": "因為下雨，所以我搭捷運。",
-              "pinyin": "Yīnwèi xiàyǔ, suǒyǐ wǒ dā jiéyùn.",
-              "gloss": "Because it's raining, I take the MRT."
-            }
-          ],
-          "id": "g_hsk3_03_1_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小安",
-          "hanzi": "小雨，老闆為什麼還沒出現？",
-          "pinyin": "Xiǎo Yǔ, lǎobǎn wèishénme hái méi chūxiàn?",
-          "gloss": "Xiao Yu, why hasn't the boss shown up yet?"
-        },
-        {
-          "speaker": "小雨",
-          "hanzi": "他說他先去郵局，晚一點才會到。",
-          "pinyin": "Tā shuō tā xiān qù yóujú, wǎn yìdiǎn cái huì dào.",
-          "gloss": "He said he's going to the post office first and will arrive a bit later."
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "沒關係，我們先去旁邊喝杯咖啡吧。",
-          "pinyin": "Méi guānxi, wǒmen xiān qù pángbiān hē bēi kāfēi ba.",
-          "gloss": "No problem, let's go next door for a cup of coffee first."
-        },
-        {
-          "speaker": "小雨",
-          "hanzi": "好啊，過去我常常來這家店。",
-          "pinyin": "Hǎo a, guòqù wǒ chángcháng lái zhè jiā diàn.",
-          "gloss": "Sure, I used to come to this shop a lot."
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "現在我了解你為什麼喜歡這裡了，很安靜。",
-          "pinyin": "Xiànzài wǒ liǎojiě nǐ wèishénme xǐhuān zhèlǐ le, hěn ānjìng.",
-          "gloss": "Now I understand why you like it here — it's very quiet."
-        },
-        {
-          "speaker": "小雨",
-          "hanzi": "對啊，坐在這裡很舒服喔。",
-          "pinyin": "Duì a, zuò zài zhèlǐ hěn shūfú o.",
-          "gloss": "Right, sitting here feels really comfortable."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "你",
-            "為什麼",
-            "不",
-            "吃",
-            "早餐"
-          ],
-          "pinyin": "Nǐ wèishénme bù chī zǎocān?",
-          "gloss": "Why don't you eat breakfast?",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "我們",
-            "先",
-            "搭",
-            "捷運",
-            "過去",
-            "吧"
-          ],
-          "pinyin": "Wǒmen xiān dā jiéyùn guòqù ba.",
-          "gloss": "Let's take the MRT over there first.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "沒",
-            "關係",
-            "你",
-            "慢慢",
-            "說"
-          ],
-          "pinyin": "Méi guānxi, nǐ mànman shuō.",
-          "gloss": "It's fine, take your time and speak slowly.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "老闆",
-            "還",
-            "沒",
-            "出現"
-          ],
-          "pinyin": "Lǎobǎn hái méi chūxiàn.",
-          "gloss": "The boss hasn't shown up yet.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "我",
-            "現在",
-            "了解",
-            "你",
-            "的",
-            "意思",
-            "了"
-          ],
-          "pinyin": "Wǒ xiànzài liǎojiě nǐ de yìsi le.",
-          "gloss": "Now I understand what you mean.",
-          "cloze_index": 2
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_03_2",
-      "title": "詞彙 3–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_參加",
-          "traditional": "參加",
-          "pinyin": "cān jiā",
-          "gloss": "to participate; to take part; to join",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我想參加這個籃球比賽。",
-            "pinyin": "wǒ xiǎng cān jiā zhè ge lán qiú bǐ sài.",
-            "gloss": "I want to take part in this basketball game."
-          }
-        },
-        {
-          "id": "v_國家",
-          "traditional": "國家",
-          "pinyin": "guó jiā",
-          "gloss": "country; nation; state",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你去過幾個國家？",
-            "pinyin": "nǐ qù guò jǐ ge guó jiā?",
-            "gloss": "How many countries have you been to?"
-          }
-        },
-        {
-          "id": "v_決定",
-          "traditional": "決定",
-          "pinyin": "jué dìng",
-          "gloss": "to decide (to do something); to resolve; decision",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我決定週末去看電影。",
-            "pinyin": "wǒ jué dìng zhōu mò qù kàn diàn yǐng.",
-            "gloss": "I've decided to go see a movie this weekend."
-          }
-        },
-        {
-          "id": "v_分",
-          "traditional": "分",
-          "pinyin": "fēn",
-          "gloss": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad)",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "老闆把錢分給三個人。",
-            "pinyin": "lǎo bǎn bǎ qián fēn gěi sān ge rén.",
-            "gloss": "The boss divided the money among three people."
-          }
-        },
-        {
-          "id": "v_選擇",
-          "traditional": "選擇",
-          "pinyin": "xuǎn zé",
-          "gloss": "to select; to pick; choice",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的東西很多，選擇也很多。",
-            "pinyin": "zhè jiā diàn de dōng xi hěn duō, xuǎn zé yě hěn duō.",
-            "gloss": "This shop has a lot of stuff, so there are many choices."
-          }
-        },
-        {
-          "id": "v_或者",
-          "traditional": "或者",
-          "pinyin": "huò zhě",
-          "gloss": "or; possibly; maybe; perhaps",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我們可以搭捷運或者騎腳踏車。",
-            "pinyin": "wǒ men kě yǐ dā jié yùn huò zhě qí jiǎo tà chē.",
-            "gloss": "We can take the MRT or ride bicycles."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "Using 或者 to say \"or\" in statements",
-          "pattern": "A ＋ 或者 ＋ B",
-          "explanation": "或者 means \"or\" and is used in statements to give two possible choices. In questions where you ask someone to pick one, Taiwanese Mandarin uses 還是 instead. So: 你要喝茶還是咖啡？(question) but 我想喝茶或者咖啡。(statement).",
-          "examples": [
-            {
-              "hanzi": "你可以喝茶或者喝咖啡。",
-              "pinyin": "nǐ kě yǐ hē chá huò zhě hē kā fēi.",
-              "gloss": "You can drink tea or coffee."
-            },
-            {
-              "hanzi": "我週末想看電影或者逛夜市。",
-              "pinyin": "wǒ zhōu mò xiǎng kàn diàn yǐng huò zhě guàng yè shì.",
-              "gloss": "This weekend I want to see a movie or go to the night market."
-            },
-            {
-              "hanzi": "我還沒決定要參加籃球賽或者游泳比賽。",
-              "pinyin": "wǒ hái méi jué dìng yào cān jiā lán qiú sài huò zhě yóu yǒng bǐ sài.",
-              "gloss": "I haven't decided whether to join the basketball game or the swimming competition."
-            }
-          ],
-          "id": "g_hsk3_03_2_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_03_2_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小美",
-          "hanzi": "週末你有時間嗎？我想參加路跑比賽。",
-          "pinyin": "zhōu mò nǐ yǒu shí jiān ma? wǒ xiǎng cān jiā lù pǎo bǐ sài.",
-          "gloss": "Do you have time this weekend? I want to join the road race."
-        },
-        {
-          "speaker": "阿明",
-          "hanzi": "有啊，可是我還沒決定要參加路跑或者游泳。",
-          "pinyin": "yǒu a, kě shì wǒ hái méi jué dìng yào cān jiā lù pǎo huò zhě yóu yǒng.",
-          "gloss": "Yes, but I haven't decided whether to do the road race or swimming."
-        },
-        {
-          "speaker": "小美",
-          "hanzi": "你選擇路跑吧，我們可以一起跑。",
-          "pinyin": "nǐ xuǎn zé lù pǎo ba, wǒ men kě yǐ yì qǐ pǎo.",
-          "gloss": "Choose the road race, then we can run together."
-        },
-        {
-          "speaker": "阿明",
-          "hanzi": "好啊！那我們怎麼去？搭捷運嗎？",
-          "pinyin": "hǎo a! nà wǒ men zěn me qù? dā jié yùn ma?",
-          "gloss": "OK! So how do we get there? By MRT?"
-        },
-        {
-          "speaker": "小美",
-          "hanzi": "搭捷運或者騎腳踏車都可以。",
-          "pinyin": "dā jié yùn huò zhě qí jiǎo tà chē dōu kě yǐ.",
-          "gloss": "MRT or bicycle, both are fine."
-        },
-        {
-          "speaker": "阿明",
-          "hanzi": "那我決定搭捷運，捷運更快。以後我還想去別的國家參加比賽喔！",
-          "pinyin": "nà wǒ jué dìng dā jié yùn, jié yùn gèng kuài. yǐ hòu wǒ hái xiǎng qù bié de guó jiā cān jiā bǐ sài o!",
-          "gloss": "Then I've decided on the MRT, it's faster. In the future I also want to go to other countries to compete!"
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "決定",
-            "參加",
-            "這個",
-            "比賽",
-            "。"
-          ],
-          "pinyin": "wǒ jué dìng cān jiā zhè ge bǐ sài.",
-          "gloss": "I've decided to take part in this competition.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "你",
-            "去過",
-            "幾個",
-            "國家",
-            "？"
-          ],
-          "pinyin": "nǐ qù guò jǐ ge guó jiā?",
-          "gloss": "How many countries have you been to?",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "我們",
-            "搭",
-            "捷運",
-            "或者",
-            "騎",
-            "腳踏車",
-            "去",
-            "。"
-          ],
-          "pinyin": "wǒ men dā jié yùn huò zhě qí jiǎo tà chē qù.",
-          "gloss": "We'll go by MRT or by bicycle.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "這",
-            "家",
-            "店",
-            "的",
-            "選擇",
-            "很",
-            "多",
-            "。"
-          ],
-          "pinyin": "zhè jiā diàn de xuǎn zé hěn duō.",
-          "gloss": "This shop has a lot of choices.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "老闆",
-            "把",
-            "錢",
-            "分",
-            "給",
-            "大家",
-            "。"
-          ],
-          "pinyin": "lǎo bǎn bǎ qián fēn gěi dà jiā.",
-          "gloss": "The boss divided the money among everyone.",
-          "cloze_index": 3
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_03_3",
-      "title": "詞彙 3–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_機會",
-          "traditional": "機會",
-          "pinyin": "jī huì",
-          "gloss": "opportunity; chance; occasion",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個機會很好,你要去試試看。",
-            "pinyin": "Zhè ge jīhuì hěn hǎo, nǐ yào qù shìshi kàn.",
-            "gloss": "This is a great opportunity; you should give it a try."
-          }
-        },
-        {
-          "id": "v_別人",
-          "traditional": "別人",
-          "pinyin": "bié ren",
-          "gloss": "other people; others; other person",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "別人的東西不可以拿。",
-            "pinyin": "Biéren de dōngxi bù kěyǐ ná.",
-            "gloss": "You can't take other people's things."
-          }
+          "taiwan_note": null
         },
         {
           "id": "v_使",
@@ -508,188 +99,89 @@
           "pinyin": "shǐ",
           "gloss": "to make; to cause; to enable",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這件事使我很累。",
-            "pinyin": "Zhè jiàn shì shǐ wǒ hěn lèi.",
-            "gloss": "This matter makes me very tired."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_其實",
-          "traditional": "其實",
-          "pinyin": "qí shí",
-          "gloss": "actually; in fact; really",
+          "id": "v_關係",
+          "traditional": "關係",
+          "pinyin": "guān xi",
+          "gloss": "relation; relationship; to concern",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "其實我不太想去。",
-            "pinyin": "Qíshí wǒ bú tài xiǎng qù.",
-            "gloss": "Actually, I don't really want to go."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_以後",
-          "traditional": "以後",
-          "pinyin": "yǐ hòu",
-          "gloss": "after; later; afterwards",
+          "id": "v_影響",
+          "traditional": "影響",
+          "pinyin": "yǐng xiǎng",
+          "gloss": "influence; effect; to influence",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "以後有機會再來我家玩。",
-            "pinyin": "Yǐhòu yǒu jīhuì zài lái wǒ jiā wán.",
-            "gloss": "Come over to my place again sometime later when you get the chance."
-          }
-        },
-        {
-          "id": "v_要求",
-          "traditional": "要求",
-          "pinyin": "yāo qiú",
-          "gloss": "to request; to require; requirement",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "老闆要求我們八點到公司。",
-            "pinyin": "Lǎobǎn yāoqiú wǒmen bā diǎn dào gōngsī.",
-            "gloss": "The boss requires us to be at the company by eight."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_03_3",
+      "title": "動手處理：拿、放、把",
+      "sort_order": 3,
+      "vocab": [
         {
-          "title": "A 使 B + 感覺/形容詞 (A makes B feel ...)",
-          "pattern": "A + 使 + 人 + 感覺/形容詞",
-          "explanation": "使 means \"to make; to cause\". The thing that causes the feeling goes first, then 使, then the person, then how that person feels or becomes. 使 is a little more formal than 讓, and is common in writing and in polite spoken Mandarin.",
-          "examples": [
-            {
-              "hanzi": "這件事使我很開心。",
-              "pinyin": "Zhè jiàn shì shǐ wǒ hěn kāixīn.",
-              "gloss": "This makes me very happy."
-            },
-            {
-              "hanzi": "運動使身體更好。",
-              "pinyin": "Yùndòng shǐ shēntǐ gèng hǎo.",
-              "gloss": "Exercise makes the body healthier."
-            },
-            {
-              "hanzi": "這個機會使他更有信心。",
-              "pinyin": "Zhè ge jīhuì shǐ tā gèng yǒu xìnxīn.",
-              "gloss": "This opportunity makes him more confident."
-            }
-          ],
-          "id": "g_hsk3_03_3_1",
-          "hsk_level": 3
+          "id": "v_把",
+          "traditional": "把",
+          "pinyin": "bǎ",
+          "gloss": "to hold; to grasp; to hold a baby in position to help it urinate or defecate; handlebar",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_放",
+          "traditional": "放",
+          "pinyin": "fàng",
+          "gloss": "to put; to place; to release",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_拿",
+          "traditional": "拿",
+          "pinyin": "ná",
+          "gloss": "to hold; to seize; to catch",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_接",
+          "traditional": "接",
+          "pinyin": "jiē",
+          "gloss": "to receive; to answer (the phone); to meet or welcome sb",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_用",
+          "traditional": "用",
+          "pinyin": "yòng",
+          "gloss": "to use; to employ; to have to",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_地",
+          "traditional": "地",
+          "pinyin": "de",
+          "gloss": "earth; ground; field",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
-        {
-          "speaker": "小方",
-          "hanzi": "你怎麼了?看起來很累。",
-          "pinyin": "Nǐ zěnme le? Kàn qǐlái hěn lèi.",
-          "gloss": "What's up with you? You look really tired."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "老闆要求我們週末也要上班。",
-          "pinyin": "Lǎobǎn yāoqiú wǒmen zhōumò yě yào shàngbān.",
-          "gloss": "The boss requires us to work on weekends too."
-        },
-        {
-          "speaker": "小方",
-          "hanzi": "其實你可以跟他說你有事。",
-          "pinyin": "Qíshí nǐ kěyǐ gēn tā shuō nǐ yǒu shì.",
-          "gloss": "Actually, you could tell him you have something on."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "我知道,可是這個機會很好,別人也很想要。",
-          "pinyin": "Wǒ zhīdào, kěshì zhè ge jīhuì hěn hǎo, biéren yě hěn xiǎng yào.",
-          "gloss": "I know, but this is a good opportunity, and others want it too."
-        },
-        {
-          "speaker": "小方",
-          "hanzi": "那你先休息一下,以後身體才不會出問題。",
-          "pinyin": "Nà nǐ xiān xiūxí yíxià, yǐhòu shēntǐ cái bú huì chū wèntí.",
-          "gloss": "Then rest a bit first, so your health won't have problems later."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "好,你的話使我感覺好多了,謝謝你。",
-          "pinyin": "Hǎo, nǐ de huà shǐ wǒ gǎnjué hǎo duō le, xièxie nǐ.",
-          "gloss": "Okay, your words make me feel much better. Thank you."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "其實",
-            "我",
-            "不",
-            "認識",
-            "他"
-          ],
-          "pinyin": "Qíshí wǒ bú rènshi tā.",
-          "gloss": "Actually, I don't know him.",
-          "cloze_index": 0
-        },
-        {
-          "tokens": [
-            "以後",
-            "我",
-            "想",
-            "開",
-            "一",
-            "家",
-            "咖啡",
-            "店"
-          ],
-          "pinyin": "Yǐhòu wǒ xiǎng kāi yì jiā kāfēi diàn.",
-          "gloss": "In the future I want to open a coffee shop.",
-          "cloze_index": 0
-        },
-        {
-          "tokens": [
-            "老闆",
-            "要求",
-            "我們",
-            "早",
-            "一點",
-            "到"
-          ],
-          "pinyin": "Lǎobǎn yāoqiú wǒmen zǎo yìdiǎn dào.",
-          "gloss": "The boss requires us to arrive a bit earlier.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "這個",
-            "機會",
-            "是",
-            "別人",
-            "給",
-            "我",
-            "的"
-          ],
-          "pinyin": "Zhè ge jīhuì shì biéren gěi wǒ de.",
-          "gloss": "This opportunity was given to me by someone else.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "運動",
-            "使",
-            "我",
-            "很",
-            "快樂"
-          ],
-          "pinyin": "Yùndòng shǐ wǒ hěn kuàilè.",
-          "gloss": "Exercise makes me very happy.",
-          "cloze_index": 1
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 31,
+  "sort_order": 32,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

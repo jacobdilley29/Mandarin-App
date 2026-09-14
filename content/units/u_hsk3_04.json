@@ -1,519 +1,47 @@
 {
   "id": "u_hsk3_04",
-  "title": "HSK 3 詞彙 4",
-  "subtitle": "HSK 3 vocabulary · set 4",
+  "title": "報名活動與數量",
+  "subtitle": "Events, games, counting things and talking about money",
   "hsk_level": 3,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_04_1",
-      "title": "詞彙 4–1",
+      "title": "量詞與金額",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_當然",
-          "traditional": "當然",
-          "pinyin": "dāng rán",
-          "gloss": "only natural; as it should be; certainly",
+          "id": "v_位",
+          "traditional": "位",
+          "pinyin": "wèi",
+          "gloss": "position; location; place",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我當然會幫你啊！",
-            "pinyin": "Wǒ dāngrán huì bāng nǐ a!",
-            "gloss": "Of course I'll help you!"
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_接",
-          "traditional": "接",
-          "pinyin": "jiē",
-          "gloss": "to receive; to answer (the phone); to meet or welcome sb",
+          "id": "v_條",
+          "traditional": "條",
+          "pinyin": "tiáo",
+          "gloss": "strip; item; article",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我去捷運站接你，好嗎？",
-            "pinyin": "Wǒ qù jiéyùn zhàn jiē nǐ, hǎo ma?",
-            "gloss": "I'll go meet you at the MRT station, OK?"
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_相信",
-          "traditional": "相信",
-          "pinyin": "xiāng xìn",
-          "gloss": "to be convinced (that sth is true); to believe; to accept sth as true",
+          "id": "v_種",
+          "traditional": "種",
+          "pinyin": "zhǒng",
+          "gloss": "seed; species; kind",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我相信你做得到。",
-            "pinyin": "Wǒ xiāngxìn nǐ zuò de dào.",
-            "gloss": "I believe you can do it."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_花",
-          "traditional": "花",
-          "pinyin": "huā",
-          "gloss": "flower; blossom; fancy pattern",
+          "id": "v_分",
+          "traditional": "分",
+          "pinyin": "fēn",
+          "gloss": "to divide; to separate; to distribute; to allocate; to distinguish (good and bad)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這些花真好看，是誰送的？",
-            "pinyin": "Zhèxiē huā zhēn hǎokàn, shì shéi sòng de?",
-            "gloss": "These flowers are really pretty—who gave them to you?"
-          }
-        },
-        {
-          "id": "v_雖然",
-          "traditional": "雖然",
-          "pinyin": "suī rán",
-          "gloss": "although; even though (often used correlatively with 是 or 是 etc)",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "雖然外面下雨，我還是要出去。",
-            "pinyin": "Suīrán wàimiàn xià yǔ, wǒ háishì yào chūqù.",
-            "gloss": "Although it's raining outside, I still want to go out."
-          }
-        },
-        {
-          "id": "v_解決",
-          "traditional": "解決",
-          "pinyin": "jiě jué",
-          "gloss": "to solve; to resolve; to settle (a problem); to eliminate; to wipe out (an enemy, bandits etc)",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個問題我們一起解決。",
-            "pinyin": "Zhège wèntí wǒmen yìqǐ jiějué.",
-            "gloss": "Let's solve this problem together."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "雖然……但是/還是……",
-          "pattern": "雖然 + A，但是／還是 + B",
-          "explanation": "雖然 introduces a fact, and the second clause gives a contrasting result. In Chinese both halves are usually marked: 雖然 in the first clause, and 但是 (but) or 還是 (still) in the second. Unlike English, you keep both words.",
-          "examples": [
-            {
-              "hanzi": "雖然很累，但是我很快樂。",
-              "pinyin": "Suīrán hěn lèi, dànshì wǒ hěn kuàilè.",
-              "gloss": "Although I'm tired, I'm very happy."
-            },
-            {
-              "hanzi": "雖然他很忙，但是他當然會來接我。",
-              "pinyin": "Suīrán tā hěn máng, dànshì tā dāngrán huì lái jiē wǒ.",
-              "gloss": "Although he's busy, of course he'll come to pick me up."
-            },
-            {
-              "hanzi": "雖然這個問題很大，我還是相信我們能解決。",
-              "pinyin": "Suīrán zhège wèntí hěn dà, wǒ háishì xiāngxìn wǒmen néng jiějué.",
-              "gloss": "Although this problem is big, I still believe we can solve it."
-            }
-          ],
-          "id": "g_hsk3_04_1_1",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小安",
-          "hanzi": "喂，你現在方便接電話嗎？",
-          "pinyin": "Wéi, nǐ xiànzài fāngbiàn jiē diànhuà ma?",
-          "gloss": "Hello, is it convenient for you to take a call now?"
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "當然方便，怎麼了？",
-          "pinyin": "Dāngrán fāngbiàn, zěnme le?",
-          "gloss": "Of course, what's up?"
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "我的腳踏車有問題，想請你幫忙。",
-          "pinyin": "Wǒ de jiǎotàchē yǒu wèntí, xiǎng qǐng nǐ bāngmáng.",
-          "gloss": "There's something wrong with my bike; I'd like to ask for your help."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "沒問題，我相信我們可以解決。",
-          "pinyin": "Méi wèntí, wǒ xiāngxìn wǒmen kěyǐ jiějué.",
-          "gloss": "No problem, I believe we can solve it."
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "謝謝你！我請你喝珍珠奶茶。",
-          "pinyin": "Xièxie nǐ! Wǒ qǐng nǐ hē zhēnzhū nǎichá.",
-          "gloss": "Thank you! I'll treat you to bubble tea."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "好啊！雖然我很忙，但是幫你當然沒問題。",
-          "pinyin": "Hǎo a! Suīrán wǒ hěn máng, dànshì bāng nǐ dāngrán méi wèntí.",
-          "gloss": "Sure! Although I'm busy, helping you is of course no problem."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "當然",
-            "相信",
-            "你"
-          ],
-          "pinyin": "Wǒ dāngrán xiāngxìn nǐ.",
-          "gloss": "Of course I believe you.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "他",
-            "去",
-            "機場",
-            "接",
-            "我",
-            "妹妹"
-          ],
-          "pinyin": "Tā qù jīchǎng jiē wǒ mèimei.",
-          "gloss": "He's going to the airport to meet my younger sister.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "這些",
-            "花",
-            "是",
-            "誰",
-            "送",
-            "的"
-          ],
-          "pinyin": "Zhèxiē huā shì shéi sòng de?",
-          "gloss": "Who gave these flowers?",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "雖然",
-            "很",
-            "晚",
-            "了",
-            "我",
-            "還是",
-            "想",
-            "看",
-            "電視"
-          ],
-          "pinyin": "Suīrán hěn wǎn le, wǒ háishì xiǎng kàn diànshì.",
-          "gloss": "Although it's late, I still want to watch TV.",
-          "cloze_index": 0
-        },
-        {
-          "tokens": [
-            "這個",
-            "問題",
-            "很",
-            "快",
-            "就",
-            "解決",
-            "了"
-          ],
-          "pinyin": "Zhège wèntí hěn kuài jiù jiějué le.",
-          "gloss": "This problem was solved very quickly.",
-          "cloze_index": 5
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_04_2",
-      "title": "詞彙 4–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_關於",
-          "traditional": "關於",
-          "pinyin": "guān yú",
-          "gloss": "pertaining to; concerning; with regard to",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "關於這件事，我想跟你說一下。",
-            "pinyin": "Guānyú zhè jiàn shì, wǒ xiǎng gēn nǐ shuō yíxià.",
-            "gloss": "Regarding this matter, I'd like to talk with you for a moment."
-          }
-        },
-        {
-          "id": "v_完成",
-          "traditional": "完成",
-          "pinyin": "wán chéng",
-          "gloss": "to complete; to accomplish",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他很快就完成了這件事。",
-            "pinyin": "Tā hěn kuài jiù wánchéng le zhè jiàn shì.",
-            "gloss": "He finished this task very quickly."
-          }
-        },
-        {
-          "id": "v_結束",
-          "traditional": "結束",
-          "pinyin": "jié shù",
-          "gloss": "termination; to finish; to end",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "電影快結束了，我們走吧。",
-            "pinyin": "Diànyǐng kuài jiéshù le, wǒmen zǒu ba.",
-            "gloss": "The movie is about to end; let's go."
-          }
-        },
-        {
-          "id": "v_努力",
-          "traditional": "努力",
-          "pinyin": "nǔ lì",
-          "gloss": "to make an effort; to try hard; to strive; hard-working; conscientious",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他每天都很努力，考試考得很好。",
-            "pinyin": "Tā měi tiān dōu hěn nǔlì, kǎoshì kǎo de hěn hǎo.",
-            "gloss": "He works hard every day and does well on tests."
-          }
-        },
-        {
-          "id": "v_以前",
-          "traditional": "以前",
-          "pinyin": "yǐ qián",
-          "gloss": "before; formerly; previous",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我以前不會騎腳踏車。",
-            "pinyin": "Wǒ yǐqián bú huì qí jiǎotàchē.",
-            "gloss": "I didn't know how to ride a bike before."
-          }
-        },
-        {
-          "id": "v_辦法",
-          "traditional": "辦法",
-          "pinyin": "bàn fǎ",
-          "gloss": "means; method; way (of doing sth)",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個問題我沒有辦法解決。",
-            "pinyin": "Zhè ge wèntí wǒ méiyǒu bànfǎ jiějué.",
-            "gloss": "I have no way to solve this problem."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "用「關於」帶出話題",
-          "pattern": "關於 + 話題，+ 說明",
-          "explanation": "「關於」放在句子開頭，先點出要談的話題（人、事、問題），後面再說你的意見或情況。它不能直接當動詞用，後面一定要接一個名詞或事情。",
-          "examples": [
-            {
-              "hanzi": "關於這次旅行，我們晚點再說。",
-              "pinyin": "Guānyú zhè cì lǚxíng, wǒmen wǎn diǎn zài shuō.",
-              "gloss": "As for this trip, let's talk about it later."
-            },
-            {
-              "hanzi": "關於那個問題，我還有很多不懂的地方。",
-              "pinyin": "Guānyú nà ge wèntí, wǒ hái yǒu hěn duō bù dǒng de dìfāng.",
-              "gloss": "Regarding that problem, there are still many things I don't understand."
-            },
-            {
-              "hanzi": "關於考試，你有什麼問題嗎？",
-              "pinyin": "Guānyú kǎoshì, nǐ yǒu shénme wèntí ma?",
-              "gloss": "Do you have any questions about the exam?"
-            }
-          ],
-          "id": "g_hsk3_04_2_1",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小安",
-          "hanzi": "小東，你的報告完成了嗎？",
-          "pinyin": "Xiǎo Dōng, nǐ de bàogào wánchéng le ma?",
-          "gloss": "Xiao Dong, have you finished your report?"
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "還沒有。關於這個問題，我有很多地方不懂。",
-          "pinyin": "Hái méiyǒu. Guānyú zhè ge wèntí, wǒ yǒu hěn duō dìfāng bù dǒng.",
-          "gloss": "Not yet. Regarding this problem, there's a lot I don't understand."
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "你可以去問老師啊，他以前教過我，人很好。",
-          "pinyin": "Nǐ kěyǐ qù wèn lǎoshī a, tā yǐqián jiāo guò wǒ, rén hěn hǎo.",
-          "gloss": "You can go ask the teacher; he taught me before, he's really nice."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "好，可是我一個人沒辦法完成，你能幫我嗎？",
-          "pinyin": "Hǎo, kěshì wǒ yí ge rén méi bànfǎ wánchéng, nǐ néng bāng wǒ ma?",
-          "gloss": "OK, but I can't finish it by myself. Can you help me?"
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "沒問題！我們一起努力，這個週末一定可以完成。",
-          "pinyin": "Méi wèntí! Wǒmen yìqǐ nǔlì, zhè ge zhōumò yídìng kěyǐ wánchéng.",
-          "gloss": "No problem! Let's work hard together; we can definitely finish it this weekend."
-        },
-        {
-          "speaker": "小東",
-          "hanzi": "太好了！今天的課結束後，我們就去咖啡店做吧。",
-          "pinyin": "Tài hǎo le! Jīntiān de kè jiéshù hòu, wǒmen jiù qù kāfēi diàn zuò ba.",
-          "gloss": "Great! After class ends today, let's go to the café and work on it."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "已經",
-            "完成",
-            "了",
-            "這",
-            "件",
-            "事"
-          ],
-          "pinyin": "Wǒ yǐjīng wánchéng le zhè jiàn shì.",
-          "gloss": "I have already completed this task.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "今天",
-            "的",
-            "課",
-            "快",
-            "結束",
-            "了"
-          ],
-          "pinyin": "Jīntiān de kè kuài jiéshù le.",
-          "gloss": "Today's class is almost over.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "關於",
-            "這次",
-            "考試",
-            "，",
-            "老師",
-            "說",
-            "了",
-            "很多"
-          ],
-          "pinyin": "Guānyú zhè cì kǎoshì, lǎoshī shuō le hěn duō.",
-          "gloss": "Regarding this exam, the teacher said a lot.",
-          "cloze_index": 0
-        },
-        {
-          "tokens": [
-            "他",
-            "以前",
-            "不",
-            "努力",
-            "，",
-            "現在",
-            "很",
-            "努力"
-          ],
-          "pinyin": "Tā yǐqián bù nǔlì, xiànzài hěn nǔlì.",
-          "gloss": "He didn't work hard before, but now he works very hard.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "這個",
-            "問題",
-            "我",
-            "沒有",
-            "辦法",
-            "回答"
-          ],
-          "pinyin": "Zhè ge wèntí wǒ méiyǒu bànfǎ huídá.",
-          "gloss": "I have no way to answer this question.",
-          "cloze_index": 4
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_04_3",
-      "title": "詞彙 4–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_特別",
-          "traditional": "特別",
-          "pinyin": "tè bié",
-          "gloss": "unusual; special; very; especially; particularly; expressly; for a specific purpose",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的牛肉麵特別好吃。",
-            "pinyin": "zhè jiā diàn de niú ròu miàn tè bié hǎo chī.",
-            "gloss": "The beef noodles at this shop are especially delicious."
-          }
-        },
-        {
-          "id": "v_難",
-          "traditional": "難",
-          "pinyin": "nán",
-          "gloss": "difficult (to...); problem; difficulty",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這課的字很難寫。",
-            "pinyin": "zhè kè de zì hěn nán xiě.",
-            "gloss": "The characters in this lesson are hard to write."
-          }
-        },
-        {
-          "id": "v_注意",
-          "traditional": "注意",
-          "pinyin": "zhù yì",
-          "gloss": "to take note of; to pay attention to",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "騎腳踏車要注意安全。",
-            "pinyin": "qí jiǎo tà chē yào zhù yì ān quán.",
-            "gloss": "You have to pay attention to safety when riding a bike."
-          }
-        },
-        {
-          "id": "v_講",
-          "traditional": "講",
-          "pinyin": "jiǎng",
-          "gloss": "to speak; to explain; to negotiate",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "老師講得很慢，我都聽得懂。",
-            "pinyin": "lǎo shī jiǎng de hěn màn, wǒ dōu tīng de dǒng.",
-            "gloss": "The teacher speaks slowly, so I can understand it all."
-          }
-        },
-        {
-          "id": "v_離開",
-          "traditional": "離開",
-          "pinyin": "lí kāi",
-          "gloss": "to depart; to leave",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他昨天晚上八點離開公司。",
-            "pinyin": "tā zuó tiān wǎn shàng bā diǎn lí kāi gōng sī.",
-            "gloss": "He left the company at eight last night."
-          }
+          "taiwan_note": null
         },
         {
           "id": "v_萬",
@@ -521,156 +49,89 @@
           "pinyin": "wàn",
           "gloss": "ten thousand; a great number",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這台電腦要三萬塊。",
-            "pinyin": "zhè tái diàn nǎo yào sān wàn kuài.",
-            "gloss": "This computer costs thirty thousand dollars."
-          }
+          "taiwan_note": null
+        },
+        {
+          "id": "v_花",
+          "traditional": "花",
+          "pinyin": "huā",
+          "gloss": "flower; blossom; fancy pattern",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_04_2",
+      "title": "參加比賽和遊戲",
+      "sort_order": 2,
+      "vocab": [
         {
-          "title": "特別 + Adjective／Verb（especially, particularly）",
-          "pattern": "Subject + 特別 + Adj / V",
-          "explanation": "特別 goes before an adjective or verb to mean “especially / particularly”. It is stronger than 很 and is very common in daily Taiwan speech: 今天特別冷、這題特別難。It can also mean “special” before 的 (特別的日子).",
-          "examples": [
-            {
-              "hanzi": "今天特別冷，你要多穿一件衣服。",
-              "pinyin": "jīn tiān tè bié lěng, nǐ yào duō chuān yí jiàn yī fú.",
-              "gloss": "It's especially cold today; wear one more layer."
-            },
-            {
-              "hanzi": "這題特別難，我不會做。",
-              "pinyin": "zhè tí tè bié nán, wǒ bú huì zuò.",
-              "gloss": "This question is especially hard; I can't do it."
-            },
-            {
-              "hanzi": "她今天看起來特別累。",
-              "pinyin": "tā jīn tiān kàn qǐ lái tè bié lèi.",
-              "gloss": "She looks especially tired today."
-            }
-          ],
-          "id": "g_hsk3_04_3_1",
-          "hsk_level": 3
+          "id": "v_參加",
+          "traditional": "參加",
+          "pinyin": "cān jiā",
+          "gloss": "to participate; to take part; to join",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_04_3_2",
-          "hsk_level": 3
+          "id": "v_比賽",
+          "traditional": "比賽",
+          "pinyin": "bǐ sài",
+          "gloss": "competition (sports etc); match; to compete",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_遊戲",
+          "traditional": "遊戲",
+          "pinyin": "yóu xì",
+          "gloss": "game; to play",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_馬",
+          "traditional": "馬",
+          "pinyin": "mǎ",
+          "gloss": "horse; horse or cavalry piece in Chinese chess; knight in Western chess",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_努力",
+          "traditional": "努力",
+          "pinyin": "nǔ lì",
+          "gloss": "to make an effort; to try hard; to strive; hard-working; conscientious",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_完成",
+          "traditional": "完成",
+          "pinyin": "wán chéng",
+          "gloss": "to complete; to accomplish",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_結束",
+          "traditional": "結束",
+          "pinyin": "jié shù",
+          "gloss": "termination; to finish; to end",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
-        {
-          "speaker": "A",
-          "hanzi": "今天的中文課難不難？",
-          "pinyin": "jīn tiān de zhōng wén kè nán bù nán?",
-          "gloss": "Was today's Chinese class hard?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "特別難！老師講得很快，我聽不懂。",
-          "pinyin": "tè bié nán! lǎo shī jiǎng de hěn kuài, wǒ tīng bù dǒng.",
-          "gloss": "Especially hard! The teacher spoke fast and I couldn't understand."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "你要注意聽，下課再去問老師。",
-          "pinyin": "nǐ yào zhù yì tīng, xià kè zài qù wèn lǎo shī.",
-          "gloss": "You should listen carefully, then ask the teacher after class."
-        },
-        {
-          "speaker": "B",
-          "hanzi": "可是老師常常很快就離開教室了。",
-          "pinyin": "kě shì lǎo shī cháng cháng hěn kuài jiù lí kāi jiào shì le.",
-          "gloss": "But the teacher often leaves the classroom very quickly."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "那週末我們一起讀書吧。",
-          "pinyin": "nà zhōu mò wǒ men yì qǐ dú shū ba.",
-          "gloss": "Then let's study together this weekend."
-        },
-        {
-          "speaker": "B",
-          "hanzi": "好啊，謝謝你！",
-          "pinyin": "hǎo a, xiè xie nǐ!",
-          "gloss": "Great, thank you!"
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "這",
-            "課",
-            "特別",
-            "難",
-            "。"
-          ],
-          "pinyin": "zhè kè tè bié nán.",
-          "gloss": "This lesson is especially hard.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "老師",
-            "講",
-            "得",
-            "很",
-            "快",
-            "。"
-          ],
-          "pinyin": "lǎo shī jiǎng de hěn kuài.",
-          "gloss": "The teacher speaks very fast.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "開",
-            "車",
-            "要",
-            "注意",
-            "安全",
-            "。"
-          ],
-          "pinyin": "kāi chē yào zhù yì ān quán.",
-          "gloss": "You must pay attention to safety when driving.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "他",
-            "已經",
-            "離開",
-            "台北",
-            "了",
-            "。"
-          ],
-          "pinyin": "tā yǐ jīng lí kāi tái běi le.",
-          "gloss": "He has already left Taipei.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "這",
-            "個",
-            "房子",
-            "要",
-            "五百",
-            "萬",
-            "。"
-          ],
-          "pinyin": "zhè ge fáng zi yào wǔ bǎi wàn.",
-          "gloss": "This house costs five million.",
-          "cloze_index": 5
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 32,
+  "sort_order": 33,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

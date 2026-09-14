@@ -1,527 +1,47 @@
 {
   "id": "u_hsk3_06",
-  "title": "HSK 3 詞彙 6",
-  "subtitle": "HSK 3 vocabulary · set 6",
+  "title": "身體與健康習慣",
+  "subtitle": "Your body, feeling unwell, and everyday habits",
   "hsk_level": 3,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk3_06_1",
-      "title": "詞彙 6–1",
+      "title": "身體部位",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_米",
-          "traditional": "米",
-          "pinyin": "mǐ",
-          "gloss": "rice; meter (classifier)",
+          "id": "v_臉",
+          "traditional": "臉",
+          "pinyin": "liǎn",
+          "gloss": "face",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我每天都吃米飯。",
-            "pinyin": "wǒ měi tiān dōu chī mǐfàn.",
-            "gloss": "I eat rice every day."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_容易",
-          "traditional": "容易",
-          "pinyin": "róng yì",
-          "gloss": "easy; straightforward; likely; liable to; apt to",
+          "id": "v_口",
+          "traditional": "口",
+          "pinyin": "kǒu",
+          "gloss": "mouth; classifier for things with mouths (people, domestic animals, cannons, wells etc); classifier for bites or mouthfuls",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個問題很容易，你一定會。",
-            "pinyin": "zhège wèntí hěn róngyì, nǐ yídìng huì.",
-            "gloss": "This question is easy; you'll definitely be able to do it."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_明白",
-          "traditional": "明白",
-          "pinyin": "míng bai",
-          "gloss": "clear; obvious; unequivocal",
+          "id": "v_腳",
+          "traditional": "腳",
+          "pinyin": "jiǎo",
+          "gloss": "foot; leg (of an animal or an object); base (of an object)",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "老師說的話，我都明白了。",
-            "pinyin": "lǎoshī shuō de huà, wǒ dōu míngbái le.",
-            "gloss": "I understand everything the teacher said."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_根據",
-          "traditional": "根據",
-          "pinyin": "gēn jù",
-          "gloss": "according to; based on; basis",
+          "id": "v_腿",
+          "traditional": "腿",
+          "pinyin": "tuǐ",
+          "gloss": "leg",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "根據天氣報告，明天會下雨。",
-            "pinyin": "gēnjù tiānqì bàogào, míngtiān huì xià yǔ.",
-            "gloss": "According to the weather report, it will rain tomorrow."
-          }
-        },
-        {
-          "id": "v_輛",
-          "traditional": "輛",
-          "pinyin": "liàng",
-          "gloss": "classifier for vehicles",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "那輛車是我哥的。",
-            "pinyin": "nà liàng chē shì wǒ gē de.",
-            "gloss": "That car is my older brother's."
-          }
-        },
-        {
-          "id": "v_簡單",
-          "traditional": "簡單",
-          "pinyin": "jiǎn dān",
-          "gloss": "simple; not complicated",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個菜很簡單，我也會做。",
-            "pinyin": "zhège cài hěn jiǎndān, wǒ yě huì zuò.",
-            "gloss": "This dish is very simple; I can make it too."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "根據……，…… (according to / based on)",
-          "pattern": "根據 + 信息來源 + ，+ 句子",
-          "explanation": "「根據」放在句子前面，說明你的話是從哪裡來的，後面常常加上報告、老師說的、網路上的訊息等。說完以後加逗號，再說結果。意思跟英文的 according to 一樣，語氣比較正式一點，但日常生活也很常用。",
-          "examples": [
-            {
-              "hanzi": "根據報告，這個月的雨水比較多。",
-              "pinyin": "gēnjù bàogào, zhège yuè de yǔshuǐ bǐjiào duō.",
-              "gloss": "According to the report, there is more rain this month."
-            },
-            {
-              "hanzi": "根據老闆說的，明天我們不用上班。",
-              "pinyin": "gēnjù lǎobǎn shuō de, míngtiān wǒmen búyòng shàngbān.",
-              "gloss": "According to what the boss said, we don't have to work tomorrow."
-            },
-            {
-              "hanzi": "根據網路上的訊息，那家店的麵很好吃。",
-              "pinyin": "gēnjù wǎnglù shàng de xùnxí, nà jiā diàn de miàn hěn hǎochī.",
-              "gloss": "According to the information online, that shop's noodles are delicious."
-            }
-          ],
-          "id": "g_hsk3_06_1_1",
-          "hsk_level": 3
-        },
-        {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_06_1_2",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小明",
-          "hanzi": "老闆，這輛腳踏車多少錢？",
-          "pinyin": "lǎobǎn, zhè liàng jiǎotàchē duōshao qián?",
-          "gloss": "Boss, how much is this bike?"
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "三千五百塊，這輛很容易騎。",
-          "pinyin": "sān qiān wǔ bǎi kuài, zhè liàng hěn róngyì qí.",
-          "gloss": "NT$3,500. This one is very easy to ride."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "可是網路上說七千，我有點不明白。",
-          "pinyin": "kěshì wǎnglù shàng shuō qī qiān, wǒ yǒudiǎn bù míngbái.",
-          "gloss": "But online it says NT$7,000; I'm a bit confused."
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "根據網路上的訊息，那輛比較大，我這輛比較小。",
-          "pinyin": "gēnjù wǎnglù shàng de xùnxí, nà liàng bǐjiào dà, wǒ zhè liàng bǐjiào xiǎo.",
-          "gloss": "According to the info online, that one is bigger; mine here is smaller."
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "我明白了，很簡單，那我就買這輛。",
-          "pinyin": "wǒ míngbái le, hěn jiǎndān, nà wǒ jiù mǎi zhè liàng.",
-          "gloss": "I get it now, it's simple. Then I'll buy this one."
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "好！你家遠嗎？",
-          "pinyin": "hǎo! nǐ jiā yuǎn ma?",
-          "gloss": "Great! Is your home far?"
-        },
-        {
-          "speaker": "小明",
-          "hanzi": "不遠，只有五百米。",
-          "pinyin": "bù yuǎn, zhǐ yǒu wǔ bǎi mǐ.",
-          "gloss": "Not far, only 500 meters."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "這個",
-            "問題",
-            "很",
-            "簡單"
-          ],
-          "pinyin": "zhège wèntí hěn jiǎndān.",
-          "gloss": "This question is very simple.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "我",
-            "不",
-            "明白",
-            "你",
-            "的",
-            "意思"
-          ],
-          "pinyin": "wǒ bù míngbái nǐ de yìsi.",
-          "gloss": "I don't understand what you mean.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "我們",
-            "根據",
-            "課本",
-            "學",
-            "中文"
-          ],
-          "pinyin": "wǒmen gēnjù kèběn xué Zhōngwén.",
-          "gloss": "We learn Chinese based on the textbook.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "那",
-            "輛",
-            "車",
-            "是",
-            "我",
-            "哥",
-            "的"
-          ],
-          "pinyin": "nà liàng chē shì wǒ gē de.",
-          "gloss": "That car is my older brother's.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "學",
-            "中文",
-            "不",
-            "容易"
-          ],
-          "pinyin": "xué Zhōngwén bù róngyì.",
-          "gloss": "Learning Chinese isn't easy.",
-          "cloze_index": 3
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_06_2",
-      "title": "詞彙 6–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_半",
-          "traditional": "半",
-          "pinyin": "bàn",
-          "gloss": "half; semi-; incomplete",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "現在七點半了，我們快走吧。",
-            "pinyin": "Xiànzài qī diǎn bàn le, wǒmen kuài zǒu ba.",
-            "gloss": "It's seven thirty now, let's get going."
-          }
-        },
-        {
-          "id": "v_願意",
-          "traditional": "願意",
-          "pinyin": "yuàn yì",
-          "gloss": "to wish; to want; ready",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你願意幫我一個忙嗎？",
-            "pinyin": "Nǐ yuànyì bāng wǒ yí ge máng ma?",
-            "gloss": "Are you willing to do me a favor?"
-          }
-        },
-        {
-          "id": "v_音樂",
-          "traditional": "音樂",
-          "pinyin": "yīn yuè",
-          "gloss": "music",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "晚上我常在房間裡放音樂。",
-            "pinyin": "Wǎnshang wǒ cháng zài fángjiān lǐ fàng yīnyuè.",
-            "gloss": "In the evening I often play music in my room."
-          }
-        },
-        {
-          "id": "v_包",
-          "traditional": "包",
-          "pinyin": "bāo",
-          "gloss": "to cover; to wrap; to hold",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這個要送人，請幫我包一下。",
-            "pinyin": "Zhège yào sòng rén, qǐng bāng wǒ bāo yíxià.",
-            "gloss": "This is a gift for someone, please wrap it for me."
-          }
-        },
-        {
-          "id": "v_樓",
-          "traditional": "樓",
-          "pinyin": "lóu",
-          "gloss": "house with more than 1 story; storied building; floor",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "那家咖啡館在二樓。",
-            "pinyin": "Nà jiā kāfēiguǎn zài èr lóu.",
-            "gloss": "That café is on the second floor."
-          }
-        },
-        {
-          "id": "v_清楚",
-          "traditional": "清楚",
-          "pinyin": "qīng chu",
-          "gloss": "clear; distinct; to understand thoroughly",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我沒看清楚那張紙上的字。",
-            "pinyin": "Wǒ méi kàn qīngchu nà zhāng zhǐ shàng de zì.",
-            "gloss": "I didn't see the words on that piece of paper clearly."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "願意 + Verb Phrase (be willing to do something)",
-          "pattern": "Subject + (不) 願意 + Verb Phrase",
-          "explanation": "願意 means \"to be willing to\" or \"to want to\". It goes before the verb phrase and shows that the subject agrees to do something from the heart. To say the opposite, put 不 in front: 不願意. 願意 can also take 嗎 at the end to ask a polite question.",
-          "examples": [
-            {
-              "hanzi": "我願意幫你包這些東西。",
-              "pinyin": "Wǒ yuànyì bāng nǐ bāo zhèxiē dōngxi.",
-              "gloss": "I'm willing to help you wrap these things."
-            },
-            {
-              "hanzi": "他不願意上樓，他說他太累了。",
-              "pinyin": "Tā bú yuànyì shàng lóu, tā shuō tā tài lèi le.",
-              "gloss": "He doesn't want to go upstairs; he says he's too tired."
-            },
-            {
-              "hanzi": "你願意跟我一起去上音樂課嗎？",
-              "pinyin": "Nǐ yuànyì gēn wǒ yìqǐ qù shàng yīnyuè kè ma?",
-              "gloss": "Are you willing to go to the music class with me?"
-            }
-          ],
-          "id": "g_hsk3_06_2_1",
-          "hsk_level": 3
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "美美",
-          "hanzi": "請問，音樂課的教室在幾樓？",
-          "pinyin": "Qǐngwèn, yīnyuè kè de jiàoshì zài jǐ lóu?",
-          "gloss": "Excuse me, which floor is the music class classroom on?"
-        },
-        {
-          "speaker": "店員",
-          "hanzi": "在三樓，七點半開始。",
-          "pinyin": "Zài sān lóu, qī diǎn bàn kāishǐ.",
-          "gloss": "On the third floor; it starts at seven thirty."
-        },
-        {
-          "speaker": "美美",
-          "hanzi": "謝謝。那這個可以幫我包一下嗎？",
-          "pinyin": "Xièxie. Nà zhège kěyǐ bāng wǒ bāo yíxià ma?",
-          "gloss": "Thank you. Then could you wrap this up for me?"
-        },
-        {
-          "speaker": "店員",
-          "hanzi": "可以啊，我很願意。你要送人嗎？",
-          "pinyin": "Kěyǐ a, wǒ hěn yuànyì. Nǐ yào sòng rén ma?",
-          "gloss": "Sure, I'd be glad to. Is it a gift for someone?"
-        },
-        {
-          "speaker": "美美",
-          "hanzi": "對，送給我妹妹。",
-          "pinyin": "Duì, sòng gěi wǒ mèimei.",
-          "gloss": "Yes, it's for my little sister."
-        },
-        {
-          "speaker": "店員",
-          "hanzi": "好了，你看清楚了嗎？這樣可以嗎？",
-          "pinyin": "Hǎo le, nǐ kàn qīngchu le ma? Zhèyàng kěyǐ ma?",
-          "gloss": "Done. Did you get a good look? Is this okay?"
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "七點半",
-            "到",
-            "二樓",
-            "找",
-            "你"
-          ],
-          "pinyin": "Wǒ qī diǎn bàn dào èr lóu zhǎo nǐ.",
-          "gloss": "I'll come find you on the second floor at seven thirty.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "他",
-            "很",
-            "願意",
-            "幫",
-            "我們",
-            "的",
-            "忙"
-          ],
-          "pinyin": "Tā hěn yuànyì bāng wǒmen de máng.",
-          "gloss": "He is very willing to help us.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "請",
-            "幫",
-            "我",
-            "把",
-            "這些",
-            "東西",
-            "包",
-            "起來"
-          ],
-          "pinyin": "Qǐng bāng wǒ bǎ zhèxiē dōngxi bāo qǐlái.",
-          "gloss": "Please wrap these things up for me.",
-          "cloze_index": 6
-        },
-        {
-          "tokens": [
-            "那個",
-            "字",
-            "我",
-            "沒",
-            "看",
-            "清楚"
-          ],
-          "pinyin": "Nàge zì wǒ méi kàn qīngchu.",
-          "gloss": "I didn't see that character clearly.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "晚上",
-            "我",
-            "常常",
-            "在",
-            "房間",
-            "裡",
-            "放",
-            "音樂"
-          ],
-          "pinyin": "Wǎnshang wǒ chángcháng zài fángjiān lǐ fàng yīnyuè.",
-          "gloss": "In the evenings I often play music in my room.",
-          "cloze_index": 7
-        }
-      ]
-    },
-    {
-      "id": "l_hsk3_06_3",
-      "title": "詞彙 6–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_照片",
-          "traditional": "照片",
-          "pinyin": "zhào piàn",
-          "gloss": "photograph; picture",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這張照片真好看。",
-            "pinyin": "Zhè zhāng zhàopiàn zhēn hǎokàn.",
-            "gloss": "This photo really looks nice."
-          }
-        },
-        {
-          "id": "v_故事",
-          "traditional": "故事",
-          "pinyin": "gù shì",
-          "gloss": "old practice",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他講的故事很有意思。",
-            "pinyin": "Tā jiǎng de gùshì hěn yǒu yìsi.",
-            "gloss": "The stories he tells are very interesting."
-          }
-        },
-        {
-          "id": "v_一般",
-          "traditional": "一般",
-          "pinyin": "yī bān",
-          "gloss": "same; ordinary; so-so",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的咖啡很一般。",
-            "pinyin": "Zhè jiā diàn de kāfēi hěn yìbān.",
-            "gloss": "This shop's coffee is just so-so."
-          }
-        },
-        {
-          "id": "v_可愛",
-          "traditional": "可愛",
-          "pinyin": "kě ài",
-          "gloss": "adorable; cute; lovely",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "那個小孩真可愛。",
-            "pinyin": "Nàge xiǎohái zhēn kě'ài.",
-            "gloss": "That kid is really cute."
-          }
-        },
-        {
-          "id": "v_新聞",
-          "traditional": "新聞",
-          "pinyin": "xīn wén",
-          "gloss": "news",
-          "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我爸爸每天早上都看新聞。",
-            "pinyin": "Wǒ bàba měi tiān zǎoshang dōu kàn xīnwén.",
-            "gloss": "My dad watches the news every morning."
-          }
+          "taiwan_note": null
         },
         {
           "id": "v_聲音",
@@ -529,155 +49,139 @@
           "pinyin": "shēng yīn",
           "gloss": "voice; sound",
           "hsk_level": 3,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "外面的聲音太大了。",
-            "pinyin": "Wàimiàn de shēngyīn tài dà le.",
-            "gloss": "The noise outside is too loud."
-          }
+          "taiwan_note": null
+        },
+        {
+          "id": "v_健康",
+          "traditional": "健康",
+          "pinyin": "jiàn kāng",
+          "gloss": "health; healthy",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_06_2",
+      "title": "突然不舒服",
+      "sort_order": 2,
+      "vocab": [
         {
-          "title": "用「覺得」說看法",
-          "pattern": "A + 覺得 + 話題 + 很 + 形容詞",
-          "explanation": "「覺得」means \"to think / to feel\" and is used to give a personal opinion. Put the topic after 覺得, then a description, usually with 很. To ask someone's opinion, use 你覺得……怎麼樣？",
-          "examples": [
-            {
-              "hanzi": "我覺得這個故事很有意思。",
-              "pinyin": "Wǒ juéde zhège gùshì hěn yǒu yìsi.",
-              "gloss": "I think this story is very interesting."
-            },
-            {
-              "hanzi": "你覺得這張照片怎麼樣？",
-              "pinyin": "Nǐ juéde zhè zhāng zhàopiàn zěnmeyàng?",
-              "gloss": "What do you think of this photo?"
-            },
-            {
-              "hanzi": "他覺得這個新聞很重要。",
-              "pinyin": "Tā juéde zhège xīnwén hěn zhòngyào.",
-              "gloss": "He thinks this piece of news is very important."
-            }
-          ],
-          "id": "g_hsk3_06_3_1",
-          "hsk_level": 3
+          "id": "v_檢查",
+          "traditional": "檢查",
+          "pinyin": "jiǎn chá",
+          "gloss": "inspection; to examine; to inspect",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "title": "",
-          "pattern": "",
-          "explanation": "",
-          "examples": [],
-          "id": "g_hsk3_06_3_2",
-          "hsk_level": 3
+          "id": "v_突然",
+          "traditional": "突然",
+          "pinyin": "tū rán",
+          "gloss": "sudden; abrupt; unexpected",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_小心",
+          "traditional": "小心",
+          "pinyin": "xiǎo xīn",
+          "gloss": "to be careful; to take care",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_餓",
+          "traditional": "餓",
+          "pinyin": "è",
+          "gloss": "to be hungry; hungry; to starve (sb)",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_哭",
+          "traditional": "哭",
+          "pinyin": "kū",
+          "gloss": "to cry; to weep",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_馬上",
+          "traditional": "馬上",
+          "pinyin": "mǎ shàng",
+          "gloss": "at once; right away; immediately",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_06_3",
+      "title": "生活習慣",
+      "sort_order": 3,
+      "vocab": [
         {
-          "speaker": "美美",
-          "hanzi": "你看，這張照片是我妹妹。",
-          "pinyin": "Nǐ kàn, zhè zhāng zhàopiàn shì wǒ mèimei.",
-          "gloss": "Look, this photo is my little sister."
+          "id": "v_習慣",
+          "traditional": "習慣",
+          "pinyin": "xí guàn",
+          "gloss": "habit; custom; usual practice",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小東",
-          "hanzi": "她真的好可愛喔！",
-          "pinyin": "Tā zhēn de hǎo kě'ài o!",
-          "gloss": "She's really so cute!"
+          "id": "v_經常",
+          "traditional": "經常",
+          "pinyin": "jīng cháng",
+          "gloss": "frequently; constantly; regularly; often; day-to-day; everyday; daily",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "美美",
-          "hanzi": "她每天晚上都要我講故事給她。",
-          "pinyin": "Tā měi tiān wǎnshang dōu yào wǒ jiǎng gùshì gěi tā.",
-          "gloss": "Every night she wants me to tell her a story."
+          "id": "v_總是",
+          "traditional": "總是",
+          "pinyin": "zǒng shì",
+          "gloss": "always",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小東",
-          "hanzi": "你講故事的聲音一定很好。",
-          "pinyin": "Nǐ jiǎng gùshì de shēngyīn yídìng hěn hǎo.",
-          "gloss": "Your storytelling voice must be really nice."
+          "id": "v_一般",
+          "traditional": "一般",
+          "pinyin": "yī bān",
+          "gloss": "same; ordinary; so-so",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "美美",
-          "hanzi": "一般啦，她開心就好。",
-          "pinyin": "Yìbān la, tā kāixīn jiù hǎo.",
-          "gloss": "It's just so-so; as long as she's happy."
+          "id": "v_容易",
+          "traditional": "容易",
+          "pinyin": "róng yì",
+          "gloss": "easy; straightforward; likely; liable to; apt to",
+          "hsk_level": 3,
+          "taiwan_note": null
         },
         {
-          "speaker": "小東",
-          "hanzi": "那下次也講一個故事給我，好嗎？",
-          "pinyin": "Nà xià cì yě jiǎng yí ge gùshì gěi wǒ, hǎo ma?",
-          "gloss": "Then next time tell me a story too, okay?"
+          "id": "v_作用",
+          "traditional": "作用",
+          "pinyin": "zuò yòng",
+          "gloss": "to act on; to affect; action",
+          "hsk_level": 3,
+          "taiwan_note": null
         }
       ],
-      "sentences": [
-        {
-          "tokens": [
-            "這張",
-            "照片",
-            "很",
-            "可愛"
-          ],
-          "pinyin": "Zhè zhāng zhàopiàn hěn kě'ài.",
-          "gloss": "This photo is very cute.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "我",
-            "每天",
-            "晚上",
-            "都",
-            "看",
-            "新聞"
-          ],
-          "pinyin": "Wǒ měi tiān wǎnshang dōu kàn xīnwén.",
-          "gloss": "I watch the news every evening.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "他",
-            "講",
-            "的",
-            "故事",
-            "很",
-            "長"
-          ],
-          "pinyin": "Tā jiǎng de gùshì hěn cháng.",
-          "gloss": "The story he tells is very long.",
-          "cloze_index": 3
-        },
-        {
-          "tokens": [
-            "這",
-            "家",
-            "店",
-            "的",
-            "菜",
-            "很",
-            "一般"
-          ],
-          "pinyin": "Zhè jiā diàn de cài hěn yìbān.",
-          "gloss": "The food at this restaurant is just so-so.",
-          "cloze_index": 6
-        },
-        {
-          "tokens": [
-            "外面",
-            "的",
-            "聲音",
-            "太",
-            "大",
-            "了"
-          ],
-          "pinyin": "Wàimiàn de shēngyīn tài dà le.",
-          "gloss": "The sound outside is too loud.",
-          "cloze_index": 2
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 34,
+  "sort_order": 35,
   "tocfl_level": "Level 2",
   "tocfl_band": "A"
 }

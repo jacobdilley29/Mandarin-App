@@ -1,61 +1,61 @@
 {
   "id": "u_hsk4_25",
-  "title": "HSK 4 詞彙 25",
-  "subtitle": "HSK 4 vocabulary · set 25",
+  "title": "出國旅行與參觀",
+  "subtitle": "Flights, seats and sightseeing trips abroad",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_25_1",
-      "title": "詞彙 25–1",
+      "title": "訂航班、找座位",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_偶爾",
-          "traditional": "偶爾",
-          "pinyin": "ǒu ěr",
-          "gloss": "occasionally; once in a while; sometimes",
+          "id": "v_航班",
+          "traditional": "航班",
+          "pinyin": "háng bān",
+          "gloss": "(scheduled) flight; (scheduled) sailing",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_約會",
-          "traditional": "約會",
-          "pinyin": "yuē huì",
-          "gloss": "appointment; engagement; date",
+          "id": "v_座位",
+          "traditional": "座位",
+          "pinyin": "zuò wèi",
+          "gloss": "seat",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_受不了",
-          "traditional": "受不了",
-          "pinyin": "shòu bù liǎo",
-          "gloss": "unbearable; unable to endure; can't stand",
+          "id": "v_趟",
+          "traditional": "趟",
+          "pinyin": "tàng",
+          "gloss": "to wade; to trample; to turn the soil",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_厚",
-          "traditional": "厚",
-          "pinyin": "hòu",
-          "gloss": "thick; deep or profound; kind",
+          "id": "v_順便",
+          "traditional": "順便",
+          "pinyin": "shùn biàn",
+          "gloss": "conveniently; in passing; without much extra effort",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_護士",
-          "traditional": "護士",
-          "pinyin": "hù shi",
-          "gloss": "nurse",
+          "id": "v_首都",
+          "traditional": "首都",
+          "pinyin": "shǒu dū",
+          "gloss": "capital (city)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_參觀",
-          "traditional": "參觀",
-          "pinyin": "cān guān",
-          "gloss": "to look around; to tour; to visit",
+          "id": "v_亞洲",
+          "traditional": "亞洲",
+          "pinyin": "Yà zhōu",
+          "gloss": "Asia (abbr. for 亚细亚洲)",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,112 +66,46 @@
     },
     {
       "id": "l_hsk4_25_2",
-      "title": "詞彙 25–2",
+      "title": "參觀景點看風景",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_順便",
-          "traditional": "順便",
-          "pinyin": "shùn biàn",
-          "gloss": "conveniently; in passing; without much extra effort",
+          "id": "v_參觀",
+          "traditional": "參觀",
+          "pinyin": "cān guān",
+          "gloss": "to look around; to tour; to visit",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_友誼",
-          "traditional": "友誼",
-          "pinyin": "yǒu yì",
-          "gloss": "companionship; fellowship; friendship",
+          "id": "v_風景",
+          "traditional": "風景",
+          "pinyin": "fēng jǐng",
+          "gloss": "scenery; landscape",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_笨",
-          "traditional": "笨",
-          "pinyin": "bèn",
-          "gloss": "stupid; foolish; silly",
+          "id": "v_訪問",
+          "traditional": "訪問",
+          "pinyin": "fǎng wèn",
+          "gloss": "to visit; to call on; to interview",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_沙發",
-          "traditional": "沙發",
-          "pinyin": "shā fā",
-          "gloss": "sofa (loanword); (Internet slang) the first reply or replier to a forum post",
+          "id": "v_打扮",
+          "traditional": "打扮",
+          "pinyin": "dǎ ban",
+          "gloss": "to decorate; to dress; to make up",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_耐心",
-          "traditional": "耐心",
-          "pinyin": "nài xīn",
-          "gloss": "to be patient; patience",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_開玩笑",
-          "traditional": "開玩笑",
-          "pinyin": "kāi wán xiào",
-          "gloss": "to play a joke; to make fun of; to joke",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_25_3",
-      "title": "詞彙 25–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_反映",
-          "traditional": "反映",
-          "pinyin": "fǎn yìng",
-          "gloss": "to mirror; to reflect; mirror image",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_植物",
-          "traditional": "植物",
-          "pinyin": "zhí wù",
-          "gloss": "plant; vegetation",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_筆記本",
-          "traditional": "筆記本",
-          "pinyin": "bǐ jì běn",
-          "gloss": "notebook (stationery); notebook (computing)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_信用卡",
-          "traditional": "信用卡",
-          "pinyin": "xìn yòng kǎ",
-          "gloss": "credit card",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_減肥",
-          "traditional": "減肥",
-          "pinyin": "jiǎn féi",
-          "gloss": "to lose weight",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_其次",
-          "traditional": "其次",
-          "pinyin": "qí cì",
-          "gloss": "next; secondly",
+          "id": "v_偶爾",
+          "traditional": "偶爾",
+          "pinyin": "ǒu ěr",
+          "gloss": "occasionally; once in a while; sometimes",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +115,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 69,
+  "sort_order": 73,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

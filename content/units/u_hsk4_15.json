@@ -1,45 +1,29 @@
 {
   "id": "u_hsk4_15",
-  "title": "HSK 4 詞彙 15",
-  "subtitle": "HSK 4 vocabulary · set 15",
+  "title": "上網、閱讀與語言",
+  "subtitle": "Reading online and learning the language",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_15_1",
-      "title": "詞彙 15–1",
+      "title": "上網看文章",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_邀請",
-          "traditional": "邀請",
-          "pinyin": "yāo qǐng",
-          "gloss": "to invite; invitation",
+          "id": "v_網站",
+          "traditional": "網站",
+          "pinyin": "wǎng zhàn",
+          "gloss": "website; network station; node",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_交通",
-          "traditional": "交通",
-          "pinyin": "jiāo tōng",
-          "gloss": "to be connected; traffic; transportation",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_優秀",
-          "traditional": "優秀",
-          "pinyin": "yōu xiù",
-          "gloss": "outstanding; excellent",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_亮",
-          "traditional": "亮",
-          "pinyin": "liàng",
-          "gloss": "bright; clear; resonant",
+          "id": "v_文章",
+          "traditional": "文章",
+          "pinyin": "wén zhāng",
+          "gloss": "article; essay; literary works",
           "hsk_level": 4,
           "taiwan_note": null
         },
@@ -52,10 +36,26 @@
           "taiwan_note": null
         },
         {
-          "id": "v_兒童",
-          "traditional": "兒童",
-          "pinyin": "ér tóng",
-          "gloss": "child",
+          "id": "v_雜誌",
+          "traditional": "雜誌",
+          "pinyin": "zá zhì",
+          "gloss": "magazine",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_複雜",
+          "traditional": "複雜",
+          "pinyin": "fù zá",
+          "gloss": "complicated; complex",
+          "hsk_level": 4,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_演員",
+          "traditional": "演員",
+          "pinyin": "yǎn yuán",
+          "gloss": "actor or actress; performer",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,54 +66,54 @@
     },
     {
       "id": "l_hsk4_15_2",
-      "title": "詞彙 15–2",
+      "title": "學語言與適應生活",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_最好",
-          "traditional": "最好",
-          "pinyin": "zuì hǎo",
-          "gloss": "best; (you) had better (do what we suggest)",
+          "id": "v_語言",
+          "traditional": "語言",
+          "pinyin": "yǔ yán",
+          "gloss": "language",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_味道",
-          "traditional": "味道",
-          "pinyin": "wèi dao",
-          "gloss": "flavor; taste; (fig.) feeling (of ...); sense (of ...); hint (of ...); (fig.) interest; delight",
+          "id": "v_基礎",
+          "traditional": "基礎",
+          "pinyin": "jī chǔ",
+          "gloss": "base; foundation; basis; basic; fundamental",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_斷",
-          "traditional": "斷",
-          "pinyin": "duàn",
-          "gloss": "to break; to snap; to cut off",
+          "id": "v_交流",
+          "traditional": "交流",
+          "pinyin": "jiāo liú",
+          "gloss": "to exchange; exchange; communication",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_千萬",
-          "traditional": "千萬",
-          "pinyin": "qiān wàn",
-          "gloss": "ten million; countless; many",
+          "id": "v_表達",
+          "traditional": "表達",
+          "pinyin": "biǎo dá",
+          "gloss": "to express; to convey",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_出發",
-          "traditional": "出發",
-          "pinyin": "chū fā",
-          "gloss": "to set off; to start (on a journey)",
+          "id": "v_熟悉",
+          "traditional": "熟悉",
+          "pinyin": "shú xī",
+          "gloss": "to be familiar with; to know well",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_距離",
-          "traditional": "距離",
-          "pinyin": "jù lí",
-          "gloss": "distance; to be apart from",
+          "id": "v_適應",
+          "traditional": "適應",
+          "pinyin": "shì yìng",
+          "gloss": "to adapt; to fit; to suit",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -124,54 +124,54 @@
     },
     {
       "id": "l_hsk4_15_3",
-      "title": "詞彙 15–3",
+      "title": "數字、號碼與答案",
       "sort_order": 3,
       "vocab": [
         {
-          "id": "v_輕鬆",
-          "traditional": "輕鬆",
-          "pinyin": "qīng sōng",
-          "gloss": "light; gentle; relaxed",
+          "id": "v_數字",
+          "traditional": "數字",
+          "pinyin": "shù zì",
+          "gloss": "numeral; digit; number",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_牆",
-          "traditional": "牆",
-          "pinyin": "qiáng",
-          "gloss": "wall",
+          "id": "v_號碼",
+          "traditional": "號碼",
+          "pinyin": "hào mǎ",
+          "gloss": "number",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_畢業",
-          "traditional": "畢業",
-          "pinyin": "bì yè",
-          "gloss": "graduation; to graduate; to finish school",
+          "id": "v_答案",
+          "traditional": "答案",
+          "pinyin": "dá àn",
+          "gloss": "answer; solution",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_懷疑",
-          "traditional": "懷疑",
-          "pinyin": "huái yí",
-          "gloss": "to doubt (sth); to be skeptical of; to have one's doubts",
+          "id": "v_猜",
+          "traditional": "猜",
+          "pinyin": "cāi",
+          "gloss": "to guess",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_修",
-          "traditional": "修",
-          "pinyin": "xiū",
-          "gloss": "to decorate; to embellish; to repair",
+          "id": "v_究竟",
+          "traditional": "究竟",
+          "pinyin": "jiū jìng",
+          "gloss": "to go to the bottom of a matter; after all; when all is said and done",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_價格",
-          "traditional": "價格",
-          "pinyin": "jià gé",
-          "gloss": "price",
+          "id": "v_差不多",
+          "traditional": "差不多",
+          "pinyin": "chà bu duō",
+          "gloss": "almost; nearly; more or less",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +181,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 59,
+  "sort_order": 63,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }

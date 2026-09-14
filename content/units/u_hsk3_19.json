@@ -1,0 +1,130 @@
+{
+  "id": "u_hsk3_19",
+  "title": "出國旅行與四季風景",
+  "subtitle": "Packing for a trip and enjoying the seasons",
+  "hsk_level": 3,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk3_19_1",
+      "title": "打包行李去旅行",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_護照",
+          "traditional": "護照",
+          "pinyin": "hù zhào",
+          "gloss": "passport",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_行李箱",
+          "traditional": "行李箱",
+          "pinyin": "xíng lǐ xiāng",
+          "gloss": "suitcase; baggage compartment; overhead bin",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_旅館",
+          "traditional": "旅館",
+          "pinyin": "lǚguǎn",
+          "gloss": "guesthouse; lodge; hotel",
+          "hsk_level": 3,
+          "taiwan_note": "台灣說「旅館」或「飯店」。",
+          "prc_form": "賓館"
+        },
+        {
+          "id": "v_北方",
+          "traditional": "北方",
+          "pinyin": "běi fāng",
+          "gloss": "north; the northern part a country; China north of the Yellow River",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_襯衫",
+          "traditional": "襯衫",
+          "pinyin": "chèn shān",
+          "gloss": "shirt; blouse",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_裙子",
+          "traditional": "裙子",
+          "pinyin": "qún zi",
+          "gloss": "skirt",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk3_19_2",
+      "title": "季節、天空與動物園",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_季節",
+          "traditional": "季節",
+          "pinyin": "jì jié",
+          "gloss": "time; season; period",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_秋",
+          "traditional": "秋",
+          "pinyin": "qiū",
+          "gloss": "autumn; fall; harvest time",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_冬",
+          "traditional": "冬",
+          "pinyin": "dōng",
+          "gloss": "winter",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_月亮",
+          "traditional": "月亮",
+          "pinyin": "yuè liàng",
+          "gloss": "the moon",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_傘",
+          "traditional": "傘",
+          "pinyin": "sǎn",
+          "gloss": "umbrella; parasol",
+          "hsk_level": 3,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_熊貓",
+          "traditional": "熊貓",
+          "pinyin": "xióng māo",
+          "gloss": "panda",
+          "hsk_level": 3,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 48,
+  "tocfl_level": "Level 2",
+  "tocfl_band": "A"
+}

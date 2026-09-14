@@ -1,0 +1,122 @@
+{
+  "id": "u_hsk1_07",
+  "title": "在家放鬆",
+  "subtitle": "Relaxing and eating at home",
+  "hsk_level": 1,
+  "generated": true,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "l_hsk1_07_1",
+      "title": "看電視看電影",
+      "sort_order": 1,
+      "vocab": [
+        {
+          "id": "v_電影",
+          "traditional": "電影",
+          "pinyin": "diàn yǐng",
+          "gloss": "movie; film",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_電視",
+          "traditional": "電視",
+          "pinyin": "diàn shì",
+          "gloss": "television; TV",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_怎麼樣",
+          "traditional": "怎麼樣",
+          "pinyin": "zěn me yàng",
+          "gloss": "how?; how about?; how was it?",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_想",
+          "traditional": "想",
+          "pinyin": "xiǎng",
+          "gloss": "to think (about); to think of; to devise; to think (that); to believe (that)",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_很",
+          "traditional": "很",
+          "pinyin": "hěn",
+          "gloss": "(adverb of degree); quite; very",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_不",
+          "traditional": "不",
+          "pinyin": "bù",
+          "gloss": "no; not so; (bound form) not; un-",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk1_07_2",
+      "title": "在家吃飯喝水",
+      "sort_order": 2,
+      "vocab": [
+        {
+          "id": "v_白飯",
+          "traditional": "白飯",
+          "pinyin": "báifàn",
+          "gloss": "(cooked) rice",
+          "hsk_level": 1,
+          "taiwan_note": "台灣點餐時說「白飯」。",
+          "prc_form": "米飯"
+        },
+        {
+          "id": "v_水果",
+          "traditional": "水果",
+          "pinyin": "shuǐ guǒ",
+          "gloss": "fruit",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_喝",
+          "traditional": "喝",
+          "pinyin": "hē",
+          "gloss": "to drink; variant of 嗬",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_杯子",
+          "traditional": "杯子",
+          "pinyin": "bēi zi",
+          "gloss": "cup; glass",
+          "hsk_level": 1,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_沒",
+          "traditional": "沒",
+          "pinyin": "méi",
+          "gloss": "drowned; to end; to die",
+          "hsk_level": 1,
+          "taiwan_note": null
+        }
+      ],
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    }
+  ],
+  "sort_order": 21,
+  "tocfl_level": "Novice",
+  "tocfl_band": "Novice"
+}

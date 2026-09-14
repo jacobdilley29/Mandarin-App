@@ -1,79 +1,29 @@
 {
   "id": "u_hsk1_04",
-  "title": "HSK 1 詞彙 4",
-  "subtitle": "HSK 1 vocabulary · set 4",
+  "title": "日期與一天的作息",
+  "subtitle": "Dates and your daily routine",
   "hsk_level": 1,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk1_04_1",
-      "title": "詞彙 4–1",
+      "title": "今天幾月幾日",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_塊",
-          "traditional": "塊",
-          "pinyin": "kuài",
-          "gloss": "lump; chunk; piece; classifier for pieces of cloth, cake, soap etc; (coll.) classifier for money and currency units",
+          "id": "v_月",
+          "traditional": "月",
+          "pinyin": "yuè",
+          "gloss": "moon; month; monthly",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_謝謝",
-          "traditional": "謝謝",
-          "pinyin": "xiè xie",
-          "gloss": "to thank; thanks; thank you",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_多少",
-          "traditional": "多少",
-          "pinyin": "duō shǎo",
-          "gloss": "number; amount; somewhat",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_媽媽",
-          "traditional": "媽媽",
-          "pinyin": "mā ma",
-          "gloss": "mama; mommy; mother",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_少",
-          "traditional": "少",
-          "pinyin": "shǎo",
-          "gloss": "few; less; to lack",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_電影",
-          "traditional": "電影",
-          "pinyin": "diàn yǐng",
-          "gloss": "movie; film",
-          "hsk_level": 1,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk1_04_2",
-      "title": "詞彙 4–2",
-      "sort_order": 2,
-      "vocab": [
-        {
-          "id": "v_哪",
-          "traditional": "哪",
-          "pinyin": "nǎ",
-          "gloss": "how; which",
+          "id": "v_日",
+          "traditional": "日",
+          "pinyin": "rì",
+          "gloss": "sun; day; date, day of the month",
           "hsk_level": 1,
           "taiwan_note": null
         },
@@ -86,34 +36,26 @@
           "taiwan_note": null
         },
         {
-          "id": "v_五",
-          "traditional": "五",
-          "pinyin": "wǔ",
-          "gloss": "five; 5",
+          "id": "v_現在",
+          "traditional": "現在",
+          "pinyin": "xiàn zài",
+          "gloss": "now; at present; at the moment",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_先生",
-          "traditional": "先生",
-          "pinyin": "xiānshēng",
-          "gloss": "teacher; gentleman; sir; mister (Mr.); husband",
+          "id": "v_時候",
+          "traditional": "時候",
+          "pinyin": "shíhòu",
+          "gloss": "time; length of time; moment",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_醫院",
-          "traditional": "醫院",
-          "pinyin": "yī yuàn",
-          "gloss": "hospital",
-          "hsk_level": 1,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_些",
-          "traditional": "些",
-          "pinyin": "xiē",
-          "gloss": "classifier indicating a small amount or small number greater than 1: some, a few, several",
+          "id": "v_分鐘",
+          "traditional": "分鐘",
+          "pinyin": "fēn zhōng",
+          "gloss": "minute",
           "hsk_level": 1,
           "taiwan_note": null
         }
@@ -123,55 +65,55 @@
       "sentences": []
     },
     {
-      "id": "l_hsk1_04_3",
-      "title": "詞彙 4–3",
-      "sort_order": 3,
+      "id": "l_hsk1_04_2",
+      "title": "上午和中午",
+      "sort_order": 2,
       "vocab": [
         {
-          "id": "v_二",
-          "traditional": "二",
-          "pinyin": "èr",
-          "gloss": "two; 2; (Beijing dialect) stupid",
+          "id": "v_上午",
+          "traditional": "上午",
+          "pinyin": "shàng wǔ",
+          "gloss": "morning",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_兒子",
-          "traditional": "兒子",
-          "pinyin": "ér zi",
-          "gloss": "son",
+          "id": "v_中午",
+          "traditional": "中午",
+          "pinyin": "zhōng wǔ",
+          "gloss": "noon; midday",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_中國",
-          "traditional": "中國",
-          "pinyin": "Zhōng guó",
-          "gloss": "China",
+          "id": "v_睡覺",
+          "traditional": "睡覺",
+          "pinyin": "shuì jiào",
+          "gloss": "to go to bed; to sleep",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_電視",
-          "traditional": "電視",
-          "pinyin": "diàn shì",
-          "gloss": "television; TV",
+          "id": "v_做",
+          "traditional": "做",
+          "pinyin": "zuò",
+          "gloss": "to make; to produce; to write; to compose; to do; to engage in; to hold (a party etc)",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_學習",
-          "traditional": "學習",
-          "pinyin": "xué xí",
-          "gloss": "to learn; to study",
+          "id": "v_了",
+          "traditional": "了",
+          "pinyin": "le",
+          "gloss": "to finish; to achieve; variant of 了",
           "hsk_level": 1,
           "taiwan_note": null
         },
         {
-          "id": "v_六",
-          "traditional": "六",
-          "pinyin": "liù",
-          "gloss": "six; 6",
+          "id": "v_回",
+          "traditional": "回",
+          "pinyin": "huí",
+          "gloss": "to circle; to go back; to turn around",
           "hsk_level": 1,
           "taiwan_note": null
         }

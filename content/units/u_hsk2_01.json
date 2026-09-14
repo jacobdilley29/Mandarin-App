@@ -1,495 +1,97 @@
 {
   "id": "u_hsk2_01",
-  "title": "HSK 2 詞彙 1",
-  "subtitle": "HSK 2 vocabulary · set 1",
+  "title": "認識新朋友",
+  "subtitle": "Meeting people and talking about them",
   "hsk_level": 2,
   "generated": true,
-  "status": "live",
+  "status": "draft",
   "lessons": [
     {
       "id": "l_hsk2_01_1",
-      "title": "詞彙 1–1",
+      "title": "打招呼、自我介紹",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_就",
-          "traditional": "就",
-          "pinyin": "jiù",
-          "gloss": "(after a suppositional clause) in that case; then; (after a clause of action) as soon as; immediately after; (same as 是) merely; nothing else but; simply; just; precisely; exactly",
+          "id": "v_您",
+          "traditional": "您",
+          "pinyin": "nín",
+          "gloss": "you (courteous, as opposed to informal 你)",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我吃飽了就回家。",
-            "pinyin": "Wǒ chī bǎo le jiù huí jiā.",
-            "gloss": "I'll go home as soon as I'm full."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_要",
-          "traditional": "要",
-          "pinyin": "yào",
-          "gloss": "to want; to need; to ask for; will; shall; about to; need to; should",
+          "id": "v_歡迎",
+          "traditional": "歡迎",
+          "pinyin": "huān yíng",
+          "gloss": "to welcome; welcome",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我要一杯珍珠奶茶。",
-            "pinyin": "Wǒ yào yì bēi zhēnzhū nǎichá.",
-            "gloss": "I want a bubble milk tea."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_也",
-          "traditional": "也",
-          "pinyin": "yě",
-          "gloss": "(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊",
+          "id": "v_大家",
+          "traditional": "大家",
+          "pinyin": "dà jiā",
+          "gloss": "everyone; influential family; great expert",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我也想去看電影。",
-            "pinyin": "Wǒ yě xiǎng qù kàn diànyǐng.",
-            "gloss": "I also want to go see a movie."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_到",
-          "traditional": "到",
-          "pinyin": "dào",
-          "gloss": "to reach; to arrive; to leave for; to go to; to (a place); until (a time); up to (a point)",
+          "id": "v_介紹",
+          "traditional": "介紹",
+          "pinyin": "jiè shào",
+          "gloss": "to introduce (sb to sb); to give a presentation; to present (sb for a job etc)",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我八點到捷運站。",
-            "pinyin": "Wǒ bā diǎn dào jiéyùn zhàn.",
-            "gloss": "I'll arrive at the MRT station at eight."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_還",
-          "traditional": "還",
-          "pinyin": "hái",
-          "gloss": "still; still in progress; still more",
+          "id": "v_笑",
+          "traditional": "笑",
+          "pinyin": "xiào",
+          "gloss": "to laugh; to smile; to laugh at",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他還在睡覺。",
-            "pinyin": "Tā hái zài shuìjiào.",
-            "gloss": "He is still sleeping."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_著",
-          "traditional": "著",
-          "pinyin": "zhe",
-          "gloss": "to touch; to come in contact with; to feel",
+          "id": "v_一起",
+          "traditional": "一起",
+          "pinyin": "yī qǐ",
+          "gloss": "in the same place; together; with",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "他坐著看電視。",
-            "pinyin": "Tā zuò zhe kàn diànshì.",
-            "gloss": "He is sitting and watching TV."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
-        {
-          "title": "一……就……(as soon as)",
-          "pattern": "Subject + 一 + Verb 1 + 就 + Verb 2",
-          "explanation": "用「一……就……」表示第一個動作發生後，第二個動作馬上發生。「就」放在第二個動詞前面，是台灣人日常很常用的說法。",
-          "examples": [
-            {
-              "hanzi": "我一到家就打電話。",
-              "pinyin": "Wǒ yí dào jiā jiù dǎ diànhuà.",
-              "gloss": "As soon as I get home, I'll make a phone call."
-            },
-            {
-              "hanzi": "他一下班就去買便當。",
-              "pinyin": "Tā yí xiàbān jiù qù mǎi biàndāng.",
-              "gloss": "As soon as he gets off work, he goes to buy a lunchbox."
-            },
-            {
-              "hanzi": "我一看到她就想起來了。",
-              "pinyin": "Wǒ yí kàn dào tā jiù xiǎng qǐlái le.",
-              "gloss": "The moment I saw her, I remembered."
-            }
-          ],
-          "id": "g_hsk2_01_1_1",
-          "hsk_level": 2
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "小安",
-          "hanzi": "喂，你到了嗎？",
-          "pinyin": "Wéi, nǐ dào le ma?",
-          "gloss": "Hello, have you arrived?"
-        },
-        {
-          "speaker": "小天",
-          "hanzi": "我還在捷運站，十分鐘就到。",
-          "pinyin": "Wǒ hái zài jiéyùn zhàn, shí fēnzhōng jiù dào.",
-          "gloss": "I'm still at the MRT station; I'll be there in ten minutes."
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "好，我先點一杯珍珠奶茶。",
-          "pinyin": "Hǎo, wǒ xiān diǎn yì bēi zhēnzhū nǎichá.",
-          "gloss": "OK, I'll order a bubble milk tea first."
-        },
-        {
-          "speaker": "小天",
-          "hanzi": "我也要一杯，不要太甜喔。",
-          "pinyin": "Wǒ yě yào yì bēi, búyào tài tián ō.",
-          "gloss": "I want one too, not too sweet, OK?"
-        },
-        {
-          "speaker": "小安",
-          "hanzi": "沒錯，我坐著看手機。",
-          "pinyin": "Méicuò, wǒ zuò zhe kàn shǒujī.",
-          "gloss": "Got it, I'll sit and look at my phone."
-        },
-        {
-          "speaker": "小天",
-          "hanzi": "謝謝，我要下車了。",
-          "pinyin": "Xièxie, wǒ yào xià chē le.",
-          "gloss": "Thanks, I'm about to get off the train."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "要",
-            "去",
-            "郵局",
-            "寄",
-            "東西"
-          ],
-          "pinyin": "Wǒ yào qù yóujú jì dōngxi.",
-          "gloss": "I want to go to the post office to mail something.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "他",
-            "還",
-            "在",
-            "房間",
-            "裡",
-            "睡覺"
-          ],
-          "pinyin": "Tā hái zài fángjiān lǐ shuìjiào.",
-          "gloss": "He is still sleeping in the room.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "我",
-            "也",
-            "想",
-            "喝",
-            "紅茶"
-          ],
-          "pinyin": "Wǒ yě xiǎng hē hóngchá.",
-          "gloss": "I want to drink black tea too.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "我",
-            "一",
-            "到",
-            "家",
-            "就",
-            "打",
-            "電話"
-          ],
-          "pinyin": "Wǒ yí dào jiā jiù dǎ diànhuà.",
-          "gloss": "As soon as I get home, I'll call.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "她",
-            "坐",
-            "著",
-            "喝",
-            "咖啡"
-          ],
-          "pinyin": "Tā zuò zhe hē kāfēi.",
-          "gloss": "She is sitting and drinking coffee.",
-          "cloze_index": 2
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     },
     {
       "id": "l_hsk2_01_2",
-      "title": "詞彙 1–2",
+      "title": "聊聊家人",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_給",
-          "traditional": "給",
-          "pinyin": "gěi",
-          "gloss": "to; for; for the benefit of",
+          "id": "v_孩子",
+          "traditional": "孩子",
+          "pinyin": "hái zi",
+          "gloss": "child",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我給你一杯熱茶。",
-            "pinyin": "Wǒ gěi nǐ yì bēi rè chá.",
-            "gloss": "I'll give you a cup of hot tea."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_讓",
-          "traditional": "讓",
-          "pinyin": "ràng",
-          "gloss": "to yield; to permit; to let sb do sth",
+          "id": "v_男人",
+          "traditional": "男人",
+          "pinyin": "nán rén",
+          "gloss": "a man; a male; men",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "讓我看一下你的手機。",
-            "pinyin": "Ràng wǒ kàn yíxià nǐ de shǒujī.",
-            "gloss": "Let me take a look at your phone."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_吧",
-          "traditional": "吧",
-          "pinyin": "ba",
-          "gloss": "bar (loanword) (serving drinks, or providing Internet access etc); to puff (on a pipe etc); (onom.) bang",
+          "id": "v_女人",
+          "traditional": "女人",
+          "pinyin": "nǚ rén",
+          "gloss": "woman",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我們一起去吃飯吧！",
-            "pinyin": "Wǒmen yìqǐ qù chīfàn ba!",
-            "gloss": "Let's go eat together!"
-          }
-        },
-        {
-          "id": "v_得",
-          "traditional": "得",
-          "pinyin": "de",
-          "gloss": "to obtain; to get; to gain",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "你昨天晚上睡得好嗎？",
-            "pinyin": "Nǐ zuótiān wǎnshàng shuì de hǎo ma?",
-            "gloss": "Did you sleep well last night?"
-          }
-        },
-        {
-          "id": "v_可以",
-          "traditional": "可以",
-          "pinyin": "kě yǐ",
-          "gloss": "can; may; possible",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這裡可以用悠遊卡付錢。",
-            "pinyin": "Zhèlǐ kěyǐ yòng Yōuyóukǎ fù qián.",
-            "gloss": "You can pay with an EasyCard here."
-          }
-        },
-        {
-          "id": "v_為",
-          "traditional": "為",
-          "pinyin": "wèi",
-          "gloss": "as (in the capacity of); to take sth as; to act as",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "媽媽為我做了晚飯。",
-            "pinyin": "Māma wèi wǒ zuò le wǎnfàn.",
-            "gloss": "Mom made dinner for me."
-          }
-        }
-      ],
-      "grammar": [
-        {
-          "title": "動詞 + 得 + 很 + 形容詞",
-          "pattern": "Verb + 得 + 很 + adjective",
-          "explanation": "To say how well an action is done, put 得 (de) after the verb and add a description. 他說得很好 means \"he speaks well.\" Note that here 得 is read \"de\" with a neutral tone. For a negative, say 動詞 + 得 + 不 + 形容詞, for example 我寫得不好.",
-          "examples": [
-            {
-              "hanzi": "他中文說得很好。",
-              "pinyin": "Tā Zhōngwén shuō de hěn hǎo.",
-              "gloss": "He speaks Chinese very well."
-            },
-            {
-              "hanzi": "你今天來得很早。",
-              "pinyin": "Nǐ jīntiān lái de hěn zǎo.",
-              "gloss": "You came very early today."
-            },
-            {
-              "hanzi": "我的字寫得不漂亮。",
-              "pinyin": "Wǒ de zì xiě de bú piàoliang.",
-              "gloss": "My handwriting isn't pretty."
-            }
-          ],
-          "id": "g_hsk2_01_2_1",
-          "hsk_level": 2
-        },
-        {
-          "title": "讓 / 為 + 人 + 動作",
-          "pattern": "讓/為 + person + action",
-          "explanation": "讓 means \"to let someone do something\": 讓我看一下 (let me have a look). 為 means \"for the benefit of someone\": 為你做飯 (cook for you). Both come before the person.",
-          "examples": [
-            {
-              "hanzi": "讓我為你加熱一下。",
-              "pinyin": "Ràng wǒ wèi nǐ jiārè yíxià.",
-              "gloss": "Let me heat it up for you."
-            },
-            {
-              "hanzi": "爸爸讓我騎他的腳踏車。",
-              "pinyin": "Bàba ràng wǒ qí tā de jiǎotàchē.",
-              "gloss": "Dad let me ride his bike."
-            },
-            {
-              "hanzi": "我為你高興。",
-              "pinyin": "Wǒ wèi nǐ gāoxìng.",
-              "gloss": "I'm happy for you."
-            }
-          ],
-          "id": "g_hsk2_01_2_2",
-          "hsk_level": 2
-        }
-      ],
-      "dialogue": [
-        {
-          "speaker": "客人",
-          "hanzi": "老闆，我可以用悠遊卡付錢嗎？",
-          "pinyin": "Lǎobǎn, wǒ kěyǐ yòng Yōuyóukǎ fù qián ma?",
-          "gloss": "Boss, can I pay with an EasyCard?"
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "可以，請在這裡刷卡。",
-          "pinyin": "Kěyǐ, qǐng zài zhèlǐ shuā kǎ.",
-          "gloss": "Yes, please swipe your card here."
-        },
-        {
-          "speaker": "客人",
-          "hanzi": "好，給你。這個便當可以加熱嗎？",
-          "pinyin": "Hǎo, gěi nǐ. Zhè ge biàndāng kěyǐ jiārè ma?",
-          "gloss": "OK, here you go. Can this lunch box be heated up?"
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "可以，讓我為你加熱一下吧。",
-          "pinyin": "Kěyǐ, ràng wǒ wèi nǐ jiārè yíxià ba.",
-          "gloss": "Sure, let me heat it up for you."
-        },
-        {
-          "speaker": "客人",
-          "hanzi": "謝謝，你做得很快。",
-          "pinyin": "Xièxie, nǐ zuò de hěn kuài.",
-          "gloss": "Thanks, you did that fast."
-        },
-        {
-          "speaker": "老闆",
-          "hanzi": "不客氣，明天再來！",
-          "pinyin": "Bú kèqì, míngtiān zài lái!",
-          "gloss": "You're welcome, come again tomorrow!"
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "你",
-            "可以",
-            "用",
-            "我",
-            "的",
-            "腳踏車"
-          ],
-          "pinyin": "Nǐ kěyǐ yòng wǒ de jiǎotàchē.",
-          "gloss": "You can use my bike.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "讓",
-            "我",
-            "看",
-            "一下",
-            "好",
-            "嗎"
-          ],
-          "pinyin": "Ràng wǒ kàn yíxià hǎo ma?",
-          "gloss": "Let me have a look, OK?",
-          "cloze_index": 0
-        },
-        {
-          "tokens": [
-            "我們",
-            "搭",
-            "捷運",
-            "去",
-            "吧"
-          ],
-          "pinyin": "Wǒmen dā jiéyùn qù ba.",
-          "gloss": "Let's take the MRT there.",
-          "cloze_index": 4
-        },
-        {
-          "tokens": [
-            "老闆",
-            "給",
-            "我",
-            "一",
-            "個",
-            "便當"
-          ],
-          "pinyin": "Lǎobǎn gěi wǒ yí ge biàndāng.",
-          "gloss": "The boss gave me a lunch box.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "他",
-            "中文",
-            "說",
-            "得",
-            "很",
-            "好"
-          ],
-          "pinyin": "Tā Zhōngwén shuō de hěn hǎo.",
-          "gloss": "He speaks Chinese very well.",
-          "cloze_index": 3
-        }
-      ]
-    },
-    {
-      "id": "l_hsk2_01_3",
-      "title": "詞彙 1–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_從",
-          "traditional": "從",
-          "pinyin": "cóng",
-          "gloss": "from; through; via",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我從家裡走到捷運站。",
-            "pinyin": "Wǒ cóng jiālǐ zǒu dào jiéyùn zhàn.",
-            "gloss": "I walk from home to the MRT station."
-          }
-        },
-        {
-          "id": "v_真",
-          "traditional": "真",
-          "pinyin": "zhēn",
-          "gloss": "really; truly; indeed",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的珍珠奶茶真好喝。",
-            "pinyin": "Zhè jiā diàn de zhēnzhū nǎichá zhēn hǎo hē.",
-            "gloss": "The bubble tea at this shop is really good."
-          }
+          "taiwan_note": null
         },
         {
           "id": "v_兩",
@@ -497,211 +99,89 @@
           "pinyin": "liǎng",
           "gloss": "two; both; some",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我要兩個便當，謝謝。",
-            "pinyin": "Wǒ yào liǎng ge biàndāng, xièxie.",
-            "gloss": "I'd like two bentos, thank you."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_出",
-          "traditional": "出",
-          "pinyin": "chū",
-          "gloss": "to go out; to come out; to occur",
+          "id": "v_每",
+          "traditional": "每",
+          "pinyin": "měi",
+          "gloss": "each; every",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "天氣很好，我們出去走走吧。",
-            "pinyin": "Tiānqì hěn hǎo, wǒmen chūqù zǒuzou ba.",
-            "gloss": "The weather is nice, let's go out for a walk."
-          }
+          "taiwan_note": null
         },
         {
-          "id": "v_已經",
-          "traditional": "已經",
-          "pinyin": "yǐ jīng",
-          "gloss": "already",
+          "id": "v_也",
+          "traditional": "也",
+          "pinyin": "yě",
+          "gloss": "(adverb) also; both ... and ... (before predicates only); (literary) particle having functions similar to 啊",
           "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "我已經吃飽了。",
-            "pinyin": "Wǒ yǐjīng chī bǎo le.",
-            "gloss": "I'm already full."
-          }
-        },
-        {
-          "id": "v_最",
-          "traditional": "最",
-          "pinyin": "zuì",
-          "gloss": "most; the most; -est (superlative suffix)",
-          "hsk_level": 2,
-          "taiwan_note": null,
-          "example": {
-            "hanzi": "這家店的甜點最好吃。",
-            "pinyin": "Zhè jiā diàn de tiándiǎn zuì hǎo chī.",
-            "gloss": "The desserts at this shop are the best."
-          }
+          "taiwan_note": null
         }
       ],
-      "grammar": [
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
+    },
+    {
+      "id": "l_hsk2_01_3",
+      "title": "describe 一個人的樣子",
+      "sort_order": 3,
+      "vocab": [
         {
-          "title": "從……到…… (from ... to ...)",
-          "pattern": "從 + A（時間/位置） + 到 + B（時間/位置）",
-          "explanation": "用「從」說起點，用「到」說終點。可以用在時間上（從幾點到幾點），也可以用在路線上（從哪裡到哪裡）。「從……到……」後面常接動作或說明要多久。",
-          "examples": [
-            {
-              "hanzi": "我從早上九點到晚上六點都在上班。",
-              "pinyin": "Wǒ cóng zǎoshang jiǔ diǎn dào wǎnshang liù diǎn dōu zài shàngbān.",
-              "gloss": "I'm at work from nine in the morning to six at night."
-            },
-            {
-              "hanzi": "從我家到學校，騎腳踏車十分鐘。",
-              "pinyin": "Cóng wǒ jiā dào xuéxiào, qí jiǎotàchē shí fēnzhōng.",
-              "gloss": "From my home to school is ten minutes by bike."
-            },
-            {
-              "hanzi": "從這裡到那家店要兩個鐘頭。",
-              "pinyin": "Cóng zhèlǐ dào nà jiā diàn yào liǎng ge zhōngtóu.",
-              "gloss": "It takes two hours from here to that shop."
-            }
-          ],
-          "id": "g_hsk2_01_3_1",
-          "hsk_level": 2
+          "id": "v_高",
+          "traditional": "高",
+          "pinyin": "gāo",
+          "gloss": "high; tall; above average",
+          "hsk_level": 2,
+          "taiwan_note": null
         },
         {
-          "title": "已經……了 (already)",
-          "pattern": "主語 + 已經 + 動詞/形容詞 + 了",
-          "explanation": "「已經」表示動作完成或情況出現了，句尾常常加「了」。",
-          "examples": [
-            {
-              "hanzi": "我已經到家了。",
-              "pinyin": "Wǒ yǐjīng dào jiā le.",
-              "gloss": "I'm already home."
-            },
-            {
-              "hanzi": "他已經出去了。",
-              "pinyin": "Tā yǐjīng chūqù le.",
-              "gloss": "He has already gone out."
-            },
-            {
-              "hanzi": "現在已經十點了，我要睡了。",
-              "pinyin": "Xiànzài yǐjīng shí diǎn le, wǒ yào shuì le.",
-              "gloss": "It's already ten o'clock; I'm going to sleep."
-            }
-          ],
-          "id": "g_hsk2_01_3_2",
-          "hsk_level": 2
+          "id": "v_長",
+          "traditional": "長",
+          "pinyin": "cháng",
+          "gloss": "chief; head; elder",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_眼睛",
+          "traditional": "眼睛",
+          "pinyin": "yǎnjīng",
+          "gloss": "eye",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_身體",
+          "traditional": "身體",
+          "pinyin": "shēn tǐ",
+          "gloss": "the body; one's health; in person",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_黑",
+          "traditional": "黑",
+          "pinyin": "hēi",
+          "gloss": "black; dark; sinister",
+          "hsk_level": 2,
+          "taiwan_note": null
+        },
+        {
+          "id": "v_真",
+          "traditional": "真",
+          "pinyin": "zhēn",
+          "gloss": "really; truly; indeed",
+          "hsk_level": 2,
+          "taiwan_note": null
         }
       ],
-      "dialogue": [
-        {
-          "speaker": "A",
-          "hanzi": "喂，你到了嗎？",
-          "pinyin": "Wéi, nǐ dào le ma?",
-          "gloss": "Hello, are you there yet?"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "我已經到捷運站了，你呢？",
-          "pinyin": "Wǒ yǐjīng dào jiéyùn zhàn le, nǐ ne?",
-          "gloss": "I'm already at the MRT station. What about you?"
-        },
-        {
-          "speaker": "A",
-          "hanzi": "我從家裡出來了，騎腳踏車十分鐘就到。",
-          "pinyin": "Wǒ cóng jiālǐ chūlái le, qí jiǎotàchē shí fēnzhōng jiù dào.",
-          "gloss": "I've left home; it's ten minutes by bike."
-        },
-        {
-          "speaker": "B",
-          "hanzi": "好，那我先買兩杯珍珠奶茶。",
-          "pinyin": "Hǎo, nà wǒ xiān mǎi liǎng bēi zhēnzhū nǎichá.",
-          "gloss": "OK, then I'll buy two bubble teas first."
-        },
-        {
-          "speaker": "A",
-          "hanzi": "這家的奶茶最好喝，謝謝你喔！",
-          "pinyin": "Zhè jiā de nǎichá zuì hǎo hē, xièxie nǐ o!",
-          "gloss": "This shop's milk tea is the best. Thanks!"
-        },
-        {
-          "speaker": "B",
-          "hanzi": "不客氣啦，我在店裡面。",
-          "pinyin": "Bú kèqì la, wǒ zài diàn lǐmiàn.",
-          "gloss": "No problem, I'm inside the shop."
-        }
-      ],
-      "sentences": [
-        {
-          "tokens": [
-            "我",
-            "已經",
-            "吃",
-            "飽",
-            "了"
-          ],
-          "pinyin": "Wǒ yǐjīng chī bǎo le.",
-          "gloss": "I'm already full.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "這",
-            "家",
-            "店",
-            "的",
-            "咖啡",
-            "真",
-            "好喝"
-          ],
-          "pinyin": "Zhè jiā diàn de kāfēi zhēn hǎo hē.",
-          "gloss": "The coffee at this shop is really tasty.",
-          "cloze_index": 5
-        },
-        {
-          "tokens": [
-            "他",
-            "從",
-            "學校",
-            "走",
-            "回",
-            "家"
-          ],
-          "pinyin": "Tā cóng xuéxiào zǒu huí jiā.",
-          "gloss": "He walks home from school.",
-          "cloze_index": 1
-        },
-        {
-          "tokens": [
-            "我們",
-            "晚上",
-            "出去",
-            "吃飯",
-            "吧"
-          ],
-          "pinyin": "Wǒmen wǎnshang chūqù chīfàn ba.",
-          "gloss": "Let's go out to eat tonight.",
-          "cloze_index": 2
-        },
-        {
-          "tokens": [
-            "這",
-            "家",
-            "餐廳",
-            "的",
-            "菜",
-            "最",
-            "好吃"
-          ],
-          "pinyin": "Zhè jiā cāntīng de cài zuì hǎo chī.",
-          "gloss": "The food at this restaurant is the best.",
-          "cloze_index": 5
-        }
-      ]
+      "grammar": [],
+      "dialogue": [],
+      "sentences": []
     }
   ],
-  "sort_order": 21,
+  "sort_order": 22,
   "tocfl_level": "Level 1",
   "tocfl_band": "A"
 }

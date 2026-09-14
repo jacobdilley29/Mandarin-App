@@ -1,61 +1,53 @@
 {
   "id": "u_hsk4_28",
-  "title": "HSK 4 詞彙 28",
-  "subtitle": "HSK 4 vocabulary · set 28",
+  "title": "味道與身體不舒服",
+  "subtitle": "Tasting food, dieting and feeling unwell",
   "hsk_level": 4,
   "generated": true,
   "status": "draft",
   "lessons": [
     {
       "id": "l_hsk4_28_1",
-      "title": "詞彙 28–1",
+      "title": "加鹽、嘗味道",
       "sort_order": 1,
       "vocab": [
         {
-          "id": "v_抱歉",
-          "traditional": "抱歉",
-          "pinyin": "bào qiàn",
-          "gloss": "to be sorry; to feel apologetic; sorry!",
+          "id": "v_鹽",
+          "traditional": "鹽",
+          "pinyin": "yán",
+          "gloss": "salt",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_師傅",
-          "traditional": "師傅",
-          "pinyin": "shī fu",
-          "gloss": "master; qualified worker; respectful form of address for older men",
+          "id": "v_酸",
+          "traditional": "酸",
+          "pinyin": "suān",
+          "gloss": "sour; tart; sick at heart",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_朵",
-          "traditional": "朵",
-          "pinyin": "duǒ",
-          "gloss": "flower; earlobe; fig. item on both sides",
+          "id": "v_嘗",
+          "traditional": "嘗",
+          "pinyin": "cháng",
+          "gloss": "to taste; to try (food); to experience; (literary) ever; once",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_鏡子",
-          "traditional": "鏡子",
-          "pinyin": "jìng zi",
-          "gloss": "mirror",
+          "id": "v_軟",
+          "traditional": "軟",
+          "pinyin": "ruǎn",
+          "gloss": "soft; flexible",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_合格",
-          "traditional": "合格",
-          "pinyin": "hé gé",
-          "gloss": "to meet the standard required; qualified; eligible (voter etc)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_親戚",
-          "traditional": "親戚",
-          "pinyin": "qīn qi",
-          "gloss": "a relative (i.e. family relation)",
+          "id": "v_稍微",
+          "traditional": "稍微",
+          "pinyin": "shāo wēi",
+          "gloss": "a little bit",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -66,112 +58,54 @@
     },
     {
       "id": "l_hsk4_28_2",
-      "title": "詞彙 28–2",
+      "title": "不舒服、流汗與護士",
       "sort_order": 2,
       "vocab": [
         {
-          "id": "v_力氣",
-          "traditional": "力氣",
-          "pinyin": "lì qi",
-          "gloss": "strength",
+          "id": "v_難受",
+          "traditional": "難受",
+          "pinyin": "nán shòu",
+          "gloss": "to feel unwell; to suffer pain; to be difficult to bear",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_缺點",
-          "traditional": "缺點",
-          "pinyin": "quē diǎn",
-          "gloss": "weak point; fault; shortcoming",
+          "id": "v_受不了",
+          "traditional": "受不了",
+          "pinyin": "shòu bù liǎo",
+          "gloss": "unbearable; unable to endure; can't stand",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_抽煙",
-          "traditional": "抽煙",
-          "pinyin": "chōu yān",
-          "gloss": "to smoke (a cigarette, tobacco)",
+          "id": "v_護士",
+          "traditional": "護士",
+          "pinyin": "hù shi",
+          "gloss": "nurse",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_起飛",
-          "traditional": "起飛",
-          "pinyin": "qǐ fēi",
-          "gloss": "(of an aircraft) to take off",
+          "id": "v_汗",
+          "traditional": "汗",
+          "pinyin": "hàn",
+          "gloss": "perspiration; sweat; to be speechless (out of helplessness, embarrassment etc) (Internet slang used as an interjection)",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_網球",
-          "traditional": "網球",
-          "pinyin": "wǎng qiú",
-          "gloss": "tennis; tennis ball",
+          "id": "v_減肥",
+          "traditional": "減肥",
+          "pinyin": "jiǎn féi",
+          "gloss": "to lose weight",
           "hsk_level": 4,
           "taiwan_note": null
         },
         {
-          "id": "v_老虎",
-          "traditional": "老虎",
-          "pinyin": "lǎo hǔ",
-          "gloss": "tiger",
-          "hsk_level": 4,
-          "taiwan_note": null
-        }
-      ],
-      "grammar": [],
-      "dialogue": [],
-      "sentences": []
-    },
-    {
-      "id": "l_hsk4_28_3",
-      "title": "詞彙 28–3",
-      "sort_order": 3,
-      "vocab": [
-        {
-          "id": "v_乘坐",
-          "traditional": "乘坐",
-          "pinyin": "chéng zuò",
-          "gloss": "to ride (in a vehicle)",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_誠實",
-          "traditional": "誠實",
-          "pinyin": "chéng shí",
-          "gloss": "honest",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_集合",
-          "traditional": "集合",
-          "pinyin": "jí hé",
-          "gloss": "to gather; to assemble; (math.) set",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_孫子",
-          "traditional": "孫子",
-          "pinyin": "sūn zi",
-          "gloss": "grandson; son's son",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_優點",
-          "traditional": "優點",
-          "pinyin": "yōu diǎn",
-          "gloss": "merit; benefit; strong point",
-          "hsk_level": 4,
-          "taiwan_note": null
-        },
-        {
-          "id": "v_猴子",
-          "traditional": "猴子",
-          "pinyin": "hóu zi",
-          "gloss": "monkey",
+          "id": "v_忽然",
+          "traditional": "忽然",
+          "pinyin": "hū rán",
+          "gloss": "suddenly; all of a sudden",
           "hsk_level": 4,
           "taiwan_note": null
         }
@@ -181,7 +115,7 @@
       "sentences": []
     }
   ],
-  "sort_order": 72,
+  "sort_order": 76,
   "tocfl_level": "Level 3",
   "tocfl_band": "B"
 }
