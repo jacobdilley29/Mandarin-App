@@ -226,6 +226,14 @@ def generate_lesson(
 def _allowed_words_upto(skeleton: dict, lesson_id: str) -> list[str]:
     """Cumulative vocabulary available up to and including a lesson.
 
+    **This is where teaching order and generation scope are the same thing.**
+    A lesson may use anything taught before it, and "before" means `sort_order`.
+    So settle the curriculum's order *before* generating: content written at
+    position 15 assumes everything in positions 1-14, and moving it to position 1
+    later does not make it beginner material — it makes it broken. The generated
+    HSK 1 units were written behind fourteen HSK 2-4 units and came out with
+    dialogues about taking the MRT. See scripts/reorder_units.py.
+
     Starts from the placement pool: those words are seeded as already-mastered
     before lesson one and never taught, so they are in scope throughout. Leaving
     them out told the model it could not use 老師, 學校 or 朋友 — which is not
@@ -583,6 +591,11 @@ def main(argv: list[str] | None = None, client=None) -> int:
     ap.add_argument("--all", action="store_true", help="regenerate complete units too")
     ap.add_argument("--limit", type=int, help="stop after this many units")
     ap.add_argument("--dry-run", action="store_true", help="report the plan, call nothing")
+    ap.add_argument("--refresh", action="store_true",
+                    help="ignore the cache for the units selected and generate "
+                         "them again. Needed after a reorder: a lesson keeps the "
+                         "same words, so the cache would hand back content "
+                         "written for its old position in the curriculum.")
     ap.add_argument("--retries", type=int, default=2,
                     help="attempts to bring a lesson back into scope (default 2). "
                          "Each one is told every character the lesson has been "
@@ -643,11 +656,11 @@ def main(argv: list[str] | None = None, client=None) -> int:
         applied = 0
         for lesson in unit.get("lessons") or []:
             cache = GENERATED_DIR / f"{lesson['id']}.json"
-            content = read_cache(cache, lesson)
+            content = None if args.refresh else read_cache(cache, lesson)
             if content is not None:
                 print(f"  • {lesson['id']}: cached")
             else:
-                why = _miss_reason(cache, lesson)
+                why = "refresh requested" if args.refresh else _miss_reason(cache, lesson)
                 print(f"  ⟳ {lesson['id']}: {why}…")
                 allowed = _allowed_words_upto(data, lesson["id"])
                 try:

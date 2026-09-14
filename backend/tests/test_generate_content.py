@@ -825,3 +825,35 @@ def test_two_attempts_is_the_default(sandbox):
     gc.main(["--unit", "u_draft"], client=client)
 
     assert client.calls == 3, "one generation plus two attempts, with no flag given"
+
+
+# ---------------------------------------------------------------------------
+# --refresh: the cache is wrong after a reorder, not stale
+# ---------------------------------------------------------------------------
+def test_refresh_regenerates_a_lesson_the_cache_would_have_served(sandbox):
+    """A reorder changes what a lesson may use, not which words it teaches.
+
+    So the fingerprint is unchanged and the cache hits, handing back content
+    written for the lesson's old position — which is exactly the content the
+    reorder was meant to replace. The HSK 1 units were generated behind fourteen
+    HSK 2-4 units and came out with dialogues about taking the MRT; serving that
+    from cache after moving them to the front would be the whole exercise wasted.
+    """
+    gc.main(["--unit", "u_draft"], client=StubClient())
+
+    cached = StubClient()
+    gc.main(["--unit", "u_draft", "--all"], client=cached)
+    assert cached.calls == 0, "the cache hits when nothing has changed"
+
+    refreshed = StubClient()
+    gc.main(["--unit", "u_draft", "--all", "--refresh"], client=refreshed)
+    assert refreshed.calls == 1
+
+
+def test_refresh_says_that_is_why_it_is_paying(sandbox, capsys):
+    gc.main(["--unit", "u_draft"], client=StubClient())
+    capsys.readouterr()
+
+    gc.main(["--unit", "u_draft", "--all", "--refresh"], client=StubClient())
+
+    assert "refresh requested" in capsys.readouterr().out

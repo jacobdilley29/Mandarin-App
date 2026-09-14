@@ -33,11 +33,11 @@ from app.validation import placement_pool_chars, validate_curriculum  # noqa: E4
 
 
 def level_order(units: list[dict]) -> list[dict]:
-    """Units in teaching order: by level, hand-authored first within each level.
+    """Every unit by level, hand-authored first within each level.
 
-    Authored-first within a level keeps 便利商店 opening HSK 2 and the other
-    hand-polished units leading their own bands, while the beginner material
-    that should come first actually does.
+    The thorough answer, and the expensive one. It moves generated units ahead of
+    authored units a level above them, which removes that authored vocabulary
+    from what their sentences may use — see the module docstring.
     """
     return sorted(
         units,
@@ -49,9 +49,34 @@ def level_order(units: list[dict]) -> list[dict]:
     )
 
 
-def renumbered(units: list[dict]) -> list[dict]:
+def beginner_first(units: list[dict]) -> list[dict]:
+    """Generated HSK 1 units first; everything else exactly where it was.
+
+    This is the surgical version. The complaint is that a beginner meets 銀行郵局
+    before any HSK 1 material, and moving just the HSK 1 units answers it. Because
+    nothing else changes position, no other unit loses a word it was written
+    against: moving a unit *earlier* only ever shrinks its own allowed
+    vocabulary, and everything after it gains the HSK 1 words rather than losing
+    anything.
+
+    The HSK 1 units themselves do break, and should: they were generated sitting
+    behind all fourteen authored units, so they were written with 捷運 and 悠遊卡
+    available. A greetings lesson that needs an EasyCard is not an HSK 1 lesson.
+    Regenerating them in their proper position is the point, not a side effect.
+    """
+    first = [u for u in units if u.get("generated") and (u.get("hsk_level") or 0) == 1]
+    rest = [u for u in units if u not in first]
+    first.sort(key=lambda u: u.get("sort_order", 0))
+    rest.sort(key=lambda u: u.get("sort_order", 0))
+    return first + rest
+
+
+STRATEGIES = {"beginner-first": beginner_first, "level": level_order}
+
+
+def renumbered(units: list[dict], strategy: str = "beginner-first") -> list[dict]:
     out = []
-    for i, unit in enumerate(level_order(units), start=1):
+    for i, unit in enumerate(STRATEGIES[strategy](units), start=1):
         copy = dict(unit)
         copy["sort_order"] = i
         out.append(copy)
@@ -66,8 +91,20 @@ def _violations(data: dict) -> dict[str, set[str]]:
     return by_where
 
 
+def _cost(data: dict, units: list[dict], before: dict, strategy: str) -> tuple[list, set]:
+    """(newly broken, newly fixed) for one strategy, against the current order."""
+    after = _violations({**data, "units": renumbered(units, strategy)})
+    broke = [(w, chars) for w, chars in after.items() if w not in before]
+    fixed = {w for w in before if w not in after}
+    return broke, fixed
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Reorder units by level (reports first).")
+    ap.add_argument("--strategy", choices=sorted(STRATEGIES), default="beginner-first",
+                    help="beginner-first: generated HSK 1 units lead, nothing else "
+                         "moves (default). level: full level order, which is far "
+                         "more disruptive to already-generated content.")
     ap.add_argument("--apply", action="store_true",
                     help="write the new sort_order into content/units/")
     args = ap.parse_args(argv)
@@ -76,13 +113,21 @@ def main(argv: list[str] | None = None) -> int:
     units = data.get("units", [])
     before = _violations(data)
 
-    after_units = renumbered(units)
-    after = _violations({**data, "units": after_units})
+    print(f"Out-of-scope sentences as things stand: {len(before)}\n")
+    print("What each ordering would cost:")
+    for name in sorted(STRATEGIES):
+        broke, fixed = _cost(data, units, before, name)
+        mark = "→" if name == args.strategy else " "
+        note = f"{len(broke):>4} would break"
+        if fixed:
+            note += f", {len(fixed)} would be fixed"
+        print(f"  {mark} {name:<15} {note}")
+    print()
 
-    new_breaks = {w: chars for w, chars in after.items() if w not in before}
-    fixed = {w for w in before if w not in after}
+    after_units = renumbered(units, args.strategy)
+    broke, fixed = _cost(data, units, before, args.strategy)
 
-    print("New order (first 20):")
+    print(f"New order under '{args.strategy}' (first 20):")
     live = {u["id"] for u in units if u.get("status", "live") == "live"}
     for unit in after_units[:20]:
         kind = "generated" if unit.get("generated") else "curated"
@@ -92,31 +137,22 @@ def main(argv: list[str] | None = None) -> int:
     if len(after_units) > 20:
         print(f"  … and {len(after_units) - 20} more   (· = draft, not taught)")
 
-    print(f"\nOut-of-scope sentences now      : {len(before)}")
-    print(f"Out-of-scope sentences reordered : {len(after)}")
-
-    if fixed:
-        print(f"\n✓ {len(fixed)} would come back INTO scope")
-    if new_breaks:
-        print(f"\n✗ {len(new_breaks)} sentence(s) would fall OUT of scope:")
-        for where, chars in list(new_breaks.items())[:15]:
+    if broke:
+        hit = sorted({w.split()[0] for w, _ in broke})
+        print(f"\n✗ {len(broke)} sentence(s) in {len(hit)} lesson(s) would fall out of scope:")
+        for where, chars in broke[:10]:
             print(f"    [{where}] → {' '.join(sorted(chars))}")
-        if len(new_breaks) > 15:
-            print(f"    … and {len(new_breaks) - 15} more")
-        print("\n  Each of those is a unit that would drop back to draft, and a")
-        print("  regeneration call to bring back. Weigh that against the ordering.")
-    elif not fixed:
-        generated_with_content = sum(
-            1 for u in units for l in u.get("lessons") or [] if l.get("sentences")
-        )
-        if generated_with_content:
-            print("\n✓ Nothing changes scope — the reorder is free.")
-        else:
-            print("\n· No lesson content on disk yet, so there is nothing to put out")
-            print("  of scope. Run this again once the units are generated.")
+        if len(broke) > 10:
+            print(f"    … and {len(broke) - 10} more")
+        print(f"\n  Regenerate them afterwards, which is the point rather than the")
+        print(f"  price: content written for a later position was written at the")
+        print(f"  wrong level for this one.")
+        print(f"    make generate-content ARGS=\"--level 1 --refresh\"")
+    else:
+        print("\n✓ Nothing falls out of scope.")
 
     if not args.apply:
-        print("\n(report only) Re-run with ARGS=--apply to write the new order.")
+        print("\n(report only) Re-run with ARGS=--apply to write this order.")
         return 0
 
     for unit in after_units:

@@ -123,12 +123,14 @@ def test_a_report_run_writes_nothing(source):
     assert (cs.UNITS_DIR / "u_bank.json").read_text(encoding="utf-8") == before
 
 
-def test_the_report_counts_scope_both_ways(source, capsys):
+def test_the_report_prices_every_strategy(source, capsys):
+    """The choice stays a number rather than a recommendation."""
     ru.main([])
 
     out = capsys.readouterr().out
-    assert "Out-of-scope sentences now" in out
-    assert "Out-of-scope sentences reordered" in out
+    assert "Out-of-scope sentences as things stand" in out
+    for name in ("beginner-first", "level"):
+        assert name in out, f"{name} must be priced too"
 
 
 def test_it_names_what_the_reorder_would_break(tmp_path, monkeypatch, capsys):
@@ -152,8 +154,76 @@ def test_it_names_what_the_reorder_would_break(tmp_path, monkeypatch, capsys):
                   sentences=[{"tokens": ["銀行"], "pinyin": "p", "gloss": "g"}])
     cs.split({"meta": {"function_words": []}, "units": [authored, later]})
 
-    ru.main([])
+    ru.main(["--strategy", "level"])
 
     out = capsys.readouterr().out
-    assert "would fall OUT of scope" in out
+    assert "would fall out of scope" in out
     assert "銀" in out
+
+
+# ---------------------------------------------------------------------------
+# beginner-first: the surgical ordering
+# ---------------------------------------------------------------------------
+def test_generated_hsk1_leads_and_nothing_else_moves():
+    """The complaint was that a beginner meets 銀行郵局 before any HSK 1 material.
+
+    Moving only the HSK 1 units answers it without costing anything else:
+    a unit moved *earlier* loses vocabulary, and a unit that stays put while HSK
+    1 arrives in front of it only gains.
+    """
+    units = [
+        _unit("u_conv", 2, 1, generated=False),
+        _unit("u_dir", 3, 2, generated=False),
+        _unit("u_bank", 4, 3, generated=False),
+        _unit("u_hsk1_01", 1, 4, generated=True),
+        _unit("u_hsk1_02", 1, 5, generated=True),
+        _unit("u_hsk2_01", 2, 6, generated=True),
+    ]
+
+    assert [u["id"] for u in ru.beginner_first(units)] == [
+        "u_hsk1_01", "u_hsk1_02",          # moved to the front
+        "u_conv", "u_dir", "u_bank", "u_hsk2_01",  # untouched, in order
+    ]
+
+
+def test_curated_hsk1_would_lead_too_if_there_were_any():
+    """Only generated units move; a hand-authored HSK 1 unit keeps its place."""
+    units = [
+        _unit("u_basics", 1, 1, generated=False),
+        _unit("u_conv", 2, 2, generated=False),
+        _unit("u_hsk1_01", 1, 3, generated=True),
+    ]
+
+    assert [u["id"] for u in ru.beginner_first(units)] == [
+        "u_hsk1_01", "u_basics", "u_conv",
+    ]
+
+
+def test_beginner_first_is_the_default(source, capsys):
+    """The expensive ordering should never be what a bare --apply writes."""
+    ru.main([])
+
+    assert "New order under 'beginner-first'" in capsys.readouterr().out
+
+
+def test_beginner_first_costs_less_than_full_level_order(tmp_path, monkeypatch, capsys):
+    """The measurement that chose it: 459 broken sentences against a handful."""
+    monkeypatch.setattr(cs, "CONTENT_DIR", tmp_path)
+    monkeypatch.setattr(cs, "MANIFEST_PATH", tmp_path / "curriculum.json")
+    monkeypatch.setattr(cs, "UNITS_DIR", tmp_path / "units")
+
+    authored = _unit("u_bank", 3, 1, generated=False)
+    authored["lessons"][0]["vocab"] = [
+        {"id": "v_bank", "traditional": "銀行", "pinyin": "yínháng", "gloss": "bank"}
+    ]
+    later = _unit("u_hsk2_01", 2, 2, generated=True,
+                  sentences=[{"tokens": ["銀行"], "pinyin": "p", "gloss": "g"}])
+    cs.split({"meta": {"function_words": []}, "units": [authored, later]})
+
+    before = ru._violations(cs.load())
+    data = cs.load()
+    broke_beginner, _ = ru._cost(data, data["units"], before, "beginner-first")
+    broke_level, _ = ru._cost(data, data["units"], before, "level")
+
+    assert broke_beginner == [], "nothing moves across a level boundary"
+    assert broke_level, "the full reorder does break this one"

@@ -475,20 +475,37 @@ sentences, and level-ordering put them at the front of Learn). Now that generate
 units are themed, complete and gated, that ordering has an obvious cost: the
 authored units are HSK 2-4, so a learner meets 銀行郵局 before any HSK 1 material.
 
-`make reorder` puts the curriculum in level order, with authored units still
-leading their own level — 便利商店 opens HSK 2 rather than the whole course.
+**Settle the order before generating.** Character scope is cumulative in
+`sort_order` — a lesson may use anything taught before it — so `sort_order` is
+not presentation, it is the input that decides what each lesson is allowed to
+say. Generating first and reordering later is the trap described below.
 
-**It reports before it writes, because reordering is not cosmetic.** Character
-scope is cumulative in `sort_order`: a lesson may use anything taught before it.
-Moving a generated HSK 2 unit ahead of the authored HSK 3 units removes their
-vocabulary from what its sentences may use, so content that was correct — and
-paid for — when it was generated can fall out of scope and drop the unit back to
-draft. The report names every sentence that would, so the trade is a measurement
-rather than a guess.
+`make reorder` reports before it writes, and prices every strategy:
 
 ```bash
-make reorder                 # report only
-make reorder ARGS=--apply    # write the new sort_order
+make reorder                                  # report only
+make reorder ARGS=--apply                     # beginner-first (default)
+make reorder ARGS="--strategy level --apply"  # full level order
+```
+
+* **beginner-first** moves the generated HSK 1 units to the front and leaves
+  everything else exactly where it is. Nothing else changes position, so nothing
+  else loses vocabulary it was written against.
+* **level** orders every unit by level, authored units leading their own level.
+  Thorough, and expensive on a curriculum that has already been generated.
+
+Measured on the real curriculum, `level` put **459 sentences** out of scope while
+`beginner-first` broke only the HSK 1 units — which needed regenerating anyway.
+They were written sitting behind fourteen HSK 2–4 units, so the greetings lesson
+came back with a dialogue about taking the MRT with an EasyCard. Content written
+for position 15 is not beginner material just because you move it to position 1.
+
+After a reorder, regenerate what moved, with `--refresh` — those lessons teach
+the same words, so the cache would otherwise hand back the content written for
+their old position:
+
+```bash
+make generate-content ARGS="--level 1 --refresh"
 ```
 
 It rewrites `sort_order` and nothing else. **Do not use `make build-skeleton` to
